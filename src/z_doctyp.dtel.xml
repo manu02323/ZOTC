@@ -1,0 +1,100 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<abapGit version="v1.0.0" serializer="LCL_OBJECT_DTEL" serializer_version="v1.0.0">
+ <asx:abap xmlns:asx="http://www.sap.com/abapxml" version="1.0">
+  <asx:values>
+   <DD04V>
+    <ROLLNAME>Z_DOCTYP</ROLLNAME>
+    <DDLANGUAGE>E</DDLANGUAGE>
+    <DOMNAME>Z_DOCTYP</DOMNAME>
+    <LOGFLAG>X</LOGFLAG>
+    <HEADLEN>14</HEADLEN>
+    <SCRLEN1>10</SCRLEN1>
+    <SCRLEN2>14</SCRLEN2>
+    <SCRLEN3>14</SCRLEN3>
+    <DDTEXT>Ref Doc type</DDTEXT>
+    <REPTEXT>Ref Doc type</REPTEXT>
+    <SCRTEXT_S>Ref Doctyp</SCRTEXT_S>
+    <SCRTEXT_M>Ref Doc type</SCRTEXT_M>
+    <SCRTEXT_L>Ref Doc type</SCRTEXT_L>
+    <DTELMASTER>E</DTELMASTER>
+    <REFKIND>D</REFKIND>
+   </DD04V>
+   <I18N_LANGS>
+    <LANGU>1</LANGU>
+    <LANGU>D</LANGU>
+    <LANGU>F</LANGU>
+    <LANGU>J</LANGU>
+    <LANGU>N</LANGU>
+    <LANGU>P</LANGU>
+    <LANGU>R</LANGU>
+    <LANGU>S</LANGU>
+   </I18N_LANGS>
+   <DD04_TEXTS>
+    <item>
+     <DDLANGUAGE>1</DDLANGUAGE>
+     <DDTEXT>Ref Doc type</DDTEXT>
+     <REPTEXT>Ref Doc type</REPTEXT>
+     <SCRTEXT_S>Ref Doctyp</SCRTEXT_S>
+     <SCRTEXT_M>Ref Doc type</SCRTEXT_M>
+     <SCRTEXT_L>Ref Doc type</SCRTEXT_L>
+    </item>
+    <item>
+     <DDLANGUAGE>D</DDLANGUAGE>
+     <DDTEXT>Ref. Dok. Typ</DDTEXT>
+     <REPTEXT>Ref. Dok. Typ</REPTEXT>
+     <SCRTEXT_S>Ref.Doktyp</SCRTEXT_S>
+     <SCRTEXT_M>Ref. Dok. TypR</SCRTEXT_M>
+     <SCRTEXT_L>Ref. Dok. Typ</SCRTEXT_L>
+    </item>
+    <item>
+     <DDLANGUAGE>F</DDLANGUAGE>
+     <DDTEXT>Type du document référence</DDTEXT>
+     <REPTEXT>Ref Doctyp</REPTEXT>
+     <SCRTEXT_S>Ref Doctyp</SCRTEXT_S>
+     <SCRTEXT_M>Ref Doctyp</SCRTEXT_M>
+     <SCRTEXT_L>Ref Doctyp</SCRTEXT_L>
+    </item>
+    <item>
+     <DDLANGUAGE>J</DDLANGUAGE>
+     <DDTEXT>Ref Doc type</DDTEXT>
+     <REPTEXT>Ref Doc type</REPTEXT>
+     <SCRTEXT_S>Ref Doctyp</SCRTEXT_S>
+     <SCRTEXT_M>Ref Doc type</SCRTEXT_M>
+     <SCRTEXT_L>Ref Doc type</SCRTEXT_L>
+    </item>
+    <item>
+     <DDLANGUAGE>N</DDLANGUAGE>
+     <DDTEXT>Ref Doc type</DDTEXT>
+     <REPTEXT>Ref Doc type</REPTEXT>
+     <SCRTEXT_S>Ref Doctyp</SCRTEXT_S>
+     <SCRTEXT_M>Ref Doc type</SCRTEXT_M>
+     <SCRTEXT_L>Ref Doc type</SCRTEXT_L>
+    </item>
+    <item>
+     <DDLANGUAGE>P</DDLANGUAGE>
+     <DDTEXT>Ref Doc type</DDTEXT>
+     <REPTEXT>Ref Doc type</REPTEXT>
+     <SCRTEXT_S>Ref Doctyp</SCRTEXT_S>
+     <SCRTEXT_M>Ref Doc type</SCRTEXT_M>
+     <SCRTEXT_L>Ref Doc type</SCRTEXT_L>
+    </item>
+    <item>
+     <DDLANGUAGE>R</DDLANGUAGE>
+     <DDTEXT>Ref Doc type</DDTEXT>
+     <REPTEXT>Ref Doc type</REPTEXT>
+     <SCRTEXT_S>Ref Doctyp</SCRTEXT_S>
+     <SCRTEXT_M>Ref Doc type</SCRTEXT_M>
+     <SCRTEXT_L>Ref Doc type</SCRTEXT_L>
+    </item>
+    <item>
+     <DDLANGUAGE>S</DDLANGUAGE>
+     <DDTEXT>Ref Doc type</DDTEXT>
+     <REPTEXT>Ref Doc type</REPTEXT>
+     <SCRTEXT_S>Ref Doctyp</SCRTEXT_S>
+     <SCRTEXT_M>Ref Doc type</SCRTEXT_M>
+     <SCRTEXT_L>Ref Doc type</SCRTEXT_L>
+    </item>
+   </DD04_TEXTS>
+  </asx:values>
+ </asx:abap>
+</abapGit>

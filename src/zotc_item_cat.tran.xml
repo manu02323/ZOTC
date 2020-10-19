@@ -1,0 +1,56 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<abapGit version="v1.0.0" serializer="LCL_OBJECT_TRAN" serializer_version="v1.0.0">
+ <asx:abap xmlns:asx="http://www.sap.com/abapxml" version="1.0">
+  <asx:values>
+   <TSTC>
+    <TCODE>ZOTC_ITEM_CAT</TCODE>
+    <CINFO>Ag==</CINFO>
+   </TSTC>
+   <TSTCC>
+    <TCODE>ZOTC_ITEM_CAT</TCODE>
+    <S_WEBGUI>1</S_WEBGUI>
+    <S_WIN32>X</S_WIN32>
+    <S_PLATIN>X</S_PLATIN>
+   </TSTCC>
+   <TSTCT>
+    <SPRSL>E</SPRSL>
+    <TCODE>ZOTC_ITEM_CAT</TCODE>
+    <TTEXT>Maintain Item Category using BRF+</TTEXT>
+   </TSTCT>
+   <TSTCP>
+    <TCODE>ZOTC_ITEM_CAT</TCODE>
+    <PARAM>/*ZPTP_BRFPLUS P_OBJECT=ZT_OTC_IDD_0090_ITEM_CATEGORY;</PARAM>
+   </TSTCP>
+   <I18N_TPOOL>
+    <TSTCT>
+     <SPRSL>1</SPRSL>
+     <TTEXT>Maintain Item Category using BRF+</TTEXT>
+    </TSTCT>
+    <TSTCT>
+     <SPRSL>F</SPRSL>
+     <TTEXT>Maintain Item Category using BRF+</TTEXT>
+    </TSTCT>
+    <TSTCT>
+     <SPRSL>J</SPRSL>
+     <TTEXT>Maintain Item Category using BRF+</TTEXT>
+    </TSTCT>
+    <TSTCT>
+     <SPRSL>N</SPRSL>
+     <TTEXT>Maintain Item Category using BRF+</TTEXT>
+    </TSTCT>
+    <TSTCT>
+     <SPRSL>P</SPRSL>
+     <TTEXT>Maintain Item Category using BRF+</TTEXT>
+    </TSTCT>
+    <TSTCT>
+     <SPRSL>R</SPRSL>
+     <TTEXT>Maintain Item Category using BRF+</TTEXT>
+    </TSTCT>
+    <TSTCT>
+     <SPRSL>S</SPRSL>
+     <TTEXT>Maintain Item Category using BRF+</TTEXT>
+    </TSTCT>
+   </I18N_TPOOL>
+  </asx:values>
+ </asx:abap>
+</abapGit>

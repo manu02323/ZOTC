@@ -1,0 +1,92 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<abapGit version="v1.0.0" serializer="LCL_OBJECT_ENHO" serializer_version="v1.0.0">
+ <asx:abap xmlns:asx="http://www.sap.com/abapxml" version="1.0">
+  <asx:values>
+   <TOOL>HOOK_IMPL</TOOL>
+   <SHORTTEXT>SALES ORDER INCOMPLETION LOG</SHORTTEXT>
+   <ORIGINAL_OBJECT>
+    <PGMID>R3TR</PGMID>
+    <ORG_OBJ_TYPE>ENHO</ORG_OBJ_TYPE>
+    <ORG_OBJ_NAME>ZIM_OTC_DISCOUNT_ITEM_CATEGORY</ORG_OBJ_NAME>
+    <ORG_MAIN_TYPE>ENHO</ORG_MAIN_TYPE>
+    <ORG_MAIN_NAME>ZIM_OTC_DISCOUNT_ITEM_CATEGORY</ORG_MAIN_NAME>
+    <PROGRAMNAME>ZIM_OTC_DISCOUNT_ITEM_CATEGORY</PROGRAMNAME>
+   </ORIGINAL_OBJECT>
+   <ENHANCEMENTS>
+    <ENH_HOOK_IMPL>
+     <PROGRAMNAME>ZIM_OTC_DISCOUNT_ITEM_CATEGORY</PROGRAMNAME>
+     <ENHMODE>D</ENHMODE>
+     <FULL_NAME>\PR:SAPMV45A\FO:USEREXIT_CHECK_VBAP\SE:END\EN:ZIM_OTC_DISCOUNT_ITEM_CATEGORY\SE:END\EI</FULL_NAME>
+     <SOURCE>
+      <item>***********************************************************************</item>
+      <item>*Program    : ZIM_OTC_INCOMPLETION_LOG(Enhancement)                   *</item>
+      <item>*Title      : User Exit for Incompletion                              *</item>
+      <item>*Developer  : Kriti Srivastava                                        *</item>
+      <item>*Object type: Enhancement                                             *</item>
+      <item>*SAP Release: SAP ECC 6.0                                             *</item>
+      <item>*---------------------------------------------------------------------*</item>
+      <item>*WRICEF ID: D2_OTC_EDD_0211                                           *</item>
+      <item>*---------------------------------------------------------------------*</item>
+      <item>*Description: If Product Attribute 5 for the material(MVKE-PRAT5) is  *</item>
+      <item>* ticked,then check whether Quote Number (VBAP-ZZQUOTEREF) for the    *</item>
+      <item>* material is populated, if not then generate incompletion log with   *</item>
+      <item>* item detail.                                                        *</item>
+      <item>*---------------------------------------------------------------------*</item>
+      <item>*MODIFICATION HISTORY:</item>
+      <item>*=====================================================================*</item>
+      <item>*Date           User        Transport       Description</item>
+      <item>*=========== ============== ============== ===========================*</item>
+      <item>*08-Jul-2014  KSRIVAS      E2DK903204      Initial Development for    *</item>
+      <item>*                                          D2_OTC_EDD_0211            *</item>
+      <item>*---------------------------------------------------------------------*</item>
+      <item>*08-DEC-2014  SSAURAV      E2DK903204      CR D2_289                  *</item>
+      <item>* If Product Attribute 1 for the material(MVKE-PRAT1) is ticked,      *</item>
+      <item>* then check whether Quote Number (VBAP-ZZQUOTEREF) for the material  *</item>
+      <item>* is populated, if not then generate incompletion log with item detail*</item>
+      <item>*&amp;--------------------------------------------------------------------*</item>
+      <item/>
+      <item>INCLUDE ZOTCN0211O_EXT_FOR_INCOMPLETN.</item>
+      <item/>
+     </SOURCE>
+     <PARENT_FULL_NAME>\PR:SAPMV45A\FO:USEREXIT_CHECK_VBAP\SE:END</PARENT_FULL_NAME>
+    </ENH_HOOK_IMPL>
+   </ENHANCEMENTS>
+   <SPACES>
+    <item>
+     <FULL_NAME>\PR:SAPMV45A\FO:USEREXIT_CHECK_VBAP\SE:END\EN:ZIM_OTC_DISCOUNT_ITEM_CATEGORY\SE:END\EI</FULL_NAME>
+     <SPACES>
+      <item>0</item>
+      <item>0</item>
+      <item>0</item>
+      <item>0</item>
+      <item>0</item>
+      <item>0</item>
+      <item>0</item>
+      <item>0</item>
+      <item>0</item>
+      <item>0</item>
+      <item>0</item>
+      <item>0</item>
+      <item>0</item>
+      <item>0</item>
+      <item>0</item>
+      <item>0</item>
+      <item>0</item>
+      <item>0</item>
+      <item>0</item>
+      <item>0</item>
+      <item>0</item>
+      <item>0</item>
+      <item>0</item>
+      <item>0</item>
+      <item>0</item>
+      <item>0</item>
+      <item>0</item>
+      <item>1</item>
+      <item>0</item>
+     </SPACES>
+    </item>
+   </SPACES>
+  </asx:values>
+ </asx:abap>
+</abapGit>

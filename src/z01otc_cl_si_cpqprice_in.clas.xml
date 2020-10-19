@@ -1,0 +1,43 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<abapGit version="v1.0.0" serializer="LCL_OBJECT_CLAS" serializer_version="v1.0.0">
+ <asx:abap xmlns:asx="http://www.sap.com/abapxml" version="1.0">
+  <asx:values>
+   <VSEOCLASS>
+    <CLSNAME>Z01OTC_CL_SI_CPQPRICE_IN</CLSNAME>
+    <LANGU>E</LANGU>
+    <DESCRIPT>Generated test implementation</DESCRIPT>
+    <STATE>1</STATE>
+    <CLSCCINCL>X</CLSCCINCL>
+    <FIXPT>X</FIXPT>
+    <UNICODE>X</UNICODE>
+    <RSTAT>P</RSTAT>
+   </VSEOCLASS>
+   <DESCRIPTIONS>
+    <SEOCOMPOTX>
+     <CLSNAME>Z01OTC_CL_SI_CPQPRICE_IN</CLSNAME>
+     <CMPNAME>ATTRV_PAYLOAD</CMPNAME>
+     <LANGU>B</LANGU>
+     <DESCRIPT>XI and WS: Access to Payload</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>Z01OTC_CL_SI_CPQPRICE_IN</CLSNAME>
+     <CMPNAME>ATTRV_PAYLOAD</CMPNAME>
+     <LANGU>C</LANGU>
+     <DESCRIPT>XI and WS: Access to Payload</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>Z01OTC_CL_SI_CPQPRICE_IN</CLSNAME>
+     <CMPNAME>ATTRV_PAYLOAD</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>XI and WS: Access to Payload</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>Z01OTC_CL_SI_CPQPRICE_IN</CLSNAME>
+     <CMPNAME>ATTRV_PAYLOAD</CMPNAME>
+     <LANGU>L</LANGU>
+     <DESCRIPT>XI and WS: Access to Payload</DESCRIPT>
+    </SEOCOMPOTX>
+   </DESCRIPTIONS>
+  </asx:values>
+ </asx:abap>
+</abapGit>

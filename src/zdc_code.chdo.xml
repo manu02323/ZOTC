@@ -1,0 +1,105 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<abapGit version="v1.0.0" serializer="LCL_OBJECT_CHDO" serializer_version="v1.0.0">
+ <asx:abap xmlns:asx="http://www.sap.com/abapxml" version="1.0">
+  <asx:values>
+   <CHDO>
+    <REPORTS_GENERATED>
+     <TCDRPS>
+      <OBJECT>ZDC_CODE</OBJECT>
+      <REPORTNAME>ZDC_CODE</REPORTNAME>
+      <TEXTCASE>X</TEXTCASE>
+      <ARBGEB>CD</ARBGEB>
+      <FEHLERNR>600</FEHLERNR>
+      <FGRP>ZDC_CODE_CHNG_DOC</FGRP>
+      <PREFIX>Y</PREFIX>
+      <UPDATE_FLG>1</UPDATE_FLG>
+     </TCDRPS>
+    </REPORTS_GENERATED>
+    <OBJECTS>
+     <TCDOBS>
+      <OBJECT>ZDC_CODE</OBJECT>
+      <TABNAME>ZOTC_DC_CODE</TABNAME>
+      <DOCUDEL>X</DOCUDEL>
+     </TCDOBS>
+    </OBJECTS>
+    <OBJECTS_TEXT>
+     <TCDOBTS>
+      <SPRAS>1</SPRAS>
+      <OBJECT>ZDC_CODE</OBJECT>
+      <OBTEXT>Dep. Characteristics Change Doc</OBTEXT>
+     </TCDOBTS>
+     <TCDOBTS>
+      <SPRAS>E</SPRAS>
+      <OBJECT>ZDC_CODE</OBJECT>
+      <OBTEXT>Dep. Characteristics Change Doc</OBTEXT>
+     </TCDOBTS>
+     <TCDOBTS>
+      <SPRAS>F</SPRAS>
+      <OBJECT>ZDC_CODE</OBJECT>
+      <OBTEXT>Dep. Characteristics Change Doc</OBTEXT>
+     </TCDOBTS>
+     <TCDOBTS>
+      <SPRAS>G</SPRAS>
+      <OBJECT>ZDC_CODE</OBJECT>
+      <OBTEXT>Dep. Characteristics Change Doc</OBTEXT>
+     </TCDOBTS>
+     <TCDOBTS>
+      <SPRAS>H</SPRAS>
+      <OBJECT>ZDC_CODE</OBJECT>
+      <OBTEXT>Dep. Characteristics Change Doc</OBTEXT>
+     </TCDOBTS>
+     <TCDOBTS>
+      <SPRAS>I</SPRAS>
+      <OBJECT>ZDC_CODE</OBJECT>
+      <OBTEXT>Dep. Characteristics Change Doc</OBTEXT>
+     </TCDOBTS>
+     <TCDOBTS>
+      <SPRAS>J</SPRAS>
+      <OBJECT>ZDC_CODE</OBJECT>
+      <OBTEXT>Dep. Characteristics Change Doc</OBTEXT>
+     </TCDOBTS>
+     <TCDOBTS>
+      <SPRAS>K</SPRAS>
+      <OBJECT>ZDC_CODE</OBJECT>
+      <OBTEXT>Dep. Characteristics Change Doc</OBTEXT>
+     </TCDOBTS>
+     <TCDOBTS>
+      <SPRAS>N</SPRAS>
+      <OBJECT>ZDC_CODE</OBJECT>
+      <OBTEXT>Dep. Characteristics Change Doc</OBTEXT>
+     </TCDOBTS>
+     <TCDOBTS>
+      <SPRAS>O</SPRAS>
+      <OBJECT>ZDC_CODE</OBJECT>
+      <OBTEXT>Dep. Characteristics Change Doc</OBTEXT>
+     </TCDOBTS>
+     <TCDOBTS>
+      <SPRAS>P</SPRAS>
+      <OBJECT>ZDC_CODE</OBJECT>
+      <OBTEXT>Dep. Characteristics Change Doc</OBTEXT>
+     </TCDOBTS>
+     <TCDOBTS>
+      <SPRAS>R</SPRAS>
+      <OBJECT>ZDC_CODE</OBJECT>
+      <OBTEXT>Dep. Characteristics Change Doc</OBTEXT>
+     </TCDOBTS>
+     <TCDOBTS>
+      <SPRAS>S</SPRAS>
+      <OBJECT>ZDC_CODE</OBJECT>
+      <OBTEXT>Dep. Characteristics Change Doc</OBTEXT>
+     </TCDOBTS>
+     <TCDOBTS>
+      <SPRAS>U</SPRAS>
+      <OBJECT>ZDC_CODE</OBJECT>
+      <OBTEXT>Dep. Characteristics Change Doc</OBTEXT>
+     </TCDOBTS>
+     <TCDOBTS>
+      <SPRAS>V</SPRAS>
+      <OBJECT>ZDC_CODE</OBJECT>
+      <OBTEXT>Dep. Characteristics Change Doc</OBTEXT>
+     </TCDOBTS>
+    </OBJECTS_TEXT>
+   </CHDO>
+  </asx:values>
+ </asx:abap>
+</abapGit>

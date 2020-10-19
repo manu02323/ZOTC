@@ -1,0 +1,452 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<abapGit version="v1.0.0" serializer="LCL_OBJECT_FUGR" serializer_version="v1.0.0">
+ <asx:abap xmlns:asx="http://www.sap.com/abapxml" version="1.0">
+  <asx:values>
+   <AREAT>Rfc for RV_INV_Create</AREAT>
+   <INCLUDES>
+    <SOBJ_NAME>LZOTC_RV_INV_CREATETOP</SOBJ_NAME>
+    <SOBJ_NAME>SAPLZOTC_RV_INV_CREATE</SOBJ_NAME>
+   </INCLUDES>
+   <FUNCTIONS>
+    <item>
+     <FUNCNAME>ZOTC_RV_INV_CREATE</FUNCNAME>
+     <REMOTE_CALL>R</REMOTE_CALL>
+     <SHORT_TEXT>Rfc for RV_INV_Create</SHORT_TEXT>
+     <IMPORT>
+      <RSIMP>
+       <PARAMETER>DELIVERY_DATE</PARAMETER>
+       <DEFAULT>0</DEFAULT>
+       <OPTIONAL>X</OPTIONAL>
+       <TYP>FBUDA</TYP>
+      </RSIMP>
+      <RSIMP>
+       <PARAMETER>INVOICE_DATE</PARAMETER>
+       <DEFAULT>0</DEFAULT>
+       <OPTIONAL>X</OPTIONAL>
+       <TYP>FKDAT</TYP>
+      </RSIMP>
+      <RSIMP>
+       <PARAMETER>INVOICE_TYPE</PARAMETER>
+       <DEFAULT>&apos;    &apos;</DEFAULT>
+       <OPTIONAL>X</OPTIONAL>
+       <TYP>FKART</TYP>
+      </RSIMP>
+      <RSIMP>
+       <PARAMETER>PRICING_DATE</PARAMETER>
+       <DEFAULT>0</DEFAULT>
+       <OPTIONAL>X</OPTIONAL>
+       <TYP>PRSDT</TYP>
+      </RSIMP>
+      <RSIMP>
+       <PARAMETER>VBSK_I</PARAMETER>
+       <DBFIELD>VBSK</DBFIELD>
+      </RSIMP>
+      <RSIMP>
+       <PARAMETER>WITH_POSTING</PARAMETER>
+       <DEFAULT>SPACE</DEFAULT>
+       <OPTIONAL>X</OPTIONAL>
+       <TYP>CHAR1</TYP>
+      </RSIMP>
+      <RSIMP>
+       <PARAMETER>SELECT_DATE</PARAMETER>
+       <DEFAULT>0</DEFAULT>
+       <OPTIONAL>X</OPTIONAL>
+       <TYP>FKDAT</TYP>
+      </RSIMP>
+      <RSIMP>
+       <PARAMETER>I_NO_VBLOG</PARAMETER>
+       <DEFAULT>&apos; &apos;</DEFAULT>
+       <OPTIONAL>X</OPTIONAL>
+       <TYP>CHAR1</TYP>
+      </RSIMP>
+      <RSIMP>
+       <PARAMETER>I_ANALYZE_MODE</PARAMETER>
+       <DEFAULT>&apos; &apos;</DEFAULT>
+       <OPTIONAL>X</OPTIONAL>
+       <TYP>CHAR1</TYP>
+      </RSIMP>
+      <RSIMP>
+       <PARAMETER>ID_UTASY</PARAMETER>
+       <DEFAULT>&apos; &apos;</DEFAULT>
+       <OPTIONAL>X</OPTIONAL>
+       <TYP>CHAR1</TYP>
+      </RSIMP>
+      <RSIMP>
+       <PARAMETER>ID_UTSWL</PARAMETER>
+       <DEFAULT>&apos; &apos;</DEFAULT>
+       <OPTIONAL>X</OPTIONAL>
+       <TYP>CHAR1</TYP>
+      </RSIMP>
+      <RSIMP>
+       <PARAMETER>ID_UTSNL</PARAMETER>
+       <DEFAULT>&apos; &apos;</DEFAULT>
+       <OPTIONAL>X</OPTIONAL>
+       <TYP>CHAR1</TYP>
+      </RSIMP>
+      <RSIMP>
+       <PARAMETER>ID_NO_ENQUEUE</PARAMETER>
+       <DEFAULT>&apos; &apos;</DEFAULT>
+       <OPTIONAL>X</OPTIONAL>
+       <TYP>CHAR1</TYP>
+      </RSIMP>
+      <RSIMP>
+       <PARAMETER>ID_NEW_CANCELLATION</PARAMETER>
+       <DEFAULT>SPACE</DEFAULT>
+       <OPTIONAL>X</OPTIONAL>
+       <TYP>CHAR1</TYP>
+      </RSIMP>
+      <RSIMP>
+       <PARAMETER>I_BLART</PARAMETER>
+       <DEFAULT>SPACE</DEFAULT>
+       <OPTIONAL>X</OPTIONAL>
+       <TYP>BLART</TYP>
+      </RSIMP>
+      <RSIMP>
+       <PARAMETER>ID_EXT_CANCELLATION</PARAMETER>
+       <DEFAULT>SPACE</DEFAULT>
+       <OPTIONAL>X</OPTIONAL>
+       <TYP>CHAR1</TYP>
+      </RSIMP>
+      <RSIMP>
+       <PARAMETER>I_STGRD</PARAMETER>
+       <OPTIONAL>X</OPTIONAL>
+       <TYP>STGRD</TYP>
+      </RSIMP>
+      <RSIMP>
+       <PARAMETER>PRICING_TIME</PARAMETER>
+       <OPTIONAL>X</OPTIONAL>
+       <TYP>VORGABEENZ</TYP>
+      </RSIMP>
+      <RSIMP>
+       <PARAMETER>OIR_INVINFO</PARAMETER>
+       <DBFIELD>OIRI_INVINFO</DBFIELD>
+       <OPTIONAL>X</OPTIONAL>
+      </RSIMP>
+     </IMPORT>
+     <EXPORT>
+      <RSEXP>
+       <PARAMETER>VBSK_E</PARAMETER>
+       <DBFIELD>VBSK</DBFIELD>
+      </RSEXP>
+      <RSEXP>
+       <PARAMETER>OD_BAD_DATA</PARAMETER>
+       <DBFIELD>RVSEL-XFELD</DBFIELD>
+      </RSEXP>
+      <RSEXP>
+       <PARAMETER>DET_REBATE</PARAMETER>
+       <TYP>CHAR1</TYP>
+      </RSEXP>
+     </EXPORT>
+     <TABLES>
+      <RSTBL>
+       <PARAMETER>XKOMFK</PARAMETER>
+       <DBSTRUCT>KOMFK</DBSTRUCT>
+       <OPTIONAL>X</OPTIONAL>
+      </RSTBL>
+      <RSTBL>
+       <PARAMETER>XKOMV</PARAMETER>
+       <DBSTRUCT>KOMV</DBSTRUCT>
+       <OPTIONAL>X</OPTIONAL>
+      </RSTBL>
+      <RSTBL>
+       <PARAMETER>XTHEAD</PARAMETER>
+       <DBSTRUCT>THEADVB</DBSTRUCT>
+       <OPTIONAL>X</OPTIONAL>
+      </RSTBL>
+      <RSTBL>
+       <PARAMETER>XVBFS</PARAMETER>
+       <DBSTRUCT>VBFS</DBSTRUCT>
+       <OPTIONAL>X</OPTIONAL>
+      </RSTBL>
+      <RSTBL>
+       <PARAMETER>XVBPA</PARAMETER>
+       <DBSTRUCT>VBPAVB</DBSTRUCT>
+       <OPTIONAL>X</OPTIONAL>
+      </RSTBL>
+      <RSTBL>
+       <PARAMETER>XVBRK</PARAMETER>
+       <DBSTRUCT>VBRKVB</DBSTRUCT>
+       <OPTIONAL>X</OPTIONAL>
+      </RSTBL>
+      <RSTBL>
+       <PARAMETER>XVBRP</PARAMETER>
+       <DBSTRUCT>VBRPVB</DBSTRUCT>
+       <OPTIONAL>X</OPTIONAL>
+      </RSTBL>
+      <RSTBL>
+       <PARAMETER>XVBSS</PARAMETER>
+       <DBSTRUCT>VBSS</DBSTRUCT>
+       <OPTIONAL>X</OPTIONAL>
+      </RSTBL>
+      <RSTBL>
+       <PARAMETER>XKOMFKGN</PARAMETER>
+       <DBSTRUCT>KOMFKGN</DBSTRUCT>
+       <OPTIONAL>X</OPTIONAL>
+      </RSTBL>
+      <RSTBL>
+       <PARAMETER>XKOMFKKO</PARAMETER>
+       <DBSTRUCT>KOMV</DBSTRUCT>
+       <OPTIONAL>X</OPTIONAL>
+      </RSTBL>
+      <RSTBL>
+       <PARAMETER>XOIA_KOMF</PARAMETER>
+       <DBSTRUCT>OIAKOMF</DBSTRUCT>
+       <OPTIONAL>X</OPTIONAL>
+      </RSTBL>
+      <RSTBL>
+       <PARAMETER>XOIA_OICQ7</PARAMETER>
+       <DBSTRUCT>OIAF7</DBSTRUCT>
+       <OPTIONAL>X</OPTIONAL>
+      </RSTBL>
+      <RSTBL>
+       <PARAMETER>XOIA_OICQ8</PARAMETER>
+       <DBSTRUCT>OIAF8</DBSTRUCT>
+       <OPTIONAL>X</OPTIONAL>
+      </RSTBL>
+      <RSTBL>
+       <PARAMETER>XOIA_OICQ9</PARAMETER>
+       <DBSTRUCT>OIAF9</DBSTRUCT>
+       <OPTIONAL>X</OPTIONAL>
+      </RSTBL>
+      <RSTBL>
+       <PARAMETER>XOICQ7</PARAMETER>
+       <DBSTRUCT>OICQ7</DBSTRUCT>
+       <OPTIONAL>X</OPTIONAL>
+      </RSTBL>
+      <RSTBL>
+       <PARAMETER>XOICQ8</PARAMETER>
+       <DBSTRUCT>OICQ8</DBSTRUCT>
+       <OPTIONAL>X</OPTIONAL>
+      </RSTBL>
+      <RSTBL>
+       <PARAMETER>XOICQ9</PARAMETER>
+       <DBSTRUCT>OICQ9</DBSTRUCT>
+       <OPTIONAL>X</OPTIONAL>
+      </RSTBL>
+      <RSTBL>
+       <PARAMETER>XOIC_KOMV1</PARAMETER>
+       <DBSTRUCT>KOMV</DBSTRUCT>
+       <OPTIONAL>X</OPTIONAL>
+      </RSTBL>
+      <RSTBL>
+       <PARAMETER>XOICINT_CAL</PARAMETER>
+       <DBSTRUCT>OICINT_CALCULATION</DBSTRUCT>
+       <OPTIONAL>X</OPTIONAL>
+      </RSTBL>
+      <RSTBL>
+       <PARAMETER>XOIUQ9</PARAMETER>
+       <DBSTRUCT>OIUQ9</DBSTRUCT>
+       <OPTIONAL>X</OPTIONAL>
+      </RSTBL>
+     </TABLES>
+     <DOCUMENTATION>
+      <RSFDO>
+       <PARAMETER>DELIVERY_DATE</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Date on which services rendered</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>INVOICE_DATE</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Billing Date for Billing Index and Printout</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>INVOICE_TYPE</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Billing Type</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>PRICING_DATE</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Date for Pricing and Exchange Rate</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>VBSK_I</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Date on Which Record Was Created</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>WITH_POSTING</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Single-Character Flag</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>SELECT_DATE</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Billing Date for Billing Index and Printout</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>I_NO_VBLOG</PARAMETER>
+       <KIND>P</KIND>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>I_ANALYZE_MODE</PARAMETER>
+       <KIND>P</KIND>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>ID_UTASY</PARAMETER>
+       <KIND>P</KIND>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>ID_UTSWL</PARAMETER>
+       <KIND>P</KIND>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>ID_UTSNL</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Single-Character Flag</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>ID_NO_ENQUEUE</PARAMETER>
+       <KIND>P</KIND>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>ID_NEW_CANCELLATION</PARAMETER>
+       <KIND>P</KIND>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>I_BLART</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Document type</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>ID_EXT_CANCELLATION</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Single-Character Flag</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>I_STGRD</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Reason for Reversal</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>PRICING_TIME</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Basic finish time of the activity</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>OIR_INVINFO</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>SSR Invoicing information</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>VBSK_E</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Collective Processing for a Sales Document Header</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>OD_BAD_DATA</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Checkbox</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>DET_REBATE</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Single-Character Flag</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>XKOMFK</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Billing Communications Table</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>XKOMV</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Pricing Communications-Condition Record</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>XTHEAD</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Reference Structure for XTHEAD</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>XVBFS</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Error Log for Collective Processing</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>XVBPA</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Reference structure for XVBPA/YVBPA</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>XVBRK</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Reference Structure for XVBRK/YVBRP</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>XVBRP</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Reference Structure for XVBRP/YVBRP</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>XVBSS</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Collective Processing: Sales Documents</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>XKOMFKGN</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Billing Interface: Communication Table</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>XKOMFKKO</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Pricing Communications-Condition Record</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>XOIA_KOMF</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Fee Rate Determination Internal Structure</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>XOIA_OICQ7</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Formula Condition Txn Data-Header (enhance CI-Incl.in OICF1)</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>XOIA_OICQ8</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Formula Condition Data - Terms (enhance CI-Incl.in OICF2)</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>XOIA_OICQ9</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Formula Condition Data-Term Items (enhance CI-Incl.in OICF3)</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>XOICQ7</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Formula Condition Txn Data-Header (enhance CI-Incl.in OICF1)</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>XOICQ8</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Formula Condition Data - Terms (enhance CI-Include in OICF2)</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>XOICQ9</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Formula Condition Data-Term Items (enhance CI-Incl.in OICF3)</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>XOIC_KOMV1</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Pricing Communications-Condition Record</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>XOICINT_CAL</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Structure for Interest calculation</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>XOIUQ9</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Formula Condition Data - Formula group items</STEXT>
+      </RSFDO>
+     </DOCUMENTATION>
+    </item>
+   </FUNCTIONS>
+  </asx:values>
+ </asx:abap>
+</abapGit>

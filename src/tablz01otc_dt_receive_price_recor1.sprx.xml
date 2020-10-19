@@ -1,0 +1,275 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<abapGit version="v1.0.0" serializer="LCL_OBJECT_SPRX" serializer_version="v1.0.0">
+ <asx:abap xmlns:asx="http://www.sap.com/abapxml" version="1.0">
+  <asx:values>
+   <PROXY_HEADER>
+    <item>
+     <OBJECT>TABL</OBJECT>
+     <OBJ_NAME>Z01OTC_DT_RECEIVE_PRICE_RECOR1</OBJ_NAME>
+     <OBJECT_M>TABL</OBJECT_M>
+     <OBJ_NAME_M>Z01OTC_DT_RECEIVE_PRICE</OBJ_NAME_M>
+     <HASH_ID>A19F21AD411D6B795F86AAA52124AB8DA9BB2C92</HASH_ID>
+     <ID>&lt;type&gt; Record &lt;element&gt; Record &lt;type&gt; Recordset &lt;element&gt; Recordset &lt;type&gt; DT_ReceivePrice http://bio-rad.com/OTC/ReceivePrice http://bio-rad.com/OTC/ReceivePrice</ID>
+     <IFR_TYPE>type</IFR_TYPE>
+     <IFR_NAME>Record</IFR_NAME>
+     <IFR_NSPCE>http://bio-rad.com/OTC/ReceivePrice</IFR_NSPCE>
+     <IFR_GNSPCE>http://bio-rad.com/OTC/ReceivePrice</IFR_GNSPCE>
+     <GEN_VERS>0005</GEN_VERS>
+     <PREFIX>Z01OTC_</PREFIX>
+     <CATEGORY>ifmtypedef</CATEGORY>
+     <X-ML_NSPCE>http://bio-rad.com/OTC/ReceivePrice</X-ML_NSPCE>
+     <X-ML_NAME>Record</X-ML_NAME>
+    </item>
+   </PROXY_HEADER>
+   <PROXY_DATA>
+    <item>
+     <OBJECT>TABL</OBJECT>
+     <OBJ_NAME>Z01OTC_DT_RECEIVE_PRICE_RECOR1</OBJ_NAME>
+     <OBJECT1>FIEL</OBJECT1>
+     <OBJ_NAME1>COUNTRY</OBJ_NAME1>
+     <OBJECT2>FIEL</OBJECT2>
+     <OBJ_NAME2>COUNTRY</OBJ_NAME2>
+     <ID>&lt;element&gt; Country &lt;type&gt; Record &lt;element&gt; Record &lt;type&gt; Recordset &lt;element&gt; Recordset &lt;type&gt; DT_ReceivePrice http://bio-rad.com/OTC/ReceivePrice http://bio-rad.com/OTC/ReceivePrice</ID>
+     <IFR_TYPE>element</IFR_TYPE>
+     <IFR_NAME>Country</IFR_NAME>
+     <IFR_TEXT>Country</IFR_TEXT>
+     <IFR_LANGU>EN</IFR_LANGU>
+     <IFR_TAGTYP>E</IFR_TAGTYP>
+     <IFR_MINOCC>1</IFR_MINOCC>
+     <IFR_MAXOCC>1</IFR_MAXOCC>
+     <IFR_XSDTYP>string</IFR_XSDTYP>
+     <IFR_SCALE>-2</IFR_SCALE>
+     <R3_TYPE>FIEL</R3_TYPE>
+     <R3_NAME>COUNTRY</R3_NAME>
+     <R3_TEXT>Country</R3_TEXT>
+     <R3_DATATYP>STRG</R3_DATATYP>
+     <R3_SEQNUM>000010</R3_SEQNUM>
+    </item>
+    <item>
+     <OBJECT>TABL</OBJECT>
+     <OBJ_NAME>Z01OTC_DT_RECEIVE_PRICE_RECOR1</OBJ_NAME>
+     <OBJECT1>FIEL</OBJECT1>
+     <OBJ_NAME1>CURRENCY</OBJ_NAME1>
+     <OBJECT2>FIEL</OBJECT2>
+     <OBJ_NAME2>CURRENCY</OBJ_NAME2>
+     <ID>&lt;element&gt; Currency &lt;type&gt; Record &lt;element&gt; Record &lt;type&gt; Recordset &lt;element&gt; Recordset &lt;type&gt; DT_ReceivePrice http://bio-rad.com/OTC/ReceivePrice http://bio-rad.com/OTC/ReceivePrice</ID>
+     <IFR_TYPE>element</IFR_TYPE>
+     <IFR_NAME>Currency</IFR_NAME>
+     <IFR_TEXT>Currency</IFR_TEXT>
+     <IFR_LANGU>EN</IFR_LANGU>
+     <IFR_TAGTYP>E</IFR_TAGTYP>
+     <IFR_MINOCC>1</IFR_MINOCC>
+     <IFR_MAXOCC>1</IFR_MAXOCC>
+     <IFR_XSDTYP>string</IFR_XSDTYP>
+     <IFR_SCALE>-2</IFR_SCALE>
+     <R3_TYPE>FIEL</R3_TYPE>
+     <R3_NAME>CURRENCY</R3_NAME>
+     <R3_TEXT>Currency</R3_TEXT>
+     <R3_DATATYP>STRG</R3_DATATYP>
+     <R3_SEQNUM>000007</R3_SEQNUM>
+    </item>
+    <item>
+     <OBJECT>TABL</OBJECT>
+     <OBJ_NAME>Z01OTC_DT_RECEIVE_PRICE_RECOR1</OBJ_NAME>
+     <OBJECT1>FIEL</OBJECT1>
+     <OBJ_NAME1>CUSTOMER_CODE</OBJ_NAME1>
+     <OBJECT2>FIEL</OBJECT2>
+     <OBJ_NAME2>CUSTOMER_CODE</OBJ_NAME2>
+     <ID>&lt;element&gt; CustomerCode &lt;type&gt; Record &lt;element&gt; Record &lt;type&gt; Recordset &lt;element&gt; Recordset &lt;type&gt; DT_ReceivePrice http://bio-rad.com/OTC/ReceivePrice http://bio-rad.com/OTC/ReceivePrice</ID>
+     <IFR_TYPE>element</IFR_TYPE>
+     <IFR_NAME>CustomerCode</IFR_NAME>
+     <IFR_TEXT>Customer Code</IFR_TEXT>
+     <IFR_LANGU>EN</IFR_LANGU>
+     <IFR_TAGTYP>E</IFR_TAGTYP>
+     <IFR_MINOCC>1</IFR_MINOCC>
+     <IFR_MAXOCC>1</IFR_MAXOCC>
+     <IFR_XSDTYP>string</IFR_XSDTYP>
+     <IFR_SCALE>-2</IFR_SCALE>
+     <R3_TYPE>FIEL</R3_TYPE>
+     <R3_NAME>CUSTOMER_CODE</R3_NAME>
+     <R3_TEXT>Customer Code</R3_TEXT>
+     <R3_DATATYP>STRG</R3_DATATYP>
+     <R3_SEQNUM>000001</R3_SEQNUM>
+    </item>
+    <item>
+     <OBJECT>TABL</OBJECT>
+     <OBJ_NAME>Z01OTC_DT_RECEIVE_PRICE_RECOR1</OBJ_NAME>
+     <OBJECT1>FIEL</OBJECT1>
+     <OBJ_NAME1>DELETION</OBJ_NAME1>
+     <OBJECT2>FIEL</OBJECT2>
+     <OBJ_NAME2>DELETION</OBJ_NAME2>
+     <ID>&lt;element&gt; Deletion &lt;type&gt; Record &lt;element&gt; Record &lt;type&gt; Recordset &lt;element&gt; Recordset &lt;type&gt; DT_ReceivePrice http://bio-rad.com/OTC/ReceivePrice http://bio-rad.com/OTC/ReceivePrice</ID>
+     <IFR_TYPE>element</IFR_TYPE>
+     <IFR_NAME>Deletion</IFR_NAME>
+     <IFR_TEXT>Deletion</IFR_TEXT>
+     <IFR_LANGU>EN</IFR_LANGU>
+     <IFR_TAGTYP>E</IFR_TAGTYP>
+     <IFR_MAXOCC>1</IFR_MAXOCC>
+     <IFR_OPTNL>X</IFR_OPTNL>
+     <IFR_XSDTYP>string</IFR_XSDTYP>
+     <IFR_SCALE>-2</IFR_SCALE>
+     <R3_TYPE>FIEL</R3_TYPE>
+     <R3_NAME>DELETION</R3_NAME>
+     <R3_TEXT>Deletion</R3_TEXT>
+     <R3_DATATYP>STRG</R3_DATATYP>
+     <R3_SEQNUM>000009</R3_SEQNUM>
+    </item>
+    <item>
+     <OBJECT>TABL</OBJECT>
+     <OBJ_NAME>Z01OTC_DT_RECEIVE_PRICE_RECOR1</OBJ_NAME>
+     <OBJECT1>FIEL</OBJECT1>
+     <OBJ_NAME1>END_DATE</OBJ_NAME1>
+     <OBJECT2>FIEL</OBJECT2>
+     <OBJ_NAME2>END_DATE</OBJ_NAME2>
+     <ID>&lt;element&gt; EndDate &lt;type&gt; Record &lt;element&gt; Record &lt;type&gt; Recordset &lt;element&gt; Recordset &lt;type&gt; DT_ReceivePrice http://bio-rad.com/OTC/ReceivePrice http://bio-rad.com/OTC/ReceivePrice</ID>
+     <IFR_TYPE>element</IFR_TYPE>
+     <IFR_NAME>EndDate</IFR_NAME>
+     <IFR_TEXT>End Date</IFR_TEXT>
+     <IFR_LANGU>EN</IFR_LANGU>
+     <IFR_TAGTYP>E</IFR_TAGTYP>
+     <IFR_MINOCC>1</IFR_MINOCC>
+     <IFR_MAXOCC>1</IFR_MAXOCC>
+     <IFR_XSDTYP>string</IFR_XSDTYP>
+     <IFR_SCALE>-2</IFR_SCALE>
+     <R3_TYPE>FIEL</R3_TYPE>
+     <R3_NAME>END_DATE</R3_NAME>
+     <R3_TEXT>End Date</R3_TEXT>
+     <R3_DATATYP>STRG</R3_DATATYP>
+     <R3_SEQNUM>000005</R3_SEQNUM>
+    </item>
+    <item>
+     <OBJECT>TABL</OBJECT>
+     <OBJ_NAME>Z01OTC_DT_RECEIVE_PRICE_RECOR1</OBJ_NAME>
+     <OBJECT1>FIEL</OBJECT1>
+     <OBJ_NAME1>ITEM_CODE</OBJ_NAME1>
+     <OBJECT2>FIEL</OBJECT2>
+     <OBJ_NAME2>ITEM_CODE</OBJ_NAME2>
+     <ID>&lt;element&gt; ItemCode &lt;type&gt; Record &lt;element&gt; Record &lt;type&gt; Recordset &lt;element&gt; Recordset &lt;type&gt; DT_ReceivePrice http://bio-rad.com/OTC/ReceivePrice http://bio-rad.com/OTC/ReceivePrice</ID>
+     <IFR_TYPE>element</IFR_TYPE>
+     <IFR_NAME>ItemCode</IFR_NAME>
+     <IFR_TEXT>Item Code</IFR_TEXT>
+     <IFR_LANGU>EN</IFR_LANGU>
+     <IFR_TAGTYP>E</IFR_TAGTYP>
+     <IFR_MINOCC>1</IFR_MINOCC>
+     <IFR_MAXOCC>1</IFR_MAXOCC>
+     <IFR_XSDTYP>string</IFR_XSDTYP>
+     <IFR_SCALE>-2</IFR_SCALE>
+     <R3_TYPE>FIEL</R3_TYPE>
+     <R3_NAME>ITEM_CODE</R3_NAME>
+     <R3_TEXT>Item Code</R3_TEXT>
+     <R3_DATATYP>STRG</R3_DATATYP>
+     <R3_SEQNUM>000003</R3_SEQNUM>
+    </item>
+    <item>
+     <OBJECT>TABL</OBJECT>
+     <OBJ_NAME>Z01OTC_DT_RECEIVE_PRICE_RECOR1</OBJ_NAME>
+     <OBJECT1>FIEL</OBJECT1>
+     <OBJ_NAME1>ITEM_PRICE</OBJ_NAME1>
+     <OBJECT2>FIEL</OBJECT2>
+     <OBJ_NAME2>ITEM_PRICE</OBJ_NAME2>
+     <ID>&lt;element&gt; ItemPrice &lt;type&gt; Record &lt;element&gt; Record &lt;type&gt; Recordset &lt;element&gt; Recordset &lt;type&gt; DT_ReceivePrice http://bio-rad.com/OTC/ReceivePrice http://bio-rad.com/OTC/ReceivePrice</ID>
+     <IFR_TYPE>element</IFR_TYPE>
+     <IFR_NAME>ItemPrice</IFR_NAME>
+     <IFR_TEXT>Item Price</IFR_TEXT>
+     <IFR_LANGU>EN</IFR_LANGU>
+     <IFR_TAGTYP>E</IFR_TAGTYP>
+     <IFR_MINOCC>1</IFR_MINOCC>
+     <IFR_MAXOCC>1</IFR_MAXOCC>
+     <IFR_XSDTYP>string</IFR_XSDTYP>
+     <IFR_SCALE>-2</IFR_SCALE>
+     <R3_TYPE>FIEL</R3_TYPE>
+     <R3_NAME>ITEM_PRICE</R3_NAME>
+     <R3_TEXT>Item Price</R3_TEXT>
+     <R3_DATATYP>STRG</R3_DATATYP>
+     <R3_SEQNUM>000008</R3_SEQNUM>
+    </item>
+    <item>
+     <OBJECT>TABL</OBJECT>
+     <OBJ_NAME>Z01OTC_DT_RECEIVE_PRICE_RECOR1</OBJ_NAME>
+     <OBJECT1>FIEL</OBJECT1>
+     <OBJ_NAME1>QUOTE_ID</OBJ_NAME1>
+     <OBJECT2>FIEL</OBJECT2>
+     <OBJ_NAME2>QUOTE_ID</OBJ_NAME2>
+     <ID>&lt;element&gt; QuoteID &lt;type&gt; Record &lt;element&gt; Record &lt;type&gt; Recordset &lt;element&gt; Recordset &lt;type&gt; DT_ReceivePrice http://bio-rad.com/OTC/ReceivePrice http://bio-rad.com/OTC/ReceivePrice</ID>
+     <IFR_TYPE>element</IFR_TYPE>
+     <IFR_NAME>QuoteID</IFR_NAME>
+     <IFR_TEXT>Quote ID</IFR_TEXT>
+     <IFR_LANGU>EN</IFR_LANGU>
+     <IFR_TAGTYP>E</IFR_TAGTYP>
+     <IFR_MAXOCC>1</IFR_MAXOCC>
+     <IFR_OPTNL>X</IFR_OPTNL>
+     <IFR_XSDTYP>string</IFR_XSDTYP>
+     <IFR_SCALE>-2</IFR_SCALE>
+     <R3_TYPE>FIEL</R3_TYPE>
+     <R3_NAME>QUOTE_ID</R3_NAME>
+     <R3_TEXT>Quote ID</R3_TEXT>
+     <R3_DATATYP>STRG</R3_DATATYP>
+     <R3_SEQNUM>000006</R3_SEQNUM>
+    </item>
+    <item>
+     <OBJECT>TABL</OBJECT>
+     <OBJ_NAME>Z01OTC_DT_RECEIVE_PRICE_RECOR1</OBJ_NAME>
+     <OBJECT1>FIEL</OBJECT1>
+     <OBJ_NAME1>SHIP_TO</OBJ_NAME1>
+     <OBJECT2>FIEL</OBJECT2>
+     <OBJ_NAME2>SHIP_TO</OBJ_NAME2>
+     <ID>&lt;element&gt; ShipTo &lt;type&gt; Record &lt;element&gt; Record &lt;type&gt; Recordset &lt;element&gt; Recordset &lt;type&gt; DT_ReceivePrice http://bio-rad.com/OTC/ReceivePrice http://bio-rad.com/OTC/ReceivePrice</ID>
+     <IFR_TYPE>element</IFR_TYPE>
+     <IFR_NAME>ShipTo</IFR_NAME>
+     <IFR_TEXT>Ship to</IFR_TEXT>
+     <IFR_LANGU>EN</IFR_LANGU>
+     <IFR_TAGTYP>E</IFR_TAGTYP>
+     <IFR_MAXOCC>1</IFR_MAXOCC>
+     <IFR_OPTNL>X</IFR_OPTNL>
+     <IFR_XSDTYP>string</IFR_XSDTYP>
+     <IFR_SCALE>-2</IFR_SCALE>
+     <R3_TYPE>FIEL</R3_TYPE>
+     <R3_NAME>SHIP_TO</R3_NAME>
+     <R3_TEXT>Ship to</R3_TEXT>
+     <R3_DATATYP>STRG</R3_DATATYP>
+     <R3_SEQNUM>000002</R3_SEQNUM>
+    </item>
+    <item>
+     <OBJECT>TABL</OBJECT>
+     <OBJ_NAME>Z01OTC_DT_RECEIVE_PRICE_RECOR1</OBJ_NAME>
+     <OBJECT1>FIEL</OBJECT1>
+     <OBJ_NAME1>START_DATE</OBJ_NAME1>
+     <OBJECT2>FIEL</OBJECT2>
+     <OBJ_NAME2>START_DATE</OBJ_NAME2>
+     <ID>&lt;element&gt; StartDate &lt;type&gt; Record &lt;element&gt; Record &lt;type&gt; Recordset &lt;element&gt; Recordset &lt;type&gt; DT_ReceivePrice http://bio-rad.com/OTC/ReceivePrice http://bio-rad.com/OTC/ReceivePrice</ID>
+     <IFR_TYPE>element</IFR_TYPE>
+     <IFR_NAME>StartDate</IFR_NAME>
+     <IFR_TEXT>Start Date</IFR_TEXT>
+     <IFR_LANGU>EN</IFR_LANGU>
+     <IFR_TAGTYP>E</IFR_TAGTYP>
+     <IFR_MINOCC>1</IFR_MINOCC>
+     <IFR_MAXOCC>1</IFR_MAXOCC>
+     <IFR_XSDTYP>string</IFR_XSDTYP>
+     <IFR_SCALE>-2</IFR_SCALE>
+     <R3_TYPE>FIEL</R3_TYPE>
+     <R3_NAME>START_DATE</R3_NAME>
+     <R3_TEXT>Start Date</R3_TEXT>
+     <R3_DATATYP>STRG</R3_DATATYP>
+     <R3_SEQNUM>000004</R3_SEQNUM>
+    </item>
+    <item>
+     <OBJECT>TABL</OBJECT>
+     <OBJ_NAME>Z01OTC_DT_RECEIVE_PRICE_RECOR1</OBJ_NAME>
+     <OBJECT1>TABL</OBJECT1>
+     <OBJ_NAME1>Z01OTC_DT_RECEIVE_PRICE_RECOR1</OBJ_NAME1>
+     <OBJECT2>TABL</OBJECT2>
+     <OBJ_NAME2>Z01OTC_DT_RECEIVE_PRICE_RECOR1</OBJ_NAME2>
+     <ID>&lt;type&gt; Record &lt;element&gt; Record &lt;type&gt; Recordset &lt;element&gt; Recordset &lt;type&gt; DT_ReceivePrice http://bio-rad.com/OTC/ReceivePrice http://bio-rad.com/OTC/ReceivePrice</ID>
+     <IFR_TYPE>type</IFR_TYPE>
+     <IFR_NAME>Record</IFR_NAME>
+     <IFR_LANGU>EN</IFR_LANGU>
+     <IFR_SCALE>-2</IFR_SCALE>
+     <R3_TYPE>TABL</R3_TYPE>
+     <R3_NAME>Z01OTC_DT_RECEIVE_PRICE_RECOR1</R3_NAME>
+     <R3_TEXT>Proxy Structure (generated)</R3_TEXT>
+     <CATEGORY>ifmtypedef</CATEGORY>
+    </item>
+   </PROXY_DATA>
+  </asx:values>
+ </asx:abap>
+</abapGit>

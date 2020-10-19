@@ -1,0 +1,829 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<abapGit version="v1.0.0" serializer="LCL_OBJECT_SPRX" serializer_version="v1.0.0">
+ <asx:abap xmlns:asx="http://www.sap.com/abapxml" version="1.0">
+  <asx:values>
+   <PROXY_HEADER>
+    <item>
+     <OBJECT>TABL</OBJECT>
+     <OBJ_NAME>Z01OTC_ORDERS05_E1EDK01</OBJ_NAME>
+     <OBJECT_M>INTF</OBJECT_M>
+     <OBJ_NAME_M>Z01OTC_II_SI_EDI850ORDERS_IN</OBJ_NAME_M>
+     <HASH_ID>8D76D83429884E52567B7E133D10E27E9D5651A1</HASH_ID>
+     <ID>&lt;type&gt; ORDERS05.E1EDK01  SI_EDI850Orders_In(http://bio-rad.com/OTC/EDI850)</ID>
+     <IFR_TYPE>type</IFR_TYPE>
+     <IFR_NAME>ORDERS05.E1EDK01</IFR_NAME>
+     <IFR_GNSPCE>SI_EDI850Orders_In(http://bio-rad.com/OTC/EDI850)</IFR_GNSPCE>
+     <GEN_VERS>0005</GEN_VERS>
+     <PREFIX>Z01OTC_</PREFIX>
+     <CATEGORY>ifmtypedef</CATEGORY>
+     <X-ML_NAME>ORDERS05.E1EDK01</X-ML_NAME>
+    </item>
+   </PROXY_HEADER>
+   <PROXY_DATA>
+    <item>
+     <OBJECT>TABL</OBJECT>
+     <OBJ_NAME>Z01OTC_ORDERS05_E1EDK01</OBJ_NAME>
+     <OBJECT1>FIEL</OBJECT1>
+     <OBJ_NAME1>ABLAD</OBJ_NAME1>
+     <OBJECT2>FIEL</OBJECT2>
+     <OBJ_NAME2>ABLAD</OBJ_NAME2>
+     <ID>&lt;element&gt; ABLAD &lt;type&gt; ORDERS05.E1EDK01  SI_EDI850Orders_In(http://bio-rad.com/OTC/EDI850)</ID>
+     <IFR_TYPE>element</IFR_TYPE>
+     <IFR_NAME>ABLAD</IFR_NAME>
+     <IFR_TEXT>Unloading Point</IFR_TEXT>
+     <IFR_TAGTYP>E</IFR_TAGTYP>
+     <IFR_MAXOCC>1</IFR_MAXOCC>
+     <IFR_OPTNL>X</IFR_OPTNL>
+     <IFR_XSDTYP>string</IFR_XSDTYP>
+     <IFR_MAXLEN>25</IFR_MAXLEN>
+     <IFR_SCALE>-2</IFR_SCALE>
+     <R3_TYPE>FIEL</R3_TYPE>
+     <R3_NAME>ABLAD</R3_NAME>
+     <R3_TEXT>Unloading Point</R3_TEXT>
+     <R3_DATATYP>CHAR</R3_DATATYP>
+     <R3_LENGTH>000025</R3_LENGTH>
+     <R3_SEQNUM>000015</R3_SEQNUM>
+    </item>
+    <item>
+     <OBJECT>TABL</OBJECT>
+     <OBJ_NAME>Z01OTC_ORDERS05_E1EDK01</OBJ_NAME>
+     <OBJECT1>FIEL</OBJECT1>
+     <OBJ_NAME1>ABRVW</OBJ_NAME1>
+     <OBJECT2>FIEL</OBJECT2>
+     <OBJ_NAME2>ABRVW</OBJ_NAME2>
+     <ID>&lt;element&gt; ABRVW &lt;type&gt; ORDERS05.E1EDK01  SI_EDI850Orders_In(http://bio-rad.com/OTC/EDI850)</ID>
+     <IFR_TYPE>element</IFR_TYPE>
+     <IFR_NAME>ABRVW</IFR_NAME>
+     <IFR_TEXT>Usage Indicator</IFR_TEXT>
+     <IFR_TAGTYP>E</IFR_TAGTYP>
+     <IFR_MAXOCC>1</IFR_MAXOCC>
+     <IFR_OPTNL>X</IFR_OPTNL>
+     <IFR_XSDTYP>string</IFR_XSDTYP>
+     <IFR_MAXLEN>3</IFR_MAXLEN>
+     <IFR_SCALE>-2</IFR_SCALE>
+     <R3_TYPE>FIEL</R3_TYPE>
+     <R3_NAME>ABRVW</R3_NAME>
+     <R3_TEXT>Usage Indicator</R3_TEXT>
+     <R3_DATATYP>CHAR</R3_DATATYP>
+     <R3_LENGTH>000003</R3_LENGTH>
+     <R3_SEQNUM>000024</R3_SEQNUM>
+    </item>
+    <item>
+     <OBJECT>TABL</OBJECT>
+     <OBJ_NAME>Z01OTC_ORDERS05_E1EDK01</OBJ_NAME>
+     <OBJECT1>FIEL</OBJECT1>
+     <OBJ_NAME1>ABRVW_BEZ</OBJ_NAME1>
+     <OBJECT2>FIEL</OBJECT2>
+     <OBJ_NAME2>ABRVW_BEZ</OBJ_NAME2>
+     <ID>&lt;element&gt; ABRVW_BEZ &lt;type&gt; ORDERS05.E1EDK01  SI_EDI850Orders_In(http://bio-rad.com/OTC/EDI850)</ID>
+     <IFR_TYPE>element</IFR_TYPE>
+     <IFR_NAME>ABRVW_BEZ</IFR_NAME>
+     <IFR_TEXT>Description</IFR_TEXT>
+     <IFR_TAGTYP>E</IFR_TAGTYP>
+     <IFR_MAXOCC>1</IFR_MAXOCC>
+     <IFR_OPTNL>X</IFR_OPTNL>
+     <IFR_XSDTYP>string</IFR_XSDTYP>
+     <IFR_MAXLEN>20</IFR_MAXLEN>
+     <IFR_SCALE>-2</IFR_SCALE>
+     <R3_TYPE>FIEL</R3_TYPE>
+     <R3_NAME>ABRVW_BEZ</R3_NAME>
+     <R3_TEXT>Description</R3_TEXT>
+     <R3_DATATYP>CHAR</R3_DATATYP>
+     <R3_LENGTH>000020</R3_LENGTH>
+     <R3_SEQNUM>000025</R3_SEQNUM>
+    </item>
+    <item>
+     <OBJECT>TABL</OBJECT>
+     <OBJ_NAME>Z01OTC_ORDERS05_E1EDK01</OBJ_NAME>
+     <OBJECT1>FIEL</OBJECT1>
+     <OBJ_NAME1>ABTNR</OBJ_NAME1>
+     <OBJECT2>FIEL</OBJECT2>
+     <OBJ_NAME2>ABTNR</OBJ_NAME2>
+     <ID>&lt;element&gt; ABTNR &lt;type&gt; ORDERS05.E1EDK01  SI_EDI850Orders_In(http://bio-rad.com/OTC/EDI850)</ID>
+     <IFR_TYPE>element</IFR_TYPE>
+     <IFR_NAME>ABTNR</IFR_NAME>
+     <IFR_TEXT>Department number</IFR_TEXT>
+     <IFR_TAGTYP>E</IFR_TAGTYP>
+     <IFR_MAXOCC>1</IFR_MAXOCC>
+     <IFR_OPTNL>X</IFR_OPTNL>
+     <IFR_XSDTYP>string</IFR_XSDTYP>
+     <IFR_MAXLEN>4</IFR_MAXLEN>
+     <IFR_SCALE>-2</IFR_SCALE>
+     <R3_TYPE>FIEL</R3_TYPE>
+     <R3_NAME>ABTNR</R3_NAME>
+     <R3_TEXT>Department number</R3_TEXT>
+     <R3_DATATYP>CHAR</R3_DATATYP>
+     <R3_LENGTH>000004</R3_LENGTH>
+     <R3_SEQNUM>000030</R3_SEQNUM>
+    </item>
+    <item>
+     <OBJECT>TABL</OBJECT>
+     <OBJ_NAME>Z01OTC_ORDERS05_E1EDK01</OBJ_NAME>
+     <OBJECT1>FIEL</OBJECT1>
+     <OBJ_NAME1>ACTION</OBJ_NAME1>
+     <OBJECT2>FIEL</OBJECT2>
+     <OBJ_NAME2>ACTION</OBJ_NAME2>
+     <ID>&lt;element&gt; ACTION &lt;type&gt; ORDERS05.E1EDK01  SI_EDI850Orders_In(http://bio-rad.com/OTC/EDI850)</ID>
+     <IFR_TYPE>element</IFR_TYPE>
+     <IFR_NAME>ACTION</IFR_NAME>
+     <IFR_TEXT>Action code for the whole EDI message</IFR_TEXT>
+     <IFR_TAGTYP>E</IFR_TAGTYP>
+     <IFR_MAXOCC>1</IFR_MAXOCC>
+     <IFR_OPTNL>X</IFR_OPTNL>
+     <IFR_XSDTYP>string</IFR_XSDTYP>
+     <IFR_MAXLEN>3</IFR_MAXLEN>
+     <IFR_SCALE>-2</IFR_SCALE>
+     <R3_TYPE>FIEL</R3_TYPE>
+     <R3_NAME>ACTION</R3_NAME>
+     <R3_TEXT>Action code for the whole EDI message</R3_TEXT>
+     <R3_DATATYP>CHAR</R3_DATATYP>
+     <R3_LENGTH>000003</R3_LENGTH>
+     <R3_SEQNUM>000001</R3_SEQNUM>
+    </item>
+    <item>
+     <OBJECT>TABL</OBJECT>
+     <OBJ_NAME>Z01OTC_ORDERS05_E1EDK01</OBJ_NAME>
+     <OBJECT1>FIEL</OBJECT1>
+     <OBJ_NAME1>AUGRU</OBJ_NAME1>
+     <OBJECT2>FIEL</OBJECT2>
+     <OBJ_NAME2>AUGRU</OBJ_NAME2>
+     <ID>&lt;element&gt; AUGRU &lt;type&gt; ORDERS05.E1EDK01  SI_EDI850Orders_In(http://bio-rad.com/OTC/EDI850)</ID>
+     <IFR_TYPE>element</IFR_TYPE>
+     <IFR_NAME>AUGRU</IFR_NAME>
+     <IFR_TEXT>Order reason (reason for the business transaction)</IFR_TEXT>
+     <IFR_TAGTYP>E</IFR_TAGTYP>
+     <IFR_MAXOCC>1</IFR_MAXOCC>
+     <IFR_OPTNL>X</IFR_OPTNL>
+     <IFR_XSDTYP>string</IFR_XSDTYP>
+     <IFR_MAXLEN>3</IFR_MAXLEN>
+     <IFR_SCALE>-2</IFR_SCALE>
+     <R3_TYPE>FIEL</R3_TYPE>
+     <R3_NAME>AUGRU</R3_NAME>
+     <R3_TEXT>Order reason (reason for the business transaction)</R3_TEXT>
+     <R3_DATATYP>CHAR</R3_DATATYP>
+     <R3_LENGTH>000003</R3_LENGTH>
+     <R3_SEQNUM>000022</R3_SEQNUM>
+    </item>
+    <item>
+     <OBJECT>TABL</OBJECT>
+     <OBJ_NAME>Z01OTC_ORDERS05_E1EDK01</OBJ_NAME>
+     <OBJECT1>FIEL</OBJECT1>
+     <OBJ_NAME1>AUGRU_BEZ</OBJ_NAME1>
+     <OBJECT2>FIEL</OBJECT2>
+     <OBJ_NAME2>AUGRU_BEZ</OBJ_NAME2>
+     <ID>&lt;element&gt; AUGRU_BEZ &lt;type&gt; ORDERS05.E1EDK01  SI_EDI850Orders_In(http://bio-rad.com/OTC/EDI850)</ID>
+     <IFR_TYPE>element</IFR_TYPE>
+     <IFR_NAME>AUGRU_BEZ</IFR_NAME>
+     <IFR_TEXT>Description</IFR_TEXT>
+     <IFR_TAGTYP>E</IFR_TAGTYP>
+     <IFR_MAXOCC>1</IFR_MAXOCC>
+     <IFR_OPTNL>X</IFR_OPTNL>
+     <IFR_XSDTYP>string</IFR_XSDTYP>
+     <IFR_MAXLEN>40</IFR_MAXLEN>
+     <IFR_SCALE>-2</IFR_SCALE>
+     <R3_TYPE>FIEL</R3_TYPE>
+     <R3_NAME>AUGRU_BEZ</R3_NAME>
+     <R3_TEXT>Description</R3_TEXT>
+     <R3_DATATYP>CHAR</R3_DATATYP>
+     <R3_LENGTH>000040</R3_LENGTH>
+     <R3_SEQNUM>000023</R3_SEQNUM>
+    </item>
+    <item>
+     <OBJECT>TABL</OBJECT>
+     <OBJ_NAME>Z01OTC_ORDERS05_E1EDK01</OBJ_NAME>
+     <OBJECT1>FIEL</OBJECT1>
+     <OBJ_NAME1>AUTLF</OBJ_NAME1>
+     <OBJECT2>FIEL</OBJECT2>
+     <OBJ_NAME2>AUTLF</OBJ_NAME2>
+     <ID>&lt;element&gt; AUTLF &lt;type&gt; ORDERS05.E1EDK01  SI_EDI850Orders_In(http://bio-rad.com/OTC/EDI850)</ID>
+     <IFR_TYPE>element</IFR_TYPE>
+     <IFR_NAME>AUTLF</IFR_NAME>
+     <IFR_TEXT>Complete delivery defined for each sales order?</IFR_TEXT>
+     <IFR_TAGTYP>E</IFR_TAGTYP>
+     <IFR_MAXOCC>1</IFR_MAXOCC>
+     <IFR_OPTNL>X</IFR_OPTNL>
+     <IFR_XSDTYP>string</IFR_XSDTYP>
+     <IFR_MAXLEN>1</IFR_MAXLEN>
+     <IFR_SCALE>-2</IFR_SCALE>
+     <R3_TYPE>FIEL</R3_TYPE>
+     <R3_NAME>AUTLF</R3_NAME>
+     <R3_TEXT>Complete delivery defined for each sales order?</R3_TEXT>
+     <R3_DATATYP>CHAR</R3_DATATYP>
+     <R3_LENGTH>000001</R3_LENGTH>
+     <R3_SEQNUM>000021</R3_SEQNUM>
+    </item>
+    <item>
+     <OBJECT>TABL</OBJECT>
+     <OBJ_NAME>Z01OTC_ORDERS05_E1EDK01</OBJ_NAME>
+     <OBJECT1>FIEL</OBJECT1>
+     <OBJ_NAME1>BELNR</OBJ_NAME1>
+     <OBJECT2>FIEL</OBJECT2>
+     <OBJ_NAME2>BELNR</OBJ_NAME2>
+     <ID>&lt;element&gt; BELNR &lt;type&gt; ORDERS05.E1EDK01  SI_EDI850Orders_In(http://bio-rad.com/OTC/EDI850)</ID>
+     <IFR_TYPE>element</IFR_TYPE>
+     <IFR_NAME>BELNR</IFR_NAME>
+     <IFR_TEXT>IDOC document number</IFR_TEXT>
+     <IFR_TAGTYP>E</IFR_TAGTYP>
+     <IFR_MAXOCC>1</IFR_MAXOCC>
+     <IFR_OPTNL>X</IFR_OPTNL>
+     <IFR_XSDTYP>string</IFR_XSDTYP>
+     <IFR_MAXLEN>35</IFR_MAXLEN>
+     <IFR_SCALE>-2</IFR_SCALE>
+     <R3_TYPE>FIEL</R3_TYPE>
+     <R3_NAME>BELNR</R3_NAME>
+     <R3_TEXT>IDOC document number</R3_TEXT>
+     <R3_DATATYP>CHAR</R3_DATATYP>
+     <R3_LENGTH>000035</R3_LENGTH>
+     <R3_SEQNUM>000010</R3_SEQNUM>
+    </item>
+    <item>
+     <OBJECT>TABL</OBJECT>
+     <OBJ_NAME>Z01OTC_ORDERS05_E1EDK01</OBJ_NAME>
+     <OBJECT1>FIEL</OBJECT1>
+     <OBJ_NAME1>BRGEW</OBJ_NAME1>
+     <OBJECT2>FIEL</OBJECT2>
+     <OBJ_NAME2>BRGEW</OBJ_NAME2>
+     <ID>&lt;element&gt; BRGEW &lt;type&gt; ORDERS05.E1EDK01  SI_EDI850Orders_In(http://bio-rad.com/OTC/EDI850)</ID>
+     <IFR_TYPE>element</IFR_TYPE>
+     <IFR_NAME>BRGEW</IFR_NAME>
+     <IFR_TEXT>Net weight</IFR_TEXT>
+     <IFR_TAGTYP>E</IFR_TAGTYP>
+     <IFR_MAXOCC>1</IFR_MAXOCC>
+     <IFR_OPTNL>X</IFR_OPTNL>
+     <IFR_XSDTYP>string</IFR_XSDTYP>
+     <IFR_MAXLEN>18</IFR_MAXLEN>
+     <IFR_SCALE>-2</IFR_SCALE>
+     <R3_TYPE>FIEL</R3_TYPE>
+     <R3_NAME>BRGEW</R3_NAME>
+     <R3_TEXT>Net weight</R3_TEXT>
+     <R3_DATATYP>CHAR</R3_DATATYP>
+     <R3_LENGTH>000018</R3_LENGTH>
+     <R3_SEQNUM>000012</R3_SEQNUM>
+    </item>
+    <item>
+     <OBJECT>TABL</OBJECT>
+     <OBJ_NAME>Z01OTC_ORDERS05_E1EDK01</OBJ_NAME>
+     <OBJECT1>FIEL</OBJECT1>
+     <OBJ_NAME1>BSART</OBJ_NAME1>
+     <OBJECT2>FIEL</OBJECT2>
+     <OBJ_NAME2>BSART</OBJ_NAME2>
+     <ID>&lt;element&gt; BSART &lt;type&gt; ORDERS05.E1EDK01  SI_EDI850Orders_In(http://bio-rad.com/OTC/EDI850)</ID>
+     <IFR_TYPE>element</IFR_TYPE>
+     <IFR_NAME>BSART</IFR_NAME>
+     <IFR_TEXT>Document type</IFR_TEXT>
+     <IFR_TAGTYP>E</IFR_TAGTYP>
+     <IFR_MAXOCC>1</IFR_MAXOCC>
+     <IFR_OPTNL>X</IFR_OPTNL>
+     <IFR_XSDTYP>string</IFR_XSDTYP>
+     <IFR_MAXLEN>4</IFR_MAXLEN>
+     <IFR_SCALE>-2</IFR_SCALE>
+     <R3_TYPE>FIEL</R3_TYPE>
+     <R3_NAME>BSART</R3_NAME>
+     <R3_TEXT>Document type</R3_TEXT>
+     <R3_DATATYP>CHAR</R3_DATATYP>
+     <R3_LENGTH>000004</R3_LENGTH>
+     <R3_SEQNUM>000009</R3_SEQNUM>
+    </item>
+    <item>
+     <OBJECT>TABL</OBJECT>
+     <OBJ_NAME>Z01OTC_ORDERS05_E1EDK01</OBJ_NAME>
+     <OBJECT1>FIEL</OBJECT1>
+     <OBJ_NAME1>BSTZD</OBJ_NAME1>
+     <OBJECT2>FIEL</OBJECT2>
+     <OBJ_NAME2>BSTZD</OBJ_NAME2>
+     <ID>&lt;element&gt; BSTZD &lt;type&gt; ORDERS05.E1EDK01  SI_EDI850Orders_In(http://bio-rad.com/OTC/EDI850)</ID>
+     <IFR_TYPE>element</IFR_TYPE>
+     <IFR_NAME>BSTZD</IFR_NAME>
+     <IFR_TEXT>Purchase order number supplement</IFR_TEXT>
+     <IFR_TAGTYP>E</IFR_TAGTYP>
+     <IFR_MAXOCC>1</IFR_MAXOCC>
+     <IFR_OPTNL>X</IFR_OPTNL>
+     <IFR_XSDTYP>string</IFR_XSDTYP>
+     <IFR_MAXLEN>4</IFR_MAXLEN>
+     <IFR_SCALE>-2</IFR_SCALE>
+     <R3_TYPE>FIEL</R3_TYPE>
+     <R3_NAME>BSTZD</R3_NAME>
+     <R3_TEXT>Purchase order number supplement</R3_TEXT>
+     <R3_DATATYP>CHAR</R3_DATATYP>
+     <R3_LENGTH>000004</R3_LENGTH>
+     <R3_SEQNUM>000016</R3_SEQNUM>
+    </item>
+    <item>
+     <OBJECT>TABL</OBJECT>
+     <OBJ_NAME>Z01OTC_ORDERS05_E1EDK01</OBJ_NAME>
+     <OBJECT1>FIEL</OBJECT1>
+     <OBJ_NAME1>CURCY</OBJ_NAME1>
+     <OBJECT2>FIEL</OBJECT2>
+     <OBJ_NAME2>CURCY</OBJ_NAME2>
+     <ID>&lt;element&gt; CURCY &lt;type&gt; ORDERS05.E1EDK01  SI_EDI850Orders_In(http://bio-rad.com/OTC/EDI850)</ID>
+     <IFR_TYPE>element</IFR_TYPE>
+     <IFR_NAME>CURCY</IFR_NAME>
+     <IFR_TEXT>Currency</IFR_TEXT>
+     <IFR_TAGTYP>E</IFR_TAGTYP>
+     <IFR_MAXOCC>1</IFR_MAXOCC>
+     <IFR_OPTNL>X</IFR_OPTNL>
+     <IFR_XSDTYP>string</IFR_XSDTYP>
+     <IFR_MAXLEN>3</IFR_MAXLEN>
+     <IFR_SCALE>-2</IFR_SCALE>
+     <R3_TYPE>FIEL</R3_TYPE>
+     <R3_NAME>CURCY</R3_NAME>
+     <R3_TEXT>Currency</R3_TEXT>
+     <R3_DATATYP>CHAR</R3_DATATYP>
+     <R3_LENGTH>000003</R3_LENGTH>
+     <R3_SEQNUM>000003</R3_SEQNUM>
+    </item>
+    <item>
+     <OBJECT>TABL</OBJECT>
+     <OBJ_NAME>Z01OTC_ORDERS05_E1EDK01</OBJ_NAME>
+     <OBJECT1>FIEL</OBJECT1>
+     <OBJ_NAME1>DELCO</OBJ_NAME1>
+     <OBJECT2>FIEL</OBJECT2>
+     <OBJ_NAME2>DELCO</OBJ_NAME2>
+     <ID>&lt;element&gt; DELCO &lt;type&gt; ORDERS05.E1EDK01  SI_EDI850Orders_In(http://bio-rad.com/OTC/EDI850)</ID>
+     <IFR_TYPE>element</IFR_TYPE>
+     <IFR_NAME>DELCO</IFR_NAME>
+     <IFR_TEXT>Agreed delivery time</IFR_TEXT>
+     <IFR_TAGTYP>E</IFR_TAGTYP>
+     <IFR_MAXOCC>1</IFR_MAXOCC>
+     <IFR_OPTNL>X</IFR_OPTNL>
+     <IFR_XSDTYP>string</IFR_XSDTYP>
+     <IFR_MAXLEN>3</IFR_MAXLEN>
+     <IFR_SCALE>-2</IFR_SCALE>
+     <R3_TYPE>FIEL</R3_TYPE>
+     <R3_NAME>DELCO</R3_NAME>
+     <R3_TEXT>Agreed delivery time</R3_TEXT>
+     <R3_DATATYP>CHAR</R3_DATATYP>
+     <R3_LENGTH>000003</R3_LENGTH>
+     <R3_SEQNUM>000031</R3_SEQNUM>
+    </item>
+    <item>
+     <OBJECT>TABL</OBJECT>
+     <OBJ_NAME>Z01OTC_ORDERS05_E1EDK01</OBJ_NAME>
+     <OBJECT1>FIEL</OBJECT1>
+     <OBJ_NAME1>EIGENUINR</OBJ_NAME1>
+     <OBJECT2>FIEL</OBJECT2>
+     <OBJ_NAME2>EIGENUINR</OBJ_NAME2>
+     <ID>&lt;element&gt; EIGENUINR &lt;type&gt; ORDERS05.E1EDK01  SI_EDI850Orders_In(http://bio-rad.com/OTC/EDI850)</ID>
+     <IFR_TYPE>element</IFR_TYPE>
+     <IFR_NAME>EIGENUINR</IFR_NAME>
+     <IFR_TEXT>VAT Registration Number</IFR_TEXT>
+     <IFR_TAGTYP>E</IFR_TAGTYP>
+     <IFR_MAXOCC>1</IFR_MAXOCC>
+     <IFR_OPTNL>X</IFR_OPTNL>
+     <IFR_XSDTYP>string</IFR_XSDTYP>
+     <IFR_MAXLEN>20</IFR_MAXLEN>
+     <IFR_SCALE>-2</IFR_SCALE>
+     <R3_TYPE>FIEL</R3_TYPE>
+     <R3_NAME>EIGENUINR</R3_NAME>
+     <R3_TEXT>VAT Registration Number</R3_TEXT>
+     <R3_DATATYP>CHAR</R3_DATATYP>
+     <R3_LENGTH>000020</R3_LENGTH>
+     <R3_SEQNUM>000008</R3_SEQNUM>
+    </item>
+    <item>
+     <OBJECT>TABL</OBJECT>
+     <OBJ_NAME>Z01OTC_ORDERS05_E1EDK01</OBJ_NAME>
+     <OBJECT1>FIEL</OBJECT1>
+     <OBJ_NAME1>EMPST</OBJ_NAME1>
+     <OBJECT2>FIEL</OBJECT2>
+     <OBJ_NAME2>EMPST</OBJ_NAME2>
+     <ID>&lt;element&gt; EMPST &lt;type&gt; ORDERS05.E1EDK01  SI_EDI850Orders_In(http://bio-rad.com/OTC/EDI850)</ID>
+     <IFR_TYPE>element</IFR_TYPE>
+     <IFR_NAME>EMPST</IFR_NAME>
+     <IFR_TEXT>Receiving point</IFR_TEXT>
+     <IFR_TAGTYP>E</IFR_TAGTYP>
+     <IFR_MAXOCC>1</IFR_MAXOCC>
+     <IFR_OPTNL>X</IFR_OPTNL>
+     <IFR_XSDTYP>string</IFR_XSDTYP>
+     <IFR_MAXLEN>25</IFR_MAXLEN>
+     <IFR_SCALE>-2</IFR_SCALE>
+     <R3_TYPE>FIEL</R3_TYPE>
+     <R3_NAME>EMPST</R3_NAME>
+     <R3_TEXT>Receiving point</R3_TEXT>
+     <R3_DATATYP>CHAR</R3_DATATYP>
+     <R3_LENGTH>000025</R3_LENGTH>
+     <R3_SEQNUM>000029</R3_SEQNUM>
+    </item>
+    <item>
+     <OBJECT>TABL</OBJECT>
+     <OBJ_NAME>Z01OTC_ORDERS05_E1EDK01</OBJ_NAME>
+     <OBJECT1>FIEL</OBJECT1>
+     <OBJ_NAME1>FKART_RL</OBJ_NAME1>
+     <OBJECT2>FIEL</OBJECT2>
+     <OBJ_NAME2>FKART_RL</OBJ_NAME2>
+     <ID>&lt;element&gt; FKART_RL &lt;type&gt; ORDERS05.E1EDK01  SI_EDI850Orders_In(http://bio-rad.com/OTC/EDI850)</ID>
+     <IFR_TYPE>element</IFR_TYPE>
+     <IFR_NAME>FKART_RL</IFR_NAME>
+     <IFR_TEXT>Invoice list type</IFR_TEXT>
+     <IFR_TAGTYP>E</IFR_TAGTYP>
+     <IFR_MAXOCC>1</IFR_MAXOCC>
+     <IFR_OPTNL>X</IFR_OPTNL>
+     <IFR_XSDTYP>string</IFR_XSDTYP>
+     <IFR_MAXLEN>4</IFR_MAXLEN>
+     <IFR_SCALE>-2</IFR_SCALE>
+     <R3_TYPE>FIEL</R3_TYPE>
+     <R3_NAME>FKART_RL</R3_NAME>
+     <R3_TEXT>Invoice list type</R3_TEXT>
+     <R3_DATATYP>CHAR</R3_DATATYP>
+     <R3_LENGTH>000004</R3_LENGTH>
+     <R3_SEQNUM>000014</R3_SEQNUM>
+    </item>
+    <item>
+     <OBJECT>TABL</OBJECT>
+     <OBJ_NAME>Z01OTC_ORDERS05_E1EDK01</OBJ_NAME>
+     <OBJECT1>FIEL</OBJECT1>
+     <OBJ_NAME1>FKTYP</OBJ_NAME1>
+     <OBJECT2>FIEL</OBJECT2>
+     <OBJ_NAME2>FKTYP</OBJ_NAME2>
+     <ID>&lt;element&gt; FKTYP &lt;type&gt; ORDERS05.E1EDK01  SI_EDI850Orders_In(http://bio-rad.com/OTC/EDI850)</ID>
+     <IFR_TYPE>element</IFR_TYPE>
+     <IFR_NAME>FKTYP</IFR_NAME>
+     <IFR_TEXT>Billing category</IFR_TEXT>
+     <IFR_TAGTYP>E</IFR_TAGTYP>
+     <IFR_MAXOCC>1</IFR_MAXOCC>
+     <IFR_OPTNL>X</IFR_OPTNL>
+     <IFR_XSDTYP>string</IFR_XSDTYP>
+     <IFR_MAXLEN>1</IFR_MAXLEN>
+     <IFR_SCALE>-2</IFR_SCALE>
+     <R3_TYPE>FIEL</R3_TYPE>
+     <R3_NAME>FKTYP</R3_NAME>
+     <R3_TEXT>Billing category</R3_TEXT>
+     <R3_DATATYP>CHAR</R3_DATATYP>
+     <R3_LENGTH>000001</R3_LENGTH>
+     <R3_SEQNUM>000026</R3_SEQNUM>
+    </item>
+    <item>
+     <OBJECT>TABL</OBJECT>
+     <OBJ_NAME>Z01OTC_ORDERS05_E1EDK01</OBJ_NAME>
+     <OBJECT1>FIEL</OBJECT1>
+     <OBJ_NAME1>GEWEI</OBJ_NAME1>
+     <OBJECT2>FIEL</OBJECT2>
+     <OBJ_NAME2>GEWEI</OBJ_NAME2>
+     <ID>&lt;element&gt; GEWEI &lt;type&gt; ORDERS05.E1EDK01  SI_EDI850Orders_In(http://bio-rad.com/OTC/EDI850)</ID>
+     <IFR_TYPE>element</IFR_TYPE>
+     <IFR_NAME>GEWEI</IFR_NAME>
+     <IFR_TEXT>Weight unit</IFR_TEXT>
+     <IFR_TAGTYP>E</IFR_TAGTYP>
+     <IFR_MAXOCC>1</IFR_MAXOCC>
+     <IFR_OPTNL>X</IFR_OPTNL>
+     <IFR_XSDTYP>string</IFR_XSDTYP>
+     <IFR_MAXLEN>3</IFR_MAXLEN>
+     <IFR_SCALE>-2</IFR_SCALE>
+     <R3_TYPE>FIEL</R3_TYPE>
+     <R3_NAME>GEWEI</R3_NAME>
+     <R3_TEXT>Weight unit</R3_TEXT>
+     <R3_DATATYP>CHAR</R3_DATATYP>
+     <R3_LENGTH>000003</R3_LENGTH>
+     <R3_SEQNUM>000013</R3_SEQNUM>
+    </item>
+    <item>
+     <OBJECT>TABL</OBJECT>
+     <OBJ_NAME>Z01OTC_ORDERS05_E1EDK01</OBJ_NAME>
+     <OBJECT1>FIEL</OBJECT1>
+     <OBJ_NAME1>HWAER</OBJ_NAME1>
+     <OBJECT2>FIEL</OBJECT2>
+     <OBJ_NAME2>HWAER</OBJ_NAME2>
+     <ID>&lt;element&gt; HWAER &lt;type&gt; ORDERS05.E1EDK01  SI_EDI850Orders_In(http://bio-rad.com/OTC/EDI850)</ID>
+     <IFR_TYPE>element</IFR_TYPE>
+     <IFR_NAME>HWAER</IFR_NAME>
+     <IFR_TEXT>EDI local currency</IFR_TEXT>
+     <IFR_TAGTYP>E</IFR_TAGTYP>
+     <IFR_MAXOCC>1</IFR_MAXOCC>
+     <IFR_OPTNL>X</IFR_OPTNL>
+     <IFR_XSDTYP>string</IFR_XSDTYP>
+     <IFR_MAXLEN>3</IFR_MAXLEN>
+     <IFR_SCALE>-2</IFR_SCALE>
+     <R3_TYPE>FIEL</R3_TYPE>
+     <R3_NAME>HWAER</R3_NAME>
+     <R3_TEXT>EDI local currency</R3_TEXT>
+     <R3_DATATYP>CHAR</R3_DATATYP>
+     <R3_LENGTH>000003</R3_LENGTH>
+     <R3_SEQNUM>000004</R3_SEQNUM>
+    </item>
+    <item>
+     <OBJECT>TABL</OBJECT>
+     <OBJ_NAME>Z01OTC_ORDERS05_E1EDK01</OBJ_NAME>
+     <OBJECT1>FIEL</OBJECT1>
+     <OBJ_NAME1>KUNDEUINR</OBJ_NAME1>
+     <OBJECT2>FIEL</OBJECT2>
+     <OBJ_NAME2>KUNDEUINR</OBJ_NAME2>
+     <ID>&lt;element&gt; KUNDEUINR &lt;type&gt; ORDERS05.E1EDK01  SI_EDI850Orders_In(http://bio-rad.com/OTC/EDI850)</ID>
+     <IFR_TYPE>element</IFR_TYPE>
+     <IFR_NAME>KUNDEUINR</IFR_NAME>
+     <IFR_TEXT>VAT Registration Number</IFR_TEXT>
+     <IFR_TAGTYP>E</IFR_TAGTYP>
+     <IFR_MAXOCC>1</IFR_MAXOCC>
+     <IFR_OPTNL>X</IFR_OPTNL>
+     <IFR_XSDTYP>string</IFR_XSDTYP>
+     <IFR_MAXLEN>20</IFR_MAXLEN>
+     <IFR_SCALE>-2</IFR_SCALE>
+     <R3_TYPE>FIEL</R3_TYPE>
+     <R3_NAME>KUNDEUINR</R3_NAME>
+     <R3_TEXT>VAT Registration Number</R3_TEXT>
+     <R3_DATATYP>CHAR</R3_DATATYP>
+     <R3_LENGTH>000020</R3_LENGTH>
+     <R3_SEQNUM>000007</R3_SEQNUM>
+    </item>
+    <item>
+     <OBJECT>TABL</OBJECT>
+     <OBJ_NAME>Z01OTC_ORDERS05_E1EDK01</OBJ_NAME>
+     <OBJECT1>FIEL</OBJECT1>
+     <OBJ_NAME1>KZABS</OBJ_NAME1>
+     <OBJECT2>FIEL</OBJECT2>
+     <OBJ_NAME2>KZABS</OBJ_NAME2>
+     <ID>&lt;element&gt; KZABS &lt;type&gt; ORDERS05.E1EDK01  SI_EDI850Orders_In(http://bio-rad.com/OTC/EDI850)</ID>
+     <IFR_TYPE>element</IFR_TYPE>
+     <IFR_NAME>KZABS</IFR_NAME>
+     <IFR_TEXT>Flag: order acknowledgment required</IFR_TEXT>
+     <IFR_TAGTYP>E</IFR_TAGTYP>
+     <IFR_MAXOCC>1</IFR_MAXOCC>
+     <IFR_OPTNL>X</IFR_OPTNL>
+     <IFR_XSDTYP>string</IFR_XSDTYP>
+     <IFR_MAXLEN>1</IFR_MAXLEN>
+     <IFR_SCALE>-2</IFR_SCALE>
+     <R3_TYPE>FIEL</R3_TYPE>
+     <R3_NAME>KZABS</R3_NAME>
+     <R3_TEXT>Flag: order acknowledgment required</R3_TEXT>
+     <R3_DATATYP>CHAR</R3_DATATYP>
+     <R3_LENGTH>000001</R3_LENGTH>
+     <R3_SEQNUM>000002</R3_SEQNUM>
+    </item>
+    <item>
+     <OBJECT>TABL</OBJECT>
+     <OBJ_NAME>Z01OTC_ORDERS05_E1EDK01</OBJ_NAME>
+     <OBJECT1>FIEL</OBJECT1>
+     <OBJ_NAME1>KZAZU</OBJ_NAME1>
+     <OBJECT2>FIEL</OBJECT2>
+     <OBJ_NAME2>KZAZU</OBJ_NAME2>
+     <ID>&lt;element&gt; KZAZU &lt;type&gt; ORDERS05.E1EDK01  SI_EDI850Orders_In(http://bio-rad.com/OTC/EDI850)</ID>
+     <IFR_TYPE>element</IFR_TYPE>
+     <IFR_NAME>KZAZU</IFR_NAME>
+     <IFR_TEXT>Order Combination Indicator</IFR_TEXT>
+     <IFR_TAGTYP>E</IFR_TAGTYP>
+     <IFR_MAXOCC>1</IFR_MAXOCC>
+     <IFR_OPTNL>X</IFR_OPTNL>
+     <IFR_XSDTYP>string</IFR_XSDTYP>
+     <IFR_MAXLEN>1</IFR_MAXLEN>
+     <IFR_SCALE>-2</IFR_SCALE>
+     <R3_TYPE>FIEL</R3_TYPE>
+     <R3_NAME>KZAZU</R3_NAME>
+     <R3_TEXT>Order Combination Indicator</R3_TEXT>
+     <R3_DATATYP>CHAR</R3_DATATYP>
+     <R3_LENGTH>000001</R3_LENGTH>
+     <R3_SEQNUM>000020</R3_SEQNUM>
+    </item>
+    <item>
+     <OBJECT>TABL</OBJECT>
+     <OBJ_NAME>Z01OTC_ORDERS05_E1EDK01</OBJ_NAME>
+     <OBJECT1>FIEL</OBJECT1>
+     <OBJ_NAME1>LIFSK</OBJ_NAME1>
+     <OBJECT2>FIEL</OBJECT2>
+     <OBJ_NAME2>LIFSK</OBJ_NAME2>
+     <ID>&lt;element&gt; LIFSK &lt;type&gt; ORDERS05.E1EDK01  SI_EDI850Orders_In(http://bio-rad.com/OTC/EDI850)</ID>
+     <IFR_TYPE>element</IFR_TYPE>
+     <IFR_NAME>LIFSK</IFR_NAME>
+     <IFR_TEXT>Delivery block (document header)</IFR_TEXT>
+     <IFR_TAGTYP>E</IFR_TAGTYP>
+     <IFR_MAXOCC>1</IFR_MAXOCC>
+     <IFR_OPTNL>X</IFR_OPTNL>
+     <IFR_XSDTYP>string</IFR_XSDTYP>
+     <IFR_MAXLEN>2</IFR_MAXLEN>
+     <IFR_SCALE>-2</IFR_SCALE>
+     <R3_TYPE>FIEL</R3_TYPE>
+     <R3_NAME>LIFSK</R3_NAME>
+     <R3_TEXT>Delivery block (document header)</R3_TEXT>
+     <R3_DATATYP>CHAR</R3_DATATYP>
+     <R3_LENGTH>000002</R3_LENGTH>
+     <R3_SEQNUM>000027</R3_SEQNUM>
+    </item>
+    <item>
+     <OBJECT>TABL</OBJECT>
+     <OBJ_NAME>Z01OTC_ORDERS05_E1EDK01</OBJ_NAME>
+     <OBJECT1>FIEL</OBJECT1>
+     <OBJ_NAME1>LIFSK_BEZ</OBJ_NAME1>
+     <OBJECT2>FIEL</OBJECT2>
+     <OBJ_NAME2>LIFSK_BEZ</OBJ_NAME2>
+     <ID>&lt;element&gt; LIFSK_BEZ &lt;type&gt; ORDERS05.E1EDK01  SI_EDI850Orders_In(http://bio-rad.com/OTC/EDI850)</ID>
+     <IFR_TYPE>element</IFR_TYPE>
+     <IFR_NAME>LIFSK_BEZ</IFR_NAME>
+     <IFR_TEXT>Description</IFR_TEXT>
+     <IFR_TAGTYP>E</IFR_TAGTYP>
+     <IFR_MAXOCC>1</IFR_MAXOCC>
+     <IFR_OPTNL>X</IFR_OPTNL>
+     <IFR_XSDTYP>string</IFR_XSDTYP>
+     <IFR_MAXLEN>20</IFR_MAXLEN>
+     <IFR_SCALE>-2</IFR_SCALE>
+     <R3_TYPE>FIEL</R3_TYPE>
+     <R3_NAME>LIFSK_BEZ</R3_NAME>
+     <R3_TEXT>Description</R3_TEXT>
+     <R3_DATATYP>CHAR</R3_DATATYP>
+     <R3_LENGTH>000020</R3_LENGTH>
+     <R3_SEQNUM>000028</R3_SEQNUM>
+    </item>
+    <item>
+     <OBJECT>TABL</OBJECT>
+     <OBJ_NAME>Z01OTC_ORDERS05_E1EDK01</OBJ_NAME>
+     <OBJECT1>FIEL</OBJECT1>
+     <OBJ_NAME1>NTGEW</OBJ_NAME1>
+     <OBJECT2>FIEL</OBJECT2>
+     <OBJ_NAME2>NTGEW</OBJ_NAME2>
+     <ID>&lt;element&gt; NTGEW &lt;type&gt; ORDERS05.E1EDK01  SI_EDI850Orders_In(http://bio-rad.com/OTC/EDI850)</ID>
+     <IFR_TYPE>element</IFR_TYPE>
+     <IFR_NAME>NTGEW</IFR_NAME>
+     <IFR_TEXT>Net weight</IFR_TEXT>
+     <IFR_TAGTYP>E</IFR_TAGTYP>
+     <IFR_MAXOCC>1</IFR_MAXOCC>
+     <IFR_OPTNL>X</IFR_OPTNL>
+     <IFR_XSDTYP>string</IFR_XSDTYP>
+     <IFR_MAXLEN>18</IFR_MAXLEN>
+     <IFR_SCALE>-2</IFR_SCALE>
+     <R3_TYPE>FIEL</R3_TYPE>
+     <R3_NAME>NTGEW</R3_NAME>
+     <R3_TEXT>Net weight</R3_TEXT>
+     <R3_DATATYP>CHAR</R3_DATATYP>
+     <R3_LENGTH>000018</R3_LENGTH>
+     <R3_SEQNUM>000011</R3_SEQNUM>
+    </item>
+    <item>
+     <OBJECT>TABL</OBJECT>
+     <OBJ_NAME>Z01OTC_ORDERS05_E1EDK01</OBJ_NAME>
+     <OBJECT1>FIEL</OBJECT1>
+     <OBJ_NAME1>RECIPNT_NO</OBJ_NAME1>
+     <OBJECT2>FIEL</OBJECT2>
+     <OBJ_NAME2>RECIPNT_NO</OBJ_NAME2>
+     <ID>&lt;element&gt; RECIPNT_NO &lt;type&gt; ORDERS05.E1EDK01  SI_EDI850Orders_In(http://bio-rad.com/OTC/EDI850)</ID>
+     <IFR_TYPE>element</IFR_TYPE>
+     <IFR_NAME>RECIPNT_NO</IFR_NAME>
+     <IFR_TEXT>Number of recipient (for control via the ALE model)</IFR_TEXT>
+     <IFR_TAGTYP>E</IFR_TAGTYP>
+     <IFR_MAXOCC>1</IFR_MAXOCC>
+     <IFR_OPTNL>X</IFR_OPTNL>
+     <IFR_XSDTYP>string</IFR_XSDTYP>
+     <IFR_MAXLEN>10</IFR_MAXLEN>
+     <IFR_SCALE>-2</IFR_SCALE>
+     <R3_TYPE>FIEL</R3_TYPE>
+     <R3_NAME>RECIPNT_NO</R3_NAME>
+     <R3_TEXT>Number of recipient (for control via the ALE model)</R3_TEXT>
+     <R3_DATATYP>CHAR</R3_DATATYP>
+     <R3_LENGTH>000010</R3_LENGTH>
+     <R3_SEQNUM>000019</R3_SEQNUM>
+    </item>
+    <item>
+     <OBJECT>TABL</OBJECT>
+     <OBJ_NAME>Z01OTC_ORDERS05_E1EDK01</OBJ_NAME>
+     <OBJECT1>FIEL</OBJECT1>
+     <OBJ_NAME1>SEGMENT</OBJ_NAME1>
+     <OBJECT2>FIEL</OBJECT2>
+     <OBJ_NAME2>SEGMENT</OBJ_NAME2>
+     <ID>&lt;attribute&gt; SEGMENT &lt;type&gt; ORDERS05.E1EDK01  SI_EDI850Orders_In(http://bio-rad.com/OTC/EDI850)</ID>
+     <IFR_TYPE>attribute</IFR_TYPE>
+     <IFR_NAME>SEGMENT</IFR_NAME>
+     <IFR_TAGTYP>A</IFR_TAGTYP>
+     <IFR_XSDTYP>string</IFR_XSDTYP>
+     <IFR_SCALE>-2</IFR_SCALE>
+     <R3_TYPE>FIEL</R3_TYPE>
+     <R3_NAME>SEGMENT</R3_NAME>
+     <R3_DATATYP>STRG</R3_DATATYP>
+     <R3_SEQNUM>000033</R3_SEQNUM>
+    </item>
+    <item>
+     <OBJECT>TABL</OBJECT>
+     <OBJ_NAME>Z01OTC_ORDERS05_E1EDK01</OBJ_NAME>
+     <OBJECT1>FIEL</OBJECT1>
+     <OBJ_NAME1>VSART</OBJ_NAME1>
+     <OBJECT2>FIEL</OBJECT2>
+     <OBJ_NAME2>VSART</OBJ_NAME2>
+     <ID>&lt;element&gt; VSART &lt;type&gt; ORDERS05.E1EDK01  SI_EDI850Orders_In(http://bio-rad.com/OTC/EDI850)</ID>
+     <IFR_TYPE>element</IFR_TYPE>
+     <IFR_NAME>VSART</IFR_NAME>
+     <IFR_TEXT>Shipping Conditions</IFR_TEXT>
+     <IFR_TAGTYP>E</IFR_TAGTYP>
+     <IFR_MAXOCC>1</IFR_MAXOCC>
+     <IFR_OPTNL>X</IFR_OPTNL>
+     <IFR_XSDTYP>string</IFR_XSDTYP>
+     <IFR_MAXLEN>2</IFR_MAXLEN>
+     <IFR_SCALE>-2</IFR_SCALE>
+     <R3_TYPE>FIEL</R3_TYPE>
+     <R3_NAME>VSART</R3_NAME>
+     <R3_TEXT>Shipping Conditions</R3_TEXT>
+     <R3_DATATYP>CHAR</R3_DATATYP>
+     <R3_LENGTH>000002</R3_LENGTH>
+     <R3_SEQNUM>000017</R3_SEQNUM>
+    </item>
+    <item>
+     <OBJECT>TABL</OBJECT>
+     <OBJ_NAME>Z01OTC_ORDERS05_E1EDK01</OBJ_NAME>
+     <OBJECT1>FIEL</OBJECT1>
+     <OBJ_NAME1>VSART_BEZ</OBJ_NAME1>
+     <OBJECT2>FIEL</OBJECT2>
+     <OBJ_NAME2>VSART_BEZ</OBJ_NAME2>
+     <ID>&lt;element&gt; VSART_BEZ &lt;type&gt; ORDERS05.E1EDK01  SI_EDI850Orders_In(http://bio-rad.com/OTC/EDI850)</ID>
+     <IFR_TYPE>element</IFR_TYPE>
+     <IFR_NAME>VSART_BEZ</IFR_NAME>
+     <IFR_TEXT>Description of the Shipping Type</IFR_TEXT>
+     <IFR_TAGTYP>E</IFR_TAGTYP>
+     <IFR_MAXOCC>1</IFR_MAXOCC>
+     <IFR_OPTNL>X</IFR_OPTNL>
+     <IFR_XSDTYP>string</IFR_XSDTYP>
+     <IFR_MAXLEN>20</IFR_MAXLEN>
+     <IFR_SCALE>-2</IFR_SCALE>
+     <R3_TYPE>FIEL</R3_TYPE>
+     <R3_NAME>VSART_BEZ</R3_NAME>
+     <R3_TEXT>Description of the Shipping Type</R3_TEXT>
+     <R3_DATATYP>CHAR</R3_DATATYP>
+     <R3_LENGTH>000020</R3_LENGTH>
+     <R3_SEQNUM>000018</R3_SEQNUM>
+    </item>
+    <item>
+     <OBJECT>TABL</OBJECT>
+     <OBJ_NAME>Z01OTC_ORDERS05_E1EDK01</OBJ_NAME>
+     <OBJECT1>FIEL</OBJECT1>
+     <OBJ_NAME1>WKURS</OBJ_NAME1>
+     <OBJECT2>FIEL</OBJECT2>
+     <OBJ_NAME2>WKURS</OBJ_NAME2>
+     <ID>&lt;element&gt; WKURS &lt;type&gt; ORDERS05.E1EDK01  SI_EDI850Orders_In(http://bio-rad.com/OTC/EDI850)</ID>
+     <IFR_TYPE>element</IFR_TYPE>
+     <IFR_NAME>WKURS</IFR_NAME>
+     <IFR_TEXT>Exchange rate</IFR_TEXT>
+     <IFR_TAGTYP>E</IFR_TAGTYP>
+     <IFR_MAXOCC>1</IFR_MAXOCC>
+     <IFR_OPTNL>X</IFR_OPTNL>
+     <IFR_XSDTYP>string</IFR_XSDTYP>
+     <IFR_MAXLEN>12</IFR_MAXLEN>
+     <IFR_SCALE>-2</IFR_SCALE>
+     <R3_TYPE>FIEL</R3_TYPE>
+     <R3_NAME>WKURS</R3_NAME>
+     <R3_TEXT>Exchange rate</R3_TEXT>
+     <R3_DATATYP>CHAR</R3_DATATYP>
+     <R3_LENGTH>000012</R3_LENGTH>
+     <R3_SEQNUM>000005</R3_SEQNUM>
+    </item>
+    <item>
+     <OBJECT>TABL</OBJECT>
+     <OBJ_NAME>Z01OTC_ORDERS05_E1EDK01</OBJ_NAME>
+     <OBJECT1>FIEL</OBJECT1>
+     <OBJ_NAME1>WKURS_M</OBJ_NAME1>
+     <OBJECT2>FIEL</OBJECT2>
+     <OBJ_NAME2>WKURS_M</OBJ_NAME2>
+     <ID>&lt;element&gt; WKURS_M &lt;type&gt; ORDERS05.E1EDK01  SI_EDI850Orders_In(http://bio-rad.com/OTC/EDI850)</ID>
+     <IFR_TYPE>element</IFR_TYPE>
+     <IFR_NAME>WKURS_M</IFR_NAME>
+     <IFR_TEXT>Indirectly quoted exchange rate in an IDoc segment</IFR_TEXT>
+     <IFR_TAGTYP>E</IFR_TAGTYP>
+     <IFR_MAXOCC>1</IFR_MAXOCC>
+     <IFR_OPTNL>X</IFR_OPTNL>
+     <IFR_XSDTYP>string</IFR_XSDTYP>
+     <IFR_MAXLEN>12</IFR_MAXLEN>
+     <IFR_SCALE>-2</IFR_SCALE>
+     <R3_TYPE>FIEL</R3_TYPE>
+     <R3_NAME>WKURS_M</R3_NAME>
+     <R3_TEXT>Indirectly quoted exchange rate in an IDoc segment</R3_TEXT>
+     <R3_DATATYP>CHAR</R3_DATATYP>
+     <R3_LENGTH>000012</R3_LENGTH>
+     <R3_SEQNUM>000032</R3_SEQNUM>
+    </item>
+    <item>
+     <OBJECT>TABL</OBJECT>
+     <OBJ_NAME>Z01OTC_ORDERS05_E1EDK01</OBJ_NAME>
+     <OBJECT1>FIEL</OBJECT1>
+     <OBJ_NAME1>ZTERM</OBJ_NAME1>
+     <OBJECT2>FIEL</OBJECT2>
+     <OBJ_NAME2>ZTERM</OBJ_NAME2>
+     <ID>&lt;element&gt; ZTERM &lt;type&gt; ORDERS05.E1EDK01  SI_EDI850Orders_In(http://bio-rad.com/OTC/EDI850)</ID>
+     <IFR_TYPE>element</IFR_TYPE>
+     <IFR_NAME>ZTERM</IFR_NAME>
+     <IFR_TEXT>Terms of payment key</IFR_TEXT>
+     <IFR_TAGTYP>E</IFR_TAGTYP>
+     <IFR_MAXOCC>1</IFR_MAXOCC>
+     <IFR_OPTNL>X</IFR_OPTNL>
+     <IFR_XSDTYP>string</IFR_XSDTYP>
+     <IFR_MAXLEN>17</IFR_MAXLEN>
+     <IFR_SCALE>-2</IFR_SCALE>
+     <R3_TYPE>FIEL</R3_TYPE>
+     <R3_NAME>ZTERM</R3_NAME>
+     <R3_TEXT>Terms of payment key</R3_TEXT>
+     <R3_DATATYP>CHAR</R3_DATATYP>
+     <R3_LENGTH>000017</R3_LENGTH>
+     <R3_SEQNUM>000006</R3_SEQNUM>
+    </item>
+    <item>
+     <OBJECT>TABL</OBJECT>
+     <OBJ_NAME>Z01OTC_ORDERS05_E1EDK01</OBJ_NAME>
+     <OBJECT1>TABL</OBJECT1>
+     <OBJ_NAME1>Z01OTC_ORDERS05_E1EDK01</OBJ_NAME1>
+     <OBJECT2>TABL</OBJECT2>
+     <OBJ_NAME2>Z01OTC_ORDERS05_E1EDK01</OBJ_NAME2>
+     <ID>&lt;type&gt; ORDERS05.E1EDK01  SI_EDI850Orders_In(http://bio-rad.com/OTC/EDI850)</ID>
+     <IFR_TYPE>type</IFR_TYPE>
+     <IFR_NAME>ORDERS05.E1EDK01</IFR_NAME>
+     <IFR_TEXT>IDoc: Document header general data</IFR_TEXT>
+     <IFR_SCALE>-2</IFR_SCALE>
+     <R3_TYPE>TABL</R3_TYPE>
+     <R3_NAME>Z01OTC_ORDERS05_E1EDK01</R3_NAME>
+     <R3_TEXT>IDoc: Document header general data</R3_TEXT>
+     <CATEGORY>ifmtypedef</CATEGORY>
+    </item>
+   </PROXY_DATA>
+  </asx:values>
+ </asx:abap>
+</abapGit>

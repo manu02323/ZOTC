@@ -1,0 +1,50 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<abapGit version="v1.0.0" serializer="LCL_OBJECT_FUGR" serializer_version="v1.0.0">
+ <asx:abap xmlns:asx="http://www.sap.com/abapxml" version="1.0">
+  <asx:values>
+   <AREAT>Billing Plan</AREAT>
+   <INCLUDES>
+    <SOBJ_NAME>LZOTC_BILL_PLANTOP</SOBJ_NAME>
+    <SOBJ_NAME>SAPLZOTC_BILL_PLAN</SOBJ_NAME>
+   </INCLUDES>
+   <FUNCTIONS>
+    <item>
+     <FUNCNAME>ZOTC_BILLING_GET</FUNCNAME>
+     <SHORT_TEXT>To read the billing plan from the memory</SHORT_TEXT>
+     <EXPORT>
+      <RSEXP>
+       <PARAMETER>EX_SO_ITEM</PARAMETER>
+       <REFERENCE>X</REFERENCE>
+       <TYP>SAPPLCO_SLS_ORD_ERPCRTE_R_TAB7</TYP>
+      </RSEXP>
+     </EXPORT>
+     <DOCUMENTATION>
+      <RSFDO>
+       <PARAMETER>EX_SO_ITEM</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Sales Order Item</STEXT>
+      </RSFDO>
+     </DOCUMENTATION>
+    </item>
+    <item>
+     <FUNCNAME>ZOTC_BILLING_SET</FUNCNAME>
+     <SHORT_TEXT>To read the billing plan from the memory</SHORT_TEXT>
+     <IMPORT>
+      <RSIMP>
+       <PARAMETER>IM_SO_ITEM</PARAMETER>
+       <REFERENCE>X</REFERENCE>
+       <TYP>SAPPLCO_SLS_ORD_ERPCRTE_R_TAB7</TYP>
+      </RSIMP>
+     </IMPORT>
+     <DOCUMENTATION>
+      <RSFDO>
+       <PARAMETER>IM_SO_ITEM</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Sales Order Item</STEXT>
+      </RSFDO>
+     </DOCUMENTATION>
+    </item>
+   </FUNCTIONS>
+  </asx:values>
+ </asx:abap>
+</abapGit>

@@ -1,0 +1,41 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<abapGit version="v1.0.0" serializer="LCL_OBJECT_TABL" serializer_version="v1.0.0">
+ <asx:abap xmlns:asx="http://www.sap.com/abapxml" version="1.0">
+  <asx:values>
+   <DD02V>
+    <TABNAME>ZZVBKRED_EX1_OTC_EDD_0094</TABNAME>
+    <DDLANGUAGE>E</DDLANGUAGE>
+    <TABCLASS>APPEND</TABCLASS>
+    <SQLTAB>VBKRED_EX1</SQLTAB>
+    <DDTEXT>Add Sales Document Type &amp; Header Delivery Block</DDTEXT>
+    <EXCLASS>3</EXCLASS>
+   </DD02V>
+   <DD03P_TABLE>
+    <DD03P>
+     <TABNAME>ZZVBKRED_EX1_OTC_EDD_0094</TABNAME>
+     <FIELDNAME>ZZAUART</FIELDNAME>
+     <POSITION>0001</POSITION>
+     <ROLLNAME>AUART</ROLLNAME>
+     <ADMINFIELD>0</ADMINFIELD>
+     <COMPTYPE>E</COMPTYPE>
+    </DD03P>
+    <DD03P>
+     <TABNAME>ZZVBKRED_EX1_OTC_EDD_0094</TABNAME>
+     <FIELDNAME>ZZLIFSK</FIELDNAME>
+     <POSITION>0002</POSITION>
+     <ROLLNAME>LIFSK</ROLLNAME>
+     <ADMINFIELD>0</ADMINFIELD>
+     <COMPTYPE>E</COMPTYPE>
+    </DD03P>
+    <DD03P>
+     <TABNAME>ZZVBKRED_EX1_OTC_EDD_0094</TABNAME>
+     <FIELDNAME>ZZKDGRP</FIELDNAME>
+     <POSITION>0003</POSITION>
+     <ROLLNAME>KDGRP_CM</ROLLNAME>
+     <ADMINFIELD>0</ADMINFIELD>
+     <COMPTYPE>E</COMPTYPE>
+    </DD03P>
+   </DD03P_TABLE>
+  </asx:values>
+ </asx:abap>
+</abapGit>

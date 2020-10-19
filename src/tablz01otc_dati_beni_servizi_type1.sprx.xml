@@ -1,0 +1,85 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<abapGit version="v1.0.0" serializer="LCL_OBJECT_SPRX" serializer_version="v1.0.0">
+ <asx:abap xmlns:asx="http://www.sap.com/abapxml" version="1.0">
+  <asx:values>
+   <PROXY_HEADER>
+    <item>
+     <OBJECT>TABL</OBJECT>
+     <OBJ_NAME>Z01OTC_DATI_BENI_SERVIZI_TYPE1</OBJ_NAME>
+     <OBJECT_M>CLAS</OBJECT_M>
+     <OBJ_NAME_M>Z01OTC_CO_SI_INTREST_CHARGES_O</OBJ_NAME_M>
+     <HASH_ID>9E0956F7DCEA85DF7674D7C6D74AC46441A56598</HASH_ID>
+     <ID>&lt;type&gt; DatiBeniServiziType http://ivaservizi.agenziaentrate.gov.it/docs/xsd/fatture/v1.2 SI_IntrestCharges_Out(http://bio-rad.com/OTC/InterestCharges)</ID>
+     <IFR_TYPE>type</IFR_TYPE>
+     <IFR_NAME>DatiBeniServiziType</IFR_NAME>
+     <IFR_NSPCE>http://ivaservizi.agenziaentrate.gov.it/docs/xsd/fatture/v1.2</IFR_NSPCE>
+     <IFR_GNSPCE>SI_IntrestCharges_Out(http://bio-rad.com/OTC/InterestCharges)</IFR_GNSPCE>
+     <GEN_VERS>0005</GEN_VERS>
+     <PREFIX>Z01OTC_</PREFIX>
+     <CATEGORY>ifmtypedef</CATEGORY>
+     <X-ML_NSPCE>http://ivaservizi.agenziaentrate.gov.it/docs/xsd/fatture/v1.2</X-ML_NSPCE>
+     <X-ML_NAME>DatiBeniServiziType</X-ML_NAME>
+    </item>
+   </PROXY_HEADER>
+   <PROXY_DATA>
+    <item>
+     <OBJECT>TABL</OBJECT>
+     <OBJ_NAME>Z01OTC_DATI_BENI_SERVIZI_TYPE1</OBJ_NAME>
+     <OBJECT1>FIEL</OBJECT1>
+     <OBJ_NAME1>DATI_RIEPILOGO</OBJ_NAME1>
+     <OBJECT2>FIEL</OBJECT2>
+     <OBJ_NAME2>DATI_RIEPILOGO</OBJ_NAME2>
+     <OBJECT_R>TTYP</OBJECT_R>
+     <OBJ_NAME_R>Z01OTC_DATI_RIEPILOGO_TYP_TAB1</OBJ_NAME_R>
+     <ID>&lt;element&gt; DatiRiepilogo &lt;type&gt; DatiBeniServiziType http://ivaservizi.agenziaentrate.gov.it/docs/xsd/fatture/v1.2 SI_IntrestCharges_Out(http://bio-rad.com/OTC/InterestCharges)</ID>
+     <IFR_TYPE>element</IFR_TYPE>
+     <IFR_NAME>DatiRiepilogo</IFR_NAME>
+     <IFR_TAGTYP>L</IFR_TAGTYP>
+     <IFR_MINOCC>1</IFR_MINOCC>
+     <IFR_MAXOCC>65535</IFR_MAXOCC>
+     <IFR_SCALE>-2</IFR_SCALE>
+     <R3_TYPE>FIEL</R3_TYPE>
+     <R3_NAME>DATI_RIEPILOGO</R3_NAME>
+     <R3_SEQNUM>000002</R3_SEQNUM>
+    </item>
+    <item>
+     <OBJECT>TABL</OBJECT>
+     <OBJ_NAME>Z01OTC_DATI_BENI_SERVIZI_TYPE1</OBJ_NAME>
+     <OBJECT1>FIEL</OBJECT1>
+     <OBJ_NAME1>DETTAGLIO_LINEE</OBJ_NAME1>
+     <OBJECT2>FIEL</OBJECT2>
+     <OBJ_NAME2>DETTAGLIO_LINEE</OBJ_NAME2>
+     <OBJECT_R>TTYP</OBJECT_R>
+     <OBJ_NAME_R>Z01OTC_DETTAGLIO_LINEE_TY_TAB1</OBJ_NAME_R>
+     <ID>&lt;element&gt; DettaglioLinee &lt;type&gt; DatiBeniServiziType http://ivaservizi.agenziaentrate.gov.it/docs/xsd/fatture/v1.2 SI_IntrestCharges_Out(http://bio-rad.com/OTC/InterestCharges)</ID>
+     <IFR_TYPE>element</IFR_TYPE>
+     <IFR_NAME>DettaglioLinee</IFR_NAME>
+     <IFR_TAGTYP>L</IFR_TAGTYP>
+     <IFR_MINOCC>1</IFR_MINOCC>
+     <IFR_MAXOCC>65535</IFR_MAXOCC>
+     <IFR_SCALE>-2</IFR_SCALE>
+     <R3_TYPE>FIEL</R3_TYPE>
+     <R3_NAME>DETTAGLIO_LINEE</R3_NAME>
+     <R3_SEQNUM>000001</R3_SEQNUM>
+    </item>
+    <item>
+     <OBJECT>TABL</OBJECT>
+     <OBJ_NAME>Z01OTC_DATI_BENI_SERVIZI_TYPE1</OBJ_NAME>
+     <OBJECT1>TABL</OBJECT1>
+     <OBJ_NAME1>Z01OTC_DATI_BENI_SERVIZI_TYPE1</OBJ_NAME1>
+     <OBJECT2>TABL</OBJECT2>
+     <OBJ_NAME2>Z01OTC_DATI_BENI_SERVIZI_TYPE1</OBJ_NAME2>
+     <ID>&lt;type&gt; DatiBeniServiziType http://ivaservizi.agenziaentrate.gov.it/docs/xsd/fatture/v1.2 SI_IntrestCharges_Out(http://bio-rad.com/OTC/InterestCharges)</ID>
+     <IFR_TYPE>type</IFR_TYPE>
+     <IFR_NAME>DatiBeniServiziType</IFR_NAME>
+     <IFR_TEXT>Blocco relativo ai dati di Beni Servizi della Fattura	Elettronica</IFR_TEXT>
+     <IFR_SCALE>-2</IFR_SCALE>
+     <R3_TYPE>TABL</R3_TYPE>
+     <R3_NAME>Z01OTC_DATI_BENI_SERVIZI_TYPE1</R3_NAME>
+     <R3_TEXT>Blocco relativo ai dati di Beni Servizi della Fattura	Elettr</R3_TEXT>
+     <CATEGORY>ifmtypedef</CATEGORY>
+    </item>
+   </PROXY_DATA>
+  </asx:values>
+ </asx:abap>
+</abapGit>

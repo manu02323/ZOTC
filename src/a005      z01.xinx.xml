@@ -1,0 +1,43 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<abapGit version="v1.0.0" serializer="LCL_OBJECT_XINX" serializer_version="v1.0.0">
+ <asx:abap xmlns:asx="http://www.sap.com/abapxml" version="1.0">
+  <asx:values>
+   <XINX>
+    <DD12V>
+     <SQLTAB>A005</SQLTAB>
+     <INDEXNAME>Z01</INDEXNAME>
+     <AS4LOCAL>A</AS4LOCAL>
+     <DDLANGUAGE>E</DDLANGUAGE>
+     <DBSTATE>D</DBSTATE>
+     <DBINCLEXCL>E</DBINCLEXCL>
+     <DBSYSSEL1>HDB</DBSYSSEL1>
+     <DDTEXT>Index on Application, Condition Type and Valid-To date</DDTEXT>
+     <ISEXTIND>X</ISEXTIND>
+    </DD12V>
+    <T_DD17V>
+     <DD17V>
+      <SQLTAB>A005</SQLTAB>
+      <INDEXNAME>Z01</INDEXNAME>
+      <POSITION>0001</POSITION>
+      <AS4LOCAL>A</AS4LOCAL>
+      <FIELDNAME>KAPPL</FIELDNAME>
+     </DD17V>
+     <DD17V>
+      <SQLTAB>A005</SQLTAB>
+      <INDEXNAME>Z01</INDEXNAME>
+      <POSITION>0002</POSITION>
+      <AS4LOCAL>A</AS4LOCAL>
+      <FIELDNAME>KSCHL</FIELDNAME>
+     </DD17V>
+     <DD17V>
+      <SQLTAB>A005</SQLTAB>
+      <INDEXNAME>Z01</INDEXNAME>
+      <POSITION>0003</POSITION>
+      <AS4LOCAL>A</AS4LOCAL>
+      <FIELDNAME>DATBI</FIELDNAME>
+     </DD17V>
+    </T_DD17V>
+   </XINX>
+  </asx:values>
+ </asx:abap>
+</abapGit>

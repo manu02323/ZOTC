@@ -1,0 +1,99 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<abapGit version="v1.0.0" serializer="LCL_OBJECT_DTEL" serializer_version="v1.0.0">
+ <asx:abap xmlns:asx="http://www.sap.com/abapxml" version="1.0">
+  <asx:values>
+   <DD04V>
+    <ROLLNAME>Z_TRAGR</ROLLNAME>
+    <DDLANGUAGE>E</DDLANGUAGE>
+    <DOMNAME>TRAGR</DOMNAME>
+    <HEADLEN>06</HEADLEN>
+    <SCRLEN1>10</SCRLEN1>
+    <SCRLEN2>15</SCRLEN2>
+    <SCRLEN3>20</SCRLEN3>
+    <DDTEXT>Transportation Group</DDTEXT>
+    <REPTEXT>TGroup</REPTEXT>
+    <SCRTEXT_S>Trans. Grp</SCRTEXT_S>
+    <SCRTEXT_M>Trans. Group</SCRTEXT_M>
+    <SCRTEXT_L>Transportation Group</SCRTEXT_L>
+    <DTELMASTER>E</DTELMASTER>
+    <REFKIND>D</REFKIND>
+   </DD04V>
+   <I18N_LANGS>
+    <LANGU>1</LANGU>
+    <LANGU>D</LANGU>
+    <LANGU>F</LANGU>
+    <LANGU>J</LANGU>
+    <LANGU>N</LANGU>
+    <LANGU>P</LANGU>
+    <LANGU>R</LANGU>
+    <LANGU>S</LANGU>
+   </I18N_LANGS>
+   <DD04_TEXTS>
+    <item>
+     <DDLANGUAGE>1</DDLANGUAGE>
+     <DDTEXT>Transportation Group</DDTEXT>
+     <REPTEXT>TGroup</REPTEXT>
+     <SCRTEXT_S>Trans. Grp</SCRTEXT_S>
+     <SCRTEXT_M>Trans. Group</SCRTEXT_M>
+     <SCRTEXT_L>Transportation Group</SCRTEXT_L>
+    </item>
+    <item>
+     <DDLANGUAGE>D</DDLANGUAGE>
+     <DDTEXT>Transportgruppe</DDTEXT>
+     <REPTEXT>Transp</REPTEXT>
+     <SCRTEXT_S>Transp.Grp</SCRTEXT_S>
+     <SCRTEXT_M>Transportgruppe</SCRTEXT_M>
+     <SCRTEXT_L>Transportgruppe</SCRTEXT_L>
+    </item>
+    <item>
+     <DDLANGUAGE>F</DDLANGUAGE>
+     <DDTEXT>Groupe de transport</DDTEXT>
+     <REPTEXT>Transp</REPTEXT>
+     <SCRTEXT_S>Transport</SCRTEXT_S>
+     <SCRTEXT_M>Groupe de trans</SCRTEXT_M>
+     <SCRTEXT_L>Groupe de transport</SCRTEXT_L>
+    </item>
+    <item>
+     <DDLANGUAGE>J</DDLANGUAGE>
+     <DDTEXT>Transportation Group</DDTEXT>
+     <REPTEXT>TGroup</REPTEXT>
+     <SCRTEXT_S>Trans. Grp</SCRTEXT_S>
+     <SCRTEXT_M>Trans. Group</SCRTEXT_M>
+     <SCRTEXT_L>Transportation Group</SCRTEXT_L>
+    </item>
+    <item>
+     <DDLANGUAGE>N</DDLANGUAGE>
+     <DDTEXT>Transportation Group</DDTEXT>
+     <REPTEXT>TGroup</REPTEXT>
+     <SCRTEXT_S>Trans. Grp</SCRTEXT_S>
+     <SCRTEXT_M>Trans. Group</SCRTEXT_M>
+     <SCRTEXT_L>Transportation Group</SCRTEXT_L>
+    </item>
+    <item>
+     <DDLANGUAGE>P</DDLANGUAGE>
+     <DDTEXT>Transportation Group</DDTEXT>
+     <REPTEXT>TGroup</REPTEXT>
+     <SCRTEXT_S>Trans. Grp</SCRTEXT_S>
+     <SCRTEXT_M>Trans. Group</SCRTEXT_M>
+     <SCRTEXT_L>Transportation Group</SCRTEXT_L>
+    </item>
+    <item>
+     <DDLANGUAGE>R</DDLANGUAGE>
+     <DDTEXT>Transportation Group</DDTEXT>
+     <REPTEXT>TGroup</REPTEXT>
+     <SCRTEXT_S>Trans. Grp</SCRTEXT_S>
+     <SCRTEXT_M>Trans. Group</SCRTEXT_M>
+     <SCRTEXT_L>Transportation Group</SCRTEXT_L>
+    </item>
+    <item>
+     <DDLANGUAGE>S</DDLANGUAGE>
+     <DDTEXT>Transportation Group</DDTEXT>
+     <REPTEXT>TGroup</REPTEXT>
+     <SCRTEXT_S>Trans. Grp</SCRTEXT_S>
+     <SCRTEXT_M>Trans. Group</SCRTEXT_M>
+     <SCRTEXT_L>Transportation Group</SCRTEXT_L>
+    </item>
+   </DD04_TEXTS>
+  </asx:values>
+ </asx:abap>
+</abapGit>

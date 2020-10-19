@@ -1,0 +1,131 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<abapGit version="v1.0.0" serializer="LCL_OBJECT_ENHO" serializer_version="v1.0.0">
+ <asx:abap xmlns:asx="http://www.sap.com/abapxml" version="1.0">
+  <asx:values>
+   <TOOL>HOOK_IMPL</TOOL>
+   <SHORTTEXT>OTC_ED_0011: Update Incoterms for FCA</SHORTTEXT>
+   <ORIGINAL_OBJECT>
+    <PGMID>R3TR</PGMID>
+    <ORG_OBJ_TYPE>PROG</ORG_OBJ_TYPE>
+    <ORG_OBJ_NAME>SAPMV45A</ORG_OBJ_NAME>
+    <ORG_MAIN_TYPE>PROG</ORG_MAIN_TYPE>
+    <ORG_MAIN_NAME>SAPMV45A</ORG_MAIN_NAME>
+    <PROGRAMNAME>SAPMV45A</PROGRAMNAME>
+   </ORIGINAL_OBJECT>
+   <ENHANCEMENTS>
+    <ENH_HOOK_IMPL>
+     <PROGRAMNAME>SAPMV45A</PROGRAMNAME>
+     <ENHMODE>D</ENHMODE>
+     <FULL_NAME>\PR:SAPMV45A\FO:USEREXIT_SAVE_DOCUMENT_PREPARE\SE:BEGIN\EI</FULL_NAME>
+     <SOURCE>
+      <item/>
+      <item>************************************************************************</item>
+      <item>* PROGRAM    :  ZIM_OTC_UPDATE_INCOTERM1 (Enhancement)                 *</item>
+      <item>* TITLE      :  Update INCO1 from FCA to DAP for ZIT1 &gt; 0              *</item>
+      <item>* DEVELOPER  :  Gautam Nag                                             *</item>
+      <item>* OBJECT TYPE:  ENHANCEMENT                                            *</item>
+      <item>* SAP RELEASE:  SAP ECC 6.0                                            *</item>
+      <item>*----------------------------------------------------------------------*</item>
+      <item>* WRICEF ID:  CR#785(OTC_EDD_0011)                                     *</item>
+      <item>*----------------------------------------------------------------------*</item>
+      <item>* DESCRIPTION: Update INCO1 from FCA to DAP for ZIT1 &gt; 0               *</item>
+      <item>*----------------------------------------------------------------------*</item>
+      <item>* MODIFICATION HISTORY:                                                *</item>
+      <item>*======================================================================*</item>
+      <item>* DATE        USER     TRANSPORT  DESCRIPTION                          *</item>
+      <item>* =========== ======== ========== =====================================*</item>
+      <item>* 17-OCT-2013 GNAG     E1DK911983 Initial dev - CR#785: Update Incoterms*</item>
+      <item>*&amp;---------------------------------------------------------------------*</item>
+      <item>* 12-May-2014 RVERMA   E1DK913520 Initial Dev - CR#1354: Checking list *</item>
+      <item>*                                 comparison price and issuing a pop up*</item>
+      <item>*                                 if list comparison price is greater  *</item>
+      <item>*                                 than or equal to zero.               *</item>
+      <item>*&amp;---------------------------------------------------------------------*</item>
+      <item>* 11-Jun-2014 SGHOSH   E1DK913820 Initial Dev - CR#1318: Pricing date  *</item>
+      <item>*                                 for an order should be the delivery  *</item>
+      <item>*                                 date of that item. Currently, when an*</item>
+      <item>*                                 order is created with reference to a *</item>
+      <item>*                                 reagent rental contract, the pricing *</item>
+      <item>*                                 date is getting derived from the     *</item>
+      <item>*                                 contract.                            *</item>
+      <item>*&amp;---------------------------------------------------------------------*</item>
+      <item>* 03-SEP-2014 DCHAKRA  E2DK904378 D2_OTC_EDD_0214: Check Sales BOM     *</item>
+      <item>*                                 revenue distribution                 *</item>
+      <item>*&amp;---------------------------------------------------------------------*</item>
+      <item>INCLUDE ZOTCN0011O_UPDATE_INCO.   &quot; CR#785</item>
+      <item/>
+      <item>*&amp;--Include</item>
+      <item>INCLUDE ZOTCN0011O_COMPARE_PRICE.   &quot;CR#1354</item>
+      <item/>
+      <item>*--&gt;&gt;&gt; Begin of change for D2_OTC_EDD_0214 by DCHAKRA</item>
+      <item/>
+      <item>*&amp;--Include for checking Sales BOM revenue distribution</item>
+      <item>INCLUDE ZOTCN0214O_CHECK_BOM_REV.</item>
+      <item/>
+      <item>*&lt;&lt;&lt;-- End of change for D2_OTC_EDD_0214 by DCHAKRA</item>
+      <item/>
+      <item>*&amp;--Include for CR#1318</item>
+      <item>INCLUDE ZOTCN0011O_PRICING_DATE.    &quot; CR#1318</item>
+      <item/>
+     </SOURCE>
+    </ENH_HOOK_IMPL>
+   </ENHANCEMENTS>
+   <SPACES>
+    <item>
+     <FULL_NAME>\PR:SAPMV45A\FO:USEREXIT_SAVE_DOCUMENT_PREPARE\SE:BEGIN\EI</FULL_NAME>
+     <SPACES>
+      <item>0</item>
+      <item>0</item>
+      <item>0</item>
+      <item>0</item>
+      <item>0</item>
+      <item>0</item>
+      <item>0</item>
+      <item>0</item>
+      <item>0</item>
+      <item>0</item>
+      <item>0</item>
+      <item>0</item>
+      <item>0</item>
+      <item>0</item>
+      <item>0</item>
+      <item>0</item>
+      <item>0</item>
+      <item>0</item>
+      <item>0</item>
+      <item>0</item>
+      <item>0</item>
+      <item>0</item>
+      <item>0</item>
+      <item>0</item>
+      <item>0</item>
+      <item>0</item>
+      <item>0</item>
+      <item>0</item>
+      <item>0</item>
+      <item>0</item>
+      <item>0</item>
+      <item>0</item>
+      <item>0</item>
+      <item>0</item>
+      <item>2</item>
+      <item>0</item>
+      <item>0</item>
+      <item>2</item>
+      <item>0</item>
+      <item>0</item>
+      <item>0</item>
+      <item>0</item>
+      <item>2</item>
+      <item>0</item>
+      <item>0</item>
+      <item>0</item>
+      <item>0</item>
+      <item>2</item>
+      <item>0</item>
+     </SPACES>
+    </item>
+   </SPACES>
+  </asx:values>
+ </asx:abap>
+</abapGit>

@@ -1,0 +1,75 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<abapGit version="v1.0.0" serializer="LCL_OBJECT_ENHO" serializer_version="v1.0.0">
+ <asx:abap xmlns:asx="http://www.sap.com/abapxml" version="1.0">
+  <asx:values>
+   <TOOL>HOOK_IMPL</TOOL>
+   <SHORTTEXT>Change the default plant determination to LRD plant in case of certain document types</SHORTTEXT>
+   <ORIGINAL_OBJECT>
+    <PGMID>R3TR</PGMID>
+    <ORG_OBJ_TYPE>PROG</ORG_OBJ_TYPE>
+    <ORG_OBJ_NAME>SAPMV45A</ORG_OBJ_NAME>
+    <ORG_MAIN_TYPE>PROG</ORG_MAIN_TYPE>
+    <ORG_MAIN_NAME>SAPMV45A</ORG_MAIN_NAME>
+    <PROGRAMNAME>SAPMV45A</PROGRAMNAME>
+   </ORIGINAL_OBJECT>
+   <ENHANCEMENTS>
+    <ENH_HOOK_IMPL>
+     <PROGRAMNAME>SAPMV45A</PROGRAMNAME>
+     <ENHMODE>D</ENHMODE>
+     <FULL_NAME>\PR:SAPMV45A\FO:USEREXIT_SOURCE_DETERMINATION\SE:BEGIN\EI</FULL_NAME>
+     <SOURCE>
+      <item>***********************************************************************</item>
+      <item>*Program    : ZIM_OTC_MOVE_WERKS_TO_VBAP (Implicit Enhancement)       *</item>
+      <item>*Title      : Flip the Plant to new value from BRFPlus table          *</item>
+      <item>*Developer  : NASRIN ALI                                              *</item>
+      <item>*Object type: Enhancement                                             *</item>
+      <item>*SAP Release: SAP ECC 6.0                                             *</item>
+      <item>*---------------------------------------------------------------------*</item>
+      <item>*WRICEF ID: D3_OTC_EDD_0339                                           *</item>
+      <item>*---------------------------------------------------------------------*</item>
+      <item>*Description: EHQ_EU_Sales Order Enhancements                         *</item>
+      <item>*---------------------------------------------------------------------*</item>
+      <item>*MODIFICATION HISTORY:</item>
+      <item>*=====================================================================*</item>
+      <item>*Date         User ID     Transport      Description</item>
+      <item>*===========  ==========  ============== =============================*</item>
+      <item>*27-MAY-2016  NALI        E1DK918444     Initial Development</item>
+      <item>*---------------------------------------------------------------------*</item>
+      <item/>
+      <item>PERFORM ehq_item_category_flip.</item>
+      <item/>
+      <item/>
+     </SOURCE>
+    </ENH_HOOK_IMPL>
+   </ENHANCEMENTS>
+   <SPACES>
+    <item>
+     <FULL_NAME>\PR:SAPMV45A\FO:USEREXIT_SOURCE_DETERMINATION\SE:BEGIN\EI</FULL_NAME>
+     <SPACES>
+      <item>0</item>
+      <item>0</item>
+      <item>0</item>
+      <item>0</item>
+      <item>0</item>
+      <item>0</item>
+      <item>0</item>
+      <item>0</item>
+      <item>0</item>
+      <item>0</item>
+      <item>0</item>
+      <item>0</item>
+      <item>0</item>
+      <item>0</item>
+      <item>0</item>
+      <item>0</item>
+      <item>0</item>
+      <item>0</item>
+      <item>2</item>
+      <item>0</item>
+      <item>0</item>
+     </SPACES>
+    </item>
+   </SPACES>
+  </asx:values>
+ </asx:abap>
+</abapGit>

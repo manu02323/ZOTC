@@ -1,0 +1,84 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<abapGit version="v1.0.0" serializer="LCL_OBJECT_TRAN" serializer_version="v1.0.0">
+ <asx:abap xmlns:asx="http://www.sap.com/abapxml" version="1.0">
+  <asx:values>
+   <TSTC>
+    <TCODE>ZOTC_COMM_GRP</TCODE>
+    <CINFO>Ag==</CINFO>
+   </TSTC>
+   <TSTCC>
+    <TCODE>ZOTC_COMM_GRP</TCODE>
+    <S_WEBGUI>1</S_WEBGUI>
+    <S_WIN32>X</S_WIN32>
+    <S_PLATIN>X</S_PLATIN>
+   </TSTCC>
+   <TSTCT>
+    <SPRSL>E</SPRSL>
+    <TCODE>ZOTC_COMM_GRP</TCODE>
+    <TTEXT>Tcode to maintain Comm Group Tables</TTEXT>
+   </TSTCT>
+   <TSTCP>
+    <TCODE>ZOTC_COMM_GRP</TCODE>
+    <PARAM>/*SM34 SHOW=X;VCLDIR-VCLNAME=ZOTCV_COMM_GRP;</PARAM>
+   </TSTCP>
+   <I18N_TPOOL>
+    <TSTCT>
+     <SPRSL>1</SPRSL>
+     <TTEXT>Bleed Data</TTEXT>
+    </TSTCT>
+    <TSTCT>
+     <SPRSL>F</SPRSL>
+     <TTEXT>Bleed Data</TTEXT>
+    </TSTCT>
+    <TSTCT>
+     <SPRSL>G</SPRSL>
+     <TTEXT>Bleed Data</TTEXT>
+    </TSTCT>
+    <TSTCT>
+     <SPRSL>H</SPRSL>
+     <TTEXT>Bleed Data</TTEXT>
+    </TSTCT>
+    <TSTCT>
+     <SPRSL>I</SPRSL>
+     <TTEXT>Bleed Data</TTEXT>
+    </TSTCT>
+    <TSTCT>
+     <SPRSL>J</SPRSL>
+     <TTEXT>Bleed Data</TTEXT>
+    </TSTCT>
+    <TSTCT>
+     <SPRSL>K</SPRSL>
+     <TTEXT>Bleed Data</TTEXT>
+    </TSTCT>
+    <TSTCT>
+     <SPRSL>N</SPRSL>
+     <TTEXT>Bleed Data</TTEXT>
+    </TSTCT>
+    <TSTCT>
+     <SPRSL>O</SPRSL>
+     <TTEXT>Bleed Data</TTEXT>
+    </TSTCT>
+    <TSTCT>
+     <SPRSL>P</SPRSL>
+     <TTEXT>Bleed Data</TTEXT>
+    </TSTCT>
+    <TSTCT>
+     <SPRSL>R</SPRSL>
+     <TTEXT>Bleed Data</TTEXT>
+    </TSTCT>
+    <TSTCT>
+     <SPRSL>S</SPRSL>
+     <TTEXT>Bleed Data</TTEXT>
+    </TSTCT>
+    <TSTCT>
+     <SPRSL>U</SPRSL>
+     <TTEXT>Bleed Data</TTEXT>
+    </TSTCT>
+    <TSTCT>
+     <SPRSL>V</SPRSL>
+     <TTEXT>Bleed Data</TTEXT>
+    </TSTCT>
+   </I18N_TPOOL>
+  </asx:values>
+ </asx:abap>
+</abapGit>

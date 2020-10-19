@@ -1,0 +1,210 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xsl:transform xmlns:xsl="http://www.w3.org/1999/XSL/Transform" xmlns:ns0="urn:iso:std:iso:20022:tech:xsd:pain.002.001.03" version="1.0">
+  <xsl:strip-space elements="*" />
+  <xsl:output indent="no" omit-xml-declaration="no" />
+  <xsl:template name="recursive">
+    <xsl:param name="value" select="0" />
+    <xsl:value-of select="concat(concat('',$value),'')" />
+  </xsl:template>
+  <xsl:template match="ns0:Document">
+    <xsl:variable name="vAllowedSymbols" select="'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz'" />
+    <!--- - - - - - - - - - MsgID-->
+    <xsl:variable name="MsgId">
+      <xsl:value-of select="ns0:CstmrPmtStsRpt/ns0:GrpHdr/ns0:MsgId" />
+    </xsl:variable>
+    <!--- - - - - - - - - - OrgnlMsgID-->
+    <xsl:variable name="OrgnlMsgId">
+      <xsl:value-of select="ns0:CstmrPmtStsRpt/ns0:OrgnlGrpInfAndSts/ns0:OrgnlMsgId" />
+    </xsl:variable>
+    <!--- - - - - - - - - - CreDtTm-->
+    <xsl:variable name="CreDtTm">
+      <xsl:value-of select="ns0:CstmrPmtStsRpt/ns0:GrpHdr/ns0:CreDtTm" />
+    </xsl:variable>
+    <!--- - - - - - - - - - GrpSts-->
+    <xsl:variable name="GrpSts">
+      <xsl:value-of select="ns0:CstmrPmtStsRpt/ns0:OrgnlGrpInfAndSts/ns0:GrpSts" />
+    </xsl:variable>
+    <!--- - - - - - - - - - PmtInfSts-->
+    <xsl:variable name="PmtInfSts">
+      <xsl:value-of select="ns0:CstmrPmtStsRpt/ns0:OrgnlPmtInfAndSts/ns0:PmtInfSts" />
+    </xsl:variable>
+    <xsl:for-each select="ns0:CstmrPmtStsRpt/ns0:OrgnlGrpInfAndSts/ns0:StsRsnInf">
+      <xsl:for-each select="*">
+        <xsl:variable name="StsRsnInf">
+          <xsl:for-each select="node() | @*">
+            <xsl:value-of select="." />
+            <xsl:if test="not(position()=last())  " />
+          </xsl:for-each>
+        </xsl:variable>
+      </xsl:for-each>
+    </xsl:for-each>
+    <!--- - - - - - - - - - Many CPONs or 1 CPON-->
+    <BulkNotification>
+      <xsl:choose>
+        <xsl:when test="count(//ns0:OrgnlPmtInfAndSts) &gt; 0">
+          <xsl:for-each select="ns0:CstmrPmtStsRpt/ns0:OrgnlPmtInfAndSts">
+            <!--One CPON pro OrgnlPmtInfAndSts-->
+            <CollectivePaymentOrderNotification_async>
+              <MessageHeader>
+                <ID />
+                <CreationDateTime>
+                  <xsl:value-of select="$CreDtTm" />
+                </CreationDateTime>
+                <TestDataIndicator />
+                <BusinessScope>
+                  <TypeCode />
+                  <InstantID />
+                  <ID>
+                    <xsl:value-of select="'SAA'" />
+                  </ID>
+                </BusinessScope>
+              </MessageHeader>
+              <CollectivePaymentOrderNotification>
+                <!--- - - - - - - - - - ID: either from $OrgnlMsgId or OrgnlPmtInfId-->
+                <xsl:choose>
+                  <xsl:when test="$GrpSts != ''">
+                    <ID>
+                      <xsl:choose>
+                        <xsl:when test="$OrgnlMsgId != ''">
+                          <xsl:value-of select="$OrgnlMsgId" />
+                        </xsl:when>
+                        <xsl:otherwise>
+                          <xsl:value-of select="substring(ns0:OrgnlPmtInfId,1,10)" />
+                        </xsl:otherwise>
+                      </xsl:choose>
+                    </ID>
+                  </xsl:when>
+                  <xsl:otherwise>
+                    <ID>
+                      <xsl:value-of select="substring(ns0:OrgnlPmtInfId,1,10)" />
+                    </ID>
+                  </xsl:otherwise>
+                </xsl:choose>
+                <!--- - - - - - - - - - CPON: Exection StatusCode = constant -->
+                <ExecutionStatusCode>
+                  <xsl:text>PAIN</xsl:text>
+                </ExecutionStatusCode>
+                <!--!!! Group Status is set to 'ABCD' when it is to be ignored or is missing in the XML message. ABCD must be then assigned to BSP in view V_TBNK_XST_2_IST. You can choose your own constant instead of ABCD.-->
+                <ExecutionStatusNote>
+                  <xsl:text>ABCD</xsl:text>
+                </ExecutionStatusNote>
+                <!--!! the following logique which deals with where the group status should come from is commented out. When $GrpSts and $PmtInfSts are not available a constant 'ABCD' or any other one taken which must then be assigned to BSP in view
+V_TBNK_XST_2_IST.-->
+                <xsl:if test="1 = 2">
+                  <xsl:choose>
+                    <xsl:when test="$GrpSts != '' or $PmtInfSts != ''">
+                      <ExecutionStatusNote>
+                        <xsl:choose>
+                          <xsl:when test="$GrpSts != ''">
+                            <xsl:value-of select="$GrpSts" />
+                          </xsl:when>
+                          <xsl:otherwise>
+                            <xsl:value-of select="$PmtInfSts" />
+                          </xsl:otherwise>
+                        </xsl:choose>
+                      </ExecutionStatusNote>
+                    </xsl:when>
+                    <xsl:otherwise>
+                      <ExecutionStatusNote>
+                        <xsl:text>ABCD</xsl:text>
+                      </ExecutionStatusNote>
+                    </xsl:otherwise>
+                  </xsl:choose>
+                </xsl:if>
+                <xsl:for-each select="ns0:TxInfAndSts">
+                  <!--- - - - - - - - - - all AddtlInf of StsRsnInf are joined for reason info of PON (Payment Order Notification) -->
+                  <!--- - - - - - - - - - Transactions -->
+                  <PaymentOrderNotification>
+                    <!--depending on the reference OrgnlEndToEndId the payment document # has to be extracted -->
+                    <ID>
+                      <xsl:value-of select="substring(ns0:OrgnlEndToEndId,1,10)" />
+                    </ID>
+                    <!--- - - - - - - - - - ns0:TxSts-->
+                    <!--translate($AddtlInf, translate($AddtlInf, $vAllowedSymbols, ''),
+                ''
+                )-->
+                    <ExecutionStatusCode>
+                      <xsl:text>PAIN</xsl:text>
+                    </ExecutionStatusCode>
+                    <ExecutionStatusNote>
+                      <xsl:value-of select="ns0:TxSts" />
+                    </ExecutionStatusNote>
+                    <!--- - - - - - - Status Reason Info-->
+                    <xsl:for-each select="ns0:StsRsnInf">
+                      <xsl:variable name="AddtlInf">
+                        <xsl:for-each select="ns0:AddtlInf">
+                          <xsl:call-template name="recursive">
+                            <xsl:with-param name="value" select="."/>
+                          </xsl:call-template>
+                        </xsl:for-each>
+                      </xsl:variable>
+                      <xsl:for-each select="ns0:Rsn">
+                        <RejectionReason>
+                          <Code>
+                            <xsl:value-of select="ns0:Cd"/>
+                          </Code>
+                          <Note>
+                            <xsl:value-of select="$AddtlInf"/>
+                          </Note>
+                        </RejectionReason>
+                      </xsl:for-each>
+                    </xsl:for-each>
+                    <PaymentReference>
+                      <ID>
+                        <xsl:value-of select="ns0:OrgnlEndToEndId" />
+                      </ID>
+                    </PaymentReference>
+                    <ChequeReference>
+                      <ID />
+                    </ChequeReference>
+                    <BillOfExchangeReference>
+                      <ID />
+                    </BillOfExchangeReference>
+                  </PaymentOrderNotification>
+                </xsl:for-each>
+              </CollectivePaymentOrderNotification>
+            </CollectivePaymentOrderNotification_async>
+          </xsl:for-each>
+        </xsl:when>
+        <xsl:otherwise>
+          <CollectivePaymentOrderNotification_async>
+            <MessageHeader>
+              <ID schemeAgencyID="" schemeAgencySchemeAgencyID="" schemeID="" />
+              <CreationDateTime>
+                <xsl:value-of select="$CreDtTm" />
+              </CreationDateTime>
+              <TestDataIndicator />
+              <BusinessScope>
+                <TypeCode listAgencyID="" listAgencySchemeAttribute="" listAgencySchemeID="" listID="" listVersionID="" />
+                <InstantID schemeAgencyID="" schemeID="" />
+                <ID schemeAgencyID="" schemeID="">
+                  <xsl:value-of select="'SAA'" />
+                </ID>
+              </BusinessScope>
+            </MessageHeader>
+            <CollectivePaymentOrderNotification>
+              <ID>
+                <xsl:value-of select="ns0:CstmrPmtStsRpt/ns0:OrgnlGrpInfAndSts/ns0:OrgnlMsgId" />
+              </ID>
+              <!--DtldSts-->
+              <ExecutionStatusCode>
+                <xsl:text>PAIN</xsl:text>
+              </ExecutionStatusCode>
+              <ExecutionStatusNote>
+                <!--If ACCP is delivered change it to RCVD (received by bank). -->
+                <xsl:choose>
+                  <xsl:when test="substring($GrpSts,1,4) = 'ACCP'">
+                    <xsl:text>ACTC</xsl:text>
+                  </xsl:when>
+                  <xsl:otherwise>
+                    <xsl:value-of select="$GrpSts" />
+                  </xsl:otherwise>
+                </xsl:choose>
+              </ExecutionStatusNote>
+            </CollectivePaymentOrderNotification>
+          </CollectivePaymentOrderNotification_async>
+        </xsl:otherwise>
+      </xsl:choose>
+    </BulkNotification>
+  </xsl:template>
+</xsl:transform>

@@ -1,0 +1,73 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<abapGit version="v1.0.0" serializer="LCL_OBJECT_FUGR" serializer_version="v1.0.0">
+ <asx:abap xmlns:asx="http://www.sap.com/abapxml" version="1.0">
+  <asx:values>
+   <AREAT>FG to get house bank info</AREAT>
+   <INCLUDES>
+    <SOBJ_NAME>LZOTC_GET_HOUSEBANKINFOTOP</SOBJ_NAME>
+    <SOBJ_NAME>SAPLZOTC_GET_HOUSEBANKINFO</SOBJ_NAME>
+   </INCLUDES>
+   <FUNCTIONS>
+    <item>
+     <FUNCNAME>ZOTC_GET_HOUSEBANKINFO</FUNCNAME>
+     <SHORT_TEXT>FM to get house bank info</SHORT_TEXT>
+     <IMPORT>
+      <RSIMP>
+       <PARAMETER>IM_BUKRS</PARAMETER>
+       <TYP>BUKRS</TYP>
+      </RSIMP>
+      <RSIMP>
+       <PARAMETER>IM_CURR</PARAMETER>
+       <TYP>WAERS</TYP>
+      </RSIMP>
+      <RSIMP>
+       <PARAMETER>IM_MULT_HOUSEBANK_INFO</PARAMETER>
+       <OPTIONAL>X</OPTIONAL>
+       <TYP>FLAG</TYP>
+      </RSIMP>
+     </IMPORT>
+     <CHANGING>
+      <RSCHA>
+       <PARAMETER>ET_HOUSEBANK</PARAMETER>
+       <OPTIONAL>X</OPTIONAL>
+       <TYP>ZOTC_T_HOUSEBANK</TYP>
+      </RSCHA>
+     </CHANGING>
+     <EXPORT>
+      <RSEXP>
+       <PARAMETER>EX_OUT</PARAMETER>
+       <TYP>ZOTC_HOUSEBANK</TYP>
+      </RSEXP>
+     </EXPORT>
+     <DOCUMENTATION>
+      <RSFDO>
+       <PARAMETER>IM_BUKRS</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Company Code</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>IM_CURR</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Currency Key</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>IM_MULT_HOUSEBANK_INFO</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>General Flag</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>EX_OUT</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Structure for House Bank Info</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>ET_HOUSEBANK</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Table for House Bank Info</STEXT>
+      </RSFDO>
+     </DOCUMENTATION>
+    </item>
+   </FUNCTIONS>
+  </asx:values>
+ </asx:abap>
+</abapGit>

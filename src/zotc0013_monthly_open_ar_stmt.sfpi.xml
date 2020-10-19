@@ -1,0 +1,2878 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<abapGit version="v1.0.0" serializer="LCL_OBJECT_SFPI" serializer_version="v1.0.0">
+ <asx:abap version="1.0" xmlns:asx="http://www.sap.com/abapxml">
+  <asx:values>
+   <VERSION>1</VERSION>
+   <TYPE/>
+   <INTERFACE href="#o1"/>
+   <INTERFACET>
+    <FPINTERFACET>
+     <NAME/>
+     <STATE/>
+     <LANGUAGE>N</LANGUAGE>
+     <ID/>
+     <TEXT>Monthly Open AR statement</TEXT>
+    </FPINTERFACET>
+    <FPINTERFACET>
+     <NAME/>
+     <STATE/>
+     <LANGUAGE>E</LANGUAGE>
+     <ID/>
+     <TEXT>Monthly Open AR statement</TEXT>
+    </FPINTERFACET>
+    <FPINTERFACET>
+     <NAME/>
+     <STATE/>
+     <LANGUAGE>F</LANGUAGE>
+     <ID/>
+     <TEXT>Monthly Open AR statement</TEXT>
+    </FPINTERFACET>
+    <FPINTERFACET>
+     <NAME/>
+     <STATE/>
+     <LANGUAGE>P</LANGUAGE>
+     <ID/>
+     <TEXT>Monthly Open AR statement</TEXT>
+    </FPINTERFACET>
+    <FPINTERFACET>
+     <NAME/>
+     <STATE/>
+     <LANGUAGE>R</LANGUAGE>
+     <ID/>
+     <TEXT>Monthly Open AR statement</TEXT>
+    </FPINTERFACET>
+    <FPINTERFACET>
+     <NAME/>
+     <STATE/>
+     <LANGUAGE>S</LANGUAGE>
+     <ID/>
+     <TEXT>Monthly Open AR statement</TEXT>
+    </FPINTERFACET>
+    <FPINTERFACET>
+     <NAME/>
+     <STATE/>
+     <LANGUAGE>J</LANGUAGE>
+     <ID/>
+     <TEXT>Monthly Open AR statement</TEXT>
+    </FPINTERFACET>
+    <FPINTERFACET>
+     <NAME/>
+     <STATE/>
+     <LANGUAGE>1</LANGUAGE>
+     <ID/>
+     <TEXT>Monthly Open AR statement</TEXT>
+    </FPINTERFACET>
+    <FPINTERFACET>
+     <NAME/>
+     <STATE/>
+     <LANGUAGE>I</LANGUAGE>
+     <ID/>
+     <TEXT>Monthly Open AR statement</TEXT>
+    </FPINTERFACET>
+    <FPINTERFACET>
+     <NAME/>
+     <STATE/>
+     <LANGUAGE>K</LANGUAGE>
+     <ID/>
+     <TEXT>Monthly Open AR statement</TEXT>
+    </FPINTERFACET>
+    <FPINTERFACET>
+     <NAME/>
+     <STATE/>
+     <LANGUAGE>H</LANGUAGE>
+     <ID/>
+     <TEXT>Monthly Open AR statement</TEXT>
+    </FPINTERFACET>
+    <FPINTERFACET>
+     <NAME/>
+     <STATE/>
+     <LANGUAGE>O</LANGUAGE>
+     <ID/>
+     <TEXT>Monthly Open AR statement</TEXT>
+    </FPINTERFACET>
+    <FPINTERFACET>
+     <NAME/>
+     <STATE/>
+     <LANGUAGE>V</LANGUAGE>
+     <ID/>
+     <TEXT>Monthly Open AR statement</TEXT>
+    </FPINTERFACET>
+    <FPINTERFACET>
+     <NAME/>
+     <STATE/>
+     <LANGUAGE>U</LANGUAGE>
+     <ID/>
+     <TEXT>Monthly Open AR statement</TEXT>
+    </FPINTERFACET>
+    <FPINTERFACET>
+     <NAME/>
+     <STATE/>
+     <LANGUAGE>G</LANGUAGE>
+     <ID/>
+     <TEXT>Monthly Open AR statement</TEXT>
+    </FPINTERFACET>
+   </INTERFACET>
+  </asx:values>
+  <asx:heap xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:abap="http://www.sap.com/abapxml/types/built-in" xmlns:cls="http://www.sap.com/abapxml/classes/global" xmlns:dic="http://www.sap.com/abapxml/types/dictionary">
+   <cls:CL_FP_INTERFACE_DATA id="o1">
+    <CL_FP_INTERFACE_DATA classVersion="1">
+     <CODING href="#o5"/>
+     <PARAMETERS href="#o4"/>
+     <GLOBAL_DEFINITIONS href="#o3"/>
+     <REFERENCE_FIELDS href="#o2"/>
+     <XSD_DEFINITIONS/>
+    </CL_FP_INTERFACE_DATA>
+   </cls:CL_FP_INTERFACE_DATA>
+   <cls:CL_FP_REFERENCE_FIELDS id="o2">
+    <CL_FP_INTERFACE_DATA_CHANGED classVersion="1">
+     <INTERFACE_DATA href="#o1"/>
+    </CL_FP_INTERFACE_DATA_CHANGED>
+    <CL_FP_REFERENCE_FIELDS classVersion="1">
+     <REFERENCE_FIELDS/>
+    </CL_FP_REFERENCE_FIELDS>
+   </cls:CL_FP_REFERENCE_FIELDS>
+   <cls:CL_FP_GLOBAL_DEFINITIONS id="o3">
+    <CL_FP_INTERFACE_DATA_CHANGED classVersion="1">
+     <INTERFACE_DATA href="#o1"/>
+    </CL_FP_INTERFACE_DATA_CHANGED>
+    <CL_FP_GLOBAL_DEFINITIONS classVersion="1">
+     <GLOBAL_DATA>
+      <SFPGDATA>
+       <NAME>I_LOCKBOX</NAME>
+       <TYPING>TYPE</TYPING>
+       <TYPENAME>TT_ADDRESS</TYPENAME>
+       <DEFAULTVAL/>
+       <CONSTANT/>
+      </SFPGDATA>
+      <SFPGDATA>
+       <NAME>GV_POBOX</NAME>
+       <TYPING>TYPE</TYPING>
+       <TYPENAME>STRING</TYPENAME>
+       <DEFAULTVAL/>
+       <CONSTANT/>
+      </SFPGDATA>
+      <SFPGDATA>
+       <NAME>X_LOCKBOX_ADRS</NAME>
+       <TYPING>TYPE</TYPING>
+       <TYPENAME>TY_ADRS</TYPENAME>
+       <DEFAULTVAL/>
+       <CONSTANT/>
+      </SFPGDATA>
+      <SFPGDATA>
+       <NAME>GV_LANGU</NAME>
+       <TYPING>TYPE</TYPING>
+       <TYPENAME>SYLANGU</TYPENAME>
+       <DEFAULTVAL/>
+       <CONSTANT/>
+      </SFPGDATA>
+      <SFPGDATA>
+       <NAME>GS_BALANCE</NAME>
+       <TYPING>TYPE</TYPING>
+       <TYPENAME>TY_BALANCE</TYPENAME>
+       <DEFAULTVAL/>
+       <CONSTANT/>
+      </SFPGDATA>
+      <SFPGDATA>
+       <NAME>C_QUANT_INIT</NAME>
+       <TYPING>TYPE</TYPING>
+       <TYPENAME>CHAR4</TYPENAME>
+       <DEFAULTVAL>&apos;0.00&apos;</DEFAULTVAL>
+       <CONSTANT>X</CONSTANT>
+      </SFPGDATA>
+      <SFPGDATA>
+       <NAME>IT_DISPLAY</NAME>
+       <TYPING>TYPE</TYPING>
+       <TYPENAME>TT_DISPLAY</TYPENAME>
+       <DEFAULTVAL/>
+       <CONSTANT/>
+      </SFPGDATA>
+      <SFPGDATA>
+       <NAME>GV_CITY</NAME>
+       <TYPING>TYPE</TYPING>
+       <TYPENAME>STRING</TYPENAME>
+       <DEFAULTVAL/>
+       <CONSTANT/>
+      </SFPGDATA>
+      <SFPGDATA>
+       <NAME>GV_STREET_HNUM</NAME>
+       <TYPING>TYPE</TYPING>
+       <TYPENAME>STRING</TYPENAME>
+       <DEFAULTVAL/>
+       <CONSTANT/>
+      </SFPGDATA>
+      <SFPGDATA>
+       <NAME>C_COMMA</NAME>
+       <TYPING>TYPE</TYPING>
+       <TYPENAME>CHAR2</TYPENAME>
+       <DEFAULTVAL>&apos;, &apos;</DEFAULTVAL>
+       <CONSTANT>X</CONSTANT>
+      </SFPGDATA>
+      <SFPGDATA>
+       <NAME>C_BMP</NAME>
+       <TYPING>TYPE</TYPING>
+       <TYPENAME>STRING</TYPENAME>
+       <DEFAULTVAL>&apos;images/bmp&apos;</DEFAULTVAL>
+       <CONSTANT>X</CONSTANT>
+      </SFPGDATA>
+      <SFPGDATA>
+       <NAME>GV_PRODUCTION</NAME>
+       <TYPING>TYPE</TYPING>
+       <TYPENAME>BOOLEAN</TYPENAME>
+       <DEFAULTVAL/>
+       <CONSTANT/>
+      </SFPGDATA>
+      <SFPGDATA>
+       <NAME>GV_IMAGE_BIN</NAME>
+       <TYPING>TYPE</TYPING>
+       <TYPENAME>XSTRING</TYPENAME>
+       <DEFAULTVAL/>
+       <CONSTANT/>
+      </SFPGDATA>
+      <SFPGDATA>
+       <NAME>GV_LOGO_BIN</NAME>
+       <TYPING>TYPE</TYPING>
+       <TYPENAME>XSTRING</TYPENAME>
+       <DEFAULTVAL/>
+       <CONSTANT/>
+      </SFPGDATA>
+      <SFPGDATA>
+       <NAME>GV_DATE</NAME>
+       <TYPING>TYPE</TYPING>
+       <TYPENAME>CHAR15</TYPENAME>
+       <DEFAULTVAL/>
+       <CONSTANT/>
+      </SFPGDATA>
+      <SFPGDATA>
+       <NAME>GV_HOUSEBANK_AD_0</NAME>
+       <TYPING>TYPE</TYPING>
+       <TYPENAME>TY_HOUSEBANK_INFO</TYPENAME>
+       <DEFAULTVAL/>
+       <CONSTANT/>
+      </SFPGDATA>
+      <SFPGDATA>
+       <NAME>GV_HOUSEBANK_AD_1</NAME>
+       <TYPING>TYPE</TYPING>
+       <TYPENAME>TY_HOUSEBANK_INFO</TYPENAME>
+       <DEFAULTVAL/>
+       <CONSTANT/>
+      </SFPGDATA>
+      <SFPGDATA>
+       <NAME>GV_HOUSEBANK_AD_2</NAME>
+       <TYPING>TYPE</TYPING>
+       <TYPENAME>TY_HOUSEBANK_INFO</TYPENAME>
+       <DEFAULTVAL/>
+       <CONSTANT/>
+      </SFPGDATA>
+      <SFPGDATA>
+       <NAME>GV_HOUSEBANK_AD_3</NAME>
+       <TYPING>TYPE</TYPING>
+       <TYPENAME>TY_HOUSEBANK_INFO</TYPENAME>
+       <DEFAULTVAL/>
+       <CONSTANT/>
+      </SFPGDATA>
+      <SFPGDATA>
+       <NAME>GV_HB_AD0_LINE2</NAME>
+       <TYPING>TYPE</TYPING>
+       <TYPENAME>STRING</TYPENAME>
+       <DEFAULTVAL/>
+       <CONSTANT/>
+      </SFPGDATA>
+      <SFPGDATA>
+       <NAME>GV_HB_AD1_LINE2</NAME>
+       <TYPING>TYPE</TYPING>
+       <TYPENAME>STRING</TYPENAME>
+       <DEFAULTVAL/>
+       <CONSTANT/>
+      </SFPGDATA>
+      <SFPGDATA>
+       <NAME>GV_HB_AD2_LINE2</NAME>
+       <TYPING>TYPE</TYPING>
+       <TYPENAME>STRING</TYPENAME>
+       <DEFAULTVAL/>
+       <CONSTANT/>
+      </SFPGDATA>
+      <SFPGDATA>
+       <NAME>GV_HB_AD3_LINE2</NAME>
+       <TYPING>TYPE</TYPING>
+       <TYPENAME>STRING</TYPENAME>
+       <DEFAULTVAL/>
+       <CONSTANT/>
+      </SFPGDATA>
+      <SFPGDATA>
+       <NAME>GV_OF</NAME>
+       <TYPING>TYPE</TYPING>
+       <TYPENAME>STRING</TYPENAME>
+       <DEFAULTVAL/>
+       <CONSTANT/>
+      </SFPGDATA>
+      <SFPGDATA>
+       <NAME>GV_VAT_NO</NAME>
+       <TYPING>TYPE</TYPING>
+       <TYPENAME>STCEG</TYPENAME>
+       <DEFAULTVAL/>
+       <CONSTANT/>
+      </SFPGDATA>
+      <SFPGDATA>
+       <NAME>GV_WEEE_NO</NAME>
+       <TYPING>TYPE</TYPING>
+       <TYPENAME>STRING</TYPENAME>
+       <DEFAULTVAL/>
+       <CONSTANT/>
+      </SFPGDATA>
+      <SFPGDATA>
+       <NAME>GV_FOOTER_LINES1</NAME>
+       <TYPING>TYPE</TYPING>
+       <TYPENAME>STRING</TYPENAME>
+       <DEFAULTVAL/>
+       <CONSTANT/>
+      </SFPGDATA>
+      <SFPGDATA>
+       <NAME>GV_FOOTER_LINES2</NAME>
+       <TYPING>TYPE</TYPING>
+       <TYPENAME>STRING</TYPENAME>
+       <DEFAULTVAL/>
+       <CONSTANT/>
+      </SFPGDATA>
+      <SFPGDATA>
+       <NAME>GV_FOOTER_LINES3</NAME>
+       <TYPING>TYPE</TYPING>
+       <TYPENAME>STRING</TYPENAME>
+       <DEFAULTVAL/>
+       <CONSTANT/>
+      </SFPGDATA>
+      <SFPGDATA>
+       <NAME>GV_FOOTER_LINES4</NAME>
+       <TYPING>TYPE</TYPING>
+       <TYPENAME>STRING</TYPENAME>
+       <DEFAULTVAL/>
+       <CONSTANT/>
+      </SFPGDATA>
+      <SFPGDATA>
+       <NAME>GV_FOOTER_LINES5</NAME>
+       <TYPING>TYPE</TYPING>
+       <TYPENAME>STRING</TYPENAME>
+       <DEFAULTVAL/>
+       <CONSTANT/>
+      </SFPGDATA>
+      <SFPGDATA>
+       <NAME>GV_CURRENT</NAME>
+       <TYPING>TYPE</TYPING>
+       <TYPENAME>STRING</TYPENAME>
+       <DEFAULTVAL/>
+       <CONSTANT/>
+      </SFPGDATA>
+      <SFPGDATA>
+       <NAME>GV_31_60</NAME>
+       <TYPING>TYPE</TYPING>
+       <TYPENAME>STRING</TYPENAME>
+       <DEFAULTVAL/>
+       <CONSTANT/>
+      </SFPGDATA>
+      <SFPGDATA>
+       <NAME>GV_61_90</NAME>
+       <TYPING>TYPE</TYPING>
+       <TYPENAME>STRING</TYPENAME>
+       <DEFAULTVAL/>
+       <CONSTANT/>
+      </SFPGDATA>
+      <SFPGDATA>
+       <NAME>GT_BALANCE</NAME>
+       <TYPING>TYPE</TYPING>
+       <TYPENAME>TT_BALANCE</TYPENAME>
+       <DEFAULTVAL/>
+       <CONSTANT/>
+      </SFPGDATA>
+     </GLOBAL_DATA>
+     <TYPES>
+      <FPCLINE>************************************************************************</FPCLINE>
+      <FPCLINE>* Interface  : ZOTC0013_MONTHLY_OPEN_AR_STMT                           *</FPCLINE>
+      <FPCLINE>* Title      : Monthly Open AR Statement                               *</FPCLINE>
+      <FPCLINE>* Developer  : Vivek Gaur                                              *</FPCLINE>
+      <FPCLINE>* Object Type: Form Interface                                          *</FPCLINE>
+      <FPCLINE>* SAP Release: SAP ECC 6.0                                             *</FPCLINE>
+      <FPCLINE>*----------------------------------------------------------------------*</FPCLINE>
+      <FPCLINE>* WRICEF ID  : OTC_FDD_0013_Monthly Open AR Statement                  *</FPCLINE>
+      <FPCLINE>*----------------------------------------------------------------------*</FPCLINE>
+      <FPCLINE>* Description: The monthly open AR statement is sent to the customers  *</FPCLINE>
+      <FPCLINE>*              based on the monthly payment terms. The statement lists *</FPCLINE>
+      <FPCLINE>*              all the debit and credit invoices payable in the current*</FPCLINE>
+      <FPCLINE>*              payment cycle.                                          *</FPCLINE>
+      <FPCLINE>*----------------------------------------------------------------------*</FPCLINE>
+      <FPCLINE>* Modification History:                                                *</FPCLINE>
+      <FPCLINE>*======================================================================*</FPCLINE>
+      <FPCLINE>* Date        User      Transport  Description                         *</FPCLINE>
+      <FPCLINE>* =========== ========  ========== ====================================*</FPCLINE>
+      <FPCLINE>* 12-MAY-2012 VGAUR     E1DK901190 Initial development                 *</FPCLINE>
+      <FPCLINE>* 07-jan-2014 KBANSAL E2DK906565  Defect# 1997- Remit to is not        *</FPCLINE>
+      <FPCLINE>*                                               populating for company *</FPCLINE>
+      <FPCLINE>*                                               code 1103 and remove   *</FPCLINE>
+      <FPCLINE>*                                               periods between US and *</FPCLINE>
+      <FPCLINE>*                                               correct Remit to addres*</FPCLINE>
+      <FPCLINE>* 13-Jan-2015 NSAXENA E2DK906565  CR D2_391-Sort the output table by   *</FPCLINE>
+      <FPCLINE>*                                           Curr and also create field *</FPCLINE>
+      <FPCLINE>*                                           in Layout with CURR details*</FPCLINE>
+      <FPCLINE>*&amp;---------------------------------------------------------------------*</FPCLINE>
+      <FPCLINE>*24-Feb-2017   NALI     E1DK925882  CR#356: Populate Compte in FR Bank  *</FPCLINE>
+      <FPCLINE>*                                   Account details by rearranging the  *</FPCLINE>
+      <FPCLINE>*                                   IBAN in the manner -                *</FPCLINE>
+      <FPCLINE>*                                   TIBAN-IBAN (5:10) + &apos; &apos; +           *</FPCLINE>
+      <FPCLINE>*                                   TIBAN-IBAN(15:11) + &apos; &apos; +           *</FPCLINE>
+      <FPCLINE>*                                   TIBAN-IBAN (26:2)                   *</FPCLINE>
+      <FPCLINE>*-----------------------------------------------------------------------*</FPCLINE>
+      <FPCLINE>*16-Mar-2017   NALI     E1DK925882  CR#385: Calculate the total amount  *</FPCLINE>
+      <FPCLINE>*                                   due grouping by currency            *</FPCLINE>
+      <FPCLINE>*-----------------------------------------------------------------------*</FPCLINE>
+      <FPCLINE>* 21-Nov-2017 SMUKHER4  E1DK931140  Defect 4242: Amount formatting for  *</FPCLINE>
+      <FPCLINE>* D3 countries using SET COUNTRY, e.g print &apos;.&apos; as thousand separator   *</FPCLINE>
+      <FPCLINE>* for Nordic countries.                                                 *</FPCLINE>
+      <FPCLINE>*************************************************************************</FPCLINE>
+      <FPCLINE/>
+      <FPCLINE>TYPES:</FPCLINE>
+      <FPCLINE>*&amp;--Display table structure</FPCLINE>
+      <FPCLINE>  BEGIN OF ty_display,</FPCLINE>
+      <FPCLINE>* boc nISHA</FPCLINE>
+      <FPCLINE>*    budat    TYPE budat,   &quot;Posting Date in the Document</FPCLINE>
+      <FPCLINE>* ---&gt; Begin of Delete for Defect#5464:D3_OTC_FDD_0013  by SGHOSH</FPCLINE>
+      <FPCLINE>*    BUDAT   TYPE CHAR10,</FPCLINE>
+      <FPCLINE>* &lt;--- End of Delete for Defect#5464:D3_OTC_FDD_0013 by SGHOSH</FPCLINE>
+      <FPCLINE>* ---&gt; Begin of Delete for Defect#5464:D3_OTC_FDD_0013  by SGHOSH</FPCLINE>
+      <FPCLINE>    budat   TYPE char15, &quot; Budat of type CHAR15</FPCLINE>
+      <FPCLINE>* &lt;--- End of Delete for Defect#5464:D3_OTC_FDD_0013 by SGHOSH</FPCLINE>
+      <FPCLINE>* eoc NISHA</FPCLINE>
+      <FPCLINE>    zuonr   TYPE dzuonr,  &quot;PO Number</FPCLINE>
+      <FPCLINE>    charge  TYPE char20,  &quot;Charges</FPCLINE>
+      <FPCLINE>    credit  TYPE char20,  &quot;Credit</FPCLINE>
+      <FPCLINE>    amount  TYPE char20,  &quot;Amount Due</FPCLINE>
+      <FPCLINE>    belnr   TYPE char45,&quot;belnr_d, &quot;Invoice No.  &quot;Begin of change for SCTASK0995393</FPCLINE>
+      <FPCLINE>    amtdue  TYPE char20,  &quot;Amount Due</FPCLINE>
+      <FPCLINE>* ---&gt; Begin of Insert for CR D2_391,D2_OTC_FDD_0013  by NSAXENA</FPCLINE>
+      <FPCLINE>    waers TYPE waers, &quot; Currency Key</FPCLINE>
+      <FPCLINE>* &lt;--- End of Insert for CR D2_391,D2_OTC_FDD_0013 by NSAXENA</FPCLINE>
+      <FPCLINE>  END OF ty_display,</FPCLINE>
+      <FPCLINE/>
+      <FPCLINE>*&amp;--Display table type</FPCLINE>
+      <FPCLINE>  tt_display TYPE STANDARD TABLE OF ty_display,</FPCLINE>
+      <FPCLINE/>
+      <FPCLINE>*&amp;--Balance Assigned to a Sorted List Interval</FPCLINE>
+      <FPCLINE>  BEGIN OF ty_balance,</FPCLINE>
+      <FPCLINE>* ---&gt; Begin of Delete for D3_OTC_FDD_0013 Defect# 4242 by SMUKHER4 on 21-Nov-2017.</FPCLINE>
+      <FPCLINE>*    current TYPE rastb, &quot;Current</FPCLINE>
+      <FPCLINE>*    upto60  TYPE rastb, &quot;31 to 60 Days</FPCLINE>
+      <FPCLINE>*    upto90  TYPE rastb, &quot;61 to 90 Days</FPCLINE>
+      <FPCLINE>*    over90  TYPE rastb, &quot;Over 90 Days</FPCLINE>
+      <FPCLINE>*    baldue  TYPE rastb, &quot;Balance Due</FPCLINE>
+      <FPCLINE>* &lt;--- End of Delete for D3_OTC_FDD_0013 Defect# 4242 by SMUKHER4 on 21-Nov-2017.</FPCLINE>
+      <FPCLINE>* ---&gt; Begin of Insert for D3_OTC_FDD_0013 Defect# 4242 by SMUKHER4 on 21-Nov-2017.</FPCLINE>
+      <FPCLINE>*&amp;--Data types has been changed to Char20 since we need to use WRITE statement while</FPCLINE>
+      <FPCLINE>*&amp;--passing currency in the amount fields.</FPCLINE>
+      <FPCLINE>    current TYPE char20, &quot;Current</FPCLINE>
+      <FPCLINE>    upto60  TYPE char20, &quot;31 to 60 Days</FPCLINE>
+      <FPCLINE>    upto90  TYPE char20, &quot;61 to 90 Days</FPCLINE>
+      <FPCLINE>    over90  TYPE char20, &quot;Over 90 Days</FPCLINE>
+      <FPCLINE>    baldue  TYPE char20, &quot;Balance Due</FPCLINE>
+      <FPCLINE>* &lt;--- End of Insert for D3_OTC_FDD_0013 Defect# 4242 by SMUKHER4 on 21-Nov-2017.</FPCLINE>
+      <FPCLINE/>
+      <FPCLINE>* ---&gt; Begin of Change for D3_OTC_FDD_0013_CR#385 by NALI</FPCLINE>
+      <FPCLINE>    waers   TYPE waers, &quot; Currency Key</FPCLINE>
+      <FPCLINE>* &lt;--- End of Change for D3_OTC_FDD_0013_CR#385 by NALI</FPCLINE>
+      <FPCLINE>  END OF ty_balance,</FPCLINE>
+      <FPCLINE>* ---&gt; Begin of Change for D3_OTC_FDD_0013_CR#385 by NALI</FPCLINE>
+      <FPCLINE>  tt_balance  TYPE STANDARD TABLE OF ty_balance.</FPCLINE>
+      <FPCLINE>* &lt;--- End of Change for D3_OTC_FDD_0013_CR#385 by NALI</FPCLINE>
+      <FPCLINE/>
+      <FPCLINE/>
+      <FPCLINE/>
+      <FPCLINE>* ---&gt; Begin of Defect# 1997 for D2_OTC_FDD_0013 by KBANSAL.</FPCLINE>
+      <FPCLINE>TYPES: BEGIN OF ty_adrs,  &quot;Address lines for Lockbox and Customer</FPCLINE>
+      <FPCLINE>       text1 TYPE char40, &quot; Text1 of type CHAR40</FPCLINE>
+      <FPCLINE>     END OF ty_adrs,</FPCLINE>
+      <FPCLINE/>
+      <FPCLINE>*final address table</FPCLINE>
+      <FPCLINE>tt_address TYPE STANDARD TABLE OF ty_adrs,</FPCLINE>
+      <FPCLINE>* &lt;--- End of Defect# 1997 for D2_OTC_FDD_0013 by KBANSAL.</FPCLINE>
+      <FPCLINE/>
+      <FPCLINE>* ---&gt; Begin of Change for D3_OTC_FDD_0013_CR#356_PartII by NALI</FPCLINE>
+      <FPCLINE>     BEGIN OF ty_housebank_info,</FPCLINE>
+      <FPCLINE>        banka         TYPE banka,    &quot; Name of bank</FPCLINE>
+      <FPCLINE>        stras         TYPE stras_gp, &quot; House number and street</FPCLINE>
+      <FPCLINE>        ort01         TYPE ort01_gp, &quot; City</FPCLINE>
+      <FPCLINE>        swift         TYPE swift,    &quot; SWIFT/BIC for International Payments</FPCLINE>
+      <FPCLINE>        bankn         TYPE char24,   &quot; Bankn of type CHAR24</FPCLINE>
+      <FPCLINE>        iban          TYPE iban,     &quot; IBAN (International Bank Account Number)</FPCLINE>
+      <FPCLINE>        bank_key      TYPE bankk,    &quot; Bank Keys</FPCLINE>
+      <FPCLINE>        bank_country  TYPE banks,    &quot; Bank country key</FPCLINE>
+      <FPCLINE>        waers         TYPE waers,    &quot; Currency Key</FPCLINE>
+      <FPCLINE>        fr_iban       TYPE iban,     &quot; IBAN (International Bank Account Number)</FPCLINE>
+      <FPCLINE>      END OF ty_housebank_info.</FPCLINE>
+      <FPCLINE>* &lt;--- End of Change for D3_OTC_FDD_0013_CR#356_PartII by NALI</FPCLINE>
+     </TYPES>
+     <FIELDSYMBOLS/>
+    </CL_FP_GLOBAL_DEFINITIONS>
+   </cls:CL_FP_GLOBAL_DEFINITIONS>
+   <cls:CL_FP_PARAMETERS id="o4">
+    <CL_FP_INTERFACE_DATA_CHANGED classVersion="1">
+     <INTERFACE_DATA href="#o1"/>
+    </CL_FP_INTERFACE_DATA_CHANGED>
+    <CL_FP_PARAMETERS classVersion="1">
+     <IMPORT_PARAMETERS>
+      <SFPIOPAR>
+       <NAME>IM_GV_LANGU_BI</NAME>
+       <TYPING>TYPE</TYPING>
+       <TYPENAME>SPRAS</TYPENAME>
+       <OPTIONAL>X</OPTIONAL>
+       <BYVALUE/>
+       <DEFAULTVAL/>
+       <STANDARD/>
+       <CONSTANT/>
+      </SFPIOPAR>
+      <SFPIOPAR>
+       <NAME>IM_CUSTOMER_NO</NAME>
+       <TYPING>TYPE</TYPING>
+       <TYPENAME>KUNNR</TYPENAME>
+       <OPTIONAL/>
+       <BYVALUE/>
+       <DEFAULTVAL/>
+       <STANDARD/>
+       <CONSTANT/>
+      </SFPIOPAR>
+      <SFPIOPAR>
+       <NAME>IM_CREDIT_PHONE</NAME>
+       <TYPING>TYPE</TYPING>
+       <TYPENAME>Z_MVALUE_HIGH</TYPENAME>
+       <OPTIONAL>X</OPTIONAL>
+       <BYVALUE/>
+       <DEFAULTVAL/>
+       <STANDARD/>
+       <CONSTANT/>
+      </SFPIOPAR>
+      <SFPIOPAR>
+       <NAME>LT_ITEM</NAME>
+       <TYPING>TYPE</TYPING>
+       <TYPENAME>RFKORD_T_ITEM</TYPENAME>
+       <OPTIONAL>X</OPTIONAL>
+       <BYVALUE/>
+       <DEFAULTVAL/>
+       <STANDARD/>
+       <CONSTANT/>
+      </SFPIOPAR>
+      <SFPIOPAR>
+       <NAME>LT_RTAB</NAME>
+       <TYPING>TYPE</TYPING>
+       <TYPENAME>RFKORD_T_RTAB</TYPENAME>
+       <OPTIONAL>X</OPTIONAL>
+       <BYVALUE/>
+       <DEFAULTVAL/>
+       <STANDARD/>
+       <CONSTANT/>
+      </SFPIOPAR>
+      <SFPIOPAR>
+       <NAME>IM_X_HOUSEBANK</NAME>
+       <TYPING>TYPE</TYPING>
+       <TYPENAME>ZOTC_HOUSEBANK</TYPENAME>
+       <OPTIONAL>X</OPTIONAL>
+       <BYVALUE/>
+       <DEFAULTVAL/>
+       <STANDARD/>
+       <CONSTANT/>
+      </SFPIOPAR>
+      <SFPIOPAR>
+       <NAME>IM_HOUSEBANK_LINE2</NAME>
+       <TYPING>TYPE</TYPING>
+       <TYPENAME>STRING</TYPENAME>
+       <OPTIONAL>X</OPTIONAL>
+       <BYVALUE/>
+       <DEFAULTVAL/>
+       <STANDARD/>
+       <CONSTANT/>
+      </SFPIOPAR>
+      <SFPIOPAR>
+       <NAME>IM_X_STANDARD_TEXT</NAME>
+       <TYPING>TYPE</TYPING>
+       <TYPENAME>ZOTC0013_ST_LIST</TYPENAME>
+       <OPTIONAL>X</OPTIONAL>
+       <BYVALUE/>
+       <DEFAULTVAL/>
+       <STANDARD/>
+       <CONSTANT/>
+      </SFPIOPAR>
+      <SFPIOPAR>
+       <NAME>IM_ORG_ADDRESS</NAME>
+       <TYPING>TYPE</TYPING>
+       <TYPENAME>ZOTC_COMPANY_ADDRESS</TYPENAME>
+       <OPTIONAL>X</OPTIONAL>
+       <BYVALUE/>
+       <DEFAULTVAL/>
+       <STANDARD/>
+       <CONSTANT/>
+      </SFPIOPAR>
+      <SFPIOPAR>
+       <NAME>IM_COMPANY_ADRNR</NAME>
+       <TYPING>TYPE</TYPING>
+       <TYPENAME>ADRNR</TYPENAME>
+       <OPTIONAL>X</OPTIONAL>
+       <BYVALUE/>
+       <DEFAULTVAL/>
+       <STANDARD/>
+       <CONSTANT/>
+      </SFPIOPAR>
+      <SFPIOPAR>
+       <NAME>IM_CUSTOMER_ADRNR</NAME>
+       <TYPING>TYPE</TYPING>
+       <TYPENAME>ADRNR</TYPENAME>
+       <OPTIONAL>X</OPTIONAL>
+       <BYVALUE/>
+       <DEFAULTVAL/>
+       <STANDARD/>
+       <CONSTANT/>
+      </SFPIOPAR>
+      <SFPIOPAR>
+       <NAME>IM_CUSTOMER_EMAIL</NAME>
+       <TYPING>TYPE</TYPING>
+       <TYPENAME>AD_SMTPADR</TYPENAME>
+       <OPTIONAL>X</OPTIONAL>
+       <BYVALUE/>
+       <DEFAULTVAL/>
+       <STANDARD/>
+       <CONSTANT/>
+      </SFPIOPAR>
+      <SFPIOPAR>
+       <NAME>IM_CREDIT_CONTACT</NAME>
+       <TYPING>TYPE</TYPING>
+       <TYPENAME>STEXT_CM</TYPENAME>
+       <OPTIONAL>X</OPTIONAL>
+       <BYVALUE/>
+       <DEFAULTVAL/>
+       <STANDARD/>
+       <CONSTANT/>
+      </SFPIOPAR>
+      <SFPIOPAR>
+       <NAME>IM_DOLLAR_1</NAME>
+       <TYPING>TYPE</TYPING>
+       <TYPENAME>STRING</TYPENAME>
+       <OPTIONAL/>
+       <BYVALUE/>
+       <DEFAULTVAL/>
+       <STANDARD/>
+       <CONSTANT/>
+      </SFPIOPAR>
+      <SFPIOPAR>
+       <NAME>IM_DOLLAR_2</NAME>
+       <TYPING>TYPE</TYPING>
+       <TYPENAME>STRING</TYPENAME>
+       <OPTIONAL/>
+       <BYVALUE/>
+       <DEFAULTVAL/>
+       <STANDARD/>
+       <CONSTANT/>
+      </SFPIOPAR>
+      <SFPIOPAR>
+       <NAME>IM_DOLLAR_3</NAME>
+       <TYPING>TYPE</TYPING>
+       <TYPENAME>STRING</TYPENAME>
+       <OPTIONAL/>
+       <BYVALUE/>
+       <DEFAULTVAL/>
+       <STANDARD/>
+       <CONSTANT/>
+      </SFPIOPAR>
+      <SFPIOPAR>
+       <NAME>IM_DOLLAR_4</NAME>
+       <TYPING>TYPE</TYPING>
+       <TYPENAME>STRING</TYPENAME>
+       <OPTIONAL/>
+       <BYVALUE/>
+       <DEFAULTVAL/>
+       <STANDARD/>
+       <CONSTANT/>
+      </SFPIOPAR>
+      <SFPIOPAR>
+       <NAME>IM_PESOS_1</NAME>
+       <TYPING>TYPE</TYPING>
+       <TYPENAME>STRING</TYPENAME>
+       <OPTIONAL/>
+       <BYVALUE/>
+       <DEFAULTVAL/>
+       <STANDARD/>
+       <CONSTANT/>
+      </SFPIOPAR>
+      <SFPIOPAR>
+       <NAME>IM_PESOS_2</NAME>
+       <TYPING>TYPE</TYPING>
+       <TYPENAME>STRING</TYPENAME>
+       <OPTIONAL/>
+       <BYVALUE/>
+       <DEFAULTVAL/>
+       <STANDARD/>
+       <CONSTANT/>
+      </SFPIOPAR>
+      <SFPIOPAR>
+       <NAME>IM_PESOS_3</NAME>
+       <TYPING>TYPE</TYPING>
+       <TYPENAME>STRING</TYPENAME>
+       <OPTIONAL/>
+       <BYVALUE/>
+       <DEFAULTVAL/>
+       <STANDARD/>
+       <CONSTANT/>
+      </SFPIOPAR>
+      <SFPIOPAR>
+       <NAME>IM_PESOS_4</NAME>
+       <TYPING>TYPE</TYPING>
+       <TYPENAME>STRING</TYPENAME>
+       <OPTIONAL/>
+       <BYVALUE/>
+       <DEFAULTVAL/>
+       <STANDARD/>
+       <CONSTANT/>
+      </SFPIOPAR>
+      <SFPIOPAR>
+       <NAME>IM_PESOS_5</NAME>
+       <TYPING>TYPE</TYPING>
+       <TYPENAME>STRING</TYPENAME>
+       <OPTIONAL/>
+       <BYVALUE/>
+       <DEFAULTVAL/>
+       <STANDARD/>
+       <CONSTANT/>
+      </SFPIOPAR>
+      <SFPIOPAR>
+       <NAME>IM_PESOS_6</NAME>
+       <TYPING>TYPE</TYPING>
+       <TYPENAME>STRING</TYPENAME>
+       <OPTIONAL/>
+       <BYVALUE/>
+       <DEFAULTVAL/>
+       <STANDARD/>
+       <CONSTANT/>
+      </SFPIOPAR>
+      <SFPIOPAR>
+       <NAME>IM_REMIT_L1</NAME>
+       <TYPING>TYPE</TYPING>
+       <TYPENAME>STRING</TYPENAME>
+       <OPTIONAL/>
+       <BYVALUE/>
+       <DEFAULTVAL/>
+       <STANDARD/>
+       <CONSTANT/>
+      </SFPIOPAR>
+      <SFPIOPAR>
+       <NAME>IM_REMIT_L2</NAME>
+       <TYPING>TYPE</TYPING>
+       <TYPENAME>STRING</TYPENAME>
+       <OPTIONAL/>
+       <BYVALUE/>
+       <DEFAULTVAL/>
+       <STANDARD/>
+       <CONSTANT/>
+      </SFPIOPAR>
+      <SFPIOPAR>
+       <NAME>IM_REMIT_L3</NAME>
+       <TYPING>TYPE</TYPING>
+       <TYPENAME>STRING</TYPENAME>
+       <OPTIONAL/>
+       <BYVALUE/>
+       <DEFAULTVAL/>
+       <STANDARD/>
+       <CONSTANT/>
+      </SFPIOPAR>
+      <SFPIOPAR>
+       <NAME>IM_D3_REMIT_TO_ADDRESS</NAME>
+       <TYPING>TYPE</TYPING>
+       <TYPENAME>ADRNR</TYPENAME>
+       <OPTIONAL/>
+       <BYVALUE/>
+       <DEFAULTVAL/>
+       <STANDARD/>
+       <CONSTANT/>
+      </SFPIOPAR>
+      <SFPIOPAR>
+       <NAME>IM_T_HOUSEBANK</NAME>
+       <TYPING>TYPE</TYPING>
+       <TYPENAME>ZOTC_T_HOUSEBANK</TYPENAME>
+       <OPTIONAL>X</OPTIONAL>
+       <BYVALUE>X</BYVALUE>
+       <DEFAULTVAL/>
+       <STANDARD/>
+       <CONSTANT/>
+      </SFPIOPAR>
+      <SFPIOPAR>
+       <NAME>IM_T_FR_BANKINFO</NAME>
+       <TYPING>TYPE</TYPING>
+       <TYPENAME>ZOTC_T_HOUSEBANK</TYPENAME>
+       <OPTIONAL>X</OPTIONAL>
+       <BYVALUE>X</BYVALUE>
+       <DEFAULTVAL/>
+       <STANDARD/>
+       <CONSTANT/>
+      </SFPIOPAR>
+      <SFPIOPAR>
+       <NAME>IM_CUST_COUNTRY</NAME>
+       <TYPING>TYPE</TYPING>
+       <TYPENAME>STRING</TYPENAME>
+       <OPTIONAL/>
+       <BYVALUE/>
+       <DEFAULTVAL/>
+       <STANDARD/>
+       <CONSTANT/>
+      </SFPIOPAR>
+      <SFPIOPAR>
+       <NAME>IM_CUST_LANGU</NAME>
+       <TYPING>TYPE</TYPING>
+       <TYPENAME>SPRAS</TYPENAME>
+       <OPTIONAL/>
+       <BYVALUE/>
+       <DEFAULTVAL/>
+       <STANDARD/>
+       <CONSTANT/>
+      </SFPIOPAR>
+      <SFPIOPAR>
+       <NAME>IM_COMP_LANGU</NAME>
+       <TYPING>TYPE</TYPING>
+       <TYPENAME>SPRAS</TYPENAME>
+       <OPTIONAL/>
+       <BYVALUE/>
+       <DEFAULTVAL/>
+       <STANDARD/>
+       <CONSTANT/>
+      </SFPIOPAR>
+      <SFPIOPAR>
+       <NAME>IM_D3_FLAG</NAME>
+       <TYPING>TYPE</TYPING>
+       <TYPENAME>CHAR01</TYPENAME>
+       <OPTIONAL/>
+       <BYVALUE/>
+       <DEFAULTVAL/>
+       <STANDARD/>
+       <CONSTANT/>
+      </SFPIOPAR>
+      <SFPIOPAR>
+       <NAME>IM_T001_BUKRS</NAME>
+       <TYPING>TYPE</TYPING>
+       <TYPENAME>BUKRS</TYPENAME>
+       <OPTIONAL/>
+       <BYVALUE/>
+       <DEFAULTVAL/>
+       <STANDARD/>
+       <CONSTANT/>
+      </SFPIOPAR>
+      <SFPIOPAR>
+       <NAME>IM_HOUSEBANK</NAME>
+       <TYPING>TYPE</TYPING>
+       <TYPENAME>ZOTC_HOUSEBANK</TYPENAME>
+       <OPTIONAL/>
+       <BYVALUE/>
+       <DEFAULTVAL/>
+       <STANDARD/>
+       <CONSTANT/>
+      </SFPIOPAR>
+      <SFPIOPAR>
+       <NAME>IM_D3_SENDER_COUNTRY</NAME>
+       <TYPING>TYPE</TYPING>
+       <TYPENAME>LAND1</TYPENAME>
+       <OPTIONAL/>
+       <BYVALUE/>
+       <DEFAULTVAL/>
+       <STANDARD/>
+       <CONSTANT/>
+      </SFPIOPAR>
+     </IMPORT_PARAMETERS>
+     <EXPORT_PARAMETERS/>
+     <TABLE_PARAMETERS/>
+     <EXCEPTIONS/>
+    </CL_FP_PARAMETERS>
+   </cls:CL_FP_PARAMETERS>
+   <cls:CL_FP_CODING id="o5">
+    <CL_FP_INTERFACE_DATA_CHANGED classVersion="1">
+     <INTERFACE_DATA href="#o1"/>
+    </CL_FP_INTERFACE_DATA_CHANGED>
+    <CL_FP_CODING classVersion="1">
+     <INPUT_PARAMETERS/>
+     <OUTPUT_PARAMETERS/>
+     <INITIALIZATION>
+      <FPCLINE>************************************************************************</FPCLINE>
+      <FPCLINE>* Interface  : ZOTC0013_MONTHLY_OPEN_AR_STMT                           *</FPCLINE>
+      <FPCLINE>* Title      : Monthly Open AR Statement                               *</FPCLINE>
+      <FPCLINE>* Developer  : Vivek Gaur                                              *</FPCLINE>
+      <FPCLINE>* Object Type: Form Interface                                          *</FPCLINE>
+      <FPCLINE>* SAP Release: SAP ECC 6.0                                             *</FPCLINE>
+      <FPCLINE>*----------------------------------------------------------------------*</FPCLINE>
+      <FPCLINE>* WRICEF ID  : OTC_FDD_0013_Monthly Open AR Statement                  *</FPCLINE>
+      <FPCLINE>*----------------------------------------------------------------------*</FPCLINE>
+      <FPCLINE>* Description: The monthly open AR statement is sent to the customers  *</FPCLINE>
+      <FPCLINE>*              based on the monthly payment terms. The statement lists *</FPCLINE>
+      <FPCLINE>*              all the debit and credit invoices payable in the current*</FPCLINE>
+      <FPCLINE>*              payment cycle.                                          *</FPCLINE>
+      <FPCLINE>*----------------------------------------------------------------------*</FPCLINE>
+      <FPCLINE>* Modification History:                                                *</FPCLINE>
+      <FPCLINE>*======================================================================*</FPCLINE>
+      <FPCLINE>* Date        User      Transport  Description                         *</FPCLINE>
+      <FPCLINE>* =========== ========  ========== ====================================*</FPCLINE>
+      <FPCLINE>* 12-MAY-2012 VGAUR     E1DK901190 Initial development                 *</FPCLINE>
+      <FPCLINE>*======================================================================*</FPCLINE>
+      <FPCLINE>* Date        User      Transport  Description                         *</FPCLINE>
+      <FPCLINE>* =========== ========  ========== ====================================*</FPCLINE>
+      <FPCLINE>* 04-APR-2013 AMANGAL  E1DK909862  CR357 Defect 3453.Change the date</FPCLINE>
+      <FPCLINE>*                                  for aging bucket calculation        *</FPCLINE>
+      <FPCLINE>*                                  to bldat(document date) instead of  *</FPCLINE>
+      <FPCLINE>*                                  budat (posting date).Defect# 3453   *</FPCLINE>
+      <FPCLINE>*                                  FORM f_format_item_data             *</FPCLINE>
+      <FPCLINE>*======================================================================*</FPCLINE>
+      <FPCLINE>* WRICEF ID:   D2_OTC_FDD_0013_Monthly Open AR Statement               *</FPCLINE>
+      <FPCLINE>* Date         User     Transport  Description                         *</FPCLINE>
+      <FPCLINE>* ===========  ======== ========== ====================================*</FPCLINE>
+      <FPCLINE>* 19-Nov-2014  NSAXENA  E2DK906565 D2 Changes - Replacing Remit to      *</FPCLINE>
+      <FPCLINE>*                                 address with standard text address in*</FPCLINE>
+      <FPCLINE>*                                 case of spanish lang- Added varibaes *</FPCLINE>
+      <FPCLINE>*                                 in Importing paramete for two standrd*</FPCLINE>
+      <FPCLINE>*                                 text no change in code initialisation*</FPCLINE>
+      <FPCLINE>* 07-jan-2014  KBANSAL E2DK906565  Defect# 1997- Remit to is not        *</FPCLINE>
+      <FPCLINE>*                                               populating for company *</FPCLINE>
+      <FPCLINE>*                                               code 1103 and remove   *</FPCLINE>
+      <FPCLINE>*                                               periods between US and *</FPCLINE>
+      <FPCLINE>*                                               correct Remit to address*</FPCLINE>
+      <FPCLINE>*26-March-2015 KBANSAL E2DK906565 Defect# 4271- Maintain standard text  *</FPCLINE>
+      <FPCLINE>*                                 for Company Code-1020(Both English and*</FPCLINE>
+      <FPCLINE>*                                 French Text Displayed1103(only Spanish*</FPCLINE>
+      <FPCLINE>*                                 Text) displayed.                      *</FPCLINE>
+      <FPCLINE>*01-April-2015 NBAIS E2DK906565  Defect# 4271(2nd change)-              *</FPCLINE>
+      <FPCLINE>*                                Change the Translation                 *</FPCLINE>
+      <FPCLINE>*                                for Canada and Mexico                  *</FPCLINE>
+      <FPCLINE>*                                date format for Mexico.                *</FPCLINE>
+      <FPCLINE>*05-Apr-2016   SAGARWA1 E2DK917421   Defect#1134: Change the Date format*</FPCLINE>
+      <FPCLINE>*                                    to DD/MM/YYYY for Mexico.          *</FPCLINE>
+      <FPCLINE>*-----------------------------------------------------------------------*</FPCLINE>
+      <FPCLINE>*22-Oct-2016   SGHOSH   E1DK921941   Defect#5464: Date format changed to</FPCLINE>
+      <FPCLINE>*                                    DD-MMM-YYYY for D3 countries</FPCLINE>
+      <FPCLINE>*-----------------------------------------------------------------------*</FPCLINE>
+      <FPCLINE>*03-Jan-2017   SGHOSH   E1DK921941  CR#301: Populate Housebank details  *</FPCLINE>
+      <FPCLINE>*                                   into different structures to display*</FPCLINE>
+      <FPCLINE>*                                   in the form. Logic for Cust VAT num *</FPCLINE>
+      <FPCLINE>*                                   added.                              *</FPCLINE>
+      <FPCLINE>*-----------------------------------------------------------------------*</FPCLINE>
+      <FPCLINE>*24-Feb-2017   NALI     E1DK925882  CR#356: Populate Compte in FR Bank  *</FPCLINE>
+      <FPCLINE>*                                   Account details by rearranging the  *</FPCLINE>
+      <FPCLINE>*                                   IBAN in the manner -                *</FPCLINE>
+      <FPCLINE>*                                   TIBAN-IBAN (5:10) + &apos; &apos; +           *</FPCLINE>
+      <FPCLINE>*                                   TIBAN-IBAN(15:11) + &apos; &apos; +           *</FPCLINE>
+      <FPCLINE>*                                   TIBAN-IBAN (26:2)                   *</FPCLINE>
+      <FPCLINE>*-----------------------------------------------------------------------*</FPCLINE>
+      <FPCLINE>* 10-OCT-2016  NALI     E1DK921941 D3_LEX_FDD_0013 No code changes done.</FPCLINE>
+      <FPCLINE>* Added below in the importing paramters</FPCLINE>
+      <FPCLINE>*1. IM_X_HOUSEBANK</FPCLINE>
+      <FPCLINE>*2. IM_HOUSEBANK_LINE2</FPCLINE>
+      <FPCLINE>*3. IM_X_STANDARD_TEXT</FPCLINE>
+      <FPCLINE>*4. IM_D3_REMIT_TO_ADDRESS</FPCLINE>
+      <FPCLINE>*5. IM_D3_SENDER_COUNTRY</FPCLINE>
+      <FPCLINE>*-----------------------------------------------------------------------*</FPCLINE>
+      <FPCLINE>*06-Apr-2017   NALI     E1DK926553  D3 COE defect 2379 - Suppress the   *</FPCLINE>
+      <FPCLINE>*                                   field Vat no. for Company Codes 1020*</FPCLINE>
+      <FPCLINE>*-----------------------------------------------------------------------*</FPCLINE>
+      <FPCLINE>* 21-Nov-2017 SMUKHER4  E1DK931140  Defect 4242: Amount formatting for  *</FPCLINE>
+      <FPCLINE>* D3 countries using SET COUNTRY, e.g print &apos;.&apos; as thousand separator   *</FPCLINE>
+      <FPCLINE>* for Nordic countries.                                                 *</FPCLINE>
+      <FPCLINE>*************************************************************************</FPCLINE>
+      <FPCLINE>* 25-Jan-2018 SMUKHER4  E1DK931140  D3R3 Development:                   *</FPCLINE>
+      <FPCLINE>*1.Registry number details have been added                              *</FPCLINE>
+      <FPCLINE>*2.Negative sign should be uniformly leading for all the amount fields  *</FPCLINE>
+      <FPCLINE>*3.Footer details have been added                                       *</FPCLINE>
+      <FPCLINE>*4. Charges should not have negative value.                             *</FPCLINE>
+      <FPCLINE>*5.Bank details have been added based on the bank country code.         *</FPCLINE>
+      <FPCLINE>*6.Bank,VAT,legal entity details should be found on the footer          *</FPCLINE>
+      <FPCLINE>*&amp;----------------------------------------------------------------------*</FPCLINE>
+      <FPCLINE>* 13-Mar-2018 SMUKHER4 E1DK931140 Defect# 5228: Legal entity name should*</FPCLINE>
+      <FPCLINE>*                                 be concatenated with Name1 &amp; Name2    *</FPCLINE>
+      <FPCLINE>*                                 separated by space and condense.      *</FPCLINE>
+      <FPCLINE>*&amp;----------------------------------------------------------------------*</FPCLINE>
+      <FPCLINE>* 19-Mar-2018 SMUKHER4 E1DK931140 Defect# 5342: For italy (org.2037)    *</FPCLINE>
+      <FPCLINE>*                                 we need to append &apos;gg&apos; to the aging   *</FPCLINE>
+      <FPCLINE>*                                 bracket headings (means days)         *</FPCLINE>
+      <FPCLINE>*************************************************************************</FPCLINE>
+      <FPCLINE>*---&gt; Begin of Delete for D3 COE defect 2379 by NALI on 06-Apr-2017</FPCLINE>
+      <FPCLINE>* ---&gt; Begin of Insert for D3_OTC_FDD_0013_CR#301 by SGHOSH</FPCLINE>
+      <FPCLINE>*TYPES: BEGIN OF lty_t001,</FPCLINE>
+      <FPCLINE>*        waers TYPE waers, &quot; Currency Key</FPCLINE>
+      <FPCLINE>*        stceg TYPE stceg, &quot; VAT Registration Number</FPCLINE>
+      <FPCLINE>*       END OF lty_t001 .</FPCLINE>
+      <FPCLINE>*</FPCLINE>
+      <FPCLINE>*DATA: lx_t001 TYPE lty_t001.</FPCLINE>
+      <FPCLINE>*&lt;--- End of Delete for D3 COE defect 2379 by NALI on 06-Apr-2017</FPCLINE>
+      <FPCLINE/>
+      <FPCLINE>FIELD-SYMBOLS: &lt;lfs_item&gt; TYPE RFKORD_S_ITEM. &quot; Structure for Sorted List Information (RFKORD* Correspond.)</FPCLINE>
+      <FPCLINE/>
+      <FPCLINE>* &lt;--- End of Insert for D3_OTC_FDD_0013_CR#301 by SGHOSH</FPCLINE>
+      <FPCLINE/>
+      <FPCLINE>* ---&gt; Begin of Change for D2_OTC_FDD_0013 by KBANSAL</FPCLINE>
+      <FPCLINE>CLEAR gv_langu.</FPCLINE>
+      <FPCLINE>gv_langu = /1bcdwb/docparams-langu.</FPCLINE>
+      <FPCLINE>* &lt;--- End of Change for D2_OTC_FDD_0013 by KBANSAL</FPCLINE>
+      <FPCLINE/>
+      <FPCLINE>* ---&gt; Begin of Insert for D3_OTC_FDD_0013 Defect# 4242 by SMUKHER4 on 21-Nov-2017</FPCLINE>
+      <FPCLINE>* For D3, amount formatting using SET country</FPCLINE>
+      <FPCLINE>IF im_d3_sender_country IS NOT INITIAL.</FPCLINE>
+      <FPCLINE>  SET COUNTRY im_d3_sender_country.</FPCLINE>
+      <FPCLINE>ENDIF. &quot; IF im_d3_sender_country IS NOT INITIAL</FPCLINE>
+      <FPCLINE>* &lt;--- End of Insert for D3_OTC_FDD_0013 Defect# 4242 by SMUKHER4 on 21-Nov-2017</FPCLINE>
+      <FPCLINE/>
+      <FPCLINE/>
+      <FPCLINE>*&amp;--For Logo and Watermark</FPCLINE>
+      <FPCLINE>PERFORM f_logo_watermark_image.</FPCLINE>
+      <FPCLINE>*---&gt; Begin of Insert for Defect# 1997, D2_OTC_FDD_0013 by KBANSAL.</FPCLINE>
+      <FPCLINE/>
+      <FPCLINE>*&amp;--Format Addresses in the document</FPCLINE>
+      <FPCLINE>PERFORM f_format_address USING im_org_address</FPCLINE>
+      <FPCLINE>                         CHANGING i_lockbox.</FPCLINE>
+      <FPCLINE>* &lt;--- End   of Insert for Defect# 1997, D2_OTC_FDD_0013 by KBANSAL.</FPCLINE>
+      <FPCLINE>*&amp;--Format item data for display</FPCLINE>
+      <FPCLINE>PERFORM f_format_item_data USING lt_item</FPCLINE>
+      <FPCLINE>                                 lt_rtab</FPCLINE>
+      <FPCLINE>*&amp; --&gt; Begin of Insert for D2_OTC_FDD_0013_Defect#1134 by SAGARWA1</FPCLINE>
+      <FPCLINE>                                 /1bcdwb/docparams-country</FPCLINE>
+      <FPCLINE>*&amp; --&gt; End   of Insert for D2_OTC_FDD_0013_Defect#1134 by SAGARWA1</FPCLINE>
+      <FPCLINE>*&amp; --&gt; Begin of Insert for Defect#5464:D3_OTC_FDD_0013 by SGHOSH</FPCLINE>
+      <FPCLINE>                                im_d3_sender_country.</FPCLINE>
+      <FPCLINE>*&amp; --&gt; End   of Insert for Defect#5464:D3_OTC_FDD_0013 by SGHOSH</FPCLINE>
+      <FPCLINE/>
+      <FPCLINE>*---&gt; Begin of Change for Defect# 4271, D2_OTC_FDD_0013 by KBANSAL.</FPCLINE>
+      <FPCLINE>*Insted of dislaying standard text &apos;OF&apos;, only &apos;/&apos; needs to be printed in all languages.</FPCLINE>
+      <FPCLINE>CONSTANTS: lc_slash TYPE char2 VALUE &apos;/&apos;. &quot; Slash of type CHAR2</FPCLINE>
+      <FPCLINE>gv_of = lc_slash.</FPCLINE>
+      <FPCLINE>*&lt;--- End of Change for Defect# 4271, D2_OTC_FDD_0013 by KBANSAL.</FPCLINE>
+      <FPCLINE>* ---&gt; Begin of Insert for D3_OTC_FDD_0013_CR#301 by SGHOSH</FPCLINE>
+      <FPCLINE>* Fetch Housebank details</FPCLINE>
+      <FPCLINE>PERFORM f_housebank_details USING im_t_housebank</FPCLINE>
+      <FPCLINE>* ---&gt; Begin of Change for D3_OTC_FDD_0013_CR#356_PartII by NALI</FPCLINE>
+      <FPCLINE>                                  im_t_fr_bankinfo.</FPCLINE>
+      <FPCLINE>* &lt;--- End of Change for D3_OTC_FDD_0013_CR#356_PartII by NALI</FPCLINE>
+      <FPCLINE/>
+      <FPCLINE>*---&gt; Begin of Delete for D3 COE defect 2379 by NALI on 06-Apr-2017</FPCLINE>
+      <FPCLINE>*READ TABLE lt_item ASSIGNING &lt;lfs_item&gt; INDEX 1.</FPCLINE>
+      <FPCLINE>*IF sy-subrc IS INITIAL.</FPCLINE>
+      <FPCLINE>** Fetch VAT code</FPCLINE>
+      <FPCLINE>*  SELECT SINGLE waers &quot; Currency Key</FPCLINE>
+      <FPCLINE>*                stceg &quot; VAT Registration Number</FPCLINE>
+      <FPCLINE>*  FROM t001           &quot; Company Codes</FPCLINE>
+      <FPCLINE>*  INTO lx_t001</FPCLINE>
+      <FPCLINE>*  WHERE bukrs = &lt;lfs_item&gt;-bukrs.</FPCLINE>
+      <FPCLINE>*  IF sy-subrc = 0 .</FPCLINE>
+      <FPCLINE>*    gv_vat_no = lx_t001-stceg.</FPCLINE>
+      <FPCLINE>*  ENDIF. &quot; IF sy-subrc = 0</FPCLINE>
+      <FPCLINE>*</FPCLINE>
+      <FPCLINE>*ENDIF. &quot; IF sy-subrc IS INITIAL</FPCLINE>
+      <FPCLINE>*&lt;--- End of Delete for D3 COE defect 2379 by NALI on 06-Apr-2017</FPCLINE>
+      <FPCLINE>* &lt;--- End of Insert for D3_OTC_FDD_0013_CR#301 by SGHOSH</FPCLINE>
+      <FPCLINE/>
+      <FPCLINE>*---&gt; Begin of Insert for D3R3 D3_OTC_FDD_0013 by SMUKHER4 on 25-Jan-2018</FPCLINE>
+      <FPCLINE/>
+      <FPCLINE>*&amp;--Fetch WEEE registry number from SO10 texts for different company codes.</FPCLINE>
+      <FPCLINE/>
+      <FPCLINE>PERFORM f_get_registryno_details USING im_cust_langu</FPCLINE>
+      <FPCLINE>                                       im_comp_langu</FPCLINE>
+      <FPCLINE>                                       im_t001_bukrs</FPCLINE>
+      <FPCLINE>                                 CHANGING gv_weee_no.</FPCLINE>
+      <FPCLINE/>
+      <FPCLINE>*&amp;--Fetch footer details.</FPCLINE>
+      <FPCLINE>*&amp;--Bank, VAT &amp; legal entity details should be found in the footer, not the header</FPCLINE>
+      <FPCLINE/>
+      <FPCLINE>PERFORM f_footer_details USING im_remit_l1</FPCLINE>
+      <FPCLINE>                               im_remit_l2</FPCLINE>
+      <FPCLINE>                               im_remit_l3</FPCLINE>
+      <FPCLINE>*---&gt; Begin of Insert for D3_OTC_FDD_0013 Defect# 5228 by SMUKHER4 on 25-Jan-2018</FPCLINE>
+      <FPCLINE>                               im_org_address</FPCLINE>
+      <FPCLINE>*&lt;--- End of Insert for D3_OTC_FDD_0013 Defect# 5228 by SMUKHER4 on 25-Jan-2018</FPCLINE>
+      <FPCLINE>                               im_comp_langu</FPCLINE>
+      <FPCLINE>                               im_housebank</FPCLINE>
+      <FPCLINE>                               im_d3_flag</FPCLINE>
+      <FPCLINE>                               gv_vat_no</FPCLINE>
+      <FPCLINE>                               gv_weee_no</FPCLINE>
+      <FPCLINE>                     CHANGING gv_footer_lines1</FPCLINE>
+      <FPCLINE>                              gv_footer_lines2</FPCLINE>
+      <FPCLINE>                              gv_footer_lines3</FPCLINE>
+      <FPCLINE>                              gv_footer_lines4</FPCLINE>
+      <FPCLINE>                              gv_footer_lines5</FPCLINE>
+      <FPCLINE>*&lt;--- End of Insert for D3R3 D3_OTC_FDD_0013 by SMUKHER4 on 25-Jan-2018</FPCLINE>
+      <FPCLINE>*---&gt; Begin of Insert for D3_OTC_FDD_0013 Defect# 5342 by SMUKHER4 on 19-Mar-2018</FPCLINE>
+      <FPCLINE>                              gv_current</FPCLINE>
+      <FPCLINE>                              gv_31_60</FPCLINE>
+      <FPCLINE>                              gv_61_90.</FPCLINE>
+      <FPCLINE>*&lt;--- End of Insert for D3_OTC_FDD_0013 Defect# 5342 by SMUKHER4 on 19-Mar-2018</FPCLINE>
+      <FPCLINE/>
+     </INITIALIZATION>
+     <FORMS>
+      <FPCLINE>*************************************************************************</FPCLINE>
+      <FPCLINE>* Interface  : ZOTC0013_MONTHLY_OPEN_AR_STMT                            *</FPCLINE>
+      <FPCLINE>* Title      : Monthly Open AR Statement                                *</FPCLINE>
+      <FPCLINE>* Developer  : Vivek Gaur                                               *</FPCLINE>
+      <FPCLINE>* Object Type: Form Interface                                           *</FPCLINE>
+      <FPCLINE>* SAP Release: SAP ECC 6.0                                              *</FPCLINE>
+      <FPCLINE>*-----------------------------------------------------------------------*</FPCLINE>
+      <FPCLINE>* WRICEF ID  : OTC_FDD_0013_Monthly Open AR Statement                   *</FPCLINE>
+      <FPCLINE>*-----------------------------------------------------------------------*</FPCLINE>
+      <FPCLINE>* Description: The monthly open AR statement is sent to the customers   *</FPCLINE>
+      <FPCLINE>*              based on the monthly payment terms. The statement lists  *</FPCLINE>
+      <FPCLINE>*              all the debit and credit invoices payable in the current *</FPCLINE>
+      <FPCLINE>*              payment cycle.                                           *</FPCLINE>
+      <FPCLINE>*---------------------------------------------------------------------- *</FPCLINE>
+      <FPCLINE>* Modification History:                                                 *</FPCLINE>
+      <FPCLINE>*=======================================================================*</FPCLINE>
+      <FPCLINE>* Date        User      Transport  Description                          *</FPCLINE>
+      <FPCLINE>* =========== ========  ========== ==================================== *</FPCLINE>
+      <FPCLINE>* 12-MAY-2012 VGAUR     E1DK901190 Initial development                  *</FPCLINE>
+      <FPCLINE>*&amp;--------------------------------------------------------------------- *</FPCLINE>
+      <FPCLINE>* 06-DEC-2012 SBASU     E1DK907922 Def_1551/Changed date from           *</FPCLINE>
+      <FPCLINE>*                                  BUDAT to BLDAT and ZUONR             *</FPCLINE>
+      <FPCLINE>*                                  to XBLNR                             *</FPCLINE>
+      <FPCLINE>*&amp;--------------------------------------------------------------------- *</FPCLINE>
+      <FPCLINE>* Date         User      Transport  Description                         *</FPCLINE>
+      <FPCLINE>* ===========  ========  ========== ====================================*</FPCLINE>
+      <FPCLINE>* 04-APR-2013  AMANGAL  E1DK909862  CR357 Defect 3453.Change the date   *</FPCLINE>
+      <FPCLINE>*                                   for aging bucket calculation        *</FPCLINE>
+      <FPCLINE>*                                   to bldat(document date) instead of  *</FPCLINE>
+      <FPCLINE>*                                   budat (posting date).Defect# 3453   *</FPCLINE>
+      <FPCLINE>** 07-jan-2014  KBANSAL E2DK906565  Defect# 1997- Remit to is not       *</FPCLINE>
+      <FPCLINE>*                                               populating for company  *</FPCLINE>
+      <FPCLINE>*                                               code 1103 and remove    *</FPCLINE>
+      <FPCLINE>*                                               periods between US and  *</FPCLINE>
+      <FPCLINE>*                                               correct Remit to addres *</FPCLINE>
+      <FPCLINE>* 13-Jan-2015  NSAXENA E2DK906565  CR D2_391-Sort the output table by   *</FPCLINE>
+      <FPCLINE>*                                           Curr and also create field  *</FPCLINE>
+      <FPCLINE>*                                           in Layout with CURR details *</FPCLINE>
+      <FPCLINE>*26-March-2015 KBANSAL E2DK906565 Defect# 4271- Maintain standard text  *</FPCLINE>
+      <FPCLINE>*                                 for Company Code-1020(Both English and*</FPCLINE>
+      <FPCLINE>*                                 French Text Displayed1103(only Spanish*</FPCLINE>
+      <FPCLINE>*                                 Text) displayed.                      *</FPCLINE>
+      <FPCLINE>*01-April-2015 NBAIS E2DK906565  Defect# 4271(2nd change)-              *</FPCLINE>
+      <FPCLINE>*                                Change the Translation                 *</FPCLINE>
+      <FPCLINE>*                                for Canada and Mexico                  *</FPCLINE>
+      <FPCLINE>*                                date format for Mexico.                *</FPCLINE>
+      <FPCLINE>*05-Apr-2016   SAGARWA1 E2DK917421   Defect#1134: Change the Date format*</FPCLINE>
+      <FPCLINE>*                                    to DD/MM/YYYY for Mexico.          *</FPCLINE>
+      <FPCLINE>*-----------------------------------------------------------------------*</FPCLINE>
+      <FPCLINE>*22-Oct-2016   SGHOSH   E1DK921941   Defect#5464: Date format changed to</FPCLINE>
+      <FPCLINE>*                                    DD-MMM-YYYY for D3 countries</FPCLINE>
+      <FPCLINE>*-----------------------------------------------------------------------*</FPCLINE>
+      <FPCLINE>*03-Jan-2017   SGHOSH   E1DK921941  CR#301: Populate Housebank details  *</FPCLINE>
+      <FPCLINE>*                                   into different structures to display*</FPCLINE>
+      <FPCLINE>*                                   in the form. Logic for Cust VAT num *</FPCLINE>
+      <FPCLINE>*                                   added.                              *</FPCLINE>
+      <FPCLINE>*-----------------------------------------------------------------------*</FPCLINE>
+      <FPCLINE>*24-Feb-2017   NALI     E1DK925882  CR#356: Populate Compte in FR Bank  *</FPCLINE>
+      <FPCLINE>*                                   Account details by rearranging the  *</FPCLINE>
+      <FPCLINE>*                                   IBAN in the manner -                *</FPCLINE>
+      <FPCLINE>*                                   TIBAN-IBAN (5:10) + &apos; &apos; +           *</FPCLINE>
+      <FPCLINE>*                                   TIBAN-IBAN(15:11) + &apos; &apos; +           *</FPCLINE>
+      <FPCLINE>*                                   TIBAN-IBAN (26:2)                   *</FPCLINE>
+      <FPCLINE>*-----------------------------------------------------------------------*</FPCLINE>
+      <FPCLINE>*16-Mar-2017   NALI     E1DK925882  CR#385: Calculate the total amount  *</FPCLINE>
+      <FPCLINE>*                                   due grouping by currency            *</FPCLINE>
+      <FPCLINE>*-----------------------------------------------------------------------*</FPCLINE>
+      <FPCLINE>*06-Apr-2017   NALI     E1DK926553  D3 COE defect 2379 - Suppress the   *</FPCLINE>
+      <FPCLINE>*                                   field Vat no. for Company Codes 1020*</FPCLINE>
+      <FPCLINE>*-----------------------------------------------------------------------*</FPCLINE>
+      <FPCLINE>* 21-Nov-2017 SMUKHER4  E1DK931140  Defect 4242: Amount formatting for  *</FPCLINE>
+      <FPCLINE>* D3 countries using SET COUNTRY, e.g print &apos;.&apos; as thousand separator   *</FPCLINE>
+      <FPCLINE>* for Nordic countries.</FPCLINE>
+      <FPCLINE>*&amp;----------------------------------------------------------------------*</FPCLINE>
+      <FPCLINE>* 25-Jan-2018 SMUKHER4  E1DK931140  D3R3 Development:                   *</FPCLINE>
+      <FPCLINE>*1.Registry number details have been added                              *</FPCLINE>
+      <FPCLINE>*2.Negative sign should be uniformly leading for all the amount fields  *</FPCLINE>
+      <FPCLINE>*3.Footer details have been added                                       *</FPCLINE>
+      <FPCLINE>*4. Charges should not have negative value.                             *</FPCLINE>
+      <FPCLINE>*5.Bank details have been added based on the bank country code.         *</FPCLINE>
+      <FPCLINE>*6.Bank,VAT,legal entity details should be found on the footer          *</FPCLINE>
+      <FPCLINE>*&amp;----------------------------------------------------------------------*</FPCLINE>
+      <FPCLINE>* 13-Mar-2018 SMUKHER4 E1DK931140 Defect# 5228: Legal entity name should*</FPCLINE>
+      <FPCLINE>*                                 be concatenated with Name1 &amp; Name2    *</FPCLINE>
+      <FPCLINE>*                                 separated by space and condense.      *</FPCLINE>
+      <FPCLINE>*&amp;----------------------------------------------------------------------*</FPCLINE>
+      <FPCLINE>* 19-Mar-2018 SMUKHER4 E1DK931140 Defect# 5342: For italy (org.2037)    *</FPCLINE>
+      <FPCLINE>*                                 we need to append &apos;gg&apos; to the aging   *</FPCLINE>
+      <FPCLINE>*                                 bracket headings (means days)         *</FPCLINE>
+      <FPCLINE>*************************************************************************</FPCLINE>
+      <FPCLINE>*&amp;      Form  f_logo_watermark_image</FPCLINE>
+      <FPCLINE>*&amp;----------------------------------------------------------------------*</FPCLINE>
+      <FPCLINE>*       For Logo and Watermark</FPCLINE>
+      <FPCLINE>*-----------------------------------------------------------------------*</FPCLINE>
+      <FPCLINE>FORM f_logo_watermark_image.</FPCLINE>
+      <FPCLINE/>
+      <FPCLINE>  CONSTANTS:</FPCLINE>
+      <FPCLINE>*&amp;--SAPscript Graphics Management: Application object</FPCLINE>
+      <FPCLINE>     lc_graphics    TYPE tdobjectgr VALUE &apos;GRAPHICS&apos;, &quot; SAPscript Graphics Management: Application object</FPCLINE>
+      <FPCLINE>*&amp;--Draft Name</FPCLINE>
+      <FPCLINE>     lc_draft_image TYPE tdobname   VALUE &apos;ZOTC_DRAFT&apos;, &quot; Name</FPCLINE>
+      <FPCLINE>*&amp;--Logo Name</FPCLINE>
+      <FPCLINE>     lc_logo_image  TYPE tdobname   VALUE &apos;ZBIORAD_LOGO&apos;, &quot; Name</FPCLINE>
+      <FPCLINE>*&amp;--SAPscript Graphics Management: ID</FPCLINE>
+      <FPCLINE>     lc_image_id    TYPE tdidgr     VALUE &apos;BMAP&apos;, &quot; SAPscript Graphics Management: ID</FPCLINE>
+      <FPCLINE>*&amp;--SAPscript: Type of graphic</FPCLINE>
+      <FPCLINE>     lc_image_type  TYPE tdbtype    VALUE &apos;BCOL&apos;,</FPCLINE>
+      <FPCLINE>*&amp;--Production system</FPCLINE>
+      <FPCLINE>     lc_prod_name   TYPE rvari_vnam VALUE &apos;ZPRODUCTION&apos;, &quot; ABAP: Name of Variant Variable</FPCLINE>
+      <FPCLINE>*&amp;--ABAP: Type of selection</FPCLINE>
+      <FPCLINE>     lc_type        TYPE rsscr_kind VALUE &apos;P&apos;,</FPCLINE>
+      <FPCLINE>*&amp;--ABAP: Current selection number</FPCLINE>
+      <FPCLINE>     lc_numb        TYPE tvarv_numb VALUE &apos;0000&apos;. &quot; ABAP: Current selection number</FPCLINE>
+      <FPCLINE/>
+      <FPCLINE>  DATA:</FPCLINE>
+      <FPCLINE>*&amp;--Production system</FPCLINE>
+      <FPCLINE>    lv_prod        TYPE sysysid. &quot; Name of the SAP System</FPCLINE>
+      <FPCLINE/>
+      <FPCLINE>*&amp;--Check Production Client</FPCLINE>
+      <FPCLINE>  SELECT SINGLE low    &quot; ABAP/4: Selection value (LOW or HIGH value, external format)</FPCLINE>
+      <FPCLINE>           FROM tvarvc &quot; Table of Variant Variables (Client-Specific)</FPCLINE>
+      <FPCLINE>           INTO lv_prod</FPCLINE>
+      <FPCLINE>          WHERE name = lc_prod_name</FPCLINE>
+      <FPCLINE>            AND type = lc_type</FPCLINE>
+      <FPCLINE>            AND numb = lc_numb.</FPCLINE>
+      <FPCLINE>  IF sy-sysid = lv_prod.</FPCLINE>
+      <FPCLINE>    gv_production = abap_true.</FPCLINE>
+      <FPCLINE>*&amp;--If not Production client then</FPCLINE>
+      <FPCLINE>*&amp;--convert watermark image to Binary format</FPCLINE>
+      <FPCLINE>  ELSE. &quot; ELSE -&gt; IF sy-sysid = lv_prod</FPCLINE>
+      <FPCLINE>    CALL METHOD cl_ssf_xsf_utilities=&gt;get_bds_graphic_as_bmp</FPCLINE>
+      <FPCLINE>      EXPORTING</FPCLINE>
+      <FPCLINE>        p_object       = lc_graphics</FPCLINE>
+      <FPCLINE>        p_name         = lc_draft_image</FPCLINE>
+      <FPCLINE>        p_id           = lc_image_id</FPCLINE>
+      <FPCLINE>        p_btype        = lc_image_type</FPCLINE>
+      <FPCLINE>      RECEIVING</FPCLINE>
+      <FPCLINE>        p_bmp          = gv_image_bin</FPCLINE>
+      <FPCLINE>      EXCEPTIONS</FPCLINE>
+      <FPCLINE>        not_found      = 1</FPCLINE>
+      <FPCLINE>        internal_error = 2</FPCLINE>
+      <FPCLINE>        OTHERS         = 3.</FPCLINE>
+      <FPCLINE>    IF sy-subrc &lt;&gt; 0.</FPCLINE>
+      <FPCLINE>      MESSAGE ID sy-msgid TYPE sy-msgty NUMBER sy-msgno</FPCLINE>
+      <FPCLINE>                 WITH sy-msgv1 sy-msgv2 sy-msgv3 sy-msgv4.</FPCLINE>
+      <FPCLINE>    ENDIF. &quot; IF sy-subrc &lt;&gt; 0</FPCLINE>
+      <FPCLINE>  ENDIF. &quot; IF sy-sysid = lv_prod</FPCLINE>
+      <FPCLINE/>
+      <FPCLINE>*&amp;--Convert Logo image to Binary format</FPCLINE>
+      <FPCLINE>  CALL METHOD cl_ssf_xsf_utilities=&gt;get_bds_graphic_as_bmp</FPCLINE>
+      <FPCLINE>    EXPORTING</FPCLINE>
+      <FPCLINE>      p_object       = lc_graphics</FPCLINE>
+      <FPCLINE>      p_name         = lc_logo_image</FPCLINE>
+      <FPCLINE>      p_id           = lc_image_id</FPCLINE>
+      <FPCLINE>      p_btype        = lc_image_type</FPCLINE>
+      <FPCLINE>    RECEIVING</FPCLINE>
+      <FPCLINE>      p_bmp          = gv_logo_bin</FPCLINE>
+      <FPCLINE>    EXCEPTIONS</FPCLINE>
+      <FPCLINE>      not_found      = 1</FPCLINE>
+      <FPCLINE>      internal_error = 2</FPCLINE>
+      <FPCLINE>      OTHERS         = 3.</FPCLINE>
+      <FPCLINE>  IF sy-subrc &lt;&gt; 0.</FPCLINE>
+      <FPCLINE>    MESSAGE ID sy-msgid TYPE sy-msgty NUMBER sy-msgno</FPCLINE>
+      <FPCLINE>               WITH sy-msgv1 sy-msgv2 sy-msgv3 sy-msgv4.</FPCLINE>
+      <FPCLINE>  ENDIF. &quot; IF sy-subrc &lt;&gt; 0</FPCLINE>
+      <FPCLINE/>
+      <FPCLINE/>
+      <FPCLINE>ENDFORM. &quot;f_logo_watermark_image</FPCLINE>
+      <FPCLINE/>
+      <FPCLINE>* ---&gt; Begin of Insert for Defect# 1997, D2_OTC_FDD_0013 by KBANSAL.</FPCLINE>
+      <FPCLINE>*&amp;---------------------------------------------------------------------*</FPCLINE>
+      <FPCLINE>*&amp;      Form  f_format_address</FPCLINE>
+      <FPCLINE>*&amp;---------------------------------------------------------------------*</FPCLINE>
+      <FPCLINE>*       Format Organization Address in the document</FPCLINE>
+      <FPCLINE>*----------------------------------------------------------------------*</FPCLINE>
+      <FPCLINE>*      --&gt;IM_ORG_ADDRESS  Organization Address</FPCLINE>
+      <FPCLINE>*----------------------------------------------------------------------*</FPCLINE>
+      <FPCLINE/>
+      <FPCLINE>FORM f_format_address USING im_org_address TYPE zotc_company_address &quot; Company address</FPCLINE>
+      <FPCLINE>                      CHANGING fp_add_detail TYPE tt_address.        &quot;printing address</FPCLINE>
+      <FPCLINE/>
+      <FPCLINE>  DATA: lwa_adrs TYPE ty_adrs. &quot;Company address display</FPCLINE>
+      <FPCLINE/>
+      <FPCLINE>  IF NOT im_org_address-po_box IS INITIAL.</FPCLINE>
+      <FPCLINE>    CONCATENATE &apos;P.O. Box&apos; im_org_address-po_box</FPCLINE>
+      <FPCLINE>        INTO gv_pobox SEPARATED BY space.</FPCLINE>
+      <FPCLINE>  ENDIF. &quot; IF NOT im_org_address-po_box IS INITIAL</FPCLINE>
+      <FPCLINE/>
+      <FPCLINE>  IF im_org_address-hnum1 IS NOT INITIAL.</FPCLINE>
+      <FPCLINE>    CONCATENATE im_org_address-hnum1</FPCLINE>
+      <FPCLINE>                im_org_address-street</FPCLINE>
+      <FPCLINE>           INTO gv_street_hnum</FPCLINE>
+      <FPCLINE>   SEPARATED BY space.</FPCLINE>
+      <FPCLINE>  ELSE. &quot; ELSE -&gt; IF im_org_address-hnum1 IS NOT INITIAL</FPCLINE>
+      <FPCLINE>    gv_street_hnum = im_org_address-street.</FPCLINE>
+      <FPCLINE>  ENDIF. &quot; IF im_org_address-hnum1 IS NOT INITIAL</FPCLINE>
+      <FPCLINE/>
+      <FPCLINE>  CONCATENATE im_org_address-city1</FPCLINE>
+      <FPCLINE>              im_org_address-region</FPCLINE>
+      <FPCLINE>              space</FPCLINE>
+      <FPCLINE>              im_org_address-pcode1</FPCLINE>
+      <FPCLINE>         INTO gv_city</FPCLINE>
+      <FPCLINE> SEPARATED BY space.</FPCLINE>
+      <FPCLINE/>
+      <FPCLINE>*populating internal table for company address.</FPCLINE>
+      <FPCLINE>*Name1</FPCLINE>
+      <FPCLINE>  IF im_org_address-name1 IS NOT INITIAL.</FPCLINE>
+      <FPCLINE>    lwa_adrs-text1 = im_org_address-name1. &quot;Name1</FPCLINE>
+      <FPCLINE>    APPEND lwa_adrs TO fp_add_detail.</FPCLINE>
+      <FPCLINE>    CLEAR: lwa_adrs.</FPCLINE>
+      <FPCLINE>  ENDIF. &quot; IF im_org_address-name1 IS NOT INITIAL</FPCLINE>
+      <FPCLINE/>
+      <FPCLINE>  IF im_org_address-name2 IS NOT INITIAL.</FPCLINE>
+      <FPCLINE>    lwa_adrs-text1 = im_org_address-name2. &quot;Name1</FPCLINE>
+      <FPCLINE>    APPEND lwa_adrs TO fp_add_detail.</FPCLINE>
+      <FPCLINE>    CLEAR: lwa_adrs.</FPCLINE>
+      <FPCLINE>  ENDIF. &quot; IF im_org_address-name2 IS NOT INITIAL</FPCLINE>
+      <FPCLINE/>
+      <FPCLINE>  IF im_org_address-po_box IS NOT INITIAL.</FPCLINE>
+      <FPCLINE>    lwa_adrs-text1 = gv_pobox. &quot;Name1</FPCLINE>
+      <FPCLINE>    APPEND lwa_adrs TO fp_add_detail.</FPCLINE>
+      <FPCLINE>    CLEAR: lwa_adrs.</FPCLINE>
+      <FPCLINE>  ENDIF. &quot; IF im_org_address-po_box IS NOT INITIAL</FPCLINE>
+      <FPCLINE/>
+      <FPCLINE>  IF gv_street_hnum IS NOT INITIAL.</FPCLINE>
+      <FPCLINE>    lwa_adrs-text1 = gv_street_hnum. &quot;Name1</FPCLINE>
+      <FPCLINE>    APPEND lwa_adrs TO fp_add_detail.</FPCLINE>
+      <FPCLINE>    CLEAR: lwa_adrs.</FPCLINE>
+      <FPCLINE>  ENDIF. &quot; IF gv_street_hnum IS NOT INITIAL</FPCLINE>
+      <FPCLINE>  IF   gv_city IS NOT INITIAL.</FPCLINE>
+      <FPCLINE>    lwa_adrs-text1 = gv_city. &quot;city</FPCLINE>
+      <FPCLINE>    APPEND lwa_adrs TO fp_add_detail.</FPCLINE>
+      <FPCLINE>    CLEAR: lwa_adrs.</FPCLINE>
+      <FPCLINE>  ENDIF. &quot; IF gv_city IS NOT INITIAL</FPCLINE>
+      <FPCLINE/>
+      <FPCLINE/>
+      <FPCLINE>ENDFORM. &quot;f_format_address</FPCLINE>
+      <FPCLINE/>
+      <FPCLINE>* &lt;--- End   of Insert for Defect# 1997, D2_OTC_FDD_0013 by KBANSAL.</FPCLINE>
+      <FPCLINE/>
+      <FPCLINE>*&amp;---------------------------------------------------------------------*</FPCLINE>
+      <FPCLINE>*&amp;      Form  f_format_item_data</FPCLINE>
+      <FPCLINE>*&amp;---------------------------------------------------------------------*</FPCLINE>
+      <FPCLINE>*       Format item data for display</FPCLINE>
+      <FPCLINE>*----------------------------------------------------------------------*</FPCLINE>
+      <FPCLINE>*       --&gt;FP_IT_ITEM   Item table</FPCLINE>
+      <FPCLINE>*       --&gt;FP_IT_RTAB   Balanace Due for Intervals table</FPCLINE>
+      <FPCLINE>*----------------------------------------------------------------------*</FPCLINE>
+      <FPCLINE/>
+      <FPCLINE>FORM f_format_item_data USING fp_it_item TYPE rfkord_t_item</FPCLINE>
+      <FPCLINE>                              fp_it_rtab TYPE rfkord_t_rtab</FPCLINE>
+      <FPCLINE>*&amp; --&gt; Begin of Insert for D2_OTC_FDD_0013_Defect#1134 by SAGARWA1</FPCLINE>
+      <FPCLINE>                              fp_country TYPE land1 &quot; Country Key</FPCLINE>
+      <FPCLINE>*&amp; --&gt; End   of Insert for D2_OTC_FDD_0013_Defect#1134 by SAGARWA1</FPCLINE>
+      <FPCLINE>*&amp; --&gt; Begin of Insert for Defect#5464:D3_OTC_FDD_0013 by SGHOSH</FPCLINE>
+      <FPCLINE>                              fp_d3_country TYPE land1. &quot; Country Key</FPCLINE>
+      <FPCLINE>*&amp; --&gt; End   of Insert for Defect#5464:D3_OTC_FDD_0013 by SGHOSH</FPCLINE>
+      <FPCLINE/>
+      <FPCLINE>* ---&gt; Begin of Change for D3_OTC_FDD_0013_CR#385 by NALI</FPCLINE>
+      <FPCLINE>  TYPES: BEGIN OF lty_amnt_waers,</FPCLINE>
+      <FPCLINE>            waers   TYPE waers, &quot; Currency Key</FPCLINE>
+      <FPCLINE>            bldat   TYPE bldat, &quot; Document Date in Document</FPCLINE>
+      <FPCLINE>            wrshb   TYPE wrshb, &quot; Foreign Currency Amount with Signs (+/-)</FPCLINE>
+      <FPCLINE>         END OF lty_amnt_waers,</FPCLINE>
+      <FPCLINE>* &lt;--- End of Change for D3_OTC_FDD_0013_CR#385 by NALI</FPCLINE>
+      <FPCLINE>*---&gt; Begin of Insert for D3 COE defect 2379 by NALI on 06-Apr-2017</FPCLINE>
+      <FPCLINE>         BEGIN OF lty_t001,</FPCLINE>
+      <FPCLINE>            waers TYPE waers, &quot; Currency Key</FPCLINE>
+      <FPCLINE>            stceg TYPE stceg, &quot; VAT Registration Number</FPCLINE>
+      <FPCLINE>         END OF lty_t001 ,</FPCLINE>
+      <FPCLINE>*&lt;--- End of Insert for D3 COE defect 2379 by NALI on 06-Apr-2017</FPCLINE>
+      <FPCLINE/>
+      <FPCLINE>*---&gt; Begin of Insert for D3R3 D3_OTC_FDD_0013 by SMUKHER4 on 25-Jan-2018</FPCLINE>
+      <FPCLINE>         BEGIN OF lty_t001z,</FPCLINE>
+      <FPCLINE>           paval TYPE paval, &quot; Parameter value</FPCLINE>
+      <FPCLINE>         END OF lty_t001z.</FPCLINE>
+      <FPCLINE>*&lt;--- End of Insert for D3R3 D3_OTC_FDD_0013 by SMUKHER4 on 25-Jan-2018</FPCLINE>
+      <FPCLINE/>
+      <FPCLINE>  DATA:</FPCLINE>
+      <FPCLINE>*&amp;--Sum of current and upto 30 days</FPCLINE>
+      <FPCLINE>      lv_upto30    TYPE rastb, &quot; Amount Assigned to a Sorted List Interval</FPCLINE>
+      <FPCLINE>*&amp;--Date Differences</FPCLINE>
+      <FPCLINE>      lv_date_diff TYPE p, &quot; Date_diff of type Packed Number</FPCLINE>
+      <FPCLINE>      lv_text(1)   TYPE c, &quot; Text(1) of type Character</FPCLINE>
+      <FPCLINE/>
+      <FPCLINE>*&amp;--Workarea for display table</FPCLINE>
+      <FPCLINE>      wlt_display  TYPE ty_display,</FPCLINE>
+      <FPCLINE>*---&gt; Begin of Insert for Defect# 4271(2nd change), D2_OTC_FDD_0013 BY NBAIS</FPCLINE>
+      <FPCLINE>      lv_tran_date TYPE char10,          &quot;TRANSACTION DATE</FPCLINE>
+      <FPCLINE>      lv_date      TYPE char10,          &quot;SYSTEM DATE</FPCLINE>
+      <FPCLINE>      lc_s         TYPE char1 VALUE &apos;S&apos;, &quot; S of type CHAR1</FPCLINE>
+      <FPCLINE>*&lt;--- End of Insert for Defect# 4271(2nd change), D2_OTC_FDD_0013 BY NBAIS</FPCLINE>
+      <FPCLINE>*&amp; --&gt; Begin of Insert for D2_OTC_FDD_0013_Defect#1134 by SAGARWA1</FPCLINE>
+      <FPCLINE>      lv_flag       TYPE flag,                                             &quot; Flag</FPCLINE>
+      <FPCLINE>      li_enh_status TYPE STANDARD TABLE OF zdev_enh_status INITIAL SIZE 0, &quot; Enhancement Status</FPCLINE>
+      <FPCLINE>*&amp; --&gt; End   of Insert for D2_OTC_FDD_0013_Defect#1134 by SAGARWA1</FPCLINE>
+      <FPCLINE>*---&gt; Begin of Insert for Defect#5464:D3_OTC_FDD_0013 BY SGHOSH</FPCLINE>
+      <FPCLINE>      lv_date_format TYPE char15, &quot; Date_format of type CHAR15</FPCLINE>
+      <FPCLINE>*&lt;--- End of Insert for Defect#5464:D3_OTC_FDD_0013 BY SGHOSH</FPCLINE>
+      <FPCLINE>* ---&gt; Begin of Change for D3_OTC_FDD_0013_CR#385 by NALI</FPCLINE>
+      <FPCLINE>      li_item_tmp TYPE STANDARD TABLE OF lty_amnt_waers,</FPCLINE>
+      <FPCLINE>      lwa_item_tmp  TYPE lty_amnt_waers,</FPCLINE>
+      <FPCLINE>      lwa_balance TYPE ty_balance,</FPCLINE>
+      <FPCLINE>* &lt;--- End of Change for D3_OTC_FDD_0013_CR#385 by NALI</FPCLINE>
+      <FPCLINE>      lv_d3_date    TYPE sydatum, &quot; D3 COE defect 2379 by DMOIRAN</FPCLINE>
+      <FPCLINE>*---&gt; Begin of Insert for D3 COE defect 2379 by NALI on 06-Apr-2017</FPCLINE>
+      <FPCLINE>      lx_t001 TYPE lty_t001,</FPCLINE>
+      <FPCLINE>*&lt;--- End of Insert for D3 COE defect 2379 by NALI on 06-Apr-2017</FPCLINE>
+      <FPCLINE>* ---&gt; Begin of Insert for D3_OTC_FDD_0013 Defect# 4242 by SMUKHER4 on 21-Nov-2017.</FPCLINE>
+      <FPCLINE>*&amp;--Local variable for decimal formatting issue for currency fields.</FPCLINE>
+      <FPCLINE>      lv_wrshb   TYPE char20, &quot; Wrshb of type CHAR20</FPCLINE>
+      <FPCLINE>      lv_credit  TYPE wertv8, &quot;char17, &quot;Credit</FPCLINE>
+      <FPCLINE>      lv_current TYPE wertv8, &quot;Current</FPCLINE>
+      <FPCLINE>      lv_upto60  TYPE wertv8, &quot;31 to 60 Days</FPCLINE>
+      <FPCLINE>      lv_upto90  TYPE wertv8, &quot;61 to 90 Days</FPCLINE>
+      <FPCLINE>      lv_over90  TYPE wertv8, &quot;Over 90 Days</FPCLINE>
+      <FPCLINE>      lv_baldue  TYPE wertv8, &quot;Balance Due</FPCLINE>
+      <FPCLINE>* &lt;--- End of Insert for D3_OTC_FDD_0013 Defect# 4242 by SMUKHER4 on 21-Nov-2017.</FPCLINE>
+      <FPCLINE>*---&gt; Begin of Insert for D3R3 D3_OTC_FDD_0013 by SMUKHER4 on 25-Jan-2018</FPCLINE>
+      <FPCLINE>*      lx_t001z  TYPE lty_t001z.</FPCLINE>
+      <FPCLINE>      lv_registry TYPE z_criteria,  &quot; Enh. Criteria</FPCLINE>
+      <FPCLINE>      lv_langu_reg TYPE char2,      &quot; Langu_reg of type CHAR2</FPCLINE>
+      <FPCLINE>  lwa_status  TYPE zdev_enh_status. &quot; Enhancement Status</FPCLINE>
+      <FPCLINE>*&lt;--- End of Insert for D3R3 D3_OTC_FDD_0013 by SMUKHER4 on 25-Jan-2018</FPCLINE>
+      <FPCLINE>  FIELD-SYMBOLS:</FPCLINE>
+      <FPCLINE>*&amp;--For Item data</FPCLINE>
+      <FPCLINE>      &lt;lfs_item&gt;   TYPE LINE OF rfkord_t_item,</FPCLINE>
+      <FPCLINE>*&amp;--For Balance</FPCLINE>
+      <FPCLINE>      &lt;lfs_rtab&gt;   TYPE rfkord_s_rtab, &quot; Structure for Sorted List Information (RFKORD* Correspond.)</FPCLINE>
+      <FPCLINE>*&amp; --&gt; Begin of Insert for D2_OTC_FDD_0013_Defect#1134 by SAGARWA1</FPCLINE>
+      <FPCLINE>      &lt;lfs_display&gt;    TYPE ty_display,      &quot; Final display table</FPCLINE>
+      <FPCLINE>      &lt;lfs_enh_status&gt; TYPE zdev_enh_status, &quot; Enhancement Status</FPCLINE>
+      <FPCLINE>*&amp; --&gt; End   of Insert for D2_OTC_FDD_0013_Defect#1134 by SAGARWA1</FPCLINE>
+      <FPCLINE>* ---&gt; Begin of Change for D3_OTC_FDD_0013_CR#385 by NALI</FPCLINE>
+      <FPCLINE>      &lt;lfs_item_tmp&gt;   TYPE lty_amnt_waers.</FPCLINE>
+      <FPCLINE>* &lt;--- End of Change for D3_OTC_FDD_0013_CR#385 by NALI</FPCLINE>
+      <FPCLINE/>
+      <FPCLINE>  CONSTANTS:</FPCLINE>
+      <FPCLINE>      c_time_init  TYPE sy-uzeit VALUE &apos;00:00:00&apos;, &quot; Current Time of Application Server</FPCLINE>
+      <FPCLINE>*&amp; --&gt; Begin of Insert for D2_OTC_FDD_0013_Defect#1134 by SAGARWA1</FPCLINE>
+      <FPCLINE>      lc_enh_no    TYPE z_enhancement VALUE &apos;D2_OTC_FDD_0013&apos;, &quot; Enhancement No.</FPCLINE>
+      <FPCLINE>      lc_land1     TYPE z_criteria    VALUE &apos;LAND1&apos;,           &quot; Enh. Criteria</FPCLINE>
+      <FPCLINE>      lc_slash     TYPE char1         VALUE &apos;/&apos;,               &quot; Slash</FPCLINE>
+      <FPCLINE>*&amp; --&gt; End   of Insert for D2_OTC_FDD_0013_Defect#1134 by SAGARWA1</FPCLINE>
+      <FPCLINE>*---&gt; Begin of Insert for Defect#5464:D3_OTC_FDD_0013 BY SGHOSH</FPCLINE>
+      <FPCLINE>      lc_d3_date_format TYPE z_criteria VALUE &apos;D3_DATE_FORMAT&apos;, &quot; Enh. Criteria</FPCLINE>
+      <FPCLINE>*&lt;--- End of Insert for Defect#5464:D3_OTC_FDD_0013 BY SGHOSH</FPCLINE>
+      <FPCLINE>*---&gt; Begin of Change for D3 COE defect 2379 by NALI on 06-Apr-2017</FPCLINE>
+      <FPCLINE>      lc_bukrs_1020     TYPE bukrs    VALUE &apos;1020&apos;. &quot; Company Code</FPCLINE>
+      <FPCLINE>*&lt;--- End of Change for D3 COE defect 2379 by NALI on 06-Apr-2017</FPCLINE>
+      <FPCLINE/>
+      <FPCLINE>*---&gt; Begin of Insert for Defect#5464:D3_OTC_FDD_0013 BY SGHOSH</FPCLINE>
+      <FPCLINE/>
+      <FPCLINE>* Call FM to retrieve Enhancement Status</FPCLINE>
+      <FPCLINE>  CALL FUNCTION &apos;ZDEV_ENHANCEMENT_STATUS_CHECK&apos;</FPCLINE>
+      <FPCLINE>    EXPORTING</FPCLINE>
+      <FPCLINE>      iv_enhancement_no = lc_enh_no</FPCLINE>
+      <FPCLINE>    TABLES</FPCLINE>
+      <FPCLINE>      tt_enh_status     = li_enh_status.</FPCLINE>
+      <FPCLINE/>
+      <FPCLINE>* Delete the EMI records where the status is not active</FPCLINE>
+      <FPCLINE>  DELETE li_enh_status WHERE active = space.</FPCLINE>
+      <FPCLINE>  SORT li_enh_status BY criteria.</FPCLINE>
+      <FPCLINE/>
+      <FPCLINE>* For European countries date format will be DD-MMM-YYYY</FPCLINE>
+      <FPCLINE>  IF fp_d3_country IS NOT INITIAL.</FPCLINE>
+      <FPCLINE/>
+      <FPCLINE>    READ TABLE li_enh_status ASSIGNING &lt;lfs_enh_status&gt; WITH KEY criteria = lc_d3_date_format</FPCLINE>
+      <FPCLINE>                                                 BINARY SEARCH.</FPCLINE>
+      <FPCLINE>    IF sy-subrc IS INITIAL.</FPCLINE>
+      <FPCLINE>      lv_date_format =  &lt;lfs_enh_status&gt;-sel_low.</FPCLINE>
+      <FPCLINE>    ENDIF. &quot; IF sy-subrc IS INITIAL</FPCLINE>
+      <FPCLINE/>
+      <FPCLINE>* Convert Statement date to european format</FPCLINE>
+      <FPCLINE>    CALL FUNCTION &apos;ZDEV_DATE_FORMAT&apos;</FPCLINE>
+      <FPCLINE>      EXPORTING</FPCLINE>
+      <FPCLINE>        i_date       = sy-datum</FPCLINE>
+      <FPCLINE>        i_format     = lv_date_format &quot;&apos;DD-MMM-YYYY&apos;</FPCLINE>
+      <FPCLINE>        i_langu      = gv_langu</FPCLINE>
+      <FPCLINE>      IMPORTING</FPCLINE>
+      <FPCLINE>        e_date_final = gv_date.</FPCLINE>
+      <FPCLINE/>
+      <FPCLINE>  ELSE. &quot; ELSE -&gt; IF fp_d3_country IS NOT INITIAL</FPCLINE>
+      <FPCLINE>* If not european country then date format will be as per user defaults</FPCLINE>
+      <FPCLINE>    WRITE sy-datum TO gv_date.</FPCLINE>
+      <FPCLINE>  ENDIF. &quot; IF fp_d3_country IS NOT INITIAL</FPCLINE>
+      <FPCLINE>*&lt;--- End of Insert for Defect#5464:D3_OTC_FDD_0013 BY SGHOSH</FPCLINE>
+      <FPCLINE/>
+      <FPCLINE>  LOOP AT fp_it_item ASSIGNING &lt;lfs_item&gt;.</FPCLINE>
+      <FPCLINE>*---&gt; Begin of Insert for D3 COE defect 2379 by NALI on 06-Apr-2017</FPCLINE>
+      <FPCLINE>    IF sy-tabix = 1.</FPCLINE>
+      <FPCLINE>      IF &lt;lfs_item&gt;-bukrs = lc_bukrs_1020.</FPCLINE>
+      <FPCLINE>*&amp;--Suppress the Vat no. for Canada</FPCLINE>
+      <FPCLINE>        CLEAR gv_vat_no.</FPCLINE>
+      <FPCLINE>      ELSE. &quot; ELSE -&gt; IF &lt;lfs_item&gt;-bukrs = lc_bukrs_1020</FPCLINE>
+      <FPCLINE>*     Fetch VAT code</FPCLINE>
+      <FPCLINE>        SELECT SINGLE waers &quot; Currency Key</FPCLINE>
+      <FPCLINE>                      stceg &quot; VAT Registration Number</FPCLINE>
+      <FPCLINE>        FROM t001           &quot; Company Codes</FPCLINE>
+      <FPCLINE>        INTO lx_t001</FPCLINE>
+      <FPCLINE>        WHERE bukrs = &lt;lfs_item&gt;-bukrs.</FPCLINE>
+      <FPCLINE>        IF sy-subrc = 0 .</FPCLINE>
+      <FPCLINE>          gv_vat_no = lx_t001-stceg.</FPCLINE>
+      <FPCLINE>        ENDIF. &quot; IF sy-subrc = 0</FPCLINE>
+      <FPCLINE>      ENDIF. &quot; IF &lt;lfs_item&gt;-bukrs = lc_bukrs_1020</FPCLINE>
+      <FPCLINE>    ENDIF. &quot; IF sy-tabix = 1</FPCLINE>
+      <FPCLINE>*&lt;--- End of Insert for D3 COE defect 2379 by NALI on 06-Apr-2017</FPCLINE>
+      <FPCLINE/>
+      <FPCLINE>*&amp;--Transaction date</FPCLINE>
+      <FPCLINE>*    wlt_display-budat = &lt;lfs_item&gt;-budat. &quot; Commented by SBASU Def_1551</FPCLINE>
+      <FPCLINE>    wlt_display-budat = &lt;lfs_item&gt;-bldat. &quot;Added by SBASU Def_1551</FPCLINE>
+      <FPCLINE/>
+      <FPCLINE/>
+      <FPCLINE>**---&gt; Begin of Insert for Defect#5464:D3_OTC_FDD_0013 BY SGHOSH</FPCLINE>
+      <FPCLINE>** For European countries date format will be DD-MMM-YYYY</FPCLINE>
+      <FPCLINE>*    IF fp_d3_country IS NOT INITIAL.</FPCLINE>
+      <FPCLINE>** Convert Transaction date to european format</FPCLINE>
+      <FPCLINE>*      CALL FUNCTION &apos;ZDEV_DATE_FORMAT&apos;</FPCLINE>
+      <FPCLINE>*        EXPORTING</FPCLINE>
+      <FPCLINE>*          i_date       = &lt;lfs_item&gt;-bldat</FPCLINE>
+      <FPCLINE>*          i_format     = lv_date_format &quot;&apos;DD-MMM-YYYY&apos;</FPCLINE>
+      <FPCLINE>*          i_langu      = gv_langu</FPCLINE>
+      <FPCLINE>*        IMPORTING</FPCLINE>
+      <FPCLINE>*          e_date_final = wlt_display-budat.</FPCLINE>
+      <FPCLINE>*</FPCLINE>
+      <FPCLINE>*    ENDIF. &quot; IF fp_d3_country IS NOT INITIAL</FPCLINE>
+      <FPCLINE>**&lt;--- End of Insert for Defect#5464:D3_OTC_FDD_0013 BY SGHOSH</FPCLINE>
+      <FPCLINE/>
+      <FPCLINE>*---&gt; Begin of Insert for Defect# 4271(2nd change), D2_OTC_FDD_0013 BY NBAIS</FPCLINE>
+      <FPCLINE>*&amp; --&gt; Begin of Delete for D2_OTC_FDD_0013_Defect#1134 by SAGARWA1</FPCLINE>
+      <FPCLINE>*** No Need to check for Language</FPCLINE>
+      <FPCLINE>***    IF gv_langu = lc_s.</FPCLINE>
+      <FPCLINE>***</FPCLINE>
+      <FPCLINE>***      CONCATENATE wlt_display-budat+6(2) &apos;/&apos;</FPCLINE>
+      <FPCLINE>***                  wlt_display-budat+4(2) &apos;/&apos;</FPCLINE>
+      <FPCLINE>***                  wlt_display-budat+0(4)</FPCLINE>
+      <FPCLINE>***                  INTO lv_tran_date.</FPCLINE>
+      <FPCLINE>***      WRITE: lv_tran_date TO wlt_display-budat.</FPCLINE>
+      <FPCLINE>***</FPCLINE>
+      <FPCLINE>***      CONCATENATE sy-datum+6(2) &apos;/&apos;</FPCLINE>
+      <FPCLINE>***                 sy-datum+4(2) &apos;/&apos;</FPCLINE>
+      <FPCLINE>***                 sy-datum+0(4)</FPCLINE>
+      <FPCLINE>***                 INTO lv_date.</FPCLINE>
+      <FPCLINE>***</FPCLINE>
+      <FPCLINE>***      WRITE: lv_date  TO gv_date.</FPCLINE>
+      <FPCLINE>***    ENDIF. &quot; IF gv_langu = lc_s</FPCLINE>
+      <FPCLINE>*&amp; --&gt; End   of Delete for D2_OTC_FDD_0013_Defect#1134 by SAGARWA1</FPCLINE>
+      <FPCLINE>*&lt;--- End of Insert for Defect# 4271(2nd change), D2_OTC_FDD_0013 BY NBAIS</FPCLINE>
+      <FPCLINE>*&amp;--PO Number</FPCLINE>
+      <FPCLINE>*    wlt_display-zuonr = &lt;lfs_item&gt;-zuonr.&quot; Commented by SBASU Def_1551</FPCLINE>
+      <FPCLINE>    wlt_display-zuonr = &lt;lfs_item&gt;-xblnr. &quot;Added by SBASU Def_1551</FPCLINE>
+      <FPCLINE/>
+      <FPCLINE>*&amp;--If Debit</FPCLINE>
+      <FPCLINE>    IF &lt;lfs_item&gt;-dmshb &gt;= 0.</FPCLINE>
+      <FPCLINE>*&amp;--Charges</FPCLINE>
+      <FPCLINE>*      wlt_display-charge = &lt;lfs_item&gt;-dmshb.   &quot; CR 391</FPCLINE>
+      <FPCLINE>* ---&gt; Begin of Delete for D3_OTC_FDD_0013 Defect# 4242 by SMUKHER4 on 21-Nov-2017.</FPCLINE>
+      <FPCLINE>*      wlt_display-charge = &lt;lfs_item&gt;-wrshb. &quot; CR 391 show in Document currency</FPCLINE>
+      <FPCLINE>* &lt;--- End of Delete for D3_OTC_FDD_0013 Defect# 4242 by SMUKHER4 on 21-Nov-2017.</FPCLINE>
+      <FPCLINE>* ---&gt; Begin of Insert for D3_OTC_FDD_0013 Defect# 4242 by SMUKHER4 on 21-Nov-2017.</FPCLINE>
+      <FPCLINE>*&amp;--Decimal format should be &apos;.&apos; as thosand separators for all languages</FPCLINE>
+      <FPCLINE>      WRITE &lt;lfs_item&gt;-wrshb TO wlt_display-charge CURRENCY &lt;lfs_item&gt;-waers.</FPCLINE>
+      <FPCLINE>      CONDENSE wlt_display-charge.</FPCLINE>
+      <FPCLINE>* &lt;--- End of Insert for D3_OTC_FDD_0013 Defect# 4242 by SMUKHER4 on 21-Nov-2017.</FPCLINE>
+      <FPCLINE>*&amp;--If Credit</FPCLINE>
+      <FPCLINE>    ELSE. &quot; ELSE -&gt; IF &lt;lfs_item&gt;-dmshb &gt;= 0</FPCLINE>
+      <FPCLINE>*&amp;--Credits</FPCLINE>
+      <FPCLINE>*      wlt_display-credit = &lt;lfs_item&gt;-dmshb.   &quot; CR 391</FPCLINE>
+      <FPCLINE>      wlt_display-credit = &lt;lfs_item&gt;-wrshb. &quot; CR 391 show in Document currency</FPCLINE>
+      <FPCLINE>      SEARCH wlt_display-credit FOR &apos;-&apos;.</FPCLINE>
+      <FPCLINE>      IF sy-subrc = 0 AND sy-fdpos &lt;&gt; 0.</FPCLINE>
+      <FPCLINE>        SPLIT wlt_display-credit AT &apos;-&apos; INTO wlt_display-credit lv_text.</FPCLINE>
+      <FPCLINE>        CONDENSE wlt_display-credit.</FPCLINE>
+      <FPCLINE>        CONCATENATE &apos;-&apos; wlt_display-credit INTO wlt_display-credit.</FPCLINE>
+      <FPCLINE>* ---&gt; Begin of Insert for D3_OTC_FDD_0013 Defect# 4242 by SMUKHER4 on 21-Nov-2017.</FPCLINE>
+      <FPCLINE>*&amp;--Decimal format should be &apos;.&apos; as thosand separators for all languages</FPCLINE>
+      <FPCLINE/>
+      <FPCLINE>        CLEAR lv_credit.</FPCLINE>
+      <FPCLINE>        lv_credit = wlt_display-credit.</FPCLINE>
+      <FPCLINE>        WRITE lv_credit TO wlt_display-credit CURRENCY &lt;lfs_item&gt;-waers.</FPCLINE>
+      <FPCLINE>        CONDENSE wlt_display-credit.</FPCLINE>
+      <FPCLINE>* &lt;--- End of Insert for D3_OTC_FDD_0013 Defect# 4242 by SMUKHER4 on 21-Nov-2017.</FPCLINE>
+      <FPCLINE>*---&gt; Begin of Insert for D3R3 D3_OTC_FDD_0013 by SMUKHER4 on 25-Jan-2018</FPCLINE>
+      <FPCLINE>*&amp;--The negative sign should be unformly leading for all amounts.</FPCLINE>
+      <FPCLINE>        SEARCH wlt_display-credit FOR &apos;-&apos;.</FPCLINE>
+      <FPCLINE>        IF sy-subrc = 0 AND sy-fdpos &lt;&gt; 0.</FPCLINE>
+      <FPCLINE>          SPLIT wlt_display-credit AT &apos;-&apos; INTO wlt_display-credit lv_text.</FPCLINE>
+      <FPCLINE>          CONDENSE wlt_display-credit.</FPCLINE>
+      <FPCLINE>          CONCATENATE &apos;-&apos; wlt_display-credit INTO wlt_display-credit.</FPCLINE>
+      <FPCLINE>        ENDIF. &quot; IF sy-subrc = 0 AND sy-fdpos &lt;&gt; 0</FPCLINE>
+      <FPCLINE>*&lt;--- End of Insert for D3R3 D3_OTC_FDD_0013 by SMUKHER4 on 25-Jan-2018</FPCLINE>
+      <FPCLINE>      ENDIF. &quot; IF sy-subrc = 0 AND sy-fdpos &lt;&gt; 0</FPCLINE>
+      <FPCLINE>    ENDIF. &quot; IF &lt;lfs_item&gt;-dmshb &gt;= 0</FPCLINE>
+      <FPCLINE/>
+      <FPCLINE>*&amp;--If Charges are initial, enter initial quantity value</FPCLINE>
+      <FPCLINE>    IF wlt_display-charge IS INITIAL.</FPCLINE>
+      <FPCLINE>*---&gt; Begin of delete for D3R3 D3_OTC_FDD_0013 by SMUKHER4 on 25-Jan-2018</FPCLINE>
+      <FPCLINE>* ---&gt; Begin of Insert for D3_OTC_FDD_0013 Defect# 4242 by SMUKHER4 on 21-Nov-2017.</FPCLINE>
+      <FPCLINE>*&amp;--Decimal format should be &apos;.&apos; as thosand separators for all languages</FPCLINE>
+      <FPCLINE>*      WRITE &lt;lfs_item&gt;-wrshb TO wlt_display-charge CURRENCY &lt;lfs_item&gt;-waers.</FPCLINE>
+      <FPCLINE>*      CONDENSE wlt_display-charge.</FPCLINE>
+      <FPCLINE>* &lt;--- End of Insert for D3_OTC_FDD_0013 Defect# 4242 by SMUKHER4 on 21-Nov-2017.</FPCLINE>
+      <FPCLINE>* ---&gt; Begin of Delete for D3_OTC_FDD_0013 Defect# 4242 by SMUKHER4 on 21-Nov-2017.</FPCLINE>
+      <FPCLINE>*      wlt_display-charge = c_quant_init.</FPCLINE>
+      <FPCLINE>* &lt;--- End of Delete for D3_OTC_FDD_0013 Defect# 4242 by SMUKHER4 on 21-Nov-2017.</FPCLINE>
+      <FPCLINE>*&lt;--- End of delete for D3R3 D3_OTC_FDD_0013 by SMUKHER4 on 25-Jan-2018</FPCLINE>
+      <FPCLINE>*---&gt; Begin of Insert for D3R3 D3_OTC_FDD_0013 by SMUKHER4 on 25-Jan-2018</FPCLINE>
+      <FPCLINE>*&amp;--The negative sign should be unformly leading for all amounts.</FPCLINE>
+      <FPCLINE>*&amp;--Charges cannot have negative sign assigned to it</FPCLINE>
+      <FPCLINE>      WRITE c_quant_init TO wlt_display-charge CURRENCY &lt;lfs_item&gt;-waers.</FPCLINE>
+      <FPCLINE>      CONDENSE wlt_display-charge.</FPCLINE>
+      <FPCLINE/>
+      <FPCLINE>      SEARCH wlt_display-charge FOR &apos;-&apos;.</FPCLINE>
+      <FPCLINE>      IF sy-subrc = 0 AND sy-fdpos &lt;&gt; 0.</FPCLINE>
+      <FPCLINE>        SPLIT wlt_display-charge AT &apos;-&apos; INTO wlt_display-charge lv_text.</FPCLINE>
+      <FPCLINE>        CONDENSE wlt_display-charge.</FPCLINE>
+      <FPCLINE>        CONCATENATE &apos;-&apos; wlt_display-charge INTO wlt_display-charge.</FPCLINE>
+      <FPCLINE>      ENDIF. &quot; IF sy-subrc = 0 AND sy-fdpos &lt;&gt; 0</FPCLINE>
+      <FPCLINE>*&lt;--- End of Insert for D3R3 D3_OTC_FDD_0013 by SMUKHER4 on 25-Jan-2018</FPCLINE>
+      <FPCLINE>    ENDIF. &quot; IF wlt_display-charge IS INITIAL</FPCLINE>
+      <FPCLINE/>
+      <FPCLINE>*&amp;--If Credits are initial, enter initial quantity value</FPCLINE>
+      <FPCLINE>    IF wlt_display-credit IS INITIAL.</FPCLINE>
+      <FPCLINE>* ---&gt; Begin of Delete for D3_OTC_FDD_0013 Defect# 4242 by SMUKHER4 on 21-Nov-2017.</FPCLINE>
+      <FPCLINE>*      wlt_display-credit = c_quant_init.</FPCLINE>
+      <FPCLINE>* &lt;--- End of Delete for D3_OTC_FDD_0013 Defect# 4242 by SMUKHER4 on 21-Nov-2017.</FPCLINE>
+      <FPCLINE/>
+      <FPCLINE>*---&gt; Begin of Insert for D3R3 D3_OTC_FDD_0013 by SMUKHER4 on 25-Jan-2018</FPCLINE>
+      <FPCLINE>      CLEAR lv_credit.</FPCLINE>
+      <FPCLINE>      lv_credit = wlt_display-credit.</FPCLINE>
+      <FPCLINE>*&lt;--- End of Insert for D3R3 D3_OTC_FDD_0013 by SMUKHER4 on 25-Jan-2018</FPCLINE>
+      <FPCLINE/>
+      <FPCLINE>* ---&gt; Begin of Insert for D3_OTC_FDD_0013 Defect# 4242 by SMUKHER4 on 21-Nov-2017.</FPCLINE>
+      <FPCLINE>*&amp;--Decimal format should be &apos;.&apos; as thosand separators for all languages</FPCLINE>
+      <FPCLINE>      WRITE lv_credit TO wlt_display-credit CURRENCY &lt;lfs_item&gt;-waers.</FPCLINE>
+      <FPCLINE>      CONDENSE wlt_display-credit.</FPCLINE>
+      <FPCLINE>* &lt;--- End of Insert for D3_OTC_FDD_0013 Defect# 4242 by SMUKHER4 on 21-Nov-2017.</FPCLINE>
+      <FPCLINE/>
+      <FPCLINE>*---&gt; Begin of Insert for D3R3 D3_OTC_FDD_0013 by SMUKHER4 on 25-Jan-2018</FPCLINE>
+      <FPCLINE>*&amp;--The negative sign should be unformly leading for all amounts.</FPCLINE>
+      <FPCLINE>      SEARCH wlt_display-credit FOR &apos;-&apos;.</FPCLINE>
+      <FPCLINE>      IF sy-subrc = 0 AND sy-fdpos &lt;&gt; 0.</FPCLINE>
+      <FPCLINE>        SPLIT wlt_display-credit AT &apos;-&apos; INTO wlt_display-credit lv_text.</FPCLINE>
+      <FPCLINE>        CONDENSE wlt_display-credit.</FPCLINE>
+      <FPCLINE>        CONCATENATE &apos;-&apos; wlt_display-credit INTO wlt_display-credit.</FPCLINE>
+      <FPCLINE>      ENDIF. &quot; IF sy-subrc = 0 AND sy-fdpos &lt;&gt; 0</FPCLINE>
+      <FPCLINE>*&lt;--- End of Insert for D3R3 D3_OTC_FDD_0013 by SMUKHER4 on 25-Jan-2018</FPCLINE>
+      <FPCLINE/>
+      <FPCLINE>    ENDIF. &quot; IF wlt_display-credit IS INITIAL</FPCLINE>
+      <FPCLINE/>
+      <FPCLINE>*&amp;--Amount Due</FPCLINE>
+      <FPCLINE>*    wlt_display-amount = &lt;lfs_item&gt;-dmshb.   &quot; CR 391</FPCLINE>
+      <FPCLINE>* ---&gt; Begin of Delete for D3_OTC_FDD_0013 Defect# 4242 by SMUKHER4 on 21-Nov-2017.</FPCLINE>
+      <FPCLINE>*    wlt_display-amount = &lt;lfs_item&gt;-wrshb. &quot; CR 391 showing in doc currency</FPCLINE>
+      <FPCLINE>* &lt;--- End of Delete for D3_OTC_FDD_0013 Defect# 4242 by SMUKHER4 on 21-Nov-2017.</FPCLINE>
+      <FPCLINE/>
+      <FPCLINE>* ---&gt; Begin of Insert for D3_OTC_FDD_0013 Defect# 4242 by SMUKHER4 on 21-Nov-2017.</FPCLINE>
+      <FPCLINE>*&amp;--Decimal format should be &apos;.&apos; as thosand separators for all languages</FPCLINE>
+      <FPCLINE>    WRITE &lt;lfs_item&gt;-wrshb TO wlt_display-amount CURRENCY &lt;lfs_item&gt;-waers.</FPCLINE>
+      <FPCLINE>    CONDENSE wlt_display-amount.</FPCLINE>
+      <FPCLINE>* &lt;--- End of Insert for D3_OTC_FDD_0013 Defect# 4242 by SMUKHER4 on 21-Nov-2017.</FPCLINE>
+      <FPCLINE>    SEARCH wlt_display-amount FOR &apos;-&apos;.</FPCLINE>
+      <FPCLINE>    IF sy-subrc = 0 AND sy-fdpos &lt;&gt; 0.</FPCLINE>
+      <FPCLINE>      SPLIT wlt_display-amount AT &apos;-&apos; INTO wlt_display-amount lv_text.</FPCLINE>
+      <FPCLINE>      CONDENSE wlt_display-amount.</FPCLINE>
+      <FPCLINE>      CONCATENATE &apos;-&apos; wlt_display-amount INTO wlt_display-amount.</FPCLINE>
+      <FPCLINE>    ENDIF. &quot; IF sy-subrc = 0 AND sy-fdpos &lt;&gt; 0</FPCLINE>
+      <FPCLINE>*&amp;--Invoice No.</FPCLINE>
+      <FPCLINE>    wlt_display-belnr  = &lt;lfs_item&gt;-belnr.</FPCLINE>
+      <FPCLINE>&quot;Begin of insert for SCTASK0995393</FPCLINE>
+      <FPCLINE>     IF wlt_display-belnr = &apos;9638303334&apos;.</FPCLINE>
+      <FPCLINE>       BREAK amohapa.</FPCLINE>
+      <FPCLINE>      CLEAR wlt_display-belnr.</FPCLINE>
+      <FPCLINE>      wlt_display-belnr = &apos; 9123456789              F2 10/1234567890&apos;.</FPCLINE>
+      <FPCLINE>     ENDIF.</FPCLINE>
+      <FPCLINE>&quot;End of insert for SCTASK0995393</FPCLINE>
+      <FPCLINE>*&amp;--Amount Due</FPCLINE>
+      <FPCLINE>*    wlt_display-amtdue = &lt;lfs_item&gt;-dmshb.   &quot; CR 391</FPCLINE>
+      <FPCLINE>    wlt_display-amtdue = &lt;lfs_item&gt;-wrshb. &quot; CR 391 Showing in Doc. Cuurency</FPCLINE>
+      <FPCLINE>* ---&gt; Begin of Insert for CR D2_391,D2_OTC_FDD_0013  by NSAXENA</FPCLINE>
+      <FPCLINE>*Passing the Currency value</FPCLINE>
+      <FPCLINE>    wlt_display-waers = &lt;lfs_item&gt;-waers.</FPCLINE>
+      <FPCLINE>* &lt;--- End of Insert for CR D2_391,D2_OTC_FDD_0013 by NSAXENA</FPCLINE>
+      <FPCLINE>    APPEND wlt_display TO it_display.</FPCLINE>
+      <FPCLINE>    CLEAR wlt_display.</FPCLINE>
+      <FPCLINE>* ---&gt; Begin of Change for D3_OTC_FDD_0013_CR#385 by NALI</FPCLINE>
+      <FPCLINE>    lwa_item_tmp-waers = &lt;lfs_item&gt;-waers.</FPCLINE>
+      <FPCLINE>    lwa_item_tmp-bldat = &lt;lfs_item&gt;-bldat.</FPCLINE>
+      <FPCLINE>    lwa_item_tmp-wrshb  = &lt;lfs_item&gt;-wrshb.</FPCLINE>
+      <FPCLINE>    APPEND lwa_item_tmp TO li_item_tmp.</FPCLINE>
+      <FPCLINE>    CLEAR lwa_item_tmp.</FPCLINE>
+      <FPCLINE>* &lt;--- End of Change for D3_OTC_FDD_0013_CR#385 by NALI</FPCLINE>
+      <FPCLINE/>
+      <FPCLINE>* ---&gt; Begin of Delete for D3_OTC_FDD_0013_CR#385 by NALI</FPCLINE>
+      <FPCLINE>**-----------------------------------------------*</FPCLINE>
+      <FPCLINE>**&amp;--Calculate Aging amount</FPCLINE>
+      <FPCLINE>**-----------------------------------------------*</FPCLINE>
+      <FPCLINE>*</FPCLINE>
+      <FPCLINE>**&amp;--First Calculate Time difference</FPCLINE>
+      <FPCLINE>*    CALL FUNCTION &apos;SD_DATETIME_DIFFERENCE&apos;</FPCLINE>
+      <FPCLINE>*      EXPORTING</FPCLINE>
+      <FPCLINE>*        date1            = sy-datum</FPCLINE>
+      <FPCLINE>*        time1            = c_time_init</FPCLINE>
+      <FPCLINE>**       date2            = &lt;lfs_item&gt;-budat &quot;Commented by AMANGAL - CR357 Defect 3453</FPCLINE>
+      <FPCLINE>*        date2            = &lt;lfs_item&gt;-bldat &quot;Added by AMANGAL - CR357 Defect 3453</FPCLINE>
+      <FPCLINE>*        time2            = c_time_init</FPCLINE>
+      <FPCLINE>*      IMPORTING</FPCLINE>
+      <FPCLINE>*        datediff         = lv_date_diff</FPCLINE>
+      <FPCLINE>*      EXCEPTIONS</FPCLINE>
+      <FPCLINE>*        invalid_datetime = 1</FPCLINE>
+      <FPCLINE>*        OTHERS           = 2.</FPCLINE>
+      <FPCLINE>*    IF sy-subrc = 0.</FPCLINE>
+      <FPCLINE>**&amp;--If Upto 30 days</FPCLINE>
+      <FPCLINE>*      IF lv_date_diff &lt;= 30.</FPCLINE>
+      <FPCLINE>**        ADD &lt;lfs_item&gt;-dmshb TO gs_balance-current.  &quot; CR 391</FPCLINE>
+      <FPCLINE>*        ADD &lt;lfs_item&gt;-wrshb TO gs_balance-current. &quot; CR 391 Showing in Doc currency</FPCLINE>
+      <FPCLINE>**&amp;--31 to 60 Days balance</FPCLINE>
+      <FPCLINE>*      ELSEIF lv_date_diff &gt; 30 AND lv_date_diff &lt;= 60.</FPCLINE>
+      <FPCLINE>**        ADD &lt;lfs_item&gt;-dmshb TO gs_balance-upto60. &quot; CR 391</FPCLINE>
+      <FPCLINE>*        ADD &lt;lfs_item&gt;-wrshb TO gs_balance-upto60. &quot; CR 391  Showing in Doc currency</FPCLINE>
+      <FPCLINE>**&amp;--61 to 90 Days balance</FPCLINE>
+      <FPCLINE>*      ELSEIF lv_date_diff &gt; 60 AND lv_date_diff &lt;= 90.</FPCLINE>
+      <FPCLINE>**        ADD &lt;lfs_item&gt;-dmshb TO gs_balance-upto90. &quot; CR 391</FPCLINE>
+      <FPCLINE>*        ADD &lt;lfs_item&gt;-wrshb TO gs_balance-upto90. &quot; CR 391 Showing in Doc currency</FPCLINE>
+      <FPCLINE>**&amp;--Over 90 Days balance</FPCLINE>
+      <FPCLINE>*      ELSEIF lv_date_diff &gt; 90.</FPCLINE>
+      <FPCLINE>**        ADD &lt;lfs_item&gt;-dmshb TO gs_balance-over90.  &quot; CR 391</FPCLINE>
+      <FPCLINE>*        ADD &lt;lfs_item&gt;-wrshb TO gs_balance-over90. &quot; CR 391 Showing in doc. currency</FPCLINE>
+      <FPCLINE>*      ENDIF. &quot; IF lv_date_diff &lt;= 30</FPCLINE>
+      <FPCLINE>*    ENDIF. &quot; IF sy-subrc = 0</FPCLINE>
+      <FPCLINE>*</FPCLINE>
+      <FPCLINE>* &lt;--- End of Delete for D3_OTC_FDD_0013_CR#385 by NALI</FPCLINE>
+      <FPCLINE>  ENDLOOP. &quot; LOOP AT fp_it_item ASSIGNING &lt;lfs_item&gt;</FPCLINE>
+      <FPCLINE>* ---&gt; Begin of Insert for CR D2_391,D2_OTC_FDD_0013  by NSAXENA</FPCLINE>
+      <FPCLINE>*Sort the output table by transaction date and Currency.</FPCLINE>
+      <FPCLINE>  SORT it_display BY budat waers.</FPCLINE>
+      <FPCLINE>* &lt;--- End of Insert for CR D2_391,D2_OTC_FDD_0013 by NSAXENA</FPCLINE>
+      <FPCLINE/>
+      <FPCLINE/>
+      <FPCLINE>* ---&gt; Begin of Delete for D3_OTC_FDD_0013_CR#385 by NALI</FPCLINE>
+      <FPCLINE>**&amp;--Get Monthly Balance</FPCLINE>
+      <FPCLINE>*  gs_balance-baldue  = gs_balance-current + gs_balance-upto60</FPCLINE>
+      <FPCLINE>*                     + gs_balance-upto90 + gs_balance-over90. &quot;Total Balance Due</FPCLINE>
+      <FPCLINE>* &lt;--- End of Delete for D3_OTC_FDD_0013_CR#385 by NALI</FPCLINE>
+      <FPCLINE/>
+      <FPCLINE>* ---&gt; Begin of Change for D3_OTC_FDD_0013_CR#385 by NALI</FPCLINE>
+      <FPCLINE/>
+      <FPCLINE>  IF li_item_tmp  IS NOT INITIAL.</FPCLINE>
+      <FPCLINE>    SORT li_item_tmp BY waers.</FPCLINE>
+      <FPCLINE>*&amp;-- Using another loop on Item table in order to get the total amounts due grouped by currency.</FPCLINE>
+      <FPCLINE>    CLEAR lwa_balance.</FPCLINE>
+      <FPCLINE>    LOOP AT li_item_tmp ASSIGNING &lt;lfs_item_tmp&gt;.</FPCLINE>
+      <FPCLINE>*-----------------------------------------------*</FPCLINE>
+      <FPCLINE>*&amp;--Calculate Aging amount</FPCLINE>
+      <FPCLINE>*-----------------------------------------------*</FPCLINE>
+      <FPCLINE/>
+      <FPCLINE>*&amp;--First Calculate Time difference</FPCLINE>
+      <FPCLINE>      CALL FUNCTION &apos;SD_DATETIME_DIFFERENCE&apos;</FPCLINE>
+      <FPCLINE>        EXPORTING</FPCLINE>
+      <FPCLINE>          date1            = sy-datum</FPCLINE>
+      <FPCLINE>          time1            = c_time_init</FPCLINE>
+      <FPCLINE>          date2            = &lt;lfs_item_tmp&gt;-bldat</FPCLINE>
+      <FPCLINE>          time2            = c_time_init</FPCLINE>
+      <FPCLINE>        IMPORTING</FPCLINE>
+      <FPCLINE>          datediff         = lv_date_diff</FPCLINE>
+      <FPCLINE>        EXCEPTIONS</FPCLINE>
+      <FPCLINE>          invalid_datetime = 1</FPCLINE>
+      <FPCLINE>          OTHERS           = 2.</FPCLINE>
+      <FPCLINE>      IF sy-subrc = 0.</FPCLINE>
+      <FPCLINE>*&amp;--If Upto 30 days</FPCLINE>
+      <FPCLINE>        IF lv_date_diff &lt;= 30.</FPCLINE>
+      <FPCLINE>* ---&gt; Begin of Delete for D3_OTC_FDD_0013 Defect# 4242 by SMUKHER4 on 21-Nov-2017.</FPCLINE>
+      <FPCLINE>*          ADD &lt;lfs_item_tmp&gt;-wrshb TO lwa_balance-current.</FPCLINE>
+      <FPCLINE>* &lt;--- End of Delete for D3_OTC_FDD_0013 Defect# 4242 by SMUKHER4 on 21-Nov-2017.</FPCLINE>
+      <FPCLINE>* ---&gt; Begin of Insert for D3_OTC_FDD_0013 Defect# 4242 by SMUKHER4 on 21-Nov-2017.</FPCLINE>
+      <FPCLINE>*&amp;--Decimal format should be &apos;.&apos; as thosand separators for all languages</FPCLINE>
+      <FPCLINE>          CLEAR:  lv_wrshb.</FPCLINE>
+      <FPCLINE>          lv_wrshb = &lt;lfs_item_tmp&gt;-wrshb.</FPCLINE>
+      <FPCLINE>          ADD lv_wrshb TO lv_current.</FPCLINE>
+      <FPCLINE>          WRITE lv_current TO lwa_balance-current CURRENCY &lt;lfs_item_tmp&gt;-waers.</FPCLINE>
+      <FPCLINE>          CONDENSE lwa_balance-current.</FPCLINE>
+      <FPCLINE>* &lt;--- End of Insert for D3_OTC_FDD_0013 Defect# 4242 by SMUKHER4 on 21-Nov-2017.</FPCLINE>
+      <FPCLINE/>
+      <FPCLINE>*---&gt; Begin of Insert for D3R3 D3_OTC_FDD_0013 by SMUKHER4 on 25-Jan-2018</FPCLINE>
+      <FPCLINE>*&amp;--The negative sign should be unformly leading for all amounts.</FPCLINE>
+      <FPCLINE>          SEARCH lwa_balance-current FOR &apos;-&apos;.</FPCLINE>
+      <FPCLINE>          IF sy-subrc = 0 AND sy-fdpos &lt;&gt; 0.</FPCLINE>
+      <FPCLINE>            SPLIT lwa_balance-current AT &apos;-&apos; INTO lwa_balance-current lv_text.</FPCLINE>
+      <FPCLINE>            CONDENSE lwa_balance-current.</FPCLINE>
+      <FPCLINE>            CONCATENATE &apos;-&apos; lwa_balance-current INTO lwa_balance-current.</FPCLINE>
+      <FPCLINE>          ENDIF. &quot; IF sy-subrc = 0 AND sy-fdpos &lt;&gt; 0</FPCLINE>
+      <FPCLINE>*&lt;--- End of Insert for D3R3 D3_OTC_FDD_0013 by SMUKHER4 on 25-Jan-2018</FPCLINE>
+      <FPCLINE/>
+      <FPCLINE>*&amp;--31 to 60 Days balance</FPCLINE>
+      <FPCLINE>        ELSEIF lv_date_diff &gt; 30 AND lv_date_diff &lt;= 60.</FPCLINE>
+      <FPCLINE>* ---&gt; Begin of Delete for D3_OTC_FDD_0013 Defect# 4242 by SMUKHER4 on 21-Nov-2017.</FPCLINE>
+      <FPCLINE>*          ADD &lt;lfs_item_tmp&gt;-wrshb TO lwa_balance-upto60.</FPCLINE>
+      <FPCLINE>* &lt;--- End of Delete for D3_OTC_FDD_0013 Defect# 4242 by SMUKHER4 on 21-Nov-2017.</FPCLINE>
+      <FPCLINE/>
+      <FPCLINE>* ---&gt; Begin of Insert for D3_OTC_FDD_0013 Defect# 4242 by SMUKHER4 on 21-Nov-2017.</FPCLINE>
+      <FPCLINE>*&amp;--Decimal format should be &apos;.&apos; as thosand separators for all languages</FPCLINE>
+      <FPCLINE>          CLEAR: lv_wrshb.</FPCLINE>
+      <FPCLINE>          lv_wrshb = &lt;lfs_item_tmp&gt;-wrshb.</FPCLINE>
+      <FPCLINE>          ADD lv_wrshb TO lv_upto60.</FPCLINE>
+      <FPCLINE>          WRITE lv_upto60  TO lwa_balance-upto60 CURRENCY &lt;lfs_item_tmp&gt;-waers.</FPCLINE>
+      <FPCLINE>          CONDENSE lwa_balance-upto60.</FPCLINE>
+      <FPCLINE>* &lt;--- End of Insert for D3_OTC_FDD_0013 Defect# 4242 by SMUKHER4 on 21-Nov-2017.</FPCLINE>
+      <FPCLINE/>
+      <FPCLINE>*---&gt; Begin of Insert for D3R3 D3_OTC_FDD_0013 by SMUKHER4 on 25-Jan-2018</FPCLINE>
+      <FPCLINE>*&amp;--The negative sign should be unformly leading for all amounts.</FPCLINE>
+      <FPCLINE>          SEARCH lwa_balance-upto60 FOR &apos;-&apos;.</FPCLINE>
+      <FPCLINE>          IF sy-subrc = 0 AND sy-fdpos &lt;&gt; 0.</FPCLINE>
+      <FPCLINE>            SPLIT lwa_balance-upto60 AT &apos;-&apos; INTO lwa_balance-upto60 lv_text.</FPCLINE>
+      <FPCLINE>            CONDENSE lwa_balance-upto60.</FPCLINE>
+      <FPCLINE>            CONCATENATE &apos;-&apos; lwa_balance-upto60 INTO lwa_balance-upto60.</FPCLINE>
+      <FPCLINE>          ENDIF. &quot; IF sy-subrc = 0 AND sy-fdpos &lt;&gt; 0</FPCLINE>
+      <FPCLINE>*&lt;--- End of Insert for D3R3 D3_OTC_FDD_0013 by SMUKHER4 on 25-Jan-2018</FPCLINE>
+      <FPCLINE/>
+      <FPCLINE>*&amp;--61 to 90 Days balance</FPCLINE>
+      <FPCLINE>        ELSEIF lv_date_diff &gt; 60 AND lv_date_diff &lt;= 90.</FPCLINE>
+      <FPCLINE>* ---&gt; Begin of Delete for D3_OTC_FDD_0013 Defect# 4242 by SMUKHER4 on 21-Nov-2017.</FPCLINE>
+      <FPCLINE>*          ADD &lt;lfs_item_tmp&gt;-wrshb TO lwa_balance-upto90.</FPCLINE>
+      <FPCLINE>* &lt;--- End of Delete for D3_OTC_FDD_0013 Defect# 4242 by SMUKHER4 on 21-Nov-2017.</FPCLINE>
+      <FPCLINE/>
+      <FPCLINE>* ---&gt; Begin of Insert for D3_OTC_FDD_0013 Defect# 4242 by SMUKHER4 on 21-Nov-2017.</FPCLINE>
+      <FPCLINE>*&amp;--Decimal format should be &apos;.&apos; as thosand separators for all languages</FPCLINE>
+      <FPCLINE>          CLEAR: lv_wrshb.</FPCLINE>
+      <FPCLINE>          lv_wrshb = &lt;lfs_item_tmp&gt;-wrshb.</FPCLINE>
+      <FPCLINE>          ADD lv_wrshb TO lv_upto90.</FPCLINE>
+      <FPCLINE>          WRITE lv_upto90 TO lwa_balance-upto90 CURRENCY &lt;lfs_item_tmp&gt;-waers.</FPCLINE>
+      <FPCLINE>          CONDENSE lwa_balance-upto90.</FPCLINE>
+      <FPCLINE>* &lt;--- End of Insert for D3_OTC_FDD_0013 Defect# 4242 by SMUKHER4 on 21-Nov-2017.</FPCLINE>
+      <FPCLINE/>
+      <FPCLINE>*---&gt; Begin of Insert for D3R3 D3_OTC_FDD_0013 by SMUKHER4 on 25-Jan-2018</FPCLINE>
+      <FPCLINE>*&amp;--The negative sign should be unformly leading for all amounts.</FPCLINE>
+      <FPCLINE>          SEARCH lwa_balance-upto90 FOR &apos;-&apos;.</FPCLINE>
+      <FPCLINE>          IF sy-subrc = 0 AND sy-fdpos &lt;&gt; 0.</FPCLINE>
+      <FPCLINE>            SPLIT lwa_balance-upto90 AT &apos;-&apos; INTO lwa_balance-upto90 lv_text.</FPCLINE>
+      <FPCLINE>            CONDENSE lwa_balance-upto90.</FPCLINE>
+      <FPCLINE>            CONCATENATE &apos;-&apos; lwa_balance-upto90 INTO lwa_balance-upto90.</FPCLINE>
+      <FPCLINE>          ENDIF. &quot; IF sy-subrc = 0 AND sy-fdpos &lt;&gt; 0</FPCLINE>
+      <FPCLINE>*&lt;--- End of Insert for D3R3 D3_OTC_FDD_0013 by SMUKHER4 on 25-Jan-2018</FPCLINE>
+      <FPCLINE/>
+      <FPCLINE>*&amp;--Over 90 Days balance</FPCLINE>
+      <FPCLINE>        ELSEIF lv_date_diff &gt; 90.</FPCLINE>
+      <FPCLINE>* ---&gt; Begin of Delete for D3_OTC_FDD_0013 Defect# 4242 by SMUKHER4 on 21-Nov-2017.</FPCLINE>
+      <FPCLINE>*          ADD &lt;lfs_item_tmp&gt;-wrshb TO lwa_balance-over90.</FPCLINE>
+      <FPCLINE>* &lt;--- End of Delete for D3_OTC_FDD_0013 Defect# 4242 by SMUKHER4 on 21-Nov-2017.</FPCLINE>
+      <FPCLINE/>
+      <FPCLINE>* ---&gt; Begin of Insert for D3_OTC_FDD_0013 Defect# 4242 by SMUKHER4 on 21-Nov-2017.</FPCLINE>
+      <FPCLINE>*&amp;--Decimal format should be &apos;.&apos; as thosand separators for all languages</FPCLINE>
+      <FPCLINE>          CLEAR:</FPCLINE>
+      <FPCLINE>                 lv_wrshb.</FPCLINE>
+      <FPCLINE>          lv_wrshb = &lt;lfs_item_tmp&gt;-wrshb.</FPCLINE>
+      <FPCLINE>          ADD lv_wrshb TO  lv_over90 .</FPCLINE>
+      <FPCLINE>          WRITE lv_over90 TO lwa_balance-over90 CURRENCY &lt;lfs_item_tmp&gt;-waers.</FPCLINE>
+      <FPCLINE>          CONDENSE lwa_balance-over90.</FPCLINE>
+      <FPCLINE>* &lt;--- End of Insert for D3_OTC_FDD_0013 Defect# 4242 by SMUKHER4 on 21-Nov-2017.</FPCLINE>
+      <FPCLINE/>
+      <FPCLINE>*---&gt; Begin of Insert for D3R3 D3_OTC_FDD_0013 by SMUKHER4 on 25-Jan-2018</FPCLINE>
+      <FPCLINE>*&amp;--The negative sign should be unformly leading for all amounts.</FPCLINE>
+      <FPCLINE>          SEARCH lwa_balance-over90 FOR &apos;-&apos;.</FPCLINE>
+      <FPCLINE>          IF sy-subrc = 0 AND sy-fdpos &lt;&gt; 0.</FPCLINE>
+      <FPCLINE>            SPLIT lwa_balance-over90 AT &apos;-&apos; INTO lwa_balance-over90 lv_text.</FPCLINE>
+      <FPCLINE>            CONDENSE lwa_balance-over90.</FPCLINE>
+      <FPCLINE>            CONCATENATE &apos;-&apos; lwa_balance-over90 INTO lwa_balance-over90.</FPCLINE>
+      <FPCLINE>          ENDIF. &quot; IF sy-subrc = 0 AND sy-fdpos &lt;&gt; 0</FPCLINE>
+      <FPCLINE>*&lt;--- End of Insert for D3R3 D3_OTC_FDD_0013 by SMUKHER4 on 25-Jan-2018</FPCLINE>
+      <FPCLINE/>
+      <FPCLINE>        ENDIF. &quot; IF lv_date_diff &lt;= 30</FPCLINE>
+      <FPCLINE>      ENDIF. &quot; IF sy-subrc = 0</FPCLINE>
+      <FPCLINE>      AT END OF waers.</FPCLINE>
+      <FPCLINE>* ---&gt; Begin of Delete for D3_OTC_FDD_0013 Defect# 4242 by SMUKHER4 on 21-Nov-2017.</FPCLINE>
+      <FPCLINE>*&amp;--Commented since addition operation cannot be done using the CHAR field data types.</FPCLINE>
+      <FPCLINE>*&amp;--Get Monthly Balance</FPCLINE>
+      <FPCLINE>*        lwa_balance-baldue  = lwa_balance-current + lwa_balance-upto60</FPCLINE>
+      <FPCLINE>*                   + lwa_balance-upto90 + lwa_balance-over90. &quot;Total Balance Due</FPCLINE>
+      <FPCLINE>* &lt;--- End of Delete for D3_OTC_FDD_0013 Defect# 4242 by SMUKHER4 on 21-Nov-2017.</FPCLINE>
+      <FPCLINE>* ---&gt; Begin of Insert for D3_OTC_FDD_0013 Defect# 4242 by SMUKHER4 on 21-Nov-2017.</FPCLINE>
+      <FPCLINE>*&amp;--Addition has been done using the currency data type fields.</FPCLINE>
+      <FPCLINE>*&amp;--Get Monthly Balance</FPCLINE>
+      <FPCLINE>        CLEAR lv_baldue.</FPCLINE>
+      <FPCLINE>        lv_baldue = lv_current + lv_upto60 + lv_upto90 + lv_over90.</FPCLINE>
+      <FPCLINE>*&amp;--Decimal format should be &apos;.&apos; as thosand separators for all languages</FPCLINE>
+      <FPCLINE>        WRITE lv_baldue TO lwa_balance-baldue CURRENCY &lt;lfs_item_tmp&gt;-waers.</FPCLINE>
+      <FPCLINE>        CONDENSE lwa_balance-baldue.</FPCLINE>
+      <FPCLINE>*---&gt; Begin of Insert for D3R3 D3_OTC_FDD_0013 by SMUKHER4 on 25-Jan-2018</FPCLINE>
+      <FPCLINE>*&amp;--The negative sign should be unformly leading for all amounts.</FPCLINE>
+      <FPCLINE>        SEARCH lwa_balance-baldue FOR &apos;-&apos;.</FPCLINE>
+      <FPCLINE>        IF sy-subrc = 0 AND sy-fdpos &lt;&gt; 0.</FPCLINE>
+      <FPCLINE>          SPLIT lwa_balance-baldue AT &apos;-&apos; INTO lwa_balance-baldue lv_text.</FPCLINE>
+      <FPCLINE>          CONDENSE lwa_balance-baldue.</FPCLINE>
+      <FPCLINE>          CONCATENATE &apos;-&apos; lwa_balance-baldue INTO lwa_balance-baldue.</FPCLINE>
+      <FPCLINE>        ENDIF. &quot; IF sy-subrc = 0 AND sy-fdpos &lt;&gt; 0</FPCLINE>
+      <FPCLINE>*&lt;--- End of Insert for D3R3 D3_OTC_FDD_0013 by SMUKHER4 on 25-Jan-2018</FPCLINE>
+      <FPCLINE/>
+      <FPCLINE>*&amp;--Assigining back to the fileds which has been mapped in the form which is to be displayed.</FPCLINE>
+      <FPCLINE>*&amp;--Decimal format should be &apos;.&apos; as thosand separators for all languages</FPCLINE>
+      <FPCLINE/>
+      <FPCLINE>        WRITE lv_current TO lwa_balance-current CURRENCY &lt;lfs_item_tmp&gt;-waers.</FPCLINE>
+      <FPCLINE>        CONDENSE lwa_balance-current.</FPCLINE>
+      <FPCLINE>*---&gt; Begin of Insert for D3R3 D3_OTC_FDD_0013 by SMUKHER4 on 25-Jan-2018</FPCLINE>
+      <FPCLINE>*&amp;--The negative sign should be unformly leading for all amounts.</FPCLINE>
+      <FPCLINE>        SEARCH lwa_balance-current FOR &apos;-&apos;.</FPCLINE>
+      <FPCLINE>        IF sy-subrc = 0 AND sy-fdpos &lt;&gt; 0.</FPCLINE>
+      <FPCLINE>          SPLIT lwa_balance-current AT &apos;-&apos; INTO lwa_balance-current lv_text.</FPCLINE>
+      <FPCLINE>          CONDENSE lwa_balance-current.</FPCLINE>
+      <FPCLINE>          CONCATENATE &apos;-&apos; lwa_balance-current INTO lwa_balance-current.</FPCLINE>
+      <FPCLINE>        ENDIF. &quot; IF sy-subrc = 0 AND sy-fdpos &lt;&gt; 0</FPCLINE>
+      <FPCLINE>*&lt;--- End of Insert for D3R3 D3_OTC_FDD_0013 by SMUKHER4 on 25-Jan-2018</FPCLINE>
+      <FPCLINE/>
+      <FPCLINE>        WRITE lv_upto60  TO lwa_balance-upto60 CURRENCY &lt;lfs_item_tmp&gt;-waers.</FPCLINE>
+      <FPCLINE>        CONDENSE lwa_balance-upto60.</FPCLINE>
+      <FPCLINE>*---&gt; Begin of Insert for D3R3 D3_OTC_FDD_0013 by SMUKHER4 on 25-Jan-2018</FPCLINE>
+      <FPCLINE>*&amp;--The negative sign should be unformly leading for all amounts.</FPCLINE>
+      <FPCLINE>        SEARCH lwa_balance-upto60 FOR &apos;-&apos;.</FPCLINE>
+      <FPCLINE>        IF sy-subrc = 0 AND sy-fdpos &lt;&gt; 0.</FPCLINE>
+      <FPCLINE>          SPLIT lwa_balance-upto60 AT &apos;-&apos; INTO lwa_balance-upto60 lv_text.</FPCLINE>
+      <FPCLINE>          CONDENSE lwa_balance-upto60.</FPCLINE>
+      <FPCLINE>          CONCATENATE &apos;-&apos; lwa_balance-upto60 INTO lwa_balance-upto60.</FPCLINE>
+      <FPCLINE>        ENDIF. &quot; IF sy-subrc = 0 AND sy-fdpos &lt;&gt; 0</FPCLINE>
+      <FPCLINE>*&lt;--- End of Insert for D3R3 D3_OTC_FDD_0013 by SMUKHER4 on 25-Jan-2018</FPCLINE>
+      <FPCLINE/>
+      <FPCLINE>        WRITE lv_upto90 TO lwa_balance-upto90 CURRENCY &lt;lfs_item_tmp&gt;-waers.</FPCLINE>
+      <FPCLINE>        CONDENSE lwa_balance-upto90.</FPCLINE>
+      <FPCLINE>*---&gt; Begin of Insert for D3R3 D3_OTC_FDD_0013 by SMUKHER4 on 25-Jan-2018</FPCLINE>
+      <FPCLINE>*&amp;--The negative sign should be unformly leading for all amounts.</FPCLINE>
+      <FPCLINE>        SEARCH lwa_balance-upto90 FOR &apos;-&apos;.</FPCLINE>
+      <FPCLINE>        IF sy-subrc = 0 AND sy-fdpos &lt;&gt; 0.</FPCLINE>
+      <FPCLINE>          SPLIT lwa_balance-upto90 AT &apos;-&apos; INTO lwa_balance-upto90 lv_text.</FPCLINE>
+      <FPCLINE>          CONDENSE lwa_balance-upto90.</FPCLINE>
+      <FPCLINE>          CONCATENATE &apos;-&apos; lwa_balance-upto90 INTO lwa_balance-upto90.</FPCLINE>
+      <FPCLINE>        ENDIF. &quot; IF sy-subrc = 0 AND sy-fdpos &lt;&gt; 0</FPCLINE>
+      <FPCLINE>*&lt;--- End of Insert for D3R3 D3_OTC_FDD_0013 by SMUKHER4 on 25-Jan-2018</FPCLINE>
+      <FPCLINE/>
+      <FPCLINE>        WRITE lv_over90 TO lwa_balance-over90 CURRENCY &lt;lfs_item_tmp&gt;-waers.</FPCLINE>
+      <FPCLINE>        CONDENSE lwa_balance-over90.</FPCLINE>
+      <FPCLINE>*---&gt; Begin of Insert for D3R3 D3_OTC_FDD_0013 by SMUKHER4 on 25-Jan-2018</FPCLINE>
+      <FPCLINE>*&amp;--The negative sign should be unformly leading for all amounts.</FPCLINE>
+      <FPCLINE>        SEARCH lwa_balance-over90 FOR &apos;-&apos;.</FPCLINE>
+      <FPCLINE>        IF sy-subrc = 0 AND sy-fdpos &lt;&gt; 0.</FPCLINE>
+      <FPCLINE>          SPLIT lwa_balance-over90 AT &apos;-&apos; INTO lwa_balance-over90 lv_text.</FPCLINE>
+      <FPCLINE>          CONDENSE lwa_balance-over90.</FPCLINE>
+      <FPCLINE>          CONCATENATE &apos;-&apos; lwa_balance-over90 INTO lwa_balance-over90.</FPCLINE>
+      <FPCLINE>        ENDIF. &quot; IF sy-subrc = 0 AND sy-fdpos &lt;&gt; 0</FPCLINE>
+      <FPCLINE>*&lt;--- End of Insert for D3R3 D3_OTC_FDD_0013 by SMUKHER4 on 25-Jan-2018</FPCLINE>
+      <FPCLINE/>
+      <FPCLINE>* &lt;--- End of Insert for D3_OTC_FDD_0013 Defect# 4242 by SMUKHER4 on 21-Nov-2017.</FPCLINE>
+      <FPCLINE>*&amp;--get Currency key</FPCLINE>
+      <FPCLINE>        lwa_balance-waers = &lt;lfs_item_tmp&gt;-waers.</FPCLINE>
+      <FPCLINE>        APPEND lwa_balance TO gt_balance.</FPCLINE>
+      <FPCLINE>        CLEAR lwa_balance.</FPCLINE>
+      <FPCLINE/>
+      <FPCLINE>        CLEAR : lv_current,</FPCLINE>
+      <FPCLINE>                lv_upto60,</FPCLINE>
+      <FPCLINE>                lv_upto90,</FPCLINE>
+      <FPCLINE>                lv_over90.</FPCLINE>
+      <FPCLINE>      ENDAT.</FPCLINE>
+      <FPCLINE>    ENDLOOP. &quot; LOOP AT li_item_tmp ASSIGNING &lt;lfs_item_tmp&gt;</FPCLINE>
+      <FPCLINE>  ENDIF. &quot; IF li_item_tmp IS NOT INITIAL</FPCLINE>
+      <FPCLINE>* &lt;--- End of Change for D3_OTC_FDD_0013_CR#385 by NALI</FPCLINE>
+      <FPCLINE/>
+      <FPCLINE/>
+      <FPCLINE>*&amp; --&gt; Begin of Insert for D2_OTC_FDD_0013_Defect#1134 by SAGARWA1</FPCLINE>
+      <FPCLINE>*---&gt; Begin of Delete for Defect#5464:D3_OTC_FDD_0013 BY SGHOSH</FPCLINE>
+      <FPCLINE>* The EMI call has been shifted above for new logic implementation</FPCLINE>
+      <FPCLINE>** Call FM to retrieve Enhancement Status</FPCLINE>
+      <FPCLINE>*  CALL FUNCTION &apos;ZDEV_ENHANCEMENT_STATUS_CHECK&apos;</FPCLINE>
+      <FPCLINE>*    EXPORTING</FPCLINE>
+      <FPCLINE>*      iv_enhancement_no = lc_enh_no</FPCLINE>
+      <FPCLINE>*    TABLES</FPCLINE>
+      <FPCLINE>*      tt_enh_status     = li_enh_status.</FPCLINE>
+      <FPCLINE>*</FPCLINE>
+      <FPCLINE>** Delete the EMI records where the status is not active</FPCLINE>
+      <FPCLINE>*  DELETE li_enh_status WHERE active = space.</FPCLINE>
+      <FPCLINE>*&lt;--- End of Delete for Defect#5464:D3_OTC_FDD_0013 BY SGHOSH</FPCLINE>
+      <FPCLINE/>
+      <FPCLINE>* Check whether this Enhancement is Active</FPCLINE>
+      <FPCLINE>  IF li_enh_status IS NOT INITIAL.</FPCLINE>
+      <FPCLINE/>
+      <FPCLINE>    CLEAR : lv_flag.</FPCLINE>
+      <FPCLINE>* Set the flag if the country is maintained in EMI table.</FPCLINE>
+      <FPCLINE>    LOOP AT li_enh_status ASSIGNING &lt;lfs_enh_status&gt;</FPCLINE>
+      <FPCLINE>                              WHERE criteria = lc_land1.</FPCLINE>
+      <FPCLINE>      IF fp_country = &lt;lfs_enh_status&gt;-sel_low.</FPCLINE>
+      <FPCLINE>        lv_flag = abap_true.</FPCLINE>
+      <FPCLINE>        EXIT.</FPCLINE>
+      <FPCLINE>      ENDIF. &quot; IF fp_country = &lt;lfs_enh_status&gt;-sel_low</FPCLINE>
+      <FPCLINE>    ENDLOOP. &quot; LOOP AT li_enh_status ASSIGNING &lt;lfs_enh_status&gt;</FPCLINE>
+      <FPCLINE/>
+      <FPCLINE>  ENDIF. &quot; IF li_enh_status IS NOT INITIAL</FPCLINE>
+      <FPCLINE/>
+      <FPCLINE>** Change the Date format to DD/MM/YYYY is the country code is maintained in EMI table</FPCLINE>
+      <FPCLINE>  IF lv_flag IS NOT INITIAL.</FPCLINE>
+      <FPCLINE>    LOOP AT it_display ASSIGNING &lt;lfs_display&gt;.</FPCLINE>
+      <FPCLINE>      CONCATENATE &lt;lfs_display&gt;-budat+6(2) lc_slash</FPCLINE>
+      <FPCLINE>                &lt;lfs_display&gt;-budat+4(2) lc_slash</FPCLINE>
+      <FPCLINE>                &lt;lfs_display&gt;-budat+0(4)</FPCLINE>
+      <FPCLINE>                INTO lv_tran_date.</FPCLINE>
+      <FPCLINE>      &lt;lfs_display&gt;-budat = lv_tran_date.</FPCLINE>
+      <FPCLINE>    ENDLOOP. &quot; LOOP AT it_display ASSIGNING &lt;lfs_display&gt;</FPCLINE>
+      <FPCLINE>    UNASSIGN &lt;lfs_display&gt;.</FPCLINE>
+      <FPCLINE/>
+      <FPCLINE>  ENDIF. &quot; IF lv_flag IS NOT INITIAL</FPCLINE>
+      <FPCLINE>*&amp; --&gt; End   of Insert for D2_OTC_FDD_0013_Defect#1134 by SAGARWA1</FPCLINE>
+      <FPCLINE/>
+      <FPCLINE>* ---&gt; Begin of Insert for D3 COE defect 2379 by DMOIRAN</FPCLINE>
+      <FPCLINE>* For European countries date format will be DD-MMM-YYYY</FPCLINE>
+      <FPCLINE>  IF fp_d3_country IS NOT INITIAL.</FPCLINE>
+      <FPCLINE>    LOOP AT it_display ASSIGNING &lt;lfs_display&gt;.</FPCLINE>
+      <FPCLINE>* Convert Transaction date to european format</FPCLINE>
+      <FPCLINE>      CLEAR lv_d3_date.</FPCLINE>
+      <FPCLINE>      lv_d3_date = &lt;lfs_display&gt;-budat.</FPCLINE>
+      <FPCLINE>      IF lv_d3_date IS NOT INITIAL.</FPCLINE>
+      <FPCLINE>        CALL FUNCTION &apos;ZDEV_DATE_FORMAT&apos;</FPCLINE>
+      <FPCLINE>          EXPORTING</FPCLINE>
+      <FPCLINE>            i_date       = lv_d3_date</FPCLINE>
+      <FPCLINE>            i_format     = lv_date_format &quot;&apos;DD-MMM-YYYY&apos;</FPCLINE>
+      <FPCLINE>            i_langu      = gv_langu</FPCLINE>
+      <FPCLINE>          IMPORTING</FPCLINE>
+      <FPCLINE>            e_date_final = &lt;lfs_display&gt;-budat.</FPCLINE>
+      <FPCLINE>      ENDIF. &quot; IF lv_d3_date IS NOT INITIAL</FPCLINE>
+      <FPCLINE>    ENDLOOP. &quot; LOOP AT it_display ASSIGNING &lt;lfs_display&gt;</FPCLINE>
+      <FPCLINE>  ENDIF. &quot; IF fp_d3_country IS NOT INITIAL</FPCLINE>
+      <FPCLINE>* &lt;--- End    of Insert for D3 COE defect 2379 by DMOIRAN</FPCLINE>
+      <FPCLINE>ENDFORM. &quot;f_format_item_data</FPCLINE>
+      <FPCLINE>* ---&gt; Begin of Insert for D3_OTC_FDD_0013_CR#301 by SGHOSH</FPCLINE>
+      <FPCLINE>FORM f_housebank_details USING fp_im_t_housebank TYPE zotc_t_housebank</FPCLINE>
+      <FPCLINE>* ---&gt; Begin of Change for D3_OTC_FDD_0013_CR#356_PartII by NALI</FPCLINE>
+      <FPCLINE>                                fp_im_t_fr_bankinfo TYPE zotc_t_housebank.</FPCLINE>
+      <FPCLINE>* &lt;--- End of Change for D3_OTC_FDD_0013_CR#356_PartII by NALI</FPCLINE>
+      <FPCLINE>  DATA: lv_lines TYPE int4. &quot; Natural Number</FPCLINE>
+      <FPCLINE>  CONSTANTS: lc_comma TYPE char1 VALUE &apos;,&apos;. &quot; Comma of type CHAR1</FPCLINE>
+      <FPCLINE>  FIELD-SYMBOLS: &lt;lfs_housebank&gt; TYPE zotc_housebank, &quot; Structure for House Bank Info</FPCLINE>
+      <FPCLINE>* ---&gt; Begin of Change for D3_OTC_FDD_0013_CR#356_PartII by NALI</FPCLINE>
+      <FPCLINE>                 &lt;lfs_fr_bankinfo&gt;  TYPE zotc_housebank. &quot; Structure for House Bank Info</FPCLINE>
+      <FPCLINE>* &lt;--- End of Change for D3_OTC_FDD_0013_CR#356_PartII by NALI</FPCLINE>
+      <FPCLINE/>
+      <FPCLINE>  CLEAR:gv_housebank_ad_0,</FPCLINE>
+      <FPCLINE>        gv_housebank_ad_1,</FPCLINE>
+      <FPCLINE>        gv_housebank_ad_2,</FPCLINE>
+      <FPCLINE>        gv_housebank_ad_3,</FPCLINE>
+      <FPCLINE>        gv_hb_ad0_line2,</FPCLINE>
+      <FPCLINE>        gv_hb_ad1_line2,</FPCLINE>
+      <FPCLINE>        gv_hb_ad2_line2,</FPCLINE>
+      <FPCLINE>        gv_hb_ad3_line2.</FPCLINE>
+      <FPCLINE/>
+      <FPCLINE>  lv_lines = lines( fp_im_t_housebank ).</FPCLINE>
+      <FPCLINE>  IF fp_im_t_fr_bankinfo  IS NOT INITIAL.</FPCLINE>
+      <FPCLINE>    SORT fp_im_t_fr_bankinfo  BY iban.</FPCLINE>
+      <FPCLINE>  ENDIF. &quot; IF fp_im_t_fr_bankinfo IS NOT INITIAL</FPCLINE>
+      <FPCLINE>* If only one address is returned in the table then Housebank will be printed in the header.</FPCLINE>
+      <FPCLINE>* Otherwise, 3 different structure will be populated to display in footer.</FPCLINE>
+      <FPCLINE>*---&gt; Begin of Delete for D3R3 D3_OTC_FDD_0013 by SMUKHER4 on 25-Jan-2018</FPCLINE>
+      <FPCLINE>*  IF lv_lines = 1.</FPCLINE>
+      <FPCLINE>*    READ TABLE fp_im_t_housebank ASSIGNING &lt;lfs_housebank&gt; INDEX 1.</FPCLINE>
+      <FPCLINE>*    IF sy-subrc = 0.</FPCLINE>
+      <FPCLINE>*      gv_housebank_ad_0 = &lt;lfs_housebank&gt; .</FPCLINE>
+      <FPCLINE>** ---&gt; Begin of Change for D3_OTC_FDD_0013_CR#356_PartII by NALI</FPCLINE>
+      <FPCLINE>**      CONCATENATE &lt;lfs_housebank&gt;-stras</FPCLINE>
+      <FPCLINE>**              &lt;lfs_housebank&gt;-ort01</FPCLINE>
+      <FPCLINE>**              INTO gv_hb_ad0_line2</FPCLINE>
+      <FPCLINE>**              SEPARATED BY lc_comma.</FPCLINE>
+      <FPCLINE>*      gv_hb_ad0_line2 = &lt;lfs_housebank&gt;-ort01.</FPCLINE>
+      <FPCLINE>*      READ TABLE fp_im_t_fr_bankinfo  ASSIGNING &lt;lfs_fr_bankinfo&gt; WITH KEY iban = &lt;lfs_housebank&gt;-iban.</FPCLINE>
+      <FPCLINE>*      IF sy-subrc = 0.</FPCLINE>
+      <FPCLINE>*        gv_housebank_ad_0-fr_iban = &lt;lfs_fr_bankinfo&gt;-banka.</FPCLINE>
+      <FPCLINE>*      ENDIF. &quot; IF sy-subrc = 0</FPCLINE>
+      <FPCLINE>** ---&gt; End of Change for D3_OTC_FDD_0013_CR#356_PartII by NALI</FPCLINE>
+      <FPCLINE>*    ENDIF. &quot; IF sy-subrc = 0</FPCLINE>
+      <FPCLINE>*  ELSE. &quot; ELSE -&gt; IF lv_lines = 1</FPCLINE>
+      <FPCLINE>*&lt;--- End of Delete for D3R3 D3_OTC_FDD_0013 by SMUKHER4 on 25-Jan-2018</FPCLINE>
+      <FPCLINE>  READ TABLE fp_im_t_housebank ASSIGNING &lt;lfs_housebank&gt; INDEX 1.</FPCLINE>
+      <FPCLINE>  IF sy-subrc = 0.</FPCLINE>
+      <FPCLINE>    gv_housebank_ad_1 = &lt;lfs_housebank&gt; .</FPCLINE>
+      <FPCLINE>* ---&gt; Begin of Change for D3_OTC_FDD_0013_CR#356_PartII by NALI</FPCLINE>
+      <FPCLINE>*      CONCATENATE &lt;lfs_housebank&gt;-stras</FPCLINE>
+      <FPCLINE>*              &lt;lfs_housebank&gt;-ort01</FPCLINE>
+      <FPCLINE>*              INTO gv_hb_ad1_line2</FPCLINE>
+      <FPCLINE>*              SEPARATED BY lc_comma.</FPCLINE>
+      <FPCLINE>    gv_hb_ad1_line2 = &lt;lfs_housebank&gt;-ort01.</FPCLINE>
+      <FPCLINE>    READ TABLE fp_im_t_fr_bankinfo  ASSIGNING &lt;lfs_fr_bankinfo&gt; WITH KEY iban = &lt;lfs_housebank&gt;-iban.</FPCLINE>
+      <FPCLINE>    IF sy-subrc = 0.</FPCLINE>
+      <FPCLINE>      gv_housebank_ad_1-fr_iban = &lt;lfs_fr_bankinfo&gt;-banka.</FPCLINE>
+      <FPCLINE>    ENDIF. &quot; IF sy-subrc = 0</FPCLINE>
+      <FPCLINE>* ---&gt; End of Change for D3_OTC_FDD_0013_CR#356_PartII by NALI</FPCLINE>
+      <FPCLINE>  ENDIF. &quot; IF sy-subrc = 0</FPCLINE>
+      <FPCLINE>  READ TABLE fp_im_t_housebank ASSIGNING &lt;lfs_housebank&gt; INDEX 2.</FPCLINE>
+      <FPCLINE>  IF sy-subrc = 0.</FPCLINE>
+      <FPCLINE>    gv_housebank_ad_2 = &lt;lfs_housebank&gt; .</FPCLINE>
+      <FPCLINE>* ---&gt; Begin of Change for D3_OTC_FDD_0013_CR#356_PartII by NALI</FPCLINE>
+      <FPCLINE>*      CONCATENATE &lt;lfs_housebank&gt;-stras</FPCLINE>
+      <FPCLINE>*              &lt;lfs_housebank&gt;-ort01</FPCLINE>
+      <FPCLINE>*              INTO gv_hb_ad2_line2</FPCLINE>
+      <FPCLINE>*              SEPARATED BY lc_comma.</FPCLINE>
+      <FPCLINE>    gv_hb_ad2_line2 = &lt;lfs_housebank&gt;-ort01.</FPCLINE>
+      <FPCLINE>    READ TABLE fp_im_t_fr_bankinfo  ASSIGNING &lt;lfs_fr_bankinfo&gt; WITH KEY iban = &lt;lfs_housebank&gt;-iban.</FPCLINE>
+      <FPCLINE>    IF sy-subrc = 0.</FPCLINE>
+      <FPCLINE>      gv_housebank_ad_2-fr_iban = &lt;lfs_fr_bankinfo&gt;-banka.</FPCLINE>
+      <FPCLINE>    ENDIF. &quot; IF sy-subrc = 0</FPCLINE>
+      <FPCLINE>* ---&gt; End of Change for D3_OTC_FDD_0013_CR#356_PartII by NALI</FPCLINE>
+      <FPCLINE>  ENDIF. &quot; IF sy-subrc = 0</FPCLINE>
+      <FPCLINE>  READ TABLE fp_im_t_housebank ASSIGNING &lt;lfs_housebank&gt; INDEX 3.</FPCLINE>
+      <FPCLINE>  IF sy-subrc = 0.</FPCLINE>
+      <FPCLINE>    gv_housebank_ad_3 = &lt;lfs_housebank&gt; .</FPCLINE>
+      <FPCLINE>* ---&gt; Begin of Change for D3_OTC_FDD_0013_CR#356_PartII by NALI</FPCLINE>
+      <FPCLINE>*      CONCATENATE &lt;lfs_housebank&gt;-stras</FPCLINE>
+      <FPCLINE>*              &lt;lfs_housebank&gt;-ort01</FPCLINE>
+      <FPCLINE>*              INTO gv_hb_ad3_line2</FPCLINE>
+      <FPCLINE>*              SEPARATED BY lc_comma.</FPCLINE>
+      <FPCLINE>    gv_hb_ad3_line2 = &lt;lfs_housebank&gt;-ort01.</FPCLINE>
+      <FPCLINE>    READ TABLE fp_im_t_fr_bankinfo  ASSIGNING &lt;lfs_fr_bankinfo&gt; WITH KEY iban = &lt;lfs_housebank&gt;-iban.</FPCLINE>
+      <FPCLINE>    IF sy-subrc = 0.</FPCLINE>
+      <FPCLINE>      gv_housebank_ad_3-fr_iban = &lt;lfs_fr_bankinfo&gt;-banka.</FPCLINE>
+      <FPCLINE>    ENDIF. &quot; IF sy-subrc = 0</FPCLINE>
+      <FPCLINE>* ---&gt; End of Change for D3_OTC_FDD_0013_CR#356_PartII by NALI</FPCLINE>
+      <FPCLINE>  ENDIF. &quot; IF sy-subrc = 0</FPCLINE>
+      <FPCLINE>*---&gt; Begin of Delete for D3R3 D3_OTC_FDD_0013 by SMUKHER4 on 25-Jan-2018</FPCLINE>
+      <FPCLINE>*  ENDIF. &quot; IF lv_lines = 1</FPCLINE>
+      <FPCLINE>*&lt;--- End of Delete for D3R3 D3_OTC_FDD_0013 by SMUKHER4 on 25-Jan-2018</FPCLINE>
+      <FPCLINE>ENDFORM. &quot;f_housebank_details</FPCLINE>
+      <FPCLINE>* &lt;--- End of Insert for D3_OTC_FDD_0013_CR#301 by SGHOSH</FPCLINE>
+      <FPCLINE/>
+      <FPCLINE>*---&gt; Begin of Insert for D3R3 D3_OTC_FDD_0013 by SMUKHER4 on 25-Jan-2018</FPCLINE>
+      <FPCLINE>*&amp;--Fetching WEEE registry number from SO10 texts for different company codes.</FPCLINE>
+      <FPCLINE>FORM f_get_registryno_details USING    im_cust_langu TYPE spras   &quot; Customer Language Key</FPCLINE>
+      <FPCLINE>                                       im_comp_langu TYPE spras   &quot; Comapny language key</FPCLINE>
+      <FPCLINE>                                       im_t001_bukrs TYPE bukrs   &quot; Company Code</FPCLINE>
+      <FPCLINE>                              CHANGING gv_weee_no    TYPE string. &quot;WEEE registry number.</FPCLINE>
+      <FPCLINE/>
+      <FPCLINE>  DATA: li_weee_lines TYPE STANDARD TABLE OF tline INITIAL SIZE 0, &quot;SAPscript: Text Lines</FPCLINE>
+      <FPCLINE>        lwa_lines     TYPE tline,                                  &quot; SAPscript: Text Lines</FPCLINE>
+      <FPCLINE>        lv_company    TYPE tdobname.                               &quot; Name</FPCLINE>
+      <FPCLINE/>
+      <FPCLINE>  CONSTANTS: lc_name_weee TYPE tdobname VALUE &apos;ZOTC0013_WEEE_REGISTRY_&apos;, &quot; Name</FPCLINE>
+      <FPCLINE>             lc_id        TYPE tdid     VALUE &apos;ST&apos;,                      &quot; Material-sales text</FPCLINE>
+      <FPCLINE>             lc_object    TYPE tdobject VALUE &apos;TEXT&apos;,                    &quot; Order item text</FPCLINE>
+      <FPCLINE>             lc_english   TYPE spras    VALUE &apos;E&apos;.                       &quot; Language Key</FPCLINE>
+      <FPCLINE/>
+      <FPCLINE>  CLEAR: gv_weee_no,</FPCLINE>
+      <FPCLINE>         lv_company.</FPCLINE>
+      <FPCLINE/>
+      <FPCLINE>*&amp;--First check for customer language to fetch registry numbers</FPCLINE>
+      <FPCLINE>  CONCATENATE lc_name_weee im_t001_bukrs INTO lv_company.</FPCLINE>
+      <FPCLINE/>
+      <FPCLINE>*&amp;--Call Function module to fetch the label for WEEE Number.</FPCLINE>
+      <FPCLINE>  CALL FUNCTION &apos;READ_TEXT&apos;</FPCLINE>
+      <FPCLINE>    EXPORTING</FPCLINE>
+      <FPCLINE>      id                      = lc_id</FPCLINE>
+      <FPCLINE>      language                = im_cust_langu &quot;im_d3_sender_country</FPCLINE>
+      <FPCLINE>      name                    = lv_company</FPCLINE>
+      <FPCLINE>      object                  = lc_object</FPCLINE>
+      <FPCLINE>    TABLES</FPCLINE>
+      <FPCLINE>      lines                   = li_weee_lines</FPCLINE>
+      <FPCLINE>    EXCEPTIONS</FPCLINE>
+      <FPCLINE>      id                      = 1</FPCLINE>
+      <FPCLINE>      language                = 2</FPCLINE>
+      <FPCLINE>      name                    = 3</FPCLINE>
+      <FPCLINE>      not_found               = 4</FPCLINE>
+      <FPCLINE>      object                  = 5</FPCLINE>
+      <FPCLINE>      reference_check         = 6</FPCLINE>
+      <FPCLINE>      wrong_access_to_archive = 7</FPCLINE>
+      <FPCLINE>      OTHERS                  = 8.</FPCLINE>
+      <FPCLINE>  IF sy-subrc = 0.</FPCLINE>
+      <FPCLINE/>
+      <FPCLINE>    READ TABLE li_weee_lines INTO lwa_lines INDEX 1.</FPCLINE>
+      <FPCLINE>    IF sy-subrc IS INITIAL.</FPCLINE>
+      <FPCLINE>      gv_weee_no  = lwa_lines-tdline.</FPCLINE>
+      <FPCLINE>    ENDIF. &quot; IF sy-subrc IS INITIAL</FPCLINE>
+      <FPCLINE>    CLEAR lwa_lines.</FPCLINE>
+      <FPCLINE/>
+      <FPCLINE>*&amp;--If not found,search for company code language.</FPCLINE>
+      <FPCLINE>  ELSE. &quot; ELSE -&gt; IF sy-subrc = 0</FPCLINE>
+      <FPCLINE>*&amp;--Call Function module to fetch the label for WEEE Number.</FPCLINE>
+      <FPCLINE>    CALL FUNCTION &apos;READ_TEXT&apos;</FPCLINE>
+      <FPCLINE>      EXPORTING</FPCLINE>
+      <FPCLINE>        id                      = lc_id</FPCLINE>
+      <FPCLINE>        language                = im_comp_langu &quot;im_d3_sender_country</FPCLINE>
+      <FPCLINE>        name                    = lv_company</FPCLINE>
+      <FPCLINE>        object                  = lc_object</FPCLINE>
+      <FPCLINE>      TABLES</FPCLINE>
+      <FPCLINE>        lines                   = li_weee_lines</FPCLINE>
+      <FPCLINE>      EXCEPTIONS</FPCLINE>
+      <FPCLINE>        id                      = 1</FPCLINE>
+      <FPCLINE>        language                = 2</FPCLINE>
+      <FPCLINE>        name                    = 3</FPCLINE>
+      <FPCLINE>        not_found               = 4</FPCLINE>
+      <FPCLINE>        object                  = 5</FPCLINE>
+      <FPCLINE>        reference_check         = 6</FPCLINE>
+      <FPCLINE>        wrong_access_to_archive = 7</FPCLINE>
+      <FPCLINE>        OTHERS                  = 8.</FPCLINE>
+      <FPCLINE>    IF sy-subrc = 0.</FPCLINE>
+      <FPCLINE/>
+      <FPCLINE>      READ TABLE li_weee_lines INTO lwa_lines INDEX 1.</FPCLINE>
+      <FPCLINE>      IF sy-subrc IS INITIAL.</FPCLINE>
+      <FPCLINE>        gv_weee_no  = lwa_lines-tdline.</FPCLINE>
+      <FPCLINE>      ENDIF. &quot; IF sy-subrc IS INITIAL</FPCLINE>
+      <FPCLINE>      CLEAR lwa_lines.</FPCLINE>
+      <FPCLINE/>
+      <FPCLINE>    ELSE. &quot; ELSE -&gt; IF sy-subrc = 0</FPCLINE>
+      <FPCLINE/>
+      <FPCLINE>*&amp;--Look for corporate language i.e English</FPCLINE>
+      <FPCLINE>*&amp;--Call Function module to fetch the label for WEEE Number.</FPCLINE>
+      <FPCLINE>      CALL FUNCTION &apos;READ_TEXT&apos;</FPCLINE>
+      <FPCLINE>        EXPORTING</FPCLINE>
+      <FPCLINE>          id                      = lc_id</FPCLINE>
+      <FPCLINE>          language                = lc_english &quot;im_d3_sender_country</FPCLINE>
+      <FPCLINE>          name                    = lv_company</FPCLINE>
+      <FPCLINE>          object                  = lc_object</FPCLINE>
+      <FPCLINE>        TABLES</FPCLINE>
+      <FPCLINE>          lines                   = li_weee_lines</FPCLINE>
+      <FPCLINE>        EXCEPTIONS</FPCLINE>
+      <FPCLINE>          id                      = 1</FPCLINE>
+      <FPCLINE>          language                = 2</FPCLINE>
+      <FPCLINE>          name                    = 3</FPCLINE>
+      <FPCLINE>          not_found               = 4</FPCLINE>
+      <FPCLINE>          object                  = 5</FPCLINE>
+      <FPCLINE>          reference_check         = 6</FPCLINE>
+      <FPCLINE>          wrong_access_to_archive = 7</FPCLINE>
+      <FPCLINE>          OTHERS                  = 8.</FPCLINE>
+      <FPCLINE>      IF sy-subrc = 0.</FPCLINE>
+      <FPCLINE/>
+      <FPCLINE>        READ TABLE li_weee_lines INTO lwa_lines INDEX 1.</FPCLINE>
+      <FPCLINE>        IF sy-subrc IS INITIAL.</FPCLINE>
+      <FPCLINE>          gv_weee_no  = lwa_lines-tdline.</FPCLINE>
+      <FPCLINE>        ENDIF. &quot; IF sy-subrc IS INITIAL</FPCLINE>
+      <FPCLINE>        CLEAR lwa_lines.</FPCLINE>
+      <FPCLINE>**If any language is not available, print blank value.</FPCLINE>
+      <FPCLINE>      ELSE. &quot; ELSE -&gt; IF sy-subrc = 0</FPCLINE>
+      <FPCLINE>        gv_weee_no = space.</FPCLINE>
+      <FPCLINE>      ENDIF. &quot; IF sy-subrc = 0</FPCLINE>
+      <FPCLINE/>
+      <FPCLINE>    ENDIF. &quot; IF sy-subrc = 0</FPCLINE>
+      <FPCLINE/>
+      <FPCLINE>  ENDIF. &quot; IF sy-subrc = 0</FPCLINE>
+      <FPCLINE/>
+      <FPCLINE/>
+      <FPCLINE>ENDFORM. &quot;f_get_registryno_details</FPCLINE>
+      <FPCLINE/>
+      <FPCLINE>*&amp;--Fetching the footer details</FPCLINE>
+      <FPCLINE>FORM  f_footer_details USING im_remit_l1       TYPE string</FPCLINE>
+      <FPCLINE>                             im_remit_l2       TYPE string</FPCLINE>
+      <FPCLINE>                             im_remit_l3       TYPE string</FPCLINE>
+      <FPCLINE>*---&gt; Begin of Insert for D3_OTC_FDD_0013 Defect# 5228 by SMUKHER4 on 13-Mar-2018</FPCLINE>
+      <FPCLINE>                             im_org_address    TYPE zotc_company_address &quot; Company address</FPCLINE>
+      <FPCLINE>*&lt;--- End of Insert for D3_OTC_FDD_0013 Defect# 5228 by SMUKHER4 on 13-Mar-2018</FPCLINE>
+      <FPCLINE>                             im_comp_langu     TYPE spras          &quot; Comapny language key</FPCLINE>
+      <FPCLINE>                             im_housebank      TYPE zotc_housebank &quot; Structure for House Bank Info</FPCLINE>
+      <FPCLINE>                             im_d3_flag        TYPE char01         &quot;D3 flag</FPCLINE>
+      <FPCLINE>                             gv_vat_no         TYPE stceg          &quot; VAT Registration Number</FPCLINE>
+      <FPCLINE>                             gv_weee_no        TYPE string         &quot; Parameter value</FPCLINE>
+      <FPCLINE>                     CHANGING gv_footer_lines1 TYPE string</FPCLINE>
+      <FPCLINE>                              gv_footer_lines2 TYPE string</FPCLINE>
+      <FPCLINE>                              gv_footer_lines3 TYPE string</FPCLINE>
+      <FPCLINE>                              gv_footer_lines4 TYPE string</FPCLINE>
+      <FPCLINE>                              gv_footer_lines5 TYPE string</FPCLINE>
+      <FPCLINE>*---&gt; Begin of Insert for D3_OTC_FDD_0013 Defect# 5342 by SMUKHER4 on 19-Mar-2018</FPCLINE>
+      <FPCLINE>                              gv_curretnt      TYPE string</FPCLINE>
+      <FPCLINE>                              gv_31_60         TYPE string</FPCLINE>
+      <FPCLINE>                              gv_61_90         TYPE string.</FPCLINE>
+      <FPCLINE>*&lt;--- End of Insert for D3_OTC_FDD_0013 Defect# 5342 by SMUKHER4 on 19-Mar-2018</FPCLINE>
+      <FPCLINE/>
+      <FPCLINE/>
+      <FPCLINE>  DATA: li_vat_lines        TYPE STANDARD TABLE OF tline INITIAL SIZE 0, &quot;SAPscript: Text Lines</FPCLINE>
+      <FPCLINE>        li_iban_lines       TYPE STANDARD TABLE OF tline INITIAL SIZE 0, &quot;SAPscript: Text Lines</FPCLINE>
+      <FPCLINE>        li_swift_lines      TYPE STANDARD TABLE OF tline INITIAL SIZE 0, &quot;SAPscript: Text Lines</FPCLINE>
+      <FPCLINE>        li_bankn_lines      TYPE STANDARD TABLE OF tline INITIAL SIZE 0, &quot;SAPscript: Text Lines</FPCLINE>
+      <FPCLINE>        li_bankkey_lines    TYPE STANDARD TABLE OF tline INITIAL SIZE 0, &quot;SAPscript: Text Lines</FPCLINE>
+      <FPCLINE>        li_sortcode_lines   TYPE STANDARD TABLE OF tline INITIAL SIZE 0, &quot;SAPscript: Text Lines</FPCLINE>
+      <FPCLINE>        lv_line_vat         TYPE string VALUE IS INITIAL,                &quot; VAT label</FPCLINE>
+      <FPCLINE>        lv_line_weee        TYPE string VALUE IS INITIAL,                &quot; VAT label</FPCLINE>
+      <FPCLINE>        lv_line_iban        TYPE string VALUE IS INITIAL,                &quot; VAT label</FPCLINE>
+      <FPCLINE>        lv_line_swift       TYPE string VALUE IS INITIAL,                &quot; VAT label</FPCLINE>
+      <FPCLINE>        lv_line_bankn       TYPE string VALUE IS INITIAL,                &quot; VAT label</FPCLINE>
+      <FPCLINE>        lv_line_bankkey     TYPE string VALUE IS INITIAL,                &quot; VAT label</FPCLINE>
+      <FPCLINE>        lwa_lines           TYPE tline,                                  &quot; SAPscript: Text Lines</FPCLINE>
+      <FPCLINE>        lv_line_sortcode_us TYPE string VALUE IS INITIAL,                &quot; VAT label</FPCLINE>
+      <FPCLINE>        lv_line_sortcode_uk TYPE string VALUE IS INITIAL,                &quot; VAT label</FPCLINE>
+      <FPCLINE>        lv_sortcode_nordic  TYPE tdobname,                               &quot; Name</FPCLINE>
+      <FPCLINE>        lv_sortcode         TYPE tdobname,                               &quot;Sort code label</FPCLINE>
+      <FPCLINE>*---&gt; Begin of Insert for D3_OTC_FDD_0013 Defect# 5342 by SMUKHER4 on 19-Mar-2018</FPCLINE>
+      <FPCLINE>        li_current          TYPE STANDARD TABLE OF tline INITIAL SIZE 0, &quot;SAPscript: Text Lines</FPCLINE>
+      <FPCLINE>        li_31_60            TYPE STANDARD TABLE OF tline INITIAL SIZE 0, &quot;SAPscript: Text Lines</FPCLINE>
+      <FPCLINE>        li_61_90            TYPE STANDARD TABLE OF tline INITIAL SIZE 0. &quot;SAPscript: Text Lines</FPCLINE>
+      <FPCLINE>*&lt;--- End of Insert for D3_OTC_FDD_0013 Defect# 5342 by SMUKHER4 on 19-Mar-2018</FPCLINE>
+      <FPCLINE/>
+      <FPCLINE>*&amp;--Local Constants declarations</FPCLINE>
+      <FPCLINE>  CONSTANTS: lc_id             TYPE tdid     VALUE &apos;ST&apos;,                   &quot; Material-sales text</FPCLINE>
+      <FPCLINE>             lc_object         TYPE tdobject VALUE &apos;TEXT&apos;,                 &quot; Order item text</FPCLINE>
+      <FPCLINE>             lc_name_vat       TYPE tdobname VALUE &apos;ZOTC0013_VAT_NUMBER&apos;,  &quot; Name</FPCLINE>
+      <FPCLINE>             lc_name_iban      TYPE tdobname VALUE &apos;ZOTC_IBAN&apos;,            &quot; Name</FPCLINE>
+      <FPCLINE>             lc_name_swift     TYPE tdobname VALUE &apos;ZOTC_SWIFT&apos;,           &quot; Name</FPCLINE>
+      <FPCLINE>             lc_name_bankn     TYPE tdobname VALUE &apos;ZOTC_ACC_NO&apos;,          &quot; Name</FPCLINE>
+      <FPCLINE>             lc_name_sortcode  TYPE tdobname VALUE &apos;ZOTC_CLEARING_&apos;,       &quot; Name</FPCLINE>
+      <FPCLINE>             lc_clearing       TYPE tdobname VALUE &apos;ZOTC_CLEARING&apos;,        &quot; Name</FPCLINE>
+      <FPCLINE>             lc_suffix         TYPE tdobname VALUE &apos;_0013_EU&apos;,             &quot;Name</FPCLINE>
+      <FPCLINE>             lc_sortcode_bank  TYPE tdobname VALUE &apos;ZOTC_0013_SORT_CODE_&apos;, &quot; Name</FPCLINE>
+      <FPCLINE>             lc_bukrs_2041     TYPE bukrs    VALUE &apos;2041&apos;,                 &quot; Company Code</FPCLINE>
+      <FPCLINE>             lc_bukrs_2045     TYPE bukrs    VALUE &apos;2045&apos;,                 &quot; Company Code</FPCLINE>
+      <FPCLINE>             lc_us             TYPE land1    VALUE &apos;US&apos;,                   &quot; Country Key</FPCLINE>
+      <FPCLINE>             lc_uk             TYPE land1    VALUE &apos;GB&apos;,                   &quot; Country Key</FPCLINE>
+      <FPCLINE>             lc_en             TYPE spras    VALUE &apos;E&apos;,                    &quot; Language Key</FPCLINE>
+      <FPCLINE>             lc_comma          TYPE char1    VALUE &apos;,&apos;,                    &quot; Comma of type CHAR1</FPCLINE>
+      <FPCLINE>             lc_dot            TYPE char1    VALUE &apos;.&apos;,                    &quot; Dot of type CHAR1</FPCLINE>
+      <FPCLINE>*---&gt; Begin of Insert for D3_OTC_FDD_0013 Defect# 5342 by SMUKHER4 on 19-Mar-2018</FPCLINE>
+      <FPCLINE>             lc_i              TYPE sylangu  VALUE &apos;I&apos;,             &quot; Language Key of Current Text Environment</FPCLINE>
+      <FPCLINE>             lc_gg             TYPE char2    VALUE &apos;gg&apos;,            &quot; Gg of type CHAR2</FPCLINE>
+      <FPCLINE>             lc_current        TYPE tdobname VALUE &apos;ZOTC_CURRENT&apos;,  &quot; Name</FPCLINE>
+      <FPCLINE>             lc_31_60          TYPE tdobname VALUE &apos;ZOTC_31_TO_60&apos;, &quot; Name</FPCLINE>
+      <FPCLINE>             lc_61_90          TYPE tdobname VALUE &apos;ZOTC_61_TO_90&apos;. &quot; Name</FPCLINE>
+      <FPCLINE>*&lt;--- End of Insert for D3_OTC_FDD_0013 Defect# 5342 by SMUKHER4 on 19-Mar-2018</FPCLINE>
+      <FPCLINE/>
+      <FPCLINE/>
+      <FPCLINE>  CLEAR:  lv_line_vat,</FPCLINE>
+      <FPCLINE>          lv_line_weee,</FPCLINE>
+      <FPCLINE>          lv_line_iban,</FPCLINE>
+      <FPCLINE>          lv_line_swift,</FPCLINE>
+      <FPCLINE>          lv_line_bankn,</FPCLINE>
+      <FPCLINE>          lv_sortcode,</FPCLINE>
+      <FPCLINE>          lv_sortcode_nordic,</FPCLINE>
+      <FPCLINE>          lv_line_bankkey.</FPCLINE>
+      <FPCLINE/>
+      <FPCLINE>*---&gt; Begin of Insert for D3_OTC_FDD_0013 Defect# 5342 by SMUKHER4 on 19-Mar-2018</FPCLINE>
+      <FPCLINE>*&amp;--Clearing the variables used.</FPCLINE>
+      <FPCLINE>  CLEAR: gv_current,</FPCLINE>
+      <FPCLINE>         gv_31_60,</FPCLINE>
+      <FPCLINE>         gv_61_90.</FPCLINE>
+      <FPCLINE>*&lt;--- End of Insert for D3_OTC_FDD_0013 Defect# 5342 by SMUKHER4 on 19-Mar-2018</FPCLINE>
+      <FPCLINE/>
+      <FPCLINE>*&amp;--Logic should work only for D3 countries.</FPCLINE>
+      <FPCLINE>  IF im_d3_flag IS NOT INITIAL.</FPCLINE>
+      <FPCLINE>*&amp;--Populating the footer details in a line.</FPCLINE>
+      <FPCLINE/>
+      <FPCLINE>    IF im_remit_l1 IS NOT INITIAL.</FPCLINE>
+      <FPCLINE>      gv_footer_lines1 = im_remit_l1.</FPCLINE>
+      <FPCLINE>    ENDIF. &quot; IF im_remit_l1 IS NOT INITIAL</FPCLINE>
+      <FPCLINE/>
+      <FPCLINE>*---&gt; Begin of Insert for D3_OTC_FDD_0013 Defect# 5228 by SMUKHER4 on 13-Mar-2018</FPCLINE>
+      <FPCLINE>*&amp;--Legal enitity name should be concatenated with Name1 &amp; Name2 separated by space.</FPCLINE>
+      <FPCLINE>    IF im_org_address-name2 IS NOT INITIAL.</FPCLINE>
+      <FPCLINE>      CONCATENATE gv_footer_lines1 im_org_address-name2 INTO gv_footer_lines1 SEPARATED BY space.</FPCLINE>
+      <FPCLINE>      CONDENSE gv_footer_lines1.</FPCLINE>
+      <FPCLINE>    ENDIF. &quot; IF im_org_address-name2 IS NOT INITIAL</FPCLINE>
+      <FPCLINE>*&lt;--- End of Insert for D3_OTC_FDD_0013 Defect# 5228 by SMUKHER4 on 13-Mar-2018</FPCLINE>
+      <FPCLINE/>
+      <FPCLINE>    IF im_remit_l2 IS NOT INITIAL.</FPCLINE>
+      <FPCLINE>      CONCATENATE gv_footer_lines1 im_remit_l2 lc_comma INTO gv_footer_lines1 SEPARATED BY space.</FPCLINE>
+      <FPCLINE/>
+      <FPCLINE>    ENDIF. &quot; IF im_remit_l2 IS NOT INITIAL</FPCLINE>
+      <FPCLINE>    IF im_remit_l3 IS NOT INITIAL.</FPCLINE>
+      <FPCLINE>      CONCATENATE gv_footer_lines1 im_remit_l3 INTO gv_footer_lines1 SEPARATED BY space.</FPCLINE>
+      <FPCLINE/>
+      <FPCLINE>    ENDIF. &quot; IF im_remit_l3 IS NOT INITIAL</FPCLINE>
+      <FPCLINE/>
+      <FPCLINE>    IF  gv_vat_no IS NOT INITIAL.</FPCLINE>
+      <FPCLINE/>
+      <FPCLINE>*&amp;--Call Function module to fetch the label for Vat Number.</FPCLINE>
+      <FPCLINE>      CALL FUNCTION &apos;READ_TEXT&apos;</FPCLINE>
+      <FPCLINE>        EXPORTING</FPCLINE>
+      <FPCLINE>          id                      = lc_id</FPCLINE>
+      <FPCLINE>          language                = gv_langu &quot;im_d3_sender_country You can not pass country in language</FPCLINE>
+      <FPCLINE>          name                    = lc_name_vat</FPCLINE>
+      <FPCLINE>          object                  = lc_object</FPCLINE>
+      <FPCLINE>        TABLES</FPCLINE>
+      <FPCLINE>          lines                   = li_vat_lines</FPCLINE>
+      <FPCLINE>        EXCEPTIONS</FPCLINE>
+      <FPCLINE>          id                      = 1</FPCLINE>
+      <FPCLINE>          language                = 2</FPCLINE>
+      <FPCLINE>          name                    = 3</FPCLINE>
+      <FPCLINE>          not_found               = 4</FPCLINE>
+      <FPCLINE>          object                  = 5</FPCLINE>
+      <FPCLINE>          reference_check         = 6</FPCLINE>
+      <FPCLINE>          wrong_access_to_archive = 7</FPCLINE>
+      <FPCLINE>          OTHERS                  = 8.</FPCLINE>
+      <FPCLINE>      IF sy-subrc = 0.</FPCLINE>
+      <FPCLINE/>
+      <FPCLINE>        READ TABLE li_vat_lines INTO lwa_lines INDEX 1.</FPCLINE>
+      <FPCLINE>        IF sy-subrc IS INITIAL.</FPCLINE>
+      <FPCLINE>          lv_line_vat  = lwa_lines-tdline.</FPCLINE>
+      <FPCLINE/>
+      <FPCLINE>        ENDIF. &quot; IF sy-subrc IS INITIAL</FPCLINE>
+      <FPCLINE/>
+      <FPCLINE>        CONCATENATE lv_line_vat gv_vat_no lc_comma INTO gv_footer_lines2 SEPARATED BY space.</FPCLINE>
+      <FPCLINE/>
+      <FPCLINE>      ENDIF. &quot; IF sy-subrc = 0</FPCLINE>
+      <FPCLINE>    ELSE. &quot; ELSE -&gt; IF gv_vat_no IS NOT INITIAL</FPCLINE>
+      <FPCLINE>      SHIFT gv_footer_lines2 RIGHT DELETING TRAILING lc_comma.</FPCLINE>
+      <FPCLINE>    ENDIF. &quot; IF gv_vat_no IS NOT INITIAL</FPCLINE>
+      <FPCLINE/>
+      <FPCLINE>    CLEAR: lwa_lines.</FPCLINE>
+      <FPCLINE/>
+      <FPCLINE>    IF gv_weee_no IS NOT INITIAL.</FPCLINE>
+      <FPCLINE>      CONCATENATE gv_footer_lines2 gv_weee_no INTO gv_footer_lines2 SEPARATED BY space.</FPCLINE>
+      <FPCLINE>    ELSE. &quot; ELSE -&gt; IF gv_weee_no IS NOT INITIAL</FPCLINE>
+      <FPCLINE>      SHIFT gv_footer_lines2 RIGHT DELETING TRAILING lc_comma.</FPCLINE>
+      <FPCLINE>    ENDIF. &quot; IF gv_weee_no IS NOT INITIAL</FPCLINE>
+      <FPCLINE/>
+      <FPCLINE/>
+      <FPCLINE>    IF im_housebank-banka IS NOT INITIAL.</FPCLINE>
+      <FPCLINE>      gv_footer_lines3 = im_housebank-banka.</FPCLINE>
+      <FPCLINE>    ENDIF. &quot; IF im_housebank-banka IS NOT INITIAL</FPCLINE>
+      <FPCLINE/>
+      <FPCLINE>    IF im_housebank-ort01 IS NOT INITIAL.</FPCLINE>
+      <FPCLINE>      CONCATENATE gv_footer_lines3 im_housebank-ort01 lc_comma INTO gv_footer_lines3 SEPARATED BY space.</FPCLINE>
+      <FPCLINE>    ENDIF. &quot; IF im_housebank-ort01 IS NOT INITIAL</FPCLINE>
+      <FPCLINE>    CLEAR: lwa_lines.</FPCLINE>
+      <FPCLINE/>
+      <FPCLINE>    IF im_housebank-iban IS NOT INITIAL.</FPCLINE>
+      <FPCLINE>*&amp;--Call Function module to fetch the label for WEEE Number.</FPCLINE>
+      <FPCLINE>      CALL FUNCTION &apos;READ_TEXT&apos;</FPCLINE>
+      <FPCLINE>        EXPORTING</FPCLINE>
+      <FPCLINE>          id                      = lc_id</FPCLINE>
+      <FPCLINE>          language                = gv_langu &quot;im_d3_sender_country</FPCLINE>
+      <FPCLINE>          name                    = lc_name_iban</FPCLINE>
+      <FPCLINE>          object                  = lc_object</FPCLINE>
+      <FPCLINE>        TABLES</FPCLINE>
+      <FPCLINE>          lines                   = li_iban_lines</FPCLINE>
+      <FPCLINE>        EXCEPTIONS</FPCLINE>
+      <FPCLINE>          id                      = 1</FPCLINE>
+      <FPCLINE>          language                = 2</FPCLINE>
+      <FPCLINE>          name                    = 3</FPCLINE>
+      <FPCLINE>          not_found               = 4</FPCLINE>
+      <FPCLINE>          object                  = 5</FPCLINE>
+      <FPCLINE>          reference_check         = 6</FPCLINE>
+      <FPCLINE>          wrong_access_to_archive = 7</FPCLINE>
+      <FPCLINE>          OTHERS                  = 8.</FPCLINE>
+      <FPCLINE>      IF sy-subrc = 0.</FPCLINE>
+      <FPCLINE>        READ TABLE li_iban_lines INTO lwa_lines INDEX 1.</FPCLINE>
+      <FPCLINE>        IF sy-subrc IS INITIAL.</FPCLINE>
+      <FPCLINE>          lv_line_iban  = lwa_lines-tdline.</FPCLINE>
+      <FPCLINE/>
+      <FPCLINE>        ENDIF. &quot; IF sy-subrc IS INITIAL</FPCLINE>
+      <FPCLINE/>
+      <FPCLINE>        CONCATENATE gv_footer_lines3 lv_line_iban im_housebank-iban INTO gv_footer_lines3 SEPARATED BY space.</FPCLINE>
+      <FPCLINE/>
+      <FPCLINE>      ENDIF. &quot; IF sy-subrc = 0</FPCLINE>
+      <FPCLINE/>
+      <FPCLINE>    ELSE. &quot; ELSE -&gt; IF im_housebank-iban IS NOT INITIAL</FPCLINE>
+      <FPCLINE>*&amp;--If it does not contains any value then leading comma should be deleted.</FPCLINE>
+      <FPCLINE>      SHIFT gv_footer_lines3 RIGHT DELETING TRAILING lc_comma.</FPCLINE>
+      <FPCLINE/>
+      <FPCLINE>    ENDIF. &quot; IF im_housebank-iban IS NOT INITIAL</FPCLINE>
+      <FPCLINE/>
+      <FPCLINE>    CLEAR: lwa_lines.</FPCLINE>
+      <FPCLINE/>
+      <FPCLINE>    IF im_housebank-swift IS NOT INITIAL.</FPCLINE>
+      <FPCLINE>*&amp;--Call Function module to fetch the label for WEEE Number.</FPCLINE>
+      <FPCLINE>      CALL FUNCTION &apos;READ_TEXT&apos;</FPCLINE>
+      <FPCLINE>        EXPORTING</FPCLINE>
+      <FPCLINE>          id                      = lc_id</FPCLINE>
+      <FPCLINE>          language                = gv_langu &quot;im_d3_sender_country</FPCLINE>
+      <FPCLINE>          name                    = lc_name_swift</FPCLINE>
+      <FPCLINE>          object                  = lc_object</FPCLINE>
+      <FPCLINE>        TABLES</FPCLINE>
+      <FPCLINE>          lines                   = li_swift_lines</FPCLINE>
+      <FPCLINE>        EXCEPTIONS</FPCLINE>
+      <FPCLINE>          id                      = 1</FPCLINE>
+      <FPCLINE>          language                = 2</FPCLINE>
+      <FPCLINE>          name                    = 3</FPCLINE>
+      <FPCLINE>          not_found               = 4</FPCLINE>
+      <FPCLINE>          object                  = 5</FPCLINE>
+      <FPCLINE>          reference_check         = 6</FPCLINE>
+      <FPCLINE>          wrong_access_to_archive = 7</FPCLINE>
+      <FPCLINE>          OTHERS                  = 8.</FPCLINE>
+      <FPCLINE>      IF sy-subrc = 0.</FPCLINE>
+      <FPCLINE>        READ TABLE li_swift_lines INTO lwa_lines INDEX 1.</FPCLINE>
+      <FPCLINE>        IF sy-subrc IS INITIAL.</FPCLINE>
+      <FPCLINE>          lv_line_swift  = lwa_lines-tdline.</FPCLINE>
+      <FPCLINE/>
+      <FPCLINE>        ENDIF. &quot; IF sy-subrc IS INITIAL</FPCLINE>
+      <FPCLINE/>
+      <FPCLINE>        CONCATENATE lv_line_swift im_housebank-swift INTO gv_footer_lines4 SEPARATED BY space.</FPCLINE>
+      <FPCLINE>        CONCATENATE gv_footer_lines4 lc_dot INTO gv_footer_lines4.</FPCLINE>
+      <FPCLINE>      ELSE. &quot; ELSE -&gt; IF sy-subrc = 0</FPCLINE>
+      <FPCLINE>*&amp;--Call Function module to fetch the label for WEEE Number.</FPCLINE>
+      <FPCLINE>        CALL FUNCTION &apos;READ_TEXT&apos;</FPCLINE>
+      <FPCLINE>          EXPORTING</FPCLINE>
+      <FPCLINE>            id                      = lc_id</FPCLINE>
+      <FPCLINE>            language                = lc_en &quot;im_d3_sender_country</FPCLINE>
+      <FPCLINE>            name                    = lc_name_swift</FPCLINE>
+      <FPCLINE>            object                  = lc_object</FPCLINE>
+      <FPCLINE>          TABLES</FPCLINE>
+      <FPCLINE>            lines                   = li_swift_lines</FPCLINE>
+      <FPCLINE>          EXCEPTIONS</FPCLINE>
+      <FPCLINE>            id                      = 1</FPCLINE>
+      <FPCLINE>            language                = 2</FPCLINE>
+      <FPCLINE>            name                    = 3</FPCLINE>
+      <FPCLINE>            not_found               = 4</FPCLINE>
+      <FPCLINE>            object                  = 5</FPCLINE>
+      <FPCLINE>            reference_check         = 6</FPCLINE>
+      <FPCLINE>            wrong_access_to_archive = 7</FPCLINE>
+      <FPCLINE>            OTHERS                  = 8.</FPCLINE>
+      <FPCLINE>        IF sy-subrc = 0.</FPCLINE>
+      <FPCLINE>          READ TABLE li_swift_lines INTO lwa_lines INDEX 1.</FPCLINE>
+      <FPCLINE>          IF sy-subrc IS INITIAL.</FPCLINE>
+      <FPCLINE>            lv_line_swift  = lwa_lines-tdline.</FPCLINE>
+      <FPCLINE/>
+      <FPCLINE>          ENDIF. &quot; IF sy-subrc IS INITIAL</FPCLINE>
+      <FPCLINE/>
+      <FPCLINE>          CONCATENATE lv_line_swift im_housebank-swift INTO gv_footer_lines4 SEPARATED BY space.</FPCLINE>
+      <FPCLINE>          CONCATENATE gv_footer_lines4 lc_dot INTO gv_footer_lines4.</FPCLINE>
+      <FPCLINE>        ENDIF. &quot; IF sy-subrc = 0</FPCLINE>
+      <FPCLINE/>
+      <FPCLINE>      ENDIF. &quot; IF sy-subrc = 0</FPCLINE>
+      <FPCLINE>    ENDIF. &quot; IF im_housebank-swift IS NOT INITIAL</FPCLINE>
+      <FPCLINE/>
+      <FPCLINE>    CLEAR: lwa_lines.</FPCLINE>
+      <FPCLINE/>
+      <FPCLINE>    IF im_housebank-bankn IS NOT INITIAL.</FPCLINE>
+      <FPCLINE>*&amp;--Call Function module to fetch the label for WEEE Number.</FPCLINE>
+      <FPCLINE>      CALL FUNCTION &apos;READ_TEXT&apos;</FPCLINE>
+      <FPCLINE>        EXPORTING</FPCLINE>
+      <FPCLINE>          id                      = lc_id</FPCLINE>
+      <FPCLINE>          language                = gv_langu &quot;im_d3_sender_country</FPCLINE>
+      <FPCLINE>          name                    = lc_name_bankn</FPCLINE>
+      <FPCLINE>          object                  = lc_object</FPCLINE>
+      <FPCLINE>        TABLES</FPCLINE>
+      <FPCLINE>          lines                   = li_bankn_lines</FPCLINE>
+      <FPCLINE>        EXCEPTIONS</FPCLINE>
+      <FPCLINE>          id                      = 1</FPCLINE>
+      <FPCLINE>          language                = 2</FPCLINE>
+      <FPCLINE>          name                    = 3</FPCLINE>
+      <FPCLINE>          not_found               = 4</FPCLINE>
+      <FPCLINE>          object                  = 5</FPCLINE>
+      <FPCLINE>          reference_check         = 6</FPCLINE>
+      <FPCLINE>          wrong_access_to_archive = 7</FPCLINE>
+      <FPCLINE>          OTHERS                  = 8.</FPCLINE>
+      <FPCLINE>      IF sy-subrc = 0.</FPCLINE>
+      <FPCLINE>        READ TABLE li_bankn_lines INTO lwa_lines INDEX 1.</FPCLINE>
+      <FPCLINE>        IF sy-subrc IS INITIAL.</FPCLINE>
+      <FPCLINE>          lv_line_bankn  = lwa_lines-tdline.</FPCLINE>
+      <FPCLINE/>
+      <FPCLINE>        ENDIF. &quot; IF sy-subrc IS INITIAL</FPCLINE>
+      <FPCLINE/>
+      <FPCLINE>        CONCATENATE gv_footer_lines4 lv_line_bankn im_housebank-bankn INTO gv_footer_lines4 SEPARATED BY space.</FPCLINE>
+      <FPCLINE>        CONCATENATE gv_footer_lines4 lc_dot INTO gv_footer_lines4.</FPCLINE>
+      <FPCLINE>      ELSE. &quot; ELSE -&gt; IF sy-subrc = 0</FPCLINE>
+      <FPCLINE>*&amp;--If does not find any language, it should fall back for english.</FPCLINE>
+      <FPCLINE>*&amp;--Call Function module to fetch the label for sort code for UK banks</FPCLINE>
+      <FPCLINE>        CALL FUNCTION &apos;READ_TEXT&apos;</FPCLINE>
+      <FPCLINE>          EXPORTING</FPCLINE>
+      <FPCLINE>            id                      = lc_id</FPCLINE>
+      <FPCLINE>            language                = lc_en</FPCLINE>
+      <FPCLINE>            name                    = lc_name_bankn</FPCLINE>
+      <FPCLINE>            object                  = lc_object</FPCLINE>
+      <FPCLINE>          TABLES</FPCLINE>
+      <FPCLINE>            lines                   = li_bankn_lines</FPCLINE>
+      <FPCLINE>          EXCEPTIONS</FPCLINE>
+      <FPCLINE>            id                      = 1</FPCLINE>
+      <FPCLINE>            language                = 2</FPCLINE>
+      <FPCLINE>            name                    = 3</FPCLINE>
+      <FPCLINE>            not_found               = 4</FPCLINE>
+      <FPCLINE>            object                  = 5</FPCLINE>
+      <FPCLINE>            reference_check         = 6</FPCLINE>
+      <FPCLINE>            wrong_access_to_archive = 7</FPCLINE>
+      <FPCLINE>            OTHERS                  = 8.</FPCLINE>
+      <FPCLINE>        IF sy-subrc = 0.</FPCLINE>
+      <FPCLINE>          READ TABLE li_bankn_lines INTO lwa_lines INDEX 1.</FPCLINE>
+      <FPCLINE>          IF sy-subrc IS INITIAL.</FPCLINE>
+      <FPCLINE>            lv_line_bankn  = lwa_lines-tdline.</FPCLINE>
+      <FPCLINE/>
+      <FPCLINE>          ENDIF. &quot; IF sy-subrc IS INITIAL</FPCLINE>
+      <FPCLINE/>
+      <FPCLINE>          CONCATENATE gv_footer_lines4 lv_line_bankn im_housebank-bankn INTO gv_footer_lines4 SEPARATED BY space.</FPCLINE>
+      <FPCLINE>          CONCATENATE gv_footer_lines4 lc_dot INTO gv_footer_lines4.</FPCLINE>
+      <FPCLINE>        ENDIF. &quot; IF sy-subrc = 0</FPCLINE>
+      <FPCLINE>      ENDIF. &quot; IF sy-subrc = 0</FPCLINE>
+      <FPCLINE/>
+      <FPCLINE>    ENDIF. &quot; IF im_housebank-bankn IS NOT INITIAL</FPCLINE>
+      <FPCLINE/>
+      <FPCLINE>    CLEAR: lwa_lines.</FPCLINE>
+      <FPCLINE/>
+      <FPCLINE>*&amp;--Fetching the sort code based on bank country code.</FPCLINE>
+      <FPCLINE/>
+      <FPCLINE>    IF im_housebank-bank_key IS NOT INITIAL.</FPCLINE>
+      <FPCLINE/>
+      <FPCLINE>*&amp;--The label for sort code will be dependent on the bank country.</FPCLINE>
+      <FPCLINE>*&amp;--For US banks, it will be &apos;Routing number&apos;</FPCLINE>
+      <FPCLINE>      IF im_housebank-bank_country = lc_us.</FPCLINE>
+      <FPCLINE>        CLEAR lv_sortcode.</FPCLINE>
+      <FPCLINE>        CONCATENATE lc_sortcode_bank im_housebank-bank_country INTO lv_sortcode.</FPCLINE>
+      <FPCLINE>*&amp;--Call Function module to fetch the label for sort code for US banks</FPCLINE>
+      <FPCLINE>        CALL FUNCTION &apos;READ_TEXT&apos;</FPCLINE>
+      <FPCLINE>          EXPORTING</FPCLINE>
+      <FPCLINE>            id                      = lc_id</FPCLINE>
+      <FPCLINE>            language                = gv_langu</FPCLINE>
+      <FPCLINE>            name                    = lv_sortcode</FPCLINE>
+      <FPCLINE>            object                  = lc_object</FPCLINE>
+      <FPCLINE>          TABLES</FPCLINE>
+      <FPCLINE>            lines                   = li_sortcode_lines</FPCLINE>
+      <FPCLINE>          EXCEPTIONS</FPCLINE>
+      <FPCLINE>            id                      = 1</FPCLINE>
+      <FPCLINE>            language                = 2</FPCLINE>
+      <FPCLINE>            name                    = 3</FPCLINE>
+      <FPCLINE>            not_found               = 4</FPCLINE>
+      <FPCLINE>            object                  = 5</FPCLINE>
+      <FPCLINE>            reference_check         = 6</FPCLINE>
+      <FPCLINE>            wrong_access_to_archive = 7</FPCLINE>
+      <FPCLINE>            OTHERS                  = 8.</FPCLINE>
+      <FPCLINE>        IF sy-subrc = 0.</FPCLINE>
+      <FPCLINE>          READ TABLE li_sortcode_lines INTO lwa_lines INDEX 1.</FPCLINE>
+      <FPCLINE>          IF sy-subrc IS INITIAL.</FPCLINE>
+      <FPCLINE>            lv_line_sortcode_us  = lwa_lines-tdline.</FPCLINE>
+      <FPCLINE/>
+      <FPCLINE>          ENDIF. &quot; IF sy-subrc IS INITIAL</FPCLINE>
+      <FPCLINE>          CONCATENATE gv_footer_lines4 lv_line_sortcode_us im_housebank-bank_key INTO gv_footer_lines4 SEPARATED BY space.</FPCLINE>
+      <FPCLINE>        ENDIF. &quot; IF sy-subrc = 0</FPCLINE>
+      <FPCLINE>        CLEAR lwa_lines.</FPCLINE>
+      <FPCLINE/>
+      <FPCLINE>      ELSE. &quot; ELSE -&gt; IF im_housebank-bank_country = lc_us</FPCLINE>
+      <FPCLINE>*&amp;--*&amp;--For UK banks, it will be &apos;Sort code&apos;</FPCLINE>
+      <FPCLINE>        IF im_housebank-bank_country = lc_uk.</FPCLINE>
+      <FPCLINE>          CLEAR lv_sortcode.</FPCLINE>
+      <FPCLINE>          CONCATENATE lc_sortcode_bank im_housebank-bank_country INTO lv_sortcode.</FPCLINE>
+      <FPCLINE>*&amp;--Call Function module to fetch the label for sort code for UK banks</FPCLINE>
+      <FPCLINE>          CALL FUNCTION &apos;READ_TEXT&apos;</FPCLINE>
+      <FPCLINE>            EXPORTING</FPCLINE>
+      <FPCLINE>              id                      = lc_id</FPCLINE>
+      <FPCLINE>              language                = gv_langu</FPCLINE>
+      <FPCLINE>              name                    = lv_sortcode</FPCLINE>
+      <FPCLINE>              object                  = lc_object</FPCLINE>
+      <FPCLINE>            TABLES</FPCLINE>
+      <FPCLINE>              lines                   = li_sortcode_lines</FPCLINE>
+      <FPCLINE>            EXCEPTIONS</FPCLINE>
+      <FPCLINE>              id                      = 1</FPCLINE>
+      <FPCLINE>              language                = 2</FPCLINE>
+      <FPCLINE>              name                    = 3</FPCLINE>
+      <FPCLINE>              not_found               = 4</FPCLINE>
+      <FPCLINE>              object                  = 5</FPCLINE>
+      <FPCLINE>              reference_check         = 6</FPCLINE>
+      <FPCLINE>              wrong_access_to_archive = 7</FPCLINE>
+      <FPCLINE>              OTHERS                  = 8.</FPCLINE>
+      <FPCLINE>          IF sy-subrc = 0.</FPCLINE>
+      <FPCLINE>            READ TABLE li_sortcode_lines INTO lwa_lines INDEX 1.</FPCLINE>
+      <FPCLINE>            IF sy-subrc IS INITIAL.</FPCLINE>
+      <FPCLINE>              lv_line_sortcode_uk  = lwa_lines-tdline.</FPCLINE>
+      <FPCLINE/>
+      <FPCLINE>            ENDIF. &quot; IF sy-subrc IS INITIAL</FPCLINE>
+      <FPCLINE>            CONCATENATE gv_footer_lines4 lv_line_sortcode_uk im_housebank-bank_key INTO gv_footer_lines4 SEPARATED BY space.</FPCLINE>
+      <FPCLINE>          ELSE. &quot; ELSE -&gt; IF sy-subrc = 0</FPCLINE>
+      <FPCLINE>*&amp;--Call Function module to fetch the label for sort code for UK banks</FPCLINE>
+      <FPCLINE>            CALL FUNCTION &apos;READ_TEXT&apos;</FPCLINE>
+      <FPCLINE>              EXPORTING</FPCLINE>
+      <FPCLINE>                id                      = lc_id</FPCLINE>
+      <FPCLINE>                language                = lc_en</FPCLINE>
+      <FPCLINE>                name                    = lv_sortcode</FPCLINE>
+      <FPCLINE>                object                  = lc_object</FPCLINE>
+      <FPCLINE>              TABLES</FPCLINE>
+      <FPCLINE>                lines                   = li_sortcode_lines</FPCLINE>
+      <FPCLINE>              EXCEPTIONS</FPCLINE>
+      <FPCLINE>                id                      = 1</FPCLINE>
+      <FPCLINE>                language                = 2</FPCLINE>
+      <FPCLINE>                name                    = 3</FPCLINE>
+      <FPCLINE>                not_found               = 4</FPCLINE>
+      <FPCLINE>                object                  = 5</FPCLINE>
+      <FPCLINE>                reference_check         = 6</FPCLINE>
+      <FPCLINE>                wrong_access_to_archive = 7</FPCLINE>
+      <FPCLINE>                OTHERS                  = 8.</FPCLINE>
+      <FPCLINE>            IF sy-subrc = 0.</FPCLINE>
+      <FPCLINE>              READ TABLE li_sortcode_lines INTO lwa_lines INDEX 1.</FPCLINE>
+      <FPCLINE>              IF sy-subrc IS INITIAL.</FPCLINE>
+      <FPCLINE>                lv_line_sortcode_uk  = lwa_lines-tdline.</FPCLINE>
+      <FPCLINE/>
+      <FPCLINE>              ENDIF. &quot; IF sy-subrc IS INITIAL</FPCLINE>
+      <FPCLINE>              CONCATENATE gv_footer_lines4 lv_line_sortcode_uk im_housebank-bank_key INTO gv_footer_lines4 SEPARATED BY space.</FPCLINE>
+      <FPCLINE>            ENDIF. &quot; IF sy-subrc = 0</FPCLINE>
+      <FPCLINE>          ENDIF. &quot; IF sy-subrc = 0</FPCLINE>
+      <FPCLINE/>
+      <FPCLINE>        ELSE. &quot; ELSE -&gt; IF im_housebank-bank_country = lc_uk</FPCLINE>
+      <FPCLINE>          CLEAR: lv_sortcode_nordic.</FPCLINE>
+      <FPCLINE>          CONCATENATE lc_name_sortcode im_housebank-bank_country lc_suffix INTO lv_sortcode_nordic.</FPCLINE>
+      <FPCLINE>*&amp;--Call Function module to fetch the label for sort code.</FPCLINE>
+      <FPCLINE>          CALL FUNCTION &apos;READ_TEXT&apos;</FPCLINE>
+      <FPCLINE>            EXPORTING</FPCLINE>
+      <FPCLINE>              id                      = lc_id</FPCLINE>
+      <FPCLINE>              language                = gv_langu</FPCLINE>
+      <FPCLINE>              name                    = lv_sortcode_nordic</FPCLINE>
+      <FPCLINE>              object                  = lc_object</FPCLINE>
+      <FPCLINE>            TABLES</FPCLINE>
+      <FPCLINE>              lines                   = li_bankkey_lines</FPCLINE>
+      <FPCLINE>            EXCEPTIONS</FPCLINE>
+      <FPCLINE>              id                      = 1</FPCLINE>
+      <FPCLINE>              language                = 2</FPCLINE>
+      <FPCLINE>              name                    = 3</FPCLINE>
+      <FPCLINE>              not_found               = 4</FPCLINE>
+      <FPCLINE>              object                  = 5</FPCLINE>
+      <FPCLINE>              reference_check         = 6</FPCLINE>
+      <FPCLINE>              wrong_access_to_archive = 7</FPCLINE>
+      <FPCLINE>              OTHERS                  = 8.</FPCLINE>
+      <FPCLINE>          IF sy-subrc = 0.</FPCLINE>
+      <FPCLINE>            READ TABLE li_bankkey_lines INTO lwa_lines INDEX 1.</FPCLINE>
+      <FPCLINE>            IF sy-subrc IS INITIAL.</FPCLINE>
+      <FPCLINE>              lv_line_bankkey  = lwa_lines-tdline.</FPCLINE>
+      <FPCLINE/>
+      <FPCLINE>            ENDIF. &quot; IF sy-subrc IS INITIAL</FPCLINE>
+      <FPCLINE/>
+      <FPCLINE>            CONCATENATE gv_footer_lines4 lv_line_bankkey im_housebank-bank_key INTO gv_footer_lines4 SEPARATED BY space.</FPCLINE>
+      <FPCLINE>          ELSE. &quot; ELSE -&gt; IF sy-subrc = 0</FPCLINE>
+      <FPCLINE>*&amp;--Call Function module to fetch the label for sort code.</FPCLINE>
+      <FPCLINE>            CALL FUNCTION &apos;READ_TEXT&apos;</FPCLINE>
+      <FPCLINE>              EXPORTING</FPCLINE>
+      <FPCLINE>                id                      = lc_id</FPCLINE>
+      <FPCLINE>                language                = lc_en</FPCLINE>
+      <FPCLINE>                name                    = lv_sortcode_nordic</FPCLINE>
+      <FPCLINE>                object                  = lc_object</FPCLINE>
+      <FPCLINE>              TABLES</FPCLINE>
+      <FPCLINE>                lines                   = li_bankkey_lines</FPCLINE>
+      <FPCLINE>              EXCEPTIONS</FPCLINE>
+      <FPCLINE>                id                      = 1</FPCLINE>
+      <FPCLINE>                language                = 2</FPCLINE>
+      <FPCLINE>                name                    = 3</FPCLINE>
+      <FPCLINE>                not_found               = 4</FPCLINE>
+      <FPCLINE>                object                  = 5</FPCLINE>
+      <FPCLINE>                reference_check         = 6</FPCLINE>
+      <FPCLINE>                wrong_access_to_archive = 7</FPCLINE>
+      <FPCLINE>                OTHERS                  = 8.</FPCLINE>
+      <FPCLINE>            IF sy-subrc = 0.</FPCLINE>
+      <FPCLINE>              READ TABLE li_bankkey_lines INTO lwa_lines INDEX 1.</FPCLINE>
+      <FPCLINE>              IF sy-subrc IS INITIAL.</FPCLINE>
+      <FPCLINE>                lv_line_bankkey  = lwa_lines-tdline.</FPCLINE>
+      <FPCLINE/>
+      <FPCLINE>              ENDIF. &quot; IF sy-subrc IS INITIAL</FPCLINE>
+      <FPCLINE/>
+      <FPCLINE>              CONCATENATE gv_footer_lines4 lv_line_bankkey im_housebank-bank_key INTO gv_footer_lines4 SEPARATED BY space.</FPCLINE>
+      <FPCLINE>*&amp;--If it does not find any ccountry language , then it should fall back for English language.</FPCLINE>
+      <FPCLINE>            ELSE. &quot; ELSE -&gt; IF sy-subrc = 0</FPCLINE>
+      <FPCLINE>*&amp;--Call Function module to fetch the label for sort code.</FPCLINE>
+      <FPCLINE>              CALL FUNCTION &apos;READ_TEXT&apos;</FPCLINE>
+      <FPCLINE>                EXPORTING</FPCLINE>
+      <FPCLINE>                  id                      = lc_id</FPCLINE>
+      <FPCLINE>                  language                = lc_en</FPCLINE>
+      <FPCLINE>                  name                    = lc_clearing</FPCLINE>
+      <FPCLINE>                  object                  = lc_object</FPCLINE>
+      <FPCLINE>                TABLES</FPCLINE>
+      <FPCLINE>                  lines                   = li_bankkey_lines</FPCLINE>
+      <FPCLINE>                EXCEPTIONS</FPCLINE>
+      <FPCLINE>                  id                      = 1</FPCLINE>
+      <FPCLINE>                  language                = 2</FPCLINE>
+      <FPCLINE>                  name                    = 3</FPCLINE>
+      <FPCLINE>                  not_found               = 4</FPCLINE>
+      <FPCLINE>                  object                  = 5</FPCLINE>
+      <FPCLINE>                  reference_check         = 6</FPCLINE>
+      <FPCLINE>                  wrong_access_to_archive = 7</FPCLINE>
+      <FPCLINE>                  OTHERS                  = 8.</FPCLINE>
+      <FPCLINE>              IF sy-subrc = 0.</FPCLINE>
+      <FPCLINE>                READ TABLE li_bankkey_lines INTO lwa_lines INDEX 1.</FPCLINE>
+      <FPCLINE>                IF sy-subrc IS INITIAL.</FPCLINE>
+      <FPCLINE>                  lv_line_bankkey  = lwa_lines-tdline.</FPCLINE>
+      <FPCLINE/>
+      <FPCLINE>                ENDIF. &quot; IF sy-subrc IS INITIAL</FPCLINE>
+      <FPCLINE/>
+      <FPCLINE>                CONCATENATE gv_footer_lines4 lv_line_bankkey im_housebank-bank_key INTO gv_footer_lines4 SEPARATED BY space.</FPCLINE>
+      <FPCLINE>              ENDIF. &quot; IF sy-subrc = 0</FPCLINE>
+      <FPCLINE/>
+      <FPCLINE>            ENDIF. &quot; IF sy-subrc = 0</FPCLINE>
+      <FPCLINE/>
+      <FPCLINE>          ENDIF. &quot; IF sy-subrc = 0</FPCLINE>
+      <FPCLINE/>
+      <FPCLINE>        ENDIF. &quot; IF im_housebank-bank_country = lc_uk</FPCLINE>
+      <FPCLINE>        CLEAR lwa_lines.</FPCLINE>
+      <FPCLINE/>
+      <FPCLINE>      ENDIF. &quot; IF im_housebank-bank_country = lc_us</FPCLINE>
+      <FPCLINE>    ENDIF. &quot; IF im_housebank-bank_key IS NOT INITIAL</FPCLINE>
+      <FPCLINE/>
+      <FPCLINE>*&amp;--If line 2 does not contains any value, then the lower lines should move up.</FPCLINE>
+      <FPCLINE>    IF gv_footer_lines2 IS INITIAL.</FPCLINE>
+      <FPCLINE>      gv_footer_lines2 = gv_footer_lines3.</FPCLINE>
+      <FPCLINE>      gv_footer_lines3 = gv_footer_lines4.</FPCLINE>
+      <FPCLINE>      gv_footer_lines4 = space.</FPCLINE>
+      <FPCLINE/>
+      <FPCLINE>    ENDIF. &quot; IF gv_footer_lines2 IS INITIAL</FPCLINE>
+      <FPCLINE>  ENDIF. &quot; IF im_d3_flag IS NOT INITIAL</FPCLINE>
+      <FPCLINE/>
+      <FPCLINE>*---&gt; Begin of Insert for D3_OTC_FDD_0013 Defect# 5342 by SMUKHER4 on 19-Mar-2018</FPCLINE>
+      <FPCLINE>*&amp;--For Italy , we have to append &apos;gg&apos; to the aging bracket headings (means days)</FPCLINE>
+      <FPCLINE/>
+      <FPCLINE>*&amp;--For current</FPCLINE>
+      <FPCLINE>  CALL FUNCTION &apos;READ_TEXT&apos;</FPCLINE>
+      <FPCLINE>    EXPORTING</FPCLINE>
+      <FPCLINE>      id                      = lc_id</FPCLINE>
+      <FPCLINE>      language                = lc_en</FPCLINE>
+      <FPCLINE>      name                    = lc_current</FPCLINE>
+      <FPCLINE>      object                  = lc_object</FPCLINE>
+      <FPCLINE>    TABLES</FPCLINE>
+      <FPCLINE>      lines                   = li_current</FPCLINE>
+      <FPCLINE>    EXCEPTIONS</FPCLINE>
+      <FPCLINE>      id                      = 1</FPCLINE>
+      <FPCLINE>      language                = 2</FPCLINE>
+      <FPCLINE>      name                    = 3</FPCLINE>
+      <FPCLINE>      not_found               = 4</FPCLINE>
+      <FPCLINE>      object                  = 5</FPCLINE>
+      <FPCLINE>      reference_check         = 6</FPCLINE>
+      <FPCLINE>      wrong_access_to_archive = 7</FPCLINE>
+      <FPCLINE>      OTHERS                  = 8.</FPCLINE>
+      <FPCLINE>  IF sy-subrc IS INITIAL.</FPCLINE>
+      <FPCLINE>    CLEAR: lwa_lines.</FPCLINE>
+      <FPCLINE>    READ TABLE li_current INTO lwa_lines INDEX 1.</FPCLINE>
+      <FPCLINE>    IF sy-subrc IS INITIAL.</FPCLINE>
+      <FPCLINE>      gv_current  = lwa_lines-tdline.</FPCLINE>
+      <FPCLINE/>
+      <FPCLINE>    ENDIF. &quot; IF sy-subrc IS INITIAL</FPCLINE>
+      <FPCLINE>  ENDIF. &quot; IF sy-subrc IS INITIAL</FPCLINE>
+      <FPCLINE/>
+      <FPCLINE>*&amp;--For 31-60 days.</FPCLINE>
+      <FPCLINE>  CALL FUNCTION &apos;READ_TEXT&apos;</FPCLINE>
+      <FPCLINE>    EXPORTING</FPCLINE>
+      <FPCLINE>      id                      = lc_id</FPCLINE>
+      <FPCLINE>      language                = lc_en</FPCLINE>
+      <FPCLINE>      name                    = lc_31_60</FPCLINE>
+      <FPCLINE>      object                  = lc_object</FPCLINE>
+      <FPCLINE>    TABLES</FPCLINE>
+      <FPCLINE>      lines                   = li_31_60</FPCLINE>
+      <FPCLINE>    EXCEPTIONS</FPCLINE>
+      <FPCLINE>      id                      = 1</FPCLINE>
+      <FPCLINE>      language                = 2</FPCLINE>
+      <FPCLINE>      name                    = 3</FPCLINE>
+      <FPCLINE>      not_found               = 4</FPCLINE>
+      <FPCLINE>      object                  = 5</FPCLINE>
+      <FPCLINE>      reference_check         = 6</FPCLINE>
+      <FPCLINE>      wrong_access_to_archive = 7</FPCLINE>
+      <FPCLINE>      OTHERS                  = 8.</FPCLINE>
+      <FPCLINE>  IF sy-subrc IS INITIAL.</FPCLINE>
+      <FPCLINE>    CLEAR: lwa_lines.</FPCLINE>
+      <FPCLINE>    READ TABLE li_31_60 INTO lwa_lines INDEX 1.</FPCLINE>
+      <FPCLINE>    IF sy-subrc IS INITIAL.</FPCLINE>
+      <FPCLINE>      gv_31_60  = lwa_lines-tdline.</FPCLINE>
+      <FPCLINE/>
+      <FPCLINE>    ENDIF. &quot; IF sy-subrc IS INITIAL</FPCLINE>
+      <FPCLINE>  ENDIF. &quot; IF sy-subrc IS INITIAL</FPCLINE>
+      <FPCLINE/>
+      <FPCLINE>*&amp;--For 61-90 days.</FPCLINE>
+      <FPCLINE>  CALL FUNCTION &apos;READ_TEXT&apos;</FPCLINE>
+      <FPCLINE>    EXPORTING</FPCLINE>
+      <FPCLINE>      id                      = lc_id</FPCLINE>
+      <FPCLINE>      language                = lc_en</FPCLINE>
+      <FPCLINE>      name                    = lc_61_90</FPCLINE>
+      <FPCLINE>      object                  = lc_object</FPCLINE>
+      <FPCLINE>    TABLES</FPCLINE>
+      <FPCLINE>      lines                   = li_61_90</FPCLINE>
+      <FPCLINE>    EXCEPTIONS</FPCLINE>
+      <FPCLINE>      id                      = 1</FPCLINE>
+      <FPCLINE>      language                = 2</FPCLINE>
+      <FPCLINE>      name                    = 3</FPCLINE>
+      <FPCLINE>      not_found               = 4</FPCLINE>
+      <FPCLINE>      object                  = 5</FPCLINE>
+      <FPCLINE>      reference_check         = 6</FPCLINE>
+      <FPCLINE>      wrong_access_to_archive = 7</FPCLINE>
+      <FPCLINE>      OTHERS                  = 8.</FPCLINE>
+      <FPCLINE>  IF sy-subrc IS INITIAL.</FPCLINE>
+      <FPCLINE>    CLEAR: lwa_lines.</FPCLINE>
+      <FPCLINE>    READ TABLE li_61_90 INTO lwa_lines INDEX 1.</FPCLINE>
+      <FPCLINE>    IF sy-subrc IS INITIAL.</FPCLINE>
+      <FPCLINE>      gv_61_90  = lwa_lines-tdline.</FPCLINE>
+      <FPCLINE/>
+      <FPCLINE>    ENDIF. &quot; IF sy-subrc IS INITIAL</FPCLINE>
+      <FPCLINE>  ENDIF. &quot; IF sy-subrc IS INITIAL</FPCLINE>
+      <FPCLINE/>
+      <FPCLINE>*&amp;--For Italy , we need to append &apos;gg&apos; to the aging bracket headings as per the requirement.</FPCLINE>
+      <FPCLINE>  IF gv_langu = lc_i.</FPCLINE>
+      <FPCLINE/>
+      <FPCLINE>    CONCATENATE gv_current lc_gg INTO gv_current SEPARATED BY space.</FPCLINE>
+      <FPCLINE>    CONDENSE gv_current.</FPCLINE>
+      <FPCLINE>    CONCATENATE gv_31_60 lc_gg INTO gv_31_60 SEPARATED BY space.</FPCLINE>
+      <FPCLINE>    CONDENSE gv_31_60.</FPCLINE>
+      <FPCLINE>    CONCATENATE gv_61_90 lc_gg INTO gv_61_90 SEPARATED BY space.</FPCLINE>
+      <FPCLINE>    CONDENSE gv_61_90.</FPCLINE>
+      <FPCLINE>  ENDIF. &quot; IF gv_langu = lc_i</FPCLINE>
+      <FPCLINE/>
+      <FPCLINE>*&lt;--- End of Insert for D3_OTC_FDD_0013 Defect# 5342 by SMUKHER4 on 19-Mar-2018</FPCLINE>
+      <FPCLINE/>
+      <FPCLINE>ENDFORM. &quot;f_footer_details</FPCLINE>
+      <FPCLINE>*&lt;--- End of Insert for D3R3 D3_OTC_FDD_0013 by SMUKHER4 on 25-Jan-2018</FPCLINE>
+     </FORMS>
+    </CL_FP_CODING>
+   </cls:CL_FP_CODING>
+  </asx:heap>
+ </asx:abap>
+</abapGit>

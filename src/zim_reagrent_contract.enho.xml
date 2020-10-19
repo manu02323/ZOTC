@@ -1,0 +1,295 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<abapGit version="v1.0.0" serializer="LCL_OBJECT_ENHO" serializer_version="v1.0.0">
+ <asx:abap xmlns:asx="http://www.sap.com/abapxml" version="1.0">
+  <asx:values>
+   <TOOL>HOOK_IMPL</TOOL>
+   <SHORTTEXT>Apply Reagent Rental Contract Reference to Sales Order</SHORTTEXT>
+   <ORIGINAL_OBJECT>
+    <PGMID>R3TR</PGMID>
+    <ORG_OBJ_TYPE>CLAS</ORG_OBJ_TYPE>
+    <ORG_OBJ_NAME>CL_SLS_SALESORDERERPCRTRC2</ORG_OBJ_NAME>
+    <ORG_MAIN_TYPE>CLAS</ORG_MAIN_TYPE>
+    <ORG_MAIN_NAME>CL_SLS_SALESORDERERPCRTRC2</ORG_MAIN_NAME>
+    <PROGRAMNAME>CL_SLS_SALESORDERERPCRTRC2====CP</PROGRAMNAME>
+   </ORIGINAL_OBJECT>
+   <ENHANCEMENTS>
+    <ENH_HOOK_IMPL>
+     <PROGRAMNAME>CL_SLS_SALESORDERERPCRTRC2====CP</PROGRAMNAME>
+     <ENHMODE>D</ENHMODE>
+     <FULL_NAME>\TY:CL_SLS_SALESORDERERPCRTRC2\ME:INPUT_MAP_ITEM_LINE\SE:END\EI</FULL_NAME>
+     <SOURCE>
+      <item/>
+      <item>***********************************************************************</item>
+      <item>***********************************************************************</item>
+      <item>***********************************************************************</item>
+      <item>*Method     : CL_SLS_SALESORDERERPCRTRC2~INPUT_MAP_ITEM_LINE          *</item>
+      <item>*Title      : ES Sales Order Creation                                 *</item>
+      <item>*Developer  : Raghu Achar/Jahan Mazumder                              *</item>
+      <item>*Object type: Interface                                               *</item>
+      <item>*SAP Release: SAP ECC 6.0                                             *</item>
+      <item>*---------------------------------------------------------------------*</item>
+      <item>*WRICEF ID: D2_OTC_IDD_0090                                           *</item>
+      <item>*---------------------------------------------------------------------*</item>
+      <item>*Description: Create Sales Order in SAP using ESR Service Interface   *</item>
+      <item>*Create Request Confirmation_In V2                                    *</item>
+      <item>*---------------------------------------------------------------------*</item>
+      <item>*MODIFICATION HISTORY:                                                *</item>
+      <item>*=====================================================================*</item>
+      <item>*Date           User        Transport       Description               *</item>
+      <item>*=========== ============== ============== ===========================*</item>
+      <item>*06-Jun-2014  JAHAN         E2DK900476      INITIAL DEVELOPMENT       *</item>
+      <item>*---------------------------------------------------------------------*</item>
+      <item/>
+      <item>*--Local Data declarations</item>
+      <item>CONSTANTS :</item>
+      <item>lc_auart            TYPE z_criteria           VALUE &apos;AUART&apos;,            &quot; Enh. Criteria</item>
+      <item>lc_idd_0090         TYPE z_enhancement        VALUE &apos;D2_OTC_IDD_0090&apos;. &quot; Enhancement No.</item>
+      <item/>
+      <item>DATA: lwa_status       TYPE zdev_enh_status,                   &quot;Work area for enhnacment status</item>
+      <item>li_item          TYPE tdt_item_comv,                     &quot;Item local internal Table</item>
+      <item>li_contract_data TYPE zotc_t_reagent_rental,             &quot;Table  for Re-agent rental contracts data</item>
+      <item>li_status        TYPE STANDARD TABLE OF zdev_enh_status, &quot;Enhancement Status table</item>
+      <item>li_matnr         TYPE table_matnr,                       &quot;Material Number</item>
+      <item>lv_index         TYPE sytabix,                           &quot; Index of Internal Tables</item>
+      <item>lv_vkorg         TYPE vkorg,                             &quot; Sales Organization</item>
+      <item>lv_vtweg         TYPE vtweg,                             &quot; Distribution Channel</item>
+      <item>lv_spart         TYPE spart,                             &quot; Division</item>
+      <item>lv_kunag         TYPE kunag,                             &quot; Sold-to party</item>
+      <item>lv_kunwe         TYPE kunwe,                             &quot; Ship-to party</item>
+      <item>lv_guid          TYPE GUID_32,</item>
+      <item>lw_items_refdoc  LIKE ls_items_refdoc,</item>
+      <item>i_SLSORD_REFDOCS LIKE GT_SLSORD_REFDOCS,</item>
+      <item>lv_contract_count type i.</item>
+      <item/>
+      <item>FIELD-SYMBOLS:</item>
+      <item>&lt;lfs_item&gt;            TYPE tds_item_comv,                &quot;Lean Order - Item Data (Values)</item>
+      <item>&lt;lfs_party_comv&gt;      LIKE LINE OF ct_party_comv,</item>
+      <item>&lt;lfs_contract&gt;        TYPE zotc_reagent_rental_s.        &quot;Output strcuture for Re-agent rental contracts determination</item>
+      <item/>
+      <item>*--Call to EMI Function Module To Get List Of EMI Statuses</item>
+      <item>CALL FUNCTION &apos;ZDEV_ENHANCEMENT_STATUS_CHECK&apos;</item>
+      <item>EXPORTING</item>
+      <item>iv_enhancement_no = lc_idd_0090</item>
+      <item>TABLES</item>
+      <item>tt_enh_status     = li_status.</item>
+      <item/>
+      <item>CLEAR : lwa_status.</item>
+      <item/>
+      <item>*--Check for Global user exit activation check</item>
+      <item>READ TABLE li_status WITH KEY criteria = lc_auart</item>
+      <item>sel_low  = IS_ITEM_IN-Z01OTC_ZADD_DATA-ORDER_PROCESSING_TYPE_CODE</item>
+      <item>active   = abap_true</item>
+      <item>TRANSPORTING NO FIELDS.</item>
+      <item>IF sy-subrc EQ  0.</item>
+      <item/>
+      <item>*--Local field: populate Sales org data from input work area.</item>
+      <item/>
+      <item>lv_vkorg = IS_ITEM_IN-Z01OTC_ZADD_DATA-SALES_ORG.</item>
+      <item>lv_vtweg = IS_ITEM_IN-Z01OTC_ZADD_DATA-DIST_CHNL.</item>
+      <item>lv_spart = IS_ITEM_IN-SALES_AND_SERVICE_BUSINESS_AR-DIVISION_CODE-CONTENT.</item>
+      <item>lv_kunag = IS_ITEM_IN-Z01OTC_ZADD_DATA-SOLD_TO.</item>
+      <item>lv_kunwe = IS_ITEM_IN-Z01OTC_ZADD_DATA-SHIP_TO.</item>
+      <item/>
+      <item>*--Moving item data into a local table.</item>
+      <item>CLEAR: li_item[],</item>
+      <item>li_contract_data[],</item>
+      <item>li_matnr[].</item>
+      <item/>
+      <item>li_item[] = ct_item_comv[].</item>
+      <item/>
+      <item>IF li_item[] IS NOT INITIAL.</item>
+      <item>SORT li_item BY mabnr.</item>
+      <item>DELETE ADJACENT DUPLICATES FROM li_item COMPARING mabnr.</item>
+      <item>*--Moving only unique material no. to a Internal table.</item>
+      <item>LOOP AT li_item ASSIGNING &lt;lfs_item&gt;.</item>
+      <item>IF &lt;lfs_item&gt;-mabnr = IS_ITEM_IN-PRODUCT-INTERNAL_ID-CONTENT.</item>
+      <item>APPEND &lt;lfs_item&gt;-mabnr TO li_matnr.</item>
+      <item>ENDIF..</item>
+      <item>ENDLOOP. &quot; LOOP AT li_item ASSIGNING &lt;lfs_item&gt;</item>
+      <item/>
+      <item>*--Calling FM for Re-agent rental contracts determination</item>
+      <item>CALL FUNCTION &apos;ZOTC_DETERMINE_REAGENT_RENTAL&apos;</item>
+      <item>EXPORTING</item>
+      <item>im_vkorg         = lv_vkorg          &quot;Sales org</item>
+      <item>im_vtweg         = lv_vtweg          &quot;Distribution channel</item>
+      <item>im_spart         = lv_spart          &quot;Divison</item>
+      <item>im_sold_to       = lv_kunag          &quot;Sold to party</item>
+      <item>im_ship_to       = lv_kunwe          &quot;Ship to party</item>
+      <item>im_matnr_tab     = li_matnr          &quot;Material Table</item>
+      <item>IMPORTING</item>
+      <item>ex_contract_data = li_contract_data  &quot;Table for contract data</item>
+      <item>ex_contract_count = lv_contract_count.</item>
+      <item/>
+      <item>*--Validating each and every item :</item>
+      <item>*---a. If unique contract exists no action required</item>
+      <item>*---b. If multiple contract exists then do not apply contracts.</item>
+      <item>SORT li_contract_data BY matnr.</item>
+      <item>LOOP AT ct_item_comv ASSIGNING &lt;lfs_item&gt;.</item>
+      <item/>
+      <item>IF &lt;lfs_item&gt;-mabnr = IS_ITEM_IN-PRODUCT-INTERNAL_ID-CONTENT.</item>
+      <item/>
+      <item>READ TABLE li_contract_data ASSIGNING &lt;lfs_contract&gt; WITH KEY matnr = &lt;lfs_item&gt;-mabnr</item>
+      <item>BINARY SEARCH .</item>
+      <item>*--If count of no. of contracts per material Greater than 1 then populate warning message</item>
+      <item>CHECK sy-subrc EQ 0 .</item>
+      <item>IF lv_contract_count EQ 1.</item>
+      <item>*-- Assign Contract Number</item>
+      <item>IF &lt;lfs_contract&gt;-contract_num IS NOT INITIAL.</item>
+      <item>ls_items_refdoc-vbeln_ref = &lt;lfs_contract&gt;-contract_num.</item>
+      <item>ls_items_refdoc-quantity  = &lt;lfs_item&gt;-KWMENG.</item>
+      <item>ls_items_refdoc-posnr     = &lt;lfs_contract&gt;-contract_item.</item>
+      <item>APPEND ls_items_refdoc to GT_SLSORD_REFDOCS.</item>
+      <item>ENDIF.</item>
+      <item>*--Delete the same material from CT_ITEM_COMV to avoid duplicate item creation.</item>
+      <item>lv_guid = &lt;lfs_item&gt;-handle.</item>
+      <item>DELETE ct_item_comv WHERE handle EQ lv_guid.</item>
+      <item>DELETE ct_item_comx WHERE handle EQ lv_guid.</item>
+      <item>ENDIF.</item>
+      <item>ENDIF.</item>
+      <item>ENDLOOP. &quot; LOOP AT ct_item_comv ASSIGNING &lt;lfs_item&gt;</item>
+      <item>ENDIF. &quot; IF li_item[] IS NOT INITIAL</item>
+      <item>ENDIF.</item>
+     </SOURCE>
+    </ENH_HOOK_IMPL>
+   </ENHANCEMENTS>
+   <SPACES>
+    <item>
+     <FULL_NAME>\TY:CL_SLS_SALESORDERERPCRTRC2\ME:INPUT_MAP_ITEM_LINE\SE:END\EI</FULL_NAME>
+     <SPACES>
+      <item>0</item>
+      <item>0</item>
+      <item>0</item>
+      <item>0</item>
+      <item>0</item>
+      <item>0</item>
+      <item>0</item>
+      <item>0</item>
+      <item>0</item>
+      <item>0</item>
+      <item>0</item>
+      <item>0</item>
+      <item>0</item>
+      <item>0</item>
+      <item>0</item>
+      <item>0</item>
+      <item>0</item>
+      <item>0</item>
+      <item>0</item>
+      <item>0</item>
+      <item>0</item>
+      <item>0</item>
+      <item>0</item>
+      <item>2</item>
+      <item>5</item>
+      <item>5</item>
+      <item>0</item>
+      <item>2</item>
+      <item>8</item>
+      <item>8</item>
+      <item>8</item>
+      <item>8</item>
+      <item>8</item>
+      <item>8</item>
+      <item>8</item>
+      <item>8</item>
+      <item>8</item>
+      <item>8</item>
+      <item>8</item>
+      <item>8</item>
+      <item>8</item>
+      <item>8</item>
+      <item>0</item>
+      <item>2</item>
+      <item>8</item>
+      <item>8</item>
+      <item>8</item>
+      <item>0</item>
+      <item>0</item>
+      <item>2</item>
+      <item>4</item>
+      <item>6</item>
+      <item>4</item>
+      <item>6</item>
+      <item>0</item>
+      <item>2</item>
+      <item>0</item>
+      <item>0</item>
+      <item>2</item>
+      <item>32</item>
+      <item>32</item>
+      <item>23</item>
+      <item>2</item>
+      <item>0</item>
+      <item>0</item>
+      <item>0</item>
+      <item>4</item>
+      <item>4</item>
+      <item>4</item>
+      <item>4</item>
+      <item>4</item>
+      <item>0</item>
+      <item>0</item>
+      <item>6</item>
+      <item>13</item>
+      <item>13</item>
+      <item>0</item>
+      <item>6</item>
+      <item>0</item>
+      <item>6</item>
+      <item>8</item>
+      <item>8</item>
+      <item>0</item>
+      <item>8</item>
+      <item>10</item>
+      <item>12</item>
+      <item>10</item>
+      <item>8</item>
+      <item>0</item>
+      <item>0</item>
+      <item>8</item>
+      <item>10</item>
+      <item>12</item>
+      <item>12</item>
+      <item>12</item>
+      <item>12</item>
+      <item>12</item>
+      <item>12</item>
+      <item>10</item>
+      <item>12</item>
+      <item>12</item>
+      <item>0</item>
+      <item>0</item>
+      <item>0</item>
+      <item>0</item>
+      <item>8</item>
+      <item>8</item>
+      <item>0</item>
+      <item>9</item>
+      <item>0</item>
+      <item>10</item>
+      <item>63</item>
+      <item>0</item>
+      <item>10</item>
+      <item>10</item>
+      <item>0</item>
+      <item>12</item>
+      <item>14</item>
+      <item>14</item>
+      <item>14</item>
+      <item>14</item>
+      <item>12</item>
+      <item>0</item>
+      <item>10</item>
+      <item>10</item>
+      <item>10</item>
+      <item>10</item>
+      <item>9</item>
+      <item>8</item>
+      <item>6</item>
+      <item>4</item>
+     </SPACES>
+    </item>
+   </SPACES>
+  </asx:values>
+ </asx:abap>
+</abapGit>

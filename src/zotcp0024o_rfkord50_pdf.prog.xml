@@ -1,0 +1,3296 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<abapGit version="v1.0.0" serializer="LCL_OBJECT_PROG" serializer_version="v1.0.0">
+ <asx:abap xmlns:asx="http://www.sap.com/abapxml" version="1.0">
+  <asx:values>
+   <PROGDIR>
+    <NAME>ZOTCP0024O_RFKORD50_PDF</NAME>
+    <DBAPL>S</DBAPL>
+    <DBNA>D$</DBNA>
+    <SUBC>1</SUBC>
+    <APPL>F</APPL>
+    <RSTAT>T</RSTAT>
+    <RLOAD>D</RLOAD>
+    <FIXPT>X</FIXPT>
+    <LDBNAME>D$S</LDBNAME>
+    <UCCHECK>X</UCCHECK>
+   </PROGDIR>
+   <TPOOL>
+    <item>
+     <ID>I</ID>
+     <KEY>110</KEY>
+     <ENTRY>Output to Printer</ENTRY>
+     <LENGTH>19</LENGTH>
+    </item>
+    <item>
+     <ID>I</ID>
+     <KEY>111</KEY>
+     <ENTRY>Print Imm.</ENTRY>
+     <LENGTH>11</LENGTH>
+    </item>
+    <item>
+     <ID>I</ID>
+     <KEY>200</KEY>
+     <ENTRY>Log</ENTRY>
+     <LENGTH>9</LENGTH>
+    </item>
+    <item>
+     <ID>I</ID>
+     <KEY>201</KEY>
+     <ENTRY>Overview of Generated Output Requests</ENTRY>
+     <LENGTH>39</LENGTH>
+    </item>
+    <item>
+     <ID>I</ID>
+     <KEY>202</KEY>
+     <ENTRY>CC Correspondence                             Spool No./Fax ID Title/Fax No.                       .. Output Pages..</ENTRY>
+     <LENGTH>117</LENGTH>
+    </item>
+    <item>
+     <ID>I</ID>
+     <KEY>203</KEY>
+     <ENTRY>Name is Missing in Logon Language</ENTRY>
+     <LENGTH>42</LENGTH>
+    </item>
+    <item>
+     <ID>I</ID>
+     <KEY>204</KEY>
+     <ENTRY>Document extract                        ;;</ENTRY>
+     <LENGTH>42</LENGTH>
+    </item>
+    <item>
+     <ID>I</ID>
+     <KEY>205</KEY>
+     <ENTRY>Error List</ENTRY>
+     <LENGTH>11</LENGTH>
+    </item>
+    <item>
+     <ID>R</ID>
+     <ENTRY>Print Program: Document Extract</ENTRY>
+     <LENGTH>31</LENGTH>
+    </item>
+    <item>
+     <ID>S</ID>
+     <KEY>BSCHL</KEY>
+     <ENTRY>Posting Key</ENTRY>
+     <LENGTH>25</LENGTH>
+    </item>
+    <item>
+     <ID>S</ID>
+     <KEY>KODAT01</KEY>
+     <ENTRY>Date 1 in document extract</ENTRY>
+     <LENGTH>34</LENGTH>
+    </item>
+    <item>
+     <ID>S</ID>
+     <KEY>KODAT02</KEY>
+     <ENTRY>Date 2 in document extract</ENTRY>
+     <LENGTH>34</LENGTH>
+    </item>
+    <item>
+     <ID>S</ID>
+     <KEY>PRDEST</KEY>
+     <ENTRY>Log to Printer</ENTRY>
+     <LENGTH>29</LENGTH>
+    </item>
+    <item>
+     <ID>S</ID>
+     <KEY>RBELNR</KEY>
+     <ENTRY>Document Number</ENTRY>
+     <LENGTH>23</LENGTH>
+    </item>
+    <item>
+     <ID>S</ID>
+     <KEY>RBUKRS</KEY>
+     <ENTRY>Company Code</ENTRY>
+     <LENGTH>21</LENGTH>
+    </item>
+    <item>
+     <ID>S</ID>
+     <KEY>RDATUM</KEY>
+     <ENTRY>Date of Request</ENTRY>
+     <LENGTH>29</LENGTH>
+    </item>
+    <item>
+     <ID>S</ID>
+     <KEY>RERLDT</KEY>
+     <ENTRY>Repeat Printout From</ENTRY>
+     <LENGTH>35</LENGTH>
+    </item>
+    <item>
+     <ID>S</ID>
+     <KEY>REVENT</KEY>
+     <ENTRY>Correspondence</ENTRY>
+     <LENGTH>22</LENGTH>
+    </item>
+    <item>
+     <ID>S</ID>
+     <KEY>RFORID</KEY>
+     <ENTRY>Form Set</ENTRY>
+     <LENGTH>16</LENGTH>
+    </item>
+    <item>
+     <ID>S</ID>
+     <KEY>RGJAHR</KEY>
+     <ENTRY>Fiscal Year</ENTRY>
+     <LENGTH>21</LENGTH>
+    </item>
+    <item>
+     <ID>S</ID>
+     <KEY>RINDKO</KEY>
+     <ENTRY>Individual Correspondence</ENTRY>
+     <LENGTH>34</LENGTH>
+    </item>
+    <item>
+     <ID>S</ID>
+     <KEY>RSPRAS</KEY>
+     <ENTRY>Language Key</ENTRY>
+     <LENGTH>25</LENGTH>
+    </item>
+    <item>
+     <ID>S</ID>
+     <KEY>RTKOID</KEY>
+     <ENTRY>Sender Details</ENTRY>
+     <LENGTH>23</LENGTH>
+    </item>
+    <item>
+     <ID>S</ID>
+     <KEY>RUSNAM</KEY>
+     <ENTRY>User</ENTRY>
+     <LENGTH>16</LENGTH>
+    </item>
+    <item>
+     <ID>S</ID>
+     <KEY>RUZEIT</KEY>
+     <ENTRY>Time of Request</ENTRY>
+     <LENGTH>31</LENGTH>
+    </item>
+    <item>
+     <ID>S</ID>
+     <KEY>RXBKOR</KEY>
+     <ENTRY>Data from Trigger Table</ENTRY>
+     <LENGTH>32</LENGTH>
+    </item>
+    <item>
+     <ID>S</ID>
+     <KEY>SORTVK</KEY>
+     <ENTRY>Sort Correspondence</ENTRY>
+     <LENGTH>32</LENGTH>
+    </item>
+    <item>
+     <ID>S</ID>
+     <KEY>SORTVP</KEY>
+     <ENTRY>Sort Line Items</ENTRY>
+     <LENGTH>31</LENGTH>
+    </item>
+    <item>
+     <ID>S</ID>
+     <KEY>STATBL</KEY>
+     <ENTRY>Noted Items</ENTRY>
+     <LENGTH>19</LENGTH>
+    </item>
+    <item>
+     <ID>S</ID>
+     <KEY>TDDEST</KEY>
+     <ENTRY>Output to Printer</ENTRY>
+     <LENGTH>27</LENGTH>
+    </item>
+    <item>
+     <ID>S</ID>
+     <KEY>UMSKZ</KEY>
+     <ENTRY>Special G/L Indicator</ENTRY>
+     <LENGTH>35</LENGTH>
+    </item>
+    <item>
+     <ID>S</ID>
+     <KEY>XUMSST</KEY>
+     <ENTRY>Display taxes on sales/purch.</ENTRY>
+     <LENGTH>37</LENGTH>
+    </item>
+    <item>
+     <ID>S</ID>
+     <KEY>XUMSTN</KEY>
+     <ENTRY>Net display of tax on sls/pur.</ENTRY>
+     <LENGTH>38</LENGTH>
+    </item>
+   </TPOOL>
+   <I18N_TPOOL>
+    <item>
+     <LANGUAGE>1</LANGUAGE>
+     <TEXTPOOL>
+      <item>
+       <ID>I</ID>
+       <KEY>110</KEY>
+       <ENTRY>输出到打印机</ENTRY>
+       <LENGTH>19</LENGTH>
+      </item>
+      <item>
+       <ID>I</ID>
+       <KEY>111</KEY>
+       <ENTRY>立即打印</ENTRY>
+       <LENGTH>11</LENGTH>
+      </item>
+      <item>
+       <ID>I</ID>
+       <KEY>200</KEY>
+       <ENTRY>日志</ENTRY>
+       <LENGTH>9</LENGTH>
+      </item>
+      <item>
+       <ID>I</ID>
+       <KEY>201</KEY>
+       <ENTRY>已生成的输出请求概览</ENTRY>
+       <LENGTH>39</LENGTH>
+      </item>
+      <item>
+       <ID>I</ID>
+       <KEY>202</KEY>
+       <ENTRY>公司代码 信函                                 假脱机号 标题                     输出页</ENTRY>
+       <LENGTH>117</LENGTH>
+      </item>
+      <item>
+       <ID>I</ID>
+       <KEY>203</KEY>
+       <ENTRY>缺少登录语言名称</ENTRY>
+       <LENGTH>42</LENGTH>
+      </item>
+      <item>
+       <ID>I</ID>
+       <KEY>204</KEY>
+       <ENTRY>凭证摘要                                ;;</ENTRY>
+       <LENGTH>42</LENGTH>
+      </item>
+      <item>
+       <ID>I</ID>
+       <KEY>205</KEY>
+       <ENTRY>错误清单</ENTRY>
+       <LENGTH>11</LENGTH>
+      </item>
+      <item>
+       <ID>R</ID>
+       <ENTRY>打印程序: 凭证摘要</ENTRY>
+       <LENGTH>70</LENGTH>
+      </item>
+      <item>
+       <ID>S</ID>
+       <KEY>BSCHL</KEY>
+       <ENTRY>记帐代码</ENTRY>
+       <LENGTH>25</LENGTH>
+      </item>
+      <item>
+       <ID>S</ID>
+       <KEY>KODAT01</KEY>
+       <ENTRY>凭证摘要中的日期1</ENTRY>
+       <LENGTH>34</LENGTH>
+      </item>
+      <item>
+       <ID>S</ID>
+       <KEY>KODAT02</KEY>
+       <ENTRY>凭证摘要中的日期2</ENTRY>
+       <LENGTH>34</LENGTH>
+      </item>
+      <item>
+       <ID>S</ID>
+       <KEY>PRDEST</KEY>
+       <ENTRY>打印机的日志</ENTRY>
+       <LENGTH>29</LENGTH>
+      </item>
+      <item>
+       <ID>S</ID>
+       <KEY>RBELNR</KEY>
+       <ENTRY>凭证编号</ENTRY>
+       <LENGTH>23</LENGTH>
+      </item>
+      <item>
+       <ID>S</ID>
+       <KEY>RBUKRS</KEY>
+       <ENTRY>公司代码</ENTRY>
+       <LENGTH>21</LENGTH>
+      </item>
+      <item>
+       <ID>S</ID>
+       <KEY>RDATUM</KEY>
+       <ENTRY>请求日期</ENTRY>
+       <LENGTH>29</LENGTH>
+      </item>
+      <item>
+       <ID>S</ID>
+       <KEY>RERLDT</KEY>
+       <ENTRY>重复打印从</ENTRY>
+       <LENGTH>35</LENGTH>
+      </item>
+      <item>
+       <ID>S</ID>
+       <KEY>REVENT</KEY>
+       <ENTRY>信函</ENTRY>
+       <LENGTH>22</LENGTH>
+      </item>
+      <item>
+       <ID>S</ID>
+       <KEY>RFORID</KEY>
+       <ENTRY>开始集</ENTRY>
+       <LENGTH>16</LENGTH>
+      </item>
+      <item>
+       <ID>S</ID>
+       <KEY>RGJAHR</KEY>
+       <ENTRY>会计年度</ENTRY>
+       <LENGTH>21</LENGTH>
+      </item>
+      <item>
+       <ID>S</ID>
+       <KEY>RINDKO</KEY>
+       <ENTRY>单个信函</ENTRY>
+       <LENGTH>34</LENGTH>
+      </item>
+      <item>
+       <ID>S</ID>
+       <KEY>RSPRAS</KEY>
+       <ENTRY>语言代码</ENTRY>
+       <LENGTH>25</LENGTH>
+      </item>
+      <item>
+       <ID>S</ID>
+       <KEY>RTKOID</KEY>
+       <ENTRY>发送者明细</ENTRY>
+       <LENGTH>23</LENGTH>
+      </item>
+      <item>
+       <ID>S</ID>
+       <KEY>RUSNAM</KEY>
+       <ENTRY>用户</ENTRY>
+       <LENGTH>16</LENGTH>
+      </item>
+      <item>
+       <ID>S</ID>
+       <KEY>RUZEIT</KEY>
+       <ENTRY>请求时间</ENTRY>
+       <LENGTH>31</LENGTH>
+      </item>
+      <item>
+       <ID>S</ID>
+       <KEY>RXBKOR</KEY>
+       <ENTRY>触发表中的数据</ENTRY>
+       <LENGTH>32</LENGTH>
+      </item>
+      <item>
+       <ID>S</ID>
+       <KEY>SORTVK</KEY>
+       <ENTRY>排序信函</ENTRY>
+       <LENGTH>32</LENGTH>
+      </item>
+      <item>
+       <ID>S</ID>
+       <KEY>SORTVP</KEY>
+       <ENTRY>排序行项目</ENTRY>
+       <LENGTH>31</LENGTH>
+      </item>
+      <item>
+       <ID>S</ID>
+       <KEY>STATBL</KEY>
+       <ENTRY>备注项</ENTRY>
+       <LENGTH>19</LENGTH>
+      </item>
+      <item>
+       <ID>S</ID>
+       <KEY>TDDEST</KEY>
+       <ENTRY>输出到打印机</ENTRY>
+       <LENGTH>27</LENGTH>
+      </item>
+      <item>
+       <ID>S</ID>
+       <KEY>UMSKZ</KEY>
+       <ENTRY>特别总帐标识</ENTRY>
+       <LENGTH>35</LENGTH>
+      </item>
+      <item>
+       <ID>S</ID>
+       <KEY>XUMSST</KEY>
+       <ENTRY>显示销售/购置税</ENTRY>
+       <LENGTH>37</LENGTH>
+      </item>
+      <item>
+       <ID>S</ID>
+       <KEY>XUMSTN</KEY>
+       <ENTRY>销售/采购税金的净值显示</ENTRY>
+       <LENGTH>38</LENGTH>
+      </item>
+     </TEXTPOOL>
+    </item>
+    <item>
+     <LANGUAGE>D</LANGUAGE>
+     <TEXTPOOL>
+      <item>
+       <ID>I</ID>
+       <KEY>110</KEY>
+       <ENTRY>Ausgabe auf Drucker</ENTRY>
+       <LENGTH>19</LENGTH>
+      </item>
+      <item>
+       <ID>I</ID>
+       <KEY>111</KEY>
+       <ENTRY>Sofortdruck</ENTRY>
+       <LENGTH>11</LENGTH>
+      </item>
+      <item>
+       <ID>I</ID>
+       <KEY>200</KEY>
+       <ENTRY>Protokoll</ENTRY>
+       <LENGTH>9</LENGTH>
+      </item>
+      <item>
+       <ID>I</ID>
+       <KEY>201</KEY>
+       <ENTRY>Übersicht der erzeugten Ausgabeaufträge</ENTRY>
+       <LENGTH>39</LENGTH>
+      </item>
+      <item>
+       <ID>I</ID>
+       <KEY>202</KEY>
+       <ENTRY>Bukr Korrespondenz........................... Spoolnr/FaxID Titel/Faxnr.............................. Ausgabeseiten..</ENTRY>
+       <LENGTH>117</LENGTH>
+      </item>
+      <item>
+       <ID>I</ID>
+       <KEY>203</KEY>
+       <ENTRY>Bezeichnung in Anmeldesprache fehlt     ;;</ENTRY>
+       <LENGTH>42</LENGTH>
+      </item>
+      <item>
+       <ID>I</ID>
+       <KEY>204</KEY>
+       <ENTRY>Belegauszug                             ;;</ENTRY>
+       <LENGTH>42</LENGTH>
+      </item>
+      <item>
+       <ID>I</ID>
+       <KEY>205</KEY>
+       <ENTRY>Fehlerliste</ENTRY>
+       <LENGTH>11</LENGTH>
+      </item>
+      <item>
+       <ID>I</ID>
+       <KEY>E01</KEY>
+       <ENTRY>For Customer</ENTRY>
+       <LENGTH>12</LENGTH>
+      </item>
+      <item>
+       <ID>I</ID>
+       <KEY>E02</KEY>
+       <ENTRY>E-mail Address is not Maintained</ENTRY>
+       <LENGTH>32</LENGTH>
+      </item>
+      <item>
+       <ID>I</ID>
+       <KEY>E03</KEY>
+       <ENTRY>Fax Number is not Maintained</ENTRY>
+       <LENGTH>28</LENGTH>
+      </item>
+      <item>
+       <ID>I</ID>
+       <KEY>E04</KEY>
+       <ENTRY>E-mail sending failed</ENTRY>
+       <LENGTH>21</LENGTH>
+      </item>
+      <item>
+       <ID>I</ID>
+       <KEY>E05</KEY>
+       <ENTRY>Fax sending failed</ENTRY>
+       <LENGTH>18</LENGTH>
+      </item>
+      <item>
+       <ID>I</ID>
+       <KEY>E06</KEY>
+       <ENTRY>Document sending failed</ENTRY>
+       <LENGTH>23</LENGTH>
+      </item>
+      <item>
+       <ID>I</ID>
+       <KEY>SUB</KEY>
+       <ENTRY>Debit/Credit Form</ENTRY>
+       <LENGTH>17</LENGTH>
+      </item>
+      <item>
+       <ID>R</ID>
+       <ENTRY>Druckprogramm: Belegauszug</ENTRY>
+       <LENGTH>26</LENGTH>
+      </item>
+      <item>
+       <ID>S</ID>
+       <KEY>BSCHL</KEY>
+       <ENTRY>Buchungsschlüssel</ENTRY>
+       <LENGTH>25</LENGTH>
+      </item>
+      <item>
+       <ID>S</ID>
+       <KEY>KODAT01</KEY>
+       <ENTRY>Datum 1 in Belegauszug</ENTRY>
+       <LENGTH>30</LENGTH>
+      </item>
+      <item>
+       <ID>S</ID>
+       <KEY>KODAT02</KEY>
+       <ENTRY>Datum 2 in Belegauszug</ENTRY>
+       <LENGTH>30</LENGTH>
+      </item>
+      <item>
+       <ID>S</ID>
+       <KEY>PRDEST</KEY>
+       <ENTRY>Protokoll auf Drucker</ENTRY>
+       <LENGTH>29</LENGTH>
+      </item>
+      <item>
+       <ID>S</ID>
+       <KEY>RBELNR</KEY>
+       <ENTRY>Belegnummer</ENTRY>
+       <LENGTH>19</LENGTH>
+      </item>
+      <item>
+       <ID>S</ID>
+       <KEY>RBUKRS</KEY>
+       <ENTRY>Buchungskreis</ENTRY>
+       <LENGTH>21</LENGTH>
+      </item>
+      <item>
+       <ID>S</ID>
+       <KEY>RDATUM</KEY>
+       <ENTRY>Datum der Anforderung</ENTRY>
+       <LENGTH>29</LENGTH>
+      </item>
+      <item>
+       <ID>S</ID>
+       <KEY>RERLDT</KEY>
+       <ENTRY>Wiederholung des Drucks vom</ENTRY>
+       <LENGTH>35</LENGTH>
+      </item>
+      <item>
+       <ID>S</ID>
+       <KEY>REVENT</KEY>
+       <ENTRY>Korrespondenz</ENTRY>
+       <LENGTH>21</LENGTH>
+      </item>
+      <item>
+       <ID>S</ID>
+       <KEY>RFORID</KEY>
+       <ENTRY>Formsatz</ENTRY>
+       <LENGTH>16</LENGTH>
+      </item>
+      <item>
+       <ID>S</ID>
+       <KEY>RGJAHR</KEY>
+       <ENTRY>Geschäftsjahr</ENTRY>
+       <LENGTH>21</LENGTH>
+      </item>
+      <item>
+       <ID>S</ID>
+       <KEY>RIMMD</KEY>
+      </item>
+      <item>
+       <ID>S</ID>
+       <KEY>RINDKO</KEY>
+       <ENTRY>individuelle Korrespondenz</ENTRY>
+       <LENGTH>34</LENGTH>
+      </item>
+      <item>
+       <ID>S</ID>
+       <KEY>RSPRAS</KEY>
+       <ENTRY>Sprachenschlüssel</ENTRY>
+       <LENGTH>25</LENGTH>
+      </item>
+      <item>
+       <ID>S</ID>
+       <KEY>RTKOID</KEY>
+       <ENTRY>Absenderangaben</ENTRY>
+       <LENGTH>23</LENGTH>
+      </item>
+      <item>
+       <ID>S</ID>
+       <KEY>RUSNAM</KEY>
+       <ENTRY>Benutzer</ENTRY>
+       <LENGTH>16</LENGTH>
+      </item>
+      <item>
+       <ID>S</ID>
+       <KEY>RUZEIT</KEY>
+       <ENTRY>Uhrzeit der Anforderung</ENTRY>
+       <LENGTH>31</LENGTH>
+      </item>
+      <item>
+       <ID>S</ID>
+       <KEY>RXBKOR</KEY>
+       <ENTRY>Daten aus Triggertabelle</ENTRY>
+       <LENGTH>32</LENGTH>
+      </item>
+      <item>
+       <ID>S</ID>
+       <KEY>SORTVK</KEY>
+       <ENTRY>Sortierung Korrespondenz</ENTRY>
+       <LENGTH>32</LENGTH>
+      </item>
+      <item>
+       <ID>S</ID>
+       <KEY>SORTVP</KEY>
+       <ENTRY>Sortierung Einzelposten</ENTRY>
+       <LENGTH>31</LENGTH>
+      </item>
+      <item>
+       <ID>S</ID>
+       <KEY>STATBL</KEY>
+       <ENTRY>Merkposten</ENTRY>
+       <LENGTH>18</LENGTH>
+      </item>
+      <item>
+       <ID>S</ID>
+       <KEY>TDDEST</KEY>
+       <ENTRY>Ausgabe auf Drucker</ENTRY>
+       <LENGTH>27</LENGTH>
+      </item>
+      <item>
+       <ID>S</ID>
+       <KEY>UMSKZ</KEY>
+       <ENTRY>Sonderhauptbuch-Kennzeichen</ENTRY>
+       <LENGTH>35</LENGTH>
+      </item>
+      <item>
+       <ID>S</ID>
+       <KEY>XUMSST</KEY>
+       <ENTRY>Umsatzsteuer ausweisen</ENTRY>
+       <LENGTH>30</LENGTH>
+      </item>
+      <item>
+       <ID>S</ID>
+       <KEY>XUMSTN</KEY>
+       <ENTRY>Umsatzsteuer Nettoausweis</ENTRY>
+       <LENGTH>33</LENGTH>
+      </item>
+     </TEXTPOOL>
+    </item>
+    <item>
+     <LANGUAGE>F</LANGUAGE>
+     <TEXTPOOL>
+      <item>
+       <ID>I</ID>
+       <KEY>110</KEY>
+       <ENTRY>Sortie sur imprim.</ENTRY>
+       <LENGTH>19</LENGTH>
+      </item>
+      <item>
+       <ID>I</ID>
+       <KEY>111</KEY>
+       <ENTRY>Impr.imméd.</ENTRY>
+       <LENGTH>11</LENGTH>
+      </item>
+      <item>
+       <ID>I</ID>
+       <KEY>200</KEY>
+       <ENTRY>Journal</ENTRY>
+       <LENGTH>9</LENGTH>
+      </item>
+      <item>
+       <ID>I</ID>
+       <KEY>201</KEY>
+       <ENTRY>Synthèse des ordres d&apos;édition créés</ENTRY>
+       <LENGTH>39</LENGTH>
+      </item>
+      <item>
+       <ID>I</ID>
+       <KEY>202</KEY>
+       <ENTRY>Sté  Correspondance.......................... N°spool/IDFax Titre/N°Fax.............................. Pages édition..</ENTRY>
+       <LENGTH>117</LENGTH>
+      </item>
+      <item>
+       <ID>I</ID>
+       <KEY>203</KEY>
+       <ENTRY>Désign. manquante ds langue de connexion</ENTRY>
+       <LENGTH>42</LENGTH>
+      </item>
+      <item>
+       <ID>I</ID>
+       <KEY>204</KEY>
+       <ENTRY>Extrait pce</ENTRY>
+       <LENGTH>42</LENGTH>
+      </item>
+      <item>
+       <ID>I</ID>
+       <KEY>205</KEY>
+       <ENTRY>Liste err.</ENTRY>
+       <LENGTH>11</LENGTH>
+      </item>
+      <item>
+       <ID>R</ID>
+       <ENTRY>Progr. d&apos;impr. : extrait de pièce</ENTRY>
+       <LENGTH>33</LENGTH>
+      </item>
+      <item>
+       <ID>S</ID>
+       <KEY>BSCHL</KEY>
+       <ENTRY>Clé de comptabilisation</ENTRY>
+       <LENGTH>31</LENGTH>
+      </item>
+      <item>
+       <ID>S</ID>
+       <KEY>KODAT01</KEY>
+       <ENTRY>Date 1 ds extrait pièce</ENTRY>
+       <LENGTH>31</LENGTH>
+      </item>
+      <item>
+       <ID>S</ID>
+       <KEY>KODAT02</KEY>
+       <ENTRY>Date 2 ds extrait pièce</ENTRY>
+       <LENGTH>31</LENGTH>
+      </item>
+      <item>
+       <ID>S</ID>
+       <KEY>PRDEST</KEY>
+       <ENTRY>Protocole sur imprimante</ENTRY>
+       <LENGTH>32</LENGTH>
+      </item>
+      <item>
+       <ID>S</ID>
+       <KEY>RBELNR</KEY>
+       <ENTRY>Numéro de pièce</ENTRY>
+       <LENGTH>23</LENGTH>
+      </item>
+      <item>
+       <ID>S</ID>
+       <KEY>RBUKRS</KEY>
+       <ENTRY>Société</ENTRY>
+       <LENGTH>21</LENGTH>
+      </item>
+      <item>
+       <ID>S</ID>
+       <KEY>RDATUM</KEY>
+       <ENTRY>Date de la demande</ENTRY>
+       <LENGTH>29</LENGTH>
+      </item>
+      <item>
+       <ID>S</ID>
+       <KEY>RERLDT</KEY>
+       <ENTRY>Répétition impression du</ENTRY>
+       <LENGTH>35</LENGTH>
+      </item>
+      <item>
+       <ID>S</ID>
+       <KEY>REVENT</KEY>
+       <ENTRY>Correspondance</ENTRY>
+       <LENGTH>22</LENGTH>
+      </item>
+      <item>
+       <ID>S</ID>
+       <KEY>RFORID</KEY>
+       <ENTRY>Enregistrement de formulaire</ENTRY>
+       <LENGTH>36</LENGTH>
+      </item>
+      <item>
+       <ID>S</ID>
+       <KEY>RGJAHR</KEY>
+       <ENTRY>Exercice comptable</ENTRY>
+       <LENGTH>26</LENGTH>
+      </item>
+      <item>
+       <ID>S</ID>
+       <KEY>RINDKO</KEY>
+       <ENTRY>Correspond. individuelle</ENTRY>
+       <LENGTH>34</LENGTH>
+      </item>
+      <item>
+       <ID>S</ID>
+       <KEY>RSPRAS</KEY>
+       <ENTRY>Code langue</ENTRY>
+       <LENGTH>25</LENGTH>
+      </item>
+      <item>
+       <ID>S</ID>
+       <KEY>RTKOID</KEY>
+       <ENTRY>Données expéditeur</ENTRY>
+       <LENGTH>26</LENGTH>
+      </item>
+      <item>
+       <ID>S</ID>
+       <KEY>RUSNAM</KEY>
+       <ENTRY>Utilisateur</ENTRY>
+       <LENGTH>19</LENGTH>
+      </item>
+      <item>
+       <ID>S</ID>
+       <KEY>RUZEIT</KEY>
+       <ENTRY>Heure de la demande</ENTRY>
+       <LENGTH>31</LENGTH>
+      </item>
+      <item>
+       <ID>S</ID>
+       <KEY>RXBKOR</KEY>
+       <ENTRY>Données de la table pilote</ENTRY>
+       <LENGTH>34</LENGTH>
+      </item>
+      <item>
+       <ID>S</ID>
+       <KEY>SORTVK</KEY>
+       <ENTRY>Tri correspondance</ENTRY>
+       <LENGTH>32</LENGTH>
+      </item>
+      <item>
+       <ID>S</ID>
+       <KEY>SORTVP</KEY>
+       <ENTRY>Tri postes individuels</ENTRY>
+       <LENGTH>31</LENGTH>
+      </item>
+      <item>
+       <ID>S</ID>
+       <KEY>STATBL</KEY>
+       <ENTRY>Postes pour mémoire</ENTRY>
+       <LENGTH>27</LENGTH>
+      </item>
+      <item>
+       <ID>S</ID>
+       <KEY>TDDEST</KEY>
+       <ENTRY>Sortie sur imprimante</ENTRY>
+       <LENGTH>29</LENGTH>
+      </item>
+      <item>
+       <ID>S</ID>
+       <KEY>UMSKZ</KEY>
+       <ENTRY>Code compte général spécial</ENTRY>
+       <LENGTH>35</LENGTH>
+      </item>
+      <item>
+       <ID>S</ID>
+       <KEY>XUMSST</KEY>
+       <ENTRY>Afficher TVA sur CA</ENTRY>
+       <LENGTH>30</LENGTH>
+      </item>
+      <item>
+       <ID>S</ID>
+       <KEY>XUMSTN</KEY>
+       <ENTRY>TVA sur CA : affichage net</ENTRY>
+       <LENGTH>34</LENGTH>
+      </item>
+     </TEXTPOOL>
+    </item>
+    <item>
+     <LANGUAGE>G</LANGUAGE>
+     <TEXTPOOL>
+      <item>
+       <ID>I</ID>
+       <KEY>110</KEY>
+       <ENTRY>Εξοδ.στον Εκτυπωτή</ENTRY>
+       <LENGTH>19</LENGTH>
+      </item>
+      <item>
+       <ID>I</ID>
+       <KEY>111</KEY>
+       <ENTRY>Αμ.Εκτύπωση</ENTRY>
+       <LENGTH>11</LENGTH>
+      </item>
+      <item>
+       <ID>I</ID>
+       <KEY>200</KEY>
+       <ENTRY>Ημ/γιο</ENTRY>
+       <LENGTH>9</LENGTH>
+      </item>
+      <item>
+       <ID>I</ID>
+       <KEY>201</KEY>
+       <ENTRY>Επισκόπηση Ενεργοπ.Αιτήσεων Εξόδου</ENTRY>
+       <LENGTH>39</LENGTH>
+      </item>
+      <item>
+       <ID>I</ID>
+       <KEY>202</KEY>
+       <ENTRY>CC Aλληλογραφία                               Αρ.Παροχ./Τίτλος Fax ID/Αρ.Fax                       .. Σελ.Εξόδου..</ENTRY>
+       <LENGTH>117</LENGTH>
+      </item>
+      <item>
+       <ID>I</ID>
+       <KEY>203</KEY>
+       <ENTRY>Λείπει το Ονομα από Γλώσσα Σύνδ.στο Σύστ.</ENTRY>
+       <LENGTH>42</LENGTH>
+      </item>
+      <item>
+       <ID>I</ID>
+       <KEY>204</KEY>
+       <ENTRY>Απόσπασμα εγγραφής</ENTRY>
+       <LENGTH>42</LENGTH>
+      </item>
+      <item>
+       <ID>I</ID>
+       <KEY>205</KEY>
+       <ENTRY>Λίστα Λαθών</ENTRY>
+       <LENGTH>11</LENGTH>
+      </item>
+      <item>
+       <ID>R</ID>
+       <ENTRY>Εκτύπωση Προγράμματος: Εξαγωγή Εγγραφής</ENTRY>
+       <LENGTH>39</LENGTH>
+      </item>
+      <item>
+       <ID>S</ID>
+       <KEY>BSCHL</KEY>
+       <ENTRY>Κλειδί Καταχώρισης</ENTRY>
+       <LENGTH>26</LENGTH>
+      </item>
+      <item>
+       <ID>S</ID>
+       <KEY>KODAT01</KEY>
+       <ENTRY>Ημερομ.1 σε εξαγωγή εγγραφής</ENTRY>
+       <LENGTH>36</LENGTH>
+      </item>
+      <item>
+       <ID>S</ID>
+       <KEY>KODAT02</KEY>
+       <ENTRY>Ημερ.2 σε απόσπασμα εγγραφής</ENTRY>
+       <LENGTH>36</LENGTH>
+      </item>
+      <item>
+       <ID>S</ID>
+       <KEY>PRDEST</KEY>
+       <ENTRY>Ημ/γιο σε Εκτυπωτή</ENTRY>
+       <LENGTH>29</LENGTH>
+      </item>
+      <item>
+       <ID>S</ID>
+       <KEY>RBELNR</KEY>
+       <ENTRY>Αριθμ.Παραστατ.</ENTRY>
+       <LENGTH>23</LENGTH>
+      </item>
+      <item>
+       <ID>S</ID>
+       <KEY>RBUKRS</KEY>
+       <ENTRY>Κωδικός Εταιρίας</ENTRY>
+       <LENGTH>24</LENGTH>
+      </item>
+      <item>
+       <ID>S</ID>
+       <KEY>RDATUM</KEY>
+       <ENTRY>Ημερομηνία Αίτησης</ENTRY>
+       <LENGTH>29</LENGTH>
+      </item>
+      <item>
+       <ID>S</ID>
+       <KEY>RERLDT</KEY>
+       <ENTRY>Επανάληψη Εκτύπωσης Από</ENTRY>
+       <LENGTH>35</LENGTH>
+      </item>
+      <item>
+       <ID>S</ID>
+       <KEY>REVENT</KEY>
+       <ENTRY>Αλληλογραφία</ENTRY>
+       <LENGTH>22</LENGTH>
+      </item>
+      <item>
+       <ID>S</ID>
+       <KEY>RFORID</KEY>
+       <ENTRY>Καθορισμός Φόρμας</ENTRY>
+       <LENGTH>25</LENGTH>
+      </item>
+      <item>
+       <ID>S</ID>
+       <KEY>RGJAHR</KEY>
+       <ENTRY>Οικονομική Χρήση</ENTRY>
+       <LENGTH>24</LENGTH>
+      </item>
+      <item>
+       <ID>S</ID>
+       <KEY>RINDKO</KEY>
+       <ENTRY>Μεμονωμένη Αλληλογραφία</ENTRY>
+       <LENGTH>34</LENGTH>
+      </item>
+      <item>
+       <ID>S</ID>
+       <KEY>RSPRAS</KEY>
+       <ENTRY>Κλειδί Γλώσσας</ENTRY>
+       <LENGTH>25</LENGTH>
+      </item>
+      <item>
+       <ID>S</ID>
+       <KEY>RTKOID</KEY>
+       <ENTRY>Λεπτομέρειες Αποστολέα</ENTRY>
+       <LENGTH>30</LENGTH>
+      </item>
+      <item>
+       <ID>S</ID>
+       <KEY>RUSNAM</KEY>
+       <ENTRY>Χρήστης</ENTRY>
+       <LENGTH>16</LENGTH>
+      </item>
+      <item>
+       <ID>S</ID>
+       <KEY>RUZEIT</KEY>
+       <ENTRY>Χρόνος Αίτησης</ENTRY>
+       <LENGTH>31</LENGTH>
+      </item>
+      <item>
+       <ID>S</ID>
+       <KEY>RXBKOR</KEY>
+       <ENTRY>Ημ/νία από Πίνακα Εναρξης</ENTRY>
+       <LENGTH>33</LENGTH>
+      </item>
+      <item>
+       <ID>S</ID>
+       <KEY>SORTVK</KEY>
+       <ENTRY>Ταξινόμηση Αλληλογραφίας</ENTRY>
+       <LENGTH>32</LENGTH>
+      </item>
+      <item>
+       <ID>S</ID>
+       <KEY>SORTVP</KEY>
+       <ENTRY>Ταξιν.Αναλ.Γραμ.Εγγρ.</ENTRY>
+       <LENGTH>31</LENGTH>
+      </item>
+      <item>
+       <ID>S</ID>
+       <KEY>STATBL</KEY>
+       <ENTRY>Σημ.Αναλ.Γραμμές</ENTRY>
+       <LENGTH>24</LENGTH>
+      </item>
+      <item>
+       <ID>S</ID>
+       <KEY>TDDEST</KEY>
+       <ENTRY>Εξοδος στον Εκτυπωτή</ENTRY>
+       <LENGTH>28</LENGTH>
+      </item>
+      <item>
+       <ID>S</ID>
+       <KEY>UMSKZ</KEY>
+       <ENTRY>Δείκτης Ειδικής Γ/Λ</ENTRY>
+       <LENGTH>35</LENGTH>
+      </item>
+      <item>
+       <ID>S</ID>
+       <KEY>XUMSST</KEY>
+       <ENTRY>Εμφάνιση φόρων σε πωλ./προμ.</ENTRY>
+       <LENGTH>37</LENGTH>
+      </item>
+      <item>
+       <ID>S</ID>
+       <KEY>XUMSTN</KEY>
+       <ENTRY>Καθαρή εμφάν.φόρου σε πωλ./αγ.</ENTRY>
+       <LENGTH>38</LENGTH>
+      </item>
+     </TEXTPOOL>
+    </item>
+    <item>
+     <LANGUAGE>H</LANGUAGE>
+     <TEXTPOOL>
+      <item>
+       <ID>I</ID>
+       <KEY>110</KEY>
+       <ENTRY>Kivitel nyomtatóra</ENTRY>
+       <LENGTH>19</LENGTH>
+      </item>
+      <item>
+       <ID>I</ID>
+       <KEY>111</KEY>
+       <ENTRY>Az. nyomt.</ENTRY>
+       <LENGTH>11</LENGTH>
+      </item>
+      <item>
+       <ID>I</ID>
+       <KEY>200</KEY>
+       <ENTRY>Napló</ENTRY>
+       <LENGTH>9</LENGTH>
+      </item>
+      <item>
+       <ID>I</ID>
+       <KEY>201</KEY>
+       <ENTRY>Létreh. kiviteli kérelmek áttekintése</ENTRY>
+       <LENGTH>39</LENGTH>
+      </item>
+      <item>
+       <ID>I</ID>
+       <KEY>202</KEY>
+       <ENTRY>Váll Levelezés............................... Spoolsz./faxID Cím/faxsz............................... Nyomt.oldalak..</ENTRY>
+       <LENGTH>117</LENGTH>
+      </item>
+      <item>
+       <ID>I</ID>
+       <KEY>203</KEY>
+       <ENTRY>Megnev. a bejelentk. nyelvén hiányzik   ;;</ENTRY>
+       <LENGTH>42</LENGTH>
+      </item>
+      <item>
+       <ID>I</ID>
+       <KEY>204</KEY>
+       <ENTRY>Bizonylatkivonat</ENTRY>
+       <LENGTH>42</LENGTH>
+      </item>
+      <item>
+       <ID>I</ID>
+       <KEY>205</KEY>
+       <ENTRY>Hibalista</ENTRY>
+       <LENGTH>11</LENGTH>
+      </item>
+      <item>
+       <ID>R</ID>
+       <ENTRY>Nyomtatási program : bizonylatkivonat</ENTRY>
+       <LENGTH>37</LENGTH>
+      </item>
+      <item>
+       <ID>S</ID>
+       <KEY>BSCHL</KEY>
+       <ENTRY>Könyvelési kulcs</ENTRY>
+       <LENGTH>25</LENGTH>
+      </item>
+      <item>
+       <ID>S</ID>
+       <KEY>KODAT01</KEY>
+       <ENTRY>Dátum 1 a bizonylatkivonaton</ENTRY>
+       <LENGTH>36</LENGTH>
+      </item>
+      <item>
+       <ID>S</ID>
+       <KEY>KODAT02</KEY>
+       <ENTRY>Dátum 2 a bizonylatkivonaton</ENTRY>
+       <LENGTH>36</LENGTH>
+      </item>
+      <item>
+       <ID>S</ID>
+       <KEY>PRDEST</KEY>
+       <ENTRY>Napló nyomtatóra</ENTRY>
+       <LENGTH>29</LENGTH>
+      </item>
+      <item>
+       <ID>S</ID>
+       <KEY>RBELNR</KEY>
+       <ENTRY>Bizonylatszám</ENTRY>
+       <LENGTH>21</LENGTH>
+      </item>
+      <item>
+       <ID>S</ID>
+       <KEY>RBUKRS</KEY>
+       <ENTRY>Vállalat</ENTRY>
+       <LENGTH>21</LENGTH>
+      </item>
+      <item>
+       <ID>S</ID>
+       <KEY>RDATUM</KEY>
+       <ENTRY>Az igénylés dátuma</ENTRY>
+       <LENGTH>29</LENGTH>
+      </item>
+      <item>
+       <ID>S</ID>
+       <KEY>RERLDT</KEY>
+       <ENTRY>A nyomtatás ismétlése</ENTRY>
+       <LENGTH>35</LENGTH>
+      </item>
+      <item>
+       <ID>S</ID>
+       <KEY>REVENT</KEY>
+       <ENTRY>Levelezés</ENTRY>
+       <LENGTH>21</LENGTH>
+      </item>
+      <item>
+       <ID>S</ID>
+       <KEY>RFORID</KEY>
+       <ENTRY>Űrlap-set</ENTRY>
+       <LENGTH>17</LENGTH>
+      </item>
+      <item>
+       <ID>S</ID>
+       <KEY>RGJAHR</KEY>
+       <ENTRY>Gazdasági év</ENTRY>
+       <LENGTH>21</LENGTH>
+      </item>
+      <item>
+       <ID>S</ID>
+       <KEY>RINDKO</KEY>
+       <ENTRY>Egyéni levelezés</ENTRY>
+       <LENGTH>34</LENGTH>
+      </item>
+      <item>
+       <ID>S</ID>
+       <KEY>RSPRAS</KEY>
+       <ENTRY>Nyelvkulcs</ENTRY>
+       <LENGTH>25</LENGTH>
+      </item>
+      <item>
+       <ID>S</ID>
+       <KEY>RTKOID</KEY>
+       <ENTRY>Küldő adatai</ENTRY>
+       <LENGTH>23</LENGTH>
+      </item>
+      <item>
+       <ID>S</ID>
+       <KEY>RUSNAM</KEY>
+       <ENTRY>Felhasználó</ENTRY>
+       <LENGTH>19</LENGTH>
+      </item>
+      <item>
+       <ID>S</ID>
+       <KEY>RUZEIT</KEY>
+       <ENTRY>Igénylés időpontja</ENTRY>
+       <LENGTH>31</LENGTH>
+      </item>
+      <item>
+       <ID>S</ID>
+       <KEY>RXBKOR</KEY>
+       <ENTRY>Adatok a trigger-táblából</ENTRY>
+       <LENGTH>33</LENGTH>
+      </item>
+      <item>
+       <ID>S</ID>
+       <KEY>SORTVK</KEY>
+       <ENTRY>Levelezés rendezése</ENTRY>
+       <LENGTH>32</LENGTH>
+      </item>
+      <item>
+       <ID>S</ID>
+       <KEY>SORTVP</KEY>
+       <ENTRY>Egyedi tételek rendezése</ENTRY>
+       <LENGTH>32</LENGTH>
+      </item>
+      <item>
+       <ID>S</ID>
+       <KEY>STATBL</KEY>
+       <ENTRY>Jelzett tétel</ENTRY>
+       <LENGTH>21</LENGTH>
+      </item>
+      <item>
+       <ID>S</ID>
+       <KEY>TDDEST</KEY>
+       <ENTRY>Kivitel nyomtatóra</ENTRY>
+       <LENGTH>27</LENGTH>
+      </item>
+      <item>
+       <ID>S</ID>
+       <KEY>UMSKZ</KEY>
+       <ENTRY>Speciális főkönyv kódja</ENTRY>
+       <LENGTH>35</LENGTH>
+      </item>
+      <item>
+       <ID>S</ID>
+       <KEY>XUMSST</KEY>
+       <ENTRY>Forgalmi adó kimutatása</ENTRY>
+       <LENGTH>31</LENGTH>
+      </item>
+      <item>
+       <ID>S</ID>
+       <KEY>XUMSTN</KEY>
+       <ENTRY>Forgalmi adó: nettó kimutatás</ENTRY>
+       <LENGTH>37</LENGTH>
+      </item>
+     </TEXTPOOL>
+    </item>
+    <item>
+     <LANGUAGE>I</LANGUAGE>
+     <TEXTPOOL>
+      <item>
+       <ID>I</ID>
+       <KEY>110</KEY>
+       <ENTRY>Output su stampante</ENTRY>
+       <LENGTH>19</LENGTH>
+      </item>
+      <item>
+       <ID>I</ID>
+       <KEY>111</KEY>
+       <ENTRY>Stampa imm.</ENTRY>
+       <LENGTH>11</LENGTH>
+      </item>
+      <item>
+       <ID>I</ID>
+       <KEY>200</KEY>
+       <ENTRY>Registro</ENTRY>
+       <LENGTH>9</LENGTH>
+      </item>
+      <item>
+       <ID>I</ID>
+       <KEY>201</KEY>
+       <ENTRY>Riepilogo ordini di output creati</ENTRY>
+       <LENGTH>39</LENGTH>
+      </item>
+      <item>
+       <ID>I</ID>
+       <KEY>202</KEY>
+       <ENTRY>Soc. Corrispondenza.......................... N.spool/ID fax Titolo/N.fax.............................Pagine output..</ENTRY>
+       <LENGTH>117</LENGTH>
+      </item>
+      <item>
+       <ID>I</ID>
+       <KEY>203</KEY>
+       <ENTRY>Manca la definizione della lingua logon</ENTRY>
+       <LENGTH>42</LENGTH>
+      </item>
+      <item>
+       <ID>I</ID>
+       <KEY>204</KEY>
+       <ENTRY>Estratto conto                          ;;</ENTRY>
+       <LENGTH>42</LENGTH>
+      </item>
+      <item>
+       <ID>I</ID>
+       <KEY>205</KEY>
+       <ENTRY>Lista err.</ENTRY>
+       <LENGTH>11</LENGTH>
+      </item>
+      <item>
+       <ID>R</ID>
+       <ENTRY>Programma di stampa: estratto documento</ENTRY>
+       <LENGTH>39</LENGTH>
+      </item>
+      <item>
+       <ID>S</ID>
+       <KEY>BSCHL</KEY>
+       <ENTRY>Chiave contabile</ENTRY>
+       <LENGTH>25</LENGTH>
+      </item>
+      <item>
+       <ID>S</ID>
+       <KEY>KODAT01</KEY>
+       <ENTRY>Data 1 in estratto documento</ENTRY>
+       <LENGTH>36</LENGTH>
+      </item>
+      <item>
+       <ID>S</ID>
+       <KEY>KODAT02</KEY>
+       <ENTRY>Data 2 in estratto documento</ENTRY>
+       <LENGTH>36</LENGTH>
+      </item>
+      <item>
+       <ID>S</ID>
+       <KEY>PRDEST</KEY>
+       <ENTRY>Registro su stampante</ENTRY>
+       <LENGTH>29</LENGTH>
+      </item>
+      <item>
+       <ID>S</ID>
+       <KEY>RBELNR</KEY>
+       <ENTRY>Numero documento</ENTRY>
+       <LENGTH>24</LENGTH>
+      </item>
+      <item>
+       <ID>S</ID>
+       <KEY>RBUKRS</KEY>
+       <ENTRY>Società</ENTRY>
+       <LENGTH>21</LENGTH>
+      </item>
+      <item>
+       <ID>S</ID>
+       <KEY>RDATUM</KEY>
+       <ENTRY>Data della richiesta</ENTRY>
+       <LENGTH>29</LENGTH>
+      </item>
+      <item>
+       <ID>S</ID>
+       <KEY>RERLDT</KEY>
+       <ENTRY>Ripetizione stampa del</ENTRY>
+       <LENGTH>35</LENGTH>
+      </item>
+      <item>
+       <ID>S</ID>
+       <KEY>REVENT</KEY>
+       <ENTRY>Corrispondenza</ENTRY>
+       <LENGTH>22</LENGTH>
+      </item>
+      <item>
+       <ID>S</ID>
+       <KEY>RFORID</KEY>
+       <ENTRY>Form set</ENTRY>
+       <LENGTH>16</LENGTH>
+      </item>
+      <item>
+       <ID>S</ID>
+       <KEY>RGJAHR</KEY>
+       <ENTRY>Esercizio</ENTRY>
+       <LENGTH>21</LENGTH>
+      </item>
+      <item>
+       <ID>S</ID>
+       <KEY>RINDKO</KEY>
+       <ENTRY>corrispondenza individuale</ENTRY>
+       <LENGTH>34</LENGTH>
+      </item>
+      <item>
+       <ID>S</ID>
+       <KEY>RSPRAS</KEY>
+       <ENTRY>Chiave lingua</ENTRY>
+       <LENGTH>25</LENGTH>
+      </item>
+      <item>
+       <ID>S</ID>
+       <KEY>RTKOID</KEY>
+       <ENTRY>Dati mittente</ENTRY>
+       <LENGTH>23</LENGTH>
+      </item>
+      <item>
+       <ID>S</ID>
+       <KEY>RUSNAM</KEY>
+       <ENTRY>Utente</ENTRY>
+       <LENGTH>16</LENGTH>
+      </item>
+      <item>
+       <ID>S</ID>
+       <KEY>RUZEIT</KEY>
+       <ENTRY>Orario della richiesta</ENTRY>
+       <LENGTH>31</LENGTH>
+      </item>
+      <item>
+       <ID>S</ID>
+       <KEY>RXBKOR</KEY>
+       <ENTRY>Dati dalla tabella Trigger</ENTRY>
+       <LENGTH>34</LENGTH>
+      </item>
+      <item>
+       <ID>S</ID>
+       <KEY>SORTVK</KEY>
+       <ENTRY>Classific. corrispondenza</ENTRY>
+       <LENGTH>33</LENGTH>
+      </item>
+      <item>
+       <ID>S</ID>
+       <KEY>SORTVP</KEY>
+       <ENTRY>Classif. partite singole</ENTRY>
+       <LENGTH>32</LENGTH>
+      </item>
+      <item>
+       <ID>S</ID>
+       <KEY>STATBL</KEY>
+       <ENTRY>Voci promemoria</ENTRY>
+       <LENGTH>23</LENGTH>
+      </item>
+      <item>
+       <ID>S</ID>
+       <KEY>TDDEST</KEY>
+       <ENTRY>Output su stampante</ENTRY>
+       <LENGTH>27</LENGTH>
+      </item>
+      <item>
+       <ID>S</ID>
+       <KEY>UMSKZ</KEY>
+       <ENTRY>Codice Co.Ge. speciale</ENTRY>
+       <LENGTH>35</LENGTH>
+      </item>
+      <item>
+       <ID>S</ID>
+       <KEY>XUMSST</KEY>
+       <ENTRY>Vis. IVA</ENTRY>
+       <LENGTH>30</LENGTH>
+      </item>
+      <item>
+       <ID>S</ID>
+       <KEY>XUMSTN</KEY>
+       <ENTRY>Visualizzare IVA netta</ENTRY>
+       <LENGTH>33</LENGTH>
+      </item>
+     </TEXTPOOL>
+    </item>
+    <item>
+     <LANGUAGE>J</LANGUAGE>
+     <TEXTPOOL>
+      <item>
+       <ID>I</ID>
+       <KEY>110</KEY>
+       <ENTRY>プリンタ出力</ENTRY>
+       <LENGTH>19</LENGTH>
+      </item>
+      <item>
+       <ID>I</ID>
+       <KEY>111</KEY>
+       <ENTRY>即時印刷</ENTRY>
+       <LENGTH>11</LENGTH>
+      </item>
+      <item>
+       <ID>I</ID>
+       <KEY>200</KEY>
+       <ENTRY>ログ</ENTRY>
+       <LENGTH>9</LENGTH>
+      </item>
+      <item>
+       <ID>I</ID>
+       <KEY>201</KEY>
+       <ENTRY>生成済出力依頼の概要</ENTRY>
+       <LENGTH>39</LENGTH>
+      </item>
+      <item>
+       <ID>I</ID>
+       <KEY>202</KEY>
+       <ENTRY>CC 連絡文書                                   Spool No./FAX ID 表題 /FAX 番号                      .. 出力ページ数..</ENTRY>
+       <LENGTH>117</LENGTH>
+      </item>
+      <item>
+       <ID>I</ID>
+       <KEY>203</KEY>
+       <ENTRY>ログオン言語での名称なし</ENTRY>
+       <LENGTH>42</LENGTH>
+      </item>
+      <item>
+       <ID>I</ID>
+       <KEY>204</KEY>
+       <ENTRY>伝票抽出</ENTRY>
+       <LENGTH>42</LENGTH>
+      </item>
+      <item>
+       <ID>I</ID>
+       <KEY>205</KEY>
+       <ENTRY>エラー一覧</ENTRY>
+       <LENGTH>11</LENGTH>
+      </item>
+      <item>
+       <ID>R</ID>
+       <ENTRY>印刷プログラム: 伝票抽出</ENTRY>
+       <LENGTH>70</LENGTH>
+      </item>
+      <item>
+       <ID>S</ID>
+       <KEY>BSCHL</KEY>
+       <ENTRY>転記キー</ENTRY>
+       <LENGTH>25</LENGTH>
+      </item>
+      <item>
+       <ID>S</ID>
+       <KEY>KODAT01</KEY>
+       <ENTRY>伝票抽出日付 1</ENTRY>
+       <LENGTH>34</LENGTH>
+      </item>
+      <item>
+       <ID>S</ID>
+       <KEY>KODAT02</KEY>
+       <ENTRY>伝票抽出日付 2</ENTRY>
+       <LENGTH>34</LENGTH>
+      </item>
+      <item>
+       <ID>S</ID>
+       <KEY>PRDEST</KEY>
+       <ENTRY>プリンタログ</ENTRY>
+       <LENGTH>29</LENGTH>
+      </item>
+      <item>
+       <ID>S</ID>
+       <KEY>RBELNR</KEY>
+       <ENTRY>伝票番号</ENTRY>
+       <LENGTH>23</LENGTH>
+      </item>
+      <item>
+       <ID>S</ID>
+       <KEY>RBUKRS</KEY>
+       <ENTRY>会社コード</ENTRY>
+       <LENGTH>21</LENGTH>
+      </item>
+      <item>
+       <ID>S</ID>
+       <KEY>RDATUM</KEY>
+       <ENTRY>依頼日付</ENTRY>
+       <LENGTH>29</LENGTH>
+      </item>
+      <item>
+       <ID>S</ID>
+       <KEY>RERLDT</KEY>
+       <ENTRY>繰返印刷開始</ENTRY>
+       <LENGTH>35</LENGTH>
+      </item>
+      <item>
+       <ID>S</ID>
+       <KEY>REVENT</KEY>
+       <ENTRY>連絡文書</ENTRY>
+       <LENGTH>22</LENGTH>
+      </item>
+      <item>
+       <ID>S</ID>
+       <KEY>RFORID</KEY>
+       <ENTRY>書式設定</ENTRY>
+       <LENGTH>16</LENGTH>
+      </item>
+      <item>
+       <ID>S</ID>
+       <KEY>RGJAHR</KEY>
+       <ENTRY>会計年度</ENTRY>
+       <LENGTH>21</LENGTH>
+      </item>
+      <item>
+       <ID>S</ID>
+       <KEY>RINDKO</KEY>
+       <ENTRY>個別連絡文書</ENTRY>
+       <LENGTH>34</LENGTH>
+      </item>
+      <item>
+       <ID>S</ID>
+       <KEY>RSPRAS</KEY>
+       <ENTRY>言語キー</ENTRY>
+       <LENGTH>25</LENGTH>
+      </item>
+      <item>
+       <ID>S</ID>
+       <KEY>RTKOID</KEY>
+       <ENTRY>センダ詳細</ENTRY>
+       <LENGTH>23</LENGTH>
+      </item>
+      <item>
+       <ID>S</ID>
+       <KEY>RUSNAM</KEY>
+       <ENTRY>ユーザ</ENTRY>
+       <LENGTH>16</LENGTH>
+      </item>
+      <item>
+       <ID>S</ID>
+       <KEY>RUZEIT</KEY>
+       <ENTRY>請求時刻</ENTRY>
+       <LENGTH>31</LENGTH>
+      </item>
+      <item>
+       <ID>S</ID>
+       <KEY>RXBKOR</KEY>
+       <ENTRY>トリガテーブルのデータ</ENTRY>
+       <LENGTH>32</LENGTH>
+      </item>
+      <item>
+       <ID>S</ID>
+       <KEY>SORTVK</KEY>
+       <ENTRY>連絡文書のソート</ENTRY>
+       <LENGTH>32</LENGTH>
+      </item>
+      <item>
+       <ID>S</ID>
+       <KEY>SORTVP</KEY>
+       <ENTRY>明細ソート</ENTRY>
+       <LENGTH>31</LENGTH>
+      </item>
+      <item>
+       <ID>S</ID>
+       <KEY>STATBL</KEY>
+       <ENTRY>備忘明細</ENTRY>
+       <LENGTH>19</LENGTH>
+      </item>
+      <item>
+       <ID>S</ID>
+       <KEY>TDDEST</KEY>
+       <ENTRY>プリンタ出力</ENTRY>
+       <LENGTH>27</LENGTH>
+      </item>
+      <item>
+       <ID>S</ID>
+       <KEY>UMSKZ</KEY>
+       <ENTRY>特殊仕訳コード</ENTRY>
+       <LENGTH>35</LENGTH>
+      </item>
+      <item>
+       <ID>S</ID>
+       <KEY>XUMSST</KEY>
+       <ENTRY>消費税照会</ENTRY>
+       <LENGTH>37</LENGTH>
+      </item>
+      <item>
+       <ID>S</ID>
+       <KEY>XUMSTN</KEY>
+       <ENTRY>消費税正味照会</ENTRY>
+       <LENGTH>38</LENGTH>
+      </item>
+     </TEXTPOOL>
+    </item>
+    <item>
+     <LANGUAGE>K</LANGUAGE>
+     <TEXTPOOL>
+      <item>
+       <ID>I</ID>
+       <KEY>110</KEY>
+       <ENTRY>Print</ENTRY>
+       <LENGTH>19</LENGTH>
+      </item>
+      <item>
+       <ID>I</ID>
+       <KEY>111</KEY>
+       <ENTRY>Dir. print</ENTRY>
+       <LENGTH>11</LENGTH>
+      </item>
+      <item>
+       <ID>I</ID>
+       <KEY>200</KEY>
+       <ENTRY>Protokol</ENTRY>
+       <LENGTH>9</LENGTH>
+      </item>
+      <item>
+       <ID>I</ID>
+       <KEY>201</KEY>
+       <ENTRY>Oversigt over genererede printjob</ENTRY>
+       <LENGTH>39</LENGTH>
+      </item>
+      <item>
+       <ID>I</ID>
+       <KEY>202</KEY>
+       <ENTRY>FK   Korrespondance.......................... Spoolnr/faxID Titel/faxnr.............................. Outputsider..</ENTRY>
+       <LENGTH>117</LENGTH>
+      </item>
+      <item>
+       <ID>I</ID>
+       <KEY>203</KEY>
+       <ENTRY>Betegnelsen mangler på logon-sproget</ENTRY>
+       <LENGTH>42</LENGTH>
+      </item>
+      <item>
+       <ID>I</ID>
+       <KEY>204</KEY>
+       <ENTRY>Bilagsekstrakt</ENTRY>
+       <LENGTH>42</LENGTH>
+      </item>
+      <item>
+       <ID>I</ID>
+       <KEY>205</KEY>
+       <ENTRY>Fejlliste</ENTRY>
+       <LENGTH>11</LENGTH>
+      </item>
+      <item>
+       <ID>R</ID>
+       <ENTRY>Printprogram: Bilagsekstrakt</ENTRY>
+       <LENGTH>28</LENGTH>
+      </item>
+      <item>
+       <ID>S</ID>
+       <KEY>BSCHL</KEY>
+       <ENTRY>Bogføringsnøgle</ENTRY>
+       <LENGTH>25</LENGTH>
+      </item>
+      <item>
+       <ID>S</ID>
+       <KEY>KODAT01</KEY>
+       <ENTRY>Dato 1 i bilagsekstraktet</ENTRY>
+       <LENGTH>33</LENGTH>
+      </item>
+      <item>
+       <ID>S</ID>
+       <KEY>KODAT02</KEY>
+       <ENTRY>Dato 2 i bilagsekstraktet</ENTRY>
+       <LENGTH>33</LENGTH>
+      </item>
+      <item>
+       <ID>S</ID>
+       <KEY>PRDEST</KEY>
+       <ENTRY>Protokol til printer</ENTRY>
+       <LENGTH>29</LENGTH>
+      </item>
+      <item>
+       <ID>S</ID>
+       <KEY>RBELNR</KEY>
+       <ENTRY>Bilagsnummer</ENTRY>
+       <LENGTH>20</LENGTH>
+      </item>
+      <item>
+       <ID>S</ID>
+       <KEY>RBUKRS</KEY>
+       <ENTRY>Firmakode</ENTRY>
+       <LENGTH>21</LENGTH>
+      </item>
+      <item>
+       <ID>S</ID>
+       <KEY>RDATUM</KEY>
+       <ENTRY>Rekvireringsdato</ENTRY>
+       <LENGTH>29</LENGTH>
+      </item>
+      <item>
+       <ID>S</ID>
+       <KEY>RERLDT</KEY>
+       <ENTRY>Gentagelse af print fra</ENTRY>
+       <LENGTH>35</LENGTH>
+      </item>
+      <item>
+       <ID>S</ID>
+       <KEY>REVENT</KEY>
+       <ENTRY>Korrespondance</ENTRY>
+       <LENGTH>22</LENGTH>
+      </item>
+      <item>
+       <ID>S</ID>
+       <KEY>RFORID</KEY>
+       <ENTRY>Formularrecord</ENTRY>
+       <LENGTH>22</LENGTH>
+      </item>
+      <item>
+       <ID>S</ID>
+       <KEY>RGJAHR</KEY>
+       <ENTRY>Regnskabsår</ENTRY>
+       <LENGTH>21</LENGTH>
+      </item>
+      <item>
+       <ID>S</ID>
+       <KEY>RINDKO</KEY>
+       <ENTRY>Individuel korrespondance</ENTRY>
+       <LENGTH>34</LENGTH>
+      </item>
+      <item>
+       <ID>S</ID>
+       <KEY>RSPRAS</KEY>
+       <ENTRY>Sprognøgle</ENTRY>
+       <LENGTH>25</LENGTH>
+      </item>
+      <item>
+       <ID>S</ID>
+       <KEY>RTKOID</KEY>
+       <ENTRY>Afsenderangivelser</ENTRY>
+       <LENGTH>26</LENGTH>
+      </item>
+      <item>
+       <ID>S</ID>
+       <KEY>RUSNAM</KEY>
+       <ENTRY>Bruger</ENTRY>
+       <LENGTH>16</LENGTH>
+      </item>
+      <item>
+       <ID>S</ID>
+       <KEY>RUZEIT</KEY>
+       <ENTRY>Rekvireringstidspunkt</ENTRY>
+       <LENGTH>31</LENGTH>
+      </item>
+      <item>
+       <ID>S</ID>
+       <KEY>RXBKOR</KEY>
+       <ENTRY>Data fra triggertabel</ENTRY>
+       <LENGTH>32</LENGTH>
+      </item>
+      <item>
+       <ID>S</ID>
+       <KEY>SORTVK</KEY>
+       <ENTRY>Sortering korrespondance</ENTRY>
+       <LENGTH>32</LENGTH>
+      </item>
+      <item>
+       <ID>S</ID>
+       <KEY>SORTVP</KEY>
+       <ENTRY>Sortering af enkeltposter</ENTRY>
+       <LENGTH>33</LENGTH>
+      </item>
+      <item>
+       <ID>S</ID>
+       <KEY>STATBL</KEY>
+       <ENTRY>Pro memoria-poster</ENTRY>
+       <LENGTH>26</LENGTH>
+      </item>
+      <item>
+       <ID>S</ID>
+       <KEY>TDDEST</KEY>
+       <ENTRY>Print</ENTRY>
+       <LENGTH>27</LENGTH>
+      </item>
+      <item>
+       <ID>S</ID>
+       <KEY>UMSKZ</KEY>
+       <ENTRY>Særhovedbogsindikator</ENTRY>
+       <LENGTH>35</LENGTH>
+      </item>
+      <item>
+       <ID>S</ID>
+       <KEY>XUMSST</KEY>
+       <ENTRY>Vis moms</ENTRY>
+       <LENGTH>30</LENGTH>
+      </item>
+      <item>
+       <ID>S</ID>
+       <KEY>XUMSTN</KEY>
+       <ENTRY>Moms, nettovisning</ENTRY>
+       <LENGTH>33</LENGTH>
+      </item>
+     </TEXTPOOL>
+    </item>
+    <item>
+     <LANGUAGE>N</LANGUAGE>
+     <TEXTPOOL>
+      <item>
+       <ID>I</ID>
+       <KEY>110</KEY>
+       <ENTRY>Uitvoer n. printer</ENTRY>
+       <LENGTH>19</LENGTH>
+      </item>
+      <item>
+       <ID>I</ID>
+       <KEY>111</KEY>
+       <ENTRY>Afdruk nu</ENTRY>
+       <LENGTH>11</LENGTH>
+      </item>
+      <item>
+       <ID>I</ID>
+       <KEY>200</KEY>
+       <ENTRY>Verslag</ENTRY>
+       <LENGTH>9</LENGTH>
+      </item>
+      <item>
+       <ID>I</ID>
+       <KEY>201</KEY>
+       <ENTRY>Overzicht gecreëerde afdrukopdrachten</ENTRY>
+       <LENGTH>39</LENGTH>
+      </item>
+      <item>
+       <ID>I</ID>
+       <KEY>202</KEY>
+       <ENTRY>BdNr Correspondentie........................ Spoolnr./FaxID Titel./Faxnr. ............................. Uitvoerpag...</ENTRY>
+       <LENGTH>117</LENGTH>
+      </item>
+      <item>
+       <ID>I</ID>
+       <KEY>203</KEY>
+       <ENTRY>Omschrijving in aanmeldtaal ontbreekt</ENTRY>
+       <LENGTH>42</LENGTH>
+      </item>
+      <item>
+       <ID>I</ID>
+       <KEY>204</KEY>
+       <ENTRY>Documentuittreksel</ENTRY>
+       <LENGTH>42</LENGTH>
+      </item>
+      <item>
+       <ID>I</ID>
+       <KEY>205</KEY>
+       <ENTRY>Foutenlijst</ENTRY>
+       <LENGTH>11</LENGTH>
+      </item>
+      <item>
+       <ID>R</ID>
+       <ENTRY>Afdrukprogramma: documentuittreksel</ENTRY>
+       <LENGTH>35</LENGTH>
+      </item>
+      <item>
+       <ID>S</ID>
+       <KEY>BSCHL</KEY>
+       <ENTRY>Boekingssleutel</ENTRY>
+       <LENGTH>25</LENGTH>
+      </item>
+      <item>
+       <ID>S</ID>
+       <KEY>KODAT01</KEY>
+       <ENTRY>Datum 1 in uittreksel document</ENTRY>
+       <LENGTH>38</LENGTH>
+      </item>
+      <item>
+       <ID>S</ID>
+       <KEY>KODAT02</KEY>
+       <ENTRY>Datum 2 in uittreksel document</ENTRY>
+       <LENGTH>38</LENGTH>
+      </item>
+      <item>
+       <ID>S</ID>
+       <KEY>PRDEST</KEY>
+       <ENTRY>Verslag naar printer</ENTRY>
+       <LENGTH>29</LENGTH>
+      </item>
+      <item>
+       <ID>S</ID>
+       <KEY>RBELNR</KEY>
+       <ENTRY>Documentnummer</ENTRY>
+       <LENGTH>22</LENGTH>
+      </item>
+      <item>
+       <ID>S</ID>
+       <KEY>RBUKRS</KEY>
+       <ENTRY>Bedrijfsnummer</ENTRY>
+       <LENGTH>22</LENGTH>
+      </item>
+      <item>
+       <ID>S</ID>
+       <KEY>RDATUM</KEY>
+       <ENTRY>Datum aanvraag</ENTRY>
+       <LENGTH>29</LENGTH>
+      </item>
+      <item>
+       <ID>S</ID>
+       <KEY>RERLDT</KEY>
+       <ENTRY>Herhaal afdruk van</ENTRY>
+       <LENGTH>35</LENGTH>
+      </item>
+      <item>
+       <ID>S</ID>
+       <KEY>REVENT</KEY>
+       <ENTRY>Correspondentie</ENTRY>
+       <LENGTH>23</LENGTH>
+      </item>
+      <item>
+       <ID>S</ID>
+       <KEY>RFORID</KEY>
+       <ENTRY>Formulierenset</ENTRY>
+       <LENGTH>22</LENGTH>
+      </item>
+      <item>
+       <ID>S</ID>
+       <KEY>RGJAHR</KEY>
+       <ENTRY>Boekjaar</ENTRY>
+       <LENGTH>21</LENGTH>
+      </item>
+      <item>
+       <ID>S</ID>
+       <KEY>RINDKO</KEY>
+       <ENTRY>Individuele correspondentie</ENTRY>
+       <LENGTH>35</LENGTH>
+      </item>
+      <item>
+       <ID>S</ID>
+       <KEY>RSPRAS</KEY>
+       <ENTRY>Taalcode</ENTRY>
+       <LENGTH>25</LENGTH>
+      </item>
+      <item>
+       <ID>S</ID>
+       <KEY>RTKOID</KEY>
+       <ENTRY>Afzendergegevens</ENTRY>
+       <LENGTH>24</LENGTH>
+      </item>
+      <item>
+       <ID>S</ID>
+       <KEY>RUSNAM</KEY>
+       <ENTRY>Gebruik.</ENTRY>
+       <LENGTH>16</LENGTH>
+      </item>
+      <item>
+       <ID>S</ID>
+       <KEY>RUZEIT</KEY>
+       <ENTRY>Tijdstip van aanvraag</ENTRY>
+       <LENGTH>31</LENGTH>
+      </item>
+      <item>
+       <ID>S</ID>
+       <KEY>RXBKOR</KEY>
+       <ENTRY>Gegevens uit triggertabel</ENTRY>
+       <LENGTH>33</LENGTH>
+      </item>
+      <item>
+       <ID>S</ID>
+       <KEY>SORTVK</KEY>
+       <ENTRY>Sortering correspondentie</ENTRY>
+       <LENGTH>33</LENGTH>
+      </item>
+      <item>
+       <ID>S</ID>
+       <KEY>SORTVP</KEY>
+       <ENTRY>Sortering posten</ENTRY>
+       <LENGTH>31</LENGTH>
+      </item>
+      <item>
+       <ID>S</ID>
+       <KEY>STATBL</KEY>
+       <ENTRY>Memoposten</ENTRY>
+       <LENGTH>18</LENGTH>
+      </item>
+      <item>
+       <ID>S</ID>
+       <KEY>TDDEST</KEY>
+       <ENTRY>Uitvoer naar printer</ENTRY>
+       <LENGTH>28</LENGTH>
+      </item>
+      <item>
+       <ID>S</ID>
+       <KEY>UMSKZ</KEY>
+       <ENTRY>Speciaalgrootboekteken</ENTRY>
+       <LENGTH>35</LENGTH>
+      </item>
+      <item>
+       <ID>S</ID>
+       <KEY>XUMSST</KEY>
+       <ENTRY>Omzetbelasting weergeven</ENTRY>
+       <LENGTH>32</LENGTH>
+      </item>
+      <item>
+       <ID>S</ID>
+       <KEY>XUMSTN</KEY>
+       <ENTRY>Omzetbelasting netto weergeven</ENTRY>
+       <LENGTH>38</LENGTH>
+      </item>
+     </TEXTPOOL>
+    </item>
+    <item>
+     <LANGUAGE>O</LANGUAGE>
+     <TEXTPOOL>
+      <item>
+       <ID>I</ID>
+       <KEY>110</KEY>
+       <ENTRY>Utdata til skriver</ENTRY>
+       <LENGTH>19</LENGTH>
+      </item>
+      <item>
+       <ID>I</ID>
+       <KEY>111</KEY>
+       <ENTRY>Dir. utskr.</ENTRY>
+       <LENGTH>11</LENGTH>
+      </item>
+      <item>
+       <ID>I</ID>
+       <KEY>200</KEY>
+       <ENTRY>Protokoll</ENTRY>
+       <LENGTH>9</LENGTH>
+      </item>
+      <item>
+       <ID>I</ID>
+       <KEY>201</KEY>
+       <ENTRY>Oversikt over genererte utskriftsjobber</ENTRY>
+       <LENGTH>39</LENGTH>
+      </item>
+      <item>
+       <ID>I</ID>
+       <KEY>202</KEY>
+       <ENTRY>FiKo Korrespondanse.......................... Kønr./faks-ID Tittel/faksnr............................ Utdatasider....</ENTRY>
+       <LENGTH>117</LENGTH>
+      </item>
+      <item>
+       <ID>I</ID>
+       <KEY>203</KEY>
+       <ENTRY>Betegnelse mangler på påloggingsspråket</ENTRY>
+       <LENGTH>42</LENGTH>
+      </item>
+      <item>
+       <ID>I</ID>
+       <KEY>204</KEY>
+       <ENTRY>Bilagsekstrakt</ENTRY>
+       <LENGTH>42</LENGTH>
+      </item>
+      <item>
+       <ID>I</ID>
+       <KEY>205</KEY>
+       <ENTRY>Feilliste</ENTRY>
+       <LENGTH>11</LENGTH>
+      </item>
+      <item>
+       <ID>R</ID>
+       <ENTRY>Utskriftsprogram: Bilagsekstrakt</ENTRY>
+       <LENGTH>32</LENGTH>
+      </item>
+      <item>
+       <ID>S</ID>
+       <KEY>BSCHL</KEY>
+       <ENTRY>Konteringsnøkkel</ENTRY>
+       <LENGTH>25</LENGTH>
+      </item>
+      <item>
+       <ID>S</ID>
+       <KEY>KODAT01</KEY>
+       <ENTRY>Dato 1 i bilagsekstrakt</ENTRY>
+       <LENGTH>31</LENGTH>
+      </item>
+      <item>
+       <ID>S</ID>
+       <KEY>KODAT02</KEY>
+       <ENTRY>Dato 2 i bilagsekstrakt</ENTRY>
+       <LENGTH>31</LENGTH>
+      </item>
+      <item>
+       <ID>S</ID>
+       <KEY>PRDEST</KEY>
+       <ENTRY>Utskrift av protokoll</ENTRY>
+       <LENGTH>29</LENGTH>
+      </item>
+      <item>
+       <ID>S</ID>
+       <KEY>RBELNR</KEY>
+       <ENTRY>Bilagsnummer</ENTRY>
+       <LENGTH>20</LENGTH>
+      </item>
+      <item>
+       <ID>S</ID>
+       <KEY>RBUKRS</KEY>
+       <ENTRY>Firmakode</ENTRY>
+       <LENGTH>21</LENGTH>
+      </item>
+      <item>
+       <ID>S</ID>
+       <KEY>RDATUM</KEY>
+       <ENTRY>Dato for forespørsel</ENTRY>
+       <LENGTH>29</LENGTH>
+      </item>
+      <item>
+       <ID>S</ID>
+       <KEY>RERLDT</KEY>
+       <ENTRY>Gjenta utskrift av</ENTRY>
+       <LENGTH>35</LENGTH>
+      </item>
+      <item>
+       <ID>S</ID>
+       <KEY>REVENT</KEY>
+       <ENTRY>Korrespondanse</ENTRY>
+       <LENGTH>22</LENGTH>
+      </item>
+      <item>
+       <ID>S</ID>
+       <KEY>RFORID</KEY>
+       <ENTRY>Formularpost</ENTRY>
+       <LENGTH>20</LENGTH>
+      </item>
+      <item>
+       <ID>S</ID>
+       <KEY>RGJAHR</KEY>
+       <ENTRY>Regnskapsår</ENTRY>
+       <LENGTH>21</LENGTH>
+      </item>
+      <item>
+       <ID>S</ID>
+       <KEY>RINDKO</KEY>
+       <ENTRY>Individuell korrespondanse</ENTRY>
+       <LENGTH>34</LENGTH>
+      </item>
+      <item>
+       <ID>S</ID>
+       <KEY>RSPRAS</KEY>
+       <ENTRY>Språkkode</ENTRY>
+       <LENGTH>25</LENGTH>
+      </item>
+      <item>
+       <ID>S</ID>
+       <KEY>RTKOID</KEY>
+       <ENTRY>Avsenderdata</ENTRY>
+       <LENGTH>23</LENGTH>
+      </item>
+      <item>
+       <ID>S</ID>
+       <KEY>RUSNAM</KEY>
+       <ENTRY>Bruker</ENTRY>
+       <LENGTH>16</LENGTH>
+      </item>
+      <item>
+       <ID>S</ID>
+       <KEY>RUZEIT</KEY>
+       <ENTRY>Kl.slett for forespørsel</ENTRY>
+       <LENGTH>32</LENGTH>
+      </item>
+      <item>
+       <ID>S</ID>
+       <KEY>RXBKOR</KEY>
+       <ENTRY>Data fra utløsertabell</ENTRY>
+       <LENGTH>32</LENGTH>
+      </item>
+      <item>
+       <ID>S</ID>
+       <KEY>SORTVK</KEY>
+       <ENTRY>Sortering - korrespondanse</ENTRY>
+       <LENGTH>34</LENGTH>
+      </item>
+      <item>
+       <ID>S</ID>
+       <KEY>SORTVP</KEY>
+       <ENTRY>Sortering - detaljposter</ENTRY>
+       <LENGTH>32</LENGTH>
+      </item>
+      <item>
+       <ID>S</ID>
+       <KEY>STATBL</KEY>
+       <ENTRY>Memoposter</ENTRY>
+       <LENGTH>18</LENGTH>
+      </item>
+      <item>
+       <ID>S</ID>
+       <KEY>TDDEST</KEY>
+       <ENTRY>Utdata til skriver</ENTRY>
+       <LENGTH>27</LENGTH>
+      </item>
+      <item>
+       <ID>S</ID>
+       <KEY>UMSKZ</KEY>
+       <ENTRY>Særhovedbokindikator</ENTRY>
+       <LENGTH>35</LENGTH>
+      </item>
+      <item>
+       <ID>S</ID>
+       <KEY>XUMSST</KEY>
+       <ENTRY>Vis merverdiavgift</ENTRY>
+       <LENGTH>30</LENGTH>
+      </item>
+      <item>
+       <ID>S</ID>
+       <KEY>XUMSTN</KEY>
+       <ENTRY>Merverdiavgift nettovisning</ENTRY>
+       <LENGTH>35</LENGTH>
+      </item>
+     </TEXTPOOL>
+    </item>
+    <item>
+     <LANGUAGE>P</LANGUAGE>
+     <TEXTPOOL>
+      <item>
+       <ID>I</ID>
+       <KEY>110</KEY>
+       <ENTRY>Saída na impressora</ENTRY>
+       <LENGTH>19</LENGTH>
+      </item>
+      <item>
+       <ID>I</ID>
+       <KEY>111</KEY>
+       <ENTRY>Impres.imed</ENTRY>
+       <LENGTH>11</LENGTH>
+      </item>
+      <item>
+       <ID>I</ID>
+       <KEY>200</KEY>
+       <ENTRY>Log</ENTRY>
+       <LENGTH>9</LENGTH>
+      </item>
+      <item>
+       <ID>I</ID>
+       <KEY>201</KEY>
+       <ENTRY>Síntese solicitações de saída geradas</ENTRY>
+       <LENGTH>39</LENGTH>
+      </item>
+      <item>
+       <ID>I</ID>
+       <KEY>202</KEY>
+       <ENTRY>Empr Correspondência......................... Nº spool/ID telefax Título/Nº telefax................. Págs.impressão..</ENTRY>
+       <LENGTH>117</LENGTH>
+      </item>
+      <item>
+       <ID>I</ID>
+       <KEY>203</KEY>
+       <ENTRY>Falta denominação no idioma de logon</ENTRY>
+       <LENGTH>42</LENGTH>
+      </item>
+      <item>
+       <ID>I</ID>
+       <KEY>204</KEY>
+       <ENTRY>Extrato do documento</ENTRY>
+       <LENGTH>42</LENGTH>
+      </item>
+      <item>
+       <ID>I</ID>
+       <KEY>205</KEY>
+       <ENTRY>Lista erros</ENTRY>
+       <LENGTH>11</LENGTH>
+      </item>
+      <item>
+       <ID>R</ID>
+       <ENTRY>Programa de impressão: extrato de documento</ENTRY>
+       <LENGTH>43</LENGTH>
+      </item>
+      <item>
+       <ID>S</ID>
+       <KEY>BSCHL</KEY>
+       <ENTRY>Chave de lançamento</ENTRY>
+       <LENGTH>27</LENGTH>
+      </item>
+      <item>
+       <ID>S</ID>
+       <KEY>KODAT01</KEY>
+       <ENTRY>Data 1 no extrato de documento</ENTRY>
+       <LENGTH>38</LENGTH>
+      </item>
+      <item>
+       <ID>S</ID>
+       <KEY>KODAT02</KEY>
+       <ENTRY>Data 2 no extrato de documento</ENTRY>
+       <LENGTH>38</LENGTH>
+      </item>
+      <item>
+       <ID>S</ID>
+       <KEY>PRDEST</KEY>
+       <ENTRY>Log em impressora</ENTRY>
+       <LENGTH>29</LENGTH>
+      </item>
+      <item>
+       <ID>S</ID>
+       <KEY>RBELNR</KEY>
+       <ENTRY>Nº de documento</ENTRY>
+       <LENGTH>23</LENGTH>
+      </item>
+      <item>
+       <ID>S</ID>
+       <KEY>RBUKRS</KEY>
+       <ENTRY>Empresa</ENTRY>
+       <LENGTH>21</LENGTH>
+      </item>
+      <item>
+       <ID>S</ID>
+       <KEY>RDATUM</KEY>
+       <ENTRY>Data da solicitação</ENTRY>
+       <LENGTH>29</LENGTH>
+      </item>
+      <item>
+       <ID>S</ID>
+       <KEY>RERLDT</KEY>
+       <ENTRY>Repetição da impressão de</ENTRY>
+       <LENGTH>35</LENGTH>
+      </item>
+      <item>
+       <ID>S</ID>
+       <KEY>REVENT</KEY>
+       <ENTRY>Correspondência</ENTRY>
+       <LENGTH>23</LENGTH>
+      </item>
+      <item>
+       <ID>S</ID>
+       <KEY>RFORID</KEY>
+       <ENTRY>Registro de formulário</ENTRY>
+       <LENGTH>30</LENGTH>
+      </item>
+      <item>
+       <ID>S</ID>
+       <KEY>RGJAHR</KEY>
+       <ENTRY>Exercício</ENTRY>
+       <LENGTH>21</LENGTH>
+      </item>
+      <item>
+       <ID>S</ID>
+       <KEY>RINDKO</KEY>
+       <ENTRY>Correspondência individual</ENTRY>
+       <LENGTH>34</LENGTH>
+      </item>
+      <item>
+       <ID>S</ID>
+       <KEY>RSPRAS</KEY>
+       <ENTRY>Código de idioma</ENTRY>
+       <LENGTH>25</LENGTH>
+      </item>
+      <item>
+       <ID>S</ID>
+       <KEY>RTKOID</KEY>
+       <ENTRY>Dados do remetente</ENTRY>
+       <LENGTH>26</LENGTH>
+      </item>
+      <item>
+       <ID>S</ID>
+       <KEY>RUSNAM</KEY>
+       <ENTRY>Usuário</ENTRY>
+       <LENGTH>16</LENGTH>
+      </item>
+      <item>
+       <ID>S</ID>
+       <KEY>RUZEIT</KEY>
+       <ENTRY>Hora da solicitação</ENTRY>
+       <LENGTH>31</LENGTH>
+      </item>
+      <item>
+       <ID>S</ID>
+       <KEY>RXBKOR</KEY>
+       <ENTRY>Dados da tabela de trigger</ENTRY>
+       <LENGTH>34</LENGTH>
+      </item>
+      <item>
+       <ID>S</ID>
+       <KEY>SORTVK</KEY>
+       <ENTRY>Ordenação da correspondência</ENTRY>
+       <LENGTH>36</LENGTH>
+      </item>
+      <item>
+       <ID>S</ID>
+       <KEY>SORTVP</KEY>
+       <ENTRY>Ordenação partidas individuais</ENTRY>
+       <LENGTH>38</LENGTH>
+      </item>
+      <item>
+       <ID>S</ID>
+       <KEY>STATBL</KEY>
+       <ENTRY>Partida-memo</ENTRY>
+       <LENGTH>20</LENGTH>
+      </item>
+      <item>
+       <ID>S</ID>
+       <KEY>TDDEST</KEY>
+       <ENTRY>Saída na impressora</ENTRY>
+       <LENGTH>27</LENGTH>
+      </item>
+      <item>
+       <ID>S</ID>
+       <KEY>UMSKZ</KEY>
+       <ENTRY>Código de Razão Especial</ENTRY>
+       <LENGTH>35</LENGTH>
+      </item>
+      <item>
+       <ID>S</ID>
+       <KEY>XUMSST</KEY>
+       <ENTRY>Exibir IVA</ENTRY>
+       <LENGTH>30</LENGTH>
+      </item>
+      <item>
+       <ID>S</ID>
+       <KEY>XUMSTN</KEY>
+       <ENTRY>Exibição valores líquidos IVA</ENTRY>
+       <LENGTH>37</LENGTH>
+      </item>
+     </TEXTPOOL>
+    </item>
+    <item>
+     <LANGUAGE>R</LANGUAGE>
+     <TEXTPOOL>
+      <item>
+       <ID>I</ID>
+       <KEY>110</KEY>
+       <ENTRY>Вывод на принтер</ENTRY>
+       <LENGTH>19</LENGTH>
+      </item>
+      <item>
+       <ID>I</ID>
+       <KEY>111</KEY>
+       <ENTRY>НемдлПечать</ENTRY>
+       <LENGTH>11</LENGTH>
+      </item>
+      <item>
+       <ID>I</ID>
+       <KEY>200</KEY>
+       <ENTRY>Журнал</ENTRY>
+       <LENGTH>9</LENGTH>
+      </item>
+      <item>
+       <ID>I</ID>
+       <KEY>201</KEY>
+       <ENTRY>Обзор сгенерированных запросов на вывод</ENTRY>
+       <LENGTH>39</LENGTH>
+      </item>
+      <item>
+       <ID>I</ID>
+       <KEY>202</KEY>
+       <ENTRY>БЕ.. Корреспонденция......................... №Спула/ИдФакс Заголовок/№ факса........................ Страницы вывода</ENTRY>
+       <LENGTH>117</LENGTH>
+      </item>
+      <item>
+       <ID>I</ID>
+       <KEY>203</KEY>
+       <ENTRY>Нет названия на языке входа в систему</ENTRY>
+       <LENGTH>42</LENGTH>
+      </item>
+      <item>
+       <ID>I</ID>
+       <KEY>204</KEY>
+       <ENTRY>Выписка из документа</ENTRY>
+       <LENGTH>42</LENGTH>
+      </item>
+      <item>
+       <ID>I</ID>
+       <KEY>205</KEY>
+       <ENTRY>СписокОшиб</ENTRY>
+       <LENGTH>11</LENGTH>
+      </item>
+      <item>
+       <ID>R</ID>
+       <ENTRY>Программа печати: выписка из документа</ENTRY>
+       <LENGTH>38</LENGTH>
+      </item>
+      <item>
+       <ID>S</ID>
+       <KEY>BSCHL</KEY>
+       <ENTRY>Код проводки</ENTRY>
+       <LENGTH>25</LENGTH>
+      </item>
+      <item>
+       <ID>S</ID>
+       <KEY>KODAT01</KEY>
+       <ENTRY>Дата 1 в выписке из документа</ENTRY>
+       <LENGTH>37</LENGTH>
+      </item>
+      <item>
+       <ID>S</ID>
+       <KEY>KODAT02</KEY>
+       <ENTRY>Дата 2 в выписке из документа</ENTRY>
+       <LENGTH>37</LENGTH>
+      </item>
+      <item>
+       <ID>S</ID>
+       <KEY>PRDEST</KEY>
+       <ENTRY>Журнал на принтер</ENTRY>
+       <LENGTH>29</LENGTH>
+      </item>
+      <item>
+       <ID>S</ID>
+       <KEY>RBELNR</KEY>
+       <ENTRY>Номер документа</ENTRY>
+       <LENGTH>23</LENGTH>
+      </item>
+      <item>
+       <ID>S</ID>
+       <KEY>RBUKRS</KEY>
+       <ENTRY>Балансовая единица</ENTRY>
+       <LENGTH>26</LENGTH>
+      </item>
+      <item>
+       <ID>S</ID>
+       <KEY>RDATUM</KEY>
+       <ENTRY>Дата запроса</ENTRY>
+       <LENGTH>29</LENGTH>
+      </item>
+      <item>
+       <ID>S</ID>
+       <KEY>RERLDT</KEY>
+       <ENTRY>Повторение печати от</ENTRY>
+       <LENGTH>35</LENGTH>
+      </item>
+      <item>
+       <ID>S</ID>
+       <KEY>REVENT</KEY>
+       <ENTRY>Корреспонденция</ENTRY>
+       <LENGTH>23</LENGTH>
+      </item>
+      <item>
+       <ID>S</ID>
+       <KEY>RFORID</KEY>
+       <ENTRY>Набор формуляров</ENTRY>
+       <LENGTH>24</LENGTH>
+      </item>
+      <item>
+       <ID>S</ID>
+       <KEY>RGJAHR</KEY>
+       <ENTRY>Финансовый год</ENTRY>
+       <LENGTH>22</LENGTH>
+      </item>
+      <item>
+       <ID>S</ID>
+       <KEY>RINDKO</KEY>
+       <ENTRY>Индивидуальная корреспонденция</ENTRY>
+       <LENGTH>38</LENGTH>
+      </item>
+      <item>
+       <ID>S</ID>
+       <KEY>RSPRAS</KEY>
+       <ENTRY>Код языка</ENTRY>
+       <LENGTH>25</LENGTH>
+      </item>
+      <item>
+       <ID>S</ID>
+       <KEY>RTKOID</KEY>
+       <ENTRY>Данные отправителя</ENTRY>
+       <LENGTH>26</LENGTH>
+      </item>
+      <item>
+       <ID>S</ID>
+       <KEY>RUSNAM</KEY>
+       <ENTRY>Пользователь</ENTRY>
+       <LENGTH>20</LENGTH>
+      </item>
+      <item>
+       <ID>S</ID>
+       <KEY>RUZEIT</KEY>
+       <ENTRY>Время запроса</ENTRY>
+       <LENGTH>31</LENGTH>
+      </item>
+      <item>
+       <ID>S</ID>
+       <KEY>RXBKOR</KEY>
+       <ENTRY>Данные из таблицы триггеров</ENTRY>
+       <LENGTH>35</LENGTH>
+      </item>
+      <item>
+       <ID>S</ID>
+       <KEY>SORTVK</KEY>
+       <ENTRY>Сортировка корреспонденции</ENTRY>
+       <LENGTH>34</LENGTH>
+      </item>
+      <item>
+       <ID>S</ID>
+       <KEY>SORTVP</KEY>
+       <ENTRY>Сортировка отдельных позиций</ENTRY>
+       <LENGTH>36</LENGTH>
+      </item>
+      <item>
+       <ID>S</ID>
+       <KEY>STATBL</KEY>
+       <ENTRY>Памятные позиции</ENTRY>
+       <LENGTH>24</LENGTH>
+      </item>
+      <item>
+       <ID>S</ID>
+       <KEY>TDDEST</KEY>
+       <ENTRY>Вывод на принтер</ENTRY>
+       <LENGTH>27</LENGTH>
+      </item>
+      <item>
+       <ID>S</ID>
+       <KEY>UMSKZ</KEY>
+       <ENTRY>Код Особой главной книги</ENTRY>
+       <LENGTH>35</LENGTH>
+      </item>
+      <item>
+       <ID>S</ID>
+       <KEY>XUMSST</KEY>
+       <ENTRY>Отразить налог с оборота</ENTRY>
+       <LENGTH>32</LENGTH>
+      </item>
+      <item>
+       <ID>S</ID>
+       <KEY>XUMSTN</KEY>
+       <ENTRY>Налог с обор.: отражение нетто</ENTRY>
+       <LENGTH>38</LENGTH>
+      </item>
+     </TEXTPOOL>
+    </item>
+    <item>
+     <LANGUAGE>S</LANGUAGE>
+     <TEXTPOOL>
+      <item>
+       <ID>I</ID>
+       <KEY>110</KEY>
+       <ENTRY>Salida en impresora</ENTRY>
+       <LENGTH>19</LENGTH>
+      </item>
+      <item>
+       <ID>I</ID>
+       <KEY>111</KEY>
+       <ENTRY>Impr.inmed.</ENTRY>
+       <LENGTH>11</LENGTH>
+      </item>
+      <item>
+       <ID>I</ID>
+       <KEY>200</KEY>
+       <ENTRY>Log</ENTRY>
+       <LENGTH>9</LENGTH>
+      </item>
+      <item>
+       <ID>I</ID>
+       <KEY>201</KEY>
+       <ENTRY>Resumen de órdenes de salida creadas</ENTRY>
+       <LENGTH>39</LENGTH>
+      </item>
+      <item>
+       <ID>I</ID>
+       <KEY>202</KEY>
+       <ENTRY>So.  Correspondencia......................... Nº SPOOL/IDFax Tít./Nº fax............................. Páginas impr...</ENTRY>
+       <LENGTH>117</LENGTH>
+      </item>
+      <item>
+       <ID>I</ID>
+       <KEY>203</KEY>
+       <ENTRY>Falta denominación en idioma de trabajo ;;</ENTRY>
+       <LENGTH>42</LENGTH>
+      </item>
+      <item>
+       <ID>I</ID>
+       <KEY>204</KEY>
+       <ENTRY>Extracto de documento</ENTRY>
+       <LENGTH>42</LENGTH>
+      </item>
+      <item>
+       <ID>I</ID>
+       <KEY>205</KEY>
+       <ENTRY>Lst.errores</ENTRY>
+       <LENGTH>11</LENGTH>
+      </item>
+      <item>
+       <ID>R</ID>
+       <ENTRY>Programa de impresión: Extracto de documento</ENTRY>
+       <LENGTH>44</LENGTH>
+      </item>
+      <item>
+       <ID>S</ID>
+       <KEY>BSCHL</KEY>
+       <ENTRY>Clave de contabilización</ENTRY>
+       <LENGTH>32</LENGTH>
+      </item>
+      <item>
+       <ID>S</ID>
+       <KEY>KODAT01</KEY>
+       <ENTRY>Fecha 1 en extracto documento</ENTRY>
+       <LENGTH>37</LENGTH>
+      </item>
+      <item>
+       <ID>S</ID>
+       <KEY>KODAT02</KEY>
+       <ENTRY>Fecha 2 en extracto documento</ENTRY>
+       <LENGTH>37</LENGTH>
+      </item>
+      <item>
+       <ID>S</ID>
+       <KEY>PRDEST</KEY>
+       <ENTRY>Log vía impresora</ENTRY>
+       <LENGTH>29</LENGTH>
+      </item>
+      <item>
+       <ID>S</ID>
+       <KEY>RBELNR</KEY>
+       <ENTRY>Número de documento</ENTRY>
+       <LENGTH>27</LENGTH>
+      </item>
+      <item>
+       <ID>S</ID>
+       <KEY>RBUKRS</KEY>
+       <ENTRY>Sociedad</ENTRY>
+       <LENGTH>21</LENGTH>
+      </item>
+      <item>
+       <ID>S</ID>
+       <KEY>RDATUM</KEY>
+       <ENTRY>Fecha de la solicitud</ENTRY>
+       <LENGTH>29</LENGTH>
+      </item>
+      <item>
+       <ID>S</ID>
+       <KEY>RERLDT</KEY>
+       <ENTRY>Repetir la impresión desde</ENTRY>
+       <LENGTH>35</LENGTH>
+      </item>
+      <item>
+       <ID>S</ID>
+       <KEY>REVENT</KEY>
+       <ENTRY>Correspondencia</ENTRY>
+       <LENGTH>23</LENGTH>
+      </item>
+      <item>
+       <ID>S</ID>
+       <KEY>RFORID</KEY>
+       <ENTRY>Registro de formulario</ENTRY>
+       <LENGTH>30</LENGTH>
+      </item>
+      <item>
+       <ID>S</ID>
+       <KEY>RGJAHR</KEY>
+       <ENTRY>Ejercicio</ENTRY>
+       <LENGTH>21</LENGTH>
+      </item>
+      <item>
+       <ID>S</ID>
+       <KEY>RINDKO</KEY>
+       <ENTRY>Correspondencia individual</ENTRY>
+       <LENGTH>34</LENGTH>
+      </item>
+      <item>
+       <ID>S</ID>
+       <KEY>RSPRAS</KEY>
+       <ENTRY>Clave de idioma</ENTRY>
+       <LENGTH>25</LENGTH>
+      </item>
+      <item>
+       <ID>S</ID>
+       <KEY>RTKOID</KEY>
+       <ENTRY>Datos de remitente</ENTRY>
+       <LENGTH>26</LENGTH>
+      </item>
+      <item>
+       <ID>S</ID>
+       <KEY>RUSNAM</KEY>
+       <ENTRY>Usuario</ENTRY>
+       <LENGTH>16</LENGTH>
+      </item>
+      <item>
+       <ID>S</ID>
+       <KEY>RUZEIT</KEY>
+       <ENTRY>Hora de la solicitud</ENTRY>
+       <LENGTH>31</LENGTH>
+      </item>
+      <item>
+       <ID>S</ID>
+       <KEY>RXBKOR</KEY>
+       <ENTRY>Datos tabla desencadenadores</ENTRY>
+       <LENGTH>36</LENGTH>
+      </item>
+      <item>
+       <ID>S</ID>
+       <KEY>SORTVK</KEY>
+       <ENTRY>Clasificación correspondencia</ENTRY>
+       <LENGTH>37</LENGTH>
+      </item>
+      <item>
+       <ID>S</ID>
+       <KEY>SORTVP</KEY>
+       <ENTRY>Clasif.partidas individuales</ENTRY>
+       <LENGTH>36</LENGTH>
+      </item>
+      <item>
+       <ID>S</ID>
+       <KEY>STATBL</KEY>
+       <ENTRY>Apuntes estadísticos</ENTRY>
+       <LENGTH>28</LENGTH>
+      </item>
+      <item>
+       <ID>S</ID>
+       <KEY>TDDEST</KEY>
+       <ENTRY>Salida en impresora</ENTRY>
+       <LENGTH>27</LENGTH>
+      </item>
+      <item>
+       <ID>S</ID>
+       <KEY>UMSKZ</KEY>
+       <ENTRY>Indicador CME</ENTRY>
+       <LENGTH>35</LENGTH>
+      </item>
+      <item>
+       <ID>S</ID>
+       <KEY>XUMSST</KEY>
+       <ENTRY>Visualizar IVA</ENTRY>
+       <LENGTH>30</LENGTH>
+      </item>
+      <item>
+       <ID>S</ID>
+       <KEY>XUMSTN</KEY>
+       <ENTRY>Imp.vol.neg.: Visualiz.neto</ENTRY>
+       <LENGTH>35</LENGTH>
+      </item>
+     </TEXTPOOL>
+    </item>
+    <item>
+     <LANGUAGE>U</LANGUAGE>
+     <TEXTPOOL>
+      <item>
+       <ID>I</ID>
+       <KEY>110</KEY>
+       <ENTRY>Tul. kirjoittimelle</ENTRY>
+       <LENGTH>19</LENGTH>
+      </item>
+      <item>
+       <ID>I</ID>
+       <KEY>111</KEY>
+       <ENTRY>Pikatulost.</ENTRY>
+       <LENGTH>11</LENGTH>
+      </item>
+      <item>
+       <ID>I</ID>
+       <KEY>200</KEY>
+       <ENTRY>Loki</ENTRY>
+       <LENGTH>9</LENGTH>
+      </item>
+      <item>
+       <ID>I</ID>
+       <KEY>201</KEY>
+       <ENTRY>Luotujen tulostuspyyntöjen yleistiedot</ENTRY>
+       <LENGTH>39</LENGTH>
+      </item>
+      <item>
+       <ID>I</ID>
+       <KEY>202</KEY>
+       <ENTRY>Yrit Kirjeenvaihto........................... Jononro/FaxTs Otsikko/FaxNro........................... Tulostussivut..</ENTRY>
+       <LENGTH>117</LENGTH>
+      </item>
+      <item>
+       <ID>I</ID>
+       <KEY>203</KEY>
+       <ENTRY>Nimitys sisäänkirjauskielellä puuttuu</ENTRY>
+       <LENGTH>42</LENGTH>
+      </item>
+      <item>
+       <ID>I</ID>
+       <KEY>204</KEY>
+       <ENTRY>Tositepoiminto                          ;;</ENTRY>
+       <LENGTH>42</LENGTH>
+      </item>
+      <item>
+       <ID>I</ID>
+       <KEY>205</KEY>
+       <ENTRY>Virheluett.</ENTRY>
+       <LENGTH>11</LENGTH>
+      </item>
+      <item>
+       <ID>R</ID>
+       <ENTRY>Tulostusohjelma: tositepoiminto</ENTRY>
+       <LENGTH>31</LENGTH>
+      </item>
+      <item>
+       <ID>S</ID>
+       <KEY>BSCHL</KEY>
+       <ENTRY>Kirjausavain</ENTRY>
+       <LENGTH>25</LENGTH>
+      </item>
+      <item>
+       <ID>S</ID>
+       <KEY>KODAT01</KEY>
+       <ENTRY>Pvm 1 tositepoiminnossa</ENTRY>
+       <LENGTH>31</LENGTH>
+      </item>
+      <item>
+       <ID>S</ID>
+       <KEY>KODAT02</KEY>
+       <ENTRY>Pvm 2 tositepoiminnossa</ENTRY>
+       <LENGTH>31</LENGTH>
+      </item>
+      <item>
+       <ID>S</ID>
+       <KEY>PRDEST</KEY>
+       <ENTRY>Kirjoittimen loki</ENTRY>
+       <LENGTH>29</LENGTH>
+      </item>
+      <item>
+       <ID>S</ID>
+       <KEY>RBELNR</KEY>
+       <ENTRY>Tositenumero</ENTRY>
+       <LENGTH>20</LENGTH>
+      </item>
+      <item>
+       <ID>S</ID>
+       <KEY>RBUKRS</KEY>
+       <ENTRY>Yritys</ENTRY>
+       <LENGTH>21</LENGTH>
+      </item>
+      <item>
+       <ID>S</ID>
+       <KEY>RDATUM</KEY>
+       <ENTRY>Pyynnön päivämäärä</ENTRY>
+       <LENGTH>29</LENGTH>
+      </item>
+      <item>
+       <ID>S</ID>
+       <KEY>RERLDT</KEY>
+       <ENTRY>Toista tulostus alkaen</ENTRY>
+       <LENGTH>35</LENGTH>
+      </item>
+      <item>
+       <ID>S</ID>
+       <KEY>REVENT</KEY>
+       <ENTRY>Kirjeenvaihto</ENTRY>
+       <LENGTH>21</LENGTH>
+      </item>
+      <item>
+       <ID>S</ID>
+       <KEY>RFORID</KEY>
+       <ENTRY>Lomaketietue</ENTRY>
+       <LENGTH>20</LENGTH>
+      </item>
+      <item>
+       <ID>S</ID>
+       <KEY>RGJAHR</KEY>
+       <ENTRY>Tilikausi</ENTRY>
+       <LENGTH>21</LENGTH>
+      </item>
+      <item>
+       <ID>S</ID>
+       <KEY>RINDKO</KEY>
+       <ENTRY>Yksilöllinen kirjeenvaihto</ENTRY>
+       <LENGTH>34</LENGTH>
+      </item>
+      <item>
+       <ID>S</ID>
+       <KEY>RSPRAS</KEY>
+       <ENTRY>Kieliavain</ENTRY>
+       <LENGTH>25</LENGTH>
+      </item>
+      <item>
+       <ID>S</ID>
+       <KEY>RTKOID</KEY>
+       <ENTRY>Lähettäjätiedot</ENTRY>
+       <LENGTH>23</LENGTH>
+      </item>
+      <item>
+       <ID>S</ID>
+       <KEY>RUSNAM</KEY>
+       <ENTRY>Käyttäjä</ENTRY>
+       <LENGTH>16</LENGTH>
+      </item>
+      <item>
+       <ID>S</ID>
+       <KEY>RUZEIT</KEY>
+       <ENTRY>Pyynnön kellonaika</ENTRY>
+       <LENGTH>31</LENGTH>
+      </item>
+      <item>
+       <ID>S</ID>
+       <KEY>RXBKOR</KEY>
+       <ENTRY>Tiedot käynnistintaulusta</ENTRY>
+       <LENGTH>33</LENGTH>
+      </item>
+      <item>
+       <ID>S</ID>
+       <KEY>SORTVK</KEY>
+       <ENTRY>Lajittelu - kirjeenvaihto</ENTRY>
+       <LENGTH>33</LENGTH>
+      </item>
+      <item>
+       <ID>S</ID>
+       <KEY>SORTVP</KEY>
+       <ENTRY>Lajittelu - rivi</ENTRY>
+       <LENGTH>31</LENGTH>
+      </item>
+      <item>
+       <ID>S</ID>
+       <KEY>STATBL</KEY>
+       <ENTRY>Merkitty erä</ENTRY>
+       <LENGTH>20</LENGTH>
+      </item>
+      <item>
+       <ID>S</ID>
+       <KEY>TDDEST</KEY>
+       <ENTRY>Tulostus kirjoittimelle</ENTRY>
+       <LENGTH>31</LENGTH>
+      </item>
+      <item>
+       <ID>S</ID>
+       <KEY>UMSKZ</KEY>
+       <ENTRY>Erityispääkirjatunnus</ENTRY>
+       <LENGTH>35</LENGTH>
+      </item>
+      <item>
+       <ID>S</ID>
+       <KEY>XUMSST</KEY>
+       <ENTRY>Näytä arvonlisävero</ENTRY>
+       <LENGTH>30</LENGTH>
+      </item>
+      <item>
+       <ID>S</ID>
+       <KEY>XUMSTN</KEY>
+       <ENTRY>Alv-vero, nettonäyttö</ENTRY>
+       <LENGTH>33</LENGTH>
+      </item>
+     </TEXTPOOL>
+    </item>
+    <item>
+     <LANGUAGE>V</LANGUAGE>
+     <TEXTPOOL>
+      <item>
+       <ID>I</ID>
+       <KEY>110</KEY>
+       <ENTRY>Utskr. på skrivare</ENTRY>
+       <LENGTH>19</LENGTH>
+      </item>
+      <item>
+       <ID>I</ID>
+       <KEY>111</KEY>
+       <ENTRY>Dir.utskrft</ENTRY>
+       <LENGTH>11</LENGTH>
+      </item>
+      <item>
+       <ID>I</ID>
+       <KEY>200</KEY>
+       <ENTRY>Protokoll</ENTRY>
+       <LENGTH>9</LENGTH>
+      </item>
+      <item>
+       <ID>I</ID>
+       <KEY>201</KEY>
+       <ENTRY>Översikt över genererade utskriftsbest.</ENTRY>
+       <LENGTH>39</LENGTH>
+      </item>
+      <item>
+       <ID>I</ID>
+       <KEY>202</KEY>
+       <ENTRY>FG   Korrespondens........................... Spoolnr/FaxID Rubrik/Faxnr............................. Utdatasidor....</ENTRY>
+       <LENGTH>117</LENGTH>
+      </item>
+      <item>
+       <ID>I</ID>
+       <KEY>203</KEY>
+       <ENTRY>Beteckning saknas på inloggningsspråket</ENTRY>
+       <LENGTH>42</LENGTH>
+      </item>
+      <item>
+       <ID>I</ID>
+       <KEY>204</KEY>
+       <ENTRY>Dok.utdrag</ENTRY>
+       <LENGTH>42</LENGTH>
+      </item>
+      <item>
+       <ID>I</ID>
+       <KEY>205</KEY>
+       <ENTRY>Fellista</ENTRY>
+       <LENGTH>11</LENGTH>
+      </item>
+      <item>
+       <ID>R</ID>
+       <ENTRY>Utskriftsprogram: dok.utdrag</ENTRY>
+       <LENGTH>28</LENGTH>
+      </item>
+      <item>
+       <ID>S</ID>
+       <KEY>BSCHL</KEY>
+       <ENTRY>Konteringsnyckel</ENTRY>
+       <LENGTH>25</LENGTH>
+      </item>
+      <item>
+       <ID>S</ID>
+       <KEY>KODAT01</KEY>
+       <ENTRY>Datum 1 i dok.utdrag</ENTRY>
+       <LENGTH>30</LENGTH>
+      </item>
+      <item>
+       <ID>S</ID>
+       <KEY>KODAT02</KEY>
+       <ENTRY>Datum 2 i dok.utdrag</ENTRY>
+       <LENGTH>30</LENGTH>
+      </item>
+      <item>
+       <ID>S</ID>
+       <KEY>PRDEST</KEY>
+       <ENTRY>Protokoll på skrivare</ENTRY>
+       <LENGTH>29</LENGTH>
+      </item>
+      <item>
+       <ID>S</ID>
+       <KEY>RBELNR</KEY>
+       <ENTRY>Dokumentnummer</ENTRY>
+       <LENGTH>22</LENGTH>
+      </item>
+      <item>
+       <ID>S</ID>
+       <KEY>RBUKRS</KEY>
+       <ENTRY>Företag</ENTRY>
+       <LENGTH>21</LENGTH>
+      </item>
+      <item>
+       <ID>S</ID>
+       <KEY>RDATUM</KEY>
+       <ENTRY>Datum för begäran</ENTRY>
+       <LENGTH>29</LENGTH>
+      </item>
+      <item>
+       <ID>S</ID>
+       <KEY>RERLDT</KEY>
+       <ENTRY>Upprepa utskrift från den</ENTRY>
+       <LENGTH>35</LENGTH>
+      </item>
+      <item>
+       <ID>S</ID>
+       <KEY>REVENT</KEY>
+       <ENTRY>Korrespondens</ENTRY>
+       <LENGTH>21</LENGTH>
+      </item>
+      <item>
+       <ID>S</ID>
+       <KEY>RFORID</KEY>
+       <ENTRY>Formulärpost</ENTRY>
+       <LENGTH>20</LENGTH>
+      </item>
+      <item>
+       <ID>S</ID>
+       <KEY>RGJAHR</KEY>
+       <ENTRY>Räkenskapsår</ENTRY>
+       <LENGTH>21</LENGTH>
+      </item>
+      <item>
+       <ID>S</ID>
+       <KEY>RINDKO</KEY>
+       <ENTRY>Individuell korrespondens</ENTRY>
+       <LENGTH>34</LENGTH>
+      </item>
+      <item>
+       <ID>S</ID>
+       <KEY>RSPRAS</KEY>
+       <ENTRY>Språkkod</ENTRY>
+       <LENGTH>25</LENGTH>
+      </item>
+      <item>
+       <ID>S</ID>
+       <KEY>RTKOID</KEY>
+       <ENTRY>Avsändaruppgifter</ENTRY>
+       <LENGTH>25</LENGTH>
+      </item>
+      <item>
+       <ID>S</ID>
+       <KEY>RUSNAM</KEY>
+       <ENTRY>Användare</ENTRY>
+       <LENGTH>17</LENGTH>
+      </item>
+      <item>
+       <ID>S</ID>
+       <KEY>RUZEIT</KEY>
+       <ENTRY>Klockslag för begäran</ENTRY>
+       <LENGTH>31</LENGTH>
+      </item>
+      <item>
+       <ID>S</ID>
+       <KEY>RXBKOR</KEY>
+       <ENTRY>Data från triggertabell</ENTRY>
+       <LENGTH>32</LENGTH>
+      </item>
+      <item>
+       <ID>S</ID>
+       <KEY>SORTVK</KEY>
+       <ENTRY>Sortering av korrespondens</ENTRY>
+       <LENGTH>34</LENGTH>
+      </item>
+      <item>
+       <ID>S</ID>
+       <KEY>SORTVP</KEY>
+       <ENTRY>Sortering av detaljposter</ENTRY>
+       <LENGTH>33</LENGTH>
+      </item>
+      <item>
+       <ID>S</ID>
+       <KEY>STATBL</KEY>
+       <ENTRY>Stat.info (sp.oms.)</ENTRY>
+       <LENGTH>27</LENGTH>
+      </item>
+      <item>
+       <ID>S</ID>
+       <KEY>TDDEST</KEY>
+       <ENTRY>Utskrift på skrivare</ENTRY>
+       <LENGTH>28</LENGTH>
+      </item>
+      <item>
+       <ID>S</ID>
+       <KEY>UMSKZ</KEY>
+       <ENTRY>Specialomsättningsindikator</ENTRY>
+       <LENGTH>35</LENGTH>
+      </item>
+      <item>
+       <ID>S</ID>
+       <KEY>XUMSST</KEY>
+       <ENTRY>Visa moms</ENTRY>
+       <LENGTH>30</LENGTH>
+      </item>
+      <item>
+       <ID>S</ID>
+       <KEY>XUMSTN</KEY>
+       <ENTRY>Moms redovisas netto</ENTRY>
+       <LENGTH>33</LENGTH>
+      </item>
+     </TEXTPOOL>
+    </item>
+   </I18N_TPOOL>
+  </asx:values>
+ </asx:abap>
+</abapGit>

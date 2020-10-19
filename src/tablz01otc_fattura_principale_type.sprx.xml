@@ -1,0 +1,84 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<abapGit version="v1.0.0" serializer="LCL_OBJECT_SPRX" serializer_version="v1.0.0">
+ <asx:abap xmlns:asx="http://www.sap.com/abapxml" version="1.0">
+  <asx:values>
+   <PROXY_HEADER>
+    <item>
+     <OBJECT>TABL</OBJECT>
+     <OBJ_NAME>Z01OTC_FATTURA_PRINCIPALE_TYPE</OBJ_NAME>
+     <OBJECT_M>CLAS</OBJECT_M>
+     <OBJ_NAME_M>Z01OTC_CO_SI_INTEREST_CHARGES</OBJ_NAME_M>
+     <HASH_ID>968555E54E508E528542C732B1E1B1E1FC40D37D</HASH_ID>
+     <ID>&lt;type&gt; FatturaPrincipaleType http://ivaservizi.agenziaentrate.gov.it/docs/xsd/fatture/v1.2 SI_InterestCharges_out(http://bio-rad.com/OTC/InterestCharges)</ID>
+     <IFR_TYPE>type</IFR_TYPE>
+     <IFR_NAME>FatturaPrincipaleType</IFR_NAME>
+     <IFR_NSPCE>http://ivaservizi.agenziaentrate.gov.it/docs/xsd/fatture/v1.2</IFR_NSPCE>
+     <IFR_GNSPCE>SI_InterestCharges_out(http://bio-rad.com/OTC/InterestCharges)</IFR_GNSPCE>
+     <GEN_VERS>0005</GEN_VERS>
+     <PREFIX>Z01OTC_</PREFIX>
+     <CATEGORY>ifmtypedef</CATEGORY>
+     <X-ML_NSPCE>http://ivaservizi.agenziaentrate.gov.it/docs/xsd/fatture/v1.2</X-ML_NSPCE>
+     <X-ML_NAME>FatturaPrincipaleType</X-ML_NAME>
+    </item>
+   </PROXY_HEADER>
+   <PROXY_DATA>
+    <item>
+     <OBJECT>TABL</OBJECT>
+     <OBJ_NAME>Z01OTC_FATTURA_PRINCIPALE_TYPE</OBJ_NAME>
+     <OBJECT1>FIEL</OBJECT1>
+     <OBJ_NAME1>DATA_FATTURA_PRINCIPALE</OBJ_NAME1>
+     <OBJECT2>FIEL</OBJECT2>
+     <OBJ_NAME2>DATA_FATTURA_PRINCIPALE</OBJ_NAME2>
+     <ID>&lt;element&gt; DataFatturaPrincipale &lt;type&gt; FatturaPrincipaleType http://ivaservizi.agenziaentrate.gov.it/docs/xsd/fatture/v1.2 SI_InterestCharges_out(http://bio-rad.com/OTC/InterestCharges)</ID>
+     <IFR_TYPE>element</IFR_TYPE>
+     <IFR_NAME>DataFatturaPrincipale</IFR_NAME>
+     <IFR_TAGTYP>E</IFR_TAGTYP>
+     <IFR_MINOCC>1</IFR_MINOCC>
+     <IFR_MAXOCC>1</IFR_MAXOCC>
+     <IFR_XSDTYP>date</IFR_XSDTYP>
+     <IFR_SCALE>-2</IFR_SCALE>
+     <R3_TYPE>FIEL</R3_TYPE>
+     <R3_NAME>DATA_FATTURA_PRINCIPALE</R3_NAME>
+     <R3_DTREF>XSDDATE_D</R3_DTREF>
+     <R3_SEQNUM>000002</R3_SEQNUM>
+    </item>
+    <item>
+     <OBJECT>TABL</OBJECT>
+     <OBJ_NAME>Z01OTC_FATTURA_PRINCIPALE_TYPE</OBJ_NAME>
+     <OBJECT1>FIEL</OBJECT1>
+     <OBJ_NAME1>NUMERO_FATTURA_PRINCIPALE</OBJ_NAME1>
+     <OBJECT2>FIEL</OBJECT2>
+     <OBJ_NAME2>NUMERO_FATTURA_PRINCIPALE</OBJ_NAME2>
+     <OBJECT_R>DTEL</OBJECT_R>
+     <OBJ_NAME_R>Z01OTC_STRING20TYPE</OBJ_NAME_R>
+     <ID>&lt;element&gt; NumeroFatturaPrincipale &lt;type&gt; FatturaPrincipaleType http://ivaservizi.agenziaentrate.gov.it/docs/xsd/fatture/v1.2 SI_InterestCharges_out(http://bio-rad.com/OTC/InterestCharges)</ID>
+     <IFR_TYPE>element</IFR_TYPE>
+     <IFR_NAME>NumeroFatturaPrincipale</IFR_NAME>
+     <IFR_TAGTYP>E</IFR_TAGTYP>
+     <IFR_MINOCC>1</IFR_MINOCC>
+     <IFR_MAXOCC>1</IFR_MAXOCC>
+     <IFR_SCALE>-2</IFR_SCALE>
+     <R3_TYPE>FIEL</R3_TYPE>
+     <R3_NAME>NUMERO_FATTURA_PRINCIPALE</R3_NAME>
+     <R3_SEQNUM>000001</R3_SEQNUM>
+    </item>
+    <item>
+     <OBJECT>TABL</OBJECT>
+     <OBJ_NAME>Z01OTC_FATTURA_PRINCIPALE_TYPE</OBJ_NAME>
+     <OBJECT1>TABL</OBJECT1>
+     <OBJ_NAME1>Z01OTC_FATTURA_PRINCIPALE_TYPE</OBJ_NAME1>
+     <OBJECT2>TABL</OBJECT2>
+     <OBJ_NAME2>Z01OTC_FATTURA_PRINCIPALE_TYPE</OBJ_NAME2>
+     <ID>&lt;type&gt; FatturaPrincipaleType http://ivaservizi.agenziaentrate.gov.it/docs/xsd/fatture/v1.2 SI_InterestCharges_out(http://bio-rad.com/OTC/InterestCharges)</ID>
+     <IFR_TYPE>type</IFR_TYPE>
+     <IFR_NAME>FatturaPrincipaleType</IFR_NAME>
+     <IFR_SCALE>-2</IFR_SCALE>
+     <R3_TYPE>TABL</R3_TYPE>
+     <R3_NAME>Z01OTC_FATTURA_PRINCIPALE_TYPE</R3_NAME>
+     <R3_TEXT>Proxy Structure (generated)</R3_TEXT>
+     <CATEGORY>ifmtypedef</CATEGORY>
+    </item>
+   </PROXY_DATA>
+  </asx:values>
+ </asx:abap>
+</abapGit>

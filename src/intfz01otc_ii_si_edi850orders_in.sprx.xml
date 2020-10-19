@@ -1,0 +1,117 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<abapGit version="v1.0.0" serializer="LCL_OBJECT_SPRX" serializer_version="v1.0.0">
+ <asx:abap xmlns:asx="http://www.sap.com/abapxml" version="1.0">
+  <asx:values>
+   <PROXY_HEADER>
+    <item>
+     <OBJECT>INTF</OBJECT>
+     <OBJ_NAME>Z01OTC_II_SI_EDI850ORDERS_IN</OBJ_NAME>
+     <OBJECT_M>INTF</OBJECT_M>
+     <OBJ_NAME_M>Z01OTC_II_SI_EDI850ORDERS_IN</OBJ_NAME_M>
+     <HASH_ID>8DA6826BB03BC9EF7D9C786F8D38AC54FC40B2B2</HASH_ID>
+     <ID>&lt;portType&gt; SI_EDI850Orders_In http://bio-rad.com/OTC/EDI850 http://bio-rad.com/OTC/EDI850</ID>
+     <IFR_GLOBAL>X</IFR_GLOBAL>
+     <IFR_TYPE>portType</IFR_TYPE>
+     <IFR_NAME>SI_EDI850Orders_In</IFR_NAME>
+     <IFR_NSPCE>http://bio-rad.com/OTC/EDI850</IFR_NSPCE>
+     <IFR_GNSPCE>http://bio-rad.com/OTC/EDI850</IFR_GNSPCE>
+     <GEN_VERS>0006</GEN_VERS>
+     <PREFIX>Z01OTC_</PREFIX>
+     <CATEGORY>ifmmessif</CATEGORY>
+     <DIRECTION>I</DIRECTION>
+     <X-ML_NSPCE>http://bio-rad.com/OTC/EDI850</X-ML_NSPCE>
+     <X-ML_NAME>SI_EDI850Orders_In</X-ML_NAME>
+     <FURTHER_DATA>﻿&lt;asx:abap xmlns:asx=&quot;http://www.sap.com/abapxml&quot; version=&quot;1.0&quot;&gt;&lt;asx:values&gt;&lt;DATA&gt;&lt;SOAP_APPL&gt;urn:sap-com:soap:application:esr:server:710&lt;/SOAP_APPL&gt;&lt;/DATA&gt;&lt;/asx:values&gt;&lt;/asx:abap&gt;</FURTHER_DATA>
+     <VERSION_ID>49caa06c9a7b11e6c1830000010d7702</VERSION_ID>
+    </item>
+   </PROXY_HEADER>
+   <PROXY_DATA>
+    <item>
+     <OBJECT>INTF</OBJECT>
+     <OBJ_NAME>Z01OTC_II_SI_EDI850ORDERS_IN</OBJ_NAME>
+     <OBJECT1>CLAS</OBJECT1>
+     <OBJ_NAME1>Z01OTC_CL_SI_EDI850ORDERS_IN1</OBJ_NAME1>
+     <OBJECT2>CLAS</OBJECT2>
+     <OBJ_NAME2>Z01OTC_CL_SI_EDI850ORDERS_IN1</OBJ_NAME2>
+     <ID>&lt;CLIM&gt; SI_EDI850Orders_In http://bio-rad.com/OTC/EDI850 http://bio-rad.com/OTC/EDI850</ID>
+     <IFR_TYPE>CLIM</IFR_TYPE>
+     <IFR_NAME>SI_EDI850Orders_In</IFR_NAME>
+     <IFR_TEXT>Inbound interface for proxy OTC_IDD_0009</IFR_TEXT>
+     <IFR_LANGU>EN</IFR_LANGU>
+     <R3_TYPE>CLAS</R3_TYPE>
+     <R3_NAME>Z01OTC_CL_SI_EDI850ORDERS_IN1</R3_NAME>
+     <R3_TEXT>Inbound interface for proxy OTC_IDD_0009</R3_TEXT>
+    </item>
+    <item>
+     <OBJECT>INTF</OBJECT>
+     <OBJ_NAME>Z01OTC_II_SI_EDI850ORDERS_IN</OBJ_NAME>
+     <OBJECT1>INTF</OBJECT1>
+     <OBJ_NAME1>Z01OTC_II_SI_EDI850ORDERS_IN</OBJ_NAME1>
+     <OBJECT2>INTF</OBJECT2>
+     <OBJ_NAME2>Z01OTC_II_SI_EDI850ORDERS_IN</OBJ_NAME2>
+     <ID>&lt;portType&gt; SI_EDI850Orders_In http://bio-rad.com/OTC/EDI850 http://bio-rad.com/OTC/EDI850</ID>
+     <IFR_TYPE>portType</IFR_TYPE>
+     <IFR_NAME>SI_EDI850Orders_In</IFR_NAME>
+     <IFR_TEXT>Inbound interface for proxy OTC_IDD_0009</IFR_TEXT>
+     <IFR_LANGU>EN</IFR_LANGU>
+     <IFR_SCALE>-2</IFR_SCALE>
+     <R3_TYPE>INTF</R3_TYPE>
+     <R3_NAME>Z01OTC_II_SI_EDI850ORDERS_IN</R3_NAME>
+     <R3_TEXT>Inbound interface for proxy OTC_IDD_0009</R3_TEXT>
+     <CATEGORY>ifmmessif</CATEGORY>
+     <DIRECTION>I</DIRECTION>
+    </item>
+    <item>
+     <OBJECT>INTF</OBJECT>
+     <OBJ_NAME>Z01OTC_II_SI_EDI850ORDERS_IN</OBJ_NAME>
+     <OBJECT1>METH</OBJECT1>
+     <OBJ_NAME1>SI_EDI850ORDERS_IN</OBJ_NAME1>
+     <OBJECT2>EXCE</OBJECT2>
+     <OBJ_NAME2>Z01OTC_CX_STANDARD_MESSAGE_FAU</OBJ_NAME2>
+     <OBJECT_R>CLAS</OBJECT_R>
+     <OBJ_NAME_R>Z01OTC_CX_STANDARD_MESSAGE_FAU</OBJ_NAME_R>
+     <ID>&lt;fault&gt; p2.StandardMessageFault &lt;operation&gt; SI_EDI850Orders_In &lt;portType&gt; SI_EDI850Orders_In http://bio-rad.com/OTC/EDI850 http://bio-rad.com/OTC/EDI850</ID>
+     <IFR_TYPE>fault</IFR_TYPE>
+     <IFR_NAME>p2.StandardMessageFault</IFR_NAME>
+     <IFR_SCALE>-2</IFR_SCALE>
+     <R3_TYPE>EXCE</R3_TYPE>
+     <R3_SEQNUM>000001</R3_SEQNUM>
+    </item>
+    <item>
+     <OBJECT>INTF</OBJECT>
+     <OBJ_NAME>Z01OTC_II_SI_EDI850ORDERS_IN</OBJ_NAME>
+     <OBJECT1>METH</OBJECT1>
+     <OBJ_NAME1>SI_EDI850ORDERS_IN</OBJ_NAME1>
+     <OBJECT2>METH</OBJECT2>
+     <OBJ_NAME2>SI_EDI850ORDERS_IN</OBJ_NAME2>
+     <ID>&lt;operation&gt; SI_EDI850Orders_In &lt;portType&gt; SI_EDI850Orders_In http://bio-rad.com/OTC/EDI850 http://bio-rad.com/OTC/EDI850</ID>
+     <IFR_TYPE>operation</IFR_TYPE>
+     <IFR_NAME>SI_EDI850Orders_In</IFR_NAME>
+     <IFR_LANGU>EN</IFR_LANGU>
+     <IFR_SCALE>-2</IFR_SCALE>
+     <R3_TYPE>METH</R3_TYPE>
+     <R3_NAME>SI_EDI850ORDERS_IN</R3_NAME>
+     <R3_SEQNUM>000001</R3_SEQNUM>
+     <DIRECTION>I</DIRECTION>
+    </item>
+    <item>
+     <OBJECT>INTF</OBJECT>
+     <OBJ_NAME>Z01OTC_II_SI_EDI850ORDERS_IN</OBJ_NAME>
+     <OBJECT1>METH</OBJECT1>
+     <OBJ_NAME1>SI_EDI850ORDERS_IN</OBJ_NAME1>
+     <OBJECT2>PAIM</OBJECT2>
+     <OBJ_NAME2>INPUT</OBJ_NAME2>
+     <OBJECT_R>TABL</OBJECT_R>
+     <OBJ_NAME_R>Z01OTC_ORDERS05</OBJ_NAME_R>
+     <ID>&lt;input&gt; input &lt;operation&gt; SI_EDI850Orders_In &lt;portType&gt; SI_EDI850Orders_In http://bio-rad.com/OTC/EDI850 http://bio-rad.com/OTC/EDI850</ID>
+     <IFR_TYPE>PartInput</IFR_TYPE>
+     <IFR_NAME>input</IFR_NAME>
+     <IFR_SCALE>-2</IFR_SCALE>
+     <R3_TYPE>PAIM</R3_TYPE>
+     <R3_NAME>INPUT</R3_NAME>
+     <R3_SEQNUM>000001</R3_SEQNUM>
+    </item>
+   </PROXY_DATA>
+  </asx:values>
+ </asx:abap>
+</abapGit>

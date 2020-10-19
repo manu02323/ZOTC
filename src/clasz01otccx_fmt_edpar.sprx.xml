@@ -1,0 +1,88 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<abapGit version="v1.0.0" serializer="LCL_OBJECT_SPRX" serializer_version="v1.0.0">
+ <asx:abap xmlns:asx="http://www.sap.com/abapxml" version="1.0">
+  <asx:values>
+   <PROXY_HEADER>
+    <item>
+     <OBJECT>CLAS</OBJECT>
+     <OBJ_NAME>Z01OTCCX_FMT_EDPAR</OBJ_NAME>
+     <OBJECT_M>CLAS</OBJECT_M>
+     <OBJ_NAME_M>Z01OTCCX_FMT_EDPAR</OBJ_NAME_M>
+     <HASH_ID>E8FF1ECD04C78C7FF2A61FC566D0188419366E1F</HASH_ID>
+     <ID>&lt;message&gt; FMT_EDPAR http://bio-rad.com/OTC/EDIPartner http://bio-rad.com/OTC/EDIPartner</ID>
+     <IFR_GLOBAL>X</IFR_GLOBAL>
+     <IFR_TYPE>message</IFR_TYPE>
+     <IFR_NAME>FMT_EDPAR</IFR_NAME>
+     <IFR_NSPCE>http://bio-rad.com/OTC/EDIPartner</IFR_NSPCE>
+     <IFR_GNSPCE>http://bio-rad.com/OTC/EDIPartner</IFR_GNSPCE>
+     <GEN_VERS>0006</GEN_VERS>
+     <PREFIX>Z01OTC</PREFIX>
+     <CATEGORY>ifmfaultm</CATEGORY>
+     <X-ML_NSPCE>http://bio-rad.com/OTC/EDIPartner</X-ML_NSPCE>
+     <X-ML_NAME>FMT_EDPAR</X-ML_NAME>
+     <VERSION_ID>6e275ab5d6b911e3972e000001225726</VERSION_ID>
+    </item>
+   </PROXY_HEADER>
+   <PROXY_DATA>
+    <item>
+     <OBJECT>CLAS</OBJECT>
+     <OBJ_NAME>Z01OTCCX_FMT_EDPAR</OBJ_NAME>
+     <OBJECT1>ATTR</OBJECT1>
+     <OBJ_NAME1>ADDITION</OBJ_NAME1>
+     <OBJECT2>ATTR</OBJECT2>
+     <OBJ_NAME2>ADDITION</OBJ_NAME2>
+     <OBJECT_R>TABL</OBJECT_R>
+     <OBJ_NAME_R>Z01OTCEXCHANGE_LOG_DATA</OBJ_NAME_R>
+     <ID>&lt;element&gt; addition &lt;message&gt; FMT_EDPAR http://bio-rad.com/OTC/EDIPartner http://bio-rad.com/OTC/EDIPartner</ID>
+     <IFR_TYPE>element</IFR_TYPE>
+     <IFR_NAME>addition</IFR_NAME>
+     <IFR_TAGTYP>E</IFR_TAGTYP>
+     <IFR_MINOCC>1</IFR_MINOCC>
+     <IFR_MAXOCC>1</IFR_MAXOCC>
+     <IFR_SCALE>-2</IFR_SCALE>
+     <R3_TYPE>ATTR</R3_TYPE>
+     <R3_NAME>ADDITION</R3_NAME>
+     <R3_SEQNUM>000002</R3_SEQNUM>
+    </item>
+    <item>
+     <OBJECT>CLAS</OBJECT>
+     <OBJ_NAME>Z01OTCCX_FMT_EDPAR</OBJ_NAME>
+     <OBJECT1>ATTR</OBJECT1>
+     <OBJ_NAME1>STANDARD</OBJ_NAME1>
+     <OBJECT2>ATTR</OBJECT2>
+     <OBJ_NAME2>STANDARD</OBJ_NAME2>
+     <OBJECT_R>TABL</OBJECT_R>
+     <OBJ_NAME_R>Z01OTCEXCHANGE_FAULT_DATA</OBJ_NAME_R>
+     <ID>&lt;element&gt; standard &lt;message&gt; FMT_EDPAR http://bio-rad.com/OTC/EDIPartner http://bio-rad.com/OTC/EDIPartner</ID>
+     <IFR_TYPE>element</IFR_TYPE>
+     <IFR_NAME>standard</IFR_NAME>
+     <IFR_TAGTYP>E</IFR_TAGTYP>
+     <IFR_MINOCC>1</IFR_MINOCC>
+     <IFR_MAXOCC>1</IFR_MAXOCC>
+     <IFR_SCALE>-2</IFR_SCALE>
+     <R3_TYPE>ATTR</R3_TYPE>
+     <R3_NAME>STANDARD</R3_NAME>
+     <R3_SEQNUM>000001</R3_SEQNUM>
+    </item>
+    <item>
+     <OBJECT>CLAS</OBJECT>
+     <OBJ_NAME>Z01OTCCX_FMT_EDPAR</OBJ_NAME>
+     <OBJECT1>CLAS</OBJECT1>
+     <OBJ_NAME1>Z01OTCCX_FMT_EDPAR</OBJ_NAME1>
+     <OBJECT2>CLAS</OBJECT2>
+     <OBJ_NAME2>Z01OTCCX_FMT_EDPAR</OBJ_NAME2>
+     <ID>&lt;message&gt; FMT_EDPAR http://bio-rad.com/OTC/EDIPartner http://bio-rad.com/OTC/EDIPartner</ID>
+     <IFR_TYPE>message</IFR_TYPE>
+     <IFR_NAME>FMT_EDPAR</IFR_NAME>
+     <IFR_LANGU>EN</IFR_LANGU>
+     <IFR_SCALE>-2</IFR_SCALE>
+     <IFR_FAULT>X</IFR_FAULT>
+     <R3_TYPE>CLAS</R3_TYPE>
+     <R3_NAME>Z01OTCCX_FMT_EDPAR</R3_NAME>
+     <R3_TEXT>Proxy Class (generated)</R3_TEXT>
+     <CATEGORY>ifmfaultm</CATEGORY>
+    </item>
+   </PROXY_DATA>
+  </asx:values>
+ </asx:abap>
+</abapGit>

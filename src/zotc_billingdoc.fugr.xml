@@ -1,0 +1,32 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<abapGit version="v1.0.0" serializer="LCL_OBJECT_FUGR" serializer_version="v1.0.0">
+ <asx:abap xmlns:asx="http://www.sap.com/abapxml" version="1.0">
+  <asx:values>
+   <AREAT>FG for billing document</AREAT>
+   <INCLUDES>
+    <SOBJ_NAME>LZOTC_BILLINGDOCTOP</SOBJ_NAME>
+    <SOBJ_NAME>SAPLZOTC_BILLINGDOC</SOBJ_NAME>
+   </INCLUDES>
+   <FUNCTIONS>
+    <item>
+     <FUNCNAME>ZOTC_BILLINGDOC_CREATE</FUNCNAME>
+     <REMOTE_CALL>R</REMOTE_CALL>
+     <SHORT_TEXT>Create billing document from delivery number</SHORT_TEXT>
+     <CHANGING>
+      <RSCHA>
+       <PARAMETER>CHNG_BILLINGDATAIN</PARAMETER>
+       <TYP>ZOTC_TT_BILLINGDATAIN</TYP>
+      </RSCHA>
+     </CHANGING>
+     <DOCUMENTATION>
+      <RSFDO>
+       <PARAMETER>CHNG_BILLINGDATAIN</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Table type BAPIVBRK</STEXT>
+      </RSFDO>
+     </DOCUMENTATION>
+    </item>
+   </FUNCTIONS>
+  </asx:values>
+ </asx:abap>
+</abapGit>

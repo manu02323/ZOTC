@@ -1,0 +1,61 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<abapGit version="v1.0.0" serializer="LCL_OBJECT_ENHO" serializer_version="v1.0.0">
+ <asx:abap xmlns:asx="http://www.sap.com/abapxml" version="1.0">
+  <asx:values>
+   <TOOL>HOOK_IMPL</TOOL>
+   <SHORTTEXT>Declare Global Data for Pricing Routine</SHORTTEXT>
+   <ORIGINAL_OBJECT>
+    <PGMID>R3TR</PGMID>
+    <ORG_OBJ_TYPE>FUGR</ORG_OBJ_TYPE>
+    <ORG_OBJ_NAME>V61A</ORG_OBJ_NAME>
+    <ORG_MAIN_TYPE>FUGR</ORG_MAIN_TYPE>
+    <ORG_MAIN_NAME>V61A</ORG_MAIN_NAME>
+    <PROGRAMNAME>SAPLV61A</PROGRAMNAME>
+   </ORIGINAL_OBJECT>
+   <ENHANCEMENTS>
+    <ENH_HOOK_IMPL>
+     <PROGRAMNAME>SAPLV61A</PROGRAMNAME>
+     <ENHMODE>S</ENHMODE>
+     <FULL_NAME>\PR:SAPLV61A\IC:LV61ATOP\SE:END\EI</FULL_NAME>
+     <SOURCE>
+      <item>*----------------------------------------------------------------------*</item>
+      <item>* 22-OCT-14  JMAZUMD   E2DK902237  D2_OTC_EDD_0011CR D2_129 Changes-   *</item>
+      <item>*                                  Declare 5th Auxilary field          *</item>
+      <item>*----------------------------------------------------------------------*</item>
+      <item>DATA: r_doctype_902  TYPE RANGE OF vbtyp, &quot; Range Table for Document Type</item>
+      <item>r_doctype_904  TYPE RANGE OF vbtyp, &quot; Range Table for Document Type</item>
+      <item>r_doctype_906  TYPE RANGE OF vbtyp. &quot; Range Table for Document Type</item>
+      <item>*Begin of insert D2</item>
+      <item>data: zwork1 TYPE komv-kwert,</item>
+      <item>zwork2 TYPE komv-kwert,</item>
+      <item>zwork3 TYPE komv-kwert,</item>
+      <item>zswork4 TYPE komv-kwert,</item>
+      <item>zswork5 TYPE komv-kwert.  &quot;Cr D2_129</item>
+      <item>*End of insert D2</item>
+     </SOURCE>
+    </ENH_HOOK_IMPL>
+   </ENHANCEMENTS>
+   <SPACES>
+    <item>
+     <FULL_NAME>\PR:SAPLV61A\IC:LV61ATOP\SE:END\EI</FULL_NAME>
+     <SPACES>
+      <item>0</item>
+      <item>0</item>
+      <item>0</item>
+      <item>0</item>
+      <item>0</item>
+      <item>6</item>
+      <item>6</item>
+      <item>0</item>
+      <item>0</item>
+      <item>6</item>
+      <item>6</item>
+      <item>6</item>
+      <item>6</item>
+      <item>0</item>
+     </SPACES>
+    </item>
+   </SPACES>
+  </asx:values>
+ </asx:abap>
+</abapGit>

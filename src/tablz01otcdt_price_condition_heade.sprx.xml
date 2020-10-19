@@ -1,0 +1,170 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<abapGit version="v1.0.0" serializer="LCL_OBJECT_SPRX" serializer_version="v1.0.0">
+ <asx:abap xmlns:asx="http://www.sap.com/abapxml" version="1.0">
+  <asx:values>
+   <PROXY_HEADER>
+    <item>
+     <OBJECT>TABL</OBJECT>
+     <OBJ_NAME>Z01OTCDT_PRICE_CONDITION_HEADE</OBJ_NAME>
+     <OBJECT_M>TABL</OBJECT_M>
+     <OBJ_NAME_M>Z01OTCDT_PRICE_CONDITION</OBJ_NAME_M>
+     <HASH_ID>79435ED5EF95194E047BA261335A4288D80926C4</HASH_ID>
+     <ID>&lt;type&gt; Header &lt;element&gt; Header &lt;type&gt; DT_PriceCondition http://bio-rad.com/OTC/TransferPriceLoad http://bio-rad.com/OTC/TransferPriceLoad</ID>
+     <IFR_TYPE>type</IFR_TYPE>
+     <IFR_NAME>Header</IFR_NAME>
+     <IFR_NSPCE>http://bio-rad.com/OTC/TransferPriceLoad</IFR_NSPCE>
+     <IFR_GNSPCE>http://bio-rad.com/OTC/TransferPriceLoad</IFR_GNSPCE>
+     <GEN_VERS>0005</GEN_VERS>
+     <PREFIX>Z01OTC</PREFIX>
+     <CATEGORY>ifmtypedef</CATEGORY>
+     <X-ML_NSPCE>http://bio-rad.com/OTC/TransferPriceLoad</X-ML_NSPCE>
+     <X-ML_NAME>Header</X-ML_NAME>
+    </item>
+   </PROXY_HEADER>
+   <PROXY_DATA>
+    <item>
+     <OBJECT>TABL</OBJECT>
+     <OBJ_NAME>Z01OTCDT_PRICE_CONDITION_HEADE</OBJ_NAME>
+     <OBJECT1>FIEL</OBJECT1>
+     <OBJ_NAME1>KAPPL</OBJ_NAME1>
+     <OBJECT2>FIEL</OBJECT2>
+     <OBJ_NAME2>KAPPL</OBJ_NAME2>
+     <ID>&lt;element&gt; KAPPL &lt;type&gt; Header &lt;element&gt; Header &lt;type&gt; DT_PriceCondition http://bio-rad.com/OTC/TransferPriceLoad http://bio-rad.com/OTC/TransferPriceLoad</ID>
+     <IFR_TYPE>element</IFR_TYPE>
+     <IFR_NAME>KAPPL</IFR_NAME>
+     <IFR_TEXT>Application</IFR_TEXT>
+     <IFR_LANGU>EN</IFR_LANGU>
+     <IFR_TAGTYP>E</IFR_TAGTYP>
+     <IFR_MINOCC>1</IFR_MINOCC>
+     <IFR_MAXOCC>1</IFR_MAXOCC>
+     <IFR_XSDTYP>string</IFR_XSDTYP>
+     <IFR_MAXLEN>1</IFR_MAXLEN>
+     <IFR_SCALE>-2</IFR_SCALE>
+     <R3_TYPE>FIEL</R3_TYPE>
+     <R3_NAME>KAPPL</R3_NAME>
+     <R3_TEXT>Application</R3_TEXT>
+     <R3_DATATYP>CHAR</R3_DATATYP>
+     <R3_LENGTH>000001</R3_LENGTH>
+     <R3_SEQNUM>000001</R3_SEQNUM>
+    </item>
+    <item>
+     <OBJECT>TABL</OBJECT>
+     <OBJ_NAME>Z01OTCDT_PRICE_CONDITION_HEADE</OBJ_NAME>
+     <OBJECT1>FIEL</OBJECT1>
+     <OBJ_NAME1>KOTABNR</OBJ_NAME1>
+     <OBJECT2>FIEL</OBJECT2>
+     <OBJ_NAME2>KOTABNR</OBJ_NAME2>
+     <ID>&lt;element&gt; KOTABNR &lt;type&gt; Header &lt;element&gt; Header &lt;type&gt; DT_PriceCondition http://bio-rad.com/OTC/TransferPriceLoad http://bio-rad.com/OTC/TransferPriceLoad</ID>
+     <IFR_TYPE>element</IFR_TYPE>
+     <IFR_NAME>KOTABNR</IFR_NAME>
+     <IFR_TEXT>Condition Table</IFR_TEXT>
+     <IFR_LANGU>EN</IFR_LANGU>
+     <IFR_TAGTYP>E</IFR_TAGTYP>
+     <IFR_MINOCC>1</IFR_MINOCC>
+     <IFR_MAXOCC>1</IFR_MAXOCC>
+     <IFR_XSDTYP>string</IFR_XSDTYP>
+     <IFR_MAXLEN>4</IFR_MAXLEN>
+     <IFR_SCALE>-2</IFR_SCALE>
+     <R3_TYPE>FIEL</R3_TYPE>
+     <R3_NAME>KOTABNR</R3_NAME>
+     <R3_TEXT>Condition Table</R3_TEXT>
+     <R3_DATATYP>CHAR</R3_DATATYP>
+     <R3_LENGTH>000004</R3_LENGTH>
+     <R3_SEQNUM>000004</R3_SEQNUM>
+    </item>
+    <item>
+     <OBJECT>TABL</OBJECT>
+     <OBJ_NAME>Z01OTCDT_PRICE_CONDITION_HEADE</OBJ_NAME>
+     <OBJECT1>FIEL</OBJECT1>
+     <OBJ_NAME1>KSCHL</OBJ_NAME1>
+     <OBJECT2>FIEL</OBJECT2>
+     <OBJ_NAME2>KSCHL</OBJ_NAME2>
+     <ID>&lt;element&gt; KSCHL &lt;type&gt; Header &lt;element&gt; Header &lt;type&gt; DT_PriceCondition http://bio-rad.com/OTC/TransferPriceLoad http://bio-rad.com/OTC/TransferPriceLoad</ID>
+     <IFR_TYPE>element</IFR_TYPE>
+     <IFR_NAME>KSCHL</IFR_NAME>
+     <IFR_TEXT>Condition Type</IFR_TEXT>
+     <IFR_LANGU>EN</IFR_LANGU>
+     <IFR_TAGTYP>E</IFR_TAGTYP>
+     <IFR_MINOCC>1</IFR_MINOCC>
+     <IFR_MAXOCC>1</IFR_MAXOCC>
+     <IFR_XSDTYP>string</IFR_XSDTYP>
+     <IFR_MAXLEN>4</IFR_MAXLEN>
+     <IFR_SCALE>-2</IFR_SCALE>
+     <R3_TYPE>FIEL</R3_TYPE>
+     <R3_NAME>KSCHL</R3_NAME>
+     <R3_TEXT>Condition Type</R3_TEXT>
+     <R3_DATATYP>CHAR</R3_DATATYP>
+     <R3_LENGTH>000004</R3_LENGTH>
+     <R3_SEQNUM>000002</R3_SEQNUM>
+    </item>
+    <item>
+     <OBJECT>TABL</OBJECT>
+     <OBJ_NAME>Z01OTCDT_PRICE_CONDITION_HEADE</OBJ_NAME>
+     <OBJECT1>FIEL</OBJECT1>
+     <OBJ_NAME1>KVEWE</OBJ_NAME1>
+     <OBJECT2>FIEL</OBJECT2>
+     <OBJ_NAME2>KVEWE</OBJ_NAME2>
+     <ID>&lt;element&gt; KVEWE &lt;type&gt; Header &lt;element&gt; Header &lt;type&gt; DT_PriceCondition http://bio-rad.com/OTC/TransferPriceLoad http://bio-rad.com/OTC/TransferPriceLoad</ID>
+     <IFR_TYPE>element</IFR_TYPE>
+     <IFR_NAME>KVEWE</IFR_NAME>
+     <IFR_TEXT>Usage</IFR_TEXT>
+     <IFR_LANGU>EN</IFR_LANGU>
+     <IFR_TAGTYP>E</IFR_TAGTYP>
+     <IFR_MINOCC>1</IFR_MINOCC>
+     <IFR_MAXOCC>1</IFR_MAXOCC>
+     <IFR_XSDTYP>string</IFR_XSDTYP>
+     <IFR_MAXLEN>1</IFR_MAXLEN>
+     <IFR_SCALE>-2</IFR_SCALE>
+     <R3_TYPE>FIEL</R3_TYPE>
+     <R3_NAME>KVEWE</R3_NAME>
+     <R3_TEXT>Usage</R3_TEXT>
+     <R3_DATATYP>CHAR</R3_DATATYP>
+     <R3_LENGTH>000001</R3_LENGTH>
+     <R3_SEQNUM>000003</R3_SEQNUM>
+    </item>
+    <item>
+     <OBJECT>TABL</OBJECT>
+     <OBJ_NAME>Z01OTCDT_PRICE_CONDITION_HEADE</OBJ_NAME>
+     <OBJECT1>FIEL</OBJECT1>
+     <OBJ_NAME1>SENDER</OBJ_NAME1>
+     <OBJECT2>FIEL</OBJECT2>
+     <OBJ_NAME2>SENDER</OBJ_NAME2>
+     <ID>&lt;element&gt; Sender &lt;type&gt; Header &lt;element&gt; Header &lt;type&gt; DT_PriceCondition http://bio-rad.com/OTC/TransferPriceLoad http://bio-rad.com/OTC/TransferPriceLoad</ID>
+     <IFR_TYPE>element</IFR_TYPE>
+     <IFR_NAME>Sender</IFR_NAME>
+     <IFR_TEXT>Sender system</IFR_TEXT>
+     <IFR_LANGU>EN</IFR_LANGU>
+     <IFR_TAGTYP>E</IFR_TAGTYP>
+     <IFR_MINOCC>1</IFR_MINOCC>
+     <IFR_MAXOCC>1</IFR_MAXOCC>
+     <IFR_XSDTYP>string</IFR_XSDTYP>
+     <IFR_MAXLEN>4</IFR_MAXLEN>
+     <IFR_SCALE>-2</IFR_SCALE>
+     <R3_TYPE>FIEL</R3_TYPE>
+     <R3_NAME>SENDER</R3_NAME>
+     <R3_TEXT>Sender system</R3_TEXT>
+     <R3_DATATYP>CHAR</R3_DATATYP>
+     <R3_LENGTH>000004</R3_LENGTH>
+     <R3_SEQNUM>000005</R3_SEQNUM>
+    </item>
+    <item>
+     <OBJECT>TABL</OBJECT>
+     <OBJ_NAME>Z01OTCDT_PRICE_CONDITION_HEADE</OBJ_NAME>
+     <OBJECT1>TABL</OBJECT1>
+     <OBJ_NAME1>Z01OTCDT_PRICE_CONDITION_HEADE</OBJ_NAME1>
+     <OBJECT2>TABL</OBJECT2>
+     <OBJ_NAME2>Z01OTCDT_PRICE_CONDITION_HEADE</OBJ_NAME2>
+     <ID>&lt;type&gt; Header &lt;element&gt; Header &lt;type&gt; DT_PriceCondition http://bio-rad.com/OTC/TransferPriceLoad http://bio-rad.com/OTC/TransferPriceLoad</ID>
+     <IFR_TYPE>type</IFR_TYPE>
+     <IFR_NAME>Header</IFR_NAME>
+     <IFR_LANGU>EN</IFR_LANGU>
+     <IFR_SCALE>-2</IFR_SCALE>
+     <R3_TYPE>TABL</R3_TYPE>
+     <R3_NAME>Z01OTCDT_PRICE_CONDITION_HEADE</R3_NAME>
+     <R3_TEXT>Proxy Structure (generated)</R3_TEXT>
+     <CATEGORY>ifmtypedef</CATEGORY>
+    </item>
+   </PROXY_DATA>
+  </asx:values>
+ </asx:abap>
+</abapGit>

@@ -1,0 +1,117 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<abapGit version="v1.0.0" serializer="LCL_OBJECT_ENHO" serializer_version="v1.0.0">
+ <asx:abap xmlns:asx="http://www.sap.com/abapxml" version="1.0">
+  <asx:values>
+   <TOOL>HOOK_IMPL</TOOL>
+   <SHORTTEXT>Posting Date Derived from  Segment E1EDK03 (17)</SHORTTEXT>
+   <ORIGINAL_OBJECT>
+    <PGMID>R3TR</PGMID>
+    <ORG_OBJ_TYPE>FUGR</ORG_OBJ_TYPE>
+    <ORG_OBJ_NAME>FRAD</ORG_OBJ_NAME>
+    <ORG_MAIN_TYPE>FUGR</ORG_MAIN_TYPE>
+    <ORG_MAIN_NAME>FRAD</ORG_MAIN_NAME>
+    <PROGRAMNAME>SAPLFRAD</PROGRAMNAME>
+   </ORIGINAL_OBJECT>
+   <ENHANCEMENTS>
+    <ENH_HOOK_IMPL>
+     <PROGRAMNAME>SAPLFRAD</PROGRAMNAME>
+     <ENHMODE>D</ENHMODE>
+     <FULL_NAME>\PR:SAPLFRAD\FO:DOCUMENT_HEADER\SE:END\EI</FULL_NAME>
+     <SOURCE>
+      <item>*Program    : ZIM_POSTING_DATE_AVIK                                   *</item>
+      <item>*Title      : Posting Date Derived from  Segment E1EDK03 (17)         *</item>
+      <item>*Developer  : Amlan J Mohapatra                                       *</item>
+      <item>*Object type: Enhancements                                            *</item>
+      <item>*SAP Release: SAP ECC 6.0                                             *</item>
+      <item>*---------------------------------------------------------------------*</item>
+      <item>*WRICEF ID: D2_OTC_IDD_0062                                           *</item>
+      <item>*---------------------------------------------------------------------*</item>
+      <item>*Description: ACH Payments EDI 820                                    *</item>
+      <item>*                                                                     *</item>
+      <item>*---------------------------------------------------------------------*</item>
+      <item>*MODIFICATION HISTORY:</item>
+      <item>*=====================================================================*</item>
+      <item>*Date           User        Transport       Description</item>
+      <item>*=========== ============== ============== ===========================*</item>
+      <item>*16-MAY-2016   AMOHAPA      E2DK917830     Defect#1474(Posting date for*</item>
+      <item>*                                          ACH Idoc will be derived from*</item>
+      <item>*                                          E1EDK03(17)segment which     *</item>
+      <item>*                                          should match with EBS posting*</item>
+      <item>*                                          date                         *</item>
+      <item>*---------------------------------------------------------------------*</item>
+      <item>** &amp; -- Local Data</item>
+      <item>DATA lv_fval_budat TYPE bdc_fval.</item>
+      <item/>
+      <item>** &amp; -- Local Constant</item>
+      <item>CONSTANTS lc_fnam_budat TYPE bdc_fnam VALUE &apos;BKPF-BUDAT&apos;.</item>
+      <item/>
+      <item>** &amp; -- Local Field Symbol</item>
+      <item>FIELD-SYMBOLS &lt;lfs_ftpost&gt; TYPE ftpost.</item>
+      <item/>
+      <item>** &amp; -- over-write posting date</item>
+      <item>IF i_avik-bvdat is NOT INITIAL.</item>
+      <item>WRITE i_avik-bvdat TO lv_fval_budat DD/MM/YYYY.</item>
+      <item>**As table ftpost is having bdc field details,using binary search on it may</item>
+      <item>**hamper the data pattern.</item>
+      <item>READ TABLE ftpost ASSIGNING &lt;lfs_ftpost&gt;</item>
+      <item>WITH KEY fnam = lc_fnam_budat.</item>
+      <item>IF sy-subrc EQ 0.</item>
+      <item>&lt;lfs_ftpost&gt;-fval = lv_fval_budat.</item>
+      <item>ENDIF.</item>
+      <item>ENDIF.</item>
+      <item/>
+     </SOURCE>
+    </ENH_HOOK_IMPL>
+   </ENHANCEMENTS>
+   <SPACES>
+    <item>
+     <FULL_NAME>\PR:SAPLFRAD\FO:DOCUMENT_HEADER\SE:END\EI</FULL_NAME>
+     <SPACES>
+      <item>0</item>
+      <item>0</item>
+      <item>0</item>
+      <item>0</item>
+      <item>0</item>
+      <item>0</item>
+      <item>0</item>
+      <item>0</item>
+      <item>0</item>
+      <item>0</item>
+      <item>0</item>
+      <item>0</item>
+      <item>0</item>
+      <item>0</item>
+      <item>0</item>
+      <item>0</item>
+      <item>0</item>
+      <item>0</item>
+      <item>0</item>
+      <item>0</item>
+      <item>0</item>
+      <item>0</item>
+      <item>0</item>
+      <item>0</item>
+      <item>0</item>
+      <item>0</item>
+      <item>0</item>
+      <item>0</item>
+      <item>0</item>
+      <item>0</item>
+      <item>0</item>
+      <item>0</item>
+      <item>4</item>
+      <item>0</item>
+      <item>0</item>
+      <item>4</item>
+      <item>11</item>
+      <item>4</item>
+      <item>5</item>
+      <item>4</item>
+      <item>0</item>
+      <item>0</item>
+     </SPACES>
+    </item>
+   </SPACES>
+  </asx:values>
+ </asx:abap>
+</abapGit>

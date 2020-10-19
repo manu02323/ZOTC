@@ -1,0 +1,253 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<abapGit version="v1.0.0" serializer="LCL_OBJECT_ENHO" serializer_version="v1.0.0">
+ <asx:abap xmlns:asx="http://www.sap.com/abapxml" version="1.0">
+  <asx:values>
+   <TOOL>HOOK_IMPL</TOOL>
+   <SHORTTEXT>User Exit for Incompletion Log</SHORTTEXT>
+   <ORIGINAL_OBJECT>
+    <PGMID>R3TR</PGMID>
+    <ORG_OBJ_TYPE>PROG</ORG_OBJ_TYPE>
+    <ORG_OBJ_NAME>SAPMV45A</ORG_OBJ_NAME>
+    <ORG_MAIN_TYPE>PROG</ORG_MAIN_TYPE>
+    <ORG_MAIN_NAME>SAPMV45A</ORG_MAIN_NAME>
+    <PROGRAMNAME>SAPMV45A</PROGRAMNAME>
+   </ORIGINAL_OBJECT>
+   <ENHANCEMENTS>
+    <ENH_HOOK_IMPL>
+     <PROGRAMNAME>SAPMV45A</PROGRAMNAME>
+     <ENHMODE>D</ENHMODE>
+     <FULL_NAME>\PR:SAPMV45A\FO:USEREXIT_SAVE_DOCUMENT_PREPARE\SE:BEGIN\EI</FULL_NAME>
+     <SOURCE>
+      <item>*************************************************************************</item>
+      <item>** PROGRAM    :  ZIM_OTC_EDD_0211 (Enhancement)                         *</item>
+      <item>** TITLE      :  User Exit for Incompletion Log                         *</item>
+      <item>** DEVELOPER  :  Dhanasekar Arumugam                                    *</item>
+      <item>** OBJECT TYPE:  ENHANCEMENT                                            *</item>
+      <item>** SAP RELEASE:  SAP ECC 7.0                                            *</item>
+      <item>**----------------------------------------------------------------------*</item>
+      <item>** WRICEF ID:  D3_OTC_EDD_0211                                          *</item>
+      <item>**----------------------------------------------------------------------*</item>
+      <item>** DESCRIPTION:  User Exit for Incompletion Log                         *</item>
+      <item>**----------------------------------------------------------------------*</item>
+      <item>** MODIFICATION HISTORY:                                                *</item>
+      <item>**======================================================================*</item>
+      <item>** DATE        USER     TRANSPORT  DESCRIPTION                          *</item>
+      <item>** =========== ======== ========== =====================================*</item>
+      <item>** 18-OCT-2017 DARUMUG  E1DK931373 SCTASK0519256 Prevent delivery       *</item>
+      <item>**                                 creation if batch not determined     *</item>
+      <item>**                                 in sales order                       *</item>
+      <item>** 12-Nov-2017 BGUNDAB  E1DK931373 Dft#4032 Move code from this user    *</item>
+      <item>**                                 exit to before save order            *</item>
+      <item>**&amp;---------------------------------------------------------------------*</item>
+      <item>*Begin of defect # 4032 by bgundab to comment the code here and move to another user exit</item>
+      <item>*</item>
+      <item>*data:</item>
+      <item>*  lwa_emi_status        type zdev_enh_status, &quot; Enhancement Status</item>
+      <item>*  li_emi_status         type standard table of zdev_enh_status, &quot; Enhancement Status</item>
+      <item>*  lv_salesorg           type vkorg,</item>
+      <item>*  lv_dc                 type vtweg.</item>
+      <item>*</item>
+      <item>*constants:</item>
+      <item>*  lc_emi_edd_0211       type z_enhancement value &apos;D3_OTC_EDD_0211&apos;, &quot; Enhancement No.</item>
+      <item>*  lc_null_enh           type z_criteria    value &apos;NULL&apos;,            &quot; Enh. Criteria</item>
+      <item>*  lc_salesorg           type char10        value &apos;VKORG_CH&apos;,        &quot; VKORG</item>
+      <item>*  lc_dc                 type char10        value &apos;VTWEG&apos;,           &quot; VTWEG</item>
+      <item>*  lc_matgrp2            type char10        value &apos;MVGR1_GRP2&apos;,</item>
+      <item>*  lc_fehgr              type char10        value &apos;FEHGR&apos;,</item>
+      <item>*  lc_statg              type char10        value &apos;STATG&apos;,</item>
+      <item>*  lc_tbnam              type char10        value &apos;VBAP&apos;,</item>
+      <item>*  lc_fdnam              type char10        value &apos;CHARG&apos;,</item>
+      <item>*  lc_fcode              type char10        value &apos;PKAU&apos;,</item>
+      <item>*  lc_updkz              type char1         value &apos;I&apos;.</item>
+      <item>*</item>
+      <item>** Get Sales Orgs and DC details from EMI</item>
+      <item>*call function &apos;ZDEV_ENHANCEMENT_STATUS_CHECK&apos;</item>
+      <item>*  exporting</item>
+      <item>*    iv_enhancement_no = lc_emi_edd_0211</item>
+      <item>*  tables</item>
+      <item>*    tt_enh_status     = li_emi_status.</item>
+      <item>*</item>
+      <item>*sort li_emi_status by criteria active.</item>
+      <item>*</item>
+      <item>*&quot;Check whether the enhancement is Active</item>
+      <item>*read table li_emi_status with key</item>
+      <item>*                         criteria = lc_null_enh</item>
+      <item>*                         active = abap_true</item>
+      <item>*                         binary search</item>
+      <item>*                         transporting no fields.</item>
+      <item>*if sy-subrc eq 0.</item>
+      <item>*&quot;Loop thru xvbap to check the Sales Org and DC</item>
+      <item>*loop at xvbap.</item>
+      <item>*  if xvbap-charg is initial.</item>
+      <item>*    if li_emi_status is not initial.</item>
+      <item>*</item>
+      <item>*        &quot;Check all the Sales Orgs and DC&apos;s</item>
+      <item>*        loop at li_emi_status into lwa_emi_status</item>
+      <item>*                              where criteria = lc_salesorg.</item>
+      <item>*          split lwa_emi_status-sel_high at &apos;_&apos; into lv_salesorg lv_dc.</item>
+      <item>*          &quot;Check Sales Orgs and DC&apos;s</item>
+      <item>*          if lv_salesorg = vbak-vkorg and</item>
+      <item>*             lv_dc = vbak-vtweg.</item>
+      <item>*            &quot;Check Material Group 2</item>
+      <item>*            read table li_emi_status with key</item>
+      <item>*                               criteria = lc_matgrp2</item>
+      <item>*                               sel_high = xvbap-mvgr2  transporting no fields.</item>
+      <item>*            if sy-subrc eq 0.</item>
+      <item>*              xvbuv-vbeln  = xvbap-vbeln.</item>
+      <item>*              xvbuv-posnr  = xvbap-posnr.</item>
+      <item>*              xvbuv-tbnam  = lc_tbnam.</item>
+      <item>*              xvbuv-fdnam  = lc_fdnam.</item>
+      <item>*              read table li_emi_status into lwa_emi_status</item>
+      <item>*                                       with key criteria = lc_fehgr.</item>
+      <item>*              if sy-subrc eq 0.</item>
+      <item>*                 xvbuv-fehgr = lwa_emi_status-sel_high.</item>
+      <item>*              endif.</item>
+      <item>*</item>
+      <item>*              read table li_emi_status into lwa_emi_status</item>
+      <item>*                                       with key criteria = lc_statg.</item>
+      <item>*              if sy-subrc eq 0.</item>
+      <item>*                 xvbuv-statg = lwa_emi_status-sel_high.</item>
+      <item>*                 xvbuv-fcode = lc_fcode.</item>
+      <item>*                 xvbuv-updkz = lc_updkz.</item>
+      <item>*              endif.</item>
+      <item>*</item>
+      <item>*              &quot;Check if incompletion log exists already</item>
+      <item>*              read table xvbuv with key  vbeln  = xvbap-vbeln</item>
+      <item>*                                         posnr  = xvbap-posnr</item>
+      <item>*                                         tbnam  = lc_tbnam</item>
+      <item>*                                         fdnam  = lc_fdnam transporting no fields.</item>
+      <item>*              if sy-subrc ne 0.</item>
+      <item>*                append xvbuv.</item>
+      <item>*              endif.</item>
+      <item>*            endif.</item>
+      <item>*          endif.</item>
+      <item>*        endloop.</item>
+      <item>*      endif.</item>
+      <item>*    endif.</item>
+      <item>*</item>
+      <item>*endloop.</item>
+      <item>*endif.</item>
+      <item>*End of defect # 4032 by bgundab to comment the code here and move to another user exit</item>
+     </SOURCE>
+    </ENH_HOOK_IMPL>
+   </ENHANCEMENTS>
+   <SPACES>
+    <item>
+     <FULL_NAME>\PR:SAPMV45A\FO:USEREXIT_SAVE_DOCUMENT_PREPARE\SE:BEGIN\EI</FULL_NAME>
+     <SPACES>
+      <item>0</item>
+      <item>0</item>
+      <item>0</item>
+      <item>0</item>
+      <item>0</item>
+      <item>0</item>
+      <item>0</item>
+      <item>0</item>
+      <item>0</item>
+      <item>0</item>
+      <item>0</item>
+      <item>0</item>
+      <item>0</item>
+      <item>0</item>
+      <item>0</item>
+      <item>0</item>
+      <item>0</item>
+      <item>0</item>
+      <item>0</item>
+      <item>0</item>
+      <item>0</item>
+      <item>0</item>
+      <item>0</item>
+      <item>0</item>
+      <item>0</item>
+      <item>0</item>
+      <item>0</item>
+      <item>0</item>
+      <item>0</item>
+      <item>0</item>
+      <item>0</item>
+      <item>0</item>
+      <item>0</item>
+      <item>0</item>
+      <item>0</item>
+      <item>0</item>
+      <item>0</item>
+      <item>0</item>
+      <item>0</item>
+      <item>0</item>
+      <item>0</item>
+      <item>0</item>
+      <item>0</item>
+      <item>0</item>
+      <item>0</item>
+      <item>0</item>
+      <item>0</item>
+      <item>0</item>
+      <item>0</item>
+      <item>0</item>
+      <item>0</item>
+      <item>0</item>
+      <item>0</item>
+      <item>0</item>
+      <item>0</item>
+      <item>0</item>
+      <item>0</item>
+      <item>0</item>
+      <item>0</item>
+      <item>0</item>
+      <item>0</item>
+      <item>0</item>
+      <item>0</item>
+      <item>0</item>
+      <item>0</item>
+      <item>0</item>
+      <item>0</item>
+      <item>0</item>
+      <item>0</item>
+      <item>0</item>
+      <item>0</item>
+      <item>0</item>
+      <item>0</item>
+      <item>0</item>
+      <item>0</item>
+      <item>0</item>
+      <item>0</item>
+      <item>0</item>
+      <item>0</item>
+      <item>0</item>
+      <item>0</item>
+      <item>0</item>
+      <item>0</item>
+      <item>0</item>
+      <item>0</item>
+      <item>0</item>
+      <item>0</item>
+      <item>0</item>
+      <item>0</item>
+      <item>0</item>
+      <item>0</item>
+      <item>0</item>
+      <item>0</item>
+      <item>0</item>
+      <item>0</item>
+      <item>0</item>
+      <item>0</item>
+      <item>0</item>
+      <item>0</item>
+      <item>0</item>
+      <item>0</item>
+      <item>0</item>
+      <item>0</item>
+      <item>0</item>
+      <item>0</item>
+      <item>0</item>
+      <item>0</item>
+      <item>0</item>
+      <item>0</item>
+      <item>0</item>
+     </SPACES>
+    </item>
+   </SPACES>
+  </asx:values>
+ </asx:abap>
+</abapGit>

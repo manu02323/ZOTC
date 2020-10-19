@@ -1,0 +1,133 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<abapGit version="v1.0.0" serializer="LCL_OBJECT_SPRX" serializer_version="v1.0.0">
+ <asx:abap xmlns:asx="http://www.sap.com/abapxml" version="1.0">
+  <asx:values>
+   <PROXY_HEADER>
+    <item>
+     <OBJECT>TABL</OBJECT>
+     <OBJ_NAME>Z01OTC_ORDERS05_E1EDC03</OBJ_NAME>
+     <OBJECT_M>INTF</OBJECT_M>
+     <OBJ_NAME_M>Z01OTC_II_SI_EDI850ORDERS_IN</OBJ_NAME_M>
+     <HASH_ID>62182D90D09D3D96AF5DAFBE3F7944F716E9E8D8</HASH_ID>
+     <ID>&lt;type&gt; ORDERS05.E1EDC03  SI_EDI850Orders_In(http://bio-rad.com/OTC/EDI850)</ID>
+     <IFR_TYPE>type</IFR_TYPE>
+     <IFR_NAME>ORDERS05.E1EDC03</IFR_NAME>
+     <IFR_GNSPCE>SI_EDI850Orders_In(http://bio-rad.com/OTC/EDI850)</IFR_GNSPCE>
+     <GEN_VERS>0005</GEN_VERS>
+     <PREFIX>Z01OTC_</PREFIX>
+     <CATEGORY>ifmtypedef</CATEGORY>
+     <X-ML_NAME>ORDERS05.E1EDC03</X-ML_NAME>
+    </item>
+   </PROXY_HEADER>
+   <PROXY_DATA>
+    <item>
+     <OBJECT>TABL</OBJECT>
+     <OBJ_NAME>Z01OTC_ORDERS05_E1EDC03</OBJ_NAME>
+     <OBJECT1>FIEL</OBJECT1>
+     <OBJ_NAME1>DATUM</OBJ_NAME1>
+     <OBJECT2>FIEL</OBJECT2>
+     <OBJ_NAME2>DATUM</OBJ_NAME2>
+     <ID>&lt;element&gt; DATUM &lt;type&gt; ORDERS05.E1EDC03  SI_EDI850Orders_In(http://bio-rad.com/OTC/EDI850)</ID>
+     <IFR_TYPE>element</IFR_TYPE>
+     <IFR_NAME>DATUM</IFR_NAME>
+     <IFR_TEXT>Date</IFR_TEXT>
+     <IFR_TAGTYP>E</IFR_TAGTYP>
+     <IFR_MAXOCC>1</IFR_MAXOCC>
+     <IFR_OPTNL>X</IFR_OPTNL>
+     <IFR_XSDTYP>string</IFR_XSDTYP>
+     <IFR_MAXLEN>8</IFR_MAXLEN>
+     <IFR_SCALE>-2</IFR_SCALE>
+     <R3_TYPE>FIEL</R3_TYPE>
+     <R3_NAME>DATUM</R3_NAME>
+     <R3_TEXT>Date</R3_TEXT>
+     <R3_DATATYP>CHAR</R3_DATATYP>
+     <R3_LENGTH>000008</R3_LENGTH>
+     <R3_SEQNUM>000002</R3_SEQNUM>
+    </item>
+    <item>
+     <OBJECT>TABL</OBJECT>
+     <OBJ_NAME>Z01OTC_ORDERS05_E1EDC03</OBJ_NAME>
+     <OBJECT1>FIEL</OBJECT1>
+     <OBJ_NAME1>IDDAT</OBJ_NAME1>
+     <OBJECT2>FIEL</OBJECT2>
+     <OBJ_NAME2>IDDAT</OBJ_NAME2>
+     <ID>&lt;element&gt; IDDAT &lt;type&gt; ORDERS05.E1EDC03  SI_EDI850Orders_In(http://bio-rad.com/OTC/EDI850)</ID>
+     <IFR_TYPE>element</IFR_TYPE>
+     <IFR_NAME>IDDAT</IFR_NAME>
+     <IFR_TEXT>Qualifier for IDOC date segment</IFR_TEXT>
+     <IFR_TAGTYP>E</IFR_TAGTYP>
+     <IFR_MAXOCC>1</IFR_MAXOCC>
+     <IFR_OPTNL>X</IFR_OPTNL>
+     <IFR_XSDTYP>string</IFR_XSDTYP>
+     <IFR_MAXLEN>3</IFR_MAXLEN>
+     <IFR_SCALE>-2</IFR_SCALE>
+     <R3_TYPE>FIEL</R3_TYPE>
+     <R3_NAME>IDDAT</R3_NAME>
+     <R3_TEXT>Qualifier for IDOC date segment</R3_TEXT>
+     <R3_DATATYP>CHAR</R3_DATATYP>
+     <R3_LENGTH>000003</R3_LENGTH>
+     <R3_SEQNUM>000001</R3_SEQNUM>
+    </item>
+    <item>
+     <OBJECT>TABL</OBJECT>
+     <OBJ_NAME>Z01OTC_ORDERS05_E1EDC03</OBJ_NAME>
+     <OBJECT1>FIEL</OBJECT1>
+     <OBJ_NAME1>SEGMENT</OBJ_NAME1>
+     <OBJECT2>FIEL</OBJECT2>
+     <OBJ_NAME2>SEGMENT</OBJ_NAME2>
+     <ID>&lt;attribute&gt; SEGMENT &lt;type&gt; ORDERS05.E1EDC03  SI_EDI850Orders_In(http://bio-rad.com/OTC/EDI850)</ID>
+     <IFR_TYPE>attribute</IFR_TYPE>
+     <IFR_NAME>SEGMENT</IFR_NAME>
+     <IFR_TAGTYP>A</IFR_TAGTYP>
+     <IFR_XSDTYP>string</IFR_XSDTYP>
+     <IFR_SCALE>-2</IFR_SCALE>
+     <R3_TYPE>FIEL</R3_TYPE>
+     <R3_NAME>SEGMENT</R3_NAME>
+     <R3_DATATYP>STRG</R3_DATATYP>
+     <R3_SEQNUM>000004</R3_SEQNUM>
+    </item>
+    <item>
+     <OBJECT>TABL</OBJECT>
+     <OBJ_NAME>Z01OTC_ORDERS05_E1EDC03</OBJ_NAME>
+     <OBJECT1>FIEL</OBJECT1>
+     <OBJ_NAME1>UZEIT</OBJ_NAME1>
+     <OBJECT2>FIEL</OBJECT2>
+     <OBJ_NAME2>UZEIT</OBJ_NAME2>
+     <ID>&lt;element&gt; UZEIT &lt;type&gt; ORDERS05.E1EDC03  SI_EDI850Orders_In(http://bio-rad.com/OTC/EDI850)</ID>
+     <IFR_TYPE>element</IFR_TYPE>
+     <IFR_NAME>UZEIT</IFR_NAME>
+     <IFR_TEXT>Time</IFR_TEXT>
+     <IFR_TAGTYP>E</IFR_TAGTYP>
+     <IFR_MAXOCC>1</IFR_MAXOCC>
+     <IFR_OPTNL>X</IFR_OPTNL>
+     <IFR_XSDTYP>string</IFR_XSDTYP>
+     <IFR_MAXLEN>6</IFR_MAXLEN>
+     <IFR_SCALE>-2</IFR_SCALE>
+     <R3_TYPE>FIEL</R3_TYPE>
+     <R3_NAME>UZEIT</R3_NAME>
+     <R3_TEXT>Time</R3_TEXT>
+     <R3_DATATYP>CHAR</R3_DATATYP>
+     <R3_LENGTH>000006</R3_LENGTH>
+     <R3_SEQNUM>000003</R3_SEQNUM>
+    </item>
+    <item>
+     <OBJECT>TABL</OBJECT>
+     <OBJ_NAME>Z01OTC_ORDERS05_E1EDC03</OBJ_NAME>
+     <OBJECT1>TABL</OBJECT1>
+     <OBJ_NAME1>Z01OTC_ORDERS05_E1EDC03</OBJ_NAME1>
+     <OBJECT2>TABL</OBJECT2>
+     <OBJ_NAME2>Z01OTC_ORDERS05_E1EDC03</OBJ_NAME2>
+     <ID>&lt;type&gt; ORDERS05.E1EDC03  SI_EDI850Orders_In(http://bio-rad.com/OTC/EDI850)</ID>
+     <IFR_TYPE>type</IFR_TYPE>
+     <IFR_NAME>ORDERS05.E1EDC03</IFR_NAME>
+     <IFR_TEXT>SS item: Date segment</IFR_TEXT>
+     <IFR_SCALE>-2</IFR_SCALE>
+     <R3_TYPE>TABL</R3_TYPE>
+     <R3_NAME>Z01OTC_ORDERS05_E1EDC03</R3_NAME>
+     <R3_TEXT>SS item: Date segment</R3_TEXT>
+     <CATEGORY>ifmtypedef</CATEGORY>
+    </item>
+   </PROXY_DATA>
+  </asx:values>
+ </asx:abap>
+</abapGit>

@@ -1,0 +1,65 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<abapGit version="v1.0.0" serializer="LCL_OBJECT_FUGR" serializer_version="v1.0.0">
+ <asx:abap xmlns:asx="http://www.sap.com/abapxml" version="1.0">
+  <asx:values>
+   <AREAT>Proforma invoice form</AREAT>
+   <INCLUDES>
+    <SOBJ_NAME>LZOTC_PROFORMA_INV_FORMF01</SOBJ_NAME>
+    <SOBJ_NAME>LZOTC_PROFORMA_INV_FORMTOP</SOBJ_NAME>
+    <SOBJ_NAME>SAPLZOTC_PROFORMA_INV_FORM</SOBJ_NAME>
+   </INCLUDES>
+   <FUNCTIONS>
+    <item>
+     <FUNCNAME>ZOTC_PROFORMA_INVOICE_FORM</FUNCNAME>
+     <SHORT_TEXT>Print proforma invoice form</SHORT_TEXT>
+     <IMPORT>
+      <RSIMP>
+       <PARAMETER>IM_NAST</PARAMETER>
+       <REFERENCE>X</REFERENCE>
+       <TYP>NAST</TYP>
+      </RSIMP>
+      <RSIMP>
+       <PARAMETER>IM_BIL_PRT_COM</PARAMETER>
+       <REFERENCE>X</REFERENCE>
+       <TYP>INVOICE_S_PRT_INTERFACE</TYP>
+      </RSIMP>
+     </IMPORT>
+     <EXPORT>
+      <RSEXP>
+       <PARAMETER>EX_HEADER</PARAMETER>
+       <REFERENCE>X</REFERENCE>
+       <TYP>ZOTC_PROFORMA_HEADER</TYP>
+      </RSEXP>
+      <RSEXP>
+       <PARAMETER>EX_ITEM</PARAMETER>
+       <REFERENCE>X</REFERENCE>
+       <TYP>ZOTC_T_PROFORMA_ITEM</TYP>
+      </RSEXP>
+     </EXPORT>
+     <DOCUMENTATION>
+      <RSFDO>
+       <PARAMETER>IM_NAST</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Message Status</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>IM_BIL_PRT_COM</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Billing Document: Interface Structure for Adobe Print</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>EX_HEADER</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Proforma invoice form header structure</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>EX_ITEM</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Proforma invoice form item</STEXT>
+      </RSFDO>
+     </DOCUMENTATION>
+    </item>
+   </FUNCTIONS>
+  </asx:values>
+ </asx:abap>
+</abapGit>

@@ -1,0 +1,573 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<abapGit version="v1.0.0" serializer="LCL_OBJECT_SFPI" serializer_version="v1.0.0">
+ <asx:abap version="1.0" xmlns:asx="http://www.sap.com/abapxml">
+  <asx:values>
+   <VERSION>1</VERSION>
+   <TYPE/>
+   <INTERFACE href="#o1"/>
+   <INTERFACET>
+    <FPINTERFACET>
+     <NAME/>
+     <STATE/>
+     <LANGUAGE>N</LANGUAGE>
+     <ID/>
+     <TEXT>Contract Acknowledgement Form</TEXT>
+    </FPINTERFACET>
+    <FPINTERFACET>
+     <NAME/>
+     <STATE/>
+     <LANGUAGE>E</LANGUAGE>
+     <ID/>
+     <TEXT>Contract Acknowledgement Form</TEXT>
+    </FPINTERFACET>
+    <FPINTERFACET>
+     <NAME/>
+     <STATE/>
+     <LANGUAGE>F</LANGUAGE>
+     <ID/>
+     <TEXT>Contract Acknowledgement Form</TEXT>
+    </FPINTERFACET>
+    <FPINTERFACET>
+     <NAME/>
+     <STATE/>
+     <LANGUAGE>P</LANGUAGE>
+     <ID/>
+     <TEXT>Contract Acknowledgement Form</TEXT>
+    </FPINTERFACET>
+    <FPINTERFACET>
+     <NAME/>
+     <STATE/>
+     <LANGUAGE>R</LANGUAGE>
+     <ID/>
+     <TEXT>Contract Acknowledgement Form</TEXT>
+    </FPINTERFACET>
+    <FPINTERFACET>
+     <NAME/>
+     <STATE/>
+     <LANGUAGE>S</LANGUAGE>
+     <ID/>
+     <TEXT>Contract Acknowledgement Form</TEXT>
+    </FPINTERFACET>
+    <FPINTERFACET>
+     <NAME/>
+     <STATE/>
+     <LANGUAGE>J</LANGUAGE>
+     <ID/>
+     <TEXT>Contract Acknowledgement Form</TEXT>
+    </FPINTERFACET>
+    <FPINTERFACET>
+     <NAME/>
+     <STATE/>
+     <LANGUAGE>1</LANGUAGE>
+     <ID/>
+     <TEXT>Contract Acknowledgement Form</TEXT>
+    </FPINTERFACET>
+    <FPINTERFACET>
+     <NAME/>
+     <STATE/>
+     <LANGUAGE>I</LANGUAGE>
+     <ID/>
+     <TEXT>Contract Acknowledgement Form</TEXT>
+    </FPINTERFACET>
+    <FPINTERFACET>
+     <NAME/>
+     <STATE/>
+     <LANGUAGE>K</LANGUAGE>
+     <ID/>
+     <TEXT>Contract Acknowledgement Form</TEXT>
+    </FPINTERFACET>
+    <FPINTERFACET>
+     <NAME/>
+     <STATE/>
+     <LANGUAGE>H</LANGUAGE>
+     <ID/>
+     <TEXT>Contract Acknowledgement Form</TEXT>
+    </FPINTERFACET>
+    <FPINTERFACET>
+     <NAME/>
+     <STATE/>
+     <LANGUAGE>O</LANGUAGE>
+     <ID/>
+     <TEXT>Contract Acknowledgement Form</TEXT>
+    </FPINTERFACET>
+    <FPINTERFACET>
+     <NAME/>
+     <STATE/>
+     <LANGUAGE>V</LANGUAGE>
+     <ID/>
+     <TEXT>Contract Acknowledgement Form</TEXT>
+    </FPINTERFACET>
+    <FPINTERFACET>
+     <NAME/>
+     <STATE/>
+     <LANGUAGE>U</LANGUAGE>
+     <ID/>
+     <TEXT>Contract Acknowledgement Form</TEXT>
+    </FPINTERFACET>
+    <FPINTERFACET>
+     <NAME/>
+     <STATE/>
+     <LANGUAGE>G</LANGUAGE>
+     <ID/>
+     <TEXT>Contract Acknowledgement Form</TEXT>
+    </FPINTERFACET>
+   </INTERFACET>
+  </asx:values>
+  <asx:heap xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:abap="http://www.sap.com/abapxml/types/built-in" xmlns:cls="http://www.sap.com/abapxml/classes/global" xmlns:dic="http://www.sap.com/abapxml/types/dictionary">
+   <cls:CL_FP_INTERFACE_DATA id="o1">
+    <CL_FP_INTERFACE_DATA classVersion="1">
+     <CODING href="#o5"/>
+     <PARAMETERS href="#o4"/>
+     <GLOBAL_DEFINITIONS href="#o3"/>
+     <REFERENCE_FIELDS href="#o2"/>
+     <XSD_DEFINITIONS/>
+    </CL_FP_INTERFACE_DATA>
+   </cls:CL_FP_INTERFACE_DATA>
+   <cls:CL_FP_REFERENCE_FIELDS id="o2">
+    <CL_FP_INTERFACE_DATA_CHANGED classVersion="1">
+     <INTERFACE_DATA href="#o1"/>
+    </CL_FP_INTERFACE_DATA_CHANGED>
+    <CL_FP_REFERENCE_FIELDS classVersion="1">
+     <REFERENCE_FIELDS/>
+    </CL_FP_REFERENCE_FIELDS>
+   </cls:CL_FP_REFERENCE_FIELDS>
+   <cls:CL_FP_GLOBAL_DEFINITIONS id="o3">
+    <CL_FP_INTERFACE_DATA_CHANGED classVersion="1">
+     <INTERFACE_DATA href="#o1"/>
+    </CL_FP_INTERFACE_DATA_CHANGED>
+    <CL_FP_GLOBAL_DEFINITIONS classVersion="1">
+     <GLOBAL_DATA>
+      <SFPGDATA>
+       <NAME>C_BMP</NAME>
+       <TYPING>TYPE</TYPING>
+       <TYPENAME>STRING</TYPENAME>
+       <DEFAULTVAL>&apos;images/bmp&apos;</DEFAULTVAL>
+       <CONSTANT>X</CONSTANT>
+      </SFPGDATA>
+      <SFPGDATA>
+       <NAME>GV_PRODUCTION</NAME>
+       <TYPING>TYPE</TYPING>
+       <TYPENAME>BOOLEAN</TYPENAME>
+       <DEFAULTVAL/>
+       <CONSTANT/>
+      </SFPGDATA>
+      <SFPGDATA>
+       <NAME>GV_LOGO_BIN</NAME>
+       <TYPING>TYPE</TYPING>
+       <TYPENAME>XSTRING</TYPENAME>
+       <DEFAULTVAL/>
+       <CONSTANT/>
+      </SFPGDATA>
+      <SFPGDATA>
+       <NAME>GV_IMAGE_BIN</NAME>
+       <TYPING>TYPE</TYPING>
+       <TYPENAME>XSTRING</TYPENAME>
+       <DEFAULTVAL/>
+       <CONSTANT/>
+      </SFPGDATA>
+      <SFPGDATA>
+       <NAME>I_SHIP_ADDRESS</NAME>
+       <TYPING>TYPE</TYPING>
+       <TYPENAME>TT_SHIP_ADDRESS</TYPENAME>
+       <DEFAULTVAL/>
+       <CONSTANT/>
+      </SFPGDATA>
+      <SFPGDATA>
+       <NAME>C_EMAIL</NAME>
+       <TYPING>TYPE</TYPING>
+       <TYPENAME>CHAR9</TYPENAME>
+       <DEFAULTVAL>&apos;(Email: &apos;</DEFAULTVAL>
+       <CONSTANT>X</CONSTANT>
+      </SFPGDATA>
+      <SFPGDATA>
+       <NAME>C_COMMA</NAME>
+       <TYPING>TYPE</TYPING>
+       <TYPENAME>CHAR2</TYPENAME>
+       <DEFAULTVAL>&apos;, &apos;</DEFAULTVAL>
+       <CONSTANT>X</CONSTANT>
+      </SFPGDATA>
+      <SFPGDATA>
+       <NAME>C_BRAK_CL</NAME>
+       <TYPING>TYPE</TYPING>
+       <TYPENAME>CHAR1</TYPENAME>
+       <DEFAULTVAL>&apos;)&apos;</DEFAULTVAL>
+       <CONSTANT>X</CONSTANT>
+      </SFPGDATA>
+      <SFPGDATA>
+       <NAME>GV_SHIP_CITY</NAME>
+       <TYPING>TYPE</TYPING>
+       <TYPENAME>STRING</TYPENAME>
+       <DEFAULTVAL/>
+       <CONSTANT/>
+      </SFPGDATA>
+      <SFPGDATA>
+       <NAME>GV_STREET_HNUM</NAME>
+       <TYPING>TYPE</TYPING>
+       <TYPENAME>STRING</TYPENAME>
+       <DEFAULTVAL/>
+       <CONSTANT/>
+      </SFPGDATA>
+      <SFPGDATA>
+       <NAME>GV_REMITT_CITY</NAME>
+       <TYPING>TYPE</TYPING>
+       <TYPENAME>STRING</TYPENAME>
+       <DEFAULTVAL/>
+       <CONSTANT/>
+      </SFPGDATA>
+      <SFPGDATA>
+       <NAME>GV_DATE_TIME</NAME>
+       <TYPING>TYPE</TYPING>
+       <TYPENAME>STRING</TYPENAME>
+       <DEFAULTVAL/>
+       <CONSTANT/>
+      </SFPGDATA>
+      <SFPGDATA>
+       <NAME>GV_CREATED_BY_NAME</NAME>
+       <TYPING>TYPE</TYPING>
+       <TYPENAME>STRING</TYPENAME>
+       <DEFAULTVAL/>
+       <CONSTANT/>
+      </SFPGDATA>
+     </GLOBAL_DATA>
+     <TYPES>
+      <FPCLINE/>
+      <FPCLINE>TYPES:</FPCLINE>
+      <FPCLINE>*&amp;--Ship to address</FPCLINE>
+      <FPCLINE>BEGIN OF ty_ship_addr,</FPCLINE>
+      <FPCLINE>  address TYPE string,</FPCLINE>
+      <FPCLINE>END OF ty_ship_addr,</FPCLINE>
+      <FPCLINE>*&amp;--Ship to address</FPCLINE>
+      <FPCLINE>tt_ship_address TYPE STANDARD TABLE OF ty_ship_addr.</FPCLINE>
+     </TYPES>
+     <FIELDSYMBOLS/>
+    </CL_FP_GLOBAL_DEFINITIONS>
+   </cls:CL_FP_GLOBAL_DEFINITIONS>
+   <cls:CL_FP_PARAMETERS id="o4">
+    <CL_FP_INTERFACE_DATA_CHANGED classVersion="1">
+     <INTERFACE_DATA href="#o1"/>
+    </CL_FP_INTERFACE_DATA_CHANGED>
+    <CL_FP_PARAMETERS classVersion="1">
+     <IMPORT_PARAMETERS>
+      <SFPIOPAR>
+       <NAME>IM_TOTAL_PRICE</NAME>
+       <TYPING>TYPE</TYPING>
+       <TYPENAME>NETWR_AK</TYPENAME>
+       <OPTIONAL>X</OPTIONAL>
+       <BYVALUE/>
+       <DEFAULTVAL/>
+       <STANDARD/>
+       <CONSTANT/>
+      </SFPIOPAR>
+      <SFPIOPAR>
+       <NAME>IM_ITEM</NAME>
+       <TYPING>TYPE</TYPING>
+       <TYPENAME>BOOLEAN</TYPENAME>
+       <OPTIONAL>X</OPTIONAL>
+       <BYVALUE/>
+       <DEFAULTVAL/>
+       <STANDARD/>
+       <CONSTANT/>
+      </SFPIOPAR>
+      <SFPIOPAR>
+       <NAME>IM_TOTAL</NAME>
+       <TYPING>TYPE</TYPING>
+       <TYPENAME>BOOLEAN</TYPENAME>
+       <OPTIONAL>X</OPTIONAL>
+       <BYVALUE/>
+       <DEFAULTVAL/>
+       <STANDARD/>
+       <CONSTANT/>
+      </SFPIOPAR>
+      <SFPIOPAR>
+       <NAME>IM_SADR</NAME>
+       <TYPING>TYPE</TYPING>
+       <TYPENAME>SADR</TYPENAME>
+       <OPTIONAL>X</OPTIONAL>
+       <BYVALUE/>
+       <DEFAULTVAL/>
+       <STANDARD/>
+       <CONSTANT/>
+      </SFPIOPAR>
+      <SFPIOPAR>
+       <NAME>IM_CONTACT_ADDR</NAME>
+       <TYPING>TYPE</TYPING>
+       <TYPENAME>ZOTC_ADDRESS_INFO</TYPENAME>
+       <OPTIONAL>X</OPTIONAL>
+       <BYVALUE/>
+       <DEFAULTVAL/>
+       <STANDARD/>
+       <CONSTANT/>
+      </SFPIOPAR>
+      <SFPIOPAR>
+       <NAME>IM_SHIP_TO_ADDR</NAME>
+       <TYPING>TYPE</TYPING>
+       <TYPENAME>ZOTC_ADDRESS_INFO</TYPENAME>
+       <OPTIONAL>X</OPTIONAL>
+       <BYVALUE/>
+       <DEFAULTVAL/>
+       <STANDARD/>
+       <CONSTANT/>
+      </SFPIOPAR>
+      <SFPIOPAR>
+       <NAME>IM_BILL_TO_ADDR</NAME>
+       <TYPING>TYPE</TYPING>
+       <TYPENAME>ZOTC_ADDRESS_INFO</TYPENAME>
+       <OPTIONAL>X</OPTIONAL>
+       <BYVALUE/>
+       <DEFAULTVAL/>
+       <STANDARD/>
+       <CONSTANT/>
+      </SFPIOPAR>
+      <SFPIOPAR>
+       <NAME>IM_CRE_ADDR</NAME>
+       <TYPING>TYPE</TYPING>
+       <TYPENAME>BAPIADDR3</TYPENAME>
+       <OPTIONAL>X</OPTIONAL>
+       <BYVALUE/>
+       <DEFAULTVAL/>
+       <STANDARD/>
+       <CONSTANT/>
+      </SFPIOPAR>
+      <SFPIOPAR>
+       <NAME>IM_PAYMENT_TERMS</NAME>
+       <TYPING>TYPE</TYPING>
+       <TYPENAME>DZTERM_BEZ</TYPENAME>
+       <OPTIONAL>X</OPTIONAL>
+       <BYVALUE/>
+       <DEFAULTVAL/>
+       <STANDARD/>
+       <CONSTANT/>
+      </SFPIOPAR>
+      <SFPIOPAR>
+       <NAME>IM_VBELN</NAME>
+       <TYPING>TYPE</TYPING>
+       <TYPENAME>VBELN_VA</TYPENAME>
+       <OPTIONAL/>
+       <BYVALUE/>
+       <DEFAULTVAL/>
+       <STANDARD/>
+       <CONSTANT/>
+      </SFPIOPAR>
+      <SFPIOPAR>
+       <NAME>IM_VBAK</NAME>
+       <TYPING>TYPE</TYPING>
+       <TYPENAME>ZOTC_CONTRACT_ACK_VBAK</TYPENAME>
+       <OPTIONAL>X</OPTIONAL>
+       <BYVALUE/>
+       <DEFAULTVAL/>
+       <STANDARD/>
+       <CONSTANT/>
+      </SFPIOPAR>
+      <SFPIOPAR>
+       <NAME>IM_ITEM_DATA</NAME>
+       <TYPING>TYPE</TYPING>
+       <TYPENAME>ZOTC_T_CONTRACT_ACK_ITEM</TYPENAME>
+       <OPTIONAL>X</OPTIONAL>
+       <BYVALUE/>
+       <DEFAULTVAL/>
+       <STANDARD/>
+       <CONSTANT/>
+      </SFPIOPAR>
+     </IMPORT_PARAMETERS>
+     <EXPORT_PARAMETERS/>
+     <TABLE_PARAMETERS/>
+     <EXCEPTIONS/>
+    </CL_FP_PARAMETERS>
+   </cls:CL_FP_PARAMETERS>
+   <cls:CL_FP_CODING id="o5">
+    <CL_FP_INTERFACE_DATA_CHANGED classVersion="1">
+     <INTERFACE_DATA href="#o1"/>
+    </CL_FP_INTERFACE_DATA_CHANGED>
+    <CL_FP_CODING classVersion="1">
+     <INPUT_PARAMETERS/>
+     <OUTPUT_PARAMETERS/>
+     <INITIALIZATION>
+      <FPCLINE>************************************************************************</FPCLINE>
+      <FPCLINE>* Interface  :  ZOTC0020_CONTRACT_ACKNOWLEDGE                          *</FPCLINE>
+      <FPCLINE>* Title      :  Contract Acknowledgement Form                          *</FPCLINE>
+      <FPCLINE>* Developer  :  Vivek Gaur                                             *</FPCLINE>
+      <FPCLINE>* Object Type:  Form Interface                                         *</FPCLINE>
+      <FPCLINE>* SAP Release:  SAP ECC 6.0                                            *</FPCLINE>
+      <FPCLINE>*----------------------------------------------------------------------*</FPCLINE>
+      <FPCLINE>* WRICEF ID:  OTC_FDD_0020_Contract acknowledgement form               *</FPCLINE>
+      <FPCLINE>*----------------------------------------------------------------------*</FPCLINE>
+      <FPCLINE>* Description: Contract Acknowledgement is sent to the customer through*</FPCLINE>
+      <FPCLINE>*              email, fax or print. These forms will need to be auto-  *</FPCLINE>
+      <FPCLINE>*              generated at the time the contract is saved.            *</FPCLINE>
+      <FPCLINE>*----------------------------------------------------------------------*</FPCLINE>
+      <FPCLINE>* Modification History:                                                *</FPCLINE>
+      <FPCLINE>*======================================================================*</FPCLINE>
+      <FPCLINE>* Date        User      Transport  Description                         *</FPCLINE>
+      <FPCLINE>* =========== ========  ========== ====================================*</FPCLINE>
+      <FPCLINE>* 23-FEB-2012 VGAUR     E1DK900428 Initial development                 *</FPCLINE>
+      <FPCLINE>*&amp;---------------------------------------------------------------------*</FPCLINE>
+      <FPCLINE/>
+      <FPCLINE/>
+      <FPCLINE>*&amp;--Format Addresses in the document</FPCLINE>
+      <FPCLINE>PERFORM f_format_address USING im_sadr</FPCLINE>
+      <FPCLINE>                               im_cre_addr</FPCLINE>
+      <FPCLINE>                               im_vbak</FPCLINE>
+      <FPCLINE>                               im_ship_to_addr.</FPCLINE>
+      <FPCLINE/>
+      <FPCLINE>*&amp;--For Logo and Watermark</FPCLINE>
+      <FPCLINE>PERFORM f_logo_watermark_image.</FPCLINE>
+     </INITIALIZATION>
+     <FORMS>
+      <FPCLINE/>
+      <FPCLINE>**&amp;---------------------------------------------------------------------*</FPCLINE>
+      <FPCLINE>*&amp;      Form  f_format_address</FPCLINE>
+      <FPCLINE>*&amp;---------------------------------------------------------------------*</FPCLINE>
+      <FPCLINE>*       Format addresses in the document</FPCLINE>
+      <FPCLINE>*----------------------------------------------------------------------*</FPCLINE>
+      <FPCLINE>*      --&gt;FP_SADR          Sales Organisation Address</FPCLINE>
+      <FPCLINE>*      --&gt;FP_CRE_ADDR      Created by Address</FPCLINE>
+      <FPCLINE>*      --&gt;FP_SHIP_TO_ADDR  Ship-To Address</FPCLINE>
+      <FPCLINE>*----------------------------------------------------------------------*</FPCLINE>
+      <FPCLINE>FORM f_format_address USING fp_sadr         TYPE sadr</FPCLINE>
+      <FPCLINE>                            fp_cre_addr     TYPE bapiaddr3</FPCLINE>
+      <FPCLINE>                            fp_vbak         TYPE zotc_contract_ack_vbak</FPCLINE>
+      <FPCLINE>                            fp_ship_to_addr TYPE zotc_address_info.</FPCLINE>
+      <FPCLINE/>
+      <FPCLINE>  DATA: lwa_ship_address TYPE ty_ship_addr.</FPCLINE>
+      <FPCLINE/>
+      <FPCLINE>*&amp;--Concatenate Remittance City &amp; Region</FPCLINE>
+      <FPCLINE>  CONCATENATE fp_sadr-ort01 c_comma fp_sadr-regio INTO gv_remitt_city.</FPCLINE>
+      <FPCLINE>*&amp;--Concatenate Remittance City &amp; Postal Code</FPCLINE>
+      <FPCLINE>  CONCATENATE gv_remitt_city fp_sadr-pstlz INTO gv_remitt_city</FPCLINE>
+      <FPCLINE>              SEPARATED BY space.</FPCLINE>
+      <FPCLINE/>
+      <FPCLINE>*&amp;--Concatenate E-mail Address &amp; Name of person who craeted document</FPCLINE>
+      <FPCLINE>  CONCATENATE c_email</FPCLINE>
+      <FPCLINE>              fp_cre_addr-e_mail</FPCLINE>
+      <FPCLINE>              c_brak_cl</FPCLINE>
+      <FPCLINE>         INTO gv_created_by_name.</FPCLINE>
+      <FPCLINE/>
+      <FPCLINE>  CONCATENATE fp_cre_addr-firstname</FPCLINE>
+      <FPCLINE>              fp_cre_addr-lastname</FPCLINE>
+      <FPCLINE>              gv_created_by_name</FPCLINE>
+      <FPCLINE>         INTO gv_created_by_name</FPCLINE>
+      <FPCLINE> SEPARATED BY space.</FPCLINE>
+      <FPCLINE/>
+      <FPCLINE>  CONCATENATE fp_ship_to_addr-hnum1</FPCLINE>
+      <FPCLINE>              fp_ship_to_addr-street</FPCLINE>
+      <FPCLINE>         INTO gv_street_hnum</FPCLINE>
+      <FPCLINE> SEPARATED BY space.</FPCLINE>
+      <FPCLINE/>
+      <FPCLINE>  CONCATENATE fp_ship_to_addr-city1</FPCLINE>
+      <FPCLINE>              fp_ship_to_addr-region</FPCLINE>
+      <FPCLINE>              &apos; &apos;</FPCLINE>
+      <FPCLINE>              fp_ship_to_addr-pcode1</FPCLINE>
+      <FPCLINE>         INTO gv_ship_city</FPCLINE>
+      <FPCLINE> SEPARATED BY space.</FPCLINE>
+      <FPCLINE/>
+      <FPCLINE>  IF fp_ship_to_addr-name1 IS NOT INITIAL.</FPCLINE>
+      <FPCLINE>    lwa_ship_address-address = fp_ship_to_addr-name1.</FPCLINE>
+      <FPCLINE>    APPEND lwa_ship_address TO i_ship_address.</FPCLINE>
+      <FPCLINE>  ENDIF.</FPCLINE>
+      <FPCLINE>  IF fp_ship_to_addr-name2 IS NOT INITIAL.</FPCLINE>
+      <FPCLINE>    lwa_ship_address-address = fp_ship_to_addr-name2.</FPCLINE>
+      <FPCLINE>    APPEND lwa_ship_address TO i_ship_address.</FPCLINE>
+      <FPCLINE>  ENDIF.</FPCLINE>
+      <FPCLINE>  IF fp_ship_to_addr-name3 IS NOT INITIAL.</FPCLINE>
+      <FPCLINE>    lwa_ship_address-address = fp_ship_to_addr-name3.</FPCLINE>
+      <FPCLINE>    APPEND lwa_ship_address TO i_ship_address.</FPCLINE>
+      <FPCLINE>  ENDIF.</FPCLINE>
+      <FPCLINE>  IF fp_ship_to_addr-name4 IS NOT INITIAL.</FPCLINE>
+      <FPCLINE>    lwa_ship_address-address = fp_ship_to_addr-name4.</FPCLINE>
+      <FPCLINE>    APPEND lwa_ship_address TO i_ship_address.</FPCLINE>
+      <FPCLINE>  ENDIF.</FPCLINE>
+      <FPCLINE>  CONCATENATE &apos;PO#:&apos; fp_vbak-bstkd INTO lwa_ship_address-address</FPCLINE>
+      <FPCLINE>  SEPARATED BY space.</FPCLINE>
+      <FPCLINE>  APPEND lwa_ship_address TO i_ship_address.</FPCLINE>
+      <FPCLINE>  lwa_ship_address-address = gv_street_hnum.</FPCLINE>
+      <FPCLINE>  APPEND lwa_ship_address TO i_ship_address.</FPCLINE>
+      <FPCLINE>  lwa_ship_address-address = gv_ship_city.</FPCLINE>
+      <FPCLINE>  APPEND lwa_ship_address TO i_ship_address.</FPCLINE>
+      <FPCLINE/>
+      <FPCLINE>ENDFORM.                    &quot;f_format_address</FPCLINE>
+      <FPCLINE/>
+      <FPCLINE/>
+      <FPCLINE>*&amp;---------------------------------------------------------------------*</FPCLINE>
+      <FPCLINE>*&amp;      Form  f_logo_watermark_image</FPCLINE>
+      <FPCLINE>*&amp;---------------------------------------------------------------------*</FPCLINE>
+      <FPCLINE>*       For Logo and Watermark</FPCLINE>
+      <FPCLINE>*----------------------------------------------------------------------*</FPCLINE>
+      <FPCLINE>FORM f_logo_watermark_image.</FPCLINE>
+      <FPCLINE/>
+      <FPCLINE>  CONSTANTS:</FPCLINE>
+      <FPCLINE>*&amp;--SAPscript Graphics Management: Application object</FPCLINE>
+      <FPCLINE>     lc_graphics    TYPE tdobjectgr VALUE &apos;GRAPHICS&apos;,</FPCLINE>
+      <FPCLINE>*&amp;--Draft Name</FPCLINE>
+      <FPCLINE>     lc_draft_image TYPE tdobname   VALUE &apos;ZOTC_DRAFT&apos;,</FPCLINE>
+      <FPCLINE>*&amp;--Logo Name</FPCLINE>
+      <FPCLINE>     lc_logo_image  TYPE tdobname   VALUE &apos;ZBIORAD_LOGO&apos;,</FPCLINE>
+      <FPCLINE>*&amp;--SAPscript Graphics Management: ID</FPCLINE>
+      <FPCLINE>     lc_image_id    TYPE tdidgr     VALUE &apos;BMAP&apos;,</FPCLINE>
+      <FPCLINE>*&amp;--SAPscript: Type of graphic</FPCLINE>
+      <FPCLINE>     lc_image_type  TYPE tdbtype    VALUE &apos;BCOL&apos;,</FPCLINE>
+      <FPCLINE>*&amp;--Production system</FPCLINE>
+      <FPCLINE>     lc_prod_name   TYPE rvari_vnam VALUE &apos;ZPRODUCTION&apos;,</FPCLINE>
+      <FPCLINE>*&amp;--ABAP: Type of selection</FPCLINE>
+      <FPCLINE>     lc_type        TYPE rsscr_kind VALUE &apos;P&apos;,</FPCLINE>
+      <FPCLINE>*&amp;--ABAP: Current selection number</FPCLINE>
+      <FPCLINE>     lc_numb        TYPE tvarv_numb VALUE &apos;0000&apos;.</FPCLINE>
+      <FPCLINE/>
+      <FPCLINE>  DATA:</FPCLINE>
+      <FPCLINE>*&amp;--Production system</FPCLINE>
+      <FPCLINE>    lv_prod        TYPE sysysid.</FPCLINE>
+      <FPCLINE/>
+      <FPCLINE>*&amp;--Check Production Client</FPCLINE>
+      <FPCLINE>  SELECT SINGLE low</FPCLINE>
+      <FPCLINE>           FROM tvarvc</FPCLINE>
+      <FPCLINE>           INTO lv_prod</FPCLINE>
+      <FPCLINE>          WHERE name = lc_prod_name</FPCLINE>
+      <FPCLINE>            AND type = lc_type</FPCLINE>
+      <FPCLINE>            AND numb = lc_numb.</FPCLINE>
+      <FPCLINE>  IF sy-sysid = lv_prod.</FPCLINE>
+      <FPCLINE>    gv_production = abap_true.</FPCLINE>
+      <FPCLINE>*&amp;--If not Production client then</FPCLINE>
+      <FPCLINE>*&amp;--convert watermark image to Binary format</FPCLINE>
+      <FPCLINE>  ELSE.</FPCLINE>
+      <FPCLINE>    CALL METHOD cl_ssf_xsf_utilities=&gt;get_bds_graphic_as_bmp</FPCLINE>
+      <FPCLINE>      EXPORTING</FPCLINE>
+      <FPCLINE>        p_object       = lc_graphics</FPCLINE>
+      <FPCLINE>        p_name         = lc_draft_image</FPCLINE>
+      <FPCLINE>        p_id           = lc_image_id</FPCLINE>
+      <FPCLINE>        p_btype        = lc_image_type</FPCLINE>
+      <FPCLINE>      RECEIVING</FPCLINE>
+      <FPCLINE>        p_bmp          = gv_image_bin</FPCLINE>
+      <FPCLINE>      EXCEPTIONS</FPCLINE>
+      <FPCLINE>        not_found      = 1</FPCLINE>
+      <FPCLINE>        internal_error = 2</FPCLINE>
+      <FPCLINE>        OTHERS         = 3.</FPCLINE>
+      <FPCLINE>    IF sy-subrc &lt;&gt; 0.</FPCLINE>
+      <FPCLINE>      MESSAGE ID sy-msgid TYPE sy-msgty NUMBER sy-msgno</FPCLINE>
+      <FPCLINE>                 WITH sy-msgv1 sy-msgv2 sy-msgv3 sy-msgv4.</FPCLINE>
+      <FPCLINE>    ENDIF.</FPCLINE>
+      <FPCLINE>  ENDIF.</FPCLINE>
+      <FPCLINE/>
+      <FPCLINE>*&amp;--Convert Logo image to Binary format</FPCLINE>
+      <FPCLINE>  CALL METHOD cl_ssf_xsf_utilities=&gt;get_bds_graphic_as_bmp</FPCLINE>
+      <FPCLINE>    EXPORTING</FPCLINE>
+      <FPCLINE>      p_object       = lc_graphics</FPCLINE>
+      <FPCLINE>      p_name         = lc_logo_image</FPCLINE>
+      <FPCLINE>      p_id           = lc_image_id</FPCLINE>
+      <FPCLINE>      p_btype        = lc_image_type</FPCLINE>
+      <FPCLINE>    RECEIVING</FPCLINE>
+      <FPCLINE>      p_bmp          = gv_logo_bin</FPCLINE>
+      <FPCLINE>    EXCEPTIONS</FPCLINE>
+      <FPCLINE>      not_found      = 1</FPCLINE>
+      <FPCLINE>      internal_error = 2</FPCLINE>
+      <FPCLINE>      OTHERS         = 3.</FPCLINE>
+      <FPCLINE>  IF sy-subrc &lt;&gt; 0.</FPCLINE>
+      <FPCLINE>    MESSAGE ID sy-msgid TYPE sy-msgty NUMBER sy-msgno</FPCLINE>
+      <FPCLINE>               WITH sy-msgv1 sy-msgv2 sy-msgv3 sy-msgv4.</FPCLINE>
+      <FPCLINE>  ENDIF.</FPCLINE>
+      <FPCLINE/>
+      <FPCLINE>ENDFORM.                    &quot;f_logo_watermark_image</FPCLINE>
+     </FORMS>
+    </CL_FP_CODING>
+   </cls:CL_FP_CODING>
+  </asx:heap>
+ </asx:abap>
+</abapGit>

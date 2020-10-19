@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<abapGit version="v1.0.0" serializer="LCL_OBJECT_SHLP" serializer_version="v1.0.0">
+ <asx:abap xmlns:asx="http://www.sap.com/abapxml" version="1.0">
+  <asx:values>
+   <DD30V>
+    <SHLPNAME>ZOTCE_EMP_NUM</SHLPNAME>
+    <DDLANGUAGE>E</DDLANGUAGE>
+    <DDTEXT>Search help for Emp_number</DDTEXT>
+    <ISSIMPLE>X</ISSIMPLE>
+    <SELMTYPE>F</SELMTYPE>
+    <SELMEXIT>ZOTC_F4IF_SHLP_EXIT_EMP_NUM</SELMEXIT>
+    <HOTKEY>X</HOTKEY>
+    <DIALOGTYPE>D</DIALOGTYPE>
+   </DD30V>
+   <DD32P_TABLE>
+    <DD32P>
+     <SHLPNAME>ZOTCE_EMP_NUM</SHLPNAME>
+     <FIELDNAME>EMP_NUMBER</FIELDNAME>
+     <FLPOSITION>0001</FLPOSITION>
+     <ROLLNAME>Z_EMP_NUMBER</ROLLNAME>
+     <SHLPINPUT>X</SHLPINPUT>
+     <SHLPOUTPUT>X</SHLPOUTPUT>
+     <SHLPSELPOS>01</SHLPSELPOS>
+     <SHLPLISPOS>01</SHLPLISPOS>
+     <ROLLCHANGE>N</ROLLCHANGE>
+     <SCRLEN3>23</SCRLEN3>
+    </DD32P>
+   </DD32P_TABLE>
+  </asx:values>
+ </asx:abap>
+</abapGit>

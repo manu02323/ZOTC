@@ -1,0 +1,785 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<abapGit version="v1.0.0" serializer="LCL_OBJECT_ENHO" serializer_version="v1.0.0">
+ <asx:abap xmlns:asx="http://www.sap.com/abapxml" version="1.0">
+  <asx:values>
+   <TOOL>HOOK_IMPL</TOOL>
+   <SHORTTEXT>To get the line item details</SHORTTEXT>
+   <ORIGINAL_OBJECT>
+    <PGMID>R3TR</PGMID>
+    <ORG_OBJ_TYPE>CLAS</ORG_OBJ_TYPE>
+    <ORG_OBJ_NAME>CL_SLS_SALESORDERERPCHGRC</ORG_OBJ_NAME>
+    <ORG_MAIN_TYPE>CLAS</ORG_MAIN_TYPE>
+    <ORG_MAIN_NAME>CL_SLS_SALESORDERERPCHGRC</ORG_MAIN_NAME>
+    <PROGRAMNAME>CL_SLS_SALESORDERERPCHGRC=====CP</PROGRAMNAME>
+   </ORIGINAL_OBJECT>
+   <ENHANCEMENTS>
+    <ENH_HOOK_IMPL>
+     <PROGRAMNAME>CL_SLS_SALESORDERERPCHGRC=====CP</PROGRAMNAME>
+     <ENHMODE>D</ENHMODE>
+     <FULL_NAME>\TY:CL_SLS_SALESORDERERPCHGRC\ME:INPUT_MAPPING\SE:END\EI</FULL_NAME>
+     <SOURCE>
+      <item>***********************************************************************</item>
+      <item>*Program    : ZIM_OTC_NO_LINE_ITEM                                    *</item>
+      <item>*Title      : Change Sales order                                      *</item>
+      <item>*Developer  : Nidhi Saxena                                            *</item>
+      <item>*Object type: Enhancement                                             *</item>
+      <item>*SAP Release: SAP ECC 6.0                                             *</item>
+      <item>*---------------------------------------------------------------------*</item>
+      <item>*WRICEF ID: D2_OTC_IDD_0102                                           *</item>
+      <item>*---------------------------------------------------------------------*</item>
+      <item>*Description: CR D2_284 - Updating the line item details basd on VBELN*</item>
+      <item>*             &amp; ZZITEMREF field combination where line item (POSNR)is *</item>
+      <item>*             not required.Checked the VA03 customised fields         *</item>
+      <item>*---------------------------------------------------------------------*</item>
+      <item>*MODIFICATION HISTORY:</item>
+      <item>*=====================================================================*</item>
+      <item>*Date           User        Transport       Description</item>
+      <item>*=========== ============== ============== ===========================*</item>
+      <item>*06-FEB-2015  NSAXENA        E2DK900895      Initial development</item>
+      <item>*---------------------------------------------------------------------*</item>
+      <item>*CR D2_284- This Enhancement is required for Sales order line item details updation.</item>
+      <item>*when posnr field is not passed to proxy data, Service MAX is not able to</item>
+      <item>*recognize for which posnr data has been passed and hence not updating the data for corresponding line items.</item>
+      <item>*we are fetching the posnr based on sales order number and Item Reference fields</item>
+      <item>*and then populating the posnr field based on which the data will be updated in sales order line items.</item>
+      <item/>
+      <item>*Type Pools</item>
+      <item>TYPE-POOLS : sai. &quot;#EC *</item>
+      <item>* ---&gt; Begin of Change for D2_OTC_IDD_0102, CR D2_284 by NSAXENA.</item>
+      <item>*Types Declaration</item>
+      <item>TYPES:</item>
+      <item>*Line item</item>
+      <item>BEGIN OF lty_item,</item>
+      <item>vbeln TYPE vbeln_va,      &quot;sales order number</item>
+      <item>posnr TYPE char6,         &quot;Line item number</item>
+      <item>zzitemref TYPE z_itemref, &quot;Item Reference field</item>
+      <item>END OF lty_item.</item>
+      <item>*Data Declarations</item>
+      <item>*Below field varaibles with _new name are copied from standard and</item>
+      <item>*their name has been changed to use into this enhancement.</item>
+      <item>DATA: lx_input TYPE sls_sales_order_erpchange_requ, &quot; Sales Order ERP Change Request</item>
+      <item>lwa_item TYPE lty_item,</item>
+      <item>lv_vbeln_new   TYPE  vbeln,                   &quot;Sales order</item>
+      <item>ls_vbak_new          TYPE  vbak,              &quot;Sales document: header data</item>
+      <item>ls_message_log_new   TYPE  bapiret2,          &quot;Return type</item>
+      <item>ls_head_comv_old_new TYPE  tds_head_comv,     &quot; Lean Order - Header Data (Values)</item>
+      <item>ls_head_comr_new     TYPE  tds_head_comr,     &quot;#EC NEEDED</item>
+      <item>ls_head_comi_new     TYPE  tds_head_comc.     &quot;#EC NEEDED</item>
+      <item>*Ranges</item>
+      <item>DATA : lt_ra_field_new  TYPE  RANGE OF fieldname, &quot; Field Name</item>
+      <item>li_input_item TYPE sapplco_sales_order_erpch_tab9,</item>
+      <item>*Internal table</item>
+      <item>li_item TYPE STANDARD TABLE OF lty_item.</item>
+      <item>*Field symbols</item>
+      <item>FIELD-SYMBOLS :</item>
+      <item>&lt;lfs_input_item&gt;  TYPE sapplco_sales_order_erpchang38,     &quot; SlsOrdERPChgReq_sItm</item>
+      <item>&lt;lfs_input_head_new&gt; TYPE  sapplco_sales_order_erpchang20. &quot; SlsOrdERPChgReq_sSlsOrd</item>
+      <item>*----------------------------------------------------------------------*</item>
+      <item>*Passing the input parameter to lx_input customised parameter.</item>
+      <item>lx_input = is_input.</item>
+      <item>*Fetching the data from VBAP table based on sales order number passed</item>
+      <item>* and get the item details under this sales order.</item>
+      <item>* get the sales order line item</item>
+      <item>li_input_item[] = is_input-sales_order_erpchange_request-sales_order-item.</item>
+      <item>READ TABLE li_input_item ASSIGNING &lt;lfs_input_item&gt; INDEX 1.</item>
+      <item>IF sy-subrc EQ 0.</item>
+      <item>IF &lt;lfs_input_item&gt;-id IS INITIAL.</item>
+      <item>*Clearing the internal table, variable and exporting parameters all used under Standard SAP code.</item>
+      <item>CLEAR gt_message_log.</item>
+      <item>CLEAR gv_flag_error.</item>
+      <item>CLEAR et_xi_lord_assign.</item>
+      <item>CLEAR et_item_comv.</item>
+      <item>CLEAR et_item_comx.</item>
+      <item>CLEAR et_estat_comv.</item>
+      <item>CLEAR et_estat_comx.</item>
+      <item>CLEAR et_party_comv.</item>
+      <item>CLEAR et_party_comx.</item>
+      <item>CLEAR et_cond_comv.</item>
+      <item>CLEAR et_cond_comx.</item>
+      <item>CLEAR et_text_comv.</item>
+      <item>CLEAR et_text_comx.</item>
+      <item>CLEAR et_sline_comv.</item>
+      <item>CLEAR et_sline_comx.</item>
+      <item>CLEAR et_action.</item>
+      <item>CLEAR et_objinst.</item>
+      <item/>
+      <item>SELECT vbeln              &quot;sales Order number</item>
+      <item>posnr              &quot;Line item number</item>
+      <item>zzitemref          &quot;Item Reference number</item>
+      <item>FROM vbap          &quot; Sales Document: Item Data</item>
+      <item>INTO TABLE li_item &quot;Internal table</item>
+      <item>WHERE vbeln = lv_vbeln.</item>
+      <item>IF sy-subrc = 0.</item>
+      <item>SORT li_item BY vbeln zzitemref.</item>
+      <item>ENDIF. &quot; IF sy-subrc = 0</item>
+      <item>*Assigning the input data of proxy to field symbol.</item>
+      <item>LOOP AT lx_input-sales_order_erpchange_request-sales_order-item ASSIGNING &lt;lfs_input_item&gt;.</item>
+      <item>*Once we get the data in field symbol we will check the line item table with sales order number</item>
+      <item>*and Item reference field as input to get the posnr.</item>
+      <item>READ TABLE li_item INTO lwa_item WITH KEY</item>
+      <item>vbeln = lv_vbeln</item>
+      <item>zzitemref = &lt;lfs_input_item&gt;-z01otc_zadd_data-obj_ref_id</item>
+      <item>BINARY SEARCH.</item>
+      <item>*Assign the posnr to line item number and now based on this number we get the confirmation</item>
+      <item>*in which line item of sales order we need to update the proxy data.</item>
+      <item>IF sy-subrc = 0.</item>
+      <item>&lt;lfs_input_item&gt;-id = lwa_item-posnr.</item>
+      <item>ENDIF. &quot; &quot; IF &lt;lfs_input_item&gt;-id IS INITIAL</item>
+      <item>ENDLOOP. &quot; LOOP AT lx_input-sales_order_erpchange_request-sales_order-item ASSIGNING &lt;lfs_input_item&gt;</item>
+      <item>ELSE. &quot; ELSE -&gt; IF sy-subrc = 0</item>
+      <item>*when the line item number is passed to service max input parameter ,the control will</item>
+      <item>*come out of enhancement and previous logic of standard code will execute further.</item>
+      <item>RETURN.</item>
+      <item>ENDIF. &quot; IF &lt;lfs_input_item&gt;-id IS INITIAL</item>
+      <item>ENDIF. &quot; IF SY-SUBRC EQ 0</item>
+      <item>* &lt;--- End of Change for D2_OTC_IDD_0102, CR D2_284 by NSAXENA.</item>
+      <item/>
+      <item>*---&gt;Below code has been copied from Standard Method INPUT_MAPPING for D2_OTC_IDD_0102 CR D2_284 By NSAXENA.</item>
+      <item>*It will work for the case when the line item is also passed to service max input parameter.</item>
+      <item>*---&gt;Start of copied code from Standard Method - Input_Mapping.</item>
+      <item/>
+      <item>* work with shorter data names</item>
+      <item>ASSIGN  lx_input-sales_order_erpchange_request-sales_order</item>
+      <item>TO  &lt;lfs_input_head_new&gt;.</item>
+      <item/>
+      <item>BREAK-POINT                ID ops_se_sls. &quot; INPUT_MAPPING</item>
+      <item/>
+      <item>* SalesOrder</item>
+      <item>* ==========</item>
+      <item>* mapp the sales order number for reading the sales order</item>
+      <item>*         this field requires the alpha concersion</item>
+      <item>CALL FUNCTION &apos;CONVERSION_EXIT_ALPHA_INPUT&apos;</item>
+      <item>EXPORTING</item>
+      <item>input  = &lt;lfs_input_head_new&gt;-id-content</item>
+      <item>IMPORTING</item>
+      <item>output = lv_vbeln_new.</item>
+      <item>* store into class variable</item>
+      <item>gv_vbeln = lv_vbeln_new.</item>
+      <item/>
+      <item>* read the data of the sales order to be changed</item>
+      <item>CALL METHOD cl_lord=&gt;load</item>
+      <item>EXPORTING</item>
+      <item>iv_trtyp           = &apos;V&apos;</item>
+      <item>iv_vbeln           = lv_vbeln_new</item>
+      <item>if_no_conversion   = &apos;X&apos;</item>
+      <item>if_no_messages_doc = &apos;X&apos;</item>
+      <item>EXCEPTIONS</item>
+      <item>OTHERS             = 1.</item>
+      <item/>
+      <item>* analyse and collect the messages from the LORD</item>
+      <item>CALL METHOD cl_sls_mapping_helper=&gt;evaluate_messages</item>
+      <item>EXPORTING</item>
+      <item>iv_subrc       = sy-subrc</item>
+      <item>iv_msgid       = sy-msgid</item>
+      <item>iv_msgty       = sy-msgty</item>
+      <item>iv_msgno       = sy-msgno</item>
+      <item>iv_msgv1       = sy-msgv1</item>
+      <item>iv_msgv2       = sy-msgv2</item>
+      <item>iv_msgv3       = sy-msgv3</item>
+      <item>iv_msgv4       = sy-msgv4 &quot;n 1088879</item>
+      <item>CHANGING</item>
+      <item>cv_flag_error  = gv_flag_error</item>
+      <item>ct_message_log = gt_message_log.</item>
+      <item/>
+      <item>IF  gv_flag_error = abap_true.</item>
+      <item>*   an error was detected -&gt;  leave this method immediately</item>
+      <item>RETURN.</item>
+      <item>ENDIF. &quot; if gv_flag_error = abap_true</item>
+      <item/>
+      <item>*----------------------------------------------------------------------*</item>
+      <item/>
+      <item>* get the object HEAD</item>
+      <item>CALL METHOD cl_lord=&gt;get_object_single</item>
+      <item>EXPORTING</item>
+      <item>iv_object_id   = &apos;HEAD&apos;</item>
+      <item>IMPORTING</item>
+      <item>es_object_comv = ls_head_comv_old_new</item>
+      <item>es_object_comr = ls_head_comr_new</item>
+      <item>es_object_comi = ls_head_comi_new</item>
+      <item>EXCEPTIONS</item>
+      <item>OTHERS         = 1.</item>
+      <item/>
+      <item>* analyse and collect the messages from the LORD</item>
+      <item>CALL METHOD cl_sls_mapping_helper=&gt;evaluate_messages</item>
+      <item>EXPORTING</item>
+      <item>iv_subrc       = sy-subrc</item>
+      <item>iv_msgid       = sy-msgid</item>
+      <item>iv_msgty       = sy-msgty</item>
+      <item>iv_msgno       = sy-msgno</item>
+      <item>iv_msgv1       = sy-msgv1</item>
+      <item>iv_msgv2       = sy-msgv2</item>
+      <item>iv_msgv3       = sy-msgv3</item>
+      <item>iv_msgv4       = sy-msgv4 &quot;n 1088879</item>
+      <item>CHANGING</item>
+      <item>cv_flag_error  = gv_flag_error</item>
+      <item>ct_message_log = gt_message_log.</item>
+      <item/>
+      <item>IF  gv_flag_error = abap_true.</item>
+      <item>*   an error was detected -&gt;  leave this method immediately</item>
+      <item>RETURN.</item>
+      <item>ENDIF. &quot; if gv_flag_error = abap_true</item>
+      <item/>
+      <item>*----------------------------------------------------------------------*</item>
+      <item/>
+      <item>* check wether the found sales document is a sales order</item>
+      <item>SELECT SINGLE *            FROM vbak &quot; Sales Document: Header Data</item>
+      <item>INTO CORRESPONDING FIELDS OF ls_vbak_new</item>
+      <item>WHERE vbeln EQ lv_vbeln_new.</item>
+      <item/>
+      <item>IF sy-subrc IS INITIAL.</item>
+      <item>*   this service can change only sales ordersdocuments</item>
+      <item>IF  ls_vbak_new-trvog EQ &apos;0&apos;  AND</item>
+      <item>ls_vbak_new-vbtyp EQ &apos;C&apos;.</item>
+      <item>*     this is a sales order -&gt; no action</item>
+      <item>ELSE. &quot; ELSE -&gt; if ls_VBAK_NEW-TRVOG EQ &apos;0&apos; and</item>
+      <item>*     V_OPS_SE_SLS 105 :SalesDocument &amp;1 is not a SalesOrder and cannot be processed</item>
+      <item>MESSAGE e105(v_ops_se_sls)     WITH  &lt;lfs_input_head_new&gt;-id-content &quot; SalesDocument &amp;1 is not a SalesOrder and cannot be processed</item>
+      <item>INTO  ls_message_log_new-message.</item>
+      <item/>
+      <item>CALL METHOD cl_sls_mapping_helper=&gt;evaluate_messages_append</item>
+      <item>CHANGING</item>
+      <item>cs_message_log = ls_message_log_new</item>
+      <item>cv_flag_error  = gv_flag_error</item>
+      <item>ct_message_log = gt_message_log.</item>
+      <item>ENDIF. &quot; if ls_VBAK_NEW-TRVOG EQ &apos;0&apos; and</item>
+      <item>ELSE. &quot; ELSE -&gt; IF SY-SUBRC IS INITIAL</item>
+      <item>*   V1 302 : SD document &amp;1 is not in the database or has been archived</item>
+      <item>MESSAGE e302(v1) WITH &lt;lfs_input_head_new&gt;-id-content &quot; SD document &amp; is not in the database or has been archived</item>
+      <item>INTO  ls_message_log_new-message.</item>
+      <item/>
+      <item>CALL METHOD cl_sls_mapping_helper=&gt;evaluate_messages_append</item>
+      <item>CHANGING</item>
+      <item>cs_message_log = ls_message_log_new</item>
+      <item>cv_flag_error  = gv_flag_error</item>
+      <item>ct_message_log = gt_message_log.</item>
+      <item>ENDIF. &quot; IF SY-SUBRC IS INITIAL</item>
+      <item/>
+      <item>IF  gv_flag_error = abap_true.</item>
+      <item>*   an error was detected -&gt;  leave this method immediately</item>
+      <item>RETURN.</item>
+      <item>ENDIF. &quot; if gv_flag_error = abap_true</item>
+      <item/>
+      <item>*----------------------------------------------------------------------*</item>
+      <item/>
+      <item>* insert the HEAD as root object and its handle into the assigment table</item>
+      <item>CALL METHOD cl_sls_mapping_helper=&gt;fill_xi_lord_assignment</item>
+      <item>EXPORTING</item>
+      <item>iv_object         = co_head</item>
+      <item>iv_handle         = ls_head_comv_old_new-handle</item>
+      <item>CHANGING</item>
+      <item>ct_xi_lord_assign = et_xi_lord_assign.</item>
+      <item/>
+      <item>*----------------------------------------------------------------------*</item>
+      <item/>
+      <item>* mapp the fields which belong to object HEAD</item>
+      <item>CALL METHOD me-&gt;input_map_head_fields</item>
+      <item>EXPORTING</item>
+      <item>is_input         = lx_input</item>
+      <item>is_head_comv_old = ls_head_comv_old_new</item>
+      <item>is_head_comi     = ls_head_comi_new</item>
+      <item>IMPORTING</item>
+      <item>es_head_comv     = es_head_comv</item>
+      <item>es_head_comx     = es_head_comx</item>
+      <item>CHANGING</item>
+      <item>cv_flag_error    = gv_flag_error</item>
+      <item>ct_message_log   = gt_message_log.</item>
+      <item/>
+      <item>IF  gv_flag_error = abap_true.</item>
+      <item>*   an error was detected -&gt;  leave this method immediately</item>
+      <item>RETURN.</item>
+      <item>ENDIF. &quot; if gv_flag_error = abap_true</item>
+      <item/>
+      <item>*----------------------------------------------------------------------*</item>
+      <item/>
+      <item>* analyse content of the related controller table</item>
+      <item>CALL METHOD cl_sls_mapping_helper=&gt;get_skipped_fields</item>
+      <item>EXPORTING</item>
+      <item>it_controller  = &lt;lfs_input_head_new&gt;-controller</item>
+      <item>IMPORTING</item>
+      <item>et_range_field = lt_ra_field_new.</item>
+      <item/>
+      <item>*----------------------------------------------------------------------*</item>
+      <item/>
+      <item>* process the objects ESTAT, PARTY, COND, TEXT, and ITEM which are</item>
+      <item>* related to object HEAD</item>
+      <item/>
+      <item>* input mapping of object ESTAT which is related to object HEAD</item>
+      <item>IF  &apos;STATUS&apos; IN lt_ra_field_new.</item>
+      <item>*   process this substructure with the related table</item>
+      <item>CALL METHOD me-&gt;input_map_estat</item>
+      <item>EXPORTING</item>
+      <item>iv_handle_parent = ls_head_comv_old_new-handle</item>
+      <item>iv_vbeln         = lv_vbeln_new</item>
+      <item>is_estat_in      = &lt;lfs_input_head_new&gt;-status &quot;SAPPLCO_SALES_ORDER_ERPCHANG11</item>
+      <item>CHANGING</item>
+      <item>ct_estat_comv    = et_estat_comv</item>
+      <item>ct_estat_comx    = et_estat_comx.</item>
+      <item/>
+      <item>IF  gv_flag_error = abap_true.</item>
+      <item>RETURN. &quot; error detected -&gt;  leave this method</item>
+      <item>ENDIF. &quot; if gv_flag_error = abap_true</item>
+      <item>ENDIF. &quot; if &apos;STATUS&apos; in lt_ra_field_new</item>
+      <item/>
+      <item>* input mapping of object PARTY which is related to object HEAD</item>
+      <item>CALL METHOD me-&gt;input_map_party</item>
+      <item>EXPORTING</item>
+      <item>iv_handle_parent = ls_head_comv_old_new-handle</item>
+      <item>iv_flag_new_item = abap_false</item>
+      <item>it_party_in      = &lt;lfs_input_head_new&gt;-party &quot;SAPPLCO_SALES_ORDER_ERPCH_TAB7</item>
+      <item>CHANGING</item>
+      <item>ct_party_comv    = et_party_comv</item>
+      <item>ct_party_comx    = et_party_comx</item>
+      <item>ct_action        = et_action</item>
+      <item>ct_objinst       = et_objinst.</item>
+      <item/>
+      <item>IF  gv_flag_error = abap_true.</item>
+      <item>*   an error was detected -&gt;  leave this method immediately</item>
+      <item>RETURN.</item>
+      <item>ENDIF. &quot; if gv_flag_error = abap_true</item>
+      <item/>
+      <item>* input mapping of object COND which is related to object HEAD</item>
+      <item>CALL METHOD me-&gt;input_map_cond</item>
+      <item>EXPORTING</item>
+      <item>iv_handle_parent = ls_head_comv_old_new-handle</item>
+      <item>iv_flag_new_item = abap_false</item>
+      <item>it_cond_in       = &lt;lfs_input_head_new&gt;-price_component &quot;SAPPLCO_SALES_ORDER_ERPCH_TAB5</item>
+      <item>CHANGING</item>
+      <item>ct_cond_comv     = et_cond_comv</item>
+      <item>ct_cond_comx     = et_cond_comx</item>
+      <item>ct_action        = et_action</item>
+      <item>ct_objinst       = et_objinst.</item>
+      <item/>
+      <item>IF  gv_flag_error = abap_true.</item>
+      <item>RETURN. &quot; error detected -&gt;  leave this method</item>
+      <item>ENDIF. &quot; if gv_flag_error = abap_true</item>
+      <item/>
+      <item>* input mapping of object TEXT which is related to object HEAD</item>
+      <item>IF  &apos;TEXT_COLLECTION&apos; IN lt_ra_field_new.</item>
+      <item>*   process this substructure with the related table</item>
+      <item>CALL METHOD me-&gt;input_map_text</item>
+      <item>EXPORTING</item>
+      <item>iv_handle_parent = ls_head_comv_old_new-handle</item>
+      <item>iv_flag_new_item = abap_false</item>
+      <item>it_text_in       = &lt;lfs_input_head_new&gt;-text_collection-text &quot;SAPPLCO_SALES_ORDER_ERPCH_TAB2</item>
+      <item>CHANGING</item>
+      <item>ct_text_comv     = et_text_comv</item>
+      <item>ct_text_comx     = et_text_comx</item>
+      <item>ct_action        = et_action</item>
+      <item>ct_objinst       = et_objinst.</item>
+      <item/>
+      <item>IF  gv_flag_error = abap_true.</item>
+      <item>RETURN. &quot; error detected -&gt;  leave this method</item>
+      <item>ENDIF. &quot; if gv_flag_error = abap_true</item>
+      <item>ENDIF. &quot; if &apos;TEXT_COLLECTION&apos; in lt_ra_field_new</item>
+      <item/>
+      <item>* input mapping of object ITEM which is related to object HEAD</item>
+      <item>CALL METHOD me-&gt;input_map_item</item>
+      <item>EXPORTING</item>
+      <item>iv_vbeln          = lv_vbeln_new</item>
+      <item>it_item_in        = &lt;lfs_input_head_new&gt;-item &quot;SAPPLCO_SALES_ORDER_ERPCH_TAB9</item>
+      <item>CHANGING</item>
+      <item>ct_item_comv      = et_item_comv</item>
+      <item>ct_item_comx      = et_item_comx</item>
+      <item>ct_estat_comv     = et_estat_comv</item>
+      <item>ct_estat_comx     = et_estat_comx</item>
+      <item>ct_party_comv     = et_party_comv</item>
+      <item>ct_party_comx     = et_party_comx</item>
+      <item>ct_cond_comv      = et_cond_comv</item>
+      <item>ct_cond_comx      = et_cond_comx</item>
+      <item>ct_text_comv      = et_text_comv</item>
+      <item>ct_text_comx      = et_text_comx</item>
+      <item>ct_sline_comv     = et_sline_comv</item>
+      <item>ct_sline_comx     = et_sline_comx</item>
+      <item>ct_xi_lord_assign = et_xi_lord_assign</item>
+      <item>ct_action         = et_action</item>
+      <item>ct_objinst        = et_objinst.</item>
+      <item>*&lt;---End of copied code from Standard Method - Input_Mapping.</item>
+     </SOURCE>
+    </ENH_HOOK_IMPL>
+   </ENHANCEMENTS>
+   <SPACES>
+    <item>
+     <FULL_NAME>\TY:CL_SLS_SALESORDERERPCHGRC\ME:INPUT_MAPPING\SE:END\EI</FULL_NAME>
+     <SPACES>
+      <item>0</item>
+      <item>0</item>
+      <item>0</item>
+      <item>0</item>
+      <item>0</item>
+      <item>0</item>
+      <item>0</item>
+      <item>0</item>
+      <item>0</item>
+      <item>0</item>
+      <item>0</item>
+      <item>0</item>
+      <item>0</item>
+      <item>0</item>
+      <item>0</item>
+      <item>0</item>
+      <item>0</item>
+      <item>0</item>
+      <item>0</item>
+      <item>0</item>
+      <item>0</item>
+      <item>0</item>
+      <item>0</item>
+      <item>0</item>
+      <item>0</item>
+      <item>0</item>
+      <item>0</item>
+      <item>0</item>
+      <item>0</item>
+      <item>0</item>
+      <item>0</item>
+      <item>3</item>
+      <item>5</item>
+      <item>5</item>
+      <item>5</item>
+      <item>3</item>
+      <item>0</item>
+      <item>0</item>
+      <item>0</item>
+      <item>0</item>
+      <item>6</item>
+      <item>6</item>
+      <item>6</item>
+      <item>6</item>
+      <item>6</item>
+      <item>6</item>
+      <item>6</item>
+      <item>0</item>
+      <item>0</item>
+      <item>7</item>
+      <item>0</item>
+      <item>7</item>
+      <item>0</item>
+      <item>0</item>
+      <item>7</item>
+      <item>7</item>
+      <item>0</item>
+      <item>0</item>
+      <item>0</item>
+      <item>0</item>
+      <item>0</item>
+      <item>0</item>
+      <item>0</item>
+      <item>0</item>
+      <item>0</item>
+      <item>2</item>
+      <item>0</item>
+      <item>0</item>
+      <item>0</item>
+      <item>0</item>
+      <item>0</item>
+      <item>0</item>
+      <item>0</item>
+      <item>0</item>
+      <item>0</item>
+      <item>0</item>
+      <item>0</item>
+      <item>0</item>
+      <item>0</item>
+      <item>0</item>
+      <item>0</item>
+      <item>0</item>
+      <item>0</item>
+      <item>0</item>
+      <item>0</item>
+      <item>4</item>
+      <item>11</item>
+      <item>11</item>
+      <item>11</item>
+      <item>11</item>
+      <item>11</item>
+      <item>4</item>
+      <item>6</item>
+      <item>4</item>
+      <item>0</item>
+      <item>4</item>
+      <item>0</item>
+      <item>0</item>
+      <item>6</item>
+      <item>30</item>
+      <item>30</item>
+      <item>30</item>
+      <item>0</item>
+      <item>0</item>
+      <item>6</item>
+      <item>8</item>
+      <item>6</item>
+      <item>4</item>
+      <item>2</item>
+      <item>0</item>
+      <item>0</item>
+      <item>4</item>
+      <item>2</item>
+      <item>0</item>
+      <item>0</item>
+      <item>0</item>
+      <item>0</item>
+      <item>0</item>
+      <item>0</item>
+      <item>0</item>
+      <item>0</item>
+      <item>0</item>
+      <item>37</item>
+      <item>0</item>
+      <item>0</item>
+      <item>0</item>
+      <item>0</item>
+      <item>0</item>
+      <item>0</item>
+      <item>0</item>
+      <item>0</item>
+      <item>2</item>
+      <item>4</item>
+      <item>2</item>
+      <item>4</item>
+      <item>0</item>
+      <item>0</item>
+      <item>0</item>
+      <item>0</item>
+      <item>0</item>
+      <item>2</item>
+      <item>4</item>
+      <item>4</item>
+      <item>4</item>
+      <item>4</item>
+      <item>2</item>
+      <item>4</item>
+      <item>0</item>
+      <item>0</item>
+      <item>0</item>
+      <item>2</item>
+      <item>4</item>
+      <item>4</item>
+      <item>4</item>
+      <item>4</item>
+      <item>4</item>
+      <item>4</item>
+      <item>4</item>
+      <item>4</item>
+      <item>2</item>
+      <item>4</item>
+      <item>4</item>
+      <item>0</item>
+      <item>0</item>
+      <item>0</item>
+      <item>2</item>
+      <item>0</item>
+      <item>0</item>
+      <item>0</item>
+      <item>0</item>
+      <item>0</item>
+      <item>0</item>
+      <item>2</item>
+      <item>4</item>
+      <item>2</item>
+      <item>4</item>
+      <item>4</item>
+      <item>4</item>
+      <item>2</item>
+      <item>4</item>
+      <item>0</item>
+      <item>0</item>
+      <item>0</item>
+      <item>2</item>
+      <item>4</item>
+      <item>4</item>
+      <item>4</item>
+      <item>4</item>
+      <item>4</item>
+      <item>4</item>
+      <item>4</item>
+      <item>4</item>
+      <item>2</item>
+      <item>4</item>
+      <item>4</item>
+      <item>0</item>
+      <item>0</item>
+      <item>0</item>
+      <item>2</item>
+      <item>0</item>
+      <item>0</item>
+      <item>0</item>
+      <item>0</item>
+      <item>0</item>
+      <item>0</item>
+      <item>2</item>
+      <item>4</item>
+      <item>0</item>
+      <item>0</item>
+      <item>0</item>
+      <item>2</item>
+      <item>6</item>
+      <item>0</item>
+      <item>2</item>
+      <item>0</item>
+      <item>4</item>
+      <item>35</item>
+      <item>0</item>
+      <item>4</item>
+      <item>6</item>
+      <item>8</item>
+      <item>8</item>
+      <item>8</item>
+      <item>2</item>
+      <item>0</item>
+      <item>0</item>
+      <item>2</item>
+      <item>41</item>
+      <item>0</item>
+      <item>2</item>
+      <item>4</item>
+      <item>6</item>
+      <item>6</item>
+      <item>6</item>
+      <item>0</item>
+      <item>0</item>
+      <item>0</item>
+      <item>0</item>
+      <item>2</item>
+      <item>0</item>
+      <item>0</item>
+      <item>0</item>
+      <item>0</item>
+      <item>0</item>
+      <item>0</item>
+      <item>2</item>
+      <item>4</item>
+      <item>4</item>
+      <item>2</item>
+      <item>4</item>
+      <item>0</item>
+      <item>0</item>
+      <item>0</item>
+      <item>0</item>
+      <item>0</item>
+      <item>2</item>
+      <item>4</item>
+      <item>4</item>
+      <item>4</item>
+      <item>2</item>
+      <item>4</item>
+      <item>4</item>
+      <item>2</item>
+      <item>4</item>
+      <item>4</item>
+      <item>0</item>
+      <item>0</item>
+      <item>0</item>
+      <item>2</item>
+      <item>0</item>
+      <item>0</item>
+      <item>0</item>
+      <item>0</item>
+      <item>0</item>
+      <item>0</item>
+      <item>2</item>
+      <item>4</item>
+      <item>2</item>
+      <item>4</item>
+      <item>0</item>
+      <item>0</item>
+      <item>0</item>
+      <item>0</item>
+      <item>0</item>
+      <item>0</item>
+      <item>0</item>
+      <item>0</item>
+      <item>0</item>
+      <item>2</item>
+      <item>4</item>
+      <item>6</item>
+      <item>6</item>
+      <item>6</item>
+      <item>4</item>
+      <item>6</item>
+      <item>6</item>
+      <item>0</item>
+      <item>2</item>
+      <item>4</item>
+      <item>2</item>
+      <item>0</item>
+      <item>0</item>
+      <item>0</item>
+      <item>0</item>
+      <item>2</item>
+      <item>4</item>
+      <item>4</item>
+      <item>4</item>
+      <item>2</item>
+      <item>4</item>
+      <item>4</item>
+      <item>4</item>
+      <item>4</item>
+      <item>0</item>
+      <item>0</item>
+      <item>0</item>
+      <item>2</item>
+      <item>0</item>
+      <item>0</item>
+      <item>0</item>
+      <item>0</item>
+      <item>2</item>
+      <item>4</item>
+      <item>4</item>
+      <item>4</item>
+      <item>2</item>
+      <item>4</item>
+      <item>4</item>
+      <item>4</item>
+      <item>4</item>
+      <item>0</item>
+      <item>0</item>
+      <item>2</item>
+      <item>0</item>
+      <item>0</item>
+      <item>0</item>
+      <item>0</item>
+      <item>0</item>
+      <item>2</item>
+      <item>4</item>
+      <item>6</item>
+      <item>6</item>
+      <item>6</item>
+      <item>4</item>
+      <item>6</item>
+      <item>6</item>
+      <item>6</item>
+      <item>6</item>
+      <item>0</item>
+      <item>2</item>
+      <item>4</item>
+      <item>2</item>
+      <item>0</item>
+      <item>0</item>
+      <item>0</item>
+      <item>0</item>
+      <item>2</item>
+      <item>4</item>
+      <item>4</item>
+      <item>2</item>
+      <item>4</item>
+      <item>4</item>
+      <item>4</item>
+      <item>4</item>
+      <item>4</item>
+      <item>4</item>
+      <item>4</item>
+      <item>4</item>
+      <item>4</item>
+      <item>4</item>
+      <item>4</item>
+      <item>4</item>
+      <item>4</item>
+      <item>4</item>
+      <item>4</item>
+      <item>0</item>
+     </SPACES>
+    </item>
+   </SPACES>
+  </asx:values>
+ </asx:abap>
+</abapGit>

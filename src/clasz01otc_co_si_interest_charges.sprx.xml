@@ -1,0 +1,86 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<abapGit version="v1.0.0" serializer="LCL_OBJECT_SPRX" serializer_version="v1.0.0">
+ <asx:abap xmlns:asx="http://www.sap.com/abapxml" version="1.0">
+  <asx:values>
+   <PROXY_HEADER>
+    <item>
+     <OBJECT>CLAS</OBJECT>
+     <OBJ_NAME>Z01OTC_CO_SI_INTEREST_CHARGES</OBJ_NAME>
+     <OBJECT_M>CLAS</OBJECT_M>
+     <OBJ_NAME_M>Z01OTC_CO_SI_INTEREST_CHARGES</OBJ_NAME_M>
+     <HASH_ID>D78B717C576B1C44958B0336E768FDB617EB0620</HASH_ID>
+     <ID>&lt;portType&gt; SI_InterestCharges_out http://bio-rad.com/OTC/InterestCharges http://bio-rad.com/OTC/InterestCharges</ID>
+     <IFR_GLOBAL>X</IFR_GLOBAL>
+     <IFR_TYPE>portType</IFR_TYPE>
+     <IFR_NAME>SI_InterestCharges_out</IFR_NAME>
+     <IFR_NSPCE>http://bio-rad.com/OTC/InterestCharges</IFR_NSPCE>
+     <IFR_GNSPCE>http://bio-rad.com/OTC/InterestCharges</IFR_GNSPCE>
+     <GEN_VERS>0006</GEN_VERS>
+     <PREFIX>Z01OTC_</PREFIX>
+     <CATEGORY>ifmmessif</CATEGORY>
+     <DIRECTION>O</DIRECTION>
+     <SYNCHRON>D</SYNCHRON>
+     <X-ML_NSPCE>http://bio-rad.com/OTC/InterestCharges</X-ML_NSPCE>
+     <X-ML_NAME>SI_InterestCharges_out</X-ML_NAME>
+     <FURTHER_DATA>﻿&lt;asx:abap xmlns:asx=&quot;http://www.sap.com/abapxml&quot; version=&quot;1.0&quot;&gt;&lt;asx:values&gt;&lt;DATA&gt;&lt;SOAP_APPL&gt;urn:sap-com:soap:application:esr:client:710&lt;/SOAP_APPL&gt;&lt;/DATA&gt;&lt;/asx:values&gt;&lt;/asx:abap&gt;</FURTHER_DATA>
+     <VERSION_ID>feb91cfd1b5a11e895850000010d7702</VERSION_ID>
+    </item>
+   </PROXY_HEADER>
+   <PROXY_DATA>
+    <item>
+     <OBJECT>CLAS</OBJECT>
+     <OBJ_NAME>Z01OTC_CO_SI_INTEREST_CHARGES</OBJ_NAME>
+     <OBJECT1>CLAS</OBJECT1>
+     <OBJ_NAME1>Z01OTC_CO_SI_INTEREST_CHARGES</OBJ_NAME1>
+     <OBJECT2>CLAS</OBJECT2>
+     <OBJ_NAME2>Z01OTC_CO_SI_INTEREST_CHARGES</OBJ_NAME2>
+     <ID>&lt;portType&gt; SI_InterestCharges_out http://bio-rad.com/OTC/InterestCharges http://bio-rad.com/OTC/InterestCharges</ID>
+     <IFR_TYPE>portType</IFR_TYPE>
+     <IFR_NAME>SI_InterestCharges_out</IFR_NAME>
+     <IFR_TEXT>Interest Charges Faben</IFR_TEXT>
+     <IFR_LANGU>EN</IFR_LANGU>
+     <IFR_SCALE>-2</IFR_SCALE>
+     <R3_TYPE>CLAS</R3_TYPE>
+     <R3_NAME>Z01OTC_CO_SI_INTEREST_CHARGES</R3_NAME>
+     <R3_TEXT>Interest Charges Faben</R3_TEXT>
+     <CATEGORY>ifmmessif</CATEGORY>
+     <DIRECTION>O</DIRECTION>
+    </item>
+    <item>
+     <OBJECT>CLAS</OBJECT>
+     <OBJ_NAME>Z01OTC_CO_SI_INTEREST_CHARGES</OBJ_NAME>
+     <OBJECT1>METH</OBJECT1>
+     <OBJ_NAME1>SI_INTEREST_CHARGES_OUT</OBJ_NAME1>
+     <OBJECT2>METH</OBJECT2>
+     <OBJ_NAME2>SI_INTEREST_CHARGES_OUT</OBJ_NAME2>
+     <ID>&lt;operation&gt; SI_InterestCharges_out &lt;portType&gt; SI_InterestCharges_out http://bio-rad.com/OTC/InterestCharges http://bio-rad.com/OTC/InterestCharges</ID>
+     <IFR_TYPE>operation</IFR_TYPE>
+     <IFR_NAME>SI_InterestCharges_out</IFR_NAME>
+     <IFR_LANGU>EN</IFR_LANGU>
+     <IFR_SCALE>-2</IFR_SCALE>
+     <R3_TYPE>METH</R3_TYPE>
+     <R3_NAME>SI_INTEREST_CHARGES_OUT</R3_NAME>
+     <R3_SEQNUM>000001</R3_SEQNUM>
+     <DIRECTION>O</DIRECTION>
+    </item>
+    <item>
+     <OBJECT>CLAS</OBJECT>
+     <OBJ_NAME>Z01OTC_CO_SI_INTEREST_CHARGES</OBJ_NAME>
+     <OBJECT1>METH</OBJECT1>
+     <OBJ_NAME1>SI_INTEREST_CHARGES_OUT</OBJ_NAME1>
+     <OBJECT2>PAIM</OBJECT2>
+     <OBJ_NAME2>OUTPUT</OBJ_NAME2>
+     <OBJECT_R>TABL</OBJECT_R>
+     <OBJ_NAME_R>Z01OTC_FATTURA_ELETTRONICA</OBJ_NAME_R>
+     <ID>&lt;output&gt; output &lt;operation&gt; SI_InterestCharges_out &lt;portType&gt; SI_InterestCharges_out http://bio-rad.com/OTC/InterestCharges http://bio-rad.com/OTC/InterestCharges</ID>
+     <IFR_TYPE>PartOutput</IFR_TYPE>
+     <IFR_NAME>output</IFR_NAME>
+     <IFR_SCALE>-2</IFR_SCALE>
+     <R3_TYPE>PAIM</R3_TYPE>
+     <R3_NAME>OUTPUT</R3_NAME>
+     <R3_SEQNUM>000001</R3_SEQNUM>
+    </item>
+   </PROXY_DATA>
+  </asx:values>
+ </asx:abap>
+</abapGit>

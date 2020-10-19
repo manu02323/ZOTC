@@ -1,0 +1,56 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<abapGit version="v1.0.0" serializer="LCL_OBJECT_TRAN" serializer_version="v1.0.0">
+ <asx:abap xmlns:asx="http://www.sap.com/abapxml" version="1.0">
+  <asx:values>
+   <TSTC>
+    <TCODE>ZOTC_BANAMEX_VNBR</TCODE>
+    <CINFO>Ag==</CINFO>
+   </TSTC>
+   <TSTCC>
+    <TCODE>ZOTC_BANAMEX_VNBR</TCODE>
+    <S_WEBGUI>1</S_WEBGUI>
+    <S_WIN32>X</S_WIN32>
+    <S_PLATIN>X</S_PLATIN>
+   </TSTCC>
+   <TSTCT>
+    <SPRSL>E</SPRSL>
+    <TCODE>ZOTC_BANAMEX_VNBR</TCODE>
+    <TTEXT>Banamex Virtual Customer Look-Up</TTEXT>
+   </TSTCT>
+   <TSTCP>
+    <TCODE>ZOTC_BANAMEX_VNBR</TCODE>
+    <PARAM>/*ZPTP_BRFPLUS P_OBJECT=ZT_OTC_IDD_0176_MT940_BANAMEX;</PARAM>
+   </TSTCP>
+   <I18N_TPOOL>
+    <TSTCT>
+     <SPRSL>1</SPRSL>
+     <TTEXT>Banamex Virtual Customer Look-Up</TTEXT>
+    </TSTCT>
+    <TSTCT>
+     <SPRSL>F</SPRSL>
+     <TTEXT>Banamex Virtual Customer Look-Up</TTEXT>
+    </TSTCT>
+    <TSTCT>
+     <SPRSL>J</SPRSL>
+     <TTEXT>Banamex Virtual Customer Look-Up</TTEXT>
+    </TSTCT>
+    <TSTCT>
+     <SPRSL>N</SPRSL>
+     <TTEXT>Banamex Virtual Customer Look-Up</TTEXT>
+    </TSTCT>
+    <TSTCT>
+     <SPRSL>P</SPRSL>
+     <TTEXT>Banamex Virtual Customer Look-Up</TTEXT>
+    </TSTCT>
+    <TSTCT>
+     <SPRSL>R</SPRSL>
+     <TTEXT>Banamex Virtual Customer Look-Up</TTEXT>
+    </TSTCT>
+    <TSTCT>
+     <SPRSL>S</SPRSL>
+     <TTEXT>Banamex Virtual Customer Look-Up</TTEXT>
+    </TSTCT>
+   </I18N_TPOOL>
+  </asx:values>
+ </asx:abap>
+</abapGit>

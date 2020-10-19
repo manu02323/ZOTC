@@ -1,0 +1,104 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<abapGit version="v1.0.0" serializer="LCL_OBJECT_FUGR" serializer_version="v1.0.0">
+ <asx:abap xmlns:asx="http://www.sap.com/abapxml" version="1.0">
+  <asx:values>
+   <AREAT>OTC_EDD_0070 Revenue recognition FM&apos;S</AREAT>
+   <INCLUDES>
+    <SOBJ_NAME>LZOTC_0070_REVRECOGTOP</SOBJ_NAME>
+    <SOBJ_NAME>SAPLZOTC_0070_REVRECOG</SOBJ_NAME>
+   </INCLUDES>
+   <FUNCTIONS>
+    <item>
+     <FUNCNAME>ZOTC_0070_REVRECOG_00503111</FUNCNAME>
+     <SHORT_TEXT>OTC_EDD_0070_Revenue Recognition Document Type</SHORT_TEXT>
+     <IMPORT>
+      <RSIMP>
+       <PARAMETER>FIS_ACCHD</PARAMETER>
+       <OPTIONAL>X</OPTIONAL>
+       <TYP>ACCHD</TYP>
+      </RSIMP>
+      <RSIMP>
+       <PARAMETER>FIS_ACCCR</PARAMETER>
+       <OPTIONAL>X</OPTIONAL>
+       <TYP>ACCCR</TYP>
+      </RSIMP>
+      <RSIMP>
+       <PARAMETER>FIS_ACCIT</PARAMETER>
+       <OPTIONAL>X</OPTIONAL>
+       <TYP>ACCIT</TYP>
+      </RSIMP>
+      <RSIMP>
+       <PARAMETER>FIS_VBREVE</PARAMETER>
+       <OPTIONAL>X</OPTIONAL>
+       <TYP>VBREVEVB</TYP>
+      </RSIMP>
+     </IMPORT>
+     <CHANGING>
+      <RSCHA>
+       <PARAMETER>FBF_BUDAT</PARAMETER>
+       <OPTIONAL>X</OPTIONAL>
+       <TYP>ACCIT-BUDAT</TYP>
+      </RSCHA>
+      <RSCHA>
+       <PARAMETER>FBF_BLART</PARAMETER>
+       <OPTIONAL>X</OPTIONAL>
+       <TYP>ACCIT-BLART</TYP>
+      </RSCHA>
+      <RSCHA>
+       <PARAMETER>FBF_ERDAT</PARAMETER>
+       <OPTIONAL>X</OPTIONAL>
+       <TYP>VBREVE-ERDAT</TYP>
+      </RSCHA>
+      <RSCHA>
+       <PARAMETER>FBF_ERZET</PARAMETER>
+       <OPTIONAL>X</OPTIONAL>
+       <TYP>VBREVE-ERZET</TYP>
+      </RSCHA>
+     </CHANGING>
+     <DOCUMENTATION>
+      <RSFDO>
+       <PARAMETER>FIS_ACCHD</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Interface to Accounting: Header Information</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>FIS_ACCCR</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Accounting Interface: Currency Information</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>FIS_ACCIT</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Accounting Interface: Item Information</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>FIS_VBREVE</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Revenue Recognition: XVBREVE/YVBREVE Reference Structure</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>FBF_BUDAT</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Posting Date in the Document</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>FBF_BLART</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Document Type</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>FBF_ERDAT</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Date on Which Record Was Created</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>FBF_ERZET</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Entry time</STEXT>
+      </RSFDO>
+     </DOCUMENTATION>
+    </item>
+   </FUNCTIONS>
+  </asx:values>
+ </asx:abap>
+</abapGit>

@@ -1,0 +1,100 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<abapGit version="v1.0.0" serializer="LCL_OBJECT_DTEL" serializer_version="v1.0.0">
+ <asx:abap xmlns:asx="http://www.sap.com/abapxml" version="1.0">
+  <asx:values>
+   <DD04V>
+    <ROLLNAME>Z_QUOTEREF</ROLLNAME>
+    <DDLANGUAGE>E</DDLANGUAGE>
+    <DOMNAME>Z_QUOTEREF</DOMNAME>
+    <LOGFLAG>X</LOGFLAG>
+    <HEADLEN>14</HEADLEN>
+    <SCRLEN1>10</SCRLEN1>
+    <SCRLEN2>14</SCRLEN2>
+    <SCRLEN3>14</SCRLEN3>
+    <DDTEXT>Legacy Qtn Ref</DDTEXT>
+    <REPTEXT>Legacy Qtn Ref</REPTEXT>
+    <SCRTEXT_S>Legacy Qtn</SCRTEXT_S>
+    <SCRTEXT_M>Legacy Qtn Ref</SCRTEXT_M>
+    <SCRTEXT_L>Legacy Qtn Ref</SCRTEXT_L>
+    <DTELMASTER>E</DTELMASTER>
+    <REFKIND>D</REFKIND>
+   </DD04V>
+   <I18N_LANGS>
+    <LANGU>1</LANGU>
+    <LANGU>D</LANGU>
+    <LANGU>F</LANGU>
+    <LANGU>J</LANGU>
+    <LANGU>N</LANGU>
+    <LANGU>P</LANGU>
+    <LANGU>R</LANGU>
+    <LANGU>S</LANGU>
+   </I18N_LANGS>
+   <DD04_TEXTS>
+    <item>
+     <DDLANGUAGE>1</DDLANGUAGE>
+     <DDTEXT>Legacy Qtn Ref</DDTEXT>
+     <REPTEXT>Legacy Qtn Ref</REPTEXT>
+     <SCRTEXT_S>Legacy Qtn</SCRTEXT_S>
+     <SCRTEXT_M>Legacy Qtn Ref</SCRTEXT_M>
+     <SCRTEXT_L>Legacy Qtn Ref</SCRTEXT_L>
+    </item>
+    <item>
+     <DDLANGUAGE>D</DDLANGUAGE>
+     <DDTEXT>Ref. Qtn Altsystem</DDTEXT>
+     <REPTEXT>Ref. Altsystem</REPTEXT>
+     <SCRTEXT_S>Ref.Altsys</SCRTEXT_S>
+     <SCRTEXT_M>Ref. Altsystem</SCRTEXT_M>
+     <SCRTEXT_L>Ref. Altsystem</SCRTEXT_L>
+    </item>
+    <item>
+     <DDLANGUAGE>F</DDLANGUAGE>
+     <DDTEXT>devis refererenciel du systeme d&apos;origine</DDTEXT>
+     <REPTEXT>devis ref.</REPTEXT>
+     <SCRTEXT_S>devis ref.</SCRTEXT_S>
+     <SCRTEXT_M>devis ref.</SCRTEXT_M>
+     <SCRTEXT_L>devis ref.</SCRTEXT_L>
+    </item>
+    <item>
+     <DDLANGUAGE>J</DDLANGUAGE>
+     <DDTEXT>Legacy Qtn Ref</DDTEXT>
+     <REPTEXT>Legacy Qtn Ref</REPTEXT>
+     <SCRTEXT_S>Legacy Qtn</SCRTEXT_S>
+     <SCRTEXT_M>Legacy Qtn Ref</SCRTEXT_M>
+     <SCRTEXT_L>Legacy Qtn Ref</SCRTEXT_L>
+    </item>
+    <item>
+     <DDLANGUAGE>N</DDLANGUAGE>
+     <DDTEXT>Legacy Qtn Ref</DDTEXT>
+     <REPTEXT>Legacy Qtn Ref</REPTEXT>
+     <SCRTEXT_S>Legacy Qtn</SCRTEXT_S>
+     <SCRTEXT_M>Legacy Qtn Ref</SCRTEXT_M>
+     <SCRTEXT_L>Legacy Qtn Ref</SCRTEXT_L>
+    </item>
+    <item>
+     <DDLANGUAGE>P</DDLANGUAGE>
+     <DDTEXT>Legacy Qtn Ref</DDTEXT>
+     <REPTEXT>Legacy Qtn Ref</REPTEXT>
+     <SCRTEXT_S>Legacy Qtn</SCRTEXT_S>
+     <SCRTEXT_M>Legacy Qtn Ref</SCRTEXT_M>
+     <SCRTEXT_L>Legacy Qtn Ref</SCRTEXT_L>
+    </item>
+    <item>
+     <DDLANGUAGE>R</DDLANGUAGE>
+     <DDTEXT>Legacy Qtn Ref</DDTEXT>
+     <REPTEXT>Legacy Qtn Ref</REPTEXT>
+     <SCRTEXT_S>Legacy Qtn</SCRTEXT_S>
+     <SCRTEXT_M>Legacy Qtn Ref</SCRTEXT_M>
+     <SCRTEXT_L>Legacy Qtn Ref</SCRTEXT_L>
+    </item>
+    <item>
+     <DDLANGUAGE>S</DDLANGUAGE>
+     <DDTEXT>Legacy Qtn Ref</DDTEXT>
+     <REPTEXT>Legacy Qtn Ref</REPTEXT>
+     <SCRTEXT_S>Legacy Qtn</SCRTEXT_S>
+     <SCRTEXT_M>Legacy Qtn Ref</SCRTEXT_M>
+     <SCRTEXT_L>Legacy Qtn Ref</SCRTEXT_L>
+    </item>
+   </DD04_TEXTS>
+  </asx:values>
+ </asx:abap>
+</abapGit>

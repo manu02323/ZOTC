@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<abapGit version="v1.0.0" serializer="LCL_OBJECT_ENHO" serializer_version="v1.0.0">
+ <asx:abap xmlns:asx="http://www.sap.com/abapxml" version="1.0">
+  <asx:values>
+   <TOOL>BADI_IMPL</TOOL>
+   <SHORTTEXT>Establish reference to a reagent rental item in a sales order</SHORTTEXT>
+   <SPOT_NAME>BADI_SD_SALES_ITEM</SPOT_NAME>
+   <IMPL>
+    <ENH_BADI_IMPL_DATA>
+     <SPOT_NAME>BADI_SD_SALES_ITEM</SPOT_NAME>
+     <BADI_NAME>BADI_SD_REF_DOC_CUST</BADI_NAME>
+     <IMPL_NAME>ZCL_IM_OTC_RR_CONTRACT_REF</IMPL_NAME>
+     <IMPL_CLASS>ZOTCCL_RR_CONTRACT_REF</IMPL_CLASS>
+     <ACTIVE>X</ACTIVE>
+     <IMPL_SHORTTEXT>Establish reference to a reagent rental item in a sales order</IMPL_SHORTTEXT>
+     <IMPL_SHORTTEXT_ID>005056B3602D1ED290EBC2C8DA20E9B3</IMPL_SHORTTEXT_ID>
+    </ENH_BADI_IMPL_DATA>
+   </IMPL>
+  </asx:values>
+ </asx:abap>
+</abapGit>

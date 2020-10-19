@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<abapGit version="v1.0.0" serializer="LCL_OBJECT_ENHO" serializer_version="v1.0.0">
+ <asx:abap xmlns:asx="http://www.sap.com/abapxml" version="1.0">
+  <asx:values>
+   <TOOL>BADI_IMPL</TOOL>
+   <SHORTTEXT>ES sales order simulation</SHORTTEXT>
+   <SPOT_NAME>SLS_SPOT_APPL_SE_SALESORDER</SPOT_NAME>
+   <IMPL>
+    <ENH_BADI_IMPL_DATA>
+     <SPOT_NAME>SLS_SPOT_APPL_SE_SALESORDER</SPOT_NAME>
+     <BADI_NAME>SLS_APPL_SE_SOERPCRTCHKQR</BADI_NAME>
+     <IMPL_NAME>ZCL_IM_SIMULATE_SO</IMPL_NAME>
+     <IMPL_CLASS>ZCL_IM_SIMULATE_SO</IMPL_CLASS>
+     <ACTIVE>X</ACTIVE>
+     <IMPL_SHORTTEXT>Implementation: Inbound / Outbound processing for SALESORDERCRTCHKQR</IMPL_SHORTTEXT>
+     <IMPL_SHORTTEXT_ID>005056B342CF1EE3B8803BA53B49077D</IMPL_SHORTTEXT_ID>
+     <SORTER_DATA>/wYCAQECgAA0MTAzAAAAAAEKAAAAAAEAAAAxBQAAAAAAAAAAAAAAAAAAAAAAAAAATABBAFkARQBS
+ALwAAAABAL0E</SORTER_DATA>
+    </ENH_BADI_IMPL_DATA>
+   </IMPL>
+  </asx:values>
+ </asx:abap>
+</abapGit>

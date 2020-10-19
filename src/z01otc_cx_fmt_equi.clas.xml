@@ -1,0 +1,381 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<abapGit version="v1.0.0" serializer="LCL_OBJECT_CLAS" serializer_version="v1.0.0">
+ <asx:abap xmlns:asx="http://www.sap.com/abapxml" version="1.0">
+  <asx:values>
+   <VSEOCLASS>
+    <CLSNAME>Z01OTC_CX_FMT_EQUI</CLSNAME>
+    <LANGU>E</LANGU>
+    <DESCRIPT>Fault Message type for Equipment master update in SAP ECC sy</DESCRIPT>
+    <CATEGORY>40</CATEGORY>
+    <STATE>1</STATE>
+    <CLSCCINCL>X</CLSCCINCL>
+    <FIXPT>X</FIXPT>
+    <UNICODE>X</UNICODE>
+    <RSTAT>P</RSTAT>
+    <CLSPROXY>X</CLSPROXY>
+   </VSEOCLASS>
+   <DESCRIPTIONS>
+    <SEOCOMPOTX>
+     <CLSNAME>Z01OTC_CX_FMT_EQUI</CLSNAME>
+     <CMPNAME>AUTOMATIC_RETRY</CMPNAME>
+     <LANGU>1</LANGU>
+     <DESCRIPT>&apos;X&apos;: automatically retry on error (only inbound)</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>Z01OTC_CX_FMT_EQUI</CLSNAME>
+     <CMPNAME>AUTOMATIC_RETRY</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>&apos;X&apos;: automatically retry on error (only inbound)</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>Z01OTC_CX_FMT_EQUI</CLSNAME>
+     <CMPNAME>AUTOMATIC_RETRY</CMPNAME>
+     <LANGU>F</LANGU>
+     <DESCRIPT>&apos;X&apos;: automatically retry on error (only inbound)</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>Z01OTC_CX_FMT_EQUI</CLSNAME>
+     <CMPNAME>AUTOMATIC_RETRY</CMPNAME>
+     <LANGU>G</LANGU>
+     <DESCRIPT>&apos;X&apos;: automatically retry on error (only inbound)</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>Z01OTC_CX_FMT_EQUI</CLSNAME>
+     <CMPNAME>AUTOMATIC_RETRY</CMPNAME>
+     <LANGU>H</LANGU>
+     <DESCRIPT>&apos;X&apos;: automatically retry on error (only inbound)</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>Z01OTC_CX_FMT_EQUI</CLSNAME>
+     <CMPNAME>AUTOMATIC_RETRY</CMPNAME>
+     <LANGU>I</LANGU>
+     <DESCRIPT>&apos;X&apos;: automatically retry on error (only inbound)</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>Z01OTC_CX_FMT_EQUI</CLSNAME>
+     <CMPNAME>AUTOMATIC_RETRY</CMPNAME>
+     <LANGU>J</LANGU>
+     <DESCRIPT>&apos;X&apos;: automatically retry on error (only inbound)</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>Z01OTC_CX_FMT_EQUI</CLSNAME>
+     <CMPNAME>AUTOMATIC_RETRY</CMPNAME>
+     <LANGU>K</LANGU>
+     <DESCRIPT>&apos;X&apos;: automatically retry on error (only inbound)</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>Z01OTC_CX_FMT_EQUI</CLSNAME>
+     <CMPNAME>AUTOMATIC_RETRY</CMPNAME>
+     <LANGU>N</LANGU>
+     <DESCRIPT>&apos;X&apos;: automatically retry on error (only inbound)</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>Z01OTC_CX_FMT_EQUI</CLSNAME>
+     <CMPNAME>AUTOMATIC_RETRY</CMPNAME>
+     <LANGU>O</LANGU>
+     <DESCRIPT>&apos;X&apos;: automatically retry on error (only inbound)</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>Z01OTC_CX_FMT_EQUI</CLSNAME>
+     <CMPNAME>AUTOMATIC_RETRY</CMPNAME>
+     <LANGU>P</LANGU>
+     <DESCRIPT>&apos;X&apos;: automatically retry on error (only inbound)</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>Z01OTC_CX_FMT_EQUI</CLSNAME>
+     <CMPNAME>AUTOMATIC_RETRY</CMPNAME>
+     <LANGU>R</LANGU>
+     <DESCRIPT>&apos;X&apos;: automatically retry on error (only inbound)</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>Z01OTC_CX_FMT_EQUI</CLSNAME>
+     <CMPNAME>AUTOMATIC_RETRY</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>&apos;X&apos;: automatically retry on error (only inbound)</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>Z01OTC_CX_FMT_EQUI</CLSNAME>
+     <CMPNAME>AUTOMATIC_RETRY</CMPNAME>
+     <LANGU>U</LANGU>
+     <DESCRIPT>&apos;X&apos;: automatically retry on error (only inbound)</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>Z01OTC_CX_FMT_EQUI</CLSNAME>
+     <CMPNAME>AUTOMATIC_RETRY</CMPNAME>
+     <LANGU>V</LANGU>
+     <DESCRIPT>&apos;X&apos;: automatically retry on error (only inbound)</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>Z01OTC_CX_FMT_EQUI</CLSNAME>
+     <CMPNAME>CONSTRUCTOR</CMPNAME>
+     <LANGU>1</LANGU>
+     <DESCRIPT>CONSTRUCTOR</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>Z01OTC_CX_FMT_EQUI</CLSNAME>
+     <CMPNAME>CONSTRUCTOR</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>CONSTRUCTOR</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>Z01OTC_CX_FMT_EQUI</CLSNAME>
+     <CMPNAME>CONSTRUCTOR</CMPNAME>
+     <LANGU>F</LANGU>
+     <DESCRIPT>CONSTRUCTOR</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>Z01OTC_CX_FMT_EQUI</CLSNAME>
+     <CMPNAME>CONSTRUCTOR</CMPNAME>
+     <LANGU>G</LANGU>
+     <DESCRIPT>CONSTRUCTOR</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>Z01OTC_CX_FMT_EQUI</CLSNAME>
+     <CMPNAME>CONSTRUCTOR</CMPNAME>
+     <LANGU>H</LANGU>
+     <DESCRIPT>CONSTRUCTOR</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>Z01OTC_CX_FMT_EQUI</CLSNAME>
+     <CMPNAME>CONSTRUCTOR</CMPNAME>
+     <LANGU>I</LANGU>
+     <DESCRIPT>CONSTRUCTOR</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>Z01OTC_CX_FMT_EQUI</CLSNAME>
+     <CMPNAME>CONSTRUCTOR</CMPNAME>
+     <LANGU>J</LANGU>
+     <DESCRIPT>CONSTRUCTOR</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>Z01OTC_CX_FMT_EQUI</CLSNAME>
+     <CMPNAME>CONSTRUCTOR</CMPNAME>
+     <LANGU>K</LANGU>
+     <DESCRIPT>CONSTRUCTOR</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>Z01OTC_CX_FMT_EQUI</CLSNAME>
+     <CMPNAME>CONSTRUCTOR</CMPNAME>
+     <LANGU>N</LANGU>
+     <DESCRIPT>CONSTRUCTOR</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>Z01OTC_CX_FMT_EQUI</CLSNAME>
+     <CMPNAME>CONSTRUCTOR</CMPNAME>
+     <LANGU>O</LANGU>
+     <DESCRIPT>CONSTRUCTOR</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>Z01OTC_CX_FMT_EQUI</CLSNAME>
+     <CMPNAME>CONSTRUCTOR</CMPNAME>
+     <LANGU>P</LANGU>
+     <DESCRIPT>CONSTRUCTOR</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>Z01OTC_CX_FMT_EQUI</CLSNAME>
+     <CMPNAME>CONSTRUCTOR</CMPNAME>
+     <LANGU>R</LANGU>
+     <DESCRIPT>CONSTRUCTOR</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>Z01OTC_CX_FMT_EQUI</CLSNAME>
+     <CMPNAME>CONSTRUCTOR</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>CONSTRUCTOR</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>Z01OTC_CX_FMT_EQUI</CLSNAME>
+     <CMPNAME>CONSTRUCTOR</CMPNAME>
+     <LANGU>U</LANGU>
+     <DESCRIPT>CONSTRUCTOR</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>Z01OTC_CX_FMT_EQUI</CLSNAME>
+     <CMPNAME>CONSTRUCTOR</CMPNAME>
+     <LANGU>V</LANGU>
+     <DESCRIPT>CONSTRUCTOR</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>Z01OTC_CX_FMT_EQUI</CLSNAME>
+     <CMPNAME>NO_RETRY</CMPNAME>
+     <LANGU>1</LANGU>
+     <DESCRIPT>&apos;X&apos;: retry does not make sense (only inbound)</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>Z01OTC_CX_FMT_EQUI</CLSNAME>
+     <CMPNAME>NO_RETRY</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>&apos;X&apos;: retry does not make sense (only inbound)</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>Z01OTC_CX_FMT_EQUI</CLSNAME>
+     <CMPNAME>NO_RETRY</CMPNAME>
+     <LANGU>F</LANGU>
+     <DESCRIPT>&apos;X&apos;: retry does not make sense (only inbound)</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>Z01OTC_CX_FMT_EQUI</CLSNAME>
+     <CMPNAME>NO_RETRY</CMPNAME>
+     <LANGU>G</LANGU>
+     <DESCRIPT>&apos;X&apos;: retry does not make sense (only inbound)</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>Z01OTC_CX_FMT_EQUI</CLSNAME>
+     <CMPNAME>NO_RETRY</CMPNAME>
+     <LANGU>H</LANGU>
+     <DESCRIPT>&apos;X&apos;: retry does not make sense (only inbound)</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>Z01OTC_CX_FMT_EQUI</CLSNAME>
+     <CMPNAME>NO_RETRY</CMPNAME>
+     <LANGU>I</LANGU>
+     <DESCRIPT>&apos;X&apos;: retry does not make sense (only inbound)</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>Z01OTC_CX_FMT_EQUI</CLSNAME>
+     <CMPNAME>NO_RETRY</CMPNAME>
+     <LANGU>J</LANGU>
+     <DESCRIPT>&apos;X&apos;: retry does not make sense (only inbound)</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>Z01OTC_CX_FMT_EQUI</CLSNAME>
+     <CMPNAME>NO_RETRY</CMPNAME>
+     <LANGU>K</LANGU>
+     <DESCRIPT>&apos;X&apos;: retry does not make sense (only inbound)</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>Z01OTC_CX_FMT_EQUI</CLSNAME>
+     <CMPNAME>NO_RETRY</CMPNAME>
+     <LANGU>N</LANGU>
+     <DESCRIPT>&apos;X&apos;: retry does not make sense (only inbound)</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>Z01OTC_CX_FMT_EQUI</CLSNAME>
+     <CMPNAME>NO_RETRY</CMPNAME>
+     <LANGU>O</LANGU>
+     <DESCRIPT>&apos;X&apos;: retry does not make sense (only inbound)</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>Z01OTC_CX_FMT_EQUI</CLSNAME>
+     <CMPNAME>NO_RETRY</CMPNAME>
+     <LANGU>P</LANGU>
+     <DESCRIPT>&apos;X&apos;: retry does not make sense (only inbound)</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>Z01OTC_CX_FMT_EQUI</CLSNAME>
+     <CMPNAME>NO_RETRY</CMPNAME>
+     <LANGU>R</LANGU>
+     <DESCRIPT>&apos;X&apos;: retry does not make sense (only inbound)</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>Z01OTC_CX_FMT_EQUI</CLSNAME>
+     <CMPNAME>NO_RETRY</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>&apos;X&apos;: retry does not make sense (only inbound)</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>Z01OTC_CX_FMT_EQUI</CLSNAME>
+     <CMPNAME>NO_RETRY</CMPNAME>
+     <LANGU>U</LANGU>
+     <DESCRIPT>&apos;X&apos;: retry does not make sense (only inbound)</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>Z01OTC_CX_FMT_EQUI</CLSNAME>
+     <CMPNAME>NO_RETRY</CMPNAME>
+     <LANGU>V</LANGU>
+     <DESCRIPT>&apos;X&apos;: retry does not make sense (only inbound)</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>Z01OTC_CX_FMT_EQUI</CLSNAME>
+     <CMPNAME>WF_TRIGGERED</CMPNAME>
+     <LANGU>1</LANGU>
+     <DESCRIPT>&apos;X&apos;: workflow has been triggered (only inbound)</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>Z01OTC_CX_FMT_EQUI</CLSNAME>
+     <CMPNAME>WF_TRIGGERED</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>&apos;X&apos;: workflow has been triggered (only inbound)</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>Z01OTC_CX_FMT_EQUI</CLSNAME>
+     <CMPNAME>WF_TRIGGERED</CMPNAME>
+     <LANGU>F</LANGU>
+     <DESCRIPT>&apos;X&apos;: workflow has been triggered (only inbound)</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>Z01OTC_CX_FMT_EQUI</CLSNAME>
+     <CMPNAME>WF_TRIGGERED</CMPNAME>
+     <LANGU>G</LANGU>
+     <DESCRIPT>&apos;X&apos;: workflow has been triggered (only inbound)</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>Z01OTC_CX_FMT_EQUI</CLSNAME>
+     <CMPNAME>WF_TRIGGERED</CMPNAME>
+     <LANGU>H</LANGU>
+     <DESCRIPT>&apos;X&apos;: workflow has been triggered (only inbound)</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>Z01OTC_CX_FMT_EQUI</CLSNAME>
+     <CMPNAME>WF_TRIGGERED</CMPNAME>
+     <LANGU>I</LANGU>
+     <DESCRIPT>&apos;X&apos;: workflow has been triggered (only inbound)</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>Z01OTC_CX_FMT_EQUI</CLSNAME>
+     <CMPNAME>WF_TRIGGERED</CMPNAME>
+     <LANGU>J</LANGU>
+     <DESCRIPT>&apos;X&apos;: workflow has been triggered (only inbound)</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>Z01OTC_CX_FMT_EQUI</CLSNAME>
+     <CMPNAME>WF_TRIGGERED</CMPNAME>
+     <LANGU>K</LANGU>
+     <DESCRIPT>&apos;X&apos;: workflow has been triggered (only inbound)</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>Z01OTC_CX_FMT_EQUI</CLSNAME>
+     <CMPNAME>WF_TRIGGERED</CMPNAME>
+     <LANGU>N</LANGU>
+     <DESCRIPT>&apos;X&apos;: workflow has been triggered (only inbound)</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>Z01OTC_CX_FMT_EQUI</CLSNAME>
+     <CMPNAME>WF_TRIGGERED</CMPNAME>
+     <LANGU>O</LANGU>
+     <DESCRIPT>&apos;X&apos;: workflow has been triggered (only inbound)</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>Z01OTC_CX_FMT_EQUI</CLSNAME>
+     <CMPNAME>WF_TRIGGERED</CMPNAME>
+     <LANGU>P</LANGU>
+     <DESCRIPT>&apos;X&apos;: workflow has been triggered (only inbound)</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>Z01OTC_CX_FMT_EQUI</CLSNAME>
+     <CMPNAME>WF_TRIGGERED</CMPNAME>
+     <LANGU>R</LANGU>
+     <DESCRIPT>&apos;X&apos;: workflow has been triggered (only inbound)</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>Z01OTC_CX_FMT_EQUI</CLSNAME>
+     <CMPNAME>WF_TRIGGERED</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>&apos;X&apos;: workflow has been triggered (only inbound)</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>Z01OTC_CX_FMT_EQUI</CLSNAME>
+     <CMPNAME>WF_TRIGGERED</CMPNAME>
+     <LANGU>U</LANGU>
+     <DESCRIPT>&apos;X&apos;: workflow has been triggered (only inbound)</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>Z01OTC_CX_FMT_EQUI</CLSNAME>
+     <CMPNAME>WF_TRIGGERED</CMPNAME>
+     <LANGU>V</LANGU>
+     <DESCRIPT>&apos;X&apos;: workflow has been triggered (only inbound)</DESCRIPT>
+    </SEOCOMPOTX>
+   </DESCRIPTIONS>
+  </asx:values>
+ </asx:abap>
+</abapGit>

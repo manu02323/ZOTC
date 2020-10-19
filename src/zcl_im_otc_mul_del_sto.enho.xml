@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<abapGit version="v1.0.0" serializer="LCL_OBJECT_ENHO" serializer_version="v1.0.0">
+ <asx:abap xmlns:asx="http://www.sap.com/abapxml" version="1.0">
+  <asx:values>
+   <TOOL>BADI_IMPL</TOOL>
+   <SHORTTEXT>Multiple Deliveries created for STO exceed committed qty</SHORTTEXT>
+   <SPOT_NAME>LE_SHP_DELIVERY_PROC</SPOT_NAME>
+   <IMPL>
+    <ENH_BADI_IMPL_DATA>
+     <SPOT_NAME>LE_SHP_DELIVERY_PROC</SPOT_NAME>
+     <BADI_NAME>LE_SHP_DELIVERY_PROC</BADI_NAME>
+     <IMPL_NAME>ZIM_OTC_EDD_0418</IMPL_NAME>
+     <IMPL_CLASS>ZCL_IM_OTC_EDD_0418</IMPL_CLASS>
+     <ACTIVE>X</ACTIVE>
+     <IMPL_SHORTTEXT>Delivery quantity should be same as STO quantity</IMPL_SHORTTEXT>
+     <IMPL_SHORTTEXT_ID>005056B3602D1EE8A8A8B9016AF99014</IMPL_SHORTTEXT_ID>
+     <MIG_BADI_IMPL>ZIM_OTC_EDD_0418</MIG_BADI_IMPL>
+    </ENH_BADI_IMPL_DATA>
+   </IMPL>
+  </asx:values>
+ </asx:abap>
+</abapGit>

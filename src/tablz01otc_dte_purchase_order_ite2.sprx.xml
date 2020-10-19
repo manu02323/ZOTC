@@ -1,0 +1,215 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<abapGit version="v1.0.0" serializer="LCL_OBJECT_SPRX" serializer_version="v1.0.0">
+ <asx:abap xmlns:asx="http://www.sap.com/abapxml" version="1.0">
+  <asx:values>
+   <PROXY_HEADER>
+    <item>
+     <OBJECT>TABL</OBJECT>
+     <OBJ_NAME>Z01OTC_DTE_PURCHASE_ORDER_ITE2</OBJ_NAME>
+     <OBJECT_M>TABL</OBJECT_M>
+     <OBJ_NAME_M>Z01OTC_DTE_PURCHASE_ORDER_ITE2</OBJ_NAME_M>
+     <HASH_ID>D93477163B0EA48793A30644E05898E9AEC1D92E</HASH_ID>
+     <ID>&lt;groupOrAttributeGroup&gt; DTE_PurchaseOrderItem http://bio-rad.com/OTC/PurchaseOrderConfirmation http://bio-rad.com/OTC/PurchaseOrderConfirmation</ID>
+     <IFR_GLOBAL>X</IFR_GLOBAL>
+     <IFR_TYPE>groupOrAttributeGroup</IFR_TYPE>
+     <IFR_NAME>DTE_PurchaseOrderItem</IFR_NAME>
+     <IFR_NSPCE>http://bio-rad.com/OTC/PurchaseOrderConfirmation</IFR_NSPCE>
+     <IFR_GNSPCE>http://bio-rad.com/OTC/PurchaseOrderConfirmation</IFR_GNSPCE>
+     <GEN_VERS>0005</GEN_VERS>
+     <PREFIX>Z01OTC_</PREFIX>
+     <CATEGORY>ifmtypeenh</CATEGORY>
+     <ENH_NAME>PurchaseOrderItem</ENH_NAME>
+     <ENH_NSPCE>http://sap.com/xi/APPL/SE/Global</ENH_NSPCE>
+     <X-ML_NSPCE>http://bio-rad.com/OTC/PurchaseOrderConfirmation</X-ML_NSPCE>
+     <X-ML_NAME>DTE_PurchaseOrderItem</X-ML_NAME>
+     <VERSION_ID>97c858584e6f11e69af80000010d7702</VERSION_ID>
+    </item>
+   </PROXY_HEADER>
+   <PROXY_DATA>
+    <item>
+     <OBJECT>TABL</OBJECT>
+     <OBJ_NAME>Z01OTC_DTE_PURCHASE_ORDER_ITE2</OBJ_NAME>
+     <OBJECT1>FIEL</OBJECT1>
+     <OBJ_NAME1>Z01OTC_ZBACK_ORDER_QTY</OBJ_NAME1>
+     <OBJECT2>FIEL</OBJECT2>
+     <OBJ_NAME2>Z01OTC_ZBACK_ORDER_QTY</OBJ_NAME2>
+     <ID>&lt;element&gt; {http://bio-rad.com/OTC/PurchaseOrderConfirmation}ZBackOrderQty &lt;groupOrAttributeGroup&gt; DTE_PurchaseOrderItem http://bio-rad.com/OTC/PurchaseOrderConfirmation http://bio-rad.com/OTC/PurchaseOrderConfirmation</ID>
+     <IFR_TYPE>element</IFR_TYPE>
+     <IFR_NAME>ZBackOrderQty</IFR_NAME>
+     <IFR_TEXT>Back Order Quantity</IFR_TEXT>
+     <IFR_TAGTYP>E</IFR_TAGTYP>
+     <IFR_MAXOCC>1</IFR_MAXOCC>
+     <IFR_OPTNL>X</IFR_OPTNL>
+     <IFR_QUALIF>X</IFR_QUALIF>
+     <IFR_XSDTYP>string</IFR_XSDTYP>
+     <IFR_MAXLEN>15</IFR_MAXLEN>
+     <IFR_SCALE>-2</IFR_SCALE>
+     <R3_TYPE>FIEL</R3_TYPE>
+     <R3_NAME>Z01OTC_ZBACK_ORDER_QTY</R3_NAME>
+     <R3_TEXT>Back Order Quantity</R3_TEXT>
+     <R3_DATATYP>CHAR</R3_DATATYP>
+     <R3_LENGTH>000015</R3_LENGTH>
+     <R3_SEQNUM>000004</R3_SEQNUM>
+    </item>
+    <item>
+     <OBJECT>TABL</OBJECT>
+     <OBJ_NAME>Z01OTC_DTE_PURCHASE_ORDER_ITE2</OBJ_NAME>
+     <OBJECT1>FIEL</OBJECT1>
+     <OBJ_NAME1>Z01OTC_ZBATCH</OBJ_NAME1>
+     <OBJECT2>FIEL</OBJECT2>
+     <OBJ_NAME2>Z01OTC_ZBATCH</OBJ_NAME2>
+     <OBJECT_R>TABL</OBJECT_R>
+     <OBJ_NAME_R>Z01OTC_DTE_PURCHASE_ORDER_ITE1</OBJ_NAME_R>
+     <ID>&lt;element&gt; {http://bio-rad.com/OTC/PurchaseOrderConfirmation}ZBatch &lt;groupOrAttributeGroup&gt; DTE_PurchaseOrderItem http://bio-rad.com/OTC/PurchaseOrderConfirmation http://bio-rad.com/OTC/PurchaseOrderConfirmation</ID>
+     <IFR_TYPE>element</IFR_TYPE>
+     <IFR_NAME>ZBatch</IFR_NAME>
+     <IFR_TAGTYP>E</IFR_TAGTYP>
+     <IFR_MAXOCC>1</IFR_MAXOCC>
+     <IFR_OPTNL>X</IFR_OPTNL>
+     <IFR_QUALIF>X</IFR_QUALIF>
+     <IFR_SCALE>-2</IFR_SCALE>
+     <R3_TYPE>FIEL</R3_TYPE>
+     <R3_NAME>Z01OTC_ZBATCH</R3_NAME>
+     <R3_SEQNUM>000001</R3_SEQNUM>
+    </item>
+    <item>
+     <OBJECT>TABL</OBJECT>
+     <OBJ_NAME>Z01OTC_DTE_PURCHASE_ORDER_ITE2</OBJ_NAME>
+     <OBJECT1>FIEL</OBJECT1>
+     <OBJ_NAME1>Z01OTC_ZCUSTOMER_MATERIAL_NUMB</OBJ_NAME1>
+     <OBJECT2>FIEL</OBJECT2>
+     <OBJ_NAME2>Z01OTC_ZCUSTOMER_MATERIAL_NUMB</OBJ_NAME2>
+     <ID>&lt;element&gt; {http://bio-rad.com/OTC/PurchaseOrderConfirmation}ZCustomerMaterialNumber &lt;groupOrAttributeGroup&gt; DTE_PurchaseOrderItem http://bio-rad.com/OTC/PurchaseOrderConfirmation http://bio-rad.com/OTC/PurchaseOrderConfirmation</ID>
+     <IFR_TYPE>element</IFR_TYPE>
+     <IFR_NAME>ZCustomerMaterialNumber</IFR_NAME>
+     <IFR_TEXT>Customer Material Number</IFR_TEXT>
+     <IFR_TAGTYP>E</IFR_TAGTYP>
+     <IFR_MAXOCC>1</IFR_MAXOCC>
+     <IFR_OPTNL>X</IFR_OPTNL>
+     <IFR_QUALIF>X</IFR_QUALIF>
+     <IFR_XSDTYP>string</IFR_XSDTYP>
+     <IFR_MAXLEN>57</IFR_MAXLEN>
+     <IFR_SCALE>-2</IFR_SCALE>
+     <R3_TYPE>FIEL</R3_TYPE>
+     <R3_NAME>Z01OTC_ZCUSTOMER_MATERIAL_NUMB</R3_NAME>
+     <R3_TEXT>Customer Material Number</R3_TEXT>
+     <R3_DATATYP>CHAR</R3_DATATYP>
+     <R3_LENGTH>000057</R3_LENGTH>
+     <R3_SEQNUM>000007</R3_SEQNUM>
+    </item>
+    <item>
+     <OBJECT>TABL</OBJECT>
+     <OBJ_NAME>Z01OTC_DTE_PURCHASE_ORDER_ITE2</OBJ_NAME>
+     <OBJECT1>FIEL</OBJECT1>
+     <OBJ_NAME1>Z01OTC_ZEXTENDED_PRICE</OBJ_NAME1>
+     <OBJECT2>FIEL</OBJECT2>
+     <OBJ_NAME2>Z01OTC_ZEXTENDED_PRICE</OBJ_NAME2>
+     <ID>&lt;element&gt; {http://bio-rad.com/OTC/PurchaseOrderConfirmation}ZExtendedPrice &lt;groupOrAttributeGroup&gt; DTE_PurchaseOrderItem http://bio-rad.com/OTC/PurchaseOrderConfirmation http://bio-rad.com/OTC/PurchaseOrderConfirmation</ID>
+     <IFR_TYPE>element</IFR_TYPE>
+     <IFR_NAME>ZExtendedPrice</IFR_NAME>
+     <IFR_TEXT>Extended Price</IFR_TEXT>
+     <IFR_TAGTYP>E</IFR_TAGTYP>
+     <IFR_MAXOCC>1</IFR_MAXOCC>
+     <IFR_OPTNL>X</IFR_OPTNL>
+     <IFR_QUALIF>X</IFR_QUALIF>
+     <IFR_XSDTYP>string</IFR_XSDTYP>
+     <IFR_MAXLEN>13</IFR_MAXLEN>
+     <IFR_SCALE>-2</IFR_SCALE>
+     <R3_TYPE>FIEL</R3_TYPE>
+     <R3_NAME>Z01OTC_ZEXTENDED_PRICE</R3_NAME>
+     <R3_TEXT>Extended Price</R3_TEXT>
+     <R3_DATATYP>CHAR</R3_DATATYP>
+     <R3_LENGTH>000013</R3_LENGTH>
+     <R3_SEQNUM>000002</R3_SEQNUM>
+    </item>
+    <item>
+     <OBJECT>TABL</OBJECT>
+     <OBJ_NAME>Z01OTC_DTE_PURCHASE_ORDER_ITE2</OBJ_NAME>
+     <OBJECT1>FIEL</OBJECT1>
+     <OBJ_NAME1>Z01OTC_ZLINE_TEXT</OBJ_NAME1>
+     <OBJECT2>FIEL</OBJECT2>
+     <OBJ_NAME2>Z01OTC_ZLINE_TEXT</OBJ_NAME2>
+     <ID>&lt;element&gt; {http://bio-rad.com/OTC/PurchaseOrderConfirmation}ZLineText &lt;groupOrAttributeGroup&gt; DTE_PurchaseOrderItem http://bio-rad.com/OTC/PurchaseOrderConfirmation http://bio-rad.com/OTC/PurchaseOrderConfirmation</ID>
+     <IFR_TYPE>element</IFR_TYPE>
+     <IFR_NAME>ZLineText</IFR_NAME>
+     <IFR_TEXT>External Line Text</IFR_TEXT>
+     <IFR_TAGTYP>E</IFR_TAGTYP>
+     <IFR_MAXOCC>1</IFR_MAXOCC>
+     <IFR_OPTNL>X</IFR_OPTNL>
+     <IFR_QUALIF>X</IFR_QUALIF>
+     <IFR_XSDTYP>string</IFR_XSDTYP>
+     <IFR_SCALE>-2</IFR_SCALE>
+     <R3_TYPE>FIEL</R3_TYPE>
+     <R3_NAME>Z01OTC_ZLINE_TEXT</R3_NAME>
+     <R3_TEXT>External Line Text</R3_TEXT>
+     <R3_DATATYP>STRG</R3_DATATYP>
+     <R3_SEQNUM>000003</R3_SEQNUM>
+    </item>
+    <item>
+     <OBJECT>TABL</OBJECT>
+     <OBJ_NAME>Z01OTC_DTE_PURCHASE_ORDER_ITE2</OBJ_NAME>
+     <OBJECT1>FIEL</OBJECT1>
+     <OBJ_NAME1>Z01OTC_ZORDER_QUANTITY</OBJ_NAME1>
+     <OBJECT2>FIEL</OBJECT2>
+     <OBJ_NAME2>Z01OTC_ZORDER_QUANTITY</OBJ_NAME2>
+     <OBJECT_R>TABL</OBJECT_R>
+     <OBJ_NAME_R>Z01OTC_DTE_PURCHASE_ORDER_ITEM</OBJ_NAME_R>
+     <ID>&lt;element&gt; {http://bio-rad.com/OTC/PurchaseOrderConfirmation}ZOrderQuantity &lt;groupOrAttributeGroup&gt; DTE_PurchaseOrderItem http://bio-rad.com/OTC/PurchaseOrderConfirmation http://bio-rad.com/OTC/PurchaseOrderConfirmation</ID>
+     <IFR_TYPE>element</IFR_TYPE>
+     <IFR_NAME>ZOrderQuantity</IFR_NAME>
+     <IFR_TEXT>Order Quantity</IFR_TEXT>
+     <IFR_TAGTYP>E</IFR_TAGTYP>
+     <IFR_MAXOCC>1</IFR_MAXOCC>
+     <IFR_OPTNL>X</IFR_OPTNL>
+     <IFR_QUALIF>X</IFR_QUALIF>
+     <IFR_SCALE>-2</IFR_SCALE>
+     <R3_TYPE>FIEL</R3_TYPE>
+     <R3_NAME>Z01OTC_ZORDER_QUANTITY</R3_NAME>
+     <R3_TEXT>Order Quantity</R3_TEXT>
+     <R3_SEQNUM>000006</R3_SEQNUM>
+    </item>
+    <item>
+     <OBJECT>TABL</OBJECT>
+     <OBJ_NAME>Z01OTC_DTE_PURCHASE_ORDER_ITE2</OBJ_NAME>
+     <OBJECT1>FIEL</OBJECT1>
+     <OBJ_NAME1>Z01OTC_ZUNIT_PRICE</OBJ_NAME1>
+     <OBJECT2>FIEL</OBJECT2>
+     <OBJ_NAME2>Z01OTC_ZUNIT_PRICE</OBJ_NAME2>
+     <ID>&lt;element&gt; {http://bio-rad.com/OTC/PurchaseOrderConfirmation}ZUnitPrice &lt;groupOrAttributeGroup&gt; DTE_PurchaseOrderItem http://bio-rad.com/OTC/PurchaseOrderConfirmation http://bio-rad.com/OTC/PurchaseOrderConfirmation</ID>
+     <IFR_TYPE>element</IFR_TYPE>
+     <IFR_NAME>ZUnitPrice</IFR_NAME>
+     <IFR_TEXT>Item Unit price</IFR_TEXT>
+     <IFR_TAGTYP>E</IFR_TAGTYP>
+     <IFR_MAXOCC>1</IFR_MAXOCC>
+     <IFR_OPTNL>X</IFR_OPTNL>
+     <IFR_QUALIF>X</IFR_QUALIF>
+     <IFR_XSDTYP>string</IFR_XSDTYP>
+     <IFR_MAXLEN>13</IFR_MAXLEN>
+     <IFR_SCALE>-2</IFR_SCALE>
+     <R3_TYPE>FIEL</R3_TYPE>
+     <R3_NAME>Z01OTC_ZUNIT_PRICE</R3_NAME>
+     <R3_TEXT>Item Unit price</R3_TEXT>
+     <R3_DATATYP>CHAR</R3_DATATYP>
+     <R3_LENGTH>000013</R3_LENGTH>
+     <R3_SEQNUM>000005</R3_SEQNUM>
+    </item>
+    <item>
+     <OBJECT>TABL</OBJECT>
+     <OBJ_NAME>Z01OTC_DTE_PURCHASE_ORDER_ITE2</OBJ_NAME>
+     <OBJECT1>TABL</OBJECT1>
+     <OBJ_NAME1>Z01OTC_DTE_PURCHASE_ORDER_ITE2</OBJ_NAME1>
+     <OBJECT2>TABL</OBJECT2>
+     <OBJ_NAME2>Z01OTC_DTE_PURCHASE_ORDER_ITE2</OBJ_NAME2>
+     <ID>&lt;groupOrAttributeGroup&gt; DTE_PurchaseOrderItem http://bio-rad.com/OTC/PurchaseOrderConfirmation http://bio-rad.com/OTC/PurchaseOrderConfirmation</ID>
+     <IFR_TYPE>groupOrAttributeGroup</IFR_TYPE>
+     <IFR_NAME>DTE_PurchaseOrderItem</IFR_NAME>
+     <IFR_SCALE>-2</IFR_SCALE>
+     <R3_TYPE>TABL</R3_TYPE>
+     <R3_NAME>Z01OTC_DTE_PURCHASE_ORDER_ITE2</R3_NAME>
+     <R3_TEXT>Proxy Structure (generated)</R3_TEXT>
+     <CATEGORY>ifmtypeenh</CATEGORY>
+    </item>
+   </PROXY_DATA>
+  </asx:values>
+ </asx:abap>
+</abapGit>

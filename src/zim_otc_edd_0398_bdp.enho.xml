@@ -1,0 +1,127 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<abapGit version="v1.0.0" serializer="LCL_OBJECT_ENHO" serializer_version="v1.0.0">
+ <asx:abap xmlns:asx="http://www.sap.com/abapxml" version="1.0">
+  <asx:values>
+   <TOOL>HOOK_IMPL</TOOL>
+   <SHORTTEXT>OTC EDD_0398 Mass Batch Determination</SHORTTEXT>
+   <ORIGINAL_OBJECT>
+    <PGMID>R3TR</PGMID>
+    <ORG_OBJ_TYPE>FUGR</ORG_OBJ_TYPE>
+    <ORG_OBJ_NAME>VBXD</ORG_OBJ_NAME>
+    <ORG_MAIN_TYPE>FUGR</ORG_MAIN_TYPE>
+    <ORG_MAIN_NAME>VBXD</ORG_MAIN_NAME>
+    <PROGRAMNAME>SAPLVBXD</PROGRAMNAME>
+   </ORIGINAL_OBJECT>
+   <ENHANCEMENTS>
+    <ENH_HOOK_IMPL>
+     <PROGRAMNAME>SAPLVBXD</PROGRAMNAME>
+     <ENHMODE>D</ENHMODE>
+     <FULL_NAME>\PR:SAPLVBXD\FO:CLASSIFICATION_OPEN\SE:BEGIN\EI</FULL_NAME>
+     <SOURCE>
+      <item/>
+      <item>data:</item>
+      <item>li_edd_emi      TYPE STANDARD TABLE OF zdev_enh_status, &quot; Enhancement Status for EDD</item>
+      <item>lwa_enh_status  type zdev_enh_status.                   &quot; Enhancement Status</item>
+      <item/>
+      <item>constants:</item>
+      <item>lc_edd_no type z_enhancement  value &apos;D3_OTC_EDD_0398&apos;, &quot; Enhancement No.</item>
+      <item>lc_tcode  type string VALUE &apos;ZOTC_BDP&apos;,</item>
+      <item>lc_batch  type string value &apos;BATCH_CALLTRANS&apos;.</item>
+      <item/>
+      <item>field-symbols:</item>
+      <item>&lt;lfs_repid&gt; type sy-repid.</item>
+      <item/>
+      <item>* Retrieve the constants values for D3_OTC_EDD_0398</item>
+      <item>call function &apos;ZDEV_ENHANCEMENT_STATUS_CHECK&apos;</item>
+      <item>exporting</item>
+      <item>iv_enhancement_no = lc_edd_no</item>
+      <item>tables</item>
+      <item>tt_enh_status     = li_edd_emi.</item>
+      <item>delete li_edd_emi where active = abap_false.</item>
+      <item>if li_edd_emi[] is not initial.</item>
+      <item>sort li_edd_emi by criteria sel_low.</item>
+      <item>endif. &quot; IF i_edd_emi[] IS NOT INITIAL</item>
+      <item/>
+      <item>read table li_edd_emi into lwa_enh_status</item>
+      <item>with key criteria  = lc_batch</item>
+      <item>sel_low  = &apos;X&apos;</item>
+      <item>active   = abap_true.</item>
+      <item>if sy-subrc eq 0.</item>
+      <item/>
+      <item>assign (&apos;(ZOTCE0398_DET_BATCHES)gv_repid&apos;) to &lt;lfs_repid&gt;.</item>
+      <item>*&amp;--&gt;Begin of changefor D3_OTC_EDD_0398 Defect# 7289_FUT_ISSUE by SMUKHER4 on 17-Jan-2019</item>
+      <item>IF &lt;lfs_repid&gt; IS NOT ASSIGNED.</item>
+      <item/>
+      <item>assign (&apos;(ZOTCE0398B_DET_BATCHES_BACKG)gv_repid&apos;) to &lt;lfs_repid&gt;.</item>
+      <item/>
+      <item>ENDIF.</item>
+      <item>*&amp;&lt;--End of changefor D3_OTC_EDD_0398 Defect# 7289_FUT_ISSUE by SMUKHER4 on 17-Jan-2019</item>
+      <item>if sy-tcode = lc_tcode.</item>
+      <item>clear gv_display_only.</item>
+      <item>elseif sy-batch is not initial.</item>
+      <item>if &lt;lfs_repid&gt; is assigned.</item>
+      <item>clear gv_display_only.</item>
+      <item>endif.</item>
+      <item>endif.</item>
+      <item>endif.</item>
+      <item/>
+     </SOURCE>
+    </ENH_HOOK_IMPL>
+   </ENHANCEMENTS>
+   <SPACES>
+    <item>
+     <FULL_NAME>\PR:SAPLVBXD\FO:CLASSIFICATION_OPEN\SE:BEGIN\EI</FULL_NAME>
+     <SPACES>
+      <item>0</item>
+      <item>0</item>
+      <item>2</item>
+      <item>2</item>
+      <item>0</item>
+      <item>0</item>
+      <item>2</item>
+      <item>2</item>
+      <item>2</item>
+      <item>0</item>
+      <item>0</item>
+      <item>2</item>
+      <item>0</item>
+      <item>0</item>
+      <item>0</item>
+      <item>2</item>
+      <item>4</item>
+      <item>2</item>
+      <item>4</item>
+      <item>0</item>
+      <item>0</item>
+      <item>2</item>
+      <item>0</item>
+      <item>0</item>
+      <item>0</item>
+      <item>23</item>
+      <item>32</item>
+      <item>32</item>
+      <item>0</item>
+      <item>0</item>
+      <item>2</item>
+      <item>0</item>
+      <item>3</item>
+      <item>0</item>
+      <item>5</item>
+      <item>0</item>
+      <item>3</item>
+      <item>0</item>
+      <item>2</item>
+      <item>4</item>
+      <item>2</item>
+      <item>4</item>
+      <item>6</item>
+      <item>4</item>
+      <item>2</item>
+      <item>0</item>
+      <item>0</item>
+     </SPACES>
+    </item>
+   </SPACES>
+  </asx:values>
+ </asx:abap>
+</abapGit>

@@ -1,0 +1,133 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<abapGit version="v1.0.0" serializer="LCL_OBJECT_SPRX" serializer_version="v1.0.0">
+ <asx:abap xmlns:asx="http://www.sap.com/abapxml" version="1.0">
+  <asx:values>
+   <PROXY_HEADER>
+    <item>
+     <OBJECT>TABL</OBJECT>
+     <OBJ_NAME>Z01OTC_ORDERS05_E1EDC19</OBJ_NAME>
+     <OBJECT_M>INTF</OBJECT_M>
+     <OBJ_NAME_M>Z01OTC_II_SI_EDI850ORDERS_IN</OBJ_NAME_M>
+     <HASH_ID>0FA4D9D26DD1B9CB97D05B00F552C3636479132A</HASH_ID>
+     <ID>&lt;type&gt; ORDERS05.E1EDC19  SI_EDI850Orders_In(http://bio-rad.com/OTC/EDI850)</ID>
+     <IFR_TYPE>type</IFR_TYPE>
+     <IFR_NAME>ORDERS05.E1EDC19</IFR_NAME>
+     <IFR_GNSPCE>SI_EDI850Orders_In(http://bio-rad.com/OTC/EDI850)</IFR_GNSPCE>
+     <GEN_VERS>0005</GEN_VERS>
+     <PREFIX>Z01OTC_</PREFIX>
+     <CATEGORY>ifmtypedef</CATEGORY>
+     <X-ML_NAME>ORDERS05.E1EDC19</X-ML_NAME>
+    </item>
+   </PROXY_HEADER>
+   <PROXY_DATA>
+    <item>
+     <OBJECT>TABL</OBJECT>
+     <OBJ_NAME>Z01OTC_ORDERS05_E1EDC19</OBJ_NAME>
+     <OBJECT1>FIEL</OBJECT1>
+     <OBJ_NAME1>IDTNR</OBJ_NAME1>
+     <OBJECT2>FIEL</OBJECT2>
+     <OBJ_NAME2>IDTNR</OBJ_NAME2>
+     <ID>&lt;element&gt; IDTNR &lt;type&gt; ORDERS05.E1EDC19  SI_EDI850Orders_In(http://bio-rad.com/OTC/EDI850)</ID>
+     <IFR_TYPE>element</IFR_TYPE>
+     <IFR_NAME>IDTNR</IFR_NAME>
+     <IFR_TEXT>IDOC material ID</IFR_TEXT>
+     <IFR_TAGTYP>E</IFR_TAGTYP>
+     <IFR_MAXOCC>1</IFR_MAXOCC>
+     <IFR_OPTNL>X</IFR_OPTNL>
+     <IFR_XSDTYP>string</IFR_XSDTYP>
+     <IFR_MAXLEN>35</IFR_MAXLEN>
+     <IFR_SCALE>-2</IFR_SCALE>
+     <R3_TYPE>FIEL</R3_TYPE>
+     <R3_NAME>IDTNR</R3_NAME>
+     <R3_TEXT>IDOC material ID</R3_TEXT>
+     <R3_DATATYP>CHAR</R3_DATATYP>
+     <R3_LENGTH>000035</R3_LENGTH>
+     <R3_SEQNUM>000002</R3_SEQNUM>
+    </item>
+    <item>
+     <OBJECT>TABL</OBJECT>
+     <OBJ_NAME>Z01OTC_ORDERS05_E1EDC19</OBJ_NAME>
+     <OBJECT1>FIEL</OBJECT1>
+     <OBJ_NAME1>KTEXT</OBJ_NAME1>
+     <OBJECT2>FIEL</OBJECT2>
+     <OBJ_NAME2>KTEXT</OBJ_NAME2>
+     <ID>&lt;element&gt; KTEXT &lt;type&gt; ORDERS05.E1EDC19  SI_EDI850Orders_In(http://bio-rad.com/OTC/EDI850)</ID>
+     <IFR_TYPE>element</IFR_TYPE>
+     <IFR_NAME>KTEXT</IFR_NAME>
+     <IFR_TEXT>IDOC short text</IFR_TEXT>
+     <IFR_TAGTYP>E</IFR_TAGTYP>
+     <IFR_MAXOCC>1</IFR_MAXOCC>
+     <IFR_OPTNL>X</IFR_OPTNL>
+     <IFR_XSDTYP>string</IFR_XSDTYP>
+     <IFR_MAXLEN>70</IFR_MAXLEN>
+     <IFR_SCALE>-2</IFR_SCALE>
+     <R3_TYPE>FIEL</R3_TYPE>
+     <R3_NAME>KTEXT</R3_NAME>
+     <R3_TEXT>IDOC short text</R3_TEXT>
+     <R3_DATATYP>CHAR</R3_DATATYP>
+     <R3_LENGTH>000070</R3_LENGTH>
+     <R3_SEQNUM>000003</R3_SEQNUM>
+    </item>
+    <item>
+     <OBJECT>TABL</OBJECT>
+     <OBJ_NAME>Z01OTC_ORDERS05_E1EDC19</OBJ_NAME>
+     <OBJECT1>FIEL</OBJECT1>
+     <OBJ_NAME1>QUALF</OBJ_NAME1>
+     <OBJECT2>FIEL</OBJECT2>
+     <OBJ_NAME2>QUALF</OBJ_NAME2>
+     <ID>&lt;element&gt; QUALF &lt;type&gt; ORDERS05.E1EDC19  SI_EDI850Orders_In(http://bio-rad.com/OTC/EDI850)</ID>
+     <IFR_TYPE>element</IFR_TYPE>
+     <IFR_NAME>QUALF</IFR_NAME>
+     <IFR_TEXT>IDoc object identification for service specfns object</IFR_TEXT>
+     <IFR_TAGTYP>E</IFR_TAGTYP>
+     <IFR_MAXOCC>1</IFR_MAXOCC>
+     <IFR_OPTNL>X</IFR_OPTNL>
+     <IFR_XSDTYP>string</IFR_XSDTYP>
+     <IFR_MAXLEN>3</IFR_MAXLEN>
+     <IFR_SCALE>-2</IFR_SCALE>
+     <R3_TYPE>FIEL</R3_TYPE>
+     <R3_NAME>QUALF</R3_NAME>
+     <R3_TEXT>IDoc object identification for service specfns object</R3_TEXT>
+     <R3_DATATYP>CHAR</R3_DATATYP>
+     <R3_LENGTH>000003</R3_LENGTH>
+     <R3_SEQNUM>000001</R3_SEQNUM>
+    </item>
+    <item>
+     <OBJECT>TABL</OBJECT>
+     <OBJ_NAME>Z01OTC_ORDERS05_E1EDC19</OBJ_NAME>
+     <OBJECT1>FIEL</OBJECT1>
+     <OBJ_NAME1>SEGMENT</OBJ_NAME1>
+     <OBJECT2>FIEL</OBJECT2>
+     <OBJ_NAME2>SEGMENT</OBJ_NAME2>
+     <ID>&lt;attribute&gt; SEGMENT &lt;type&gt; ORDERS05.E1EDC19  SI_EDI850Orders_In(http://bio-rad.com/OTC/EDI850)</ID>
+     <IFR_TYPE>attribute</IFR_TYPE>
+     <IFR_NAME>SEGMENT</IFR_NAME>
+     <IFR_TAGTYP>A</IFR_TAGTYP>
+     <IFR_XSDTYP>string</IFR_XSDTYP>
+     <IFR_SCALE>-2</IFR_SCALE>
+     <R3_TYPE>FIEL</R3_TYPE>
+     <R3_NAME>SEGMENT</R3_NAME>
+     <R3_DATATYP>STRG</R3_DATATYP>
+     <R3_SEQNUM>000004</R3_SEQNUM>
+    </item>
+    <item>
+     <OBJECT>TABL</OBJECT>
+     <OBJ_NAME>Z01OTC_ORDERS05_E1EDC19</OBJ_NAME>
+     <OBJECT1>TABL</OBJECT1>
+     <OBJ_NAME1>Z01OTC_ORDERS05_E1EDC19</OBJ_NAME1>
+     <OBJECT2>TABL</OBJECT2>
+     <OBJ_NAME2>Z01OTC_ORDERS05_E1EDC19</OBJ_NAME2>
+     <ID>&lt;type&gt; ORDERS05.E1EDC19  SI_EDI850Orders_In(http://bio-rad.com/OTC/EDI850)</ID>
+     <IFR_TYPE>type</IFR_TYPE>
+     <IFR_NAME>ORDERS05.E1EDC19</IFR_NAME>
+     <IFR_TEXT>SS items: Object identification</IFR_TEXT>
+     <IFR_SCALE>-2</IFR_SCALE>
+     <R3_TYPE>TABL</R3_TYPE>
+     <R3_NAME>Z01OTC_ORDERS05_E1EDC19</R3_NAME>
+     <R3_TEXT>SS items: Object identification</R3_TEXT>
+     <CATEGORY>ifmtypedef</CATEGORY>
+    </item>
+   </PROXY_DATA>
+  </asx:values>
+ </asx:abap>
+</abapGit>

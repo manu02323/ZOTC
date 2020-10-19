@@ -1,0 +1,121 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<abapGit version="v1.0.0" serializer="LCL_OBJECT_FUGR" serializer_version="v1.0.0">
+ <asx:abap xmlns:asx="http://www.sap.com/abapxml" version="1.0">
+  <asx:values>
+   <AREAT>Dashboard Details</AREAT>
+   <INCLUDES>
+    <SOBJ_NAME>LZOTC_DASHBOARDTOP</SOBJ_NAME>
+    <SOBJ_NAME>SAPLZOTC_DASHBOARD</SOBJ_NAME>
+   </INCLUDES>
+   <FUNCTIONS>
+    <item>
+     <FUNCNAME>ZOTC_003_DASHBOARD_DETAILS</FUNCNAME>
+     <REMOTE_CALL>R</REMOTE_CALL>
+     <SHORT_TEXT>Dashboard details</SHORT_TEXT>
+     <IMPORT>
+      <RSIMP>
+       <PARAMETER>IM_CS_GRP</PARAMETER>
+       <OPTIONAL>X</OPTIONAL>
+       <TYP>CHAR10</TYP>
+      </RSIMP>
+     </IMPORT>
+     <EXPORT>
+      <RSEXP>
+       <PARAMETER>EX_ORDCOUNT</PARAMETER>
+       <TYP>I</TYP>
+      </RSEXP>
+      <RSEXP>
+       <PARAMETER>EX_DLYCOUNT</PARAMETER>
+       <TYP>I</TYP>
+      </RSEXP>
+      <RSEXP>
+       <PARAMETER>ET_DLYVBELN</PARAMETER>
+       <TYP>TT_VBELN</TYP>
+      </RSEXP>
+      <RSEXP>
+       <PARAMETER>EV_DLYDATE</PARAMETER>
+       <TYP>STRING</TYP>
+      </RSEXP>
+      <RSEXP>
+       <PARAMETER>EX_CRDCOUNT</PARAMETER>
+       <TYP>I</TYP>
+      </RSEXP>
+      <RSEXP>
+       <PARAMETER>ET_CRDVBELN</PARAMETER>
+       <TYP>TT_VBELN</TYP>
+      </RSEXP>
+      <RSEXP>
+       <PARAMETER>ET_ADDRESS</PARAMETER>
+       <TYP>BAPIADDR3</TYP>
+      </RSEXP>
+      <RSEXP>
+       <PARAMETER>ET_ORDER_COUNT</PARAMETER>
+       <TYP>ZOTC_OPEN_ORDERS_T</TYP>
+      </RSEXP>
+      <RSEXP>
+       <PARAMETER>EX_ANCEMENT_DATA</PARAMETER>
+       <TYP>STRING_VALUE</TYP>
+      </RSEXP>
+      <RSEXP>
+       <PARAMETER>EX_ZIUSER</PARAMETER>
+       <TYP>BAPIPARAM-PARVA</TYP>
+      </RSEXP>
+     </EXPORT>
+     <DOCUMENTATION>
+      <RSFDO>
+       <PARAMETER>IM_CS_GRP</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Character Field Length = 10</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>EX_ORDCOUNT</PARAMETER>
+       <KIND>P</KIND>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>EX_DLYCOUNT</PARAMETER>
+       <KIND>P</KIND>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>ET_DLYVBELN</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>SD Document Numbers, Not Sorted</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>EV_DLYDATE</PARAMETER>
+       <KIND>P</KIND>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>EX_CRDCOUNT</PARAMETER>
+       <KIND>P</KIND>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>ET_CRDVBELN</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>SD Document Numbers, Not Sorted</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>ET_ADDRESS</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>BAPI reference structure for addresses (contact person)</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>ET_ORDER_COUNT</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Order Count</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>EX_ANCEMENT_DATA</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Proxy Data Element (generated)</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>EX_ZIUSER</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Parameter value</STEXT>
+      </RSFDO>
+     </DOCUMENTATION>
+    </item>
+   </FUNCTIONS>
+  </asx:values>
+ </asx:abap>
+</abapGit>

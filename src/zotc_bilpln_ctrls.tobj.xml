@@ -1,0 +1,57 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<abapGit version="v1.0.0" serializer="LCL_OBJECT_TOBJ" serializer_version="v1.0.0">
+ <asx:abap xmlns:asx="http://www.sap.com/abapxml" version="1.0">
+  <asx:values>
+   <OBJH>
+    <OBJECTNAME>ZOTC_BILPLN_CTRL</OBJECTNAME>
+    <OBJECTTYPE>S</OBJECTTYPE>
+    <CLIDEP>X</CLIDEP>
+    <OBJCATEG>CUST</OBJCATEG>
+    <OBJTRANSP>2</OBJTRANSP>
+    <IMPORTABLE>3</IMPORTABLE>
+   </OBJH>
+   <OBJT>
+    <LANGUAGE>E</LANGUAGE>
+    <OBJECTNAME>ZOTC_BILPLN_CTRL</OBJECTNAME>
+    <OBJECTTYPE>S</OBJECTTYPE>
+    <DDTEXT>Billing Plan</DDTEXT>
+   </OBJT>
+   <OBJS>
+    <OBJS>
+     <OBJECTNAME>ZOTC_BILPLN_CTRL</OBJECTNAME>
+     <OBJECTTYPE>S</OBJECTTYPE>
+     <TABNAME>ZOTC_BILPLN_CTRL</TABNAME>
+     <DDIC>X</DDIC>
+     <PRIM_TABLE>X</PRIM_TABLE>
+    </OBJS>
+   </OBJS>
+   <TOBJ>
+    <TDDAT>
+     <TABNAME>ZOTC_BILPLN_CTRL</TABNAME>
+     <CCLASS>ZOTC</CCLASS>
+    </TDDAT>
+    <TVDIR>
+     <TABNAME>ZOTC_BILPLN_CTRL</TABNAME>
+     <AREA>ZOTC_BILPLN_CTRL</AREA>
+     <DEVCLASS>ZOTC</DEVCLASS>
+     <TYPE>2</TYPE>
+     <LISTE>9001</LISTE>
+     <DETAIL>9002</DETAIL>
+     <BASTAB>X</BASTAB>
+    </TVDIR>
+    <TVIMF>
+     <TVIMF>
+      <TABNAME>ZOTC_BILPLN_CTRL</TABNAME>
+      <EVENT>05</EVENT>
+      <FORMNAME>F_UPDATE_DETAILS</FORMNAME>
+     </TVIMF>
+     <TVIMF>
+      <TABNAME>ZOTC_BILPLN_CTRL</TABNAME>
+      <EVENT>21</EVENT>
+      <FORMNAME>F_UPDATE_DETAILS</FORMNAME>
+     </TVIMF>
+    </TVIMF>
+   </TOBJ>
+  </asx:values>
+ </asx:abap>
+</abapGit>

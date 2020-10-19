@@ -1,0 +1,77 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<abapGit version="v1.0.0" serializer="LCL_OBJECT_ENHO" serializer_version="v1.0.0">
+ <asx:abap xmlns:asx="http://www.sap.com/abapxml" version="1.0">
+  <asx:values>
+   <TOOL>HOOK_IMPL</TOOL>
+   <SHORTTEXT>Activate Print button in Print Preview of layout</SHORTTEXT>
+   <ORIGINAL_OBJECT>
+    <PGMID>R3TR</PGMID>
+    <ORG_OBJ_TYPE>PROG</ORG_OBJ_TYPE>
+    <ORG_OBJ_NAME>SD_INVOICE_PRINT01</ORG_OBJ_NAME>
+    <ORG_MAIN_TYPE>PROG</ORG_MAIN_TYPE>
+    <ORG_MAIN_NAME>SD_INVOICE_PRINT01</ORG_MAIN_NAME>
+    <PROGRAMNAME>SD_INVOICE_PRINT01</PROGRAMNAME>
+   </ORIGINAL_OBJECT>
+   <ENHANCEMENTS>
+    <ENH_HOOK_IMPL>
+     <PROGRAMNAME>SD_INVOICE_PRINT01</PROGRAMNAME>
+     <ENHMODE>D</ENHMODE>
+     <FULL_NAME>\PR:SD_INVOICE_PRINT01\FO:GET_OUTPUT_PARAMS\SE:END\EI</FULL_NAME>
+     <SOURCE>
+      <item>*----------------------------------------------------------------------*</item>
+      <item>* Program    : SD_INVOICE_PRINT01                                      *</item>
+      <item>* Title      : US Invoice Form - (Billing)                             *</item>
+      <item>* Developer  : Nagamani NM                                             *</item>
+      <item>* Object Type: Enhancement Implementation                              *</item>
+      <item>* SAP Release: SAP ECC 6.0                                             *</item>
+      <item>*----------------------------------------------------------------------*</item>
+      <item>* WRICEF ID:  OTC_FDD_0014_US Invoice Form                             *</item>
+      <item>*----------------------------------------------------------------------*</item>
+      <item>* DESCRIPTION:                                                         *</item>
+      <item>* To enable the PRINT button in the toolbar of the form print preview</item>
+      <item>*----------------------------------------------------------------------*</item>
+      <item>* MODIFICATION HISTORY:                                                *</item>
+      <item>*======================================================================*</item>
+      <item>* DATE        USER     TRANSPORT  DESCRIPTION                          *</item>
+      <item>* =========== ======== ========== =====================================*</item>
+      <item>* 11-Jul-2013 NNM      E1DK910965 Def#576: INITIAL DEVELOPMENT         *</item>
+      <item>*&amp;---------------------------------------------------------------------*</item>
+      <item>*&amp;&amp;-- To enable the PRINT button in the toolbar of the form print</item>
+      <item>*     preview</item>
+      <item>cs_outputparams-noprint   = space.</item>
+      <item/>
+     </SOURCE>
+    </ENH_HOOK_IMPL>
+   </ENHANCEMENTS>
+   <SPACES>
+    <item>
+     <FULL_NAME>\PR:SD_INVOICE_PRINT01\FO:GET_OUTPUT_PARAMS\SE:END\EI</FULL_NAME>
+     <SPACES>
+      <item>0</item>
+      <item>0</item>
+      <item>0</item>
+      <item>0</item>
+      <item>0</item>
+      <item>0</item>
+      <item>0</item>
+      <item>0</item>
+      <item>0</item>
+      <item>0</item>
+      <item>0</item>
+      <item>0</item>
+      <item>0</item>
+      <item>0</item>
+      <item>0</item>
+      <item>0</item>
+      <item>0</item>
+      <item>0</item>
+      <item>0</item>
+      <item>0</item>
+      <item>2</item>
+      <item>0</item>
+     </SPACES>
+    </item>
+   </SPACES>
+  </asx:values>
+ </asx:abap>
+</abapGit>

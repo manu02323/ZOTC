@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<abapGit version="v1.0.0" serializer="LCL_OBJECT_SXCI" serializer_version="v1.0.0">
+ <asx:abap xmlns:asx="http://www.sap.com/abapxml" version="1.0">
+  <asx:values>
+   <SXCI>
+    <IMPLEMENTATION_DATA>
+     <IMP_NAME>ZIM_OTC_EDD_0418</IMP_NAME>
+     <TEXT>Delivery quantity should be same as STO quantity</TEXT>
+     <IMP_CLASS>ZCL_IM_OTC_EDD_0418</IMP_CLASS>
+     <EXIT_NAME>LE_SHP_DELIVERY_PROC</EXIT_NAME>
+     <INTER_NAME>IF_EX_LE_SHP_DELIVERY_PROC</INTER_NAME>
+    </IMPLEMENTATION_DATA>
+   </SXCI>
+  </asx:values>
+ </asx:abap>
+</abapGit>

@@ -1,0 +1,154 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<abapGit version="v1.0.0" serializer="LCL_OBJECT_FUGR" serializer_version="v1.0.0">
+ <asx:abap xmlns:asx="http://www.sap.com/abapxml" version="1.0">
+  <asx:values>
+   <AREAT>Batch/Lot and Serial Numbers validation</AREAT>
+   <INCLUDES>
+    <SOBJ_NAME>LZOTC_SERIAL_BATCH_VALIDATETOP</SOBJ_NAME>
+    <SOBJ_NAME>SAPLZOTC_SERIAL_BATCH_VALIDATE</SOBJ_NAME>
+   </INCLUDES>
+   <FUNCTIONS>
+    <item>
+     <FUNCNAME>ZOTC_BATCH_ID_VALIDATE</FUNCNAME>
+     <SHORT_TEXT>Batch ID Validation</SHORT_TEXT>
+     <IMPORT>
+      <RSIMP>
+       <PARAMETER>IM_VKORG</PARAMETER>
+       <REFERENCE>X</REFERENCE>
+       <TYP>VKORG</TYP>
+      </RSIMP>
+      <RSIMP>
+       <PARAMETER>IM_VTWEG</PARAMETER>
+       <REFERENCE>X</REFERENCE>
+       <TYP>VTWEG</TYP>
+      </RSIMP>
+      <RSIMP>
+       <PARAMETER>IM_KUNNR</PARAMETER>
+       <REFERENCE>X</REFERENCE>
+       <TYP>KUNNR</TYP>
+      </RSIMP>
+      <RSIMP>
+       <PARAMETER>IM_MATBATCH_QUAN</PARAMETER>
+       <REFERENCE>X</REFERENCE>
+       <TYP>ZOTC_T_MATBATCH_QUAN</TYP>
+      </RSIMP>
+     </IMPORT>
+     <EXPORT>
+      <RSEXP>
+       <PARAMETER>EX_BATCH_MSG</PARAMETER>
+       <REFERENCE>X</REFERENCE>
+       <TYP>BAPIRETTAB</TYP>
+      </RSEXP>
+     </EXPORT>
+     <EXCEPTION>
+      <RSEXC>
+       <EXCEPTION>INVALID_BATCH</EXCEPTION>
+      </RSEXC>
+     </EXCEPTION>
+     <DOCUMENTATION>
+      <RSFDO>
+       <PARAMETER>IM_VKORG</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Sales Organization</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>IM_VTWEG</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Distribution Channel</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>IM_KUNNR</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Customer Number</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>IM_MATBATCH_QUAN</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Table type for Material,Batch and Requested quantity</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>EX_BATCH_MSG</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Table with BAPI Return Information</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>INVALID_BATCH</PARAMETER>
+       <KIND>X</KIND>
+       <STEXT>Invalid Batch number</STEXT>
+      </RSFDO>
+     </DOCUMENTATION>
+    </item>
+    <item>
+     <FUNCNAME>ZOTC_SERIAL_NUM_VALIDATE</FUNCNAME>
+     <SHORT_TEXT>Serial Numbers Validation</SHORT_TEXT>
+     <IMPORT>
+      <RSIMP>
+       <PARAMETER>IM_VKORG</PARAMETER>
+       <REFERENCE>X</REFERENCE>
+       <TYP>VKORG</TYP>
+      </RSIMP>
+      <RSIMP>
+       <PARAMETER>IM_VTWEG</PARAMETER>
+       <REFERENCE>X</REFERENCE>
+       <TYP>VTWEG</TYP>
+      </RSIMP>
+      <RSIMP>
+       <PARAMETER>IM_KUNNR</PARAMETER>
+       <REFERENCE>X</REFERENCE>
+       <TYP>KUNNR</TYP>
+      </RSIMP>
+      <RSIMP>
+       <PARAMETER>IM_MATSER_TAB</PARAMETER>
+       <REFERENCE>X</REFERENCE>
+       <TYP>ZOTC_T_MATNR_SERNR</TYP>
+      </RSIMP>
+     </IMPORT>
+     <EXPORT>
+      <RSEXP>
+       <PARAMETER>EX_SERIAL_MSG</PARAMETER>
+       <REFERENCE>X</REFERENCE>
+       <TYP>BAPIRETTAB</TYP>
+      </RSEXP>
+     </EXPORT>
+     <EXCEPTION>
+      <RSEXC>
+       <EXCEPTION>INVALID_SERIAL_NUMBER</EXCEPTION>
+      </RSEXC>
+     </EXCEPTION>
+     <DOCUMENTATION>
+      <RSFDO>
+       <PARAMETER>IM_VKORG</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Sales Organization</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>IM_VTWEG</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Distribution Channel</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>IM_KUNNR</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Customer Number</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>IM_MATSER_TAB</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Table type for Material Serial Number Combination</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>EX_SERIAL_MSG</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Table with BAPI Return Information</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>INVALID_SERIAL_NUMBER</PARAMETER>
+       <KIND>X</KIND>
+       <STEXT>Invalid Serial Number</STEXT>
+      </RSFDO>
+     </DOCUMENTATION>
+    </item>
+   </FUNCTIONS>
+  </asx:values>
+ </asx:abap>
+</abapGit>

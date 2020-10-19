@@ -1,0 +1,56 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<abapGit version="v1.0.0" serializer="LCL_OBJECT_TRAN" serializer_version="v1.0.0">
+ <asx:abap xmlns:asx="http://www.sap.com/abapxml" version="1.0">
+  <asx:values>
+   <TSTC>
+    <TCODE>ZOTC_COMM_CODE</TCODE>
+    <CINFO>Ag==</CINFO>
+   </TSTC>
+   <TSTCC>
+    <TCODE>ZOTC_COMM_CODE</TCODE>
+    <S_WEBGUI>1</S_WEBGUI>
+    <S_WIN32>X</S_WIN32>
+    <S_PLATIN>X</S_PLATIN>
+   </TSTCC>
+   <TSTCT>
+    <SPRSL>E</SPRSL>
+    <TCODE>ZOTC_COMM_CODE</TCODE>
+    <TTEXT>Maintain Commodity Code,Desc &amp; Group</TTEXT>
+   </TSTCT>
+   <TSTCP>
+    <TCODE>ZOTC_COMM_CODE</TCODE>
+    <PARAM>/*ZPTP_BRFPLUS P_OBJECT=ZT_OTC_IDD_0197_COMMODITY_CODE;</PARAM>
+   </TSTCP>
+   <I18N_TPOOL>
+    <TSTCT>
+     <SPRSL>1</SPRSL>
+     <TTEXT>Maintain Commodity Code,Desc &amp; Group</TTEXT>
+    </TSTCT>
+    <TSTCT>
+     <SPRSL>F</SPRSL>
+     <TTEXT>Maintain Commodity Code,Desc &amp; Group</TTEXT>
+    </TSTCT>
+    <TSTCT>
+     <SPRSL>J</SPRSL>
+     <TTEXT>Maintain Commodity Code,Desc &amp; Group</TTEXT>
+    </TSTCT>
+    <TSTCT>
+     <SPRSL>N</SPRSL>
+     <TTEXT>Maintain Commodity Code,Desc &amp; Group</TTEXT>
+    </TSTCT>
+    <TSTCT>
+     <SPRSL>P</SPRSL>
+     <TTEXT>Maintain Commodity Code,Desc &amp; Group</TTEXT>
+    </TSTCT>
+    <TSTCT>
+     <SPRSL>R</SPRSL>
+     <TTEXT>Maintain Commodity Code,Desc &amp; Group</TTEXT>
+    </TSTCT>
+    <TSTCT>
+     <SPRSL>S</SPRSL>
+     <TTEXT>Maintain Commodity Code,Desc &amp; Group</TTEXT>
+    </TSTCT>
+   </I18N_TPOOL>
+  </asx:values>
+ </asx:abap>
+</abapGit>

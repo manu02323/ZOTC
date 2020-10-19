@@ -1,0 +1,40 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<abapGit version="v1.0.0" serializer="LCL_OBJECT_FUGR" serializer_version="v1.0.0">
+ <asx:abap xmlns:asx="http://www.sap.com/abapxml" version="1.0">
+  <asx:values>
+   <AREAT>Conversion for Transit duration</AREAT>
+   <INCLUDES>
+    <SOBJ_NAME>LZOTC_EDD_0234_CONVERSIONTOP</SOBJ_NAME>
+    <SOBJ_NAME>SAPLZOTC_EDD_0234_CONVERSION</SOBJ_NAME>
+   </INCLUDES>
+   <FUNCTIONS>
+    <item>
+     <FUNCNAME>ZOTC_EDD_0234_CONVERSION</FUNCNAME>
+     <SHORT_TEXT>Conversion FM for Transit duration</SHORT_TEXT>
+     <IMPORT>
+      <RSIMP>
+       <PARAMETER>IM_INPUT</PARAMETER>
+      </RSIMP>
+     </IMPORT>
+     <EXPORT>
+      <RSEXP>
+       <PARAMETER>EX_OUTPUT</PARAMETER>
+      </RSEXP>
+     </EXPORT>
+     <DOCUMENTATION>
+      <RSFDO>
+       <PARAMETER>IM_INPUT</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Time stream: Proportionate breaks in hhhhhh:mm:ss</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>EX_OUTPUT</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Transit duration in calendar days</STEXT>
+      </RSFDO>
+     </DOCUMENTATION>
+    </item>
+   </FUNCTIONS>
+  </asx:values>
+ </asx:abap>
+</abapGit>

@@ -1,0 +1,75 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<abapGit version="v1.0.0" serializer="LCL_OBJECT_CHDO" serializer_version="v1.0.0">
+ <asx:abap xmlns:asx="http://www.sap.com/abapxml" version="1.0">
+  <asx:values>
+   <CHDO>
+    <REPORTS_GENERATED>
+     <TCDRPS>
+      <OBJECT>ZOTC_COMM_GRP</OBJECT>
+      <REPORTNAME>ZOTC_COMM_GRP</REPORTNAME>
+      <TEXTCASE>X</TEXTCASE>
+      <ARBGEB>CD</ARBGEB>
+      <FEHLERNR>600</FEHLERNR>
+      <FGRP>ZOTC_COMM_GRP</FGRP>
+      <PREFIX>Y</PREFIX>
+      <UPDATE_FLG>2</UPDATE_FLG>
+     </TCDRPS>
+    </REPORTS_GENERATED>
+    <OBJECTS>
+     <TCDOBS>
+      <OBJECT>ZOTC_COMM_GRP</OBJECT>
+      <TABNAME>ZOTC_PART_TO_EMP</TABNAME>
+      <DOCUDEL>X</DOCUDEL>
+     </TCDOBS>
+     <TCDOBS>
+      <OBJECT>ZOTC_COMM_GRP</OBJECT>
+      <TABNAME>ZOTC_TERRIT_ASSN</TABNAME>
+      <DOCUDEL>X</DOCUDEL>
+     </TCDOBS>
+    </OBJECTS>
+    <OBJECTS_TEXT>
+     <TCDOBTS>
+      <SPRAS>1</SPRAS>
+      <OBJECT>ZOTC_COMM_GRP</OBJECT>
+      <OBTEXT>Commision Group Change Document Object</OBTEXT>
+     </TCDOBTS>
+     <TCDOBTS>
+      <SPRAS>E</SPRAS>
+      <OBJECT>ZOTC_COMM_GRP</OBJECT>
+      <OBTEXT>Commision Group Change Document Object</OBTEXT>
+     </TCDOBTS>
+     <TCDOBTS>
+      <SPRAS>F</SPRAS>
+      <OBJECT>ZOTC_COMM_GRP</OBJECT>
+      <OBTEXT>Commision Group Change Document Object</OBTEXT>
+     </TCDOBTS>
+     <TCDOBTS>
+      <SPRAS>J</SPRAS>
+      <OBJECT>ZOTC_COMM_GRP</OBJECT>
+      <OBTEXT>Commision Group Change Document Object</OBTEXT>
+     </TCDOBTS>
+     <TCDOBTS>
+      <SPRAS>N</SPRAS>
+      <OBJECT>ZOTC_COMM_GRP</OBJECT>
+      <OBTEXT>Commision Group Change Document Object</OBTEXT>
+     </TCDOBTS>
+     <TCDOBTS>
+      <SPRAS>P</SPRAS>
+      <OBJECT>ZOTC_COMM_GRP</OBJECT>
+      <OBTEXT>Commision Group Change Document Object</OBTEXT>
+     </TCDOBTS>
+     <TCDOBTS>
+      <SPRAS>R</SPRAS>
+      <OBJECT>ZOTC_COMM_GRP</OBJECT>
+      <OBTEXT>Commision Group Change Document Object</OBTEXT>
+     </TCDOBTS>
+     <TCDOBTS>
+      <SPRAS>S</SPRAS>
+      <OBJECT>ZOTC_COMM_GRP</OBJECT>
+      <OBTEXT>Commision Group Change Document Object</OBTEXT>
+     </TCDOBTS>
+    </OBJECTS_TEXT>
+   </CHDO>
+  </asx:values>
+ </asx:abap>
+</abapGit>

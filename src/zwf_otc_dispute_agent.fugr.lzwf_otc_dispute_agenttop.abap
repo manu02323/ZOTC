@@ -1,0 +1,3 @@
+FUNCTION-POOL ZWF_OTC_DISPUTE_AGENT.        "MESSAGE-ID ..
+
+* INCLUDE LZWF_OTC_DISPUTE_AGENTD...         " Local class definition

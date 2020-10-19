@@ -1,0 +1,186 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<abapGit version="v1.0.0" serializer="LCL_OBJECT_SPRX" serializer_version="v1.0.0">
+ <asx:abap xmlns:asx="http://www.sap.com/abapxml" version="1.0">
+  <asx:values>
+   <PROXY_HEADER>
+    <item>
+     <OBJECT>TABL</OBJECT>
+     <OBJ_NAME>Z01OTC_DTE_DOCUMENT_PRODUCT</OBJ_NAME>
+     <OBJECT_M>TABL</OBJECT_M>
+     <OBJ_NAME_M>Z01OTC_DTE_DOCUMENT_PRODUCT</OBJ_NAME_M>
+     <HASH_ID>84155D562D043605611F753EBAE0D5F3EBD262A6</HASH_ID>
+     <ID>&lt;groupOrAttributeGroup&gt; DTE_DocumentProduct http://bio-rad.com/OTC/PurchaseOrderConfirmation http://bio-rad.com/OTC/PurchaseOrderConfirmation</ID>
+     <IFR_GLOBAL>X</IFR_GLOBAL>
+     <IFR_TYPE>groupOrAttributeGroup</IFR_TYPE>
+     <IFR_NAME>DTE_DocumentProduct</IFR_NAME>
+     <IFR_NSPCE>http://bio-rad.com/OTC/PurchaseOrderConfirmation</IFR_NSPCE>
+     <IFR_GNSPCE>http://bio-rad.com/OTC/PurchaseOrderConfirmation</IFR_GNSPCE>
+     <GEN_VERS>0005</GEN_VERS>
+     <PREFIX>Z01OTC_</PREFIX>
+     <CATEGORY>ifmtypeenh</CATEGORY>
+     <ENH_NAME>BusinessTransactionDocumentProduct</ENH_NAME>
+     <ENH_NSPCE>http://sap.com/xi/APPL/SE/Global</ENH_NSPCE>
+     <X-ML_NSPCE>http://bio-rad.com/OTC/PurchaseOrderConfirmation</X-ML_NSPCE>
+     <X-ML_NAME>DTE_DocumentProduct</X-ML_NAME>
+     <VERSION_ID>54d50ebc303f11e9913b000001225726</VERSION_ID>
+    </item>
+   </PROXY_HEADER>
+   <PROXY_DATA>
+    <item>
+     <OBJECT>TABL</OBJECT>
+     <OBJ_NAME>Z01OTC_DTE_DOCUMENT_PRODUCT</OBJ_NAME>
+     <OBJECT1>FIEL</OBJECT1>
+     <OBJ_NAME1>Z01OTC_ZBILLING_FREQUENCY</OBJ_NAME1>
+     <OBJECT2>FIEL</OBJECT2>
+     <OBJ_NAME2>Z01OTC_ZBILLING_FREQUENCY</OBJ_NAME2>
+     <ID>&lt;element&gt; {http://bio-rad.com/OTC/PurchaseOrderConfirmation}ZBillingFrequency &lt;groupOrAttributeGroup&gt; DTE_DocumentProduct http://bio-rad.com/OTC/PurchaseOrderConfirmation http://bio-rad.com/OTC/PurchaseOrderConfirmation</ID>
+     <IFR_TYPE>element</IFR_TYPE>
+     <IFR_NAME>ZBillingFrequency</IFR_NAME>
+     <IFR_TEXT>Billing Frequency</IFR_TEXT>
+     <IFR_TAGTYP>E</IFR_TAGTYP>
+     <IFR_MAXOCC>1</IFR_MAXOCC>
+     <IFR_OPTNL>X</IFR_OPTNL>
+     <IFR_QUALIF>X</IFR_QUALIF>
+     <IFR_XSDTYP>string</IFR_XSDTYP>
+     <IFR_SCALE>-2</IFR_SCALE>
+     <R3_TYPE>FIEL</R3_TYPE>
+     <R3_NAME>Z01OTC_ZBILLING_FREQUENCY</R3_NAME>
+     <R3_TEXT>Billing Frequency</R3_TEXT>
+     <R3_DATATYP>STRG</R3_DATATYP>
+     <R3_SEQNUM>000003</R3_SEQNUM>
+    </item>
+    <item>
+     <OBJECT>TABL</OBJECT>
+     <OBJ_NAME>Z01OTC_DTE_DOCUMENT_PRODUCT</OBJ_NAME>
+     <OBJECT1>FIEL</OBJECT1>
+     <OBJ_NAME1>Z01OTC_ZBILLING_METHOD</OBJ_NAME1>
+     <OBJECT2>FIEL</OBJECT2>
+     <OBJ_NAME2>Z01OTC_ZBILLING_METHOD</OBJ_NAME2>
+     <ID>&lt;element&gt; {http://bio-rad.com/OTC/PurchaseOrderConfirmation}ZBillingMethod &lt;groupOrAttributeGroup&gt; DTE_DocumentProduct http://bio-rad.com/OTC/PurchaseOrderConfirmation http://bio-rad.com/OTC/PurchaseOrderConfirmation</ID>
+     <IFR_TYPE>element</IFR_TYPE>
+     <IFR_NAME>ZBillingMethod</IFR_NAME>
+     <IFR_TEXT>Billing Method</IFR_TEXT>
+     <IFR_TAGTYP>E</IFR_TAGTYP>
+     <IFR_MAXOCC>1</IFR_MAXOCC>
+     <IFR_OPTNL>X</IFR_OPTNL>
+     <IFR_QUALIF>X</IFR_QUALIF>
+     <IFR_XSDTYP>string</IFR_XSDTYP>
+     <IFR_SCALE>-2</IFR_SCALE>
+     <R3_TYPE>FIEL</R3_TYPE>
+     <R3_NAME>Z01OTC_ZBILLING_METHOD</R3_NAME>
+     <R3_TEXT>Billing Method</R3_TEXT>
+     <R3_DATATYP>STRG</R3_DATATYP>
+     <R3_SEQNUM>000002</R3_SEQNUM>
+    </item>
+    <item>
+     <OBJECT>TABL</OBJECT>
+     <OBJ_NAME>Z01OTC_DTE_DOCUMENT_PRODUCT</OBJ_NAME>
+     <OBJECT1>FIEL</OBJECT1>
+     <OBJ_NAME1>Z01OTC_ZCONTRACT_BEGIN_DATE</OBJ_NAME1>
+     <OBJECT2>FIEL</OBJECT2>
+     <OBJ_NAME2>Z01OTC_ZCONTRACT_BEGIN_DATE</OBJ_NAME2>
+     <ID>&lt;element&gt; {http://bio-rad.com/OTC/PurchaseOrderConfirmation}ZContractBeginDate &lt;groupOrAttributeGroup&gt; DTE_DocumentProduct http://bio-rad.com/OTC/PurchaseOrderConfirmation http://bio-rad.com/OTC/PurchaseOrderConfirmation</ID>
+     <IFR_TYPE>element</IFR_TYPE>
+     <IFR_NAME>ZContractBeginDate</IFR_NAME>
+     <IFR_TEXT>Contract Begin Date</IFR_TEXT>
+     <IFR_TAGTYP>E</IFR_TAGTYP>
+     <IFR_MAXOCC>1</IFR_MAXOCC>
+     <IFR_OPTNL>X</IFR_OPTNL>
+     <IFR_QUALIF>X</IFR_QUALIF>
+     <IFR_XSDTYP>string</IFR_XSDTYP>
+     <IFR_SCALE>-2</IFR_SCALE>
+     <R3_TYPE>FIEL</R3_TYPE>
+     <R3_NAME>Z01OTC_ZCONTRACT_BEGIN_DATE</R3_NAME>
+     <R3_TEXT>Contract Begin Date</R3_TEXT>
+     <R3_DATATYP>STRG</R3_DATATYP>
+     <R3_SEQNUM>000004</R3_SEQNUM>
+    </item>
+    <item>
+     <OBJECT>TABL</OBJECT>
+     <OBJ_NAME>Z01OTC_DTE_DOCUMENT_PRODUCT</OBJ_NAME>
+     <OBJECT1>FIEL</OBJECT1>
+     <OBJ_NAME1>Z01OTC_ZCONTRACT_END_DATE</OBJ_NAME1>
+     <OBJECT2>FIEL</OBJECT2>
+     <OBJ_NAME2>Z01OTC_ZCONTRACT_END_DATE</OBJ_NAME2>
+     <ID>&lt;element&gt; {http://bio-rad.com/OTC/PurchaseOrderConfirmation}ZContractEndDate &lt;groupOrAttributeGroup&gt; DTE_DocumentProduct http://bio-rad.com/OTC/PurchaseOrderConfirmation http://bio-rad.com/OTC/PurchaseOrderConfirmation</ID>
+     <IFR_TYPE>element</IFR_TYPE>
+     <IFR_NAME>ZContractEndDate</IFR_NAME>
+     <IFR_TEXT>Contract End Date</IFR_TEXT>
+     <IFR_TAGTYP>E</IFR_TAGTYP>
+     <IFR_MAXOCC>1</IFR_MAXOCC>
+     <IFR_OPTNL>X</IFR_OPTNL>
+     <IFR_QUALIF>X</IFR_QUALIF>
+     <IFR_XSDTYP>string</IFR_XSDTYP>
+     <IFR_SCALE>-2</IFR_SCALE>
+     <R3_TYPE>FIEL</R3_TYPE>
+     <R3_NAME>Z01OTC_ZCONTRACT_END_DATE</R3_NAME>
+     <R3_TEXT>Contract End Date</R3_TEXT>
+     <R3_DATATYP>STRG</R3_DATATYP>
+     <R3_SEQNUM>000005</R3_SEQNUM>
+    </item>
+    <item>
+     <OBJECT>TABL</OBJECT>
+     <OBJ_NAME>Z01OTC_DTE_DOCUMENT_PRODUCT</OBJ_NAME>
+     <OBJECT1>FIEL</OBJECT1>
+     <OBJ_NAME1>Z01OTC_ZFIRST_BILLING_DATE</OBJ_NAME1>
+     <OBJECT2>FIEL</OBJECT2>
+     <OBJ_NAME2>Z01OTC_ZFIRST_BILLING_DATE</OBJ_NAME2>
+     <ID>&lt;element&gt; {http://bio-rad.com/OTC/PurchaseOrderConfirmation}ZFirstBillingDate &lt;groupOrAttributeGroup&gt; DTE_DocumentProduct http://bio-rad.com/OTC/PurchaseOrderConfirmation http://bio-rad.com/OTC/PurchaseOrderConfirmation</ID>
+     <IFR_TYPE>element</IFR_TYPE>
+     <IFR_NAME>ZFirstBillingDate</IFR_NAME>
+     <IFR_TEXT>First Billing date</IFR_TEXT>
+     <IFR_TAGTYP>E</IFR_TAGTYP>
+     <IFR_MAXOCC>1</IFR_MAXOCC>
+     <IFR_OPTNL>X</IFR_OPTNL>
+     <IFR_QUALIF>X</IFR_QUALIF>
+     <IFR_XSDTYP>string</IFR_XSDTYP>
+     <IFR_SCALE>-2</IFR_SCALE>
+     <R3_TYPE>FIEL</R3_TYPE>
+     <R3_NAME>Z01OTC_ZFIRST_BILLING_DATE</R3_NAME>
+     <R3_TEXT>First Billing date</R3_TEXT>
+     <R3_DATATYP>STRG</R3_DATATYP>
+     <R3_SEQNUM>000006</R3_SEQNUM>
+    </item>
+    <item>
+     <OBJECT>TABL</OBJECT>
+     <OBJ_NAME>Z01OTC_DTE_DOCUMENT_PRODUCT</OBJ_NAME>
+     <OBJECT1>FIEL</OBJECT1>
+     <OBJ_NAME1>Z01OTC_ZSHORT_TEXT</OBJ_NAME1>
+     <OBJECT2>FIEL</OBJECT2>
+     <OBJ_NAME2>Z01OTC_ZSHORT_TEXT</OBJ_NAME2>
+     <OBJECT_R>DTEL</OBJECT_R>
+     <OBJ_NAME_R>SAPPLSEF_CHANGE_STATE_ID</OBJ_NAME_R>
+     <ID>&lt;element&gt; {http://bio-rad.com/OTC/PurchaseOrderConfirmation}ZShortText &lt;groupOrAttributeGroup&gt; DTE_DocumentProduct http://bio-rad.com/OTC/PurchaseOrderConfirmation http://bio-rad.com/OTC/PurchaseOrderConfirmation</ID>
+     <IFR_TYPE>element</IFR_TYPE>
+     <IFR_NAME>ZShortText</IFR_NAME>
+     <IFR_TEXT>Short text Sales order item</IFR_TEXT>
+     <IFR_TAGTYP>E</IFR_TAGTYP>
+     <IFR_MAXOCC>1</IFR_MAXOCC>
+     <IFR_OPTNL>X</IFR_OPTNL>
+     <IFR_QUALIF>X</IFR_QUALIF>
+     <IFR_SCALE>-2</IFR_SCALE>
+     <R3_TYPE>FIEL</R3_TYPE>
+     <R3_NAME>Z01OTC_ZSHORT_TEXT</R3_NAME>
+     <R3_TEXT>Short text Sales order item</R3_TEXT>
+     <R3_SEQNUM>000001</R3_SEQNUM>
+    </item>
+    <item>
+     <OBJECT>TABL</OBJECT>
+     <OBJ_NAME>Z01OTC_DTE_DOCUMENT_PRODUCT</OBJ_NAME>
+     <OBJECT1>TABL</OBJECT1>
+     <OBJ_NAME1>Z01OTC_DTE_DOCUMENT_PRODUCT</OBJ_NAME1>
+     <OBJECT2>TABL</OBJECT2>
+     <OBJ_NAME2>Z01OTC_DTE_DOCUMENT_PRODUCT</OBJ_NAME2>
+     <ID>&lt;groupOrAttributeGroup&gt; DTE_DocumentProduct http://bio-rad.com/OTC/PurchaseOrderConfirmation http://bio-rad.com/OTC/PurchaseOrderConfirmation</ID>
+     <IFR_TYPE>groupOrAttributeGroup</IFR_TYPE>
+     <IFR_NAME>DTE_DocumentProduct</IFR_NAME>
+     <IFR_SCALE>-2</IFR_SCALE>
+     <R3_TYPE>TABL</R3_TYPE>
+     <R3_NAME>Z01OTC_DTE_DOCUMENT_PRODUCT</R3_NAME>
+     <R3_TEXT>Proxy Structure (generated)</R3_TEXT>
+     <CATEGORY>ifmtypeenh</CATEGORY>
+    </item>
+   </PROXY_DATA>
+  </asx:values>
+ </asx:abap>
+</abapGit>

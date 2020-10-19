@@ -1,0 +1,91 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<abapGit version="v1.0.0" serializer="LCL_OBJECT_SPRX" serializer_version="v1.0.0">
+ <asx:abap xmlns:asx="http://www.sap.com/abapxml" version="1.0">
+  <asx:values>
+   <PROXY_HEADER>
+    <item>
+     <OBJECT>TABL</OBJECT>
+     <OBJ_NAME>Z01OTC_DT_EDPAR_REQ_DETAILS</OBJ_NAME>
+     <OBJECT_M>TABL</OBJECT_M>
+     <OBJ_NAME_M>Z01OTC_DT_EDPAR_REQ</OBJ_NAME_M>
+     <HASH_ID>055C464FD1B5FAED8880D6DA0CC032E00E0C4251</HASH_ID>
+     <ID>&lt;type&gt; Details &lt;element&gt; Details &lt;type&gt; DT_EDPAR_REQ http://bio-rad.com/OTC/EDIPartner http://bio-rad.com/OTC/EDIPartner</ID>
+     <IFR_TYPE>type</IFR_TYPE>
+     <IFR_NAME>Details</IFR_NAME>
+     <IFR_NSPCE>http://bio-rad.com/OTC/EDIPartner</IFR_NSPCE>
+     <IFR_GNSPCE>http://bio-rad.com/OTC/EDIPartner</IFR_GNSPCE>
+     <GEN_VERS>0005</GEN_VERS>
+     <PREFIX>Z01OTC_</PREFIX>
+     <CATEGORY>ifmtypedef</CATEGORY>
+     <X-ML_NSPCE>http://bio-rad.com/OTC/EDIPartner</X-ML_NSPCE>
+     <X-ML_NAME>Details</X-ML_NAME>
+    </item>
+   </PROXY_HEADER>
+   <PROXY_DATA>
+    <item>
+     <OBJECT>TABL</OBJECT>
+     <OBJ_NAME>Z01OTC_DT_EDPAR_REQ_DETAILS</OBJ_NAME>
+     <OBJECT1>FIEL</OBJECT1>
+     <OBJ_NAME1>EXTERNAL_PARTNER</OBJ_NAME1>
+     <OBJECT2>FIEL</OBJECT2>
+     <OBJ_NAME2>EXTERNAL_PARTNER</OBJ_NAME2>
+     <ID>&lt;element&gt; ExternalPartner &lt;type&gt; Details &lt;element&gt; Details &lt;type&gt; DT_EDPAR_REQ http://bio-rad.com/OTC/EDIPartner http://bio-rad.com/OTC/EDIPartner</ID>
+     <IFR_TYPE>element</IFR_TYPE>
+     <IFR_NAME>ExternalPartner</IFR_NAME>
+     <IFR_LANGU>EN</IFR_LANGU>
+     <IFR_TAGTYP>E</IFR_TAGTYP>
+     <IFR_MINOCC>1</IFR_MINOCC>
+     <IFR_MAXOCC>1</IFR_MAXOCC>
+     <IFR_XSDTYP>string</IFR_XSDTYP>
+     <IFR_MAXLEN>20</IFR_MAXLEN>
+     <IFR_SCALE>-2</IFR_SCALE>
+     <R3_TYPE>FIEL</R3_TYPE>
+     <R3_NAME>EXTERNAL_PARTNER</R3_NAME>
+     <R3_DATATYP>CHAR</R3_DATATYP>
+     <R3_LENGTH>000020</R3_LENGTH>
+     <R3_SEQNUM>000002</R3_SEQNUM>
+    </item>
+    <item>
+     <OBJECT>TABL</OBJECT>
+     <OBJ_NAME>Z01OTC_DT_EDPAR_REQ_DETAILS</OBJ_NAME>
+     <OBJECT1>FIEL</OBJECT1>
+     <OBJ_NAME1>PARTNER_ROLE</OBJ_NAME1>
+     <OBJECT2>FIEL</OBJECT2>
+     <OBJ_NAME2>PARTNER_ROLE</OBJ_NAME2>
+     <ID>&lt;element&gt; PartnerRole &lt;type&gt; Details &lt;element&gt; Details &lt;type&gt; DT_EDPAR_REQ http://bio-rad.com/OTC/EDIPartner http://bio-rad.com/OTC/EDIPartner</ID>
+     <IFR_TYPE>element</IFR_TYPE>
+     <IFR_NAME>PartnerRole</IFR_NAME>
+     <IFR_LANGU>EN</IFR_LANGU>
+     <IFR_TAGTYP>E</IFR_TAGTYP>
+     <IFR_MINOCC>1</IFR_MINOCC>
+     <IFR_MAXOCC>1</IFR_MAXOCC>
+     <IFR_XSDTYP>string</IFR_XSDTYP>
+     <IFR_MAXLEN>2</IFR_MAXLEN>
+     <IFR_SCALE>-2</IFR_SCALE>
+     <R3_TYPE>FIEL</R3_TYPE>
+     <R3_NAME>PARTNER_ROLE</R3_NAME>
+     <R3_DATATYP>CHAR</R3_DATATYP>
+     <R3_LENGTH>000002</R3_LENGTH>
+     <R3_SEQNUM>000001</R3_SEQNUM>
+    </item>
+    <item>
+     <OBJECT>TABL</OBJECT>
+     <OBJ_NAME>Z01OTC_DT_EDPAR_REQ_DETAILS</OBJ_NAME>
+     <OBJECT1>TABL</OBJECT1>
+     <OBJ_NAME1>Z01OTC_DT_EDPAR_REQ_DETAILS</OBJ_NAME1>
+     <OBJECT2>TABL</OBJECT2>
+     <OBJ_NAME2>Z01OTC_DT_EDPAR_REQ_DETAILS</OBJ_NAME2>
+     <ID>&lt;type&gt; Details &lt;element&gt; Details &lt;type&gt; DT_EDPAR_REQ http://bio-rad.com/OTC/EDIPartner http://bio-rad.com/OTC/EDIPartner</ID>
+     <IFR_TYPE>type</IFR_TYPE>
+     <IFR_NAME>Details</IFR_NAME>
+     <IFR_LANGU>EN</IFR_LANGU>
+     <IFR_SCALE>-2</IFR_SCALE>
+     <R3_TYPE>TABL</R3_TYPE>
+     <R3_NAME>Z01OTC_DT_EDPAR_REQ_DETAILS</R3_NAME>
+     <R3_TEXT>Proxy Structure (generated)</R3_TEXT>
+     <CATEGORY>ifmtypedef</CATEGORY>
+    </item>
+   </PROXY_DATA>
+  </asx:values>
+ </asx:abap>
+</abapGit>

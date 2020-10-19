@@ -1,0 +1,36 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<abapGit version="v1.0.0" serializer="LCL_OBJECT_XINX" serializer_version="v1.0.0">
+ <asx:abap xmlns:asx="http://www.sap.com/abapxml" version="1.0">
+  <asx:values>
+   <XINX>
+    <DD12V>
+     <SQLTAB>EDPAR</SQLTAB>
+     <INDEXNAME>Z01</INDEXNAME>
+     <AS4LOCAL>A</AS4LOCAL>
+     <DDLANGUAGE>E</DDLANGUAGE>
+     <DBSTATE>D</DBSTATE>
+     <DBINCLEXCL>E</DBINCLEXCL>
+     <DBSYSSEL1>HDB</DBSYSSEL1>
+     <DDTEXT>Extension Index for External Partner and Partner Type</DDTEXT>
+     <ISEXTIND>X</ISEXTIND>
+    </DD12V>
+    <T_DD17V>
+     <DD17V>
+      <SQLTAB>EDPAR</SQLTAB>
+      <INDEXNAME>Z01</INDEXNAME>
+      <POSITION>0001</POSITION>
+      <AS4LOCAL>A</AS4LOCAL>
+      <FIELDNAME>PARVW</FIELDNAME>
+     </DD17V>
+     <DD17V>
+      <SQLTAB>EDPAR</SQLTAB>
+      <INDEXNAME>Z01</INDEXNAME>
+      <POSITION>0002</POSITION>
+      <AS4LOCAL>A</AS4LOCAL>
+      <FIELDNAME>EXPNR</FIELDNAME>
+     </DD17V>
+    </T_DD17V>
+   </XINX>
+  </asx:values>
+ </asx:abap>
+</abapGit>

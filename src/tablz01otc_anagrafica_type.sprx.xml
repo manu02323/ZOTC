@@ -1,0 +1,145 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<abapGit version="v1.0.0" serializer="LCL_OBJECT_SPRX" serializer_version="v1.0.0">
+ <asx:abap xmlns:asx="http://www.sap.com/abapxml" version="1.0">
+  <asx:values>
+   <PROXY_HEADER>
+    <item>
+     <OBJECT>TABL</OBJECT>
+     <OBJ_NAME>Z01OTC_ANAGRAFICA_TYPE</OBJ_NAME>
+     <OBJECT_M>CLAS</OBJECT_M>
+     <OBJ_NAME_M>Z01OTC_CO_SI_INTEREST_CHARGES</OBJ_NAME_M>
+     <HASH_ID>014139334A2F8C6C2D6EB746165BE0E747070DF9</HASH_ID>
+     <ID>&lt;type&gt; AnagraficaType http://ivaservizi.agenziaentrate.gov.it/docs/xsd/fatture/v1.2 SI_InterestCharges_out(http://bio-rad.com/OTC/InterestCharges)</ID>
+     <IFR_TYPE>type</IFR_TYPE>
+     <IFR_NAME>AnagraficaType</IFR_NAME>
+     <IFR_NSPCE>http://ivaservizi.agenziaentrate.gov.it/docs/xsd/fatture/v1.2</IFR_NSPCE>
+     <IFR_GNSPCE>SI_InterestCharges_out(http://bio-rad.com/OTC/InterestCharges)</IFR_GNSPCE>
+     <GEN_VERS>0005</GEN_VERS>
+     <PREFIX>Z01OTC_</PREFIX>
+     <CATEGORY>ifmtypedef</CATEGORY>
+     <X-ML_NSPCE>http://ivaservizi.agenziaentrate.gov.it/docs/xsd/fatture/v1.2</X-ML_NSPCE>
+     <X-ML_NAME>AnagraficaType</X-ML_NAME>
+    </item>
+   </PROXY_HEADER>
+   <PROXY_DATA>
+    <item>
+     <OBJECT>TABL</OBJECT>
+     <OBJ_NAME>Z01OTC_ANAGRAFICA_TYPE</OBJ_NAME>
+     <OBJECT1>FIEL</OBJECT1>
+     <OBJ_NAME1>COD_EORI</OBJ_NAME1>
+     <OBJECT2>FIEL</OBJECT2>
+     <OBJ_NAME2>COD_EORI</OBJ_NAME2>
+     <OBJECT_R>DTEL</OBJECT_R>
+     <OBJ_NAME_R>Z01OTC_COD_EORITYPE</OBJ_NAME_R>
+     <ID>&lt;element&gt; CodEORI &lt;type&gt; AnagraficaType http://ivaservizi.agenziaentrate.gov.it/docs/xsd/fatture/v1.2 SI_InterestCharges_out(http://bio-rad.com/OTC/InterestCharges)</ID>
+     <IFR_TYPE>element</IFR_TYPE>
+     <IFR_NAME>CodEORI</IFR_NAME>
+     <IFR_TAGTYP>E</IFR_TAGTYP>
+     <IFR_MAXOCC>1</IFR_MAXOCC>
+     <IFR_OPTNL>X</IFR_OPTNL>
+     <IFR_SCALE>-2</IFR_SCALE>
+     <R3_TYPE>FIEL</R3_TYPE>
+     <R3_NAME>COD_EORI</R3_NAME>
+     <R3_SEQNUM>000005</R3_SEQNUM>
+    </item>
+    <item>
+     <OBJECT>TABL</OBJECT>
+     <OBJ_NAME>Z01OTC_ANAGRAFICA_TYPE</OBJ_NAME>
+     <OBJECT1>FIEL</OBJECT1>
+     <OBJ_NAME1>COGNOME</OBJ_NAME1>
+     <OBJECT2>FIEL</OBJECT2>
+     <OBJ_NAME2>COGNOME</OBJ_NAME2>
+     <OBJECT_R>DTEL</OBJECT_R>
+     <OBJ_NAME_R>Z01OTC_STRING60LATIN_TYPE</OBJ_NAME_R>
+     <ID>&lt;element&gt; Cognome &lt;type&gt; AnagraficaType http://ivaservizi.agenziaentrate.gov.it/docs/xsd/fatture/v1.2 SI_InterestCharges_out(http://bio-rad.com/OTC/InterestCharges)</ID>
+     <IFR_TYPE>element</IFR_TYPE>
+     <IFR_NAME>Cognome</IFR_NAME>
+     <IFR_TAGTYP>E</IFR_TAGTYP>
+     <IFR_MINOCC>1</IFR_MINOCC>
+     <IFR_MAXOCC>1</IFR_MAXOCC>
+     <IFR_SCALE>-2</IFR_SCALE>
+     <R3_TYPE>FIEL</R3_TYPE>
+     <R3_NAME>COGNOME</R3_NAME>
+     <R3_SEQNUM>000003</R3_SEQNUM>
+    </item>
+    <item>
+     <OBJECT>TABL</OBJECT>
+     <OBJ_NAME>Z01OTC_ANAGRAFICA_TYPE</OBJ_NAME>
+     <OBJECT1>FIEL</OBJECT1>
+     <OBJ_NAME1>DENOMINAZIONE</OBJ_NAME1>
+     <OBJECT2>FIEL</OBJECT2>
+     <OBJ_NAME2>DENOMINAZIONE</OBJ_NAME2>
+     <OBJECT_R>DTEL</OBJECT_R>
+     <OBJ_NAME_R>Z01OTC_STRING80LATIN_TYPE</OBJ_NAME_R>
+     <ID>&lt;element&gt; Denominazione &lt;type&gt; AnagraficaType http://ivaservizi.agenziaentrate.gov.it/docs/xsd/fatture/v1.2 SI_InterestCharges_out(http://bio-rad.com/OTC/InterestCharges)</ID>
+     <IFR_TYPE>element</IFR_TYPE>
+     <IFR_NAME>Denominazione</IFR_NAME>
+     <IFR_TAGTYP>E</IFR_TAGTYP>
+     <IFR_MINOCC>1</IFR_MINOCC>
+     <IFR_MAXOCC>1</IFR_MAXOCC>
+     <IFR_SCALE>-2</IFR_SCALE>
+     <R3_TYPE>FIEL</R3_TYPE>
+     <R3_NAME>DENOMINAZIONE</R3_NAME>
+     <R3_SEQNUM>000001</R3_SEQNUM>
+    </item>
+    <item>
+     <OBJECT>TABL</OBJECT>
+     <OBJ_NAME>Z01OTC_ANAGRAFICA_TYPE</OBJ_NAME>
+     <OBJECT1>FIEL</OBJECT1>
+     <OBJ_NAME1>NOME</OBJ_NAME1>
+     <OBJECT2>FIEL</OBJECT2>
+     <OBJ_NAME2>NOME</OBJ_NAME2>
+     <OBJECT_R>DTEL</OBJECT_R>
+     <OBJ_NAME_R>Z01OTC_STRING60LATIN_TYPE</OBJ_NAME_R>
+     <ID>&lt;element&gt; Nome &lt;type&gt; AnagraficaType http://ivaservizi.agenziaentrate.gov.it/docs/xsd/fatture/v1.2 SI_InterestCharges_out(http://bio-rad.com/OTC/InterestCharges)</ID>
+     <IFR_TYPE>element</IFR_TYPE>
+     <IFR_NAME>Nome</IFR_NAME>
+     <IFR_TAGTYP>E</IFR_TAGTYP>
+     <IFR_MINOCC>1</IFR_MINOCC>
+     <IFR_MAXOCC>1</IFR_MAXOCC>
+     <IFR_SCALE>-2</IFR_SCALE>
+     <R3_TYPE>FIEL</R3_TYPE>
+     <R3_NAME>NOME</R3_NAME>
+     <R3_SEQNUM>000002</R3_SEQNUM>
+    </item>
+    <item>
+     <OBJECT>TABL</OBJECT>
+     <OBJ_NAME>Z01OTC_ANAGRAFICA_TYPE</OBJ_NAME>
+     <OBJECT1>FIEL</OBJECT1>
+     <OBJ_NAME1>TITOLO</OBJ_NAME1>
+     <OBJECT2>FIEL</OBJECT2>
+     <OBJ_NAME2>TITOLO</OBJ_NAME2>
+     <OBJECT_R>DTEL</OBJECT_R>
+     <OBJ_NAME_R>Z01OTC_TITOLO_TYPE</OBJ_NAME_R>
+     <ID>&lt;element&gt; Titolo &lt;type&gt; AnagraficaType http://ivaservizi.agenziaentrate.gov.it/docs/xsd/fatture/v1.2 SI_InterestCharges_out(http://bio-rad.com/OTC/InterestCharges)</ID>
+     <IFR_TYPE>element</IFR_TYPE>
+     <IFR_NAME>Titolo</IFR_NAME>
+     <IFR_TAGTYP>E</IFR_TAGTYP>
+     <IFR_MAXOCC>1</IFR_MAXOCC>
+     <IFR_OPTNL>X</IFR_OPTNL>
+     <IFR_SCALE>-2</IFR_SCALE>
+     <R3_TYPE>FIEL</R3_TYPE>
+     <R3_NAME>TITOLO</R3_NAME>
+     <R3_SEQNUM>000004</R3_SEQNUM>
+    </item>
+    <item>
+     <OBJECT>TABL</OBJECT>
+     <OBJ_NAME>Z01OTC_ANAGRAFICA_TYPE</OBJ_NAME>
+     <OBJECT1>TABL</OBJECT1>
+     <OBJ_NAME1>Z01OTC_ANAGRAFICA_TYPE</OBJ_NAME1>
+     <OBJECT2>TABL</OBJECT2>
+     <OBJ_NAME2>Z01OTC_ANAGRAFICA_TYPE</OBJ_NAME2>
+     <ID>&lt;type&gt; AnagraficaType http://ivaservizi.agenziaentrate.gov.it/docs/xsd/fatture/v1.2 SI_InterestCharges_out(http://bio-rad.com/OTC/InterestCharges)</ID>
+     <IFR_TYPE>type</IFR_TYPE>
+     <IFR_NAME>AnagraficaType</IFR_NAME>
+     <IFR_TEXT>Il campo Denominazione è in alternativa ai campi Nome e Cognome</IFR_TEXT>
+     <IFR_SCALE>-2</IFR_SCALE>
+     <R3_TYPE>TABL</R3_TYPE>
+     <R3_NAME>Z01OTC_ANAGRAFICA_TYPE</R3_NAME>
+     <R3_TEXT>Il campo Denominazione è in alternativa ai campi Nome e Cogn</R3_TEXT>
+     <CATEGORY>ifmtypedef</CATEGORY>
+    </item>
+   </PROXY_DATA>
+  </asx:values>
+ </asx:abap>
+</abapGit>

@@ -1,0 +1,608 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<abapGit version="v1.0.0" serializer="LCL_OBJECT_CLAS" serializer_version="v1.0.0">
+ <asx:abap xmlns:asx="http://www.sap.com/abapxml" version="1.0">
+  <asx:values>
+   <VSEOCLASS>
+    <CLSNAME>ZOTC_CL_INB_SO_EDI_850</CLSNAME>
+    <LANGU>E</LANGU>
+    <DESCRIPT>Inbound Sales Order EDI 850</DESCRIPT>
+    <STATE>1</STATE>
+    <CLSCCINCL>X</CLSCCINCL>
+    <FIXPT>X</FIXPT>
+    <UNICODE>X</UNICODE>
+   </VSEOCLASS>
+   <TPOOL>
+    <item>
+     <ID>I</ID>
+     <KEY>001</KEY>
+     <ENTRY>Please select the sales area.</ENTRY>
+     <LENGTH>29</LENGTH>
+    </item>
+    <item>
+     <ID>I</ID>
+     <KEY>002</KEY>
+     <ENTRY>Sales Order Can be Posted Successfully</ENTRY>
+     <LENGTH>38</LENGTH>
+    </item>
+   </TPOOL>
+   <I18N_TPOOL>
+    <item>
+     <LANGUAGE>N</LANGUAGE>
+     <TEXTPOOL>
+      <item>
+       <ID>I</ID>
+       <KEY>001</KEY>
+       <ENTRY>Please select the sales area.</ENTRY>
+       <LENGTH>29</LENGTH>
+      </item>
+      <item>
+       <ID>I</ID>
+       <KEY>002</KEY>
+       <ENTRY>Sales Order Can be Posted Successfully</ENTRY>
+       <LENGTH>38</LENGTH>
+      </item>
+     </TEXTPOOL>
+    </item>
+    <item>
+     <LANGUAGE>S</LANGUAGE>
+     <TEXTPOOL>
+      <item>
+       <ID>I</ID>
+       <KEY>001</KEY>
+       <ENTRY>Please select the sales area.</ENTRY>
+       <LENGTH>29</LENGTH>
+      </item>
+      <item>
+       <ID>I</ID>
+       <KEY>002</KEY>
+       <ENTRY>Sales Order Can be Posted Successfully</ENTRY>
+       <LENGTH>38</LENGTH>
+      </item>
+     </TEXTPOOL>
+    </item>
+    <item>
+     <LANGUAGE>P</LANGUAGE>
+     <TEXTPOOL>
+      <item>
+       <ID>I</ID>
+       <KEY>001</KEY>
+       <ENTRY>Please select the sales area.</ENTRY>
+       <LENGTH>29</LENGTH>
+      </item>
+      <item>
+       <ID>I</ID>
+       <KEY>002</KEY>
+       <ENTRY>Sales Order Can be Posted Successfully</ENTRY>
+       <LENGTH>38</LENGTH>
+      </item>
+     </TEXTPOOL>
+    </item>
+    <item>
+     <LANGUAGE>R</LANGUAGE>
+     <TEXTPOOL>
+      <item>
+       <ID>I</ID>
+       <KEY>001</KEY>
+       <ENTRY>Please select the sales area.</ENTRY>
+       <LENGTH>29</LENGTH>
+      </item>
+      <item>
+       <ID>I</ID>
+       <KEY>002</KEY>
+       <ENTRY>Sales Order Can be Posted Successfully</ENTRY>
+       <LENGTH>38</LENGTH>
+      </item>
+     </TEXTPOOL>
+    </item>
+    <item>
+     <LANGUAGE>F</LANGUAGE>
+     <TEXTPOOL>
+      <item>
+       <ID>I</ID>
+       <KEY>001</KEY>
+       <ENTRY>Please select the sales area.</ENTRY>
+       <LENGTH>29</LENGTH>
+      </item>
+      <item>
+       <ID>I</ID>
+       <KEY>002</KEY>
+       <ENTRY>Sales Order Can be Posted Successfully</ENTRY>
+       <LENGTH>38</LENGTH>
+      </item>
+     </TEXTPOOL>
+    </item>
+    <item>
+     <LANGUAGE>J</LANGUAGE>
+     <TEXTPOOL>
+      <item>
+       <ID>I</ID>
+       <KEY>001</KEY>
+       <ENTRY>Please select the sales area.</ENTRY>
+       <LENGTH>29</LENGTH>
+      </item>
+      <item>
+       <ID>I</ID>
+       <KEY>002</KEY>
+       <ENTRY>Sales Order Can be Posted Successfully</ENTRY>
+       <LENGTH>38</LENGTH>
+      </item>
+     </TEXTPOOL>
+    </item>
+    <item>
+     <LANGUAGE>1</LANGUAGE>
+     <TEXTPOOL>
+      <item>
+       <ID>I</ID>
+       <KEY>001</KEY>
+       <ENTRY>Please select the sales area.</ENTRY>
+       <LENGTH>29</LENGTH>
+      </item>
+      <item>
+       <ID>I</ID>
+       <KEY>002</KEY>
+       <ENTRY>Sales Order Can be Posted Successfully</ENTRY>
+       <LENGTH>38</LENGTH>
+      </item>
+     </TEXTPOOL>
+    </item>
+   </I18N_TPOOL>
+   <I18N_LINES>
+    <item>
+     <LANGUAGE>N</LANGUAGE>
+    </item>
+    <item>
+     <LANGUAGE>S</LANGUAGE>
+    </item>
+    <item>
+     <LANGUAGE>P</LANGUAGE>
+    </item>
+    <item>
+     <LANGUAGE>R</LANGUAGE>
+    </item>
+    <item>
+     <LANGUAGE>F</LANGUAGE>
+    </item>
+    <item>
+     <LANGUAGE>J</LANGUAGE>
+    </item>
+    <item>
+     <LANGUAGE>1</LANGUAGE>
+    </item>
+   </I18N_LINES>
+   <DESCRIPTIONS>
+    <SEOCOMPOTX>
+     <CLSNAME>ZOTC_CL_INB_SO_EDI_850</CLSNAME>
+     <CMPNAME>BAPI_SIMULATE</CMPNAME>
+     <LANGU>1</LANGU>
+     <DESCRIPT>Simulate the Order Process</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>ZOTC_CL_INB_SO_EDI_850</CLSNAME>
+     <CMPNAME>BAPI_SIMULATE</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Simulate the Order Process</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>ZOTC_CL_INB_SO_EDI_850</CLSNAME>
+     <CMPNAME>BAPI_SIMULATE</CMPNAME>
+     <LANGU>F</LANGU>
+     <DESCRIPT>Simulate the Order Process</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>ZOTC_CL_INB_SO_EDI_850</CLSNAME>
+     <CMPNAME>BAPI_SIMULATE</CMPNAME>
+     <LANGU>J</LANGU>
+     <DESCRIPT>Simulate the Order Process</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>ZOTC_CL_INB_SO_EDI_850</CLSNAME>
+     <CMPNAME>BAPI_SIMULATE</CMPNAME>
+     <LANGU>N</LANGU>
+     <DESCRIPT>Simulate the Order Process</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>ZOTC_CL_INB_SO_EDI_850</CLSNAME>
+     <CMPNAME>BAPI_SIMULATE</CMPNAME>
+     <LANGU>P</LANGU>
+     <DESCRIPT>Simulate the Order Process</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>ZOTC_CL_INB_SO_EDI_850</CLSNAME>
+     <CMPNAME>BAPI_SIMULATE</CMPNAME>
+     <LANGU>R</LANGU>
+     <DESCRIPT>Simulate the Order Process</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>ZOTC_CL_INB_SO_EDI_850</CLSNAME>
+     <CMPNAME>BAPI_SIMULATE</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Simulate the Order Process</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>ZOTC_CL_INB_SO_EDI_850</CLSNAME>
+     <CMPNAME>CLASS_CONSTRUCTOR</CMPNAME>
+     <LANGU>1</LANGU>
+     <DESCRIPT>CLASS_CONSTRUCTOR</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>ZOTC_CL_INB_SO_EDI_850</CLSNAME>
+     <CMPNAME>CLASS_CONSTRUCTOR</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>CLASS_CONSTRUCTOR</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>ZOTC_CL_INB_SO_EDI_850</CLSNAME>
+     <CMPNAME>CLASS_CONSTRUCTOR</CMPNAME>
+     <LANGU>F</LANGU>
+     <DESCRIPT>CLASS_CONSTRUCTOR</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>ZOTC_CL_INB_SO_EDI_850</CLSNAME>
+     <CMPNAME>CLASS_CONSTRUCTOR</CMPNAME>
+     <LANGU>J</LANGU>
+     <DESCRIPT>CLASS_CONSTRUCTOR</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>ZOTC_CL_INB_SO_EDI_850</CLSNAME>
+     <CMPNAME>CLASS_CONSTRUCTOR</CMPNAME>
+     <LANGU>N</LANGU>
+     <DESCRIPT>CLASS_CONSTRUCTOR</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>ZOTC_CL_INB_SO_EDI_850</CLSNAME>
+     <CMPNAME>CLASS_CONSTRUCTOR</CMPNAME>
+     <LANGU>P</LANGU>
+     <DESCRIPT>CLASS_CONSTRUCTOR</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>ZOTC_CL_INB_SO_EDI_850</CLSNAME>
+     <CMPNAME>CLASS_CONSTRUCTOR</CMPNAME>
+     <LANGU>R</LANGU>
+     <DESCRIPT>CLASS_CONSTRUCTOR</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>ZOTC_CL_INB_SO_EDI_850</CLSNAME>
+     <CMPNAME>CLASS_CONSTRUCTOR</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>CLASS_CONSTRUCTOR</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>ZOTC_CL_INB_SO_EDI_850</CLSNAME>
+     <CMPNAME>DETERMINE_ORDERS</CMPNAME>
+     <LANGU>1</LANGU>
+     <DESCRIPT>Determine the Orders to be created</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>ZOTC_CL_INB_SO_EDI_850</CLSNAME>
+     <CMPNAME>DETERMINE_ORDERS</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Determine the Orders to be created</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>ZOTC_CL_INB_SO_EDI_850</CLSNAME>
+     <CMPNAME>DETERMINE_ORDERS</CMPNAME>
+     <LANGU>F</LANGU>
+     <DESCRIPT>Determine the Orders to be created</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>ZOTC_CL_INB_SO_EDI_850</CLSNAME>
+     <CMPNAME>DETERMINE_ORDERS</CMPNAME>
+     <LANGU>J</LANGU>
+     <DESCRIPT>Determine the Orders to be created</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>ZOTC_CL_INB_SO_EDI_850</CLSNAME>
+     <CMPNAME>DETERMINE_ORDERS</CMPNAME>
+     <LANGU>N</LANGU>
+     <DESCRIPT>Determine the Orders to be created</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>ZOTC_CL_INB_SO_EDI_850</CLSNAME>
+     <CMPNAME>DETERMINE_ORDERS</CMPNAME>
+     <LANGU>P</LANGU>
+     <DESCRIPT>Determine the Orders to be created</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>ZOTC_CL_INB_SO_EDI_850</CLSNAME>
+     <CMPNAME>DETERMINE_ORDERS</CMPNAME>
+     <LANGU>R</LANGU>
+     <DESCRIPT>Determine the Orders to be created</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>ZOTC_CL_INB_SO_EDI_850</CLSNAME>
+     <CMPNAME>DETERMINE_ORDERS</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Determine the Orders to be created</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>ZOTC_CL_INB_SO_EDI_850</CLSNAME>
+     <CMPNAME>DETERMINE_SOLD_TO</CMPNAME>
+     <LANGU>1</LANGU>
+     <DESCRIPT>Sold to Determination for EDI Orders</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>ZOTC_CL_INB_SO_EDI_850</CLSNAME>
+     <CMPNAME>DETERMINE_SOLD_TO</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Sold to Determination for EDI Orders</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>ZOTC_CL_INB_SO_EDI_850</CLSNAME>
+     <CMPNAME>DETERMINE_SOLD_TO</CMPNAME>
+     <LANGU>F</LANGU>
+     <DESCRIPT>Sold to Determination for EDI Orders</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>ZOTC_CL_INB_SO_EDI_850</CLSNAME>
+     <CMPNAME>DETERMINE_SOLD_TO</CMPNAME>
+     <LANGU>J</LANGU>
+     <DESCRIPT>Sold to Determination for EDI Orders</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>ZOTC_CL_INB_SO_EDI_850</CLSNAME>
+     <CMPNAME>DETERMINE_SOLD_TO</CMPNAME>
+     <LANGU>N</LANGU>
+     <DESCRIPT>Sold to Determination for EDI Orders</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>ZOTC_CL_INB_SO_EDI_850</CLSNAME>
+     <CMPNAME>DETERMINE_SOLD_TO</CMPNAME>
+     <LANGU>P</LANGU>
+     <DESCRIPT>Sold to Determination for EDI Orders</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>ZOTC_CL_INB_SO_EDI_850</CLSNAME>
+     <CMPNAME>DETERMINE_SOLD_TO</CMPNAME>
+     <LANGU>R</LANGU>
+     <DESCRIPT>Sold to Determination for EDI Orders</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>ZOTC_CL_INB_SO_EDI_850</CLSNAME>
+     <CMPNAME>DETERMINE_SOLD_TO</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Sold to Determination for EDI Orders</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>ZOTC_CL_INB_SO_EDI_850</CLSNAME>
+     <CMPNAME>DETERMINE_SOLD_TO_COUNTRY</CMPNAME>
+     <LANGU>1</LANGU>
+     <DESCRIPT>Sold to Country Determination for all Orders</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>ZOTC_CL_INB_SO_EDI_850</CLSNAME>
+     <CMPNAME>DETERMINE_SOLD_TO_COUNTRY</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Sold to Country Determination for all Orders</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>ZOTC_CL_INB_SO_EDI_850</CLSNAME>
+     <CMPNAME>DETERMINE_SOLD_TO_COUNTRY</CMPNAME>
+     <LANGU>F</LANGU>
+     <DESCRIPT>Sold to Country Determination for all Orders</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>ZOTC_CL_INB_SO_EDI_850</CLSNAME>
+     <CMPNAME>DETERMINE_SOLD_TO_COUNTRY</CMPNAME>
+     <LANGU>J</LANGU>
+     <DESCRIPT>Sold to Country Determination for all Orders</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>ZOTC_CL_INB_SO_EDI_850</CLSNAME>
+     <CMPNAME>DETERMINE_SOLD_TO_COUNTRY</CMPNAME>
+     <LANGU>N</LANGU>
+     <DESCRIPT>Sold to Country Determination for all Orders</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>ZOTC_CL_INB_SO_EDI_850</CLSNAME>
+     <CMPNAME>DETERMINE_SOLD_TO_COUNTRY</CMPNAME>
+     <LANGU>P</LANGU>
+     <DESCRIPT>Sold to Country Determination for all Orders</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>ZOTC_CL_INB_SO_EDI_850</CLSNAME>
+     <CMPNAME>DETERMINE_SOLD_TO_COUNTRY</CMPNAME>
+     <LANGU>R</LANGU>
+     <DESCRIPT>Sold to Country Determination for all Orders</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>ZOTC_CL_INB_SO_EDI_850</CLSNAME>
+     <CMPNAME>DETERMINE_SOLD_TO_COUNTRY</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Sold to Country Determination for all Orders</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>ZOTC_CL_INB_SO_EDI_850</CLSNAME>
+     <CMPNAME>PREPARE_EDI_SPLIT</CMPNAME>
+     <LANGU>1</LANGU>
+     <DESCRIPT>Prepare EDI Split for LRD/NRLD Orders</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>ZOTC_CL_INB_SO_EDI_850</CLSNAME>
+     <CMPNAME>PREPARE_EDI_SPLIT</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Prepare EDI Split for LRD/NRLD Orders</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>ZOTC_CL_INB_SO_EDI_850</CLSNAME>
+     <CMPNAME>PREPARE_EDI_SPLIT</CMPNAME>
+     <LANGU>F</LANGU>
+     <DESCRIPT>Prepare EDI Split for LRD/NRLD Orders</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>ZOTC_CL_INB_SO_EDI_850</CLSNAME>
+     <CMPNAME>PREPARE_EDI_SPLIT</CMPNAME>
+     <LANGU>J</LANGU>
+     <DESCRIPT>Prepare EDI Split for LRD/NRLD Orders</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>ZOTC_CL_INB_SO_EDI_850</CLSNAME>
+     <CMPNAME>PREPARE_EDI_SPLIT</CMPNAME>
+     <LANGU>N</LANGU>
+     <DESCRIPT>Prepare EDI Split for LRD/NRLD Orders</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>ZOTC_CL_INB_SO_EDI_850</CLSNAME>
+     <CMPNAME>PREPARE_EDI_SPLIT</CMPNAME>
+     <LANGU>P</LANGU>
+     <DESCRIPT>Prepare EDI Split for LRD/NRLD Orders</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>ZOTC_CL_INB_SO_EDI_850</CLSNAME>
+     <CMPNAME>PREPARE_EDI_SPLIT</CMPNAME>
+     <LANGU>R</LANGU>
+     <DESCRIPT>Prepare EDI Split for LRD/NRLD Orders</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>ZOTC_CL_INB_SO_EDI_850</CLSNAME>
+     <CMPNAME>PREPARE_EDI_SPLIT</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Prepare EDI Split for LRD/NRLD Orders</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>ZOTC_CL_INB_SO_EDI_850</CLSNAME>
+     <CMPNAME>PROCESS_LRD</CMPNAME>
+     <LANGU>1</LANGU>
+     <DESCRIPT>Process LRD Orders</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>ZOTC_CL_INB_SO_EDI_850</CLSNAME>
+     <CMPNAME>PROCESS_LRD</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Process LRD Orders</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>ZOTC_CL_INB_SO_EDI_850</CLSNAME>
+     <CMPNAME>PROCESS_LRD</CMPNAME>
+     <LANGU>F</LANGU>
+     <DESCRIPT>Process LRD Orders</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>ZOTC_CL_INB_SO_EDI_850</CLSNAME>
+     <CMPNAME>PROCESS_LRD</CMPNAME>
+     <LANGU>J</LANGU>
+     <DESCRIPT>Process LRD Orders</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>ZOTC_CL_INB_SO_EDI_850</CLSNAME>
+     <CMPNAME>PROCESS_LRD</CMPNAME>
+     <LANGU>N</LANGU>
+     <DESCRIPT>Process LRD Orders</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>ZOTC_CL_INB_SO_EDI_850</CLSNAME>
+     <CMPNAME>PROCESS_LRD</CMPNAME>
+     <LANGU>P</LANGU>
+     <DESCRIPT>Process LRD Orders</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>ZOTC_CL_INB_SO_EDI_850</CLSNAME>
+     <CMPNAME>PROCESS_LRD</CMPNAME>
+     <LANGU>R</LANGU>
+     <DESCRIPT>Process LRD Orders</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>ZOTC_CL_INB_SO_EDI_850</CLSNAME>
+     <CMPNAME>PROCESS_LRD</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Process LRD Orders</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>ZOTC_CL_INB_SO_EDI_850</CLSNAME>
+     <CMPNAME>PROCESS_NLRD</CMPNAME>
+     <LANGU>1</LANGU>
+     <DESCRIPT>Process Non LRD - Process</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>ZOTC_CL_INB_SO_EDI_850</CLSNAME>
+     <CMPNAME>PROCESS_NLRD</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Process Non LRD - Process</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>ZOTC_CL_INB_SO_EDI_850</CLSNAME>
+     <CMPNAME>PROCESS_NLRD</CMPNAME>
+     <LANGU>F</LANGU>
+     <DESCRIPT>Process Non LRD - Process</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>ZOTC_CL_INB_SO_EDI_850</CLSNAME>
+     <CMPNAME>PROCESS_NLRD</CMPNAME>
+     <LANGU>J</LANGU>
+     <DESCRIPT>Process Non LRD - Process</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>ZOTC_CL_INB_SO_EDI_850</CLSNAME>
+     <CMPNAME>PROCESS_NLRD</CMPNAME>
+     <LANGU>N</LANGU>
+     <DESCRIPT>Process Non LRD - Process</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>ZOTC_CL_INB_SO_EDI_850</CLSNAME>
+     <CMPNAME>PROCESS_NLRD</CMPNAME>
+     <LANGU>P</LANGU>
+     <DESCRIPT>Process Non LRD - Process</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>ZOTC_CL_INB_SO_EDI_850</CLSNAME>
+     <CMPNAME>PROCESS_NLRD</CMPNAME>
+     <LANGU>R</LANGU>
+     <DESCRIPT>Process Non LRD - Process</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>ZOTC_CL_INB_SO_EDI_850</CLSNAME>
+     <CMPNAME>PROCESS_NLRD</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Process Non LRD - Process</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>ZOTC_CL_INB_SO_EDI_850</CLSNAME>
+     <CMPNAME>VAIDATE_MATERIAL</CMPNAME>
+     <LANGU>1</LANGU>
+     <DESCRIPT>Validate if this is Valid Material for Bio-rad for EDI Order</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>ZOTC_CL_INB_SO_EDI_850</CLSNAME>
+     <CMPNAME>VAIDATE_MATERIAL</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Validate if this is Valid Material for Bio-rad for EDI Order</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>ZOTC_CL_INB_SO_EDI_850</CLSNAME>
+     <CMPNAME>VAIDATE_MATERIAL</CMPNAME>
+     <LANGU>F</LANGU>
+     <DESCRIPT>Validate if this is Valid Material for Bio-rad for EDI Order</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>ZOTC_CL_INB_SO_EDI_850</CLSNAME>
+     <CMPNAME>VAIDATE_MATERIAL</CMPNAME>
+     <LANGU>J</LANGU>
+     <DESCRIPT>Validate if this is Valid Material for Bio-rad for EDI Order</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>ZOTC_CL_INB_SO_EDI_850</CLSNAME>
+     <CMPNAME>VAIDATE_MATERIAL</CMPNAME>
+     <LANGU>N</LANGU>
+     <DESCRIPT>Validate if this is Valid Material for Bio-rad for EDI Order</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>ZOTC_CL_INB_SO_EDI_850</CLSNAME>
+     <CMPNAME>VAIDATE_MATERIAL</CMPNAME>
+     <LANGU>P</LANGU>
+     <DESCRIPT>Validate if this is Valid Material for Bio-rad for EDI Order</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>ZOTC_CL_INB_SO_EDI_850</CLSNAME>
+     <CMPNAME>VAIDATE_MATERIAL</CMPNAME>
+     <LANGU>R</LANGU>
+     <DESCRIPT>Validate if this is Valid Material for Bio-rad for EDI Order</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>ZOTC_CL_INB_SO_EDI_850</CLSNAME>
+     <CMPNAME>VAIDATE_MATERIAL</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Validate if this is Valid Material for Bio-rad for EDI Order</DESCRIPT>
+    </SEOCOMPOTX>
+   </DESCRIPTIONS>
+  </asx:values>
+ </asx:abap>
+</abapGit>

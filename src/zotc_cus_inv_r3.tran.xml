@@ -1,0 +1,85 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<abapGit version="v1.0.0" serializer="LCL_OBJECT_TRAN" serializer_version="v1.0.0">
+ <asx:abap xmlns:asx="http://www.sap.com/abapxml" version="1.0">
+  <asx:values>
+   <TSTC>
+    <TCODE>ZOTC_CUS_INV_R3</TCODE>
+    <PGMNA>ZOTC_CUS_INV_CREATE_R3</PGMNA>
+    <DYPNO>1000</DYPNO>
+    <CINFO>gA==</CINFO>
+   </TSTC>
+   <TSTCC>
+    <TCODE>ZOTC_CUS_INV_R3</TCODE>
+    <S_WEBGUI>1</S_WEBGUI>
+    <S_WIN32>X</S_WIN32>
+   </TSTCC>
+   <TSTCT>
+    <SPRSL>E</SPRSL>
+    <TCODE>ZOTC_CUS_INV_R3</TCODE>
+    <TTEXT>GTS: Shipment Consolidation</TTEXT>
+   </TSTCT>
+   <I18N_TPOOL>
+    <TSTCT>
+     <SPRSL>1</SPRSL>
+     <TTEXT>GTS：装运合并</TTEXT>
+    </TSTCT>
+    <TSTCT>
+     <SPRSL>D</SPRSL>
+     <TTEXT>GTS: Shipment Consolidation</TTEXT>
+    </TSTCT>
+    <TSTCT>
+     <SPRSL>F</SPRSL>
+     <TTEXT>GTS : création envoi</TTEXT>
+    </TSTCT>
+    <TSTCT>
+     <SPRSL>G</SPRSL>
+     <TTEXT>GTS: Shipment Consolidation</TTEXT>
+    </TSTCT>
+    <TSTCT>
+     <SPRSL>H</SPRSL>
+     <TTEXT>GTS: küldeményképzés</TTEXT>
+    </TSTCT>
+    <TSTCT>
+     <SPRSL>I</SPRSL>
+     <TTEXT>GTS: creazione spedizione</TTEXT>
+    </TSTCT>
+    <TSTCT>
+     <SPRSL>J</SPRSL>
+     <TTEXT>GTS: シップメント計画</TTEXT>
+    </TSTCT>
+    <TSTCT>
+     <SPRSL>K</SPRSL>
+     <TTEXT>GTS: Oprettelse af sending</TTEXT>
+    </TSTCT>
+    <TSTCT>
+     <SPRSL>N</SPRSL>
+     <TTEXT>GTS: Verzendingsvorming</TTEXT>
+    </TSTCT>
+    <TSTCT>
+     <SPRSL>O</SPRSL>
+     <TTEXT>GTS: Sendingsoppretting</TTEXT>
+    </TSTCT>
+    <TSTCT>
+     <SPRSL>P</SPRSL>
+     <TTEXT>GTS: formação da remessa</TTEXT>
+    </TSTCT>
+    <TSTCT>
+     <SPRSL>R</SPRSL>
+     <TTEXT>GTS: формирование отправки</TTEXT>
+    </TSTCT>
+    <TSTCT>
+     <SPRSL>S</SPRSL>
+     <TTEXT>GTS: Creación de envío</TTEXT>
+    </TSTCT>
+    <TSTCT>
+     <SPRSL>U</SPRSL>
+     <TTEXT>GTS: lähetyksen muodostus</TTEXT>
+    </TSTCT>
+    <TSTCT>
+     <SPRSL>V</SPRSL>
+     <TTEXT>GTS: Sändningsmappning</TTEXT>
+    </TSTCT>
+   </I18N_TPOOL>
+  </asx:values>
+ </asx:abap>
+</abapGit>

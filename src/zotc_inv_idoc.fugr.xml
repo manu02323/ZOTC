@@ -1,0 +1,261 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<abapGit version="v1.0.0" serializer="LCL_OBJECT_FUGR" serializer_version="v1.0.0">
+ <asx:abap xmlns:asx="http://www.sap.com/abapxml" version="1.0">
+  <asx:values>
+   <AREAT>Function Group for Outbound Idoc Invoic</AREAT>
+   <INCLUDES>
+    <SOBJ_NAME>LZOTC_INV_IDOCTOP</SOBJ_NAME>
+    <SOBJ_NAME>SAPLZOTC_INV_IDOC</SOBJ_NAME>
+   </INCLUDES>
+   <FUNCTIONS>
+    <item>
+     <FUNCNAME>ZOTC_GET_PARAM</FUNCNAME>
+     <SHORT_TEXT>FM to Get Parameters</SHORT_TEXT>
+     <EXPORT>
+      <RSEXP>
+       <PARAMETER>EX_DEL_FLAG</PARAMETER>
+       <REFERENCE>X</REFERENCE>
+       <TYP>FLAG</TYP>
+      </RSEXP>
+      <RSEXP>
+       <PARAMETER>EX_TABIX</PARAMETER>
+       <REFERENCE>X</REFERENCE>
+       <TYP>SY-TABIX</TYP>
+      </RSEXP>
+      <RSEXP>
+       <PARAMETER>EX_STATUS_EMI</PARAMETER>
+       <REFERENCE>X</REFERENCE>
+       <TYP>ZOTC_TT_DEV_ENH_STATUS</TYP>
+      </RSEXP>
+      <RSEXP>
+       <PARAMETER>EX_TBL_VBRP</PARAMETER>
+       <REFERENCE>X</REFERENCE>
+       <TYP>ZOTC_TT_VBRP</TYP>
+      </RSEXP>
+      <RSEXP>
+       <PARAMETER>EX_TBL_SER01</PARAMETER>
+       <REFERENCE>X</REFERENCE>
+       <TYP>ZOTC_TT_SER01</TYP>
+      </RSEXP>
+      <RSEXP>
+       <PARAMETER>EX_TBL_OBJK</PARAMETER>
+       <REFERENCE>X</REFERENCE>
+       <TYP>ZOTC_TT_OBJK</TYP>
+      </RSEXP>
+      <RSEXP>
+       <PARAMETER>EX_DOCREF</PARAMETER>
+       <REFERENCE>X</REFERENCE>
+       <TYP>Z_DOCREF</TYP>
+      </RSEXP>
+      <RSEXP>
+       <PARAMETER>EX_TBL_VBFA</PARAMETER>
+       <REFERENCE>X</REFERENCE>
+       <TYP>ZOTC_TT_VBFA</TYP>
+      </RSEXP>
+      <RSEXP>
+       <PARAMETER>EX_AUART</PARAMETER>
+       <REFERENCE>X</REFERENCE>
+       <TYP>AUART</TYP>
+      </RSEXP>
+      <RSEXP>
+       <PARAMETER>EX_AUDAT</PARAMETER>
+       <REFERENCE>X</REFERENCE>
+       <TYP>ANGDT_V</TYP>
+      </RSEXP>
+      <RSEXP>
+       <PARAMETER>EX_PO_TYPE</PARAMETER>
+       <REFERENCE>X</REFERENCE>
+       <TYP>BSARK</TYP>
+      </RSEXP>
+     </EXPORT>
+     <DOCUMENTATION>
+      <RSFDO>
+       <PARAMETER>EX_DEL_FLAG</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>General Flag</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>EX_TABIX</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Index of Internal Tables</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>EX_STATUS_EMI</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Enhancement Status</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>EX_TBL_VBRP</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Table Type of VBRP</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>EX_TBL_SER01</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Type Table of SER01</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>EX_TBL_OBJK</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Type Table of OBJK</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>EX_DOCREF</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Legacy Doc Ref</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>EX_TBL_VBFA</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Table Type of VBFA</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>EX_AUART</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Sales Document Type</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>EX_AUDAT</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Quotation/Inquiry is valid from</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>EX_PO_TYPE</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Customer purchase order type</STEXT>
+      </RSFDO>
+     </DOCUMENTATION>
+    </item>
+    <item>
+     <FUNCNAME>ZOTC_SET_PARAM</FUNCNAME>
+     <SHORT_TEXT>FM to Set Values of Flag</SHORT_TEXT>
+     <IMPORT>
+      <RSIMP>
+       <PARAMETER>IM_DEL_FLAG</PARAMETER>
+       <OPTIONAL>X</OPTIONAL>
+       <REFERENCE>X</REFERENCE>
+       <TYP>FLAG</TYP>
+      </RSIMP>
+      <RSIMP>
+       <PARAMETER>IM_TABIX</PARAMETER>
+       <OPTIONAL>X</OPTIONAL>
+       <REFERENCE>X</REFERENCE>
+       <TYP>SY-TABIX</TYP>
+      </RSIMP>
+      <RSIMP>
+       <PARAMETER>IM_STATUS_EMI</PARAMETER>
+       <OPTIONAL>X</OPTIONAL>
+       <REFERENCE>X</REFERENCE>
+       <TYP>ZOTC_TT_DEV_ENH_STATUS</TYP>
+      </RSIMP>
+      <RSIMP>
+       <PARAMETER>IM_TBL_VBRP</PARAMETER>
+       <OPTIONAL>X</OPTIONAL>
+       <REFERENCE>X</REFERENCE>
+       <TYP>ZOTC_TT_VBRP</TYP>
+      </RSIMP>
+      <RSIMP>
+       <PARAMETER>IM_TBL_SER01</PARAMETER>
+       <OPTIONAL>X</OPTIONAL>
+       <REFERENCE>X</REFERENCE>
+       <TYP>ZOTC_TT_SER01</TYP>
+      </RSIMP>
+      <RSIMP>
+       <PARAMETER>IM_TBL_OBJK</PARAMETER>
+       <OPTIONAL>X</OPTIONAL>
+       <REFERENCE>X</REFERENCE>
+       <TYP>ZOTC_TT_OBJK</TYP>
+      </RSIMP>
+      <RSIMP>
+       <PARAMETER>IM_DOCREF</PARAMETER>
+       <OPTIONAL>X</OPTIONAL>
+       <REFERENCE>X</REFERENCE>
+       <TYP>Z_DOCREF</TYP>
+      </RSIMP>
+      <RSIMP>
+       <PARAMETER>IM_TBL_VBFA</PARAMETER>
+       <OPTIONAL>X</OPTIONAL>
+       <REFERENCE>X</REFERENCE>
+       <TYP>ZOTC_TT_VBFA</TYP>
+      </RSIMP>
+      <RSIMP>
+       <PARAMETER>IM_AUART</PARAMETER>
+       <OPTIONAL>X</OPTIONAL>
+       <REFERENCE>X</REFERENCE>
+       <TYP>AUART</TYP>
+      </RSIMP>
+      <RSIMP>
+       <PARAMETER>IM_AUDAT</PARAMETER>
+       <OPTIONAL>X</OPTIONAL>
+       <REFERENCE>X</REFERENCE>
+       <TYP>ANGDT_V</TYP>
+      </RSIMP>
+      <RSIMP>
+       <PARAMETER>IM_PO_TYPE</PARAMETER>
+       <OPTIONAL>X</OPTIONAL>
+       <REFERENCE>X</REFERENCE>
+       <TYP>BSARK</TYP>
+      </RSIMP>
+     </IMPORT>
+     <DOCUMENTATION>
+      <RSFDO>
+       <PARAMETER>IM_DEL_FLAG</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>General Flag</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>IM_TABIX</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Index of Internal Tables</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>IM_STATUS_EMI</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Enhancement Status</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>IM_TBL_VBRP</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Table Type of VBRP</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>IM_TBL_SER01</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Type Table of SER01</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>IM_TBL_OBJK</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Type Table of OBJK</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>IM_DOCREF</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Legacy Doc Ref</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>IM_TBL_VBFA</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Table Type of VBFA</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>IM_AUART</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Sales Document Type</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>IM_AUDAT</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Quotation/Inquiry is valid from</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>IM_PO_TYPE</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Customer purchase order type</STEXT>
+      </RSFDO>
+     </DOCUMENTATION>
+    </item>
+   </FUNCTIONS>
+  </asx:values>
+ </asx:abap>
+</abapGit>

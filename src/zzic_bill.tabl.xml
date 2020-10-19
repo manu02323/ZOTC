@@ -1,0 +1,40 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<abapGit version="v1.0.0" serializer="LCL_OBJECT_TABL" serializer_version="v1.0.0">
+ <asx:abap xmlns:asx="http://www.sap.com/abapxml" version="1.0">
+  <asx:values>
+   <DD02V>
+    <TABNAME>ZZIC_BILL</TABNAME>
+    <DDLANGUAGE>E</DDLANGUAGE>
+    <TABCLASS>APPEND</TABCLASS>
+    <SQLTAB>KOMKBZ4</SQLTAB>
+    <DDTEXT>Inter company billing data</DDTEXT>
+   </DD02V>
+   <DD03P_TABLE>
+    <DD03P>
+     <TABNAME>ZZIC_BILL</TABNAME>
+     <FIELDNAME>ZZVKOIV</FIELDNAME>
+     <POSITION>0001</POSITION>
+     <ROLLNAME>VKOIV</ROLLNAME>
+     <ADMINFIELD>0</ADMINFIELD>
+     <COMPTYPE>E</COMPTYPE>
+    </DD03P>
+    <DD03P>
+     <TABNAME>ZZIC_BILL</TABNAME>
+     <FIELDNAME>ZZVTWIV</FIELDNAME>
+     <POSITION>0002</POSITION>
+     <ROLLNAME>VTWIV</ROLLNAME>
+     <ADMINFIELD>0</ADMINFIELD>
+     <COMPTYPE>E</COMPTYPE>
+    </DD03P>
+    <DD03P>
+     <TABNAME>ZZIC_BILL</TABNAME>
+     <FIELDNAME>ZZSPAIV</FIELDNAME>
+     <POSITION>0003</POSITION>
+     <ROLLNAME>SPAIV</ROLLNAME>
+     <ADMINFIELD>0</ADMINFIELD>
+     <COMPTYPE>E</COMPTYPE>
+    </DD03P>
+   </DD03P_TABLE>
+  </asx:values>
+ </asx:abap>
+</abapGit>

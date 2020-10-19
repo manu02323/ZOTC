@@ -1,0 +1,105 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<abapGit version="v1.0.0" serializer="LCL_OBJECT_CHDO" serializer_version="v1.0.0">
+ <asx:abap xmlns:asx="http://www.sap.com/abapxml" version="1.0">
+  <asx:values>
+   <CHDO>
+    <REPORTS_GENERATED>
+     <TCDRPS>
+      <OBJECT>ZBATCH_MATCH</OBJECT>
+      <REPORTNAME>ZBATCH_MATCH</REPORTNAME>
+      <TEXTCASE>X</TEXTCASE>
+      <ARBGEB>CD</ARBGEB>
+      <FEHLERNR>600</FEHLERNR>
+      <FGRP>ZBATCH_MATCH_CHNG_DOC</FGRP>
+      <PREFIX>Y</PREFIX>
+      <UPDATE_FLG>1</UPDATE_FLG>
+     </TCDRPS>
+    </REPORTS_GENERATED>
+    <OBJECTS>
+     <TCDOBS>
+      <OBJECT>ZBATCH_MATCH</OBJECT>
+      <TABNAME>ZOTC_BATCHMATCH</TABNAME>
+      <DOCUDEL>X</DOCUDEL>
+     </TCDOBS>
+    </OBJECTS>
+    <OBJECTS_TEXT>
+     <TCDOBTS>
+      <SPRAS>1</SPRAS>
+      <OBJECT>ZBATCH_MATCH</OBJECT>
+      <OBTEXT>Batch Matching</OBTEXT>
+     </TCDOBTS>
+     <TCDOBTS>
+      <SPRAS>E</SPRAS>
+      <OBJECT>ZBATCH_MATCH</OBJECT>
+      <OBTEXT>Batch Matching</OBTEXT>
+     </TCDOBTS>
+     <TCDOBTS>
+      <SPRAS>F</SPRAS>
+      <OBJECT>ZBATCH_MATCH</OBJECT>
+      <OBTEXT>Batch Matching</OBTEXT>
+     </TCDOBTS>
+     <TCDOBTS>
+      <SPRAS>G</SPRAS>
+      <OBJECT>ZBATCH_MATCH</OBJECT>
+      <OBTEXT>Batch Matching</OBTEXT>
+     </TCDOBTS>
+     <TCDOBTS>
+      <SPRAS>H</SPRAS>
+      <OBJECT>ZBATCH_MATCH</OBJECT>
+      <OBTEXT>Batch Matching</OBTEXT>
+     </TCDOBTS>
+     <TCDOBTS>
+      <SPRAS>I</SPRAS>
+      <OBJECT>ZBATCH_MATCH</OBJECT>
+      <OBTEXT>Batch Matching</OBTEXT>
+     </TCDOBTS>
+     <TCDOBTS>
+      <SPRAS>J</SPRAS>
+      <OBJECT>ZBATCH_MATCH</OBJECT>
+      <OBTEXT>Batch Matching</OBTEXT>
+     </TCDOBTS>
+     <TCDOBTS>
+      <SPRAS>K</SPRAS>
+      <OBJECT>ZBATCH_MATCH</OBJECT>
+      <OBTEXT>Batch Matching</OBTEXT>
+     </TCDOBTS>
+     <TCDOBTS>
+      <SPRAS>N</SPRAS>
+      <OBJECT>ZBATCH_MATCH</OBJECT>
+      <OBTEXT>Batch Matching</OBTEXT>
+     </TCDOBTS>
+     <TCDOBTS>
+      <SPRAS>O</SPRAS>
+      <OBJECT>ZBATCH_MATCH</OBJECT>
+      <OBTEXT>Batch Matching</OBTEXT>
+     </TCDOBTS>
+     <TCDOBTS>
+      <SPRAS>P</SPRAS>
+      <OBJECT>ZBATCH_MATCH</OBJECT>
+      <OBTEXT>Batch Matching</OBTEXT>
+     </TCDOBTS>
+     <TCDOBTS>
+      <SPRAS>R</SPRAS>
+      <OBJECT>ZBATCH_MATCH</OBJECT>
+      <OBTEXT>Batch Matching</OBTEXT>
+     </TCDOBTS>
+     <TCDOBTS>
+      <SPRAS>S</SPRAS>
+      <OBJECT>ZBATCH_MATCH</OBJECT>
+      <OBTEXT>Batch Matching</OBTEXT>
+     </TCDOBTS>
+     <TCDOBTS>
+      <SPRAS>U</SPRAS>
+      <OBJECT>ZBATCH_MATCH</OBJECT>
+      <OBTEXT>Batch Matching</OBTEXT>
+     </TCDOBTS>
+     <TCDOBTS>
+      <SPRAS>V</SPRAS>
+      <OBJECT>ZBATCH_MATCH</OBJECT>
+      <OBTEXT>Batch Matching</OBTEXT>
+     </TCDOBTS>
+    </OBJECTS_TEXT>
+   </CHDO>
+  </asx:values>
+ </asx:abap>
+</abapGit>

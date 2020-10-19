@@ -1,0 +1,90 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<abapGit version="v1.0.0" serializer="LCL_OBJECT_SPRX" serializer_version="v1.0.0">
+ <asx:abap xmlns:asx="http://www.sap.com/abapxml" version="1.0">
+  <asx:values>
+   <PROXY_HEADER>
+    <item>
+     <OBJECT>TABL</OBJECT>
+     <OBJ_NAME>Z01OTCDT_PRICE_CONDITION</OBJ_NAME>
+     <OBJECT_M>TABL</OBJECT_M>
+     <OBJ_NAME_M>Z01OTCDT_PRICE_CONDITION</OBJ_NAME_M>
+     <HASH_ID>EA68B1F8BCEB7F6DEE8920B0F9FEA73064ECC167</HASH_ID>
+     <ID>&lt;type&gt; DT_PriceCondition http://bio-rad.com/OTC/TransferPriceLoad http://bio-rad.com/OTC/TransferPriceLoad</ID>
+     <IFR_GLOBAL>X</IFR_GLOBAL>
+     <IFR_TYPE>type</IFR_TYPE>
+     <IFR_NAME>DT_PriceCondition</IFR_NAME>
+     <IFR_NSPCE>http://bio-rad.com/OTC/TransferPriceLoad</IFR_NSPCE>
+     <IFR_GNSPCE>http://bio-rad.com/OTC/TransferPriceLoad</IFR_GNSPCE>
+     <GEN_VERS>0005</GEN_VERS>
+     <PREFIX>Z01OTC</PREFIX>
+     <CATEGORY>ifmtypedef</CATEGORY>
+     <X-ML_NSPCE>http://bio-rad.com/OTC/TransferPriceLoad</X-ML_NSPCE>
+     <X-ML_NAME>DT_PriceCondition</X-ML_NAME>
+     <VERSION_ID>f0180c9a450511e6cfb30000010d7702</VERSION_ID>
+    </item>
+   </PROXY_HEADER>
+   <PROXY_DATA>
+    <item>
+     <OBJECT>TABL</OBJECT>
+     <OBJ_NAME>Z01OTCDT_PRICE_CONDITION</OBJ_NAME>
+     <OBJECT1>FIEL</OBJECT1>
+     <OBJ_NAME1>HEADER</OBJ_NAME1>
+     <OBJECT2>FIEL</OBJECT2>
+     <OBJ_NAME2>HEADER</OBJ_NAME2>
+     <OBJECT_R>TABL</OBJECT_R>
+     <OBJ_NAME_R>Z01OTCDT_PRICE_CONDITION_HEADE</OBJ_NAME_R>
+     <ID>&lt;element&gt; Header &lt;type&gt; DT_PriceCondition http://bio-rad.com/OTC/TransferPriceLoad http://bio-rad.com/OTC/TransferPriceLoad</ID>
+     <IFR_TYPE>element</IFR_TYPE>
+     <IFR_NAME>Header</IFR_NAME>
+     <IFR_LANGU>EN</IFR_LANGU>
+     <IFR_TAGTYP>E</IFR_TAGTYP>
+     <IFR_MINOCC>1</IFR_MINOCC>
+     <IFR_MAXOCC>1</IFR_MAXOCC>
+     <IFR_SCALE>-2</IFR_SCALE>
+     <R3_TYPE>FIEL</R3_TYPE>
+     <R3_NAME>HEADER</R3_NAME>
+     <R3_SEQNUM>000001</R3_SEQNUM>
+    </item>
+    <item>
+     <OBJECT>TABL</OBJECT>
+     <OBJ_NAME>Z01OTCDT_PRICE_CONDITION</OBJ_NAME>
+     <OBJECT1>FIEL</OBJECT1>
+     <OBJ_NAME1>ITEM</OBJ_NAME1>
+     <OBJECT2>FIEL</OBJECT2>
+     <OBJ_NAME2>ITEM</OBJ_NAME2>
+     <OBJECT_R>TTYP</OBJECT_R>
+     <OBJ_NAME_R>Z01OTCDT_PRICE_CONDITION_I_TAB</OBJ_NAME_R>
+     <ID>&lt;element&gt; Item &lt;type&gt; DT_PriceCondition http://bio-rad.com/OTC/TransferPriceLoad http://bio-rad.com/OTC/TransferPriceLoad</ID>
+     <IFR_TYPE>element</IFR_TYPE>
+     <IFR_NAME>Item</IFR_NAME>
+     <IFR_LANGU>EN</IFR_LANGU>
+     <IFR_TAGTYP>L</IFR_TAGTYP>
+     <IFR_MAXOCC>65535</IFR_MAXOCC>
+     <IFR_OPTNL>X</IFR_OPTNL>
+     <IFR_SCALE>-2</IFR_SCALE>
+     <R3_TYPE>FIEL</R3_TYPE>
+     <R3_NAME>ITEM</R3_NAME>
+     <R3_SEQNUM>000002</R3_SEQNUM>
+    </item>
+    <item>
+     <OBJECT>TABL</OBJECT>
+     <OBJ_NAME>Z01OTCDT_PRICE_CONDITION</OBJ_NAME>
+     <OBJECT1>TABL</OBJECT1>
+     <OBJ_NAME1>Z01OTCDT_PRICE_CONDITION</OBJ_NAME1>
+     <OBJECT2>TABL</OBJECT2>
+     <OBJ_NAME2>Z01OTCDT_PRICE_CONDITION</OBJ_NAME2>
+     <ID>&lt;type&gt; DT_PriceCondition http://bio-rad.com/OTC/TransferPriceLoad http://bio-rad.com/OTC/TransferPriceLoad</ID>
+     <IFR_TYPE>type</IFR_TYPE>
+     <IFR_NAME>DT_PriceCondition</IFR_NAME>
+     <IFR_TEXT>IDD_0042, IDD_0203: Common Data type of intercompany price record.</IFR_TEXT>
+     <IFR_LANGU>EN</IFR_LANGU>
+     <IFR_SCALE>-2</IFR_SCALE>
+     <R3_TYPE>TABL</R3_TYPE>
+     <R3_NAME>Z01OTCDT_PRICE_CONDITION</R3_NAME>
+     <R3_TEXT>IDD_0042, IDD_0203: Common Data type of intercompany price r</R3_TEXT>
+     <CATEGORY>ifmtypedef</CATEGORY>
+    </item>
+   </PROXY_DATA>
+  </asx:values>
+ </asx:abap>
+</abapGit>

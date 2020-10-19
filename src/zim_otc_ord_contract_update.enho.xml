@@ -1,0 +1,313 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<abapGit version="v1.0.0" serializer="LCL_OBJECT_ENHO" serializer_version="v1.0.0">
+ <asx:abap xmlns:asx="http://www.sap.com/abapxml" version="1.0">
+  <asx:values>
+   <TOOL>HOOK_IMPL</TOOL>
+   <SHORTTEXT>Update Line item contract data in Sales Order</SHORTTEXT>
+   <ORIGINAL_OBJECT>
+    <PGMID>R3TR</PGMID>
+    <ORG_OBJ_TYPE>CLAS</ORG_OBJ_TYPE>
+    <ORG_OBJ_NAME>CL_SLS_LORD_HELPER</ORG_OBJ_NAME>
+    <ORG_MAIN_TYPE>CLAS</ORG_MAIN_TYPE>
+    <ORG_MAIN_NAME>CL_SLS_LORD_HELPER</ORG_MAIN_NAME>
+    <PROGRAMNAME>CL_SLS_LORD_HELPER============CP</PROGRAMNAME>
+   </ORIGINAL_OBJECT>
+   <ENHANCEMENTS>
+    <ENH_HOOK_IMPL>
+     <PROGRAMNAME>CL_SLS_LORD_HELPER============CP</PROGRAMNAME>
+     <ENHMODE>D</ENHMODE>
+     <FULL_NAME>\TY:CL_SLS_LORD_HELPER\ME:CREATE_CHANGE_SALES_ORDER\SE:END\EI</FULL_NAME>
+     <SOURCE>
+      <item>***********************************************************************</item>
+      <item>*Program    : ZIM_OTC_ORD_CONTRACT_UPDATE (Implict Enhancement)       *</item>
+      <item>*Title      : Update contract data in sales order                     *</item>
+      <item>*Developer  : Dhananjoy Moirangthem                                   *</item>
+      <item>*Object type: Interface                                               *</item>
+      <item>*SAP Release: SAP ECC 6.0                                             *</item>
+      <item>*---------------------------------------------------------------------*</item>
+      <item>*WRICEF ID: D2_OTC_IDD_0102_SAP                                       *</item>
+      <item>*---------------------------------------------------------------------*</item>
+      <item>*Description: Update the contract Start, end and acceptance data in   *</item>
+      <item>*Sales order through Enterprise services.                             *</item>
+      <item>*                                                                     *</item>
+      <item>*---------------------------------------------------------------------*</item>
+      <item>*MODIFICATION HISTORY:</item>
+      <item>*=====================================================================*</item>
+      <item>*Date           User        Transport       Description</item>
+      <item>*=========== ============== ============== ===========================*</item>
+      <item>*02-Jul-2014  DMOIRAN        E2DK900895    Initial Development</item>
+      <item>*---------------------------------------------------------------------*</item>
+      <item/>
+      <item>DATA: li_veda_comv1     TYPE tdt_veda_comv,                     &quot;Contract data internal table</item>
+      <item>li_veda_comx1     TYPE tdt_veda_comc,                     &quot;X fields of contract data internal table</item>
+      <item>lwa_veda_comr     TYPE tds_veda_comr,                     &quot; Lean Order - Contract Data (Values, Read Only)</item>
+      <item>lwa_veda_comi     TYPE tds_veda_comc,                     &quot; Lean Order  - Contract Data (CHAR)</item>
+      <item>lwa_veda_comv_old TYPE tds_veda_comv,                     &quot; Lean Order  - Contract Data (Values)</item>
+      <item>lwa_veda_comv     TYPE tds_veda_comv,                     &quot; Lean Order  - Contract Data (Values)</item>
+      <item>lv_handle_parent  TYPE guid_32,                           &quot; GUID in &apos;CHAR&apos; Format in Uppercase</item>
+      <item>lwa_veda_comx     TYPE tds_veda_comc,                     &quot; Lean Order  - Contract Data (CHAR)</item>
+      <item>li_status         TYPE STANDARD TABLE OF zdev_enh_status. &quot;Enhancement Status table</item>
+      <item/>
+      <item>FIELD-SYMBOLS :</item>
+      <item>&lt;lfs_item_comv&gt;        TYPE tds_item_comv, &quot; Lean Order - Item Data (Values)</item>
+      <item>&lt;lfs_item_comv_input&gt;  TYPE tds_item_comv. &quot; Lean Order - Item Data (Values)</item>
+      <item/>
+      <item>CONSTANTS: lc_idd_0102_001            TYPE z_enhancement    VALUE &apos;D2_OTC_IDD_0102_001&apos;, &quot; Enhancement No.</item>
+      <item>lc_null                    TYPE z_criteria       VALUE &apos;NULL&apos;,                &quot; Enh. Criteria</item>
+      <item>lc_veda                    TYPE TABNAME          VALUE &apos;VEDA&apos;.                &quot;contract data table</item>
+      <item/>
+      <item>* Call to EMI Function Module To Get List Of EMI Statuses</item>
+      <item>CALL FUNCTION &apos;ZDEV_ENHANCEMENT_STATUS_CHECK&apos;</item>
+      <item>EXPORTING</item>
+      <item>iv_enhancement_no = lc_idd_0102_001 &quot;D2_OTC_IDD_0010_001</item>
+      <item>TABLES</item>
+      <item>tt_enh_status     = li_status.      &quot;Enhancement status table</item>
+      <item/>
+      <item/>
+      <item>*first thing is to check for field criterion,for value “NULL” and field Active value:</item>
+      <item>*i.If the value is: “X”, the overall Enhancement is active and can proceed further for checks</item>
+      <item>*ii.If the  value is:space, then do not proceed further for this enhancement</item>
+      <item/>
+      <item>DELETE li_status WHERE active ne abap_true.</item>
+      <item>SORT li_status BY criteria.</item>
+      <item/>
+      <item>* as only active criteria are there ACTIVE field is not used in search</item>
+      <item>READ TABLE li_status WITH KEY criteria = lc_null &quot;NULL</item>
+      <item>TRANSPORTING NO FIELDS BINARY SEARCH.</item>
+      <item>IF sy-subrc EQ  0.</item>
+      <item/>
+      <item>* LT_ITEM_COMV_1 is data declare in standard code so naming convention is different.</item>
+      <item>LOOP AT lt_item_comv_1 ASSIGNING &lt;lfs_item_comv_input&gt;.</item>
+      <item/>
+      <item>lv_handle_parent = &lt;lfs_item_comv_input&gt;-handle.</item>
+      <item>* get the object VEDA</item>
+      <item>CALL METHOD cl_lord=&gt;get_object_single</item>
+      <item>EXPORTING</item>
+      <item>iv_object_id     = lc_VEDA</item>
+      <item>iv_handle_parent = lv_handle_parent</item>
+      <item>IMPORTING</item>
+      <item>es_object_comv   = lwa_veda_comv_old</item>
+      <item>es_object_comr   = lwa_veda_comr</item>
+      <item>es_object_comi   = lwa_veda_comi</item>
+      <item>EXCEPTIONS</item>
+      <item>OTHERS           = 1.</item>
+      <item/>
+      <item>* Don&apos;t sort IT_TIEM_COMV as it is part of standard code and changing sequence will affect it.</item>
+      <item>* So binary search is not used.</item>
+      <item>READ TABLE it_item_comv ASSIGNING &lt;lfs_item_comv&gt; WITH KEY handle = &lt;lfs_item_comv_input&gt;-handle.</item>
+      <item/>
+      <item>IF sy-subrc = 0.</item>
+      <item>CLEAR: lwa_veda_comv, lwa_veda_comx.</item>
+      <item/>
+      <item>IF &lt;lfs_item_comv&gt;-zzvbegdat IS NOT INITIAL.</item>
+      <item/>
+      <item>lwa_veda_comv-vbegdat = &lt;lfs_item_comv&gt;-zzvbegdat.</item>
+      <item/>
+      <item>lwa_veda_comx-vbegdat = abap_true.</item>
+      <item>ENDIF. &quot; IF &lt;LFS_ITEM_COMV&gt;-ZZVBEGDAT IS NOT INITIAL</item>
+      <item/>
+      <item>IF &lt;lfs_item_comv&gt;-zzvenddat IS NOT INITIAL.</item>
+      <item/>
+      <item>lwa_veda_comv-venddat = &lt;lfs_item_comv&gt;-zzvenddat.</item>
+      <item/>
+      <item>lwa_veda_comx-venddat = abap_true.</item>
+      <item>ENDIF. &quot; IF &lt;LFS_ITEM_COMV&gt;-ZZVENDDAT IS NOT INITIAL</item>
+      <item/>
+      <item>IF &lt;lfs_item_comv&gt;-zzvabndat IS NOT INITIAL.</item>
+      <item/>
+      <item>lwa_veda_comv-vabndat = &lt;lfs_item_comv&gt;-zzvabndat.</item>
+      <item>lwa_veda_comx-vabndat = abap_true.</item>
+      <item>ENDIF. &quot; IF &lt;LFS_ITEM_COMV&gt;-ZZVBEGDAT IS NOT INITIAL</item>
+      <item/>
+      <item>IF lwa_veda_comv IS NOT INITIAL.</item>
+      <item>lwa_veda_comv-handle = lwa_veda_comv_old-handle.</item>
+      <item>lwa_veda_comx-handle  = lwa_veda_comv_old-handle.</item>
+      <item>APPEND lwa_veda_comv TO li_veda_comv1.</item>
+      <item>APPEND lwa_veda_comx TO li_veda_comx1.</item>
+      <item>ENDIF. &quot; IF lwa_veda_comv IS NOT INITIAL</item>
+      <item/>
+      <item>ENDIF. &quot; IF sy-subrc = 0</item>
+      <item>ENDLOOP. &quot; LOOP AT lt_item_comv_1 ASSIGNING &lt;lfs_item_comv_input&gt;</item>
+      <item>CALL METHOD cl_lord=&gt;set_object_data</item>
+      <item>EXPORTING</item>
+      <item>it_veda_comv                 = li_veda_comv1</item>
+      <item>it_veda_comx                 = li_veda_comx1</item>
+      <item>EXCEPTIONS</item>
+      <item>exc_lord_not_loaded          = 1</item>
+      <item>exc_object_read_only         = 2</item>
+      <item>exc_object_unknown           = 3</item>
+      <item>exc_object_not_available     = 4</item>
+      <item>exc_new_instance_not_allowed = 5</item>
+      <item>OTHERS                       = 6.</item>
+      <item/>
+      <item/>
+      <item>*   analyse and collect the messages from the LORD</item>
+      <item>CALL METHOD cl_sls_mapping_helper=&gt;evaluate_messages</item>
+      <item>EXPORTING</item>
+      <item>iv_subrc       = sy-subrc</item>
+      <item>iv_msgid       = sy-msgid</item>
+      <item>iv_msgty       = sy-msgty</item>
+      <item>iv_msgno       = sy-msgno</item>
+      <item>iv_msgv1       = sy-msgv1</item>
+      <item>iv_msgv2       = sy-msgv2</item>
+      <item>iv_msgv3       = sy-msgv3</item>
+      <item>iv_msgv4       = sy-msgv4</item>
+      <item>CHANGING</item>
+      <item>cv_flag_error  = cv_flag_error</item>
+      <item>ct_message_log = ct_message_log.</item>
+      <item/>
+      <item>ENDIF. &quot; IF sy-subrc EQ 0</item>
+      <item/>
+     </SOURCE>
+    </ENH_HOOK_IMPL>
+   </ENHANCEMENTS>
+   <SPACES>
+    <item>
+     <FULL_NAME>\TY:CL_SLS_LORD_HELPER\ME:CREATE_CHANGE_SALES_ORDER\SE:END\EI</FULL_NAME>
+     <SPACES>
+      <item>0</item>
+      <item>0</item>
+      <item>0</item>
+      <item>0</item>
+      <item>0</item>
+      <item>0</item>
+      <item>0</item>
+      <item>0</item>
+      <item>0</item>
+      <item>0</item>
+      <item>0</item>
+      <item>0</item>
+      <item>0</item>
+      <item>0</item>
+      <item>0</item>
+      <item>0</item>
+      <item>0</item>
+      <item>0</item>
+      <item>0</item>
+      <item>0</item>
+      <item>0</item>
+      <item>6</item>
+      <item>6</item>
+      <item>6</item>
+      <item>6</item>
+      <item>6</item>
+      <item>6</item>
+      <item>6</item>
+      <item>6</item>
+      <item>0</item>
+      <item>0</item>
+      <item>4</item>
+      <item>4</item>
+      <item>0</item>
+      <item>0</item>
+      <item>11</item>
+      <item>11</item>
+      <item>0</item>
+      <item>0</item>
+      <item>0</item>
+      <item>2</item>
+      <item>4</item>
+      <item>2</item>
+      <item>4</item>
+      <item>0</item>
+      <item>0</item>
+      <item>0</item>
+      <item>0</item>
+      <item>0</item>
+      <item>0</item>
+      <item>0</item>
+      <item>0</item>
+      <item>0</item>
+      <item>0</item>
+      <item>0</item>
+      <item>21</item>
+      <item>0</item>
+      <item>0</item>
+      <item>0</item>
+      <item>2</item>
+      <item>0</item>
+      <item>4</item>
+      <item>0</item>
+      <item>4</item>
+      <item>6</item>
+      <item>8</item>
+      <item>8</item>
+      <item>6</item>
+      <item>8</item>
+      <item>8</item>
+      <item>8</item>
+      <item>6</item>
+      <item>8</item>
+      <item>0</item>
+      <item>0</item>
+      <item>0</item>
+      <item>4</item>
+      <item>0</item>
+      <item>4</item>
+      <item>6</item>
+      <item>0</item>
+      <item>6</item>
+      <item>0</item>
+      <item>8</item>
+      <item>0</item>
+      <item>8</item>
+      <item>6</item>
+      <item>0</item>
+      <item>6</item>
+      <item>0</item>
+      <item>8</item>
+      <item>0</item>
+      <item>8</item>
+      <item>6</item>
+      <item>0</item>
+      <item>6</item>
+      <item>0</item>
+      <item>8</item>
+      <item>8</item>
+      <item>6</item>
+      <item>0</item>
+      <item>6</item>
+      <item>8</item>
+      <item>8</item>
+      <item>8</item>
+      <item>8</item>
+      <item>6</item>
+      <item>0</item>
+      <item>4</item>
+      <item>2</item>
+      <item>2</item>
+      <item>4</item>
+      <item>6</item>
+      <item>6</item>
+      <item>4</item>
+      <item>6</item>
+      <item>6</item>
+      <item>6</item>
+      <item>6</item>
+      <item>6</item>
+      <item>6</item>
+      <item>0</item>
+      <item>0</item>
+      <item>0</item>
+      <item>2</item>
+      <item>4</item>
+      <item>6</item>
+      <item>6</item>
+      <item>6</item>
+      <item>6</item>
+      <item>6</item>
+      <item>6</item>
+      <item>6</item>
+      <item>6</item>
+      <item>4</item>
+      <item>6</item>
+      <item>6</item>
+      <item>0</item>
+      <item>0</item>
+      <item>0</item>
+     </SPACES>
+    </item>
+   </SPACES>
+  </asx:values>
+ </asx:abap>
+</abapGit>

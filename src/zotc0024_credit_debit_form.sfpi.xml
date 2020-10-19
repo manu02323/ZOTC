@@ -1,0 +1,1617 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<abapGit version="v1.0.0" serializer="LCL_OBJECT_SFPI" serializer_version="v1.0.0">
+ <asx:abap version="1.0" xmlns:asx="http://www.sap.com/abapxml">
+  <asx:values>
+   <VERSION>1</VERSION>
+   <TYPE/>
+   <INTERFACE href="#o1"/>
+   <INTERFACET>
+    <FPINTERFACET>
+     <NAME/>
+     <STATE/>
+     <LANGUAGE>N</LANGUAGE>
+     <ID/>
+     <TEXT>RFKORD10</TEXT>
+    </FPINTERFACET>
+    <FPINTERFACET>
+     <NAME/>
+     <STATE/>
+     <LANGUAGE>E</LANGUAGE>
+     <ID/>
+     <TEXT>OTC_FDD_0024: FI AR Credit/Debit form (copied from RFKORD10)</TEXT>
+    </FPINTERFACET>
+    <FPINTERFACET>
+     <NAME/>
+     <STATE/>
+     <LANGUAGE>F</LANGUAGE>
+     <ID/>
+     <TEXT>RFKORD10</TEXT>
+    </FPINTERFACET>
+    <FPINTERFACET>
+     <NAME/>
+     <STATE/>
+     <LANGUAGE>P</LANGUAGE>
+     <ID/>
+     <TEXT>RFKORD10</TEXT>
+    </FPINTERFACET>
+    <FPINTERFACET>
+     <NAME/>
+     <STATE/>
+     <LANGUAGE>R</LANGUAGE>
+     <ID/>
+     <TEXT>RFKORD10</TEXT>
+    </FPINTERFACET>
+    <FPINTERFACET>
+     <NAME/>
+     <STATE/>
+     <LANGUAGE>S</LANGUAGE>
+     <ID/>
+     <TEXT>RFKORD10</TEXT>
+    </FPINTERFACET>
+    <FPINTERFACET>
+     <NAME/>
+     <STATE/>
+     <LANGUAGE>J</LANGUAGE>
+     <ID/>
+     <TEXT>RFKORD10</TEXT>
+    </FPINTERFACET>
+    <FPINTERFACET>
+     <NAME/>
+     <STATE/>
+     <LANGUAGE>1</LANGUAGE>
+     <ID/>
+     <TEXT>RFKORD10</TEXT>
+    </FPINTERFACET>
+    <FPINTERFACET>
+     <NAME/>
+     <STATE/>
+     <LANGUAGE>I</LANGUAGE>
+     <ID/>
+     <TEXT>RFKORD10</TEXT>
+    </FPINTERFACET>
+    <FPINTERFACET>
+     <NAME/>
+     <STATE/>
+     <LANGUAGE>K</LANGUAGE>
+     <ID/>
+     <TEXT>RFKORD10</TEXT>
+    </FPINTERFACET>
+    <FPINTERFACET>
+     <NAME/>
+     <STATE/>
+     <LANGUAGE>H</LANGUAGE>
+     <ID/>
+     <TEXT>RFKORD10</TEXT>
+    </FPINTERFACET>
+    <FPINTERFACET>
+     <NAME/>
+     <STATE/>
+     <LANGUAGE>O</LANGUAGE>
+     <ID/>
+     <TEXT>RFKORD10</TEXT>
+    </FPINTERFACET>
+    <FPINTERFACET>
+     <NAME/>
+     <STATE/>
+     <LANGUAGE>V</LANGUAGE>
+     <ID/>
+     <TEXT>RFKORD10</TEXT>
+    </FPINTERFACET>
+    <FPINTERFACET>
+     <NAME/>
+     <STATE/>
+     <LANGUAGE>U</LANGUAGE>
+     <ID/>
+     <TEXT>RFKORD10</TEXT>
+    </FPINTERFACET>
+    <FPINTERFACET>
+     <NAME/>
+     <STATE/>
+     <LANGUAGE>D</LANGUAGE>
+     <ID/>
+     <TEXT>RFKORD10</TEXT>
+    </FPINTERFACET>
+    <FPINTERFACET>
+     <NAME/>
+     <STATE/>
+     <LANGUAGE>G</LANGUAGE>
+     <ID/>
+     <TEXT>RFKORD10</TEXT>
+    </FPINTERFACET>
+   </INTERFACET>
+  </asx:values>
+  <asx:heap xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:abap="http://www.sap.com/abapxml/types/built-in" xmlns:cls="http://www.sap.com/abapxml/classes/global" xmlns:dic="http://www.sap.com/abapxml/types/dictionary">
+   <cls:CL_FP_INTERFACE_DATA id="o1">
+    <CL_FP_INTERFACE_DATA classVersion="1">
+     <CODING href="#o5"/>
+     <PARAMETERS href="#o4"/>
+     <GLOBAL_DEFINITIONS href="#o3"/>
+     <REFERENCE_FIELDS href="#o2"/>
+     <XSD_DEFINITIONS/>
+    </CL_FP_INTERFACE_DATA>
+   </cls:CL_FP_INTERFACE_DATA>
+   <cls:CL_FP_REFERENCE_FIELDS id="o2">
+    <CL_FP_INTERFACE_DATA_CHANGED classVersion="1">
+     <INTERFACE_DATA href="#o1"/>
+    </CL_FP_INTERFACE_DATA_CHANGED>
+    <CL_FP_REFERENCE_FIELDS classVersion="1">
+     <REFERENCE_FIELDS>
+      <SFPREF>
+       <ACTIVE/>
+       <STANDARD/>
+       <DATATYPE>CURR</DATATYPE>
+       <VALUE>LS_HEADER-H_NET_AMOUNT</VALUE>
+       <UNIT>LS_HEADER-CURRENCY</UNIT>
+      </SFPREF>
+      <SFPREF>
+       <ACTIVE/>
+       <STANDARD/>
+       <DATATYPE>CURR</DATATYPE>
+       <VALUE>LS_HEADER-EC_H_NET_AMOUNT</VALUE>
+       <UNIT>LS_HEADER-EC_CURRENCY</UNIT>
+      </SFPREF>
+      <SFPREF>
+       <ACTIVE/>
+       <STANDARD/>
+       <DATATYPE>CURR</DATATYPE>
+       <VALUE>LS_HEADER-H_TAX_AMOUNT</VALUE>
+       <UNIT>LS_HEADER-CURRENCY</UNIT>
+      </SFPREF>
+      <SFPREF>
+       <ACTIVE/>
+       <STANDARD/>
+       <DATATYPE>CURR</DATATYPE>
+       <VALUE>LS_HEADER-EC_H_TAX_AMOUNT</VALUE>
+       <UNIT>LS_HEADER-EC_CURRENCY</UNIT>
+      </SFPREF>
+      <SFPREF>
+       <ACTIVE/>
+       <STANDARD/>
+       <DATATYPE>CURR</DATATYPE>
+       <VALUE>LS_HEADER-H_NET_PAYMENT_WT</VALUE>
+       <UNIT>LS_HEADER-CURRENCY</UNIT>
+      </SFPREF>
+      <SFPREF>
+       <ACTIVE/>
+       <STANDARD/>
+       <DATATYPE>CURR</DATATYPE>
+       <VALUE>LS_HEADER-EC_H_NET_PAYMENT_WT</VALUE>
+       <UNIT>LS_HEADER-EC_CURRENCY</UNIT>
+      </SFPREF>
+      <SFPREF>
+       <ACTIVE/>
+       <STANDARD/>
+       <DATATYPE>CURR</DATATYPE>
+       <VALUE>LS_HEADER-WRSHB</VALUE>
+       <UNIT>LS_HEADER-CURRENCY</UNIT>
+      </SFPREF>
+      <SFPREF>
+       <ACTIVE/>
+       <STANDARD/>
+       <DATATYPE>CURR</DATATYPE>
+       <VALUE>LS_HEADER-EC_WRSHB</VALUE>
+       <UNIT>LS_HEADER-EC_CURRENCY</UNIT>
+      </SFPREF>
+      <SFPREF>
+       <ACTIVE/>
+       <STANDARD/>
+       <DATATYPE>CURR</DATATYPE>
+       <VALUE>LS_HEADER-ZALBT</VALUE>
+       <UNIT>LS_HEADER-WAERS</UNIT>
+      </SFPREF>
+      <SFPREF>
+       <ACTIVE/>
+       <STANDARD/>
+       <DATATYPE>CURR</DATATYPE>
+       <VALUE>LS_HEADER-AUGBT</VALUE>
+       <UNIT>LS_HEADER-WAERS</UNIT>
+      </SFPREF>
+      <SFPREF>
+       <ACTIVE/>
+       <STANDARD/>
+       <DATATYPE>CURR</DATATYPE>
+       <VALUE>LT_ITEM-WRSHB</VALUE>
+       <UNIT>LT_ITEM-WAERS</UNIT>
+      </SFPREF>
+      <SFPREF>
+       <ACTIVE/>
+       <STANDARD/>
+       <DATATYPE>CURR</DATATYPE>
+       <VALUE>LT_ITEM-DMSHB</VALUE>
+       <UNIT>LS_HEADER-HWAER</UNIT>
+      </SFPREF>
+      <SFPREF>
+       <ACTIVE/>
+       <STANDARD/>
+       <DATATYPE>CURR</DATATYPE>
+       <VALUE>LT_ITEM-WSSHB</VALUE>
+       <UNIT>LT_ITEM-WAERS</UNIT>
+      </SFPREF>
+      <SFPREF>
+       <ACTIVE/>
+       <STANDARD/>
+       <DATATYPE>CURR</DATATYPE>
+       <VALUE>LT_ITEM-SKSHB</VALUE>
+       <UNIT>LS_HEADER-HWAER</UNIT>
+      </SFPREF>
+      <SFPREF>
+       <ACTIVE/>
+       <STANDARD/>
+       <DATATYPE>CURR</DATATYPE>
+       <VALUE>LT_ITEM-WSSHV</VALUE>
+       <UNIT>LT_ITEM-WAERS</UNIT>
+      </SFPREF>
+      <SFPREF>
+       <ACTIVE/>
+       <STANDARD/>
+       <DATATYPE>CURR</DATATYPE>
+       <VALUE>LT_ITEM-SKSHV</VALUE>
+       <UNIT>LS_HEADER-HWAER</UNIT>
+      </SFPREF>
+      <SFPREF>
+       <ACTIVE/>
+       <STANDARD/>
+       <DATATYPE>CURR</DATATYPE>
+       <VALUE>LT_ITEM-PSSHB</VALUE>
+       <UNIT>LT_ITEM-PSWSL</UNIT>
+      </SFPREF>
+      <SFPREF>
+       <ACTIVE/>
+       <STANDARD/>
+       <DATATYPE>CURR</DATATYPE>
+       <VALUE>LT_ITEM-ZLSHB</VALUE>
+       <UNIT>LT_ITEM-WAERS</UNIT>
+      </SFPREF>
+      <SFPREF>
+       <ACTIVE/>
+       <STANDARD/>
+       <DATATYPE>CURR</DATATYPE>
+       <VALUE>LT_ITEM-ZALBT</VALUE>
+       <UNIT>LT_ITEM-WAERS</UNIT>
+      </SFPREF>
+     </REFERENCE_FIELDS>
+    </CL_FP_REFERENCE_FIELDS>
+   </cls:CL_FP_REFERENCE_FIELDS>
+   <cls:CL_FP_GLOBAL_DEFINITIONS id="o3">
+    <CL_FP_INTERFACE_DATA_CHANGED classVersion="1">
+     <INTERFACE_DATA href="#o1"/>
+    </CL_FP_INTERFACE_DATA_CHANGED>
+    <CL_FP_GLOBAL_DEFINITIONS classVersion="1">
+     <GLOBAL_DATA>
+      <SFPGDATA>
+       <NAME>GV_COM_CODE</NAME>
+       <TYPING>TYPE</TYPING>
+       <TYPENAME>CHAR4</TYPENAME>
+       <DEFAULTVAL/>
+       <CONSTANT/>
+      </SFPGDATA>
+      <SFPGDATA>
+       <NAME>GV_CRD_REP_NAME</NAME>
+       <TYPING>TYPE</TYPING>
+       <TYPENAME>STEXT_CM</TYPENAME>
+       <DEFAULTVAL/>
+       <CONSTANT/>
+      </SFPGDATA>
+      <SFPGDATA>
+       <NAME>GV_CRD_REP_PHONE</NAME>
+       <TYPING>TYPE</TYPING>
+       <TYPENAME>Z_MVALUE_HIGH</TYPENAME>
+       <DEFAULTVAL/>
+       <CONSTANT/>
+      </SFPGDATA>
+      <SFPGDATA>
+       <NAME>GV_CRD_DBT_IND</NAME>
+       <TYPING>TYPE</TYPING>
+       <TYPENAME>CHAR1</TYPENAME>
+       <DEFAULTVAL/>
+       <CONSTANT/>
+      </SFPGDATA>
+      <SFPGDATA>
+       <NAME>GV_LANGU</NAME>
+       <TYPING>TYPE</TYPING>
+       <TYPENAME>SYLANGU</TYPENAME>
+       <DEFAULTVAL/>
+       <CONSTANT/>
+      </SFPGDATA>
+      <SFPGDATA>
+       <NAME>GV_CRD_DBT_TXT</NAME>
+       <TYPING>TYPE</TYPING>
+       <TYPENAME>CHAR20</TYPENAME>
+       <DEFAULTVAL/>
+       <CONSTANT/>
+      </SFPGDATA>
+      <SFPGDATA>
+       <NAME>GV_DOC_DATE</NAME>
+       <TYPING>TYPE</TYPING>
+       <TYPENAME>BLDAT</TYPENAME>
+       <DEFAULTVAL/>
+       <CONSTANT/>
+      </SFPGDATA>
+      <SFPGDATA>
+       <NAME>GV_PRODUCTION</NAME>
+       <TYPING>TYPE</TYPING>
+       <TYPENAME>BOOLEAN</TYPENAME>
+       <DEFAULTVAL/>
+       <CONSTANT/>
+      </SFPGDATA>
+      <SFPGDATA>
+       <NAME>GV_IMAGE_BIN</NAME>
+       <TYPING>TYPE</TYPING>
+       <TYPENAME>XSTRING</TYPENAME>
+       <DEFAULTVAL/>
+       <CONSTANT/>
+      </SFPGDATA>
+      <SFPGDATA>
+       <NAME>GV_DATE_DOC</NAME>
+       <TYPING>TYPE</TYPING>
+       <TYPENAME>CHAR15</TYPENAME>
+       <DEFAULTVAL/>
+       <CONSTANT/>
+      </SFPGDATA>
+      <SFPGDATA>
+       <NAME>I_STATUS</NAME>
+       <TYPING>TYPE</TYPING>
+       <TYPENAME>TY_T_STATUS</TYPENAME>
+       <DEFAULTVAL/>
+       <CONSTANT/>
+      </SFPGDATA>
+      <SFPGDATA>
+       <NAME>GV_DATE</NAME>
+       <TYPING>TYPE</TYPING>
+       <TYPENAME>CHAR15</TYPENAME>
+       <DEFAULTVAL/>
+       <CONSTANT/>
+      </SFPGDATA>
+      <SFPGDATA>
+       <NAME>C_BMP</NAME>
+       <TYPING>TYPE</TYPING>
+       <TYPENAME>STRING</TYPENAME>
+       <DEFAULTVAL>&apos;images/bmp&apos;</DEFAULTVAL>
+       <CONSTANT>X</CONSTANT>
+      </SFPGDATA>
+      <SFPGDATA>
+       <NAME>GV_LOGO_BIN</NAME>
+       <TYPING>TYPE</TYPING>
+       <TYPENAME>XSTRING</TYPENAME>
+       <DEFAULTVAL/>
+       <CONSTANT/>
+      </SFPGDATA>
+      <SFPGDATA>
+       <NAME>I_LOCKBOX</NAME>
+       <TYPING>TYPE</TYPING>
+       <TYPENAME>TY_T_LOCKBOX</TYPENAME>
+       <DEFAULTVAL/>
+       <CONSTANT/>
+      </SFPGDATA>
+      <SFPGDATA>
+       <NAME>WA_BANK_INFO</NAME>
+       <TYPING>TYPE</TYPING>
+       <TYPENAME>TY_BANK_INFO</TYPENAME>
+       <DEFAULTVAL/>
+       <CONSTANT/>
+      </SFPGDATA>
+      <SFPGDATA>
+       <NAME>GV_LINES1</NAME>
+       <TYPING>TYPE</TYPING>
+       <TYPENAME>STRING</TYPENAME>
+       <DEFAULTVAL/>
+       <CONSTANT/>
+      </SFPGDATA>
+      <SFPGDATA>
+       <NAME>GV_LINES2</NAME>
+       <TYPING>TYPE</TYPING>
+       <TYPENAME>STRING</TYPENAME>
+       <DEFAULTVAL/>
+       <CONSTANT/>
+      </SFPGDATA>
+      <SFPGDATA>
+       <NAME>GV_LINES3</NAME>
+       <TYPING>TYPE</TYPING>
+       <TYPENAME>STRING</TYPENAME>
+       <DEFAULTVAL/>
+       <CONSTANT/>
+      </SFPGDATA>
+      <SFPGDATA>
+       <NAME>GV_LINES4</NAME>
+       <TYPING>TYPE</TYPING>
+       <TYPENAME>STRING</TYPENAME>
+       <DEFAULTVAL/>
+       <CONSTANT/>
+      </SFPGDATA>
+      <SFPGDATA>
+       <NAME>GV_LINES5</NAME>
+       <TYPING>TYPE</TYPING>
+       <TYPENAME>STRING</TYPENAME>
+       <DEFAULTVAL/>
+       <CONSTANT/>
+      </SFPGDATA>
+      <SFPGDATA>
+       <NAME>GV_LINES6</NAME>
+       <TYPING>TYPE</TYPING>
+       <TYPENAME>STRING</TYPENAME>
+       <DEFAULTVAL/>
+       <CONSTANT/>
+      </SFPGDATA>
+      <SFPGDATA>
+       <NAME>GV_LINES7</NAME>
+       <TYPING>TYPE</TYPING>
+       <TYPENAME>STRING</TYPENAME>
+       <DEFAULTVAL/>
+       <CONSTANT/>
+      </SFPGDATA>
+      <SFPGDATA>
+       <NAME>GV_LINES8</NAME>
+       <TYPING>TYPE</TYPING>
+       <TYPENAME>STRING</TYPENAME>
+       <DEFAULTVAL/>
+       <CONSTANT/>
+      </SFPGDATA>
+     </GLOBAL_DATA>
+     <TYPES>
+      <FPCLINE>************************************************************************</FPCLINE>
+      <FPCLINE>* PROGRAM    :  ZOTCP0024_CREDIT_DEBIT_FORM                            *</FPCLINE>
+      <FPCLINE>* TITLE      :  Interface program for AR Credit/Debit form -           *</FPCLINE>
+      <FPCLINE>*               Correspondence type ZSAP11</FPCLINE>
+      <FPCLINE>* DEVELOPER  :  Gautam NAG                                             *</FPCLINE>
+      <FPCLINE>* OBJECT TYPE:  Interface                                              *</FPCLINE>
+      <FPCLINE>* SAP RELEASE:  SAP ECC 6.0                                            *</FPCLINE>
+      <FPCLINE>*----------------------------------------------------------------------*</FPCLINE>
+      <FPCLINE>* WRICEF ID:  OTC_FDD_0024                                             *</FPCLINE>
+      <FPCLINE>*----------------------------------------------------------------------*</FPCLINE>
+      <FPCLINE>* DESCRIPTION: This is the Initialization of the interface. The        *</FPCLINE>
+      <FPCLINE>* additional data which is not available from the driver program are   *</FPCLINE>
+      <FPCLINE>* fetched in this section                                              *</FPCLINE>
+      <FPCLINE>* The form ZOTC0024_CREDIT_DEBIT_FORM in this case is a copy of the    *</FPCLINE>
+      <FPCLINE>* standard form F140_DOCU_EXC_01.</FPCLINE>
+      <FPCLINE>*----------------------------------------------------------------------*</FPCLINE>
+      <FPCLINE>* MODIFICATION HISTORY:                                                *</FPCLINE>
+      <FPCLINE>*======================================================================*</FPCLINE>
+      <FPCLINE>* DATE        USER     TRANSPORT  DESCRIPTION                          *</FPCLINE>
+      <FPCLINE>* =========== ======== ========== =====================================*</FPCLINE>
+      <FPCLINE>* 09-APR-2012 GNAG     E1DK901058 INITIAL DEVELOPMENT                  *</FPCLINE>
+      <FPCLINE>* 21-Sep-2016 RBANERJ1 E1DK921923 Changes for D3_OTC_FDD_0024          *</FPCLINE>
+      <FPCLINE>*                                Display sales org. address in Remit to*</FPCLINE>
+      <FPCLINE>*                                Add Bank information and translation  *</FPCLINE>
+      <FPCLINE>*                                for German,French and Spanish language*</FPCLINE>
+      <FPCLINE>* 02-Nov-2016 u033867 E1DK921923 Defect # 5755 Amount format changes   *</FPCLINE>
+      <FPCLINE>*&amp;---------------------------------------------------------------------*</FPCLINE>
+      <FPCLINE/>
+      <FPCLINE/>
+      <FPCLINE>TYPES: ty_t_lockbox TYPE TABLE OF char40. &quot; T_lockbox type table of type CHAR40</FPCLINE>
+      <FPCLINE/>
+      <FPCLINE>* ---&gt; Begin of Change for D3_OTC_FDD_0024 by RBANERJ1</FPCLINE>
+      <FPCLINE/>
+      <FPCLINE>TYPES : BEGIN OF ty_zotc_prc_control,</FPCLINE>
+      <FPCLINE>          vkorg    TYPE	vkorg,</FPCLINE>
+      <FPCLINE>          vtweg	   TYPE vtweg,                                        &quot; Distribution Channel</FPCLINE>
+      <FPCLINE>          mprogram TYPE programm,                                     &quot; ABAP Program Name</FPCLINE>
+      <FPCLINE>          mparameter TYPE enhee_parameter,                            &quot; Parameter</FPCLINE>
+      <FPCLINE>          mactive	   TYPE ain_epc_active_ind,                         &quot; Active or Inactive Indicator</FPCLINE>
+      <FPCLINE>          soption	   TYPE rmsae_option,                               &quot; Selection Option</FPCLINE>
+      <FPCLINE>          mvalue1	 TYPE sbgrp_cm,                                     &quot; Credit representative group for credit management</FPCLINE>
+      <FPCLINE>          mvalue2	 TYPE z_mvalue_high,                                &quot; Select Options: Value High</FPCLINE>
+      <FPCLINE>        END OF ty_zotc_prc_control,</FPCLINE>
+      <FPCLINE/>
+      <FPCLINE>        BEGIN OF ty_t024b,</FPCLINE>
+      <FPCLINE>          sbgrp TYPE sbgrp_cm,                                        &quot; Credit representative group for credit management</FPCLINE>
+      <FPCLINE>        END OF ty_t024b,</FPCLINE>
+      <FPCLINE/>
+      <FPCLINE>        BEGIN OF ty_bank_info,</FPCLINE>
+      <FPCLINE>          banka TYPE 	banka,</FPCLINE>
+      <FPCLINE>          stras TYPE 	stras_gp,</FPCLINE>
+      <FPCLINE>          ort01 TYPE 	ort01_gp,</FPCLINE>
+      <FPCLINE>          swift TYPE 	swift,</FPCLINE>
+      <FPCLINE>          bankn TYPE 	bankn,</FPCLINE>
+      <FPCLINE>          iban  TYPE 	iban,</FPCLINE>
+      <FPCLINE>        END OF ty_bank_info,</FPCLINE>
+      <FPCLINE/>
+      <FPCLINE>        ty_t_zotc_prc_control TYPE STANDARD TABLE OF ty_zotc_prc_control,</FPCLINE>
+      <FPCLINE>        ty_t_status           TYPE STANDARD TABLE OF zdev_enh_status, &quot; Enhancement Status</FPCLINE>
+      <FPCLINE>        ty_t_t024b            TYPE STANDARD TABLE OF ty_t024b.</FPCLINE>
+      <FPCLINE/>
+      <FPCLINE>* ---&gt; End of Change for D3_OTC_FDD_0024 by RBANERJ1</FPCLINE>
+     </TYPES>
+     <FIELDSYMBOLS/>
+    </CL_FP_GLOBAL_DEFINITIONS>
+   </cls:CL_FP_GLOBAL_DEFINITIONS>
+   <cls:CL_FP_PARAMETERS id="o4">
+    <CL_FP_INTERFACE_DATA_CHANGED classVersion="1">
+     <INTERFACE_DATA href="#o1"/>
+    </CL_FP_INTERFACE_DATA_CHANGED>
+    <CL_FP_PARAMETERS classVersion="1">
+     <IMPORT_PARAMETERS>
+      <SFPIOPAR>
+       <NAME>LS_HEADER</NAME>
+       <TYPING>TYPE</TYPING>
+       <TYPENAME>RFKORD_S_HEADER</TYPENAME>
+       <OPTIONAL>X</OPTIONAL>
+       <BYVALUE>X</BYVALUE>
+       <DEFAULTVAL/>
+       <STANDARD/>
+       <CONSTANT/>
+      </SFPIOPAR>
+      <SFPIOPAR>
+       <NAME>LT_ADDRESS</NAME>
+       <TYPING>TYPE</TYPING>
+       <TYPENAME>RFKORD_T_ADDRESS</TYPENAME>
+       <OPTIONAL>X</OPTIONAL>
+       <BYVALUE>X</BYVALUE>
+       <DEFAULTVAL/>
+       <STANDARD/>
+       <CONSTANT/>
+      </SFPIOPAR>
+      <SFPIOPAR>
+       <NAME>LT_ITEM</NAME>
+       <TYPING>TYPE</TYPING>
+       <TYPENAME>RFKORD_T_ITEM</TYPENAME>
+       <OPTIONAL>X</OPTIONAL>
+       <BYVALUE>X</BYVALUE>
+       <DEFAULTVAL/>
+       <STANDARD/>
+       <CONSTANT/>
+      </SFPIOPAR>
+     </IMPORT_PARAMETERS>
+     <EXPORT_PARAMETERS/>
+     <TABLE_PARAMETERS/>
+     <EXCEPTIONS/>
+    </CL_FP_PARAMETERS>
+   </cls:CL_FP_PARAMETERS>
+   <cls:CL_FP_CODING id="o5">
+    <CL_FP_INTERFACE_DATA_CHANGED classVersion="1">
+     <INTERFACE_DATA href="#o1"/>
+    </CL_FP_INTERFACE_DATA_CHANGED>
+    <CL_FP_CODING classVersion="1">
+     <INPUT_PARAMETERS>
+      <FPPARAMETER>LS_HEADER</FPPARAMETER>
+      <FPPARAMETER>LT_ITEM</FPPARAMETER>
+     </INPUT_PARAMETERS>
+     <OUTPUT_PARAMETERS>
+      <FPPARAMETER>GV_COM_CODE</FPPARAMETER>
+      <FPPARAMETER>GV_LOCKBOX_ADRNR</FPPARAMETER>
+      <FPPARAMETER>GV_CRD_REP_NAME</FPPARAMETER>
+      <FPPARAMETER>GV_CRD_REP_PHONE</FPPARAMETER>
+      <FPPARAMETER>GV_CRD_DBT_IND</FPPARAMETER>
+      <FPPARAMETER>GV_DOC_DATE</FPPARAMETER>
+      <FPPARAMETER>GV_PRODUCTION</FPPARAMETER>
+      <FPPARAMETER>GV_IMAGE_BIN</FPPARAMETER>
+      <FPPARAMETER>GV_LOGO_BIN</FPPARAMETER>
+      <FPPARAMETER>GV_CRD_DBT_TXT</FPPARAMETER>
+      <FPPARAMETER>GV_LANGU</FPPARAMETER>
+      <FPPARAMETER>GV_CRD_DBT_IND</FPPARAMETER>
+     </OUTPUT_PARAMETERS>
+     <INITIALIZATION>
+      <FPCLINE>************************************************************************</FPCLINE>
+      <FPCLINE>* PROGRAM    :  ZOTCP0024_CREDIT_DEBIT_FORM                            *</FPCLINE>
+      <FPCLINE>* TITLE      :  Interface program for AR Credit/Debit form -           *</FPCLINE>
+      <FPCLINE>*               Correspondence type ZSAP11</FPCLINE>
+      <FPCLINE>* DEVELOPER  :  Gautam NAG                                             *</FPCLINE>
+      <FPCLINE>* OBJECT TYPE:  Interface                                              *</FPCLINE>
+      <FPCLINE>* SAP RELEASE:  SAP ECC 6.0                                            *</FPCLINE>
+      <FPCLINE>*----------------------------------------------------------------------*</FPCLINE>
+      <FPCLINE>* WRICEF ID:  OTC_FDD_0024                                             *</FPCLINE>
+      <FPCLINE>*----------------------------------------------------------------------*</FPCLINE>
+      <FPCLINE>* DESCRIPTION: This is the Initialization of the interface. The        *</FPCLINE>
+      <FPCLINE>* additional data which is not available from the driver program are   *</FPCLINE>
+      <FPCLINE>* fetched in this section                                              *</FPCLINE>
+      <FPCLINE>* The form ZOTC0024_CREDIT_DEBIT_FORM in this case is a copy of the    *</FPCLINE>
+      <FPCLINE>* standard form F140_DOCU_EXC_01.                                      *</FPCLINE>
+      <FPCLINE>*----------------------------------------------------------------------*</FPCLINE>
+      <FPCLINE>* MODIFICATION HISTORY:                                                *</FPCLINE>
+      <FPCLINE>*======================================================================*</FPCLINE>
+      <FPCLINE>* DATE        USER     TRANSPORT  DESCRIPTION                          *</FPCLINE>
+      <FPCLINE>* =========== ======== ========== =====================================*</FPCLINE>
+      <FPCLINE>* 09-APR-2012 GNAG     E1DK901058 INITIAL DEVELOPMENT                  *</FPCLINE>
+      <FPCLINE>* 21-NOV-2014 NBAIS    E2DK906557 D2_OTC_FDD_0024 change for REMIT TO  *</FPCLINE>
+      <FPCLINE>*                                 Address and added standard text in   *</FPCLINE>
+      <FPCLINE>*                                 Adobe Form text                      *</FPCLINE>
+      <FPCLINE>* 09-Jan-2014 NBAIS    E2DK906557  D2_OTC_FDD_0024_Defect#2838- Added  *</FPCLINE>
+      <FPCLINE>*                                 two Standard to print Remit To       *</FPCLINE>
+      <FPCLINE>*                                 address for Company code : 1103      *</FPCLINE>
+      <FPCLINE>*                                 and corrected the logic for          *</FPCLINE>
+      <FPCLINE>*                                 Credit Rep Name and phone#           *</FPCLINE>
+      <FPCLINE>* 11-Feb-2015 MGARG    E2DK906557   CR D2_452, Added currency field    *</FPCLINE>
+      <FPCLINE>*                                 field name(Standard text) and Value  *</FPCLINE>
+      <FPCLINE>* 06-Mar-2015 MBHATTA1 E2DK906557 Language Translations included for   *</FPCLINE>
+      <FPCLINE>*                                 French and Spanish Defect 4537       *</FPCLINE>
+      <FPCLINE>* 21-Sep-2016 RBANERJ1 E1DK921923 Changes for D3_OTC_FDD_0024          *</FPCLINE>
+      <FPCLINE>*                                Display sales org. address in Remit to*</FPCLINE>
+      <FPCLINE>*                                Add Bank information and translation  *</FPCLINE>
+      <FPCLINE>*                                for German,French and Spanish language*</FPCLINE>
+      <FPCLINE>* 02-Nov-2016 RBANERJ1 E1DK921923 Defect # 5755 date format change     *</FPCLINE>
+      <FPCLINE>* 02-Nov-2016 u033867  E1DK921923 Defect # 5755 Amount format changes  *</FPCLINE>
+      <FPCLINE>*&amp;---------------------------------------------------------------------*</FPCLINE>
+      <FPCLINE/>
+      <FPCLINE/>
+      <FPCLINE>CONSTANTS:</FPCLINE>
+      <FPCLINE>  lc_corrid_oil  TYPE rfkord_item_corrid VALUE &apos;OIL&apos;,                         &quot;Correspondence: ID</FPCLINE>
+      <FPCLINE>  lc_vkorg       TYPE vkorg              VALUE &apos;1000&apos;,                        &quot;Sales Organization</FPCLINE>
+      <FPCLINE>  lc_vtweg       TYPE vtweg              VALUE &apos;10&apos;,                          &quot;Distribution Channel</FPCLINE>
+      <FPCLINE>  lc_mprogram    TYPE programm           VALUE &apos;ZOTCP0024_CREDIT_DEBIT_FORM&apos;, &quot;ABAP Program Name</FPCLINE>
+      <FPCLINE>  lc_mparameter  TYPE enhee_parameter    VALUE &apos;Z_CREDIT_REP_PHONE&apos;,          &quot;Parameter</FPCLINE>
+      <FPCLINE>  lc_soption     TYPE rmsae_option       VALUE &apos;EQ&apos;,                          &quot;Selection Option</FPCLINE>
+      <FPCLINE>  lc_credit_memo TYPE char1              VALUE &apos;C&apos;,                           &quot;Indicator: Credit memo</FPCLINE>
+      <FPCLINE>  lc_debit_memo  TYPE char1              VALUE &apos;D&apos;,                           &quot;Indicator: Debit memo</FPCLINE>
+      <FPCLINE>  lc_graphics    TYPE tdobjectgr         VALUE &apos;GRAPHICS&apos;,                    &quot;Watermark</FPCLINE>
+      <FPCLINE>  lc_draft_image TYPE tdobname           VALUE &apos;ZDRAFT&apos;,                      &quot;Watermark: Obj name</FPCLINE>
+      <FPCLINE>  lc_logo_image  TYPE tdobname           VALUE &apos;ZBIORAD_LOGO&apos;,                &quot;Logo: Obj name</FPCLINE>
+      <FPCLINE>  lc_image_id    TYPE tdidgr             VALUE &apos;BMAP&apos;,                        &quot;Watermark: Obj id</FPCLINE>
+      <FPCLINE>  lc_image_type  TYPE tdbtype            VALUE &apos;BCOL&apos;,                        &quot;Watermark: Obj type</FPCLINE>
+      <FPCLINE>* ---&gt; Begin of Change for D3_OTC_FDD_0024 by RBANERJ1</FPCLINE>
+      <FPCLINE>&quot;As per on-site review point, TVARVC should be replaced by EMI</FPCLINE>
+      <FPCLINE>*  lc_prod_name   TYPE rvari_vnam         VALUE &apos;ZPRODUCTION&apos;,                 &quot;Param for prod</FPCLINE>
+      <FPCLINE>*  lc_type        TYPE rsscr_kind         VALUE &apos;P&apos;,                           &quot;Param type</FPCLINE>
+      <FPCLINE>*  lc_numb        TYPE tvarv_numb         VALUE &apos;0000&apos;,                        &quot;Param number</FPCLINE>
+      <FPCLINE>  lc_fdd_0024     TYPE z_enhancement VALUE &apos;D2_OTC_FDD_0024&apos;, &quot; Enhancement No.</FPCLINE>
+      <FPCLINE>  lc_sysid        TYPE z_criteria    VALUE &apos;SYSTEM_ID&apos;,       &quot; Enh. Criteria</FPCLINE>
+      <FPCLINE>* &lt;--- End of Change for D3_OTC_FDD_0024 by RBANERJ1</FPCLINE>
+      <FPCLINE>* ---&gt; Begin of Change for D2_OTC_FDD_0024 by NBAIS</FPCLINE>
+      <FPCLINE>  lc_st         TYPE thead-tdid              VALUE &apos;ST&apos;,               &quot; &quot; TextId</FPCLINE>
+      <FPCLINE>  lc_object     TYPE thead-tdobject          VALUE &apos;TEXT&apos;,             &quot; TextObject</FPCLINE>
+      <FPCLINE>  lc_std_name   TYPE thead-tdname            VALUE &apos;ZOTC_0024_PO_BOX&apos;, &quot; Text Name</FPCLINE>
+      <FPCLINE>* &lt;--- End of Change for D2_OTC_FDD_0024 by NBAIS</FPCLINE>
+      <FPCLINE>* ---&gt; Begin of Change for D2_OTC_FDD_0024 by NBAIS for Defect :2838</FPCLINE>
+      <FPCLINE>  lc_name1 TYPE tdobname VALUE &apos;ZOTC_FDD_ACCOUNT_PESOS1&apos;,  &quot; Name</FPCLINE>
+      <FPCLINE>  lc_name2 TYPE tdobname VALUE &apos;ZOTC_FDD_ACCOUNT_DOLLARS&apos;, &quot; Name</FPCLINE>
+      <FPCLINE>  lc_ccode TYPE char4   VALUE &apos;1103&apos;,                      &quot; Ccode of type CHAR4</FPCLINE>
+      <FPCLINE>* ---&gt; Begin of Insert for D2_OTC_FDD_0024 by Mbhatta1 Defect#4537</FPCLINE>
+      <FPCLINE>  lc_lang  TYPE sylangu VALUE &apos;EN&apos;. &quot; Language Key of Current Text Environment</FPCLINE>
+      <FPCLINE>* &lt;--- End of Insert for D2_OTC_FDD_0024 by Mbhatta1 Defect#4537</FPCLINE>
+      <FPCLINE/>
+      <FPCLINE>DATA : lv_vkorg   TYPE vkorg, &quot; Sales Organization</FPCLINE>
+      <FPCLINE>* ---&gt; Begin of Change for D3_OTC_FDD_0024 by RBANERJ1</FPCLINE>
+      <FPCLINE>&quot;As per on-site review point, TVARVC should be replaced by EMI</FPCLINE>
+      <FPCLINE>       li_status TYPE TABLE OF zdev_enh_status, &quot; Enhancement Status</FPCLINE>
+      <FPCLINE>* &lt;--- End of Change for D3_OTC_FDD_0024 by RBANERJ1</FPCLINE>
+      <FPCLINE>* ---&gt; Begin of Change for Defect#5755 by U033867</FPCLINE>
+      <FPCLINE>       lv_land1 TYPE land1. &quot; Country Key</FPCLINE>
+      <FPCLINE>* ---&gt; End of Change for Defect#5755 by U033867</FPCLINE>
+      <FPCLINE>FIELD-SYMBOLS:</FPCLINE>
+      <FPCLINE>&lt;lfs_lines&gt; TYPE tline, &quot; SAPscript: Text Lines</FPCLINE>
+      <FPCLINE>* ---&gt; Begin of Change for D3_OTC_FDD_0024 by RBANERJ1</FPCLINE>
+      <FPCLINE>&quot;As per on-site review point, TVARVC should be replaced by EMI</FPCLINE>
+      <FPCLINE>&lt;lfs_status&gt; TYPE zdev_enh_status. &quot; Field symbol for status table</FPCLINE>
+      <FPCLINE>* &lt;--- End of Change for D3_OTC_FDD_0024 by RBANERJ1</FPCLINE>
+      <FPCLINE/>
+      <FPCLINE>* &lt;--- End of Change for D2_OTC_FDD_0024 by NBAIS for Defect :2838</FPCLINE>
+      <FPCLINE>* ---&gt; Begin of Delete for D2_OTC_FDD_0024 by NBAIS</FPCLINE>
+      <FPCLINE>*  lc_dbt_txt     TYPE char20             VALUE &apos;Debit Memo&apos;,  &quot;Text: Debit Memo</FPCLINE>
+      <FPCLINE>*  lc_crd_txt     TYPE char20             VALUE &apos;Credit Memo&apos;. &quot;Text: Credit Memo</FPCLINE>
+      <FPCLINE>* &lt;--- End of Delete for D2_OTC_FDD_0024 by NBAIS</FPCLINE>
+      <FPCLINE/>
+      <FPCLINE/>
+      <FPCLINE>TYPES: BEGIN OF lty_item_sgtxt,     &quot;Item text desc</FPCLINE>
+      <FPCLINE>         bukrs TYPE bukrs,          &quot;CoCd</FPCLINE>
+      <FPCLINE>         belnr TYPE belnr_d,        &quot;Doc Number</FPCLINE>
+      <FPCLINE>         gjahr TYPE gjahr,          &quot;Fiscal yr</FPCLINE>
+      <FPCLINE>         buzei TYPE buzei,          &quot;Item number</FPCLINE>
+      <FPCLINE>         sgtxt TYPE sgtxt,          &quot;Item text</FPCLINE>
+      <FPCLINE>       END OF lty_item_sgtxt,</FPCLINE>
+      <FPCLINE>       BEGIN OF lty_lockbox_adrc,   &quot;Lockbox address</FPCLINE>
+      <FPCLINE>         name1 TYPE ad_name1,       &quot;Name1</FPCLINE>
+      <FPCLINE>         name2 TYPE ad_name2,       &quot;Name2</FPCLINE>
+      <FPCLINE>         name3 TYPE ad_name3,       &quot;Name3</FPCLINE>
+      <FPCLINE>         city1 TYPE ad_city1,       &quot;City</FPCLINE>
+      <FPCLINE>         post_code1 TYPE ad_pstcd1, &quot;Post Code</FPCLINE>
+      <FPCLINE>* ---&gt; Begin of Change for D2_OTC_FDD_0024 by NBAIS</FPCLINE>
+      <FPCLINE>         po_box     TYPE ad_pobx, &quot; PO Box</FPCLINE>
+      <FPCLINE>* &lt;--- End of Change for D2_OTC_FDD_0024 by NBAIS</FPCLINE>
+      <FPCLINE>         region TYPE regio, &quot;Region</FPCLINE>
+      <FPCLINE>       END OF lty_lockbox_adrc.</FPCLINE>
+      <FPCLINE/>
+      <FPCLINE>DATA: lwa_item TYPE rfkord_s_item,                               &quot;Line item</FPCLINE>
+      <FPCLINE>      lwa_lockbox TYPE char40,                                   &quot;Lockbox address lines</FPCLINE>
+      <FPCLINE>      lwa_lockbox_adrc TYPE lty_lockbox_adrc,                    &quot;Lockbox address fields</FPCLINE>
+      <FPCLINE>      li_item_sgtxt TYPE TABLE OF lty_item_sgtxt INITIAL SIZE 0, &quot;Item texts</FPCLINE>
+      <FPCLINE>* ---&gt; Begin of Change for D3_OTC_FDD_0024 by RBANERJ1</FPCLINE>
+      <FPCLINE>      lv_bukrs      TYPE bukrs, &quot; Company Code</FPCLINE>
+      <FPCLINE>      lv_lockb      TYPE lockb, &quot; Key of the Lockbox to Which the Customer Is To Pay</FPCLINE>
+      <FPCLINE>* &lt;--- End of Change for D3_OTC_FDD_0024 by RBANERJ1</FPCLINE>
+      <FPCLINE>* ---&gt; Begin of Change for D2_OTC_FDD_0024 by NBAIS</FPCLINE>
+      <FPCLINE>      li_tab TYPE STANDARD TABLE OF tline INITIAL SIZE 0, &quot;Standard text</FPCLINE>
+      <FPCLINE>      lwa_tab TYPE tline.                                 &quot; SAPscript: Text Lines</FPCLINE>
+      <FPCLINE>* &lt;--- End of Change for D2_OTC_FDD_0024 by NBAIS</FPCLINE>
+      <FPCLINE/>
+      <FPCLINE>DATA: lv_crd_area TYPE kkber,      &quot;Credit Control Area</FPCLINE>
+      <FPCLINE>      lv_crd_grp TYPE sbgrp_cm,    &quot;Credit Control group</FPCLINE>
+      <FPCLINE>      lv_prod TYPE sysysid,        &quot;Prod system id</FPCLINE>
+      <FPCLINE>      lv_lockbox_adrnr TYPE adrnr. &quot;Lockbox addr number</FPCLINE>
+      <FPCLINE/>
+      <FPCLINE>FIELD-SYMBOLS: &lt;lfs_item&gt; TYPE rfkord_s_item,        &quot;Line item</FPCLINE>
+      <FPCLINE>               &lt;lwa_item_sgtxt&gt; TYPE lty_item_sgtxt. &quot;Line item text</FPCLINE>
+      <FPCLINE/>
+      <FPCLINE>REFRESH: i_lockbox.</FPCLINE>
+      <FPCLINE>* ---&gt; Begin of Change for D2_OTC_FDD_0024 by NBAIS</FPCLINE>
+      <FPCLINE>CLEAR gv_langu.</FPCLINE>
+      <FPCLINE>* ---&gt; Begin of Change for D2_OTC_FDD_0024 by Mbhatta1 Defect#4537</FPCLINE>
+      <FPCLINE>*gv_langu = /1bcdwb/docparams-langu.</FPCLINE>
+      <FPCLINE>* ---&gt; End of Insert for D2_OTC_FDD_0024 by Mbhatta1 Defect#4537</FPCLINE>
+      <FPCLINE>* &lt;--- End of Change for D2_OTC_FDD_0024 by NBAIS</FPCLINE>
+      <FPCLINE/>
+      <FPCLINE>* Bio-Rad LockBox address</FPCLINE>
+      <FPCLINE>* Fetch the Bio-Rad LockBox address</FPCLINE>
+      <FPCLINE>READ TABLE lt_item INTO lwa_item WITH KEY corrid = lc_corrid_oil.</FPCLINE>
+      <FPCLINE>IF sy-subrc = 0.</FPCLINE>
+      <FPCLINE>* ---&gt; Begin of Change for D2_OTC_FDD_0024 by NBAIS for Defect :2838</FPCLINE>
+      <FPCLINE>  gv_com_code = lwa_item-bukrs.</FPCLINE>
+      <FPCLINE/>
+      <FPCLINE>* ---&gt; Begin of Insert for D2_OTC_FDD_0024 by Mbhatta1 Defect#4537</FPCLINE>
+      <FPCLINE>  PERFORM f_get_language USING gv_com_code</FPCLINE>
+      <FPCLINE>                      CHANGING gv_langu.</FPCLINE>
+      <FPCLINE>* ---&gt; End of Insert for D2_OTC_FDD_0024 by Mbhatta1 Defect#4537</FPCLINE>
+      <FPCLINE/>
+      <FPCLINE>  IF gv_com_code NE lc_ccode.</FPCLINE>
+      <FPCLINE>* &lt;--- End of Change for D2_OTC_FDD_0024 by NBAIS for Defect :2838</FPCLINE>
+      <FPCLINE>* Fetch the lockbox address number</FPCLINE>
+      <FPCLINE>    SELECT adrnr &quot; Address</FPCLINE>
+      <FPCLINE>      FROM t049l &quot; Lockboxes at our House Banks</FPCLINE>
+      <FPCLINE>      INTO lv_lockbox_adrnr</FPCLINE>
+      <FPCLINE>     UP TO 1 ROWS</FPCLINE>
+      <FPCLINE>     WHERE bukrs = lwa_item-bukrs.</FPCLINE>
+      <FPCLINE>    ENDSELECT.</FPCLINE>
+      <FPCLINE>    IF sy-subrc = 0.</FPCLINE>
+      <FPCLINE>* Fetch the lockbox addr fields</FPCLINE>
+      <FPCLINE>      SELECT name1</FPCLINE>
+      <FPCLINE>             name2</FPCLINE>
+      <FPCLINE>             name3</FPCLINE>
+      <FPCLINE>             city1</FPCLINE>
+      <FPCLINE>             post_code1</FPCLINE>
+      <FPCLINE>* ---&gt; Begin of Change for D2_OTC_FDD_0024 by NBAIS</FPCLINE>
+      <FPCLINE>             po_box</FPCLINE>
+      <FPCLINE>* &lt;--- End of Change for D2_OTC_FDD_0024 by NBAIS</FPCLINE>
+      <FPCLINE>             region</FPCLINE>
+      <FPCLINE>        FROM adrc</FPCLINE>
+      <FPCLINE>        INTO lwa_lockbox_adrc</FPCLINE>
+      <FPCLINE>       UP TO 1 ROWS</FPCLINE>
+      <FPCLINE>       WHERE addrnumber = lv_lockbox_adrnr.</FPCLINE>
+      <FPCLINE>      ENDSELECT.</FPCLINE>
+      <FPCLINE>      IF sy-subrc = 0.</FPCLINE>
+      <FPCLINE>* ---&gt; Begin of Delete for D2_OTC_FDD_0024 by NBAIS</FPCLINE>
+      <FPCLINE>        IF NOT lwa_lockbox_adrc-name1 IS INITIAL.</FPCLINE>
+      <FPCLINE>          lwa_lockbox = lwa_lockbox_adrc-name1.</FPCLINE>
+      <FPCLINE>          APPEND lwa_lockbox TO i_lockbox.</FPCLINE>
+      <FPCLINE>        ENDIF. &quot; IF NOT lwa_lockbox_adrc-name1 IS INITIAL</FPCLINE>
+      <FPCLINE>* ---&gt; Begin of Delete for D2_OTC_FDD_0024 by NBAIS</FPCLINE>
+      <FPCLINE>*      IF NOT lwa_lockbox_adrc-name1 IS INITIAL.</FPCLINE>
+      <FPCLINE>*        CONCATENATE lwa_lockbox_adrc-name2 lwa_lockbox_adrc-name1</FPCLINE>
+      <FPCLINE>*        INTO lwa_lockbox SEPARATED BY space.</FPCLINE>
+      <FPCLINE>*        APPEND lwa_lockbox TO i_lockbox.</FPCLINE>
+      <FPCLINE>*      ENDIF.</FPCLINE>
+      <FPCLINE>* &lt;--- End of Delete for D2_OTC_FDD_0024 by NBAIS</FPCLINE>
+      <FPCLINE>* ---&gt; Begin of Change for D2_OTC_FDD_0024 by NBAIS</FPCLINE>
+      <FPCLINE>* As per the changes in D2_OTC_FDD_0024 we have removed the name2 from remit to address</FPCLINE>
+      <FPCLINE>* And added a standard text &apos;PO Box&apos; and field PO BOX no in place of name2  text.</FPCLINE>
+      <FPCLINE>* Function Module to read the Standard Text.</FPCLINE>
+      <FPCLINE>        IF NOT lwa_lockbox_adrc-po_box IS INITIAL.</FPCLINE>
+      <FPCLINE>          CALL FUNCTION &apos;READ_TEXT&apos;</FPCLINE>
+      <FPCLINE>            EXPORTING</FPCLINE>
+      <FPCLINE>              id                      = lc_st       &quot; TextId</FPCLINE>
+      <FPCLINE>              language                = gv_langu    &quot; Language</FPCLINE>
+      <FPCLINE>              name                    = lc_std_name &quot; Name of the Text</FPCLINE>
+      <FPCLINE>              object                  = lc_object   &quot; Text Object</FPCLINE>
+      <FPCLINE>            TABLES</FPCLINE>
+      <FPCLINE>              lines                   = li_tab</FPCLINE>
+      <FPCLINE>            EXCEPTIONS</FPCLINE>
+      <FPCLINE>              id                      = 1</FPCLINE>
+      <FPCLINE>              language                = 2</FPCLINE>
+      <FPCLINE>              name                    = 3</FPCLINE>
+      <FPCLINE>              not_found               = 4</FPCLINE>
+      <FPCLINE>              object                  = 5</FPCLINE>
+      <FPCLINE>              reference_check         = 6</FPCLINE>
+      <FPCLINE>              wrong_access_to_archive = 7</FPCLINE>
+      <FPCLINE>              OTHERS                  = 8.</FPCLINE>
+      <FPCLINE>* No sy-subrc check, as no error msg can be given if the standard text not available                       .</FPCLINE>
+      <FPCLINE/>
+      <FPCLINE>          CLEAR lwa_tab.</FPCLINE>
+      <FPCLINE>          LOOP AT li_tab INTO lwa_tab.</FPCLINE>
+      <FPCLINE>            CONCATENATE lwa_tab-tdline lwa_lockbox_adrc-po_box lwa_lockbox_adrc-name2</FPCLINE>
+      <FPCLINE>            INTO lwa_lockbox SEPARATED BY space.</FPCLINE>
+      <FPCLINE/>
+      <FPCLINE>            APPEND lwa_lockbox TO i_lockbox.</FPCLINE>
+      <FPCLINE>          ENDLOOP. &quot; LOOP AT li_tab INTO lwa_tab</FPCLINE>
+      <FPCLINE>        ENDIF. &quot; IF NOT lwa_lockbox_adrc-po_box IS INITIAL</FPCLINE>
+      <FPCLINE>* &lt;--- End of Change for D2_OTC_FDD_0024 by NBAIS</FPCLINE>
+      <FPCLINE>        IF NOT lwa_lockbox_adrc-name3 IS INITIAL.</FPCLINE>
+      <FPCLINE>          lwa_lockbox = lwa_lockbox_adrc-name3.</FPCLINE>
+      <FPCLINE>          APPEND lwa_lockbox TO i_lockbox.</FPCLINE>
+      <FPCLINE>        ENDIF. &quot; IF NOT lwa_lockbox_adrc-name3 IS INITIAL</FPCLINE>
+      <FPCLINE>        CONCATENATE lwa_lockbox_adrc-city1 lwa_lockbox_adrc-region lwa_lockbox_adrc-post_code1</FPCLINE>
+      <FPCLINE>        INTO lwa_lockbox SEPARATED BY space.</FPCLINE>
+      <FPCLINE>        APPEND lwa_lockbox TO i_lockbox.</FPCLINE>
+      <FPCLINE>      ENDIF. &quot; IF sy-subrc = 0</FPCLINE>
+      <FPCLINE>    ENDIF. &quot; IF sy-subrc = 0</FPCLINE>
+      <FPCLINE>* ---&gt; Begin of Change for D2_OTC_FDD_0024 by NBAIS for Defect :2838</FPCLINE>
+      <FPCLINE>  ELSE. &quot; ELSE -&gt; IF gv_com_code NE lc_ccode</FPCLINE>
+      <FPCLINE>*Remit to Address</FPCLINE>
+      <FPCLINE>*To Read the Standard text  ZOTC_FDD_ACCOUNT_PESOS</FPCLINE>
+      <FPCLINE>    REFRESH li_tab.</FPCLINE>
+      <FPCLINE>    CALL FUNCTION &apos;READ_TEXT&apos;</FPCLINE>
+      <FPCLINE>      EXPORTING</FPCLINE>
+      <FPCLINE>        id                      = lc_st &quot; TextId</FPCLINE>
+      <FPCLINE>* ---&gt; Begin of Insert for D2_OTC_FDD_0024 by Mbhatta1 Defect#4537</FPCLINE>
+      <FPCLINE>*        language                = gv_langu  &quot; Language</FPCLINE>
+      <FPCLINE>        language                = lc_lang &quot; Language</FPCLINE>
+      <FPCLINE>* &lt;--- End of Insert for D2_OTC_FDD_0024 by Mbhatta1  Defect#4537</FPCLINE>
+      <FPCLINE>        name                    = lc_name1  &quot;Text Name</FPCLINE>
+      <FPCLINE>        object                  = lc_object &quot; Text Object</FPCLINE>
+      <FPCLINE>      TABLES</FPCLINE>
+      <FPCLINE>        lines                   = li_tab</FPCLINE>
+      <FPCLINE>      EXCEPTIONS</FPCLINE>
+      <FPCLINE>        id                      = 1</FPCLINE>
+      <FPCLINE>        language                = 2</FPCLINE>
+      <FPCLINE>        name                    = 3</FPCLINE>
+      <FPCLINE>        not_found               = 4</FPCLINE>
+      <FPCLINE>        object                  = 5</FPCLINE>
+      <FPCLINE>        reference_check         = 6</FPCLINE>
+      <FPCLINE>        wrong_access_to_archive = 7</FPCLINE>
+      <FPCLINE>        OTHERS                  = 8.</FPCLINE>
+      <FPCLINE>    IF sy-subrc EQ 0.</FPCLINE>
+      <FPCLINE>      LOOP AT li_tab ASSIGNING &lt;lfs_lines&gt;.</FPCLINE>
+      <FPCLINE>        IF sy-tabix EQ 1.</FPCLINE>
+      <FPCLINE>          gv_lines1 = &lt;lfs_lines&gt;-tdline.</FPCLINE>
+      <FPCLINE>        ELSEIF sy-tabix EQ 2.</FPCLINE>
+      <FPCLINE>          gv_lines2 = &lt;lfs_lines&gt;-tdline.</FPCLINE>
+      <FPCLINE>        ELSEIF sy-tabix EQ 3.</FPCLINE>
+      <FPCLINE>          gv_lines3 = &lt;lfs_lines&gt;-tdline.</FPCLINE>
+      <FPCLINE>        ELSE. &quot; ELSE -&gt; IF sy-tabix EQ 1</FPCLINE>
+      <FPCLINE>          gv_lines4 = &lt;lfs_lines&gt;-tdline.</FPCLINE>
+      <FPCLINE>        ENDIF. &quot; IF sy-tabix EQ 1</FPCLINE>
+      <FPCLINE>      ENDLOOP. &quot; LOOP AT li_tab ASSIGNING &lt;lfs_lines&gt;</FPCLINE>
+      <FPCLINE>      REFRESH li_tab.</FPCLINE>
+      <FPCLINE>      UNASSIGN &lt;lfs_lines&gt;.</FPCLINE>
+      <FPCLINE>    ENDIF. &quot; IF sy-subrc EQ 0</FPCLINE>
+      <FPCLINE>*To Read the Standard text &apos;ZOTC_FDD_ACCOUNT_DOLLARS&apos;</FPCLINE>
+      <FPCLINE>    REFRESH li_tab.</FPCLINE>
+      <FPCLINE>    CALL FUNCTION &apos;READ_TEXT&apos;</FPCLINE>
+      <FPCLINE>      EXPORTING</FPCLINE>
+      <FPCLINE>        id                      = lc_st &quot; TextId</FPCLINE>
+      <FPCLINE>* ---&gt; Begin of Insert for D2_OTC_FDD_0024 by Mbhatta1 Defect#4537</FPCLINE>
+      <FPCLINE>*        language                = gv_langu  &quot; Language</FPCLINE>
+      <FPCLINE>        language                = lc_lang &quot; Language</FPCLINE>
+      <FPCLINE>* &lt;--- End of Insert for D2_OTC_FDD_0024 by Mbhatta1 Defect#4537</FPCLINE>
+      <FPCLINE>        name                    = lc_name2  &quot;Text Name</FPCLINE>
+      <FPCLINE>        object                  = lc_object &quot; Text Object</FPCLINE>
+      <FPCLINE>      TABLES</FPCLINE>
+      <FPCLINE>        lines                   = li_tab</FPCLINE>
+      <FPCLINE>      EXCEPTIONS</FPCLINE>
+      <FPCLINE>        id                      = 1</FPCLINE>
+      <FPCLINE>        language                = 2</FPCLINE>
+      <FPCLINE>        name                    = 3</FPCLINE>
+      <FPCLINE>        not_found               = 4</FPCLINE>
+      <FPCLINE>        object                  = 5</FPCLINE>
+      <FPCLINE>        reference_check         = 6</FPCLINE>
+      <FPCLINE>        wrong_access_to_archive = 7</FPCLINE>
+      <FPCLINE>        OTHERS                  = 8.</FPCLINE>
+      <FPCLINE>    IF sy-subrc EQ 0.</FPCLINE>
+      <FPCLINE>      LOOP AT li_tab ASSIGNING &lt;lfs_lines&gt;.</FPCLINE>
+      <FPCLINE>        IF sy-tabix EQ 1.</FPCLINE>
+      <FPCLINE>          gv_lines5 = &lt;lfs_lines&gt;-tdline.</FPCLINE>
+      <FPCLINE>        ELSEIF sy-tabix EQ 2.</FPCLINE>
+      <FPCLINE>          gv_lines6 = &lt;lfs_lines&gt;-tdline.</FPCLINE>
+      <FPCLINE>        ELSEIF sy-tabix EQ 3.</FPCLINE>
+      <FPCLINE>          gv_lines7 = &lt;lfs_lines&gt;-tdline.</FPCLINE>
+      <FPCLINE>        ELSE. &quot; ELSE -&gt; IF sy-tabix EQ 1</FPCLINE>
+      <FPCLINE>          gv_lines8 = &lt;lfs_lines&gt;-tdline.</FPCLINE>
+      <FPCLINE>        ENDIF. &quot; IF sy-tabix EQ 1</FPCLINE>
+      <FPCLINE>      ENDLOOP. &quot; LOOP AT li_tab ASSIGNING &lt;lfs_lines&gt;</FPCLINE>
+      <FPCLINE>      REFRESH li_tab.</FPCLINE>
+      <FPCLINE>      UNASSIGN &lt;lfs_lines&gt;.</FPCLINE>
+      <FPCLINE>    ENDIF. &quot; IF sy-subrc EQ 0</FPCLINE>
+      <FPCLINE>  ENDIF. &quot; IF gv_com_code NE lc_ccode</FPCLINE>
+      <FPCLINE>* &lt;--- End of Change for D2_OTC_FDD_0024 by NBAIS for Defect :2838</FPCLINE>
+      <FPCLINE>* Store the document date</FPCLINE>
+      <FPCLINE>  gv_doc_date = lwa_item-bldat.</FPCLINE>
+      <FPCLINE>* Store the Debit/Credit indicator</FPCLINE>
+      <FPCLINE/>
+      <FPCLINE>*  gv_crd_dbt_ind = lc_debit_memo.         &quot;Debit Memo</FPCLINE>
+      <FPCLINE>  IF lwa_item-wrshb GT 0.</FPCLINE>
+      <FPCLINE>    gv_crd_dbt_ind = lc_debit_memo. &quot;Debit Memo</FPCLINE>
+      <FPCLINE>* maintain the Standard text for &apos;Credit memo&apos; and &apos;Debit Memo&apos;.</FPCLINE>
+      <FPCLINE>* ---&gt; Begin of Delete for D2_OTC_FDD_0024 by NBAIS</FPCLINE>
+      <FPCLINE>*    gv_crd_dbt_txt = lc_dbt_txt.            &quot;Text: Debit Memo</FPCLINE>
+      <FPCLINE>* &lt;--- End of Delete for D2_OTC_FDD_0024 by NBAIS</FPCLINE>
+      <FPCLINE/>
+      <FPCLINE>  ELSE. &quot; ELSE -&gt; IF lwa_item-wrshb GT 0</FPCLINE>
+      <FPCLINE>    gv_crd_dbt_ind = lc_credit_memo. &quot;Credit Memo</FPCLINE>
+      <FPCLINE>* maintain the Standard text for &apos;Credit memo&apos; and &apos;Debit Memo&apos;.</FPCLINE>
+      <FPCLINE>* ---&gt; Begin of Delete for D2_OTC_FDD_0024 by NBAIS</FPCLINE>
+      <FPCLINE>*    gv_crd_dbt_txt = lc_crd_txt.            &quot;Text: Credit Memo</FPCLINE>
+      <FPCLINE>* &lt;--- End of Delete for D2_OTC_FDD_0024 by NBAIS</FPCLINE>
+      <FPCLINE>  ENDIF. &quot; IF lwa_item-wrshb GT 0</FPCLINE>
+      <FPCLINE>ENDIF. &quot; IF sy-subrc = 0</FPCLINE>
+      <FPCLINE/>
+      <FPCLINE>* Begin of Change for Defect 2838</FPCLINE>
+      <FPCLINE/>
+      <FPCLINE>* Fetch the Credit Rep Name and Phone Number</FPCLINE>
+      <FPCLINE/>
+      <FPCLINE/>
+      <FPCLINE>*SELECT SINGLE busab</FPCLINE>
+      <FPCLINE>*       from KNB1</FPCLINE>
+      <FPCLINE>*       into lv_crd_grp</FPCLINE>
+      <FPCLINE>*       WHERE kunnr = ls_header-konto</FPCLINE>
+      <FPCLINE>*         and bukrs = ls_header-bukrs.</FPCLINE>
+      <FPCLINE/>
+      <FPCLINE>SELECT SINGLE kkber &quot; Credit Control Area</FPCLINE>
+      <FPCLINE>       FROM t001    &quot; Company Codes</FPCLINE>
+      <FPCLINE>       INTO lv_crd_area</FPCLINE>
+      <FPCLINE>       WHERE bukrs = ls_header-bukrs.</FPCLINE>
+      <FPCLINE>IF sy-subrc = 0.</FPCLINE>
+      <FPCLINE>  SELECT SINGLE sbgrp &quot; Credit representative group for credit management</FPCLINE>
+      <FPCLINE>    FROM knkk         &quot; Customer master credit management: Control area data</FPCLINE>
+      <FPCLINE>    INTO  lv_crd_grp</FPCLINE>
+      <FPCLINE>   WHERE kunnr = ls_header-konto</FPCLINE>
+      <FPCLINE>     AND kkber = lv_crd_area.</FPCLINE>
+      <FPCLINE/>
+      <FPCLINE/>
+      <FPCLINE>  SELECT vkorg     &quot; Sales Organization</FPCLINE>
+      <FPCLINE>         FROM tvko &quot; Organizational Unit: Sales Organizations</FPCLINE>
+      <FPCLINE>         UP TO 1 ROWS</FPCLINE>
+      <FPCLINE>         INTO lv_vkorg</FPCLINE>
+      <FPCLINE>         WHERE bukrs = ls_header-bukrs.</FPCLINE>
+      <FPCLINE>  ENDSELECT.</FPCLINE>
+      <FPCLINE>ENDIF. &quot; IF sy-subrc = 0</FPCLINE>
+      <FPCLINE>* End of Change for Defect 2838</FPCLINE>
+      <FPCLINE/>
+      <FPCLINE>IF sy-subrc = 0.</FPCLINE>
+      <FPCLINE>  SELECT SINGLE stext &quot;Credit Rep Name</FPCLINE>
+      <FPCLINE>    FROM t024b        &quot; Credit management: Credit representative groups</FPCLINE>
+      <FPCLINE>    INTO gv_crd_rep_name</FPCLINE>
+      <FPCLINE>   WHERE sbgrp = lv_crd_grp</FPCLINE>
+      <FPCLINE>     AND kkber = lv_crd_area.</FPCLINE>
+      <FPCLINE/>
+      <FPCLINE>  IF sy-subrc = 0.</FPCLINE>
+      <FPCLINE>    SELECT mvalue2          &quot;Credit Rep Phone Number</FPCLINE>
+      <FPCLINE>      FROM zotc_prc_control &quot; OTC Process Team Control Table</FPCLINE>
+      <FPCLINE>      INTO gv_crd_rep_phone</FPCLINE>
+      <FPCLINE>     UP TO 1 ROWS</FPCLINE>
+      <FPCLINE>*     WHERE vkorg = lc_vkorg     &quot; Defect 2838</FPCLINE>
+      <FPCLINE>     WHERE vkorg = lv_vkorg &quot; Defect 2838</FPCLINE>
+      <FPCLINE>       AND vtweg = lc_vtweg</FPCLINE>
+      <FPCLINE>       AND mprogram = lc_mprogram</FPCLINE>
+      <FPCLINE>       AND mparameter = lc_mparameter</FPCLINE>
+      <FPCLINE>       AND mactive = abap_true</FPCLINE>
+      <FPCLINE>       AND soption = lc_soption</FPCLINE>
+      <FPCLINE>       AND mvalue1 = lv_crd_grp.</FPCLINE>
+      <FPCLINE>    ENDSELECT.</FPCLINE>
+      <FPCLINE>* SY-SUBRC check not required</FPCLINE>
+      <FPCLINE>  ENDIF. &quot; IF sy-subrc = 0</FPCLINE>
+      <FPCLINE>ENDIF. &quot; IF sy-subrc = 0</FPCLINE>
+      <FPCLINE/>
+      <FPCLINE>* ---&gt; Begin of Change for D3_OTC_FDD_0024 by RBANERJ1</FPCLINE>
+      <FPCLINE/>
+      <FPCLINE>IF ls_header-bukrs IS NOT INITIAL.</FPCLINE>
+      <FPCLINE>  lv_bukrs = ls_header-bukrs.</FPCLINE>
+      <FPCLINE>ELSEIF gv_com_code IS NOT INITIAL.</FPCLINE>
+      <FPCLINE>  lv_bukrs = gv_com_code.</FPCLINE>
+      <FPCLINE>ENDIF. &quot; IF ls_header-bukrs IS NOT INITIAL</FPCLINE>
+      <FPCLINE/>
+      <FPCLINE>* ---&gt; Begin of Change for Defect#5755 by U033867</FPCLINE>
+      <FPCLINE>IF lv_bukrs IS NOT INITIAL.</FPCLINE>
+      <FPCLINE>  SELECT SINGLE land1 &quot; Country Key</FPCLINE>
+      <FPCLINE>   INTO lv_land1</FPCLINE>
+      <FPCLINE>   FROM t001             &quot; Company Codes</FPCLINE>
+      <FPCLINE>   WHERE bukrs = lv_bukrs.</FPCLINE>
+      <FPCLINE>  IF sy-subrc = 0.</FPCLINE>
+      <FPCLINE>    SET COUNTRY lv_land1.</FPCLINE>
+      <FPCLINE>  ENDIF. &quot; IF sy-subrc = 0</FPCLINE>
+      <FPCLINE>ENDIF. &quot; IF lv_bukrs IS NOT INITIAL</FPCLINE>
+      <FPCLINE/>
+      <FPCLINE>* ---&gt; End of Change for Defect#5755 by U033867</FPCLINE>
+      <FPCLINE/>
+      <FPCLINE/>
+      <FPCLINE>CLEAR lv_lockb.</FPCLINE>
+      <FPCLINE>SELECT lockb     &quot; Key of the Lockbox to Which the Customer Is To Pay</FPCLINE>
+      <FPCLINE>      FROM t049l &quot; Lockboxes at our House Banks</FPCLINE>
+      <FPCLINE>      INTO lv_lockb</FPCLINE>
+      <FPCLINE>     UP TO 1 ROWS</FPCLINE>
+      <FPCLINE>     WHERE bukrs = lv_bukrs.</FPCLINE>
+      <FPCLINE>ENDSELECT.</FPCLINE>
+      <FPCLINE>IF sy-subrc IS NOT INITIAL. &quot;if lockbox not found, It is a D3 scenario.</FPCLINE>
+      <FPCLINE/>
+      <FPCLINE>*--&quot;check for D3, if true, fetch Phone number only for D3.</FPCLINE>
+      <FPCLINE>  PERFORM f_get_phone_number USING lv_bukrs</FPCLINE>
+      <FPCLINE>                                   ls_header-land1</FPCLINE>
+      <FPCLINE>                          CHANGING gv_crd_rep_phone.</FPCLINE>
+      <FPCLINE/>
+      <FPCLINE> &quot;Get Sales Org. and Bank Information</FPCLINE>
+      <FPCLINE>  CLEAR : i_lockbox,</FPCLINE>
+      <FPCLINE>          gv_lines1,</FPCLINE>
+      <FPCLINE>          gv_lines2,</FPCLINE>
+      <FPCLINE>          gv_lines3,</FPCLINE>
+      <FPCLINE>          gv_lines4,</FPCLINE>
+      <FPCLINE>          gv_lines5,</FPCLINE>
+      <FPCLINE>          gv_lines6,</FPCLINE>
+      <FPCLINE>          gv_lines7,</FPCLINE>
+      <FPCLINE>          gv_lines8.</FPCLINE>
+      <FPCLINE/>
+      <FPCLINE>*---&quot;get Bank and Sales Org. info.</FPCLINE>
+      <FPCLINE>  PERFORM f_get_bank_info USING   lv_bukrs</FPCLINE>
+      <FPCLINE>                                  ls_header-hwaer</FPCLINE>
+      <FPCLINE>                         CHANGING wa_bank_info</FPCLINE>
+      <FPCLINE>                                  i_lockbox.</FPCLINE>
+      <FPCLINE>ENDIF. &quot; IF sy-subrc IS NOT INITIAL</FPCLINE>
+      <FPCLINE/>
+      <FPCLINE>* &lt;--- End of Change for D3_OTC_FDD_0024 by RBANERJ1</FPCLINE>
+      <FPCLINE/>
+      <FPCLINE>* Update the item description field. This is cleared in the</FPCLINE>
+      <FPCLINE>* standard driver program. So, the same is manually fetched</FPCLINE>
+      <FPCLINE>* here.</FPCLINE>
+      <FPCLINE>IF NOT lt_item[] IS INITIAL.</FPCLINE>
+      <FPCLINE>  SELECT bukrs belnr gjahr buzei sgtxt</FPCLINE>
+      <FPCLINE>    FROM bseg &quot; Accounting Document Segment</FPCLINE>
+      <FPCLINE>    INTO TABLE li_item_sgtxt</FPCLINE>
+      <FPCLINE>     FOR ALL ENTRIES IN lt_item</FPCLINE>
+      <FPCLINE>   WHERE bukrs = lt_item-bukrs</FPCLINE>
+      <FPCLINE>     AND belnr = lt_item-belnr</FPCLINE>
+      <FPCLINE>     AND gjahr = lt_item-gjahr</FPCLINE>
+      <FPCLINE>     AND buzei = lt_item-buzei.</FPCLINE>
+      <FPCLINE>  IF sy-subrc = 0.</FPCLINE>
+      <FPCLINE>    SORT li_item_sgtxt BY bukrs belnr gjahr buzei.</FPCLINE>
+      <FPCLINE>  ENDIF. &quot; IF sy-subrc = 0</FPCLINE>
+      <FPCLINE>  DATA : lv_decform TYPE char12. &quot; Decform of type CHAR12</FPCLINE>
+      <FPCLINE/>
+      <FPCLINE>  LOOP AT lt_item ASSIGNING &lt;lfs_item&gt;.</FPCLINE>
+      <FPCLINE>    READ TABLE li_item_sgtxt ASSIGNING &lt;lwa_item_sgtxt&gt;</FPCLINE>
+      <FPCLINE>    WITH KEY bukrs = &lt;lfs_item&gt;-bukrs</FPCLINE>
+      <FPCLINE>             belnr = &lt;lfs_item&gt;-belnr</FPCLINE>
+      <FPCLINE>             gjahr = &lt;lfs_item&gt;-gjahr</FPCLINE>
+      <FPCLINE>             buzei = &lt;lfs_item&gt;-buzei BINARY SEARCH.</FPCLINE>
+      <FPCLINE>    IF sy-subrc = 0.</FPCLINE>
+      <FPCLINE>      &lt;lfs_item&gt;-sgtxt = &lt;lwa_item_sgtxt&gt;-sgtxt.</FPCLINE>
+      <FPCLINE>    ENDIF. &quot; IF sy-subrc = 0</FPCLINE>
+      <FPCLINE>* ---&gt; Begin of Change for Defect#5755 by RBANERJ1</FPCLINE>
+      <FPCLINE>    IF &lt;lfs_item&gt;-bldat IS NOT INITIAL.</FPCLINE>
+      <FPCLINE>      PERFORM f_get_date_format USING &lt;lfs_item&gt;-bldat   &quot;doc. date</FPCLINE>
+      <FPCLINE>                                      wa_bank_info-banka &quot;check if D3</FPCLINE>
+      <FPCLINE>                                CHANGING gv_date.</FPCLINE>
+      <FPCLINE>    ENDIF. &quot; IF &lt;lfs_item&gt;-bldat IS NOT INITIAL</FPCLINE>
+      <FPCLINE>* &lt;--- End of Change for Defect#5755 by RBANERJ1</FPCLINE>
+      <FPCLINE/>
+      <FPCLINE>* ---&gt; Begin of Change for Defect#5755 by U033867</FPCLINE>
+      <FPCLINE>*VTEXT field is used in item structure to show amount as per country</FPCLINE>
+      <FPCLINE>*format</FPCLINE>
+      <FPCLINE>    CLEAR &lt;lfs_item&gt;-vtext .</FPCLINE>
+      <FPCLINE>    WRITE &lt;lfs_item&gt;-wrshb TO &lt;lfs_item&gt;-vtext .</FPCLINE>
+      <FPCLINE>    CONDENSE &lt;lfs_item&gt;-vtext.</FPCLINE>
+      <FPCLINE>* ---&gt; End of Change for Defect#5755 by U033867</FPCLINE>
+      <FPCLINE>  ENDLOOP. &quot; LOOP AT lt_item ASSIGNING &lt;lfs_item&gt;</FPCLINE>
+      <FPCLINE>ENDIF. &quot; IF NOT lt_item[] IS INITIAL</FPCLINE>
+      <FPCLINE/>
+      <FPCLINE>* ---&gt; Begin of Change for Defect#5755 by RBANERJ1</FPCLINE>
+      <FPCLINE>IF gv_doc_date IS NOT INITIAL.</FPCLINE>
+      <FPCLINE>  PERFORM f_get_date_format USING gv_doc_date        &quot;doc. date</FPCLINE>
+      <FPCLINE>                                  wa_bank_info-banka &quot;check if D3</FPCLINE>
+      <FPCLINE>                         CHANGING gv_date_doc.</FPCLINE>
+      <FPCLINE>ENDIF. &quot; IF gv_doc_date IS NOT INITIAL</FPCLINE>
+      <FPCLINE>* &lt;--- End of Change for Defect#5755 by RBANERJ1</FPCLINE>
+      <FPCLINE>* To print the Watermark, the image is fetched from the repository. This</FPCLINE>
+      <FPCLINE>* must be done only in non-production servers</FPCLINE>
+      <FPCLINE>* Check the Production server from TVARVC table</FPCLINE>
+      <FPCLINE/>
+      <FPCLINE>* ---&gt; Begin of Change for D3_OTC_FDD_0024 by RBANERJ1</FPCLINE>
+      <FPCLINE>&quot;As per on-site review point, TVARVC should be replaced by EMI</FPCLINE>
+      <FPCLINE/>
+      <FPCLINE>*SELECT SINGLE low &quot; ABAP/4: Selection value (LOW or HIGH value, external format)</FPCLINE>
+      <FPCLINE>*  FROM tvarvc     &quot; Table of Variant Variables (Client-Specific)</FPCLINE>
+      <FPCLINE>*  INTO lv_prod</FPCLINE>
+      <FPCLINE>* WHERE name = lc_prod_name</FPCLINE>
+      <FPCLINE>*   AND type = lc_type</FPCLINE>
+      <FPCLINE>*   AND numb = lc_numb.</FPCLINE>
+      <FPCLINE/>
+      <FPCLINE>*Get constants from EMI tools</FPCLINE>
+      <FPCLINE>CALL FUNCTION &apos;ZDEV_ENHANCEMENT_STATUS_CHECK&apos;</FPCLINE>
+      <FPCLINE>  EXPORTING</FPCLINE>
+      <FPCLINE>    iv_enhancement_no = lc_fdd_0024</FPCLINE>
+      <FPCLINE>  TABLES</FPCLINE>
+      <FPCLINE>    tt_enh_status     = li_status.</FPCLINE>
+      <FPCLINE>*Deleting records where active check is not marked</FPCLINE>
+      <FPCLINE>DELETE li_status WHERE active = abap_false.</FPCLINE>
+      <FPCLINE>IF li_status IS NOT INITIAL.</FPCLINE>
+      <FPCLINE>  READ TABLE li_status ASSIGNING &lt;lfs_status&gt;</FPCLINE>
+      <FPCLINE>  WITH KEY criteria = lc_sysid.</FPCLINE>
+      <FPCLINE>* &lt;--- End of Change for D3_OTC_FDD_0024 by RBANERJ1</FPCLINE>
+      <FPCLINE>  IF sy-subrc = 0.</FPCLINE>
+      <FPCLINE/>
+      <FPCLINE>* ---&gt; Begin of Change for D3_OTC_FDD_0024 by RBANERJ1</FPCLINE>
+      <FPCLINE>    lv_prod = &lt;lfs_status&gt;-sel_low.</FPCLINE>
+      <FPCLINE>* &lt;--- End of Change for D3_OTC_FDD_0024 by RBANERJ1</FPCLINE>
+      <FPCLINE>    IF sy-sysid = lv_prod.</FPCLINE>
+      <FPCLINE>      gv_production = abap_true.</FPCLINE>
+      <FPCLINE>*If not Production server then convert watermark image to Binary format</FPCLINE>
+      <FPCLINE>    ELSE. &quot; ELSE -&gt; IF sy-sysid = lv_prod</FPCLINE>
+      <FPCLINE>      CALL METHOD cl_ssf_xsf_utilities=&gt;get_bds_graphic_as_bmp</FPCLINE>
+      <FPCLINE>        EXPORTING</FPCLINE>
+      <FPCLINE>          p_object       = lc_graphics</FPCLINE>
+      <FPCLINE>          p_name         = lc_draft_image</FPCLINE>
+      <FPCLINE>          p_id           = lc_image_id</FPCLINE>
+      <FPCLINE>          p_btype        = lc_image_type</FPCLINE>
+      <FPCLINE>        RECEIVING</FPCLINE>
+      <FPCLINE>          p_bmp          = gv_image_bin</FPCLINE>
+      <FPCLINE>        EXCEPTIONS</FPCLINE>
+      <FPCLINE>          not_found      = 1</FPCLINE>
+      <FPCLINE>          internal_error = 2</FPCLINE>
+      <FPCLINE>          OTHERS         = 3.</FPCLINE>
+      <FPCLINE>* No sy-subrc check, as no error msg can be given if the image not available</FPCLINE>
+      <FPCLINE>    ENDIF. &quot; IF sy-sysid = lv_prod</FPCLINE>
+      <FPCLINE>  ENDIF. &quot; IF sy-subrc = 0</FPCLINE>
+      <FPCLINE>* ---&gt; Begin of Change for D3_OTC_FDD_0024 by RBANERJ1</FPCLINE>
+      <FPCLINE>ENDIF. &quot; IF li_status IS NOT INITIAL</FPCLINE>
+      <FPCLINE>* &lt;--- End of Change for D3_OTC_FDD_0024 by RBANERJ1</FPCLINE>
+      <FPCLINE/>
+      <FPCLINE/>
+      <FPCLINE>* Logo: convert into binary format</FPCLINE>
+      <FPCLINE>CALL METHOD cl_ssf_xsf_utilities=&gt;get_bds_graphic_as_bmp</FPCLINE>
+      <FPCLINE>  EXPORTING</FPCLINE>
+      <FPCLINE>    p_object       = lc_graphics</FPCLINE>
+      <FPCLINE>    p_name         = lc_logo_image</FPCLINE>
+      <FPCLINE>    p_id           = lc_image_id</FPCLINE>
+      <FPCLINE>    p_btype        = lc_image_type</FPCLINE>
+      <FPCLINE>  RECEIVING</FPCLINE>
+      <FPCLINE>    p_bmp          = gv_logo_bin</FPCLINE>
+      <FPCLINE>  EXCEPTIONS</FPCLINE>
+      <FPCLINE>    not_found      = 1</FPCLINE>
+      <FPCLINE>    internal_error = 2</FPCLINE>
+      <FPCLINE>    OTHERS         = 3.</FPCLINE>
+      <FPCLINE>* No sy-subrc check, as no error msg can be given if the image not available</FPCLINE>
+      <FPCLINE/>
+      <FPCLINE>REFRESH: li_item_sgtxt.</FPCLINE>
+     </INITIALIZATION>
+     <FORMS>
+      <FPCLINE>************************************************************************</FPCLINE>
+      <FPCLINE>* PROGRAM    :  ZOTCP0024_CREDIT_DEBIT_FORM                            *</FPCLINE>
+      <FPCLINE>* TITLE      :  Interface program for AR Credit/Debit form -           *</FPCLINE>
+      <FPCLINE>*               Correspondence type ZSAP11</FPCLINE>
+      <FPCLINE>* DEVELOPER  :  Moushumi BHattacharya                                  *</FPCLINE>
+      <FPCLINE>* OBJECT TYPE:  Interface                                              *</FPCLINE>
+      <FPCLINE>* SAP RELEASE:  SAP ECC 6.0                                            *</FPCLINE>
+      <FPCLINE>*----------------------------------------------------------------------*</FPCLINE>
+      <FPCLINE>* WRICEF ID:  D2_OTC_FDD_0024                                          *</FPCLINE>
+      <FPCLINE>*----------------------------------------------------------------------*</FPCLINE>
+      <FPCLINE>* DESCRIPTION: This is the subroutine to get language from EMI         *</FPCLINE>
+      <FPCLINE>*              maintenance based on country codes                      *</FPCLINE>
+      <FPCLINE>*----------------------------------------------------------------------*</FPCLINE>
+      <FPCLINE>* MODIFICATION HISTORY:                                                *</FPCLINE>
+      <FPCLINE>*======================================================================*</FPCLINE>
+      <FPCLINE>* DATE        USER     TRANSPORT  DESCRIPTION                          *</FPCLINE>
+      <FPCLINE>* =========== ======== ========== =====================================*</FPCLINE>
+      <FPCLINE>* 06-Mar-2015 MBHATTA1 E2DK906557 Defect 4537                          *</FPCLINE>
+      <FPCLINE>*                                                                      *</FPCLINE>
+      <FPCLINE>* 21-Sep-2016 RBANERJ1 E1DK921923 Changes for D3_OTC_FDD_0024          *</FPCLINE>
+      <FPCLINE>*                                Display sales org. address in Remit to*</FPCLINE>
+      <FPCLINE>*                                Add Bank information and translation  *</FPCLINE>
+      <FPCLINE>*                                for German,French and Spanish language*</FPCLINE>
+      <FPCLINE>* 02-Nov-2016 RBANERJ1 E1DK921923 Defect # 5755 date format changes    *</FPCLINE>
+      <FPCLINE>* 02-Nov-2016 u033867 E1DK921923 Defect # 5755 Amount format changes   *</FPCLINE>
+      <FPCLINE>*======================================================================*</FPCLINE>
+      <FPCLINE>*&amp;---------------------------------------------------------------------*</FPCLINE>
+      <FPCLINE>*&amp;      Form  f_get_language</FPCLINE>
+      <FPCLINE>*&amp;---------------------------------------------------------------------*</FPCLINE>
+      <FPCLINE>*       Fetch language form EMI tool</FPCLINE>
+      <FPCLINE>*----------------------------------------------------------------------*</FPCLINE>
+      <FPCLINE>*      --&gt; fp_bukrs        Company code</FPCLINE>
+      <FPCLINE>*      &lt;-- fp_langu        Language</FPCLINE>
+      <FPCLINE>*----------------------------------------------------------------------*</FPCLINE>
+      <FPCLINE>FORM f_get_language</FPCLINE>
+      <FPCLINE>               USING    fp_bukrs  TYPE bukrs  &quot; Company Code</FPCLINE>
+      <FPCLINE>               CHANGING fp_langu  TYPE spras. &quot; Language Key</FPCLINE>
+      <FPCLINE>  CONSTANTS:</FPCLINE>
+      <FPCLINE>    lc_null       TYPE char4         VALUE &apos;NULL&apos;,            &quot;Null criteria</FPCLINE>
+      <FPCLINE>    lc_bukrs_lang TYPE z_criteria    VALUE &apos;BUKRS_LANG&apos;,      &quot;Company code.&amp;l anguage</FPCLINE>
+      <FPCLINE>    lc_fdd_0024   TYPE z_enhancement VALUE &apos;D2_OTC_FDD_0024&apos;, &quot; Enh. No.</FPCLINE>
+      <FPCLINE>    lc_en         TYPE sylangu       VALUE &apos;EN&apos;.              &quot; Language Key of Current Text Environment</FPCLINE>
+      <FPCLINE/>
+      <FPCLINE>  FIELD-SYMBOLS:</FPCLINE>
+      <FPCLINE>    &lt;lfs_status&gt; TYPE zdev_enh_status. &quot; Field symbol for status table</FPCLINE>
+      <FPCLINE/>
+      <FPCLINE>  DATA:</FPCLINE>
+      <FPCLINE>*  Enhancement Status internal table</FPCLINE>
+      <FPCLINE>    li_status  TYPE TABLE OF zdev_enh_status. &quot; Enhancement Status</FPCLINE>
+      <FPCLINE/>
+      <FPCLINE>*Get constants from EMI tools</FPCLINE>
+      <FPCLINE>  CALL FUNCTION &apos;ZDEV_ENHANCEMENT_STATUS_CHECK&apos;</FPCLINE>
+      <FPCLINE>    EXPORTING</FPCLINE>
+      <FPCLINE>      iv_enhancement_no = lc_fdd_0024 &quot;D2_OTC_FDD_0024</FPCLINE>
+      <FPCLINE>    TABLES</FPCLINE>
+      <FPCLINE>      tt_enh_status     = li_status.</FPCLINE>
+      <FPCLINE/>
+      <FPCLINE>*Deleting records where active check is not marked</FPCLINE>
+      <FPCLINE>  DELETE li_status WHERE active = abap_false.</FPCLINE>
+      <FPCLINE>* ---&gt; Begin of Change for Defect#5755 by U033867</FPCLINE>
+      <FPCLINE>  i_status[] = li_status[].</FPCLINE>
+      <FPCLINE>* ---&gt; End of Change for Defect#5755 by U033867</FPCLINE>
+      <FPCLINE>  READ TABLE li_status WITH KEY criteria = lc_null &quot;NULL</FPCLINE>
+      <FPCLINE>                                TRANSPORTING NO FIELDS.</FPCLINE>
+      <FPCLINE>  IF sy-subrc EQ 0.</FPCLINE>
+      <FPCLINE/>
+      <FPCLINE>    READ TABLE li_status ASSIGNING &lt;lfs_status&gt;</FPCLINE>
+      <FPCLINE>    WITH KEY criteria = lc_bukrs_lang &quot;Company Code &amp; Lang</FPCLINE>
+      <FPCLINE>             sel_low  = fp_bukrs.</FPCLINE>
+      <FPCLINE/>
+      <FPCLINE>    IF sy-subrc EQ 0.</FPCLINE>
+      <FPCLINE>*If language key is found in T002 table then passing it to fp_p_lang</FPCLINE>
+      <FPCLINE>*else passing default language key&apos;E&apos; that is English to fp_p_lang</FPCLINE>
+      <FPCLINE>      SELECT SINGLE</FPCLINE>
+      <FPCLINE>        spras &quot;Language Key</FPCLINE>
+      <FPCLINE>        FROM t002 INTO fp_langu</FPCLINE>
+      <FPCLINE>        WHERE laiso = &lt;lfs_status&gt;-sel_high.</FPCLINE>
+      <FPCLINE>      IF sy-subrc NE 0. &quot; if record not found in T002 table</FPCLINE>
+      <FPCLINE>        fp_langu = lc_en. &quot;assigning default language</FPCLINE>
+      <FPCLINE>      ENDIF. &quot; IF sy-subrc NE 0</FPCLINE>
+      <FPCLINE>*If Company Code &amp; language key is not maintained in EMI then</FPCLINE>
+      <FPCLINE>*assigning default language key &apos;E&apos; that is English to fp_p_lang.</FPCLINE>
+      <FPCLINE>    ELSE. &quot; ELSE -&gt; IF sy-subrc EQ 0</FPCLINE>
+      <FPCLINE>      fp_langu = lc_en. &quot;assigning default language</FPCLINE>
+      <FPCLINE>    ENDIF. &quot; IF sy-subrc EQ 0</FPCLINE>
+      <FPCLINE>  ENDIF. &quot; IF sy-subrc EQ 0</FPCLINE>
+      <FPCLINE>ENDFORM. &quot;f_get_language</FPCLINE>
+      <FPCLINE>* ---&gt; Begin of Change for Defect#5755 by RBANERJ1</FPCLINE>
+      <FPCLINE>*&amp;---------------------------------------------------------------------*</FPCLINE>
+      <FPCLINE>*&amp;      Form  f_get_date_format</FPCLINE>
+      <FPCLINE>*&amp;---------------------------------------------------------------------*</FPCLINE>
+      <FPCLINE>*       Get Date Format</FPCLINE>
+      <FPCLINE>*----------------------------------------------------------------------*</FPCLINE>
+      <FPCLINE>*      --&gt;FP_DATE      Date</FPCLINE>
+      <FPCLINE>*      &lt;--FP_DATE_NEW  Converted date</FPCLINE>
+      <FPCLINE>*----------------------------------------------------------------------*</FPCLINE>
+      <FPCLINE>FORM f_get_date_format USING fp_date     TYPE bldat  &quot; Document Date in Document</FPCLINE>
+      <FPCLINE>                             fp_bank     TYPE banka  &quot; Name of bank</FPCLINE>
+      <FPCLINE>                    CHANGING fp_date_new TYPE char15. &quot; Date_new of type CHAR15</FPCLINE>
+      <FPCLINE/>
+      <FPCLINE/>
+      <FPCLINE>  DATA : lv_langu  TYPE spras,  &quot; Language Key</FPCLINE>
+      <FPCLINE>         lv_format TYPE char15. &quot; Format of type CHAR15</FPCLINE>
+      <FPCLINE/>
+      <FPCLINE>* ---&gt; Begin of delete for Defect#5755 by U033867</FPCLINE>
+      <FPCLINE>*  CONSTANTS : lc_d3 TYPE char15 VALUE &apos;DD-MMM-YYYY&apos;, &quot; D3 date format of type CHAR15</FPCLINE>
+      <FPCLINE>*              lc_d2 TYPE char15 VALUE &apos;MM-DD-YYYY&apos;.  &quot; D2 date format of type CHAR15</FPCLINE>
+      <FPCLINE>* ---&gt; End of delete for Defect#5755 by U033867</FPCLINE>
+      <FPCLINE>* ---&gt; Begin of Change for Defect#5755 by U033867</FPCLINE>
+      <FPCLINE>  CONSTANTS:</FPCLINE>
+      <FPCLINE>  lc_null       TYPE char4         VALUE &apos;NULL&apos;,            &quot;Null criteria</FPCLINE>
+      <FPCLINE>  lc_date       TYPE z_criteria    VALUE &apos;DATE&apos;,            &quot;Company code.&amp;l anguage</FPCLINE>
+      <FPCLINE>  lc_fdd_0024   TYPE z_enhancement VALUE &apos;D2_OTC_FDD_0024&apos;, &quot; Enh. No.</FPCLINE>
+      <FPCLINE>  lc_d3         TYPE fpb_low VALUE &apos;D3&apos;,                    &quot; D3 date format of type CHAR15</FPCLINE>
+      <FPCLINE>  lc_d2         TYPE fpb_low VALUE &apos;D2&apos;.                    &quot; D2 date format of type CHAR15</FPCLINE>
+      <FPCLINE/>
+      <FPCLINE>  FIELD-SYMBOLS:</FPCLINE>
+      <FPCLINE>    &lt;lfs_status&gt; TYPE zdev_enh_status. &quot; Field symbol for status table</FPCLINE>
+      <FPCLINE/>
+      <FPCLINE>  DATA:</FPCLINE>
+      <FPCLINE>*  Enhancement Status internal table</FPCLINE>
+      <FPCLINE>    li_status  TYPE TABLE OF zdev_enh_status. &quot; Enhancement Status</FPCLINE>
+      <FPCLINE>* ---&gt; End of Change for Defect#5755 by U033867</FPCLINE>
+      <FPCLINE/>
+      <FPCLINE>  lv_langu = gv_langu.</FPCLINE>
+      <FPCLINE>* ---&gt; Begin of Change for Defect#5755 by U033867</FPCLINE>
+      <FPCLINE>*Get constants from EMI tools</FPCLINE>
+      <FPCLINE>  IF i_status[] IS NOT INITIAL.</FPCLINE>
+      <FPCLINE>    li_status[] = i_status[].</FPCLINE>
+      <FPCLINE>  ELSE. &quot; ELSE -&gt; IF i_status[] IS NOT INITIAL</FPCLINE>
+      <FPCLINE>    CALL FUNCTION &apos;ZDEV_ENHANCEMENT_STATUS_CHECK&apos;</FPCLINE>
+      <FPCLINE>      EXPORTING</FPCLINE>
+      <FPCLINE>        iv_enhancement_no = lc_fdd_0024 &quot;D2_OTC_FDD_0024</FPCLINE>
+      <FPCLINE>      TABLES</FPCLINE>
+      <FPCLINE>        tt_enh_status     = li_status.</FPCLINE>
+      <FPCLINE/>
+      <FPCLINE>*Deleting records where active check is not marked</FPCLINE>
+      <FPCLINE>    DELETE li_status WHERE active = abap_false.</FPCLINE>
+      <FPCLINE>  ENDIF. &quot; IF i_status[] IS NOT INITIAL</FPCLINE>
+      <FPCLINE>*Binary search is not used as table has few entries</FPCLINE>
+      <FPCLINE>  READ TABLE li_status WITH KEY criteria = lc_null &quot;NULL</FPCLINE>
+      <FPCLINE>                                TRANSPORTING NO FIELDS.</FPCLINE>
+      <FPCLINE>  IF sy-subrc EQ 0.</FPCLINE>
+      <FPCLINE>    IF fp_bank IS NOT INITIAL. &quot;D3 country</FPCLINE>
+      <FPCLINE>*Binary search is not used as table has few entries</FPCLINE>
+      <FPCLINE>      READ TABLE li_status ASSIGNING &lt;lfs_status&gt;</FPCLINE>
+      <FPCLINE>      WITH KEY criteria = lc_date &quot;Company Code &amp; Lang</FPCLINE>
+      <FPCLINE>               sel_low  = lc_d3.</FPCLINE>
+      <FPCLINE/>
+      <FPCLINE>      IF sy-subrc EQ 0.</FPCLINE>
+      <FPCLINE>        lv_format = &lt;lfs_status&gt;-sel_high.</FPCLINE>
+      <FPCLINE>      ENDIF. &quot; IF sy-subrc EQ 0</FPCLINE>
+      <FPCLINE>    ELSE. &quot; ELSE -&gt; IF fp_bank IS NOT INITIAL</FPCLINE>
+      <FPCLINE>*Binary search is not used as table has few entries</FPCLINE>
+      <FPCLINE>      READ TABLE li_status ASSIGNING &lt;lfs_status&gt;</FPCLINE>
+      <FPCLINE>      WITH KEY criteria = lc_date &quot;Company Code &amp; Lang</FPCLINE>
+      <FPCLINE>           sel_low  = lc_d2.</FPCLINE>
+      <FPCLINE/>
+      <FPCLINE>      IF sy-subrc EQ 0.</FPCLINE>
+      <FPCLINE>        lv_format = &lt;lfs_status&gt;-sel_high.</FPCLINE>
+      <FPCLINE>      ENDIF. &quot; IF sy-subrc EQ 0</FPCLINE>
+      <FPCLINE/>
+      <FPCLINE>    ENDIF. &quot; IF fp_bank IS NOT INITIAL</FPCLINE>
+      <FPCLINE>  ENDIF. &quot; IF sy-subrc EQ 0</FPCLINE>
+      <FPCLINE>* ---&gt; End of Change for Defect#5755 by U033867</FPCLINE>
+      <FPCLINE>* ---&gt; Begin of delete for Defect#5755 by   U033867</FPCLINE>
+      <FPCLINE>*  IF fp_bank IS NOT INITIAL. &quot;D3 country</FPCLINE>
+      <FPCLINE>*    lv_format = lc_d3.</FPCLINE>
+      <FPCLINE>*  ELSE. &quot; ELSE -&gt; IF fp_bank IS NOT INITIAL</FPCLINE>
+      <FPCLINE>*    lv_format = lc_d2.</FPCLINE>
+      <FPCLINE>*  ENDIF. &quot; IF fp_bank IS NOT INITIAL</FPCLINE>
+      <FPCLINE>* ---&gt; End of delete for Defect#5755 by U033867</FPCLINE>
+      <FPCLINE>  CALL FUNCTION &apos;ZDEV_DATE_FORMAT&apos;</FPCLINE>
+      <FPCLINE>    EXPORTING</FPCLINE>
+      <FPCLINE>      i_date       = fp_date</FPCLINE>
+      <FPCLINE>      i_format     = lv_format</FPCLINE>
+      <FPCLINE>      i_langu      = lv_langu</FPCLINE>
+      <FPCLINE>    IMPORTING</FPCLINE>
+      <FPCLINE>      e_date_final = fp_date_new.</FPCLINE>
+      <FPCLINE>ENDFORM. &quot;f_get_date_format</FPCLINE>
+      <FPCLINE>* &lt;--- End of Change for Defect#5755 by RBANERJ1</FPCLINE>
+      <FPCLINE>* ---&gt; Begin of Change for D3_OTC_FDD_0024 by RBANERJ1</FPCLINE>
+      <FPCLINE>*&amp;---------------------------------------------------------------------*</FPCLINE>
+      <FPCLINE>*&amp;      Form  F_get_phone_number</FPCLINE>
+      <FPCLINE>*&amp;---------------------------------------------------------------------*</FPCLINE>
+      <FPCLINE>*       Get Phone Number</FPCLINE>
+      <FPCLINE>*----------------------------------------------------------------------*</FPCLINE>
+      <FPCLINE>*      --&gt;FP_BUKRS   Company Code</FPCLINE>
+      <FPCLINE>*      --&gt;FP_COUNTRY Country Key</FPCLINE>
+      <FPCLINE>*      &lt;--FP_PHONE   Select Options: Value High</FPCLINE>
+      <FPCLINE>*----------------------------------------------------------------------*</FPCLINE>
+      <FPCLINE>FORM f_get_phone_number USING fp_bukrs TYPE bukrs          &quot; Company Code</FPCLINE>
+      <FPCLINE>                              fp_country TYPE land1_gp     &quot; Country Key</FPCLINE>
+      <FPCLINE>                     CHANGING fp_phone TYPE z_mvalue_high. &quot; Select Options: Value High</FPCLINE>
+      <FPCLINE/>
+      <FPCLINE>  DATA :  lv_vkorg TYPE vkorg,                     &quot; Sales Organization</FPCLINE>
+      <FPCLINE>          lv_vtweg TYPE vtweg,                     &quot;Distribution Channel</FPCLINE>
+      <FPCLINE>          li_zotc_prc_control     TYPE ty_t_zotc_prc_control,</FPCLINE>
+      <FPCLINE>          li_zotc_prc_control_tmp TYPE ty_t_zotc_prc_control,</FPCLINE>
+      <FPCLINE>          li_status TYPE TABLE OF zdev_enh_status, &quot; Enhancement Status</FPCLINE>
+      <FPCLINE>          li_t024b  TYPE ty_t_t024b.</FPCLINE>
+      <FPCLINE/>
+      <FPCLINE>  FIELD-SYMBOLS : &lt;lfs_zotc_prc_control&gt; TYPE ty_zotc_prc_control,</FPCLINE>
+      <FPCLINE>                  &lt;lfs_status&gt; TYPE zdev_enh_status. &quot; Field symbol for status table</FPCLINE>
+      <FPCLINE/>
+      <FPCLINE>  CONSTANTS : lc_mprogram   TYPE programm        VALUE &apos;ZOTCP0024_CREDIT_DEBIT_FORM&apos;, &quot;&apos;ZOTC0024_CREDIT_DEBIT_FORM&apos;, &quot;ABAP Program Name</FPCLINE>
+      <FPCLINE>              lc_mparameter TYPE enhee_parameter VALUE &apos;Z_CREDIT_REP_PHONE&apos;,          &quot;Parameter</FPCLINE>
+      <FPCLINE>              lc_vtweg      TYPE z_criteria      VALUE &apos;VTWEG&apos;,                       &quot;Distribution Channel</FPCLINE>
+      <FPCLINE>              lc_fdd_0024   TYPE z_enhancement   VALUE &apos;D2_OTC_FDD_0024&apos;,             &quot; Enh. No.</FPCLINE>
+      <FPCLINE>              lc_star       TYPE char1           VALUE &apos;*&apos;,                           &quot; Star of type CHAR1</FPCLINE>
+      <FPCLINE>              lc_soption    TYPE rmsae_option    VALUE &apos;EQ&apos;.                          &quot;Selection Option</FPCLINE>
+      <FPCLINE/>
+      <FPCLINE/>
+      <FPCLINE>  lv_vkorg = fp_bukrs.</FPCLINE>
+      <FPCLINE/>
+      <FPCLINE>*Get constants from EMI tools</FPCLINE>
+      <FPCLINE>  CALL FUNCTION &apos;ZDEV_ENHANCEMENT_STATUS_CHECK&apos;</FPCLINE>
+      <FPCLINE>    EXPORTING</FPCLINE>
+      <FPCLINE>      iv_enhancement_no = lc_fdd_0024</FPCLINE>
+      <FPCLINE>    TABLES</FPCLINE>
+      <FPCLINE>      tt_enh_status     = li_status.</FPCLINE>
+      <FPCLINE/>
+      <FPCLINE>*Deleting records where active check is not marked</FPCLINE>
+      <FPCLINE>  DELETE li_status WHERE active = abap_false.</FPCLINE>
+      <FPCLINE>  IF li_status IS NOT INITIAL.</FPCLINE>
+      <FPCLINE/>
+      <FPCLINE>    IF lv_vkorg IS NOT INITIAL.</FPCLINE>
+      <FPCLINE>      READ TABLE li_status ASSIGNING &lt;lfs_status&gt;</FPCLINE>
+      <FPCLINE>                           WITH KEY criteria = lc_vtweg.</FPCLINE>
+      <FPCLINE>**Begin of Delete by u034087 D3_OTC_FDD_0024</FPCLINE>
+      <FPCLINE>*                            sel_low  = fp_bukrs. &quot;company code</FPCLINE>
+      <FPCLINE>**End of Delete by u034087 D3_OTC_FDD_0024</FPCLINE>
+      <FPCLINE>      IF sy-subrc IS INITIAL.</FPCLINE>
+      <FPCLINE>**Begin of Delete by u034087 D3_OTC_FDD_0024</FPCLINE>
+      <FPCLINE>*        lv_vtweg = &lt;lfs_status&gt;-sel_high.</FPCLINE>
+      <FPCLINE>**Begin of Delete by u034087 D3_OTC_FDD_0024</FPCLINE>
+      <FPCLINE>**Begin of Change by u034087 D3_OTC_FDD_0024</FPCLINE>
+      <FPCLINE>        lv_vtweg = &lt;lfs_status&gt;-sel_low.</FPCLINE>
+      <FPCLINE>**End of Change by u034087 D3_OTC_FDD_0024</FPCLINE>
+      <FPCLINE>        SELECT vkorg        &quot; Sales Organization</FPCLINE>
+      <FPCLINE>               vtweg        &quot; Distribution Channel</FPCLINE>
+      <FPCLINE>               mprogram     &quot; ABAP Program Name</FPCLINE>
+      <FPCLINE>               mparameter   &quot; Parameter</FPCLINE>
+      <FPCLINE>               mactive      &quot; Active or Inactive Indicator</FPCLINE>
+      <FPCLINE>               soption      &quot; Selection Option</FPCLINE>
+      <FPCLINE>               mvalue1      &quot; Select Options: Value Low</FPCLINE>
+      <FPCLINE>               mvalue2      &quot;Credit Rep Phone Number</FPCLINE>
+      <FPCLINE>      FROM zotc_prc_control &quot; OTC Process Team Control Table</FPCLINE>
+      <FPCLINE>      INTO TABLE li_zotc_prc_control</FPCLINE>
+      <FPCLINE>      WHERE vkorg = lv_vkorg</FPCLINE>
+      <FPCLINE>       AND vtweg = lv_vtweg</FPCLINE>
+      <FPCLINE>       AND mprogram = lc_mprogram</FPCLINE>
+      <FPCLINE>       AND mparameter = lc_mparameter</FPCLINE>
+      <FPCLINE>       AND mactive = abap_true</FPCLINE>
+      <FPCLINE>       AND soption = lc_soption.</FPCLINE>
+      <FPCLINE/>
+      <FPCLINE>        IF sy-subrc IS INITIAL.</FPCLINE>
+      <FPCLINE/>
+      <FPCLINE>          li_zotc_prc_control_tmp[] = li_zotc_prc_control[].</FPCLINE>
+      <FPCLINE>          SORT li_zotc_prc_control_tmp BY mvalue1.</FPCLINE>
+      <FPCLINE>          DELETE ADJACENT DUPLICATES FROM li_zotc_prc_control_tmp</FPCLINE>
+      <FPCLINE>          COMPARING mvalue1.</FPCLINE>
+      <FPCLINE>          IF li_zotc_prc_control_tmp IS NOT INITIAL.</FPCLINE>
+      <FPCLINE/>
+      <FPCLINE>*---As per logic in FS, mvalue1 fetched from table zotc_prc_control should be passed in table t024b,</FPCLINE>
+      <FPCLINE>*--IF no entries are found in table t024b then it is a D3 scenario.</FPCLINE>
+      <FPCLINE>            SELECT sbgrp &quot; Credit representative group for credit management</FPCLINE>
+      <FPCLINE>            FROM t024b   &quot; Credit management: Credit representative groups</FPCLINE>
+      <FPCLINE>            INTO TABLE li_t024b</FPCLINE>
+      <FPCLINE>            FOR ALL ENTRIES IN li_zotc_prc_control_tmp</FPCLINE>
+      <FPCLINE>            WHERE sbgrp = li_zotc_prc_control_tmp-mvalue1.</FPCLINE>
+      <FPCLINE>            IF sy-subrc IS NOT INITIAL.</FPCLINE>
+      <FPCLINE> &quot;if data found in t024b table for zotc_prc_control entries, it is for D1/2</FPCLINE>
+      <FPCLINE> &quot;hence,no changes done else for D3, get phone number.</FPCLINE>
+      <FPCLINE/>
+      <FPCLINE>              SORT li_zotc_prc_control BY mvalue1.</FPCLINE>
+      <FPCLINE>              READ TABLE li_zotc_prc_control ASSIGNING &lt;lfs_zotc_prc_control&gt;</FPCLINE>
+      <FPCLINE>              WITH KEY mvalue1 = fp_country</FPCLINE>
+      <FPCLINE>              BINARY SEARCH.</FPCLINE>
+      <FPCLINE>              IF sy-subrc IS INITIAL.</FPCLINE>
+      <FPCLINE>*--1st check mvalue1 with customer country and get phone number</FPCLINE>
+      <FPCLINE>                fp_phone = &lt;lfs_zotc_prc_control&gt;-mvalue2. &quot;Phone number</FPCLINE>
+      <FPCLINE>              ELSE. &quot; ELSE -&gt; IF sy-subrc IS INITIAL</FPCLINE>
+      <FPCLINE>*--2nd check mvalue1 with * and get phone number.</FPCLINE>
+      <FPCLINE>                READ TABLE li_zotc_prc_control ASSIGNING &lt;lfs_zotc_prc_control&gt;</FPCLINE>
+      <FPCLINE>                WITH KEY mvalue1 = lc_star</FPCLINE>
+      <FPCLINE>                BINARY SEARCH.</FPCLINE>
+      <FPCLINE>                IF sy-subrc IS INITIAL.</FPCLINE>
+      <FPCLINE>                  fp_phone = &lt;lfs_zotc_prc_control&gt;-mvalue2. &quot;Phone number</FPCLINE>
+      <FPCLINE>                ENDIF. &quot; IF sy-subrc IS INITIAL</FPCLINE>
+      <FPCLINE>              ENDIF. &quot; IF sy-subrc IS INITIAL</FPCLINE>
+      <FPCLINE>            ENDIF. &quot; IF sy-subrc IS NOT INITIAL</FPCLINE>
+      <FPCLINE>          ENDIF. &quot; IF li_zotc_prc_control_tmp IS NOT INITIAL</FPCLINE>
+      <FPCLINE>        ENDIF. &quot; IF sy-subrc IS INITIAL</FPCLINE>
+      <FPCLINE>      ENDIF. &quot; IF sy-subrc IS INITIAL</FPCLINE>
+      <FPCLINE>    ENDIF. &quot; IF lv_vkorg IS NOT INITIAL</FPCLINE>
+      <FPCLINE/>
+      <FPCLINE> &quot;get language for D3 scenario.</FPCLINE>
+      <FPCLINE>    PERFORM f_get_customer_language USING fp_country</FPCLINE>
+      <FPCLINE>                                        li_status.</FPCLINE>
+      <FPCLINE>  ENDIF. &quot; IF li_status IS NOT INITIAL</FPCLINE>
+      <FPCLINE/>
+      <FPCLINE>ENDFORM. &quot;F_get_phone_number</FPCLINE>
+      <FPCLINE>*&amp;---------------------------------------------------------------------*</FPCLINE>
+      <FPCLINE>*&amp;      Form  f_get_customer_language</FPCLINE>
+      <FPCLINE>*&amp;---------------------------------------------------------------------*</FPCLINE>
+      <FPCLINE>*       Get language from customer country</FPCLINE>
+      <FPCLINE>*----------------------------------------------------------------------*</FPCLINE>
+      <FPCLINE>*      --&gt;FP_COUNTRY Customer country</FPCLINE>
+      <FPCLINE>*      --&gt;FP_I_STATUS Enhancement status table.</FPCLINE>
+      <FPCLINE>*----------------------------------------------------------------------*</FPCLINE>
+      <FPCLINE>FORM f_get_customer_language USING fp_country  TYPE land1_gp &quot; Country Key</FPCLINE>
+      <FPCLINE>                                 fp_i_status TYPE ty_t_status.</FPCLINE>
+      <FPCLINE/>
+      <FPCLINE>  DATA : lv_cust_lang TYPE spras,   &quot; Language Key</FPCLINE>
+      <FPCLINE>         lv_low       TYPE fpb_low. &quot; From Value</FPCLINE>
+      <FPCLINE/>
+      <FPCLINE>  FIELD-SYMBOLS : &lt;lfs_status&gt; TYPE zdev_enh_status. &quot; Field symbol for status table</FPCLINE>
+      <FPCLINE/>
+      <FPCLINE>  CONSTANTS : lc_spras TYPE char5 VALUE &apos;SPRAS&apos;. &quot; Spras of type CHAR5</FPCLINE>
+      <FPCLINE/>
+      <FPCLINE>  IF fp_country IS NOT INITIAL.</FPCLINE>
+      <FPCLINE>    SELECT SINGLE spras &quot; Language Key</FPCLINE>
+      <FPCLINE>           FROM t005    &quot; Countries</FPCLINE>
+      <FPCLINE>           INTO lv_cust_lang</FPCLINE>
+      <FPCLINE>           WHERE land1 = fp_country.</FPCLINE>
+      <FPCLINE>    IF sy-subrc IS INITIAL AND</FPCLINE>
+      <FPCLINE>       lv_cust_lang IS NOT INITIAL.</FPCLINE>
+      <FPCLINE/>
+      <FPCLINE>      CALL FUNCTION &apos;CONVERSION_EXIT_ISOLA_OUTPUT&apos;</FPCLINE>
+      <FPCLINE>        EXPORTING</FPCLINE>
+      <FPCLINE>          input  = lv_cust_lang</FPCLINE>
+      <FPCLINE>        IMPORTING</FPCLINE>
+      <FPCLINE>          output = lv_low.</FPCLINE>
+      <FPCLINE>      IF sy-subrc IS INITIAL.</FPCLINE>
+      <FPCLINE>        READ TABLE fp_i_status ASSIGNING &lt;lfs_status&gt;</FPCLINE>
+      <FPCLINE>        WITH KEY criteria = lc_spras</FPCLINE>
+      <FPCLINE>                 sel_low = lv_low.</FPCLINE>
+      <FPCLINE>        IF sy-subrc IS INITIAL.</FPCLINE>
+      <FPCLINE> &quot;Update Language only if customer language found.</FPCLINE>
+      <FPCLINE>          gv_langu = lv_cust_lang.</FPCLINE>
+      <FPCLINE>*---&quot;else...No need for else part as, if customer language is not found,</FPCLINE>
+      <FPCLINE>*---Company code language OR default language EN is filled from D1/D2 code.</FPCLINE>
+      <FPCLINE/>
+      <FPCLINE>        ENDIF. &quot; IF sy-subrc IS INITIAL</FPCLINE>
+      <FPCLINE>      ENDIF. &quot; IF sy-subrc IS INITIAL</FPCLINE>
+      <FPCLINE>    ENDIF. &quot; IF sy-subrc IS INITIAL AND</FPCLINE>
+      <FPCLINE>  ENDIF. &quot; IF fp_country IS NOT INITIAL</FPCLINE>
+      <FPCLINE>ENDFORM. &quot;get_customer_language</FPCLINE>
+      <FPCLINE>*&amp;---------------------------------------------------------------------*</FPCLINE>
+      <FPCLINE>*&amp;      Form  f_get_bank_info</FPCLINE>
+      <FPCLINE>*&amp;---------------------------------------------------------------------*</FPCLINE>
+      <FPCLINE>*       Get Bank Information</FPCLINE>
+      <FPCLINE>*----------------------------------------------------------------------*</FPCLINE>
+      <FPCLINE>*      --&gt;FP_BUKRS      Company Code</FPCLINE>
+      <FPCLINE>*      --&gt;FP_CURR       Local Currency</FPCLINE>
+      <FPCLINE>*      &lt;--FP_WA_BANK_INFO  Bank details</FPCLINE>
+      <FPCLINE>*      &lt;--fp_i_lockbox  Address</FPCLINE>
+      <FPCLINE>*----------------------------------------------------------------------*</FPCLINE>
+      <FPCLINE>FORM f_get_bank_info USING fp_bukrs     TYPE bukrs &quot; Company Code</FPCLINE>
+      <FPCLINE>                           fp_curr      TYPE hwaer &quot; Local Currency</FPCLINE>
+      <FPCLINE>                  CHANGING fp_wa_bank_info TYPE ty_bank_info</FPCLINE>
+      <FPCLINE>                           fp_i_lockbox TYPE ty_t_lockbox.</FPCLINE>
+      <FPCLINE/>
+      <FPCLINE/>
+      <FPCLINE>  DATA : lv_vkorg        TYPE vkorg,          &quot; Sales Organization</FPCLINE>
+      <FPCLINE>         lv_address_sorg TYPE adrnr,          &quot; Address</FPCLINE>
+      <FPCLINE>         lv_curr         TYPE waers,          &quot; Currency Key</FPCLINE>
+      <FPCLINE>         lwa_housebank   TYPE zotc_housebank. &quot; Structure for House Bank Info</FPCLINE>
+      <FPCLINE/>
+      <FPCLINE>  IF fp_bukrs IS NOT INITIAL.</FPCLINE>
+      <FPCLINE/>
+      <FPCLINE>    lv_vkorg = fp_bukrs.</FPCLINE>
+      <FPCLINE/>
+      <FPCLINE>*--Get Sales Org. address</FPCLINE>
+      <FPCLINE>    SELECT SINGLE adrnr &quot; Address</FPCLINE>
+      <FPCLINE>      FROM tvko         &quot; Organizational Unit: Sales Organizations</FPCLINE>
+      <FPCLINE>      INTO lv_address_sorg</FPCLINE>
+      <FPCLINE>      WHERE vkorg = lv_vkorg.</FPCLINE>
+      <FPCLINE>    IF sy-subrc IS INITIAL AND</FPCLINE>
+      <FPCLINE>       lv_address_sorg IS NOT INITIAL.</FPCLINE>
+      <FPCLINE>*--Fetching sales org. address in fp_i_lockbox.</FPCLINE>
+      <FPCLINE>      PERFORM f_get_sales_org_address USING lv_address_sorg</FPCLINE>
+      <FPCLINE>                                   CHANGING fp_i_lockbox.</FPCLINE>
+      <FPCLINE>    ENDIF. &quot; IF sy-subrc IS INITIAL AND</FPCLINE>
+      <FPCLINE/>
+      <FPCLINE>    lv_curr = fp_curr.</FPCLINE>
+      <FPCLINE>* &quot;Get Bank Information</FPCLINE>
+      <FPCLINE>    CALL FUNCTION &apos;ZOTC_GET_HOUSEBANKINFO&apos;</FPCLINE>
+      <FPCLINE>      EXPORTING</FPCLINE>
+      <FPCLINE>        im_bukrs = fp_bukrs</FPCLINE>
+      <FPCLINE>        im_curr  = lv_curr</FPCLINE>
+      <FPCLINE>      IMPORTING</FPCLINE>
+      <FPCLINE>        ex_out   = lwa_housebank.</FPCLINE>
+      <FPCLINE/>
+      <FPCLINE>    IF lwa_housebank IS NOT INITIAL.</FPCLINE>
+      <FPCLINE/>
+      <FPCLINE>      fp_wa_bank_info-banka = lwa_housebank-banka.</FPCLINE>
+      <FPCLINE>      fp_wa_bank_info-stras = lwa_housebank-stras.</FPCLINE>
+      <FPCLINE>      fp_wa_bank_info-ort01 = lwa_housebank-ort01.</FPCLINE>
+      <FPCLINE>      fp_wa_bank_info-swift = lwa_housebank-swift.</FPCLINE>
+      <FPCLINE>      fp_wa_bank_info-bankn = lwa_housebank-bankn.</FPCLINE>
+      <FPCLINE>      fp_wa_bank_info-iban  = lwa_housebank-iban.</FPCLINE>
+      <FPCLINE/>
+      <FPCLINE>    ENDIF. &quot; IF lwa_housebank IS NOT INITIAL</FPCLINE>
+      <FPCLINE/>
+      <FPCLINE>  ENDIF. &quot; IF fp_bukrs IS NOT INITIAL</FPCLINE>
+      <FPCLINE>ENDFORM. &quot;f_get_bank_info</FPCLINE>
+      <FPCLINE>*&amp;---------------------------------------------------------------------*</FPCLINE>
+      <FPCLINE>*&amp;      Form  f_get_sales_org_address</FPCLINE>
+      <FPCLINE>*&amp;---------------------------------------------------------------------*</FPCLINE>
+      <FPCLINE>*       Get Sales Org. address</FPCLINE>
+      <FPCLINE>*----------------------------------------------------------------------*</FPCLINE>
+      <FPCLINE>*      --&gt;FP_ADDRESS_SORG  sales org. address number</FPCLINE>
+      <FPCLINE>*      &lt;--FP_I_LOCKBOX     Address</FPCLINE>
+      <FPCLINE>*----------------------------------------------------------------------*</FPCLINE>
+      <FPCLINE>FORM f_get_sales_org_address USING fp_address_sorg TYPE adrnr &quot; Address</FPCLINE>
+      <FPCLINE>                          CHANGING fp_i_lockbox    TYPE ty_t_lockbox.</FPCLINE>
+      <FPCLINE/>
+      <FPCLINE/>
+      <FPCLINE>  DATA : lv_adrc      TYPE ad_addrnum, &quot; Address number</FPCLINE>
+      <FPCLINE>         li_address   TYPE szadr_printform_table,</FPCLINE>
+      <FPCLINE>         lwa_lockbox  TYPE char40.     &quot; Lockbox of type CHAR40</FPCLINE>
+      <FPCLINE/>
+      <FPCLINE>  FIELD-SYMBOLS : &lt;lfs_address&gt; TYPE szadr_printform_table_line.</FPCLINE>
+      <FPCLINE/>
+      <FPCLINE>  CONSTANTS : lc_1         TYPE ad_adrtype       VALUE &apos;1&apos;. &quot; Address type (1=Organization, 2=Person, 3=Contact person)</FPCLINE>
+      <FPCLINE/>
+      <FPCLINE>  IF fp_address_sorg IS NOT INITIAL. &quot;Sales Org. Address number.</FPCLINE>
+      <FPCLINE/>
+      <FPCLINE>    lv_adrc = fp_address_sorg.</FPCLINE>
+      <FPCLINE/>
+      <FPCLINE>    CALL FUNCTION &apos;ADDRESS_INTO_PRINTFORM&apos;</FPCLINE>
+      <FPCLINE>      EXPORTING</FPCLINE>
+      <FPCLINE>        address_type            = lc_1</FPCLINE>
+      <FPCLINE>        address_number          = lv_adrc</FPCLINE>
+      <FPCLINE>      IMPORTING</FPCLINE>
+      <FPCLINE>        address_printform_table = li_address.</FPCLINE>
+      <FPCLINE/>
+      <FPCLINE>    IF li_address IS NOT INITIAL.</FPCLINE>
+      <FPCLINE> &quot;update internal table fp_i_lockbox with sales Org. address</FPCLINE>
+      <FPCLINE>      LOOP AT li_address ASSIGNING &lt;lfs_address&gt;.</FPCLINE>
+      <FPCLINE/>
+      <FPCLINE>        lwa_lockbox = &lt;lfs_address&gt;-address_line.</FPCLINE>
+      <FPCLINE>        APPEND lwa_lockbox TO fp_i_lockbox.</FPCLINE>
+      <FPCLINE>        CLEAR lwa_lockbox.</FPCLINE>
+      <FPCLINE>      ENDLOOP. &quot; LOOP AT li_address ASSIGNING &lt;lfs_address&gt;</FPCLINE>
+      <FPCLINE/>
+      <FPCLINE>    ENDIF. &quot; IF li_address IS NOT INITIAL</FPCLINE>
+      <FPCLINE>  ENDIF. &quot; IF fp_address_sorg IS NOT INITIAL</FPCLINE>
+      <FPCLINE/>
+      <FPCLINE>ENDFORM. &quot;f_get_sales_org_address</FPCLINE>
+      <FPCLINE>* &lt;--- End of Change for D3_OTC_FDD_0024 by RBANERJ1</FPCLINE>
+     </FORMS>
+    </CL_FP_CODING>
+   </cls:CL_FP_CODING>
+  </asx:heap>
+ </asx:abap>
+</abapGit>

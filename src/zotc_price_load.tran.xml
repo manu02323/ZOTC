@@ -1,0 +1,82 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<abapGit version="v1.0.0" serializer="LCL_OBJECT_TRAN" serializer_version="v1.0.0">
+ <asx:abap xmlns:asx="http://www.sap.com/abapxml" version="1.0">
+  <asx:values>
+   <TSTC>
+    <TCODE>ZOTC_PRICE_LOAD</TCODE>
+    <PGMNA>ZOTCI0042B_PRICE_LOAD</PGMNA>
+    <DYPNO>1000</DYPNO>
+    <CINFO>gA==</CINFO>
+   </TSTC>
+   <TSTCC>
+    <TCODE>ZOTC_PRICE_LOAD</TCODE>
+    <S_WEBGUI>1</S_WEBGUI>
+    <S_WIN32>X</S_WIN32>
+    <S_PLATIN>X</S_PLATIN>
+   </TSTCC>
+   <TSTCT>
+    <SPRSL>E</SPRSL>
+    <TCODE>ZOTC_PRICE_LOAD</TCODE>
+    <TTEXT>Tcode for prog ZOTCI0047B_PRICE_LOAD</TTEXT>
+   </TSTCT>
+   <I18N_TPOOL>
+    <TSTCT>
+     <SPRSL>1</SPRSL>
+     <TTEXT>Tcode for prog ZOTCI0047B_PRICE_LOAD</TTEXT>
+    </TSTCT>
+    <TSTCT>
+     <SPRSL>F</SPRSL>
+     <TTEXT>Tcode for prog ZOTCI0047B_PRICE_LOAD</TTEXT>
+    </TSTCT>
+    <TSTCT>
+     <SPRSL>G</SPRSL>
+     <TTEXT>Tcode for prog ZOTCI0047B_PRICE_LOAD</TTEXT>
+    </TSTCT>
+    <TSTCT>
+     <SPRSL>H</SPRSL>
+     <TTEXT>Tcode for prog ZOTCI0047B_PRICE_LOAD</TTEXT>
+    </TSTCT>
+    <TSTCT>
+     <SPRSL>I</SPRSL>
+     <TTEXT>Tcode for prog ZOTCI0047B_PRICE_LOAD</TTEXT>
+    </TSTCT>
+    <TSTCT>
+     <SPRSL>J</SPRSL>
+     <TTEXT>Tcode for prog ZOTCI0047B_PRICE_LOAD</TTEXT>
+    </TSTCT>
+    <TSTCT>
+     <SPRSL>K</SPRSL>
+     <TTEXT>Tcode for prog ZOTCI0047B_PRICE_LOAD</TTEXT>
+    </TSTCT>
+    <TSTCT>
+     <SPRSL>N</SPRSL>
+     <TTEXT>Tcode for prog ZOTCI0047B_PRICE_LOAD</TTEXT>
+    </TSTCT>
+    <TSTCT>
+     <SPRSL>O</SPRSL>
+     <TTEXT>Tcode for prog ZOTCI0047B_PRICE_LOAD</TTEXT>
+    </TSTCT>
+    <TSTCT>
+     <SPRSL>P</SPRSL>
+     <TTEXT>Tcode for prog ZOTCI0047B_PRICE_LOAD</TTEXT>
+    </TSTCT>
+    <TSTCT>
+     <SPRSL>R</SPRSL>
+     <TTEXT>Tcode for prog ZOTCI0047B_PRICE_LOAD</TTEXT>
+    </TSTCT>
+    <TSTCT>
+     <SPRSL>S</SPRSL>
+     <TTEXT>Tcode for prog ZOTCI0047B_PRICE_LOAD</TTEXT>
+    </TSTCT>
+    <TSTCT>
+     <SPRSL>U</SPRSL>
+     <TTEXT>Tcode for prog ZOTCI0047B_PRICE_LOAD</TTEXT>
+    </TSTCT>
+    <TSTCT>
+     <SPRSL>V</SPRSL>
+     <TTEXT>Tcode for prog ZOTCI0047B_PRICE_LOAD</TTEXT>
+    </TSTCT>
+   </I18N_TPOOL>
+  </asx:values>
+ </asx:abap>
+</abapGit>

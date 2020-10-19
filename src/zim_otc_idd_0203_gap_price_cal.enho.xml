@@ -1,0 +1,139 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<abapGit version="v1.0.0" serializer="LCL_OBJECT_ENHO" serializer_version="v1.0.0">
+ <asx:abap xmlns:asx="http://www.sap.com/abapxml" version="1.0">
+  <asx:values>
+   <TOOL>HOOK_IMPL</TOOL>
+   <SHORTTEXT>Gap and otc_idd_0042 PPM Price interface</SHORTTEXT>
+   <ORIGINAL_OBJECT>
+    <PGMID>R3TR</PGMID>
+    <ORG_OBJ_TYPE>PROG</ORG_OBJ_TYPE>
+    <ORG_OBJ_NAME>SAPMV13A</ORG_OBJ_NAME>
+    <ORG_MAIN_TYPE>PROG</ORG_MAIN_TYPE>
+    <ORG_MAIN_NAME>SAPMV13A</ORG_MAIN_NAME>
+    <PROGRAMNAME>SAPMV13A</PROGRAMNAME>
+   </ORIGINAL_OBJECT>
+   <ENHANCEMENTS>
+    <ENH_HOOK_IMPL>
+     <PROGRAMNAME>SAPMV13A</PROGRAMNAME>
+     <ENHMODE>D</ENHMODE>
+     <FULL_NAME>\PR:SAPMV13A\FO:TT_CORRECT\SE:BEGIN\EI</FULL_NAME>
+     <SOURCE>
+      <item>***********************************************************************</item>
+      <item>*Program    : ZIM_OTC_IDD_0203_GAP_PRICE_CAL                          *</item>
+      <item>*Title      : GAP and PPM Price Interface                             *</item>
+      <item>*Developer  : Manoj Thatha                                            *</item>
+      <item>*Object type: Interface                                               *</item>
+      <item>*SAP Release: SAP ECC 6.0                                             *</item>
+      <item>*---------------------------------------------------------------------*</item>
+      <item>*WRICEF ID: D3_OTC_IDD_0203                                           *</item>
+      <item>*---------------------------------------------------------------------*</item>
+      <item>*Description: Skip the perfom to avoid SQL array insert duplicat dump *</item>
+      <item>*---------------------------------------------------------------------*</item>
+      <item>*MODIFICATION HISTORY:</item>
+      <item>*=====================================================================*</item>
+      <item>*Date           User        Transport       Description</item>
+      <item>*=========== ============== ============== ===========================*</item>
+      <item>*13-Aug-2016  MTHATHA       E1DK919349    Defect#2933 and Defect#2934 *</item>
+      <item>*---------------------------------------------------------------------*</item>
+      <item>CONSTANTS: lc_otc_idd_0203            TYPE z_enhancement    VALUE &apos;OTC_IDD_0203&apos;, &quot; Enhancement No.</item>
+      <item>lc_null                    TYPE z_criteria       VALUE &apos;NULL&apos;.                &quot; Enh. Criteria</item>
+      <item/>
+      <item>DATA:     li_status           TYPE STANDARD TABLE OF zdev_enh_status, &quot;Enhancement Status table</item>
+      <item>lv_proceed          TYPE flag.          &quot;proceed further flag</item>
+      <item/>
+      <item>* Call to EMI Function Module To Get List Of EMI Statuses</item>
+      <item>CALL FUNCTION &apos;ZDEV_ENHANCEMENT_STATUS_CHECK&apos;</item>
+      <item>EXPORTING</item>
+      <item>iv_enhancement_no = lc_otc_idd_0203</item>
+      <item>TABLES</item>
+      <item>tt_enh_status     = li_status. &quot;Enhancement status table</item>
+      <item/>
+      <item>*first thing is to check for field criterion,for value “NULL” and field Active value:</item>
+      <item>*i.If the value is: “X”, the overall Enhancement is active and can proceed further for checks</item>
+      <item>*ii.If the  value is:space, then do not proceed further for this enhancement</item>
+      <item/>
+      <item>DELETE li_status WHERE active = space.</item>
+      <item/>
+      <item>* as only active (after above delete statement) entries are there in LI_STATUS</item>
+      <item>* active field is not check in below read.</item>
+      <item/>
+      <item>READ TABLE li_status WITH KEY criteria = lc_null &quot;NULL</item>
+      <item>TRANSPORTING NO FIELDS.</item>
+      <item>IF sy-subrc EQ  0.</item>
+      <item>* Set the proceed further flag</item>
+      <item>lv_proceed = abap_true.</item>
+      <item>endif.</item>
+      <item>*--Check whether the Condition type is passed from the PPM and GAP interface</item>
+      <item>IF lv_proceed = abap_true.</item>
+      <item>READ TABLE li_status WITH KEY SEL_LOW = PT_TIME_VAKE_AKT-KSCHL TRANSPORTING NO FIELDS.</item>
+      <item>if sy-subrc eq 0.</item>
+      <item>RETURN.</item>
+      <item>endif.</item>
+      <item>ENDIF.</item>
+      <item/>
+     </SOURCE>
+    </ENH_HOOK_IMPL>
+   </ENHANCEMENTS>
+   <SPACES>
+    <item>
+     <FULL_NAME>\PR:SAPMV13A\FO:TT_CORRECT\SE:BEGIN\EI</FULL_NAME>
+     <SPACES>
+      <item>0</item>
+      <item>0</item>
+      <item>0</item>
+      <item>0</item>
+      <item>0</item>
+      <item>0</item>
+      <item>0</item>
+      <item>0</item>
+      <item>0</item>
+      <item>0</item>
+      <item>0</item>
+      <item>0</item>
+      <item>0</item>
+      <item>0</item>
+      <item>0</item>
+      <item>0</item>
+      <item>0</item>
+      <item>0</item>
+      <item>11</item>
+      <item>0</item>
+      <item>0</item>
+      <item>10</item>
+      <item>0</item>
+      <item>0</item>
+      <item>0</item>
+      <item>2</item>
+      <item>4</item>
+      <item>2</item>
+      <item>4</item>
+      <item>0</item>
+      <item>0</item>
+      <item>0</item>
+      <item>0</item>
+      <item>0</item>
+      <item>0</item>
+      <item>0</item>
+      <item>0</item>
+      <item>0</item>
+      <item>0</item>
+      <item>0</item>
+      <item>21</item>
+      <item>0</item>
+      <item>0</item>
+      <item>2</item>
+      <item>0</item>
+      <item>0</item>
+      <item>0</item>
+      <item>0</item>
+      <item>0</item>
+      <item>0</item>
+      <item>0</item>
+      <item>0</item>
+      <item>0</item>
+     </SPACES>
+    </item>
+   </SPACES>
+  </asx:values>
+ </asx:abap>
+</abapGit>

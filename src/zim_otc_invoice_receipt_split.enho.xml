@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<abapGit version="v1.0.0" serializer="LCL_OBJECT_ENHO" serializer_version="v1.0.0">
+ <asx:abap xmlns:asx="http://www.sap.com/abapxml" version="1.0">
+  <asx:values>
+   <TOOL>BADI_IMPL</TOOL>
+   <SHORTTEXT>Splitting Accounting Document</SHORTTEXT>
+   <SPOT_NAME>FI_INVOICE_RECEIPT_SPLIT</SPOT_NAME>
+   <IMPL>
+    <ENH_BADI_IMPL_DATA>
+     <SPOT_NAME>FI_INVOICE_RECEIPT_SPLIT</SPOT_NAME>
+     <BADI_NAME>FI_INVOICE_RECEIPT_SPLIT</BADI_NAME>
+     <IMPL_NAME>ZIM_OTC_INVOICE_RECEIPT_SPLIT</IMPL_NAME>
+     <IMPL_CLASS>ZCL_OTC_INV_SPLIT</IMPL_CLASS>
+     <ACTIVE>X</ACTIVE>
+     <IMPL_SHORTTEXT>Splitting Accounting Document</IMPL_SHORTTEXT>
+     <IMPL_SHORTTEXT_ID>005056B342CF1EE688FB47466219C04D</IMPL_SHORTTEXT_ID>
+    </ENH_BADI_IMPL_DATA>
+   </IMPL>
+  </asx:values>
+ </asx:abap>
+</abapGit>

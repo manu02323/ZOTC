@@ -1,0 +1,43 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<abapGit version="v1.0.0" serializer="LCL_OBJECT_XINX" serializer_version="v1.0.0">
+ <asx:abap xmlns:asx="http://www.sap.com/abapxml" version="1.0">
+  <asx:values>
+   <XINX>
+    <DD12V>
+     <SQLTAB>VBPA</SQLTAB>
+     <INDEXNAME>Y01</INDEXNAME>
+     <AS4LOCAL>A</AS4LOCAL>
+     <DDLANGUAGE>E</DDLANGUAGE>
+     <DBSTATE>D</DBSTATE>
+     <DBINCLEXCL>E</DBINCLEXCL>
+     <DBSYSSEL1>HDB</DBSYSSEL1>
+     <DDTEXT>Index for RFDKLI20, Transaction FD32</DDTEXT>
+     <ISEXTIND>X</ISEXTIND>
+    </DD12V>
+    <T_DD17V>
+     <DD17V>
+      <SQLTAB>VBPA</SQLTAB>
+      <INDEXNAME>Y01</INDEXNAME>
+      <POSITION>0001</POSITION>
+      <AS4LOCAL>A</AS4LOCAL>
+      <FIELDNAME>MANDT</FIELDNAME>
+     </DD17V>
+     <DD17V>
+      <SQLTAB>VBPA</SQLTAB>
+      <INDEXNAME>Y01</INDEXNAME>
+      <POSITION>0002</POSITION>
+      <AS4LOCAL>A</AS4LOCAL>
+      <FIELDNAME>KUNNR</FIELDNAME>
+     </DD17V>
+     <DD17V>
+      <SQLTAB>VBPA</SQLTAB>
+      <INDEXNAME>Y01</INDEXNAME>
+      <POSITION>0003</POSITION>
+      <AS4LOCAL>A</AS4LOCAL>
+      <FIELDNAME>PARVW</FIELDNAME>
+     </DD17V>
+    </T_DD17V>
+   </XINX>
+  </asx:values>
+ </asx:abap>
+</abapGit>

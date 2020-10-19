@@ -1,0 +1,64 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<abapGit version="v1.0.0" serializer="LCL_OBJECT_SPRX" serializer_version="v1.0.0">
+ <asx:abap xmlns:asx="http://www.sap.com/abapxml" version="1.0">
+  <asx:values>
+   <PROXY_HEADER>
+    <item>
+     <OBJECT>TABL</OBJECT>
+     <OBJ_NAME>Z01OTC_MT_TRANSFER_PRICE_LOAD</OBJ_NAME>
+     <OBJECT_M>TABL</OBJECT_M>
+     <OBJ_NAME_M>Z01OTC_MT_TRANSFER_PRICE_LOAD</OBJ_NAME_M>
+     <HASH_ID>A565AA45368F18D3BAF2106A672DA3E3988F6885</HASH_ID>
+     <ID>&lt;message&gt; MT_TransferPriceLoad_SAP http://bio-rad.com/OTC/TransferPriceLoad http://bio-rad.com/OTC/TransferPriceLoad</ID>
+     <IFR_GLOBAL>X</IFR_GLOBAL>
+     <IFR_TYPE>message</IFR_TYPE>
+     <IFR_NAME>MT_TransferPriceLoad_SAP</IFR_NAME>
+     <IFR_NSPCE>http://bio-rad.com/OTC/TransferPriceLoad</IFR_NSPCE>
+     <IFR_GNSPCE>http://bio-rad.com/OTC/TransferPriceLoad</IFR_GNSPCE>
+     <GEN_VERS>0006</GEN_VERS>
+     <PREFIX>Z01OTC_</PREFIX>
+     <CATEGORY>ifmmessage</CATEGORY>
+     <X-ML_NSPCE>http://bio-rad.com/OTC/TransferPriceLoad</X-ML_NSPCE>
+     <X-ML_NAME>MT_TransferPriceLoad_SAP</X-ML_NAME>
+     <VERSION_ID>6825150ce4d111e6be3a0000010d7702</VERSION_ID>
+    </item>
+   </PROXY_HEADER>
+   <PROXY_DATA>
+    <item>
+     <OBJECT>TABL</OBJECT>
+     <OBJ_NAME>Z01OTC_MT_TRANSFER_PRICE_LOAD</OBJ_NAME>
+     <OBJECT1>FIEL</OBJECT1>
+     <OBJ_NAME1>MT_TRANSFER_PRICE_LOAD_SAP</OBJ_NAME1>
+     <OBJECT2>FIEL</OBJECT2>
+     <OBJ_NAME2>MT_TRANSFER_PRICE_LOAD_SAP</OBJ_NAME2>
+     <OBJECT_R>TABL</OBJECT_R>
+     <OBJ_NAME_R>Z01OTC_DT_TRANSFER_PRICE_LOAD2</OBJ_NAME_R>
+     <ID>&lt;part&gt; MT_TransferPriceLoad_SAP &lt;message&gt; MT_TransferPriceLoad_SAP http://bio-rad.com/OTC/TransferPriceLoad http://bio-rad.com/OTC/TransferPriceLoad</ID>
+     <IFR_TYPE>part</IFR_TYPE>
+     <IFR_NAME>MT_TransferPriceLoad_SAP</IFR_NAME>
+     <IFR_SCALE>-2</IFR_SCALE>
+     <R3_TYPE>FIEL</R3_TYPE>
+     <R3_NAME>MT_TRANSFER_PRICE_LOAD_SAP</R3_NAME>
+     <R3_SEQNUM>000001</R3_SEQNUM>
+    </item>
+    <item>
+     <OBJECT>TABL</OBJECT>
+     <OBJ_NAME>Z01OTC_MT_TRANSFER_PRICE_LOAD</OBJ_NAME>
+     <OBJECT1>TABL</OBJECT1>
+     <OBJ_NAME1>Z01OTC_MT_TRANSFER_PRICE_LOAD</OBJ_NAME1>
+     <OBJECT2>TABL</OBJECT2>
+     <OBJ_NAME2>Z01OTC_MT_TRANSFER_PRICE_LOAD</OBJ_NAME2>
+     <ID>&lt;message&gt; MT_TransferPriceLoad_SAP http://bio-rad.com/OTC/TransferPriceLoad http://bio-rad.com/OTC/TransferPriceLoad</ID>
+     <IFR_TYPE>message</IFR_TYPE>
+     <IFR_NAME>MT_TransferPriceLoad_SAP</IFR_NAME>
+     <IFR_LANGU>EN</IFR_LANGU>
+     <IFR_SCALE>-2</IFR_SCALE>
+     <R3_TYPE>TABL</R3_TYPE>
+     <R3_NAME>Z01OTC_MT_TRANSFER_PRICE_LOAD</R3_NAME>
+     <R3_TEXT>Proxy Structure (generated)</R3_TEXT>
+     <CATEGORY>ifmmessage</CATEGORY>
+    </item>
+   </PROXY_DATA>
+  </asx:values>
+ </asx:abap>
+</abapGit>

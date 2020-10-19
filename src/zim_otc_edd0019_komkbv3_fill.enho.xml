@@ -1,0 +1,69 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<abapGit version="v1.0.0" serializer="LCL_OBJECT_ENHO" serializer_version="v1.0.0">
+ <asx:abap xmlns:asx="http://www.sap.com/abapxml" version="1.0">
+  <asx:values>
+   <TOOL>HOOK_IMPL</TOOL>
+   <SHORTTEXT>Populate KOMKV3 fill</SHORTTEXT>
+   <ORIGINAL_OBJECT>
+    <PGMID>R3TR</PGMID>
+    <ORG_OBJ_TYPE>FUGR</ORG_OBJ_TYPE>
+    <ORG_OBJ_NAME>VCOM</ORG_OBJ_NAME>
+    <ORG_MAIN_TYPE>FUGR</ORG_MAIN_TYPE>
+    <ORG_MAIN_NAME>VCOM</ORG_MAIN_NAME>
+    <PROGRAMNAME>SAPLVCOM</PROGRAMNAME>
+   </ORIGINAL_OBJECT>
+   <ENHANCEMENTS>
+    <ENH_HOOK_IMPL>
+     <PROGRAMNAME>SAPLVCOM</PROGRAMNAME>
+     <ENHMODE>D</ENHMODE>
+     <FULL_NAME>\PR:SAPLVCOM\FO:USEREXIT_KOMKBV3_FILL\SE:END\EI</FULL_NAME>
+     <SOURCE>
+      <item>************************************************************************</item>
+      <item>* PROGRAM    :  ZIM_OTC_EDD0019_KOMKBV1_FILL.                          *</item>
+      <item>* TITLE      :  OTC_EDD_0019_Output Control Routines                   *</item>
+      <item>* DEVELOPER  :  Shubasis Basu                                          *</item>
+      <item>* OBJECT TYPE:  ENHANCEMENT                                            *</item>
+      <item>* SAP RELEASE:  SAP ECC 6.0                                            *</item>
+      <item>*----------------------------------------------------------------------*</item>
+      <item>* WRICEF ID:  OTC_EDD_0019                                             *</item>
+      <item>*----------------------------------------------------------------------*</item>
+      <item>* DESCRIPTION: Populate the field PO type for triggering o/p types     *</item>
+      <item>*----------------------------------------------------------------------*</item>
+      <item>* MODIFICATION HISTORY:                                                *</item>
+      <item>*======================================================================*</item>
+      <item>* DATE        USER     TRANSPORT  DESCRIPTION                          *</item>
+      <item>* =========== ======== ========== =====================================*</item>
+      <item>* 04-DEC-2012  SBASU                                                   *</item>
+      <item>*&amp;---------------------------------------------------------------------*</item>
+      <item>INCLUDE ZOTCN0019_POPULATE_POTYPE.</item>
+     </SOURCE>
+    </ENH_HOOK_IMPL>
+   </ENHANCEMENTS>
+   <SPACES>
+    <item>
+     <FULL_NAME>\PR:SAPLVCOM\FO:USEREXIT_KOMKBV3_FILL\SE:END\EI</FULL_NAME>
+     <SPACES>
+      <item>0</item>
+      <item>0</item>
+      <item>0</item>
+      <item>0</item>
+      <item>0</item>
+      <item>0</item>
+      <item>0</item>
+      <item>0</item>
+      <item>0</item>
+      <item>0</item>
+      <item>0</item>
+      <item>0</item>
+      <item>0</item>
+      <item>0</item>
+      <item>0</item>
+      <item>0</item>
+      <item>0</item>
+      <item>3</item>
+     </SPACES>
+    </item>
+   </SPACES>
+  </asx:values>
+ </asx:abap>
+</abapGit>

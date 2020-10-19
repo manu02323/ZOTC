@@ -1,0 +1,3 @@
+FUNCTION-POOL ZOTC_DISC_CHECK_SOURCE.       "MESSAGE-ID ..
+
+* INCLUDE LZOTC_DISC_CHECK_SOURCED...        " Local class definition

@@ -1,0 +1,909 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<abapGit version="v1.0.0" serializer="LCL_OBJECT_SFPI" serializer_version="v1.0.0">
+ <asx:abap version="1.0" xmlns:asx="http://www.sap.com/abapxml">
+  <asx:values>
+   <VERSION>1</VERSION>
+   <TYPE/>
+   <INTERFACE href="#o1"/>
+   <INTERFACET>
+    <FPINTERFACET>
+     <NAME/>
+     <STATE/>
+     <LANGUAGE>N</LANGUAGE>
+     <ID/>
+     <TEXT>Order Acknowledgement Form</TEXT>
+    </FPINTERFACET>
+    <FPINTERFACET>
+     <NAME/>
+     <STATE/>
+     <LANGUAGE>E</LANGUAGE>
+     <ID/>
+     <TEXT>Order Acknowledgement Form</TEXT>
+    </FPINTERFACET>
+    <FPINTERFACET>
+     <NAME/>
+     <STATE/>
+     <LANGUAGE>F</LANGUAGE>
+     <ID/>
+     <TEXT>Order Acknowledgement Form</TEXT>
+    </FPINTERFACET>
+    <FPINTERFACET>
+     <NAME/>
+     <STATE/>
+     <LANGUAGE>P</LANGUAGE>
+     <ID/>
+     <TEXT>Order Acknowledgement Form</TEXT>
+    </FPINTERFACET>
+    <FPINTERFACET>
+     <NAME/>
+     <STATE/>
+     <LANGUAGE>R</LANGUAGE>
+     <ID/>
+     <TEXT>Order Acknowledgement Form</TEXT>
+    </FPINTERFACET>
+    <FPINTERFACET>
+     <NAME/>
+     <STATE/>
+     <LANGUAGE>S</LANGUAGE>
+     <ID/>
+     <TEXT>Order Acknowledgement Form</TEXT>
+    </FPINTERFACET>
+    <FPINTERFACET>
+     <NAME/>
+     <STATE/>
+     <LANGUAGE>J</LANGUAGE>
+     <ID/>
+     <TEXT>Order Acknowledgement Form</TEXT>
+    </FPINTERFACET>
+    <FPINTERFACET>
+     <NAME/>
+     <STATE/>
+     <LANGUAGE>1</LANGUAGE>
+     <ID/>
+     <TEXT>Order Acknowledgement Form</TEXT>
+    </FPINTERFACET>
+    <FPINTERFACET>
+     <NAME/>
+     <STATE/>
+     <LANGUAGE>I</LANGUAGE>
+     <ID/>
+     <TEXT>Order Acknowledgement Form</TEXT>
+    </FPINTERFACET>
+    <FPINTERFACET>
+     <NAME/>
+     <STATE/>
+     <LANGUAGE>K</LANGUAGE>
+     <ID/>
+     <TEXT>Order Acknowledgement Form</TEXT>
+    </FPINTERFACET>
+    <FPINTERFACET>
+     <NAME/>
+     <STATE/>
+     <LANGUAGE>H</LANGUAGE>
+     <ID/>
+     <TEXT>Order Acknowledgement Form</TEXT>
+    </FPINTERFACET>
+    <FPINTERFACET>
+     <NAME/>
+     <STATE/>
+     <LANGUAGE>O</LANGUAGE>
+     <ID/>
+     <TEXT>Order Acknowledgement Form</TEXT>
+    </FPINTERFACET>
+    <FPINTERFACET>
+     <NAME/>
+     <STATE/>
+     <LANGUAGE>V</LANGUAGE>
+     <ID/>
+     <TEXT>Order Acknowledgement Form</TEXT>
+    </FPINTERFACET>
+    <FPINTERFACET>
+     <NAME/>
+     <STATE/>
+     <LANGUAGE>U</LANGUAGE>
+     <ID/>
+     <TEXT>Order Acknowledgement Form</TEXT>
+    </FPINTERFACET>
+    <FPINTERFACET>
+     <NAME/>
+     <STATE/>
+     <LANGUAGE>G</LANGUAGE>
+     <ID/>
+     <TEXT>Order Acknowledgement Form</TEXT>
+    </FPINTERFACET>
+   </INTERFACET>
+  </asx:values>
+  <asx:heap xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:abap="http://www.sap.com/abapxml/types/built-in" xmlns:cls="http://www.sap.com/abapxml/classes/global" xmlns:dic="http://www.sap.com/abapxml/types/dictionary">
+   <cls:CL_FP_INTERFACE_DATA id="o1">
+    <CL_FP_INTERFACE_DATA classVersion="1">
+     <CODING href="#o5"/>
+     <PARAMETERS href="#o4"/>
+     <GLOBAL_DEFINITIONS href="#o3"/>
+     <REFERENCE_FIELDS href="#o2"/>
+     <XSD_DEFINITIONS/>
+    </CL_FP_INTERFACE_DATA>
+   </cls:CL_FP_INTERFACE_DATA>
+   <cls:CL_FP_REFERENCE_FIELDS id="o2">
+    <CL_FP_INTERFACE_DATA_CHANGED classVersion="1">
+     <INTERFACE_DATA href="#o1"/>
+    </CL_FP_INTERFACE_DATA_CHANGED>
+    <CL_FP_REFERENCE_FIELDS classVersion="1">
+     <REFERENCE_FIELDS/>
+    </CL_FP_REFERENCE_FIELDS>
+   </cls:CL_FP_REFERENCE_FIELDS>
+   <cls:CL_FP_GLOBAL_DEFINITIONS id="o3">
+    <CL_FP_INTERFACE_DATA_CHANGED classVersion="1">
+     <INTERFACE_DATA href="#o1"/>
+    </CL_FP_INTERFACE_DATA_CHANGED>
+    <CL_FP_GLOBAL_DEFINITIONS classVersion="1">
+     <GLOBAL_DATA>
+      <SFPGDATA>
+       <NAME>GV_TOTAL_AMOUNT</NAME>
+       <TYPING>TYPE</TYPING>
+       <TYPENAME>CHAR22</TYPENAME>
+       <DEFAULTVAL/>
+       <CONSTANT/>
+      </SFPGDATA>
+      <SFPGDATA>
+       <NAME>C_BMP</NAME>
+       <TYPING>TYPE</TYPING>
+       <TYPENAME>STRING</TYPENAME>
+       <DEFAULTVAL>&apos;images/bmp&apos;</DEFAULTVAL>
+       <CONSTANT>X</CONSTANT>
+      </SFPGDATA>
+      <SFPGDATA>
+       <NAME>GV_PRODUCTION</NAME>
+       <TYPING>TYPE</TYPING>
+       <TYPENAME>BOOLEAN</TYPENAME>
+       <DEFAULTVAL/>
+       <CONSTANT/>
+      </SFPGDATA>
+      <SFPGDATA>
+       <NAME>GV_LOGO_BIN</NAME>
+       <TYPING>TYPE</TYPING>
+       <TYPENAME>XSTRING</TYPENAME>
+       <DEFAULTVAL/>
+       <CONSTANT/>
+      </SFPGDATA>
+      <SFPGDATA>
+       <NAME>GV_IMAGE_BIN</NAME>
+       <TYPING>TYPE</TYPING>
+       <TYPENAME>XSTRING</TYPENAME>
+       <DEFAULTVAL/>
+       <CONSTANT/>
+      </SFPGDATA>
+      <SFPGDATA>
+       <NAME>C_PO</NAME>
+       <TYPING>TYPE</TYPING>
+       <TYPENAME>CHAR5</TYPENAME>
+       <DEFAULTVAL>&apos;PO#: &apos;</DEFAULTVAL>
+       <CONSTANT>X</CONSTANT>
+      </SFPGDATA>
+      <SFPGDATA>
+       <NAME>I_SHIP_ADDRESS</NAME>
+       <TYPING>TYPE</TYPING>
+       <TYPENAME>TT_SHIP_ADDRESS</TYPENAME>
+       <DEFAULTVAL/>
+       <CONSTANT/>
+      </SFPGDATA>
+      <SFPGDATA>
+       <NAME>I_DISPLAY</NAME>
+       <TYPING>TYPE</TYPING>
+       <TYPENAME>TT_DISPLAY</TYPENAME>
+       <DEFAULTVAL/>
+       <CONSTANT/>
+      </SFPGDATA>
+      <SFPGDATA>
+       <NAME>C_EMAIL</NAME>
+       <TYPING>TYPE</TYPING>
+       <TYPENAME>CHAR9</TYPENAME>
+       <DEFAULTVAL>&apos;(Email: &apos;</DEFAULTVAL>
+       <CONSTANT>X</CONSTANT>
+      </SFPGDATA>
+      <SFPGDATA>
+       <NAME>C_COMMA</NAME>
+       <TYPING>TYPE</TYPING>
+       <TYPENAME>CHAR2</TYPENAME>
+       <DEFAULTVAL>&apos;, &apos;</DEFAULTVAL>
+       <CONSTANT>X</CONSTANT>
+      </SFPGDATA>
+      <SFPGDATA>
+       <NAME>C_BRAK_CL</NAME>
+       <TYPING>TYPE</TYPING>
+       <TYPENAME>CHAR1</TYPENAME>
+       <DEFAULTVAL>&apos;)&apos;</DEFAULTVAL>
+       <CONSTANT>X</CONSTANT>
+      </SFPGDATA>
+      <SFPGDATA>
+       <NAME>GV_SHIP_CITY</NAME>
+       <TYPING>TYPE</TYPING>
+       <TYPENAME>STRING</TYPENAME>
+       <DEFAULTVAL/>
+       <CONSTANT/>
+      </SFPGDATA>
+      <SFPGDATA>
+       <NAME>GV_STREET_HNUM</NAME>
+       <TYPING>TYPE</TYPING>
+       <TYPENAME>STRING</TYPENAME>
+       <DEFAULTVAL/>
+       <CONSTANT/>
+      </SFPGDATA>
+      <SFPGDATA>
+       <NAME>GV_REMITT_CITY</NAME>
+       <TYPING>TYPE</TYPING>
+       <TYPENAME>STRING</TYPENAME>
+       <DEFAULTVAL/>
+       <CONSTANT/>
+      </SFPGDATA>
+      <SFPGDATA>
+       <NAME>GV_DATE_TIME</NAME>
+       <TYPING>TYPE</TYPING>
+       <TYPENAME>STRING</TYPENAME>
+       <DEFAULTVAL/>
+       <CONSTANT/>
+      </SFPGDATA>
+      <SFPGDATA>
+       <NAME>GV_SEND_COUNTRY</NAME>
+       <TYPING>TYPE</TYPING>
+       <TYPENAME>LAND1</TYPENAME>
+       <DEFAULTVAL/>
+       <CONSTANT/>
+      </SFPGDATA>
+      <SFPGDATA>
+       <NAME>GV_CREATED_BY_NAME</NAME>
+       <TYPING>TYPE</TYPING>
+       <TYPENAME>STRING</TYPENAME>
+       <DEFAULTVAL/>
+       <CONSTANT/>
+      </SFPGDATA>
+     </GLOBAL_DATA>
+     <TYPES>
+      <FPCLINE>************************************************************************</FPCLINE>
+      <FPCLINE>* Interface  : ZOTC0012_ORDER_ACKNOWLEDGEMENT                          *</FPCLINE>
+      <FPCLINE>* Title      : Order Acknowledgement Form                              *</FPCLINE>
+      <FPCLINE>* Developer  : Vivek Gaur                                              *</FPCLINE>
+      <FPCLINE>* Object Type: Form Interface                                          *</FPCLINE>
+      <FPCLINE>* SAP Release: SAP ECC 6.0                                             *</FPCLINE>
+      <FPCLINE>*----------------------------------------------------------------------*</FPCLINE>
+      <FPCLINE>* WRICEF ID  : OTC_FDD_0012_Order acknowledgement form                 *</FPCLINE>
+      <FPCLINE>*----------------------------------------------------------------------*</FPCLINE>
+      <FPCLINE>* Description: Order Acknowledgement is sent to the customer through   *</FPCLINE>
+      <FPCLINE>*              email, fax, or print. These forms will need to be auto  *</FPCLINE>
+      <FPCLINE>*              generated at the time the Order is saved.               *</FPCLINE>
+      <FPCLINE>*----------------------------------------------------------------------*</FPCLINE>
+      <FPCLINE>* Modification History:                                                *</FPCLINE>
+      <FPCLINE>*======================================================================*</FPCLINE>
+      <FPCLINE>* Date        User      Transport  Description                         *</FPCLINE>
+      <FPCLINE>* =========== ========  ========== ====================================*</FPCLINE>
+      <FPCLINE>* 04-APR-2012 VGAUR     E1DK901214 Initial development                 *</FPCLINE>
+      <FPCLINE>*&amp;---------------------------------------------------------------------*</FPCLINE>
+      <FPCLINE>* 26-OCT-2012 RVERMA    E1DK907326 Defect#1116: Line number printing is*</FPCLINE>
+      <FPCLINE>*                                  not identical to line item number of*</FPCLINE>
+      <FPCLINE>*                                  order.                              *</FPCLINE>
+      <FPCLINE>*&amp;---------------------------------------------------------------------*</FPCLINE>
+      <FPCLINE/>
+      <FPCLINE>TYPES:</FPCLINE>
+      <FPCLINE/>
+      <FPCLINE>*&amp;--Display table</FPCLINE>
+      <FPCLINE>    BEGIN OF ty_display,</FPCLINE>
+      <FPCLINE>*&amp;--Begin of Changes for Defect# 1116 on 26-Oct-2012</FPCLINE>
+      <FPCLINE>*      posn       TYPE char4,     &quot;Position</FPCLINE>
+      <FPCLINE>      posn       TYPE char6,     &quot;Position</FPCLINE>
+      <FPCLINE>*&amp;--End of Changes for Defect# 1116 on 26-Oct-2012</FPCLINE>
+      <FPCLINE>      item       TYPE char18,    &quot;Item</FPCLINE>
+      <FPCLINE>      descr      TYPE char40,    &quot;Item Description</FPCLINE>
+      <FPCLINE>      qty        TYPE char17,    &quot;Quantity</FPCLINE>
+      <FPCLINE>      uom        TYPE char3,     &quot;UOM</FPCLINE>
+      <FPCLINE>      batch      TYPE char15,    &quot;Batch</FPCLINE>
+      <FPCLINE>      exp_date   TYPE datum,     &quot;Expiration date</FPCLINE>
+      <FPCLINE>      conf_qty   TYPE char17,    &quot;Confirmed Qty</FPCLINE>
+      <FPCLINE>      ship_date  TYPE datum,     &quot;Planned Ship Date</FPCLINE>
+      <FPCLINE>      unit_price TYPE char22,  &quot;Unit Price</FPCLINE>
+      <FPCLINE>      amount     TYPE char22,  &quot;Amount</FPCLINE>
+      <FPCLINE>      sales_text TYPE RESERVE160,  &quot; Material Item sales text</FPCLINE>
+      <FPCLINE>    END OF ty_display,</FPCLINE>
+      <FPCLINE/>
+      <FPCLINE>*&amp;--Table type for Display table</FPCLINE>
+      <FPCLINE>    tt_display   TYPE STANDARD TABLE OF ty_display,</FPCLINE>
+      <FPCLINE/>
+      <FPCLINE>*&amp;--Ship to address</FPCLINE>
+      <FPCLINE>    BEGIN OF ty_ship_addr,</FPCLINE>
+      <FPCLINE>      address    TYPE string,</FPCLINE>
+      <FPCLINE>    END OF ty_ship_addr,</FPCLINE>
+      <FPCLINE/>
+      <FPCLINE>*&amp;--Table type for Ship to address</FPCLINE>
+      <FPCLINE>    tt_ship_address TYPE STANDARD TABLE OF ty_ship_addr.</FPCLINE>
+     </TYPES>
+     <FIELDSYMBOLS/>
+    </CL_FP_GLOBAL_DEFINITIONS>
+   </cls:CL_FP_GLOBAL_DEFINITIONS>
+   <cls:CL_FP_PARAMETERS id="o4">
+    <CL_FP_INTERFACE_DATA_CHANGED classVersion="1">
+     <INTERFACE_DATA href="#o1"/>
+    </CL_FP_INTERFACE_DATA_CHANGED>
+    <CL_FP_PARAMETERS classVersion="1">
+     <IMPORT_PARAMETERS>
+      <SFPIOPAR>
+       <NAME>IM_SCH_ITEM</NAME>
+       <TYPING>TYPE</TYPING>
+       <TYPENAME>ZOTC_T_ORDER_ACK_SCH_ITEM</TYPENAME>
+       <OPTIONAL>X</OPTIONAL>
+       <BYVALUE/>
+       <DEFAULTVAL/>
+       <STANDARD/>
+       <CONSTANT/>
+      </SFPIOPAR>
+      <SFPIOPAR>
+       <NAME>IM_TOTAL_PRICE</NAME>
+       <TYPING>TYPE</TYPING>
+       <TYPENAME>NETWR_AK</TYPENAME>
+       <OPTIONAL>X</OPTIONAL>
+       <BYVALUE/>
+       <DEFAULTVAL/>
+       <STANDARD/>
+       <CONSTANT/>
+      </SFPIOPAR>
+      <SFPIOPAR>
+       <NAME>IM_SADR</NAME>
+       <TYPING>TYPE</TYPING>
+       <TYPENAME>SADR</TYPENAME>
+       <OPTIONAL>X</OPTIONAL>
+       <BYVALUE/>
+       <DEFAULTVAL/>
+       <STANDARD/>
+       <CONSTANT/>
+      </SFPIOPAR>
+      <SFPIOPAR>
+       <NAME>IM_CONTACT_ADDR</NAME>
+       <TYPING>TYPE</TYPING>
+       <TYPENAME>ZOTC_ORDER_ACK_ADDRESS_INFO</TYPENAME>
+       <OPTIONAL>X</OPTIONAL>
+       <BYVALUE/>
+       <DEFAULTVAL/>
+       <STANDARD/>
+       <CONSTANT/>
+      </SFPIOPAR>
+      <SFPIOPAR>
+       <NAME>IM_SHIP_TO_ADDR</NAME>
+       <TYPING>TYPE</TYPING>
+       <TYPENAME>ZOTC_ORDER_ACK_ADDRESS_INFO</TYPENAME>
+       <OPTIONAL>X</OPTIONAL>
+       <BYVALUE/>
+       <DEFAULTVAL/>
+       <STANDARD/>
+       <CONSTANT/>
+      </SFPIOPAR>
+      <SFPIOPAR>
+       <NAME>IM_BILL_TO_ADDR</NAME>
+       <TYPING>TYPE</TYPING>
+       <TYPENAME>ZOTC_ORDER_ACK_ADDRESS_INFO</TYPENAME>
+       <OPTIONAL>X</OPTIONAL>
+       <BYVALUE/>
+       <DEFAULTVAL/>
+       <STANDARD/>
+       <CONSTANT/>
+      </SFPIOPAR>
+      <SFPIOPAR>
+       <NAME>IM_CRE_ADDR</NAME>
+       <TYPING>TYPE</TYPING>
+       <TYPENAME>BAPIADDR3</TYPENAME>
+       <OPTIONAL>X</OPTIONAL>
+       <BYVALUE/>
+       <DEFAULTVAL/>
+       <STANDARD/>
+       <CONSTANT/>
+      </SFPIOPAR>
+      <SFPIOPAR>
+       <NAME>IM_VBELN</NAME>
+       <TYPING>TYPE</TYPING>
+       <TYPENAME>VBELN_VA</TYPENAME>
+       <OPTIONAL/>
+       <BYVALUE/>
+       <DEFAULTVAL/>
+       <STANDARD/>
+       <CONSTANT/>
+      </SFPIOPAR>
+      <SFPIOPAR>
+       <NAME>IM_HEADER</NAME>
+       <TYPING>TYPE</TYPING>
+       <TYPENAME>ZOTC_ORDER_ACK_HEADER</TYPENAME>
+       <OPTIONAL>X</OPTIONAL>
+       <BYVALUE/>
+       <DEFAULTVAL/>
+       <STANDARD/>
+       <CONSTANT/>
+      </SFPIOPAR>
+      <SFPIOPAR>
+       <NAME>IM_ITEM</NAME>
+       <TYPING>TYPE</TYPING>
+       <TYPENAME>ZOTC_T_ORDER_ACK_ITEM</TYPENAME>
+       <OPTIONAL>X</OPTIONAL>
+       <BYVALUE/>
+       <DEFAULTVAL/>
+       <STANDARD/>
+       <CONSTANT/>
+      </SFPIOPAR>
+      <SFPIOPAR>
+       <NAME>IM_SHIP_NO</NAME>
+       <TYPING>TYPE</TYPING>
+       <TYPENAME>CHAR10</TYPENAME>
+       <OPTIONAL>X</OPTIONAL>
+       <BYVALUE/>
+       <DEFAULTVAL/>
+       <STANDARD/>
+       <CONSTANT/>
+      </SFPIOPAR>
+      <SFPIOPAR>
+       <NAME>IM_BILL_NO</NAME>
+       <TYPING>TYPE</TYPING>
+       <TYPENAME>CHAR10</TYPENAME>
+       <OPTIONAL>X</OPTIONAL>
+       <BYVALUE/>
+       <DEFAULTVAL/>
+       <STANDARD/>
+       <CONSTANT/>
+      </SFPIOPAR>
+     </IMPORT_PARAMETERS>
+     <EXPORT_PARAMETERS/>
+     <TABLE_PARAMETERS/>
+     <EXCEPTIONS/>
+    </CL_FP_PARAMETERS>
+   </cls:CL_FP_PARAMETERS>
+   <cls:CL_FP_CODING id="o5">
+    <CL_FP_INTERFACE_DATA_CHANGED classVersion="1">
+     <INTERFACE_DATA href="#o1"/>
+    </CL_FP_INTERFACE_DATA_CHANGED>
+    <CL_FP_CODING classVersion="1">
+     <INPUT_PARAMETERS>
+      <FPPARAMETER>IM_TOTAL_PRICE</FPPARAMETER>
+      <FPPARAMETER>IM_HEADER</FPPARAMETER>
+     </INPUT_PARAMETERS>
+     <OUTPUT_PARAMETERS/>
+     <INITIALIZATION>
+      <FPCLINE>************************************************************************</FPCLINE>
+      <FPCLINE>* Interface  : ZOTC0012_ORDER_ACKNOWLEDGEMENT                          *</FPCLINE>
+      <FPCLINE>* Title      : Order Acknowledgement Form                              *</FPCLINE>
+      <FPCLINE>* Developer  : Vivek Gaur                                              *</FPCLINE>
+      <FPCLINE>* Object Type: Form Interface                                          *</FPCLINE>
+      <FPCLINE>* SAP Release: SAP ECC 6.0                                             *</FPCLINE>
+      <FPCLINE>*----------------------------------------------------------------------*</FPCLINE>
+      <FPCLINE>* WRICEF ID  : OTC_FDD_0012_Order acknowledgement form                 *</FPCLINE>
+      <FPCLINE>*----------------------------------------------------------------------*</FPCLINE>
+      <FPCLINE>* Description: Order Acknowledgement is sent to the customer through   *</FPCLINE>
+      <FPCLINE>*              email, fax, or print. These forms will need to be auto  *</FPCLINE>
+      <FPCLINE>*              generated at the time the Order is saved.               *</FPCLINE>
+      <FPCLINE>*----------------------------------------------------------------------*</FPCLINE>
+      <FPCLINE>* Modification History:                                                *</FPCLINE>
+      <FPCLINE>*======================================================================*</FPCLINE>
+      <FPCLINE>* Date        User      Transport  Description                         *</FPCLINE>
+      <FPCLINE>* =========== ========  ========== ====================================*</FPCLINE>
+      <FPCLINE>* 04-APR-2012 VGAUR     E1DK901214 Initial development                 *</FPCLINE>
+      <FPCLINE>*&amp;---------------------------------------------------------------------*</FPCLINE>
+      <FPCLINE>* 15-APR-2013 RVERMA    E1DK909931 INC0083893/D#3570: Unit Price,      *</FPCLINE>
+      <FPCLINE>*                                  Extended Price and Total Amount is  *</FPCLINE>
+      <FPCLINE>*                                  not printing in correct format for  *</FPCLINE>
+      <FPCLINE>*                                  JPY currency.                       *</FPCLINE>
+      <FPCLINE>*&amp;---------------------------------------------------------------------*</FPCLINE>
+      <FPCLINE>* 28-May-2013 RVERMA    E1DK910516 INC0097101/Defect#440: Country is   *</FPCLINE>
+      <FPCLINE>*                                  not coming in delivery address      *</FPCLINE>
+      <FPCLINE>*&amp;---------------------------------------------------------------------*</FPCLINE>
+      <FPCLINE/>
+      <FPCLINE>*&amp;--Format Addresses in the document</FPCLINE>
+      <FPCLINE>PERFORM f_format_address USING im_sadr</FPCLINE>
+      <FPCLINE>                               im_cre_addr</FPCLINE>
+      <FPCLINE>                               im_header</FPCLINE>
+      <FPCLINE>                               im_ship_to_addr.</FPCLINE>
+      <FPCLINE/>
+      <FPCLINE>*&amp;--Begin of Changes for INC0083893-01,D#3570 on 15-Apr-2013</FPCLINE>
+      <FPCLINE>*&amp;--Format Display table</FPCLINE>
+      <FPCLINE>*PERFORM f_fomat_display_table USING im_item</FPCLINE>
+      <FPCLINE>*                                    im_total_price</FPCLINE>
+      <FPCLINE>*                                    im_sch_item.</FPCLINE>
+      <FPCLINE/>
+      <FPCLINE>PERFORM f_fomat_display_table USING im_item</FPCLINE>
+      <FPCLINE>                                    im_total_price</FPCLINE>
+      <FPCLINE>                                    im_sch_item</FPCLINE>
+      <FPCLINE>                                    im_header.</FPCLINE>
+      <FPCLINE>*&amp;--End of Changes for INC0083893-01,D#3570 on 15-Apr-2013</FPCLINE>
+      <FPCLINE/>
+      <FPCLINE>*&amp;--For Logo and Watermark</FPCLINE>
+      <FPCLINE>PERFORM f_logo_watermark_image.</FPCLINE>
+      <FPCLINE/>
+      <FPCLINE>*&amp;--BOC for INC0097101/Defect#440 on 28-May-2013</FPCLINE>
+      <FPCLINE>PERFORM f_get_send_country USING im_vbeln.</FPCLINE>
+      <FPCLINE>*&amp;--EOC for INC0097101/Defect#440 on 28-May-2013</FPCLINE>
+     </INITIALIZATION>
+     <FORMS>
+      <FPCLINE>************************************************************************</FPCLINE>
+      <FPCLINE>* Interface  : ZOTC0012_ORDER_ACKNOWLEDGEMENT                          *</FPCLINE>
+      <FPCLINE>* Title      : Order Acknowledgement Form                              *</FPCLINE>
+      <FPCLINE>* Developer  : Vivek Gaur                                              *</FPCLINE>
+      <FPCLINE>* Object Type: Form Interface                                          *</FPCLINE>
+      <FPCLINE>* SAP Release: SAP ECC 6.0                                             *</FPCLINE>
+      <FPCLINE>*----------------------------------------------------------------------*</FPCLINE>
+      <FPCLINE>* WRICEF ID  : OTC_FDD_0012_Order acknowledgement form                 *</FPCLINE>
+      <FPCLINE>*----------------------------------------------------------------------*</FPCLINE>
+      <FPCLINE>* Description: Order Acknowledgement is sent to the customer through   *</FPCLINE>
+      <FPCLINE>*              email, fax, or print. These forms will need to be auto  *</FPCLINE>
+      <FPCLINE>*              generated at the time the Order is saved.               *</FPCLINE>
+      <FPCLINE>*----------------------------------------------------------------------*</FPCLINE>
+      <FPCLINE>* Modification History:                                                *</FPCLINE>
+      <FPCLINE>*======================================================================*</FPCLINE>
+      <FPCLINE>* Date        User      Transport  Description                         *</FPCLINE>
+      <FPCLINE>* =========== ========  ========== ====================================*</FPCLINE>
+      <FPCLINE>* 04-APR-2012 VGAUR     E1DK901214 Initial development                 *</FPCLINE>
+      <FPCLINE>*&amp;---------------------------------------------------------------------*</FPCLINE>
+      <FPCLINE>* 26-OCT-2012 RVERMA    E1DK907326 Defect#1116: Line number printing is*</FPCLINE>
+      <FPCLINE>*                                  not identical to line item number of*</FPCLINE>
+      <FPCLINE>*                                  order.                              *</FPCLINE>
+      <FPCLINE>*&amp;---------------------------------------------------------------------*</FPCLINE>
+      <FPCLINE>* 06-NOV-2012 SPANDIT   E1DK907635 CR193 Quantity will be 3 decimal    *</FPCLINE>
+      <FPCLINE>*                                        places                        *</FPCLINE>
+      <FPCLINE>*&amp;---------------------------------------------------------------------*</FPCLINE>
+      <FPCLINE>* 15-APR-2013 RVERMA    E1DK909931 INC0083893/D#3570: Unit Price,      *</FPCLINE>
+      <FPCLINE>*                                  Extended Price and Total Amount is  *</FPCLINE>
+      <FPCLINE>*                                  not printing in correct format for  *</FPCLINE>
+      <FPCLINE>*                                  JPY currency.                       *</FPCLINE>
+      <FPCLINE>*&amp;---------------------------------------------------------------------*</FPCLINE>
+      <FPCLINE>* 28-May-2013 RVERMA    E1DK910516 INC0097101/Defect#440: Country is   *</FPCLINE>
+      <FPCLINE>*                                  not coming in delivery address      *</FPCLINE>
+      <FPCLINE>*&amp;---------------------------------------------------------------------*</FPCLINE>
+      <FPCLINE/>
+      <FPCLINE>*&amp;--BOC for INC0097101/Defect#440 on 28-May-2013</FPCLINE>
+      <FPCLINE/>
+      <FPCLINE>**&amp;--------------------------------------------------------------------*</FPCLINE>
+      <FPCLINE>*&amp;      Form  f_get_send_country</FPCLINE>
+      <FPCLINE>*&amp;---------------------------------------------------------------------*</FPCLINE>
+      <FPCLINE>*       Fetch send country key</FPCLINE>
+      <FPCLINE>*----------------------------------------------------------------------*</FPCLINE>
+      <FPCLINE>*      --&gt;FP_VBELN          Sales Order Number</FPCLINE>
+      <FPCLINE>*----------------------------------------------------------------------*</FPCLINE>
+      <FPCLINE>FORM f_get_send_country USING fp_vbeln TYPE vbeln_va.</FPCLINE>
+      <FPCLINE/>
+      <FPCLINE>  DATA: lv_werks TYPE werks_d.     &quot;Plant</FPCLINE>
+      <FPCLINE/>
+      <FPCLINE>  CLEAR: gv_send_country.</FPCLINE>
+      <FPCLINE/>
+      <FPCLINE>*&amp;--Fetch plant value from order item table</FPCLINE>
+      <FPCLINE>  SELECT werks</FPCLINE>
+      <FPCLINE>    UP TO 1 ROWS</FPCLINE>
+      <FPCLINE>    FROM vbap</FPCLINE>
+      <FPCLINE>    INTO lv_werks</FPCLINE>
+      <FPCLINE>    WHERE vbeln EQ fp_vbeln.</FPCLINE>
+      <FPCLINE>  ENDSELECT.</FPCLINE>
+      <FPCLINE/>
+      <FPCLINE>  IF sy-subrc EQ 0.</FPCLINE>
+      <FPCLINE/>
+      <FPCLINE>*&amp;--Fetch country key value from plant table</FPCLINE>
+      <FPCLINE>    SELECT SINGLE land1</FPCLINE>
+      <FPCLINE>      FROM t001w</FPCLINE>
+      <FPCLINE>      INTO gv_send_country</FPCLINE>
+      <FPCLINE>      WHERE werks EQ lv_werks.</FPCLINE>
+      <FPCLINE/>
+      <FPCLINE>  ENDIF.</FPCLINE>
+      <FPCLINE/>
+      <FPCLINE>ENDFORM.</FPCLINE>
+      <FPCLINE>*&amp;--EOC for INC0097101/Defect#440 on 28-May-2013</FPCLINE>
+      <FPCLINE/>
+      <FPCLINE>**&amp;--------------------------------------------------------------------*</FPCLINE>
+      <FPCLINE>*&amp;      Form  f_format_address</FPCLINE>
+      <FPCLINE>*&amp;---------------------------------------------------------------------*</FPCLINE>
+      <FPCLINE>*       Format addresses in the document</FPCLINE>
+      <FPCLINE>*----------------------------------------------------------------------*</FPCLINE>
+      <FPCLINE>*      --&gt;FP_SADR          Sales Organisation Address</FPCLINE>
+      <FPCLINE>*      --&gt;FP_CRE_ADDR      Created by Address</FPCLINE>
+      <FPCLINE>*      --&gt;FP_VBAK          Order Header data</FPCLINE>
+      <FPCLINE>*      --&gt;FP_SHIP_TO_ADDR  Ship-To Address</FPCLINE>
+      <FPCLINE>*----------------------------------------------------------------------*</FPCLINE>
+      <FPCLINE>FORM f_format_address</FPCLINE>
+      <FPCLINE>                USING fp_sadr         TYPE sadr</FPCLINE>
+      <FPCLINE>                      fp_cre_addr     TYPE bapiaddr3</FPCLINE>
+      <FPCLINE>                      fp_vbak         TYPE zotc_order_ack_header</FPCLINE>
+      <FPCLINE>                      fp_ship_to_addr TYPE zotc_order_ack_address_info.</FPCLINE>
+      <FPCLINE/>
+      <FPCLINE>  DATA: lwa_ship_address TYPE ty_ship_addr.  &quot;Ship to Address</FPCLINE>
+      <FPCLINE/>
+      <FPCLINE>*&amp;--Concatenate Remittance City &amp; Region</FPCLINE>
+      <FPCLINE>  CONCATENATE fp_sadr-ort01 c_comma fp_sadr-regio INTO gv_remitt_city.</FPCLINE>
+      <FPCLINE>*&amp;--Concatenate Remittance City &amp; Postal Code</FPCLINE>
+      <FPCLINE>  CONCATENATE gv_remitt_city fp_sadr-pstlz INTO gv_remitt_city</FPCLINE>
+      <FPCLINE>              SEPARATED BY space.</FPCLINE>
+      <FPCLINE/>
+      <FPCLINE>*&amp;--Concatenate E-mail Address &amp; Name of person who craeted document</FPCLINE>
+      <FPCLINE>  CONCATENATE c_email</FPCLINE>
+      <FPCLINE>              fp_cre_addr-e_mail</FPCLINE>
+      <FPCLINE>              c_brak_cl</FPCLINE>
+      <FPCLINE>         INTO gv_created_by_name.</FPCLINE>
+      <FPCLINE/>
+      <FPCLINE>  CONCATENATE fp_cre_addr-firstname</FPCLINE>
+      <FPCLINE>              fp_cre_addr-lastname</FPCLINE>
+      <FPCLINE>              gv_created_by_name</FPCLINE>
+      <FPCLINE>         INTO gv_created_by_name</FPCLINE>
+      <FPCLINE> SEPARATED BY space.</FPCLINE>
+      <FPCLINE/>
+      <FPCLINE>  CONCATENATE fp_ship_to_addr-hnum1</FPCLINE>
+      <FPCLINE>              fp_ship_to_addr-street</FPCLINE>
+      <FPCLINE>         INTO gv_street_hnum</FPCLINE>
+      <FPCLINE> SEPARATED BY space.</FPCLINE>
+      <FPCLINE/>
+      <FPCLINE>  CONCATENATE fp_ship_to_addr-city1</FPCLINE>
+      <FPCLINE>              fp_ship_to_addr-region</FPCLINE>
+      <FPCLINE>              &apos; &apos;</FPCLINE>
+      <FPCLINE>              fp_ship_to_addr-pcode1</FPCLINE>
+      <FPCLINE>         INTO gv_ship_city</FPCLINE>
+      <FPCLINE> SEPARATED BY space.</FPCLINE>
+      <FPCLINE/>
+      <FPCLINE>*&amp;--Name 1</FPCLINE>
+      <FPCLINE>  IF fp_ship_to_addr-name1 IS NOT INITIAL.</FPCLINE>
+      <FPCLINE>    lwa_ship_address-address = fp_ship_to_addr-name1.</FPCLINE>
+      <FPCLINE>    APPEND lwa_ship_address TO i_ship_address.</FPCLINE>
+      <FPCLINE>  ENDIF.</FPCLINE>
+      <FPCLINE>*&amp;--Name 2</FPCLINE>
+      <FPCLINE>  IF fp_ship_to_addr-name2 IS NOT INITIAL.</FPCLINE>
+      <FPCLINE>    lwa_ship_address-address = fp_ship_to_addr-name2.</FPCLINE>
+      <FPCLINE>    APPEND lwa_ship_address TO i_ship_address.</FPCLINE>
+      <FPCLINE>    CLEAR lwa_ship_address.</FPCLINE>
+      <FPCLINE>  ENDIF.</FPCLINE>
+      <FPCLINE>*&amp;--Name 3</FPCLINE>
+      <FPCLINE>  IF fp_ship_to_addr-name3 IS NOT INITIAL.</FPCLINE>
+      <FPCLINE>    lwa_ship_address-address = fp_ship_to_addr-name3.</FPCLINE>
+      <FPCLINE>    APPEND lwa_ship_address TO i_ship_address.</FPCLINE>
+      <FPCLINE>    CLEAR lwa_ship_address.</FPCLINE>
+      <FPCLINE>  ENDIF.</FPCLINE>
+      <FPCLINE>*&amp;--Name 4</FPCLINE>
+      <FPCLINE>  IF fp_ship_to_addr-name4 IS NOT INITIAL.</FPCLINE>
+      <FPCLINE>    lwa_ship_address-address = fp_ship_to_addr-name4.</FPCLINE>
+      <FPCLINE>    APPEND lwa_ship_address TO i_ship_address.</FPCLINE>
+      <FPCLINE>    CLEAR lwa_ship_address.</FPCLINE>
+      <FPCLINE>  ENDIF.</FPCLINE>
+      <FPCLINE>**&amp;--PO Number</FPCLINE>
+      <FPCLINE>*  CONCATENATE c_po fp_vbak-bstkd INTO lwa_ship_address-address</FPCLINE>
+      <FPCLINE>*  SEPARATED BY space.</FPCLINE>
+      <FPCLINE>*  APPEND lwa_ship_address TO i_ship_address.</FPCLINE>
+      <FPCLINE>*  CLEAR lwa_ship_address.</FPCLINE>
+      <FPCLINE>*&amp;--House No. &amp; Street</FPCLINE>
+      <FPCLINE>  lwa_ship_address-address = gv_street_hnum.</FPCLINE>
+      <FPCLINE>  APPEND lwa_ship_address TO i_ship_address.</FPCLINE>
+      <FPCLINE>  CLEAR lwa_ship_address.</FPCLINE>
+      <FPCLINE>*&amp;--City</FPCLINE>
+      <FPCLINE>  lwa_ship_address-address = gv_ship_city.</FPCLINE>
+      <FPCLINE>  APPEND lwa_ship_address TO i_ship_address.</FPCLINE>
+      <FPCLINE>  CLEAR lwa_ship_address.</FPCLINE>
+      <FPCLINE/>
+      <FPCLINE>ENDFORM.                    &quot;f_format_address</FPCLINE>
+      <FPCLINE/>
+      <FPCLINE/>
+      <FPCLINE/>
+      <FPCLINE>*&amp;---------------------------------------------------------------------*</FPCLINE>
+      <FPCLINE>*&amp;      Form  f_fomat_display_table</FPCLINE>
+      <FPCLINE>*&amp;---------------------------------------------------------------------*</FPCLINE>
+      <FPCLINE>*       Format Display table</FPCLINE>
+      <FPCLINE>*----------------------------------------------------------------------*</FPCLINE>
+      <FPCLINE>*      --&gt;FP_I_ITEM               Order Acknowledgement Item data</FPCLINE>
+      <FPCLINE>*      --&gt;FP_TOTAL_PR             Total Price</FPCLINE>
+      <FPCLINE>*      --&gt;FP_I_SCH_ITEM           Schedule Line Data</FPCLINE>
+      <FPCLINE>*      --&gt;FP_HEADER               Header Data</FPCLINE>
+      <FPCLINE>*----------------------------------------------------------------------*</FPCLINE>
+      <FPCLINE>FORM f_fomat_display_table</FPCLINE>
+      <FPCLINE>                    USING fp_i_item     TYPE zotc_t_order_ack_item</FPCLINE>
+      <FPCLINE>                          fp_total_pr   TYPE netwr_ak</FPCLINE>
+      <FPCLINE>                          fp_i_sch_item TYPE zotc_t_order_ack_sch_item</FPCLINE>
+      <FPCLINE>                          fp_header     TYPE zotc_order_ack_header.</FPCLINE>
+      <FPCLINE/>
+      <FPCLINE>  FIELD-SYMBOLS:</FPCLINE>
+      <FPCLINE>*&amp;--Item Data</FPCLINE>
+      <FPCLINE>      &lt;fs_item&gt;     TYPE zotc_order_ack_item,</FPCLINE>
+      <FPCLINE>*&amp;--Schedule Line Data</FPCLINE>
+      <FPCLINE>      &lt;fs_sch_item&gt; TYPE zotc_order_ack_sch_item,</FPCLINE>
+      <FPCLINE>*&amp;--Display data</FPCLINE>
+      <FPCLINE>      &lt;fs_display&gt;  TYPE ty_display.</FPCLINE>
+      <FPCLINE/>
+      <FPCLINE>  DATA:</FPCLINE>
+      <FPCLINE>*&amp;--Display table work area</FPCLINE>
+      <FPCLINE>      lwa_display   TYPE ty_display,</FPCLINE>
+      <FPCLINE/>
+      <FPCLINE>**&amp;--Item Counter               &quot;Commented for Defect#1116</FPCLINE>
+      <FPCLINE>*      lv_counter    TYPE int4, &quot;Commented for Defect#1116</FPCLINE>
+      <FPCLINE/>
+      <FPCLINE>*&amp;--Table index</FPCLINE>
+      <FPCLINE>      lv_index      TYPE i.</FPCLINE>
+      <FPCLINE/>
+      <FPCLINE>  LOOP AT fp_i_item ASSIGNING &lt;fs_item&gt;.</FPCLINE>
+      <FPCLINE/>
+      <FPCLINE>*&amp;--Begin of Changes for Defect# 1116 on 26-Oct-2012</FPCLINE>
+      <FPCLINE/>
+      <FPCLINE>*    lv_counter = lv_counter + 1.         &quot;Commented for Defect#1116</FPCLINE>
+      <FPCLINE>*</FPCLINE>
+      <FPCLINE>**&amp;--Item Position                        &quot;Commented for Defect#1116</FPCLINE>
+      <FPCLINE>*    lwa_display-posn       = lv_counter. &quot;Commented for Defect#1116</FPCLINE>
+      <FPCLINE/>
+      <FPCLINE>    CALL FUNCTION &apos;CONVERSION_EXIT_ALPHA_OUTPUT&apos;</FPCLINE>
+      <FPCLINE>      EXPORTING</FPCLINE>
+      <FPCLINE>        input  = &lt;fs_item&gt;-posnr</FPCLINE>
+      <FPCLINE>      IMPORTING</FPCLINE>
+      <FPCLINE>        output = lwa_display-posn.</FPCLINE>
+      <FPCLINE/>
+      <FPCLINE>*&amp;--End of Changes for Defect# 1116 on 26-Oct-2012</FPCLINE>
+      <FPCLINE/>
+      <FPCLINE>*&amp;--Item</FPCLINE>
+      <FPCLINE>    WRITE &lt;fs_item&gt;-matnr TO lwa_display-item.</FPCLINE>
+      <FPCLINE>*&amp;--Description</FPCLINE>
+      <FPCLINE>    lwa_display-descr      = &lt;fs_item&gt;-arktx.</FPCLINE>
+      <FPCLINE>*&amp;--Quantity</FPCLINE>
+      <FPCLINE>* Begin of Change CR193</FPCLINE>
+      <FPCLINE>*    WRITE &lt;fs_item&gt;-kwmeng TO lwa_display-qty DECIMALS 0</FPCLINE>
+      <FPCLINE>*    LEFT-JUSTIFIED.</FPCLINE>
+      <FPCLINE>*    REPLACE ALL OCCURRENCES OF &apos;,&apos; IN lwa_display-qty WITH &apos;&apos;.</FPCLINE>
+      <FPCLINE>*    REPLACE ALL OCCURRENCES OF &apos;.&apos; IN lwa_display-qty WITH &apos;&apos;.</FPCLINE>
+      <FPCLINE>    WRITE &lt;fs_item&gt;-kwmeng TO lwa_display-qty DECIMALS 3</FPCLINE>
+      <FPCLINE>    LEFT-JUSTIFIED.</FPCLINE>
+      <FPCLINE>* End of Change CR193</FPCLINE>
+      <FPCLINE/>
+      <FPCLINE>*&amp;--UOM</FPCLINE>
+      <FPCLINE>    lwa_display-uom        = &lt;fs_item&gt;-zieme.</FPCLINE>
+      <FPCLINE>*&amp;--Batch</FPCLINE>
+      <FPCLINE>    lwa_display-batch      = &lt;fs_item&gt;-charg.</FPCLINE>
+      <FPCLINE>*&amp;--Expiration date</FPCLINE>
+      <FPCLINE>    lwa_display-exp_date   = &lt;fs_item&gt;-vfdat.</FPCLINE>
+      <FPCLINE>*   Material item sales text</FPCLINE>
+      <FPCLINE>    lwa_display-sales_text   = &lt;fs_item&gt;-sales_text.</FPCLINE>
+      <FPCLINE/>
+      <FPCLINE>*&amp;--Begin of Changes for INC0083893-01,D#3570 on 15-Apr-2013</FPCLINE>
+      <FPCLINE>**&amp;--Net Price</FPCLINE>
+      <FPCLINE>*    WRITE &lt;fs_item&gt;-netwr TO lwa_display-unit_price.</FPCLINE>
+      <FPCLINE>*    CONDENSE lwa_display-unit_price.</FPCLINE>
+      <FPCLINE>**&amp;--Amount</FPCLINE>
+      <FPCLINE>*    WRITE &lt;fs_item&gt;-amount TO lwa_display-amount.</FPCLINE>
+      <FPCLINE>*    CONDENSE lwa_display-amount.</FPCLINE>
+      <FPCLINE/>
+      <FPCLINE>*&amp;--Net Price</FPCLINE>
+      <FPCLINE>    WRITE &lt;fs_item&gt;-netwr TO lwa_display-unit_price</FPCLINE>
+      <FPCLINE>                          CURRENCY &lt;fs_item&gt;-waerk.</FPCLINE>
+      <FPCLINE>    CONDENSE lwa_display-unit_price.</FPCLINE>
+      <FPCLINE>*&amp;--Amount</FPCLINE>
+      <FPCLINE>    WRITE &lt;fs_item&gt;-amount TO lwa_display-amount</FPCLINE>
+      <FPCLINE>                           CURRENCY &lt;fs_item&gt;-waerk.</FPCLINE>
+      <FPCLINE>    CONDENSE lwa_display-amount.</FPCLINE>
+      <FPCLINE>*&amp;--End of Changes for INC0083893, D#3570 on 15-Apr-2013</FPCLINE>
+      <FPCLINE/>
+      <FPCLINE>*&amp;--Confirmed Quantity</FPCLINE>
+      <FPCLINE>    READ TABLE fp_i_sch_item ASSIGNING &lt;fs_sch_item&gt;</FPCLINE>
+      <FPCLINE>                              WITH KEY posnr = &lt;fs_item&gt;-posnr</FPCLINE>
+      <FPCLINE>                              BINARY SEARCH.</FPCLINE>
+      <FPCLINE>    IF sy-subrc = 0.</FPCLINE>
+      <FPCLINE>* Begin of Change CR193</FPCLINE>
+      <FPCLINE>*      WRITE &lt;fs_sch_item&gt;-bmeng TO lwa_display-conf_qty</FPCLINE>
+      <FPCLINE>*      LEFT-JUSTIFIED DECIMALS 0.</FPCLINE>
+      <FPCLINE>*      REPLACE ALL OCCURRENCES OF &apos;,&apos; IN lwa_display-conf_qty WITH &apos;&apos;.</FPCLINE>
+      <FPCLINE>*      REPLACE ALL OCCURRENCES OF &apos;.&apos; IN lwa_display-conf_qty WITH &apos;&apos;.</FPCLINE>
+      <FPCLINE>      WRITE &lt;fs_sch_item&gt;-bmeng TO lwa_display-conf_qty</FPCLINE>
+      <FPCLINE>      LEFT-JUSTIFIED DECIMALS 3.</FPCLINE>
+      <FPCLINE>* End of Change CR193</FPCLINE>
+      <FPCLINE>      lwa_display-ship_date = &lt;fs_sch_item&gt;-edatu.</FPCLINE>
+      <FPCLINE>    ELSE.</FPCLINE>
+      <FPCLINE>      lwa_display-conf_qty = 0.</FPCLINE>
+      <FPCLINE>    ENDIF.</FPCLINE>
+      <FPCLINE>    APPEND lwa_display TO i_display.</FPCLINE>
+      <FPCLINE>    CLEAR: lwa_display.</FPCLINE>
+      <FPCLINE/>
+      <FPCLINE>    LOOP AT fp_i_sch_item ASSIGNING &lt;fs_sch_item&gt;</FPCLINE>
+      <FPCLINE>                             WHERE posnr = &lt;fs_item&gt;-posnr.</FPCLINE>
+      <FPCLINE>      lv_index = lv_index + 1.</FPCLINE>
+      <FPCLINE>      IF lv_index = 1.</FPCLINE>
+      <FPCLINE>        CONTINUE.</FPCLINE>
+      <FPCLINE>      ENDIF.</FPCLINE>
+      <FPCLINE/>
+      <FPCLINE>**&amp;--Confirmed Quantity</FPCLINE>
+      <FPCLINE>* End of Change CR193</FPCLINE>
+      <FPCLINE>*      WRITE &lt;fs_sch_item&gt;-bmeng TO lwa_display-conf_qty</FPCLINE>
+      <FPCLINE>*      DECIMALS 0 LEFT-JUSTIFIED.</FPCLINE>
+      <FPCLINE>*      REPLACE ALL OCCURRENCES OF &apos;,&apos; IN lwa_display-conf_qty WITH &apos;&apos;.</FPCLINE>
+      <FPCLINE>*      REPLACE ALL OCCURRENCES OF &apos;.&apos; IN lwa_display-conf_qty WITH &apos;&apos;.</FPCLINE>
+      <FPCLINE>      WRITE &lt;fs_sch_item&gt;-bmeng TO lwa_display-conf_qty</FPCLINE>
+      <FPCLINE>      DECIMALS 3 LEFT-JUSTIFIED.</FPCLINE>
+      <FPCLINE>* End of Change CR193</FPCLINE>
+      <FPCLINE/>
+      <FPCLINE>**&amp;--Planned Ship Date</FPCLINE>
+      <FPCLINE>      lwa_display-ship_date = &lt;fs_sch_item&gt;-edatu.</FPCLINE>
+      <FPCLINE>      APPEND lwa_display TO i_display.</FPCLINE>
+      <FPCLINE>      CLEAR: lwa_display.</FPCLINE>
+      <FPCLINE/>
+      <FPCLINE>    ENDLOOP.</FPCLINE>
+      <FPCLINE/>
+      <FPCLINE>    CLEAR: lv_index.</FPCLINE>
+      <FPCLINE>  ENDLOOP.</FPCLINE>
+      <FPCLINE>*&amp;--Begin of Changes for INC0083893, D#3570 on 15-Apr-2013</FPCLINE>
+      <FPCLINE>*  WRITE fp_total_pr TO gv_total_amount.</FPCLINE>
+      <FPCLINE/>
+      <FPCLINE>  WRITE fp_total_pr TO gv_total_amount</FPCLINE>
+      <FPCLINE>                    CURRENCY fp_header-waerk.</FPCLINE>
+      <FPCLINE>  CONDENSE gv_total_amount.</FPCLINE>
+      <FPCLINE>*&amp;--End of Changes for INC0083893, D#3570 on 15-Apr-2013</FPCLINE>
+      <FPCLINE/>
+      <FPCLINE>ENDFORM.                    &quot;f_fomat_display_table</FPCLINE>
+      <FPCLINE/>
+      <FPCLINE/>
+      <FPCLINE>*&amp;---------------------------------------------------------------------*</FPCLINE>
+      <FPCLINE>*&amp;      Form  f_logo_watermark_image</FPCLINE>
+      <FPCLINE>*&amp;---------------------------------------------------------------------*</FPCLINE>
+      <FPCLINE>*       For Logo and Watermark</FPCLINE>
+      <FPCLINE>*----------------------------------------------------------------------*</FPCLINE>
+      <FPCLINE>FORM f_logo_watermark_image.</FPCLINE>
+      <FPCLINE/>
+      <FPCLINE>  CONSTANTS:</FPCLINE>
+      <FPCLINE>*&amp;--SAPscript Graphics Management: Application object</FPCLINE>
+      <FPCLINE>     lc_graphics    TYPE tdobjectgr VALUE &apos;GRAPHICS&apos;,</FPCLINE>
+      <FPCLINE>*&amp;--Draft Name</FPCLINE>
+      <FPCLINE>     lc_draft_image TYPE tdobname   VALUE &apos;ZOTC_DRAFT&apos;,</FPCLINE>
+      <FPCLINE>*&amp;--Logo Name</FPCLINE>
+      <FPCLINE>     lc_logo_image  TYPE tdobname   VALUE &apos;ZBIORAD_LOGO&apos;,</FPCLINE>
+      <FPCLINE>*&amp;--SAPscript Graphics Management: ID</FPCLINE>
+      <FPCLINE>     lc_image_id    TYPE tdidgr     VALUE &apos;BMAP&apos;,</FPCLINE>
+      <FPCLINE>*&amp;--SAPscript: Type of graphic</FPCLINE>
+      <FPCLINE>     lc_image_type  TYPE tdbtype    VALUE &apos;BCOL&apos;,</FPCLINE>
+      <FPCLINE>*&amp;--Production system</FPCLINE>
+      <FPCLINE>     lc_prod_name   TYPE rvari_vnam VALUE &apos;ZPRODUCTION&apos;,</FPCLINE>
+      <FPCLINE>*&amp;--ABAP: Type of selection</FPCLINE>
+      <FPCLINE>     lc_type        TYPE rsscr_kind VALUE &apos;P&apos;,</FPCLINE>
+      <FPCLINE>*&amp;--ABAP: Current selection number</FPCLINE>
+      <FPCLINE>     lc_numb        TYPE tvarv_numb VALUE &apos;0000&apos;.</FPCLINE>
+      <FPCLINE/>
+      <FPCLINE>  DATA:</FPCLINE>
+      <FPCLINE>*&amp;--Production system</FPCLINE>
+      <FPCLINE>    lv_prod        TYPE sysysid.</FPCLINE>
+      <FPCLINE/>
+      <FPCLINE>*&amp;--Check Production Client</FPCLINE>
+      <FPCLINE>  SELECT SINGLE low</FPCLINE>
+      <FPCLINE>           FROM tvarvc</FPCLINE>
+      <FPCLINE>           INTO lv_prod</FPCLINE>
+      <FPCLINE>          WHERE name = lc_prod_name</FPCLINE>
+      <FPCLINE>            AND type = lc_type</FPCLINE>
+      <FPCLINE>            AND numb = lc_numb.</FPCLINE>
+      <FPCLINE>  IF sy-sysid = lv_prod.</FPCLINE>
+      <FPCLINE>    gv_production = abap_true.</FPCLINE>
+      <FPCLINE>*&amp;--If not Production client then</FPCLINE>
+      <FPCLINE>*&amp;--convert watermark image to Binary format</FPCLINE>
+      <FPCLINE>  ELSE.</FPCLINE>
+      <FPCLINE>    CALL METHOD cl_ssf_xsf_utilities=&gt;get_bds_graphic_as_bmp</FPCLINE>
+      <FPCLINE>      EXPORTING</FPCLINE>
+      <FPCLINE>        p_object       = lc_graphics</FPCLINE>
+      <FPCLINE>        p_name         = lc_draft_image</FPCLINE>
+      <FPCLINE>        p_id           = lc_image_id</FPCLINE>
+      <FPCLINE>        p_btype        = lc_image_type</FPCLINE>
+      <FPCLINE>      RECEIVING</FPCLINE>
+      <FPCLINE>        p_bmp          = gv_image_bin</FPCLINE>
+      <FPCLINE>      EXCEPTIONS</FPCLINE>
+      <FPCLINE>        not_found      = 1</FPCLINE>
+      <FPCLINE>        internal_error = 2</FPCLINE>
+      <FPCLINE>        OTHERS         = 3.</FPCLINE>
+      <FPCLINE>    IF sy-subrc &lt;&gt; 0.</FPCLINE>
+      <FPCLINE>      MESSAGE ID sy-msgid TYPE sy-msgty NUMBER sy-msgno</FPCLINE>
+      <FPCLINE>                 WITH sy-msgv1 sy-msgv2 sy-msgv3 sy-msgv4.</FPCLINE>
+      <FPCLINE>    ENDIF.</FPCLINE>
+      <FPCLINE>  ENDIF.</FPCLINE>
+      <FPCLINE/>
+      <FPCLINE>*&amp;--Convert Logo image to Binary format</FPCLINE>
+      <FPCLINE>  CALL METHOD cl_ssf_xsf_utilities=&gt;get_bds_graphic_as_bmp</FPCLINE>
+      <FPCLINE>    EXPORTING</FPCLINE>
+      <FPCLINE>      p_object       = lc_graphics</FPCLINE>
+      <FPCLINE>      p_name         = lc_logo_image</FPCLINE>
+      <FPCLINE>      p_id           = lc_image_id</FPCLINE>
+      <FPCLINE>      p_btype        = lc_image_type</FPCLINE>
+      <FPCLINE>    RECEIVING</FPCLINE>
+      <FPCLINE>      p_bmp          = gv_logo_bin</FPCLINE>
+      <FPCLINE>    EXCEPTIONS</FPCLINE>
+      <FPCLINE>      not_found      = 1</FPCLINE>
+      <FPCLINE>      internal_error = 2</FPCLINE>
+      <FPCLINE>      OTHERS         = 3.</FPCLINE>
+      <FPCLINE>  IF sy-subrc &lt;&gt; 0.</FPCLINE>
+      <FPCLINE>    MESSAGE ID sy-msgid TYPE sy-msgty NUMBER sy-msgno</FPCLINE>
+      <FPCLINE>               WITH sy-msgv1 sy-msgv2 sy-msgv3 sy-msgv4.</FPCLINE>
+      <FPCLINE>  ENDIF.</FPCLINE>
+      <FPCLINE/>
+      <FPCLINE>ENDFORM.                    &quot;f_logo_watermark_image</FPCLINE>
+     </FORMS>
+    </CL_FP_CODING>
+   </cls:CL_FP_CODING>
+  </asx:heap>
+ </asx:abap>
+</abapGit>

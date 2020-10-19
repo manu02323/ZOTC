@@ -1,0 +1,42 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<abapGit version="v1.0.0" serializer="LCL_OBJECT_TABL" serializer_version="v1.0.0">
+ <asx:abap xmlns:asx="http://www.sap.com/abapxml" version="1.0">
+  <asx:values>
+   <DD02V>
+    <TABNAME>ZOTC_GET_DELV_DATA</TABNAME>
+    <DDLANGUAGE>E</DDLANGUAGE>
+    <TABCLASS>INTTAB</TABCLASS>
+    <DDTEXT>Get delivery date and Quantity</DDTEXT>
+    <EXCLASS>4</EXCLASS>
+   </DD02V>
+   <DD03P_TABLE>
+    <DD03P>
+     <TABNAME>ZOTC_GET_DELV_DATA</TABNAME>
+     <FIELDNAME>VBELN</FIELDNAME>
+     <POSITION>0001</POSITION>
+     <ROLLNAME>VBELN_VA</ROLLNAME>
+     <ADMINFIELD>0</ADMINFIELD>
+     <COMPTYPE>E</COMPTYPE>
+    </DD03P>
+    <DD03P>
+     <TABNAME>ZOTC_GET_DELV_DATA</TABNAME>
+     <FIELDNAME>POSNR</FIELDNAME>
+     <POSITION>0002</POSITION>
+     <ROLLNAME>POSNR_VA</ROLLNAME>
+     <ADMINFIELD>0</ADMINFIELD>
+     <COMPTYPE>E</COMPTYPE>
+    </DD03P>
+    <DD03P>
+     <TABNAME>ZOTC_GET_DELV_DATA</TABNAME>
+     <FIELDNAME>ZDELV_DATA</FIELDNAME>
+     <POSITION>0003</POSITION>
+     <ROLLNAME>ZOTC_SCHLINE</ROLLNAME>
+     <ADMINFIELD>0</ADMINFIELD>
+     <DATATYPE>TTYP</DATATYPE>
+     <MASK>  TTYPL</MASK>
+     <COMPTYPE>L</COMPTYPE>
+    </DD03P>
+   </DD03P_TABLE>
+  </asx:values>
+ </asx:abap>
+</abapGit>

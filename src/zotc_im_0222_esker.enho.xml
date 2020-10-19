@@ -1,0 +1,131 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<abapGit version="v1.0.0" serializer="LCL_OBJECT_ENHO" serializer_version="v1.0.0">
+ <asx:abap xmlns:asx="http://www.sap.com/abapxml" version="1.0">
+  <asx:values>
+   <TOOL>HOOK_IMPL</TOOL>
+   <SHORTTEXT>Esker Interface Contract linking</SHORTTEXT>
+   <ORIGINAL_OBJECT>
+    <PGMID>R3TR</PGMID>
+    <ORG_OBJ_TYPE>FUGR</ORG_OBJ_TYPE>
+    <ORG_OBJ_NAME>SLS_LORD</ORG_OBJ_NAME>
+    <ORG_MAIN_TYPE>FUGR</ORG_MAIN_TYPE>
+    <ORG_MAIN_NAME>SLS_LORD</ORG_MAIN_NAME>
+    <PROGRAMNAME>SAPLSLS_LORD</PROGRAMNAME>
+   </ORIGINAL_OBJECT>
+   <ENHANCEMENTS>
+    <ENH_HOOK_IMPL>
+     <PROGRAMNAME>SAPLSLS_LORD</PROGRAMNAME>
+     <ENHMODE>D</ENHMODE>
+     <FULL_NAME>\PR:SAPLSLS_LORD\FO:CHECK_TEXT_KEY\SE:BEGIN\EI</FULL_NAME>
+     <SOURCE>
+      <item>***********************************************************************</item>
+      <item>*Imp. Enhancement     : ZOTC_IM_0222_ESKER *</item>
+      <item>*Title      : Create Sales Order Async                                *</item>
+      <item>*Developer  : Abdus Salam Sk                                          *</item>
+      <item>*Object type: Interface                                               *</item>
+      <item>*SAP Release: SAP ECC 6.0                                             *</item>
+      <item>*---------------------------------------------------------------------*</item>
+      <item>*WRICEF ID: OTC_IDD_0222_SAP                                          *</item>
+      <item>*---------------------------------------------------------------------*</item>
+      <item>*Description: Create Sales Order Async                                *</item>
+      <item>*---------------------------------------------------------------------*</item>
+      <item>*MODIFICATION HISTORY:</item>
+      <item>*=====================================================================*</item>
+      <item>*Date           User        Transport      Description</item>
+      <item>*=========== ============== ============== ===========================*</item>
+      <item>*---------------------------------------------------------------------*</item>
+      <item>*08-Apr-2019    ASK         E1DK940993    Defect#9046/INC0475526 Esker*</item>
+      <item>*                                         order Text E-Invoice        *</item>
+      <item>*                                          Reference                  *</item>
+      <item>*---------------------------------------------------------------------*</item>
+      <item/>
+      <item>DATA : lv_esker_einv TYPE flag,</item>
+      <item>lwa_xthead    TYPE THEADVB.</item>
+      <item/>
+      <item>IMPORT lv_esker_einv TO lv_esker_einv FROM MEMORY ID &apos;ESKER_EINV&apos;.</item>
+      <item/>
+      <item>* For ESKER Invoice if any incoing text is alreday maintained in customer</item>
+      <item>* Master then overide the check  from KNVV.</item>
+      <item>IF lv_esker_einv = abap_true.</item>
+      <item/>
+      <item>READ TABLE xthead INTO lwa_xthead</item>
+      <item>WITH KEY tdobject = tvcom-tdobject</item>
+      <item>tdname = gv_tdname</item>
+      <item>tdid = gs_text-id</item>
+      <item>tdspras = gs_text-spras.</item>
+      <item>IF sy-subrc = 0.</item>
+      <item>** Check if the text is coming from KNVV</item>
+      <item>IF lwa_xthead-TDFUSER  = sy-uname AND</item>
+      <item>lwa_xthead-TDREFOBJ = &apos;KNVV&apos; AND</item>
+      <item>lwa_xthead-TDREFID  = lwa_xthead-TDID .</item>
+      <item/>
+      <item>** If so then delete the record table for Validation</item>
+      <item>DELETE  gt_text WHERE object = tvcom-tdobject AND</item>
+      <item>name = gv_tdname AND</item>
+      <item>id = gs_text-id AND</item>
+      <item>spras = gs_text-spras.</item>
+      <item>ENDIF.</item>
+      <item>ENDIF.</item>
+      <item>ENDIF.</item>
+     </SOURCE>
+    </ENH_HOOK_IMPL>
+   </ENHANCEMENTS>
+   <SPACES>
+    <item>
+     <FULL_NAME>\PR:SAPLSLS_LORD\FO:CHECK_TEXT_KEY\SE:BEGIN\EI</FULL_NAME>
+     <SPACES>
+      <item>0</item>
+      <item>0</item>
+      <item>0</item>
+      <item>0</item>
+      <item>0</item>
+      <item>0</item>
+      <item>0</item>
+      <item>0</item>
+      <item>0</item>
+      <item>0</item>
+      <item>0</item>
+      <item>0</item>
+      <item>0</item>
+      <item>0</item>
+      <item>0</item>
+      <item>0</item>
+      <item>0</item>
+      <item>0</item>
+      <item>0</item>
+      <item>0</item>
+      <item>0</item>
+      <item>1</item>
+      <item>8</item>
+      <item>0</item>
+      <item>2</item>
+      <item>0</item>
+      <item>0</item>
+      <item>0</item>
+      <item>2</item>
+      <item>0</item>
+      <item>6</item>
+      <item>24</item>
+      <item>33</item>
+      <item>33</item>
+      <item>33</item>
+      <item>6</item>
+      <item>0</item>
+      <item>8</item>
+      <item>11</item>
+      <item>11</item>
+      <item>0</item>
+      <item>0</item>
+      <item>10</item>
+      <item>32</item>
+      <item>32</item>
+      <item>32</item>
+      <item>8</item>
+      <item>6</item>
+      <item>2</item>
+     </SPACES>
+    </item>
+   </SPACES>
+  </asx:values>
+ </asx:abap>
+</abapGit>

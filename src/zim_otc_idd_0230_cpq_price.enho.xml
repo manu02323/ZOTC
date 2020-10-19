@@ -1,0 +1,131 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<abapGit version="v1.0.0" serializer="LCL_OBJECT_ENHO" serializer_version="v1.0.0">
+ <asx:abap xmlns:asx="http://www.sap.com/abapxml" version="1.0">
+  <asx:values>
+   <TOOL>HOOK_IMPL</TOOL>
+   <SHORTTEXT>CPQ Pricing Interface</SHORTTEXT>
+   <ORIGINAL_OBJECT>
+    <PGMID>R3TR</PGMID>
+    <ORG_OBJ_TYPE>PROG</ORG_OBJ_TYPE>
+    <ORG_OBJ_NAME>SAPMV13A</ORG_OBJ_NAME>
+    <ORG_MAIN_TYPE>PROG</ORG_MAIN_TYPE>
+    <ORG_MAIN_NAME>SAPMV13A</ORG_MAIN_NAME>
+    <PROGRAMNAME>SAPMV13A</PROGRAMNAME>
+   </ORIGINAL_OBJECT>
+   <ENHANCEMENTS>
+    <ENH_HOOK_IMPL>
+     <PROGRAMNAME>SAPMV13A</PROGRAMNAME>
+     <ENHMODE>D</ENHMODE>
+     <FULL_NAME>\PR:SAPMV13A\FO:TT_CORRECT\SE:BEGIN\EI</FULL_NAME>
+     <SOURCE>
+      <item>***************************************************************************</item>
+      <item>* PROGRAM     :  ZIM_OTC_IDD_0230_CPQ_PRICE                               *</item>
+      <item>* TITLE       :  Interface for receiving Price from  Oracle System (CPQ)  *</item>
+      <item>* DEVELOPER   :  Ramakrishnan Subramaniam                                 *</item>
+      <item>* OBJECT TYPE :  Interface                                                *</item>
+      <item>* SAP RELEASE :  SAP ECC 6.0                                              *</item>
+      <item>*----------------------------------------------------------------------****</item>
+      <item>* WRICEF ID:   D3_OTC_IDD_0230                                            *</item>
+      <item>*-------------------------------------------------------------------------*</item>
+      <item>* DESCRIPTION:  Update Pricing condition records from Oracle System (CPQ) *</item>
+      <item>*               Skip the perfom to avoid SQL array insert duplicat dump   *</item>
+      <item>*-------------------------------------------------------------------------*</item>
+      <item>* MODIFICATION HISTORY:                                                   *</item>
+      <item>*=========================================================================*</item>
+      <item>* DATE        USER      TRANSPORT    DESCRIPTION                          *</item>
+      <item>* =========== ========  ==========   =====================================*</item>
+      <item>* 12-JUN-2019 U105322   E2DK924406  INITIAL DEVELOPMENT/D3_OTC_IDD_0230   *</item>
+      <item>*                                   SC Task# SCTASK0836007                *</item>
+      <item>*&amp;------------------------------------------------------------------------*</item>
+      <item/>
+      <item>CONSTANTS: c_otc_idd_0230 TYPE z_enhancement    VALUE &apos;D3_OTC_IDD_0230&apos;, &quot; Enhancement No.</item>
+      <item>c_null         TYPE z_criteria       VALUE &apos;NULL&apos;,            &quot; Enh. Criteria</item>
+      <item>c_kschl        TYPE z_criteria       VALUE &apos;KSCHL&apos;.           &quot; Enh. Criteria</item>
+      <item/>
+      <item>DATA: i_status   TYPE STANDARD TABLE OF zdev_enh_status. &quot;Enhancement Status table</item>
+      <item/>
+      <item>* Call to EMI Function Module To Get List Of EMI Statuses</item>
+      <item>CALL FUNCTION &apos;ZDEV_ENHANCEMENT_STATUS_CHECK&apos;</item>
+      <item>EXPORTING</item>
+      <item>iv_enhancement_no = c_otc_idd_0230</item>
+      <item>TABLES</item>
+      <item>tt_enh_status     = i_status. &quot;Enhancement status table</item>
+      <item/>
+      <item>&quot;Delete in-active entries.</item>
+      <item>DELETE i_status WHERE active = space.</item>
+      <item/>
+      <item>&quot;Check whether this enhancement is active or not.</item>
+      <item>READ TABLE i_status WITH KEY criteria = c_null TRANSPORTING NO FIELDS.</item>
+      <item>IF sy-subrc EQ  0.</item>
+      <item>&quot;if enhancment is active and check condition type is configured in EMI table.</item>
+      <item>&quot;if found, we are skiping DBSQL_DUPLICATE_KEY_ERROR runtime error while processing</item>
+      <item>&quot;data using this interface.</item>
+      <item>READ TABLE i_status WITH KEY criteria = c_kschl</item>
+      <item>sel_low = pt_time_vake_akt-kschl TRANSPORTING NO FIELDS.</item>
+      <item>IF sy-subrc EQ 0.</item>
+      <item>RETURN.</item>
+      <item>ENDIF.</item>
+      <item>ENDIF.</item>
+      <item/>
+     </SOURCE>
+    </ENH_HOOK_IMPL>
+   </ENHANCEMENTS>
+   <SPACES>
+    <item>
+     <FULL_NAME>\PR:SAPMV13A\FO:TT_CORRECT\SE:BEGIN\EI</FULL_NAME>
+     <SPACES>
+      <item>0</item>
+      <item>0</item>
+      <item>0</item>
+      <item>0</item>
+      <item>0</item>
+      <item>0</item>
+      <item>0</item>
+      <item>0</item>
+      <item>0</item>
+      <item>0</item>
+      <item>0</item>
+      <item>0</item>
+      <item>0</item>
+      <item>0</item>
+      <item>0</item>
+      <item>0</item>
+      <item>0</item>
+      <item>0</item>
+      <item>0</item>
+      <item>0</item>
+      <item>0</item>
+      <item>11</item>
+      <item>11</item>
+      <item>0</item>
+      <item>0</item>
+      <item>0</item>
+      <item>0</item>
+      <item>0</item>
+      <item>2</item>
+      <item>4</item>
+      <item>2</item>
+      <item>4</item>
+      <item>0</item>
+      <item>0</item>
+      <item>0</item>
+      <item>0</item>
+      <item>0</item>
+      <item>0</item>
+      <item>0</item>
+      <item>2</item>
+      <item>2</item>
+      <item>2</item>
+      <item>2</item>
+      <item>31</item>
+      <item>2</item>
+      <item>4</item>
+      <item>2</item>
+      <item>0</item>
+      <item>0</item>
+     </SPACES>
+    </item>
+   </SPACES>
+  </asx:values>
+ </asx:abap>
+</abapGit>

@@ -1,0 +1,43 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<abapGit version="v1.0.0" serializer="LCL_OBJECT_SHLP" serializer_version="v1.0.0">
+ <asx:abap xmlns:asx="http://www.sap.com/abapxml" version="1.0">
+  <asx:values>
+   <DD30V>
+    <SHLPNAME>ZOTCE_SO_REFDOCU</SHLPNAME>
+    <DDLANGUAGE>E</DDLANGUAGE>
+    <DDTEXT>Sales document according to Legacy Doc Ref</DDTEXT>
+    <ELEMEXI>X</ELEMEXI>
+    <ATTACHEXI>X</ATTACHEXI>
+    <SELMETHOD>VMVA</SELMETHOD>
+   </DD30V>
+   <DD31V_TABLE>
+    <DD31V>
+     <SHLPNAME>ZOTCE_SO_REFDOCU</SHLPNAME>
+     <SUBSHLP>ZOTCE_SO_REFDOC</SUBSHLP>
+     <SHPOSITION>0001</SHPOSITION>
+     <VIASHLP>ZOTCE_SO_REFDOCU</VIASHLP>
+    </DD31V>
+   </DD31V_TABLE>
+   <DD32P_TABLE>
+    <DD32P>
+     <SHLPNAME>ZOTCE_SO_REFDOCU</SHLPNAME>
+     <FIELDNAME>VBELN</FIELDNAME>
+     <FLPOSITION>0001</FLPOSITION>
+     <ROLLNAME>VBELN</ROLLNAME>
+     <SHLPOUTPUT>X</SHLPOUTPUT>
+     <ROLLCHANGE>N</ROLLCHANGE>
+     <SCRLEN3>20</SCRLEN3>
+    </DD32P>
+   </DD32P_TABLE>
+   <DD33V_TABLE>
+    <DD33V>
+     <SHLPNAME>ZOTCE_SO_REFDOCU</SHLPNAME>
+     <FIELDNAME>VBELN</FIELDNAME>
+     <SUBSHLP>ZOTCE_SO_REFDOC</SUBSHLP>
+     <SUBFIELD>VBELN</SUBFIELD>
+     <VALUEDIREC>E</VALUEDIREC>
+    </DD33V>
+   </DD33V_TABLE>
+  </asx:values>
+ </asx:abap>
+</abapGit>

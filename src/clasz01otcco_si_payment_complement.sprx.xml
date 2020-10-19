@@ -1,0 +1,85 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<abapGit version="v1.0.0" serializer="LCL_OBJECT_SPRX" serializer_version="v1.0.0">
+ <asx:abap xmlns:asx="http://www.sap.com/abapxml" version="1.0">
+  <asx:values>
+   <PROXY_HEADER>
+    <item>
+     <OBJECT>CLAS</OBJECT>
+     <OBJ_NAME>Z01OTCCO_SI_PAYMENT_COMPLEMENT</OBJ_NAME>
+     <OBJECT_M>CLAS</OBJECT_M>
+     <OBJ_NAME_M>Z01OTCCO_SI_PAYMENT_COMPLEMENT</OBJ_NAME_M>
+     <HASH_ID>3E22B8CA9F18B5F531B4E9572D140E84E74AFB35</HASH_ID>
+     <ID>&lt;portType&gt; SI_PaymentComplement_3_3_Out http://bio-rad.com/OTC/PaymentComplement_MexicoCFDI http://bio-rad.com/OTC/PaymentComplement_MexicoCFDI</ID>
+     <IFR_GLOBAL>X</IFR_GLOBAL>
+     <IFR_TYPE>portType</IFR_TYPE>
+     <IFR_NAME>SI_PaymentComplement_3_3_Out</IFR_NAME>
+     <IFR_NSPCE>http://bio-rad.com/OTC/PaymentComplement_MexicoCFDI</IFR_NSPCE>
+     <IFR_GNSPCE>http://bio-rad.com/OTC/PaymentComplement_MexicoCFDI</IFR_GNSPCE>
+     <GEN_VERS>0006</GEN_VERS>
+     <PREFIX>Z01OTC</PREFIX>
+     <CATEGORY>ifmmessif</CATEGORY>
+     <DIRECTION>O</DIRECTION>
+     <SYNCHRON>D</SYNCHRON>
+     <X-ML_NSPCE>http://bio-rad.com/OTC/PaymentComplement_MexicoCFDI</X-ML_NSPCE>
+     <X-ML_NAME>SI_PaymentComplement_3_3_Out</X-ML_NAME>
+     <FURTHER_DATA>﻿&lt;asx:abap xmlns:asx=&quot;http://www.sap.com/abapxml&quot; version=&quot;1.0&quot;&gt;&lt;asx:values&gt;&lt;DATA&gt;&lt;SOAP_APPL&gt;urn:sap-com:soap:application:esr:client:710&lt;/SOAP_APPL&gt;&lt;/DATA&gt;&lt;/asx:values&gt;&lt;/asx:abap&gt;</FURTHER_DATA>
+     <VERSION_ID>066a7f8d980511e78a1d0000010d7702</VERSION_ID>
+    </item>
+   </PROXY_HEADER>
+   <PROXY_DATA>
+    <item>
+     <OBJECT>CLAS</OBJECT>
+     <OBJ_NAME>Z01OTCCO_SI_PAYMENT_COMPLEMENT</OBJ_NAME>
+     <OBJECT1>CLAS</OBJECT1>
+     <OBJ_NAME1>Z01OTCCO_SI_PAYMENT_COMPLEMENT</OBJ_NAME1>
+     <OBJECT2>CLAS</OBJECT2>
+     <OBJ_NAME2>Z01OTCCO_SI_PAYMENT_COMPLEMENT</OBJ_NAME2>
+     <ID>&lt;portType&gt; SI_PaymentComplement_3_3_Out http://bio-rad.com/OTC/PaymentComplement_MexicoCFDI http://bio-rad.com/OTC/PaymentComplement_MexicoCFDI</ID>
+     <IFR_TYPE>portType</IFR_TYPE>
+     <IFR_NAME>SI_PaymentComplement_3_3_Out</IFR_NAME>
+     <IFR_LANGU>EN</IFR_LANGU>
+     <IFR_SCALE>-2</IFR_SCALE>
+     <R3_TYPE>CLAS</R3_TYPE>
+     <R3_NAME>Z01OTCCO_SI_PAYMENT_COMPLEMENT</R3_NAME>
+     <R3_TEXT>Proxy Class (generated)</R3_TEXT>
+     <CATEGORY>ifmmessif</CATEGORY>
+     <DIRECTION>O</DIRECTION>
+    </item>
+    <item>
+     <OBJECT>CLAS</OBJECT>
+     <OBJ_NAME>Z01OTCCO_SI_PAYMENT_COMPLEMENT</OBJ_NAME>
+     <OBJECT1>METH</OBJECT1>
+     <OBJ_NAME1>SI_PAYMENT_COMPLEMENT_3_3_IN</OBJ_NAME1>
+     <OBJECT2>METH</OBJECT2>
+     <OBJ_NAME2>SI_PAYMENT_COMPLEMENT_3_3_IN</OBJ_NAME2>
+     <ID>&lt;operation&gt; SI_PaymentComplement_3_3_In &lt;portType&gt; SI_PaymentComplement_3_3_Out http://bio-rad.com/OTC/PaymentComplement_MexicoCFDI http://bio-rad.com/OTC/PaymentComplement_MexicoCFDI</ID>
+     <IFR_TYPE>operation</IFR_TYPE>
+     <IFR_NAME>SI_PaymentComplement_3_3_In</IFR_NAME>
+     <IFR_LANGU>EN</IFR_LANGU>
+     <IFR_SCALE>-2</IFR_SCALE>
+     <R3_TYPE>METH</R3_TYPE>
+     <R3_NAME>SI_PAYMENT_COMPLEMENT_3_3_IN</R3_NAME>
+     <R3_SEQNUM>000001</R3_SEQNUM>
+     <DIRECTION>O</DIRECTION>
+    </item>
+    <item>
+     <OBJECT>CLAS</OBJECT>
+     <OBJ_NAME>Z01OTCCO_SI_PAYMENT_COMPLEMENT</OBJ_NAME>
+     <OBJECT1>METH</OBJECT1>
+     <OBJ_NAME1>SI_PAYMENT_COMPLEMENT_3_3_IN</OBJ_NAME1>
+     <OBJECT2>PAIM</OBJECT2>
+     <OBJ_NAME2>OUTPUT</OBJ_NAME2>
+     <OBJECT_R>TABL</OBJECT_R>
+     <OBJ_NAME_R>Z01OTCMT_PAYMENT_COMPLEMENT_3</OBJ_NAME_R>
+     <ID>&lt;output&gt; output &lt;operation&gt; SI_PaymentComplement_3_3_In &lt;portType&gt; SI_PaymentComplement_3_3_Out http://bio-rad.com/OTC/PaymentComplement_MexicoCFDI http://bio-rad.com/OTC/PaymentComplement_MexicoCFDI</ID>
+     <IFR_TYPE>PartOutput</IFR_TYPE>
+     <IFR_NAME>output</IFR_NAME>
+     <IFR_SCALE>-2</IFR_SCALE>
+     <R3_TYPE>PAIM</R3_TYPE>
+     <R3_NAME>OUTPUT</R3_NAME>
+     <R3_SEQNUM>000001</R3_SEQNUM>
+    </item>
+   </PROXY_DATA>
+  </asx:values>
+ </asx:abap>
+</abapGit>

@@ -1,0 +1,4642 @@
+<?xml version="1.0" encoding="utf-8"?>
+<?xfa generator="AdobeLiveCycleDesigner_V11.0.8.20180110.1.931507_SAP" APIVersion="3.6.17334.0"?><xdp:xdp xmlns:xdp="http://ns.adobe.com/xdp/" timeStamp="2019-06-26T17:06:54Z" uuid="2019df7e-44a6-4833-ba50-563a2757f219">
+<template xmlns:xliff="urn:oasis:names:tc:xliff:document:1.1" xmlns="http://www.xfa.org/schema/xfa-template/2.8/">
+   <tags xmlns="http://www.xfa.org/schema/xfa-xliff/1.0/"><value id="002C8C6B-0511-4289-8F67-6E95126093FE">Text Field</value><value id="0F25E4EB-77F5-4F57-8801-0603E2F7426A">Text Field</value><value id="5E4AE580-D107-4028-909E-310C20ECA3DA">Text Field</value><value id="6006B8AC-2300-48B8-BAE7-77DBCCCADCE5">Text Field</value><value id="EC00FAFA-F241-42B3-96B3-87DA56A10173"><body xmlns="http://www.w3.org/1999/xhtml" xmlns:xft-xliff="http://www.xfa.org/schema/xfa-xliff/1.0/" xmlns:xfa="http://www.xfa.org/schema/xfa-data/1.0/"><p style="text-decoration:none;letter-spacing:0in">Page<span style="xfa-spacerun:yes"> </span><span xfa:embed="#floatingField000041" xfa:embedMode="raw" xfa:embedType="uri"/> /<span style="xfa-spacerun:yes"> </span><span xfa:embed="#floatingField018467" xfa:embedMode="raw" xfa:embedType="uri"/></p></body></value><value id="F2BDB731-F5E3-4979-A6F5-2FCE0EF342DD"><body xmlns="http://www.w3.org/1999/xhtml" xmlns:xft-xliff="http://www.xfa.org/schema/xfa-xliff/1.0/" xmlns:xfa="http://www.xfa.org/schema/xfa-data/1.0/"><p style="text-decoration:none;letter-spacing:0in">Page<span style="xfa-spacerun:yes"> </span><span xfa:embed="#floatingField006334" xfa:embedMode="raw" xfa:embedType="uri"/> /<span style="xfa-spacerun:yes"> </span><span xfa:embed="#floatingField026500" xfa:embedMode="raw" xfa:embedType="uri"/></p></body></value></tags>
+   <?formServer defaultPDFRenderFormat acrobat9.0dynamic?>
+   <subform layout="tb" locale="en_US" name="data" restoreState="auto">
+      <pageSet>
+         <pageArea id="Page1" name="Page1">
+            <field anchorType="middleCenter" h="68.025mm" name="Draft_Image" w="136.525mm" x="119.38mm" y="139.7mm">
+               <ui>
+                  <imageEdit data="embed"/>
+               </ui>
+               <bind match="dataRef" ref="$.DRAFT"/>
+               <desc>
+                  <text name="embeddedHref">Unknown Embedded URI</text>
+               </desc>
+            </field>
+            <contentArea h="152.575mm" id="CA_1_ID" name="CA_1" w="206.375mm" x="6.35mm" y="98.425mm"/>
+            <medium long="279.4mm" short="215.9mm" stock="letter"/>
+            <occur max="1" min="1"/>
+            <subform h="105.334mm" name="Inv_Header1" w="215.9mm">
+               <bind match="none"/>
+               <field h="10.846mm" name="ImageField2" w="40.513mm" x="6.35mm" y="3.175mm">
+                  <ui>
+                     <imageEdit data="embed"/>
+                  </ui>
+                  <value>
+                     <image aspect="none"/>
+                  </value>
+                  <bind match="dataRef" ref="$.LOGO"/>
+                  <desc>
+                     <text name="embeddedHref">Unknown Embedded URI</text>
+                  </desc>
+               </field>
+               <field access="readOnly" h="12mm" name="PROFORMA" w="76.625mm" x="136.275mm" y="6mm">
+                  <ui>
+                     <textEdit multiLine="1">
+                        <border presence="hidden">
+                           <?templateDesigner StyleID aped0?></border>
+                        <margin/>
+                     </textEdit>
+                  </ui>
+                  <font size="13pt" typeface="Arial" weight="bold"/>
+                  <margin bottomInset="1mm" leftInset="1mm" rightInset="1mm" topInset="1mm"/>
+                  <para vAlign="middle"/>
+                  <value>
+                     <text maxChars="264"/>
+                  </value>
+                  <bind match="dataRef" ref="$.WA_ITEM_LABEL.INVOICE"/>
+                  <desc>
+                     <text name="Schema Annotation">Text Line</text>
+                  </desc>
+               </field>
+               <subform layout="tb" w="48.275mm" x="136.275mm" y="24.225mm">
+                  <bind match="none"/>
+                  <field access="readOnly" minH="6.35mm" minW="48.275mm" name="TextField4">
+                     <ui>
+                        <textEdit>
+                           <border presence="hidden">
+                              <?templateDesigner StyleID aped0?></border>
+                           <margin/>
+                        </textEdit>
+                     </ui>
+                     <font size="9pt" typeface="Arial"/>
+                     <margin bottomInset="1mm" leftInset="1mm" rightInset="1mm" topInset="1mm"/>
+                     <para vAlign="middle"/>
+                     <bind match="dataRef" ref="$.COMPANY_ADDRESS"/>
+                  </field>
+                  <field minH="6.35mm" minW="48.275mm" name="TextField5">
+                     <ui>
+                        <textEdit multiLine="1">
+                           <border presence="hidden">
+                              <?templateDesigner StyleID aped0?></border>
+                           <margin/>
+                        </textEdit>
+                     </ui>
+                     <font size="9pt" typeface="Arial"/>
+                     <margin bottomInset="1mm" leftInset="1mm" rightInset="1mm" topInset="0mm"/>
+                     <para vAlign="middle"/>
+                     <bind match="dataRef" ref="GV_FINAL_REGNO"/>
+                  </field>
+                  <?templateDesigner expand 0?></subform>
+               <margin leftInset="0mm"/>
+               <field access="readOnly" h="5.588mm" name="SHIPTO" w="53.65mm" x="25.5mm" y="17.272mm">
+                  <ui>
+                     <textEdit multiLine="1">
+                        <border presence="hidden">
+                           <?templateDesigner StyleID aped0?></border>
+                        <margin/>
+                     </textEdit>
+                  </ui>
+                  <font typeface="Arial" weight="bold"/>
+                  <margin bottomInset="1mm" leftInset="1mm" rightInset="1mm" topInset="1mm"/>
+                  <para vAlign="middle"/>
+                  <bind match="dataRef" ref="$.WA_ITEM_LABEL.SHIPTO"/>
+                  <value>
+                     <text maxChars="264"/>
+                  </value>
+                  <desc>
+                     <text name="Schema Annotation">Text Line</text>
+                  </desc>
+               </field>
+               <field access="readOnly" h="5.5mm" name="BILLTO" w="53.65mm" x="25.5mm" y="57.016mm">
+                  <ui>
+                     <textEdit multiLine="1">
+                        <border presence="hidden">
+                           <?templateDesigner StyleID aped0?></border>
+                        <margin/>
+                     </textEdit>
+                  </ui>
+                  <font typeface="Arial" weight="bold"/>
+                  <margin bottomInset="1mm" leftInset="1mm" rightInset="1mm" topInset="1mm"/>
+                  <para vAlign="middle"/>
+                  <bind match="dataRef" ref="$.WA_ITEM_LABEL.BILLTO"/>
+                  <value>
+                     <text maxChars="264"/>
+                  </value>
+                  <desc>
+                     <text name="Schema Annotation">Text Line</text>
+                  </desc>
+               </field>
+               <field access="readOnly" h="5.588mm" name="GV_COUNTRY" w="32.525mm" x="136.275mm" y="34.5mm">
+                  <ui>
+                     <textEdit multiLine="1">
+                        <border presence="hidden">
+                           <?templateDesigner StyleID aped0?></border>
+                        <margin/>
+                     </textEdit>
+                  </ui>
+                  <font size="9pt" typeface="Arial"/>
+                  <margin bottomInset="1mm" leftInset="1mm" rightInset="1mm" topInset="1mm"/>
+                  <para vAlign="bottom"/>
+                  <bind match="dataRef" ref="$.GV_COUNTRY"/>
+                  <desc>
+                     <text name="Schema Annotation">Vehicle country key</text>
+                  </desc>
+               </field>
+               <field access="readOnly" h="6.5mm" name="REMIT_TO" w="72.725mm" x="136.275mm" y="51.1mm">
+                  <ui>
+                     <textEdit>
+                        <border presence="hidden">
+                           <?templateDesigner StyleID aped0?></border>
+                        <margin/>
+                     </textEdit>
+                  </ui>
+                  <font typeface="Arial" weight="bold"/>
+                  <margin bottomInset="0.5mm" leftInset="0.5mm" rightInset="0.5mm" topInset="0.5mm"/>
+                  <para vAlign="middle"/>
+                  <caption reserve="0mm">
+                     <para vAlign="middle"/>
+                  </caption>
+                  <bind match="dataRef" ref="WA_ITEM_LABEL.PLSREMIT"/>
+                  <value>
+                     <text maxChars="255"/>
+                  </value>
+                  <?templateDesigner expand 1?></field>
+               <subform layout="lr-tb" name="PROMO_HDR" w="107.95mm" x="19.35mm" y="91mm">
+                  <bind match="none"/>
+                  <field access="readOnly" h="5.334mm" name="TEXT" w="28.92mm">
+                     <ui>
+                        <textEdit multiLine="1">
+                           <border presence="hidden">
+                              <?templateDesigner StyleID aped0?></border>
+                           <margin/>
+                        </textEdit>
+                     </ui>
+                     <font size="9pt" typeface="Arial" weight="bold"/>
+                     <margin bottomInset="1mm" leftInset="1mm" rightInset="1mm" topInset="1mm"/>
+                     <para vAlign="middle"/>
+                     <bind match="dataRef" ref="$.WA_PROMO.TEXT"/>
+                     <value>
+                        <text maxChars="60"/>
+                     </value>
+                     <desc>
+                        <text name="Schema Annotation">30 Characters</text>
+                     </desc>
+                  </field>
+                  <field access="readOnly" h="5.334mm" name="VAL" w="69.85mm">
+                     <ui>
+                        <textEdit multiLine="1">
+                           <border presence="hidden">
+                              <?templateDesigner StyleID aped0?></border>
+                           <margin/>
+                        </textEdit>
+                     </ui>
+                     <font size="9pt" typeface="Arial"/>
+                     <margin bottomInset="1mm" leftInset="1mm" rightInset="1mm" topInset="1mm"/>
+                     <para vAlign="middle"/>
+                     <bind match="dataRef" ref="$.WA_PROMO.VAL"/>
+                     <value>
+                        <text maxChars="200"/>
+                     </value>
+                     <desc>
+                        <text name="Schema Annotation">Character 100</text>
+                     </desc>
+                  </field>
+                  <?templateDesigner expand 0?></subform>
+               <subform h="25.83mm" name="SHIP_TO_SF" w="90.424mm" x="25.5mm" y="22.86mm">
+                  <bind match="none"/>
+                  <subform layout="tb" name="ship_to_add" w="90.424mm" x="0mm" y="0.03mm">
+                     <bind match="none"/>
+                     <field h="4.3mm" name="Line1" w="90.424mm">
+                        <ui>
+                           <textEdit>
+                              <border presence="hidden">
+                                 <?templateDesigner StyleID aped0?></border>
+                              <margin/>
+                           </textEdit>
+                        </ui>
+                        <font size="8pt" typeface="Arial"/>
+                        <margin bottomInset="0.5mm" leftInset="0mm" rightInset="0mm" topInset="0.5mm"/>
+                        <para vAlign="middle"/>
+                        <caption reserve="0.01in">
+                           <para vAlign="middle"/>
+                        </caption>
+                        <bind match="dataRef" ref="ADD_SHIP_AND_BILL.WA_ADD_SHIPTO.LINE1"/>
+                        <value>
+                           <text maxChars="255"/>
+                        </value>
+                     </field>
+                     <field h="4.3mm" name="Line2" w="90.424mm">
+                        <ui>
+                           <textEdit>
+                              <border presence="hidden">
+                                 <?templateDesigner StyleID aped0?></border>
+                              <margin/>
+                           </textEdit>
+                        </ui>
+                        <font size="8pt" typeface="Arial"/>
+                        <margin bottomInset="0.5mm" leftInset="0mm" rightInset="0mm" topInset="0.5mm"/>
+                        <para vAlign="middle"/>
+                        <caption reserve="0.01in">
+                           <para vAlign="middle"/>
+                        </caption>
+                        <bind match="dataRef" ref="ADD_SHIP_AND_BILL.WA_ADD_SHIPTO.LINE2"/>
+                        <value>
+                           <text maxChars="255"/>
+                        </value>
+                     </field>
+                     <field h="4.3mm" name="Line3" w="90.424mm">
+                        <ui>
+                           <textEdit>
+                              <border presence="hidden">
+                                 <?templateDesigner StyleID aped0?></border>
+                              <margin/>
+                           </textEdit>
+                        </ui>
+                        <font size="8pt" typeface="Arial"/>
+                        <margin bottomInset="0.5mm" leftInset="0mm" rightInset="0mm" topInset="0.5mm"/>
+                        <para vAlign="middle"/>
+                        <caption reserve="0.01in">
+                           <para vAlign="middle"/>
+                        </caption>
+                        <bind match="dataRef" ref="ADD_SHIP_AND_BILL.WA_ADD_SHIPTO.LINE3"/>
+                        <value>
+                           <text maxChars="255"/>
+                        </value>
+                     </field>
+                     <field h="4.3mm" name="Line4" w="90.424mm">
+                        <ui>
+                           <textEdit>
+                              <border presence="hidden">
+                                 <?templateDesigner StyleID aped0?></border>
+                              <margin/>
+                           </textEdit>
+                        </ui>
+                        <font size="8pt" typeface="Arial"/>
+                        <margin bottomInset="0.5mm" leftInset="0mm" rightInset="0mm" topInset="0.5mm"/>
+                        <para vAlign="middle"/>
+                        <caption reserve="0.01in">
+                           <para vAlign="middle"/>
+                        </caption>
+                        <bind match="dataRef" ref="ADD_SHIP_AND_BILL.WA_ADD_SHIPTO.LINE4"/>
+                        <value>
+                           <text maxChars="255"/>
+                        </value>
+                     </field>
+                     <field h="4.3mm" name="LINE5" w="90.424mm">
+                        <ui>
+                           <textEdit>
+                              <border presence="hidden">
+                                 <?templateDesigner StyleID aped0?></border>
+                              <margin/>
+                           </textEdit>
+                        </ui>
+                        <font size="8pt" typeface="Arial"/>
+                        <margin bottomInset="0.5mm" leftInset="0mm" rightInset="0mm" topInset="0.5mm"/>
+                        <para vAlign="middle"/>
+                        <caption reserve="0.254mm">
+                           <para vAlign="middle"/>
+                        </caption>
+                        <bind match="dataRef" ref="ADD_SHIP_AND_BILL.WA_ADD_SHIPTO.LINE5"/>
+                        <value>
+                           <text maxChars="255"/>
+                        </value>
+                     </field>
+                     <field h="4.3mm" name="LINES6" w="90.424mm">
+                        <ui>
+                           <textEdit>
+                              <border presence="hidden">
+                                 <?templateDesigner StyleID aped0?></border>
+                              <margin/>
+                           </textEdit>
+                        </ui>
+                        <font size="8pt" typeface="Arial"/>
+                        <margin bottomInset="0.5mm" leftInset="0mm" rightInset="0mm" topInset="0.5mm"/>
+                        <para vAlign="middle"/>
+                        <caption reserve="0.254mm">
+                           <para vAlign="middle"/>
+                        </caption>
+                        <bind match="dataRef" ref="ADD_SHIP_AND_BILL.WA_ADD_SHIPTO.LINE6"/>
+                        <value>
+                           <text maxChars="255"/>
+                        </value>
+                     </field>
+                     <?templateDesigner expand 0?></subform>
+                  <?templateDesigner expand 0?></subform>
+               <subform h="25.83mm" name="BILL_TO_SF" w="90.424mm" x="25.5mm" y="62.8mm">
+                  <bind match="none"/>
+                  <subform layout="tb" name="Bill_to_add" w="90.424mm" y="0.03mm">
+                     <bind match="none"/>
+                     <field h="3.8mm" name="BILL_LINE1" w="90.424mm">
+                        <ui>
+                           <textEdit>
+                              <border presence="hidden">
+                                 <?templateDesigner StyleID aped0?></border>
+                              <margin/>
+                           </textEdit>
+                        </ui>
+                        <font size="8pt" typeface="Arial"/>
+                        <margin bottomInset="0.3mm" leftInset="0mm" rightInset="0mm" topInset="0.3mm"/>
+                        <caption reserve="0.254mm"/>
+                        <bind match="dataRef" ref="ADD_SHIP_AND_BILL.WA_ADD_BILLTO.LINE1"/>
+                        <event activity="ready" ref="$form">
+                           <script>if($.rawValue == "") then 
+$.presence = "hidden"
+endif
+
+</script>
+                        </event>
+                        <event activity="ready" ref="$layout">
+                           <script>if($.rawValue == "") then 
+$.presence = "hidden"
+endif
+
+</script>
+                        </event>
+                     </field>
+                     <field h="3.8mm" name="BILL_LINE2" w="90.424mm">
+                        <ui>
+                           <textEdit>
+                              <border presence="hidden">
+                                 <?templateDesigner StyleID aped0?></border>
+                              <margin/>
+                           </textEdit>
+                        </ui>
+                        <font size="8pt" typeface="Arial"/>
+                        <margin bottomInset="0.3mm" leftInset="0mm" rightInset="0mm" topInset="0.3mm"/>
+                        <para vAlign="middle"/>
+                        <caption reserve="0.254mm">
+                           <para vAlign="middle"/>
+                        </caption>
+                        <bind match="dataRef" ref="ADD_SHIP_AND_BILL.WA_ADD_BILLTO.LINE2"/>
+                        <event activity="ready" ref="$form">
+                           <script>if($.rawValue == "") then 
+$.presence = "hidden"
+endif
+
+</script>
+                        </event>
+                        <event activity="ready" ref="$layout">
+                           <script>if($.rawValue == "") then 
+$.presence = "hidden"
+endif
+
+</script>
+                        </event>
+                     </field>
+                     <field h="3.8mm" name="BILL_LINE3" w="90.424mm">
+                        <ui>
+                           <textEdit>
+                              <border presence="hidden">
+                                 <?templateDesigner StyleID aped0?></border>
+                              <margin/>
+                           </textEdit>
+                        </ui>
+                        <font size="8pt" typeface="Arial"/>
+                        <margin bottomInset="0.3mm" leftInset="0mm" rightInset="0mm" topInset="0.3mm"/>
+                        <para vAlign="middle"/>
+                        <caption reserve="0.254mm">
+                           <para vAlign="middle"/>
+                        </caption>
+                        <bind match="dataRef" ref="ADD_SHIP_AND_BILL.WA_ADD_BILLTO.LINE3"/>
+                        <event activity="ready" ref="$form">
+                           <script>if($.rawValue == "") then 
+$.presence = "hidden"
+endif
+
+</script>
+                        </event>
+                        <event activity="ready" ref="$layout">
+                           <script>if($.rawValue == "") then 
+$.presence = "hidden"
+endif
+
+</script>
+                        </event>
+                     </field>
+                     <field h="3.8mm" name="BILL_LINE4" w="90.424mm">
+                        <ui>
+                           <textEdit>
+                              <border presence="hidden">
+                                 <?templateDesigner StyleID aped0?></border>
+                              <margin/>
+                           </textEdit>
+                        </ui>
+                        <font size="8pt" typeface="Arial"/>
+                        <margin bottomInset="0.3mm" leftInset="0mm" rightInset="0mm" topInset="0.3mm"/>
+                        <para vAlign="middle"/>
+                        <caption reserve="0.254mm">
+                           <para vAlign="middle"/>
+                        </caption>
+                        <bind match="dataRef" ref="ADD_SHIP_AND_BILL.WA_ADD_BILLTO.LINE4"/>
+                        <event activity="ready" ref="$form">
+                           <script>if($.rawValue == "") then 
+$.presence = "hidden"
+endif
+
+</script>
+                        </event>
+                        <event activity="ready" ref="$layout">
+                           <script>if($.rawValue == "") then 
+$.presence = "hidden"
+endif
+
+</script>
+                        </event>
+                     </field>
+                     <field h="3.8mm" name="BILL_LINE5" w="90.424mm">
+                        <ui>
+                           <textEdit>
+                              <border presence="hidden">
+                                 <?templateDesigner StyleID aped0?></border>
+                              <margin/>
+                           </textEdit>
+                        </ui>
+                        <font size="8pt" typeface="Arial"/>
+                        <margin bottomInset="0.3mm" leftInset="0mm" rightInset="0mm" topInset="0.3mm"/>
+                        <para vAlign="middle"/>
+                        <caption reserve="0.254mm">
+                           <para vAlign="middle"/>
+                        </caption>
+                        <bind match="dataRef" ref="ADD_SHIP_AND_BILL.WA_ADD_BILLTO.LINE5"/>
+                     </field>
+                     <field h="3.8mm" name="BILL_LINES6" w="90.424mm">
+                        <ui>
+                           <textEdit>
+                              <border presence="hidden">
+                                 <?templateDesigner StyleID aped0?></border>
+                              <margin/>
+                           </textEdit>
+                        </ui>
+                        <font size="8pt" typeface="Arial"/>
+                        <margin bottomInset="0.3mm" leftInset="0mm" rightInset="0mm" topInset="0.3mm"/>
+                        <para vAlign="middle"/>
+                        <caption reserve="0.254mm">
+                           <para vAlign="middle"/>
+                        </caption>
+                        <bind match="dataRef" ref="ADD_SHIP_AND_BILL.WA_ADD_BILLTO.LINE6"/>
+                     </field>
+                     <?templateDesigner expand 1?></subform>
+                  <?templateDesigner expand 0?></subform>
+               <subform h="5.058mm" name="FEDERAL_TAX_SF" presence="hidden" w="70.93mm" x="136.274mm" y="79mm">
+                  <bind match="none"/>
+                  <subform columnWidths="60.131mm" layout="table" name="I_FEDTAX" x="0mm">
+                     <subform layout="row" name="DATA">
+                        <field h="5.058mm" name="TDLINE" w="62mm" x="2.440944in">
+                           <ui>
+                              <textEdit multiLine="1">
+                                 <margin/>
+                              </textEdit>
+                           </ui>
+                           <font size="8pt" typeface="Arial" weight="bold"/>
+                           <margin bottomInset="1mm" leftInset="1mm" rightInset="1mm" topInset="1mm"/>
+                           <bind match="dataRef" ref="$.TDLINE"/>
+                           <desc>
+                              <text name="Schema Annotation">Text Line</text>
+                           </desc>
+                           <border>
+                              <edge presence="hidden"/>
+                              <corner presence="hidden"/>
+                           </border>
+                           <value>
+                              <text maxChars="132"/>
+                           </value>
+                        </field>
+                        <assist role="TR"/>
+                        <occur max="-1"/>
+                        <bind match="dataRef" ref="$.DATA[*]"/>
+                        <?templateDesigner expand 1?></subform>
+                     <bind match="dataRef" ref="$.I_FEDTAX"/>
+                     <?templateDesigner expand 0?></subform>
+                  <?templateDesigner expand 1?></subform>
+               <subform h="17.743mm" name="REMIT_TO_SF" w="75.45mm" x="136.274mm" y="57.4mm">
+                  <bind match="none"/>
+                  <subform layout="tb" w="75.293mm">
+                     <bind match="none"/>
+                     <subform columnWidths="75.293mm" layout="table" name="I_REMITTO_ADD">
+                        <subform layout="row" name="DATA">
+                           <field minH="5.058mm" name="VAL" w="3.476097in" x="2.440944in">
+                              <ui>
+                                 <textEdit multiLine="1">
+                                    <margin/>
+                                 </textEdit>
+                              </ui>
+                              <font size="8pt" typeface="Arial"/>
+                              <margin bottomInset="1mm" leftInset="1mm" rightInset="1mm" topInset="1mm"/>
+                              <para vAlign="middle"/>
+                              <bind match="dataRef" ref="$.VAL"/>
+                              <desc>
+                                 <text name="Schema Annotation">Character 100</text>
+                              </desc>
+                              <border>
+                                 <edge presence="hidden"/>
+                                 <corner presence="hidden"/>
+                              </border>
+                              <value>
+                                 <text maxChars="255"/>
+                              </value>
+                           </field>
+                           <assist role="TR"/>
+                           <occur max="-1"/>
+                           <bind match="dataRef" ref="$.DATA[*]"/>
+                           <?templateDesigner expand 1?></subform>
+                        <bind match="dataRef" ref="$.I_REMITTO_ADD"/>
+                        <?templateDesigner expand 0?></subform>
+                     <field h="4.5mm" name="FEIN" w="70mm">
+                        <ui>
+                           <textEdit>
+                              <border presence="hidden">
+                                 <?templateDesigner StyleID aped0?></border>
+                              <margin/>
+                           </textEdit>
+                        </ui>
+                        <font size="8pt" typeface="Arial"/>
+                        <margin bottomInset="1mm" leftInset="1mm" rightInset="1mm" topInset="1mm"/>
+                        <para vAlign="middle"/>
+                        <caption reserve="0.254mm">
+                           <para vAlign="middle"/>
+                        </caption>
+                        <bind match="dataRef" ref="GV_FEIN"/>
+                     </field>
+                     <?templateDesigner expand 0?></subform>
+                  <?templateDesigner expand 0?></subform>
+               <?templateDesigner expand 0?></subform>
+            <field access="readOnly" h="7.5mm" id="floatingField000041" name="CurrentPage" presence="hidden" w="55mm" x="67.881mm" y="61.474mm">
+               <ui>
+                  <numericEdit>
+                     <border>
+                        <edge stroke="lowered"/>
+                     </border>
+                     <margin/>
+                  </numericEdit>
+               </ui>
+               <font typeface="Arial"/>
+               <margin bottomInset="1mm" leftInset="1mm" rightInset="1mm" topInset="1mm"/>
+               <para vAlign="middle"/>
+               <caption reserve="20mm">
+                  <para vAlign="middle"/>
+                  <value>
+                     <text xmlns:xft-xliff="http://www.xfa.org/schema/xfa-xliff/1.0/" xft-xliff:id="002C8C6B-0511-4289-8F67-6E95126093FE" xliff:rid="002C8C6B-0511-4289-8F67-6E95126093FE">Text Field</text>
+                  </value>
+               </caption>
+               <calculate override="error"/>
+               <bind match="none"/>
+               <event activity="ready" name="event__layout_ready" ref="$layout">
+                  <script contentType="application/x-javascript">this.rawValue = xfa.layout.page(this)
+</script>
+               </event>
+               <?templateDesigner floatingFieldPlaceholder #?></field>
+            <field access="readOnly" h="7.5mm" id="floatingField018467" name="PageCount" presence="hidden" w="55mm" x="67.881mm" y="61.474mm">
+               <ui>
+                  <numericEdit>
+                     <border>
+                        <edge stroke="lowered"/>
+                     </border>
+                     <margin/>
+                  </numericEdit>
+               </ui>
+               <font typeface="Arial"/>
+               <margin bottomInset="1mm" leftInset="1mm" rightInset="1mm" topInset="1mm"/>
+               <para vAlign="middle"/>
+               <caption reserve="20mm">
+                  <para vAlign="middle"/>
+                  <value>
+                     <text xmlns:xft-xliff="http://www.xfa.org/schema/xfa-xliff/1.0/" xft-xliff:id="6006B8AC-2300-48B8-BAE7-77DBCCCADCE5" xliff:rid="6006B8AC-2300-48B8-BAE7-77DBCCCADCE5">Text Field</text>
+                  </value>
+               </caption>
+               <calculate override="error"/>
+               <?templateDesigner floatingFieldPlaceholder ##?>
+               <bind match="none"/>
+               <event activity="ready" name="event__layout_ready" ref="$layout">
+                  <script>this.rawValue = xfa.layout.pageCount();
+this.rawValue = xfa.layout.pageCount();
+</script>
+               </event>
+            </field>
+            <draw name="Pages_US" x="165.1mm" y="271.78mm">
+               <ui>
+                  <textEdit>
+                     <margin/>
+                  </textEdit>
+               </ui>
+               <value>
+                  <exData xmlns:xft-xliff="http://www.xfa.org/schema/xfa-xliff/1.0/" contentType="text/html" maxLength="0" xft-xliff:id="EC00FAFA-F241-42B3-96B3-87DA56A10173" xliff:rid="EC00FAFA-F241-42B3-96B3-87DA56A10173">
+                     <body xmlns="http://www.w3.org/1999/xhtml" xmlns:xfa="http://www.xfa.org/schema/xfa-data/1.0/"><p style="text-decoration:none;letter-spacing:0in">Page<span style="xfa-spacerun:yes"> </span><span xfa:embed="#floatingField000041" xfa:embedMode="raw" xfa:embedType="uri"/> /<span style="xfa-spacerun:yes"> </span><span xfa:embed="#floatingField018467" xfa:embedMode="raw" xfa:embedType="uri"/></p></body>
+                  </exData>
+               </value>
+               <font typeface="Arial"/>
+               <margin bottomInset="0mm" leftInset="0mm" rightInset="0mm" topInset="0mm"/>
+               <para vAlign="middle"/>
+            </draw>
+            <field access="readOnly" h="6.62mm" name="QUESTION" w="173.65mm" x="6.35mm" y="252.175mm">
+               <ui>
+                  <textEdit multiLine="1">
+                     <border presence="hidden">
+                        <?templateDesigner StyleID aped0?></border>
+                     <margin/>
+                  </textEdit>
+               </ui>
+               <font typeface="Arial"/>
+               <margin bottomInset="1mm" leftInset="1mm" rightInset="1mm" topInset="1mm"/>
+               <para vAlign="middle"/>
+               <bind match="dataRef" ref="$.WA_ITEM_LABEL.QUESTION"/>
+               <value>
+                  <text maxChars="264"/>
+               </value>
+               <desc>
+                  <text name="Schema Annotation">Text Line</text>
+               </desc>
+            </field>
+            <field access="readOnly" h="7.62mm" name="SERVICE" w="69.55mm" x="140mm" y="259.175mm">
+               <ui>
+                  <textEdit multiLine="1">
+                     <border presence="hidden">
+                        <?templateDesigner StyleID aped0?></border>
+                     <margin/>
+                  </textEdit>
+               </ui>
+               <font typeface="Arial"/>
+               <margin bottomInset="1mm" leftInset="1mm" rightInset="1mm" topInset="1mm"/>
+               <para vAlign="middle"/>
+               <bind match="dataRef" ref="$.STANDARD_TEXTS.SERVICE"/>
+               <value>
+                  <exData contentType="text/html">
+                     <body xmlns="http://www.w3.org/1999/xhtml"/>
+                  </exData>
+               </value>
+               <desc>
+                  <exData name="Schema Annotation">Text Node TEXT
+SAPScript Include Text 
+ NAME = ZOTC_SERVICE_CALL 
+ LANGUAGE-FIELD = WA_THEAD-TDSPRAS 
+ OBJECT-FIELD = WA_THEAD-TDOBJECT 
+ ID-FIELD = WA_THEAD-TDID</exData>
+               </desc>
+            </field>
+            <field access="readOnly" h="5.528mm" name="TextField2" w="31.75mm" x="6.35mm" y="258.795mm">
+               <ui>
+                  <textEdit>
+                     <border presence="hidden">
+                        <?templateDesigner StyleID aped0?></border>
+                     <margin/>
+                  </textEdit>
+               </ui>
+               <font typeface="Arial"/>
+               <margin bottomInset="1mm" leftInset="1mm" rightInset="1mm" topInset="1mm"/>
+               <para vAlign="middle"/>
+               <bind match="dataRef" ref="$.GV_CONTACT"/>
+            </field>
+            <field access="readOnly" h="5.5mm" name="NO_TAX_IND" w="76.2mm" x="6.35mm" y="266.1mm">
+               <ui>
+                  <textEdit multiLine="1">
+                     <border presence="hidden">
+                        <?templateDesigner StyleID aped0?></border>
+                     <margin/>
+                  </textEdit>
+               </ui>
+               <font size="9pt" typeface="Arial"/>
+               <margin bottomInset="1mm" leftInset="1mm" rightInset="1mm" topInset="1mm"/>
+               <para vAlign="bottom"/>
+               <bind match="dataRef" ref="$.STANDARD_TEXTS.NO_TAX_IND"/>
+               <value>
+                  <exData contentType="text/html">
+                     <body xmlns="http://www.w3.org/1999/xhtml"/>
+                  </exData>
+               </value>
+               <desc>
+                  <exData name="Schema Annotation">Text Node TEXT
+SAPScript Include Text 
+ NAME = ZOTC_0014_NOTAX 
+ LANGUAGE = F 
+ OBJECT-FIELD = WA_THEAD-TDOBJECT 
+ ID-FIELD = WA_THEAD-TDID</exData>
+               </desc>
+            </field>
+            <field access="readOnly" locale="ar_DZ" minH="5.544mm" minW="17.925mm" name="DateTimeField3" presence="invisible" x="190mm" y="270mm">
+               <ui>
+                  <dateTimeEdit>
+                     <border presence="hidden">
+                        <?templateDesigner StyleID aped0?></border>
+                     <margin/>
+                  </dateTimeEdit>
+               </ui>
+               <font size="8pt" typeface="Arial"/>
+               <margin bottomInset="1mm" leftInset="1mm" rightInset="1mm" topInset="1mm"/>
+               <value>
+                  <date/>
+               </value>
+               <bind match="none"/>
+               <format>
+                  <picture>date{MM-DD-YYYY}</picture>
+               </format>
+               <para vAlign="bottom"/>
+            </field>
+            <?templateDesigner expand 0?></pageArea>
+         <pageArea id="Page2_ID" name="Page2">
+            <medium long="279.4mm" short="215.9mm" stock="letter"/>
+            <contentArea h="199.4mm" id="CA_1_ID_copy1" name="CA_2" w="203.873mm" x="6.127mm" y="48mm"/>
+            <field anchorType="middleCenter" h="68.025mm" name="ImageField1" w="136.525mm" x="116.471mm" y="139.7mm">
+               <ui>
+                  <imageEdit data="embed"/>
+               </ui>
+               <bind match="dataRef" ref="$.DRAFT"/>
+               <desc>
+                  <text name="embeddedHref">Unknown Embedded URI</text>
+               </desc>
+            </field>
+            <draw name="Pages" x="162.191mm" y="271.78mm">
+               <ui>
+                  <textEdit>
+                     <margin/>
+                  </textEdit>
+               </ui>
+               <value>
+                  <exData xmlns:xft-xliff="http://www.xfa.org/schema/xfa-xliff/1.0/" contentType="text/html" maxLength="0" xft-xliff:id="F2BDB731-F5E3-4979-A6F5-2FCE0EF342DD" xliff:rid="F2BDB731-F5E3-4979-A6F5-2FCE0EF342DD">
+                     <body xmlns="http://www.w3.org/1999/xhtml" xmlns:xfa="http://www.xfa.org/schema/xfa-data/1.0/"><p style="text-decoration:none;letter-spacing:0in">Page<span style="xfa-spacerun:yes"> </span><span xfa:embed="#floatingField006334" xfa:embedMode="raw" xfa:embedType="uri"/> /<span style="xfa-spacerun:yes"> </span><span xfa:embed="#floatingField026500" xfa:embedMode="raw" xfa:embedType="uri"/></p></body>
+                  </exData>
+               </value>
+               <font typeface="Arial"/>
+               <margin bottomInset="0mm" leftInset="0mm" rightInset="0mm" topInset="0mm"/>
+               <para vAlign="middle"/>
+            </draw>
+            <field access="readOnly" h="7.5mm" id="floatingField006334" name="CurrentPage" presence="hidden" w="55mm" x="67.881mm" y="61.474mm">
+               <ui>
+                  <numericEdit>
+                     <border>
+                        <edge stroke="lowered"/>
+                     </border>
+                     <margin/>
+                  </numericEdit>
+               </ui>
+               <font typeface="Arial"/>
+               <margin bottomInset="1mm" leftInset="1mm" rightInset="1mm" topInset="1mm"/>
+               <para vAlign="middle"/>
+               <caption reserve="20mm">
+                  <para vAlign="middle"/>
+                  <value>
+                     <text xmlns:xft-xliff="http://www.xfa.org/schema/xfa-xliff/1.0/" xft-xliff:id="0F25E4EB-77F5-4F57-8801-0603E2F7426A" xliff:rid="0F25E4EB-77F5-4F57-8801-0603E2F7426A">Text Field</text>
+                  </value>
+               </caption>
+               <calculate override="error"/>
+               <?templateDesigner floatingFieldPlaceholder #?>
+               <bind match="none"/>
+               <event activity="ready" name="event__layout_ready" ref="$layout">
+                  <script contentType="application/x-javascript">this.rawValue = xfa.layout.page(this);
+</script>
+               </event>
+            </field>
+            <field access="readOnly" h="7.5mm" id="floatingField026500" name="PageCount" presence="hidden" w="55mm" x="67.881mm" y="61.474mm">
+               <ui>
+                  <numericEdit>
+                     <border>
+                        <edge stroke="lowered"/>
+                     </border>
+                     <margin/>
+                  </numericEdit>
+               </ui>
+               <font typeface="Arial"/>
+               <margin bottomInset="1mm" leftInset="1mm" rightInset="1mm" topInset="1mm"/>
+               <para vAlign="middle"/>
+               <caption reserve="20mm">
+                  <para vAlign="middle"/>
+                  <value>
+                     <text xmlns:xft-xliff="http://www.xfa.org/schema/xfa-xliff/1.0/" xft-xliff:id="5E4AE580-D107-4028-909E-310C20ECA3DA" xliff:rid="5E4AE580-D107-4028-909E-310C20ECA3DA">Text Field</text>
+                  </value>
+               </caption>
+               <calculate override="error"/>
+               <?templateDesigner floatingFieldPlaceholder ##?>
+               <bind match="none"/>
+               <event activity="ready" name="event__layout_ready" ref="$layout">
+                  <script contentType="application/x-javascript">this.rawValue = xfa.layout.pageCount();
+</script>
+               </event>
+            </field>
+            <field access="readOnly" h="6.62mm" name="QUESTION" w="173.65mm" x="6.35mm" y="247.175mm">
+               <ui>
+                  <textEdit multiLine="1">
+                     <border presence="hidden">
+                        <?templateDesigner StyleID aped0?></border>
+                     <margin/>
+                  </textEdit>
+               </ui>
+               <font typeface="Arial"/>
+               <margin bottomInset="1mm" leftInset="1mm" rightInset="1mm" topInset="1mm"/>
+               <para vAlign="middle"/>
+               <bind match="dataRef" ref="$.WA_ITEM_LABEL.QUESTION"/>
+               <value>
+                  <text maxChars="264"/>
+               </value>
+               <desc>
+                  <text name="Schema Annotation">Text Line</text>
+               </desc>
+            </field>
+            <field access="readOnly" h="7.62mm" name="SERVICE" w="73.025mm" x="133.616mm" y="260.175mm">
+               <ui>
+                  <textEdit multiLine="1">
+                     <border presence="hidden">
+                        <?templateDesigner StyleID aped0?></border>
+                     <margin/>
+                  </textEdit>
+               </ui>
+               <font typeface="Arial"/>
+               <margin bottomInset="1mm" leftInset="1mm" rightInset="1mm" topInset="1mm"/>
+               <para vAlign="middle"/>
+               <bind match="dataRef" ref="$.STANDARD_TEXTS.SERVICE"/>
+               <value>
+                  <exData contentType="text/html">
+                     <body xmlns="http://www.w3.org/1999/xhtml"/>
+                  </exData>
+               </value>
+               <desc>
+                  <exData name="Schema Annotation">Text Node TEXT
+SAPScript Include Text 
+ NAME = ZOTC_SERVICE_CALL 
+ LANGUAGE-FIELD = WA_THEAD-TDSPRAS 
+ OBJECT-FIELD = WA_THEAD-TDOBJECT 
+ ID-FIELD = WA_THEAD-TDID</exData>
+               </desc>
+            </field>
+            <field access="readOnly" h="5.528mm" name="TextField2" w="31.75mm" x="6.35mm" y="253.795mm">
+               <ui>
+                  <textEdit>
+                     <border presence="hidden">
+                        <?templateDesigner StyleID aped0?></border>
+                     <margin/>
+                  </textEdit>
+               </ui>
+               <font typeface="Arial"/>
+               <margin bottomInset="1mm" leftInset="1mm" rightInset="1mm" topInset="1mm"/>
+               <para vAlign="middle"/>
+               <bind match="dataRef" ref="$.GV_CONTACT"/>
+            </field>
+            <field h="10.846mm" name="ImageField2" w="40.513mm" x="6.35mm" y="3.175mm">
+               <ui>
+                  <imageEdit data="embed"/>
+               </ui>
+               <value>
+                  <image aspect="none"/>
+               </value>
+               <bind match="dataRef" ref="$.LOGO"/>
+               <desc>
+                  <text name="embeddedHref">Unknown Embedded URI</text>
+               </desc>
+            </field>
+            <field access="readOnly" h="12.7mm" name="INVOICE" w="82.525mm" x="117.475mm" y="5mm">
+               <ui>
+                  <textEdit multiLine="1">
+                     <border presence="hidden">
+                        <?templateDesigner StyleID aped0?></border>
+                     <margin/>
+                  </textEdit>
+               </ui>
+               <font size="14pt" typeface="Arial" weight="bold"/>
+               <margin bottomInset="1mm" leftInset="1mm" rightInset="1mm" topInset="1mm"/>
+               <para vAlign="middle"/>
+               <value>
+                  <text maxChars="264"/>
+               </value>
+               <bind match="dataRef" ref="$.WA_ITEM_LABEL.INVOICE"/>
+               <desc>
+                  <text name="Schema Annotation">Text Line</text>
+               </desc>
+            </field>
+            <field access="readOnly" h="6mm" name="NO_TAX_IND" w="76.2mm" x="6.35mm" y="262.175mm">
+               <ui>
+                  <textEdit multiLine="1">
+                     <border presence="hidden">
+                        <?templateDesigner StyleID aped0?></border>
+                     <margin/>
+                  </textEdit>
+               </ui>
+               <font size="9pt" typeface="Arial"/>
+               <margin bottomInset="1mm" leftInset="1mm" rightInset="1mm" topInset="1mm"/>
+               <para vAlign="bottom"/>
+               <bind match="dataRef" ref="$.STANDARD_TEXTS.NO_TAX_IND"/>
+               <value>
+                  <exData contentType="text/html">
+                     <body xmlns="http://www.w3.org/1999/xhtml"/>
+                  </exData>
+               </value>
+               <desc>
+                  <exData name="Schema Annotation">Text Node TEXT
+SAPScript Include Text 
+ NAME = ZOTC_0014_NOTAX 
+ LANGUAGE = F 
+ OBJECT-FIELD = WA_THEAD-TDOBJECT 
+ ID-FIELD = WA_THEAD-TDID</exData>
+               </desc>
+            </field>
+            <subform layout="lr-tb" minH="37.62mm" name="BILLING_DETAILS_2" presence="hidden" w="203.274mm" x="6.313mm" y="23.85mm">
+               <bind match="none"/>
+               <subform id="SALESORD_SF_ID_copy1" layout="lr-tb" name="SALESORD_SF" w="203.2mm">
+                  <bind match="none"/>
+                  <subform columnWidths="202.964mm" layout="table" name="SLSORD">
+                     <border>
+                        <edge presence="hidden"/>
+                        <corner presence="hidden"/>
+                     </border>
+                     <subform layout="row" name="Row1">
+                        <assist role="TR"/>
+                        <field minH="5.207mm" name="VAL" w="27.507mm">
+                           <ui>
+                              <textEdit multiLine="1">
+                                 <border presence="hidden">
+                                    <?templateDesigner StyleID aped0?></border>
+                                 <margin/>
+                              </textEdit>
+                           </ui>
+                           <font size="8pt" typeface="Arial"/>
+                           <margin bottomInset="1mm" leftInset="1mm" rightInset="1mm" topInset="1mm"/>
+                           <para vAlign="middle"/>
+                           <bind match="dataRef" ref="$.VAL"/>
+                           <border>
+                              <edge presence="hidden"/>
+                              <corner presence="hidden" thickness="0.1778mm"/>
+                           </border>
+                           <desc>
+                              <text name="Schema Annotation">Data element for WWI callback</text>
+                           </desc>
+                           <event activity="initialize" name="event__initialize">
+                              <script contentType="application/x-javascript">
+// * ---&gt; Begin of Change for D2_OTC_FDD_0014 by ADEY
+// Hide this field if the value is initial.
+
+if(this.rawValue == null)
+{
+  this.presence = "hidden";
+}   
+
+// * &lt;--- End of Change for D2_OTC_FDD_0014 by ADEY
+</script>
+                           </event>
+                           <caption reserve="2.7903mm">
+                              <para vAlign="middle"/>
+                           </caption>
+                        </field>
+                        <border>
+                           <edge presence="hidden"/>
+                        </border>
+                        <bind match="dataRef" ref="$.DATA[*]"/>
+                        <occur max="-1"/>
+                        <?templateDesigner expand 1?></subform>
+                     <bind match="dataRef" ref="$.I_SALESORD_2"/>
+                     <?templateDesigner rowpattern first:1, next:1, firstcolor:f0f0f0, nextcolor:ffffff, apply:0?>
+                     <?templateDesigner expand 0?></subform>
+                  <?templateDesigner expand 0?></subform>
+               <subform id="ORDCHANNEL_SF_ID_copy1" layout="lr-tb" name="ORDCHANNEL_SF" w="203.2mm">
+                  <bind match="none"/>
+                  <subform columnWidths="202.964mm" layout="table" name="SVC_ORDCH">
+                     <border>
+                        <edge presence="hidden"/>
+                        <corner presence="hidden"/>
+                     </border>
+                     <subform layout="row" name="Row1">
+                        <assist role="TR"/>
+                        <field minH="5.207mm" name="VAL" w="27.507mm">
+                           <ui>
+                              <textEdit multiLine="1">
+                                 <border presence="hidden">
+                                    <?templateDesigner StyleID aped0?></border>
+                                 <margin/>
+                              </textEdit>
+                           </ui>
+                           <font size="8pt" typeface="Arial" weight="bold"/>
+                           <margin bottomInset="1mm" leftInset="1mm" rightInset="1mm" topInset="1mm"/>
+                           <para vAlign="middle"/>
+                           <bind match="dataRef" ref="$.VAL"/>
+                           <border>
+                              <edge presence="hidden"/>
+                              <corner presence="hidden" thickness="0.1778mm"/>
+                           </border>
+                           <desc>
+                              <text name="Schema Annotation">Data element for WWI callback</text>
+                           </desc>
+                           <event activity="initialize" name="event__initialize">
+                              <script contentType="application/x-javascript">
+// * ---&gt; Begin of Change for D2_OTC_FDD_0014 by ADEY
+// Hide this field if the value is initial.
+
+if(this.rawValue == null)
+{
+  this.presence = "hidden";
+}   
+
+// * &lt;--- End of Change for D2_OTC_FDD_0014 by ADEY
+</script>
+                           </event>
+                           <caption reserve="25.507mm">
+                              <para vAlign="middle"/>
+                           </caption>
+                        </field>
+                        <border>
+                           <edge presence="hidden"/>
+                        </border>
+                        <bind match="dataRef" ref="$.DATA[*]"/>
+                        <occur max="-1" min="0"/>
+                        <?templateDesigner expand 1?></subform>
+                     <bind match="dataRef" ref="$.I_REFERENCE_2"/>
+                     <?templateDesigner rowpattern first:1, next:1, firstcolor:f0f0f0, nextcolor:ffffff, apply:0?>
+                     <?templateDesigner expand 0?></subform>
+                  <?templateDesigner expand 1?></subform>
+               <border>
+                  <edge thickness="0.508mm"/>
+                  <corner thickness="0.508mm"/>
+               </border>
+               <?templateDesigner expand 0?></subform>
+            <subform id="ITEM_LABEL_FRENCH_ID_copy1" layout="lr-tb" name="ITEM_LABEL_FRENCH" w="203.5mm" x="6.313mm" y="28.264mm">
+               <bind match="dataRef" ref="$.WA_ITEM_LABEL"/>
+               <field h="11mm" name="MAT_BATCH_FR" w="34.116mm">
+                  <ui>
+                     <textEdit multiLine="1"/>
+                  </ui>
+                  <font size="8pt" typeface="Arial" weight="bold"/>
+                  <margin bottomInset="0.5mm" leftInset="0.5mm" rightInset="0.5mm" topInset="1.27mm"/>
+                  <border>
+                     <edge thickness="0.508mm"/>
+                     <corner thickness="0.508mm"/>
+                     <corner thickness="0.175mm"/>
+                     <corner presence="hidden" thickness="0.175mm"/>
+                     <corner thickness="0.508mm"/>
+                     <edge/>
+                     <edge presence="hidden"/>
+                     <edge thickness="0.508mm"/>
+                  </border>
+                  <caption>
+                     <value>
+                        <text xmlns:xft-xliff="http://www.xfa.org/schema/xfa-xliff/1.0/"/>
+                     </value>
+                     <para hAlign="center"/>
+                  </caption>
+                  <bind match="dataRef" ref="$.MAT_BATCH_FR"/>
+                  <desc>
+                     <text name="Schema Annotation">Text Line</text>
+                  </desc>
+                  <para hAlign="center"/>
+                  <event activity="initialize" name="event__initialize">
+                     <script contentType="application/x-javascript">
+// * ---&gt; Begin of Change for D2_OTC_FDD_0014 by ADEY
+// Hide this field if the value is initial.
+
+if(this.rawValue == null)
+{
+  this.presence = "hidden";
+}   
+
+// * &lt;--- End of Change for D2_OTC_FDD_0014 by ADEY
+</script>
+                  </event>
+               </field>
+               <field h="11mm" name="ORDER_QTY_FR" w="24.103mm">
+                  <ui>
+                     <textEdit multiLine="1"/>
+                  </ui>
+                  <font size="8pt" typeface="Arial" weight="bold"/>
+                  <margin bottomInset="0.5mm" leftInset="0.5mm" rightInset="0.5mm" topInset="1.27mm"/>
+                  <border>
+                     <edge thickness="0.508mm"/>
+                     <corner thickness="0.508mm"/>
+                     <edge/>
+                     <edge presence="hidden"/>
+                     <edge presence="hidden"/>
+                     <corner thickness="0.175mm"/>
+                     <corner presence="hidden" thickness="0.175mm"/>
+                     <corner presence="hidden" thickness="0.175mm"/>
+                  </border>
+                  <caption>
+                     <value>
+                        <text xmlns:xft-xliff="http://www.xfa.org/schema/xfa-xliff/1.0/"/>
+                     </value>
+                  </caption>
+                  <bind match="dataRef" ref="$.ORDER_QTY_FR"/>
+                  <desc>
+                     <text name="Schema Annotation">Text Line</text>
+                  </desc>
+                  <event activity="initialize" name="event__initialize">
+                     <script contentType="application/x-javascript">
+// * ---&gt; Begin of Change for D2_OTC_FDD_0014 by ADEY
+// Hide this field if the value is initial.
+
+if(this.rawValue == null)
+{
+  this.presence = "hidden";
+}   
+
+// * &lt;--- End of Change for D2_OTC_FDD_0014 by ADEY
+</script>
+                  </event>
+               </field>
+               <field h="11mm" name="UNIT_FR" w="12.7mm">
+                  <ui>
+                     <textEdit multiLine="1"/>
+                  </ui>
+                  <font size="8pt" typeface="Arial" weight="bold"/>
+                  <margin bottomInset="0.5mm" leftInset="0.5mm" rightInset="0.5mm" topInset="1.27mm"/>
+                  <border>
+                     <edge thickness="0.508mm"/>
+                     <corner thickness="0.508mm"/>
+                     <edge/>
+                     <edge presence="hidden"/>
+                     <edge presence="hidden"/>
+                     <corner thickness="0.175mm"/>
+                     <corner presence="hidden" thickness="0.175mm"/>
+                     <corner presence="hidden" thickness="0.175mm"/>
+                  </border>
+                  <caption>
+                     <value>
+                        <text xmlns:xft-xliff="http://www.xfa.org/schema/xfa-xliff/1.0/"/>
+                     </value>
+                  </caption>
+                  <bind match="dataRef" ref="$.UNIT_FR"/>
+                  <desc>
+                     <text name="Schema Annotation">Text Line</text>
+                  </desc>
+                  <event activity="initialize" name="event__initialize">
+                     <script contentType="application/x-javascript">
+
+// * ---&gt; Begin of Change for D2_OTC_FDD_0014 by ADEY
+// Hide this field if the value is initial.
+
+if(this.rawValue == null)
+{
+  this.presence = "hidden";
+}   
+
+// * &lt;--- End of Change for D2_OTC_FDD_0014 by ADEY
+</script>
+                  </event>
+               </field>
+               <field h="11mm" name="DESC_FR" w="62mm">
+                  <ui>
+                     <textEdit multiLine="1"/>
+                  </ui>
+                  <font size="8pt" typeface="Arial" weight="bold"/>
+                  <margin bottomInset="0.5mm" leftInset="0.5mm" rightInset="0.5mm" topInset="1.27mm"/>
+                  <border>
+                     <edge thickness="0.508mm"/>
+                     <corner thickness="0.508mm"/>
+                     <edge/>
+                     <edge presence="hidden"/>
+                     <edge presence="hidden"/>
+                     <corner thickness="0.175mm"/>
+                     <corner presence="hidden" thickness="0.175mm"/>
+                     <corner presence="hidden" thickness="0.175mm"/>
+                  </border>
+                  <caption>
+                     <value>
+                        <text xmlns:xft-xliff="http://www.xfa.org/schema/xfa-xliff/1.0/"/>
+                     </value>
+                     <para hAlign="center"/>
+                  </caption>
+                  <bind match="dataRef" ref="$.DESC_FR"/>
+                  <desc>
+                     <text name="Schema Annotation">Text Line</text>
+                  </desc>
+                  <para hAlign="center"/>
+                  <event activity="initialize" name="event__initialize">
+                     <script contentType="application/x-javascript">
+
+// * ---&gt; Begin of Change for D2_OTC_FDD_0014 by ADEY
+// Hide this field if the value is initial.
+
+if(this.rawValue == null)
+{
+  this.presence = "hidden";
+}   
+
+// * &lt;--- End of Change for D2_OTC_FDD_0014 by ADEY
+</script>
+                  </event>
+               </field>
+               <field h="11mm" name="UNIT_PR_FR" w="22.56mm">
+                  <ui>
+                     <textEdit multiLine="1"/>
+                  </ui>
+                  <font size="8pt" typeface="Arial" weight="bold"/>
+                  <margin bottomInset="0.5mm" leftInset="0.5mm" rightInset="0.5mm" topInset="1.27mm"/>
+                  <border>
+                     <edge thickness="0.508mm"/>
+                     <corner thickness="0.508mm"/>
+                     <edge/>
+                     <edge presence="hidden"/>
+                     <edge presence="hidden"/>
+                     <corner thickness="0.175mm"/>
+                     <corner presence="hidden" thickness="0.175mm"/>
+                     <corner presence="hidden" thickness="0.175mm"/>
+                  </border>
+                  <caption>
+                     <value>
+                        <text xmlns:xft-xliff="http://www.xfa.org/schema/xfa-xliff/1.0/"/>
+                     </value>
+                     <para hAlign="right"/>
+                  </caption>
+                  <bind match="dataRef" ref="$.UNIT_PR_FR"/>
+                  <desc>
+                     <text name="Schema Annotation">Text Line</text>
+                  </desc>
+                  <para hAlign="right"/>
+                  <?templateDesigner expand 1?>
+                  <event activity="initialize" name="event__initialize">
+                     <script contentType="application/x-javascript">
+// * ---&gt; Begin of Change for D2_OTC_FDD_0014 by ADEY
+// Hide this field if the value is initial.
+
+if(this.rawValue == null)
+{
+  this.presence = "hidden";
+}   
+
+// * &lt;--- End of Change for D2_OTC_FDD_0014 by ADEY
+</script>
+                  </event>
+               </field>
+               <field h="11mm" name="EXTND_PR_FR" w="38.208mm">
+                  <ui>
+                     <textEdit multiLine="1"/>
+                  </ui>
+                  <font size="8pt" typeface="Arial" weight="bold"/>
+                  <margin bottomInset="0.5mm" leftInset="0.5mm" rightInset="0.5mm" topInset="1.27mm"/>
+                  <border>
+                     <edge thickness="0.508mm"/>
+                     <corner thickness="0.508mm"/>
+                     <corner thickness="0.508mm"/>
+                     <corner presence="hidden" thickness="0.175mm"/>
+                     <corner presence="hidden" thickness="0.175mm"/>
+                     <edge thickness="0.508mm"/>
+                     <edge presence="hidden"/>
+                     <edge presence="hidden"/>
+                  </border>
+                  <caption>
+                     <value>
+                        <text xmlns:xft-xliff="http://www.xfa.org/schema/xfa-xliff/1.0/"/>
+                     </value>
+                     <para hAlign="right"/>
+                  </caption>
+                  <bind match="dataRef" ref="$.EXTND_PR_FR"/>
+                  <desc>
+                     <text name="Schema Annotation">Text Line</text>
+                  </desc>
+                  <para hAlign="right"/>
+                  <event activity="initialize" name="event__initialize">
+                     <script contentType="application/x-javascript">
+// * ---&gt; Begin of Change for D2_OTC_FDD_0014 by ADEY
+// Hide this field if the value is initial.
+
+if(this.rawValue == null)
+{
+  this.presence = "hidden";
+}   
+
+// * &lt;--- End of Change for D2_OTC_FDD_0014 by ADEY
+</script>
+                  </event>
+               </field>
+               <border>
+                  <edge presence="hidden" thickness="0.508mm"/>
+                  <corner presence="hidden" thickness="0.508mm"/>
+               </border>
+               <?templateDesigner expand 0?></subform>
+            <subform id="BILLING_HDR_SF_ID_copy1" layout="lr-tb" name="ITEM_LABEL_ENG" w="203.5mm" x="6.313mm" y="39.264mm">
+               <bind match="none"/>
+               <field minH="8.62mm" name="MAT_BATCH_SN" w="34.116mm">
+                  <ui>
+                     <textEdit multiLine="1"/>
+                  </ui>
+                  <font size="8pt" typeface="Arial" weight="bold"/>
+                  <margin bottomInset="0.5mm" leftInset="0.5mm" rightInset="0.5mm" topInset="1.27mm"/>
+                  <border>
+                     <edge thickness="0.508mm"/>
+                     <corner thickness="0.508mm"/>
+                     <corner thickness="0.175mm"/>
+                     <corner thickness="0.508mm"/>
+                     <corner thickness="0.508mm"/>
+                     <edge/>
+                     <edge thickness="0.508mm"/>
+                     <edge thickness="0.508mm"/>
+                  </border>
+                  <caption>
+                     <value>
+                        <text xmlns:xft-xliff="http://www.xfa.org/schema/xfa-xliff/1.0/"/>
+                     </value>
+                     <para hAlign="center"/>
+                  </caption>
+                  <bind match="dataRef" ref="$.WA_ITEM_LABEL.MAT_BATCH_SN"/>
+                  <desc>
+                     <text name="Schema Annotation">Text Line</text>
+                  </desc>
+                  <para hAlign="center"/>
+                  <event activity="initialize" name="event__initialize">
+                     <script contentType="application/x-javascript">
+// * ---&gt; Begin of Change for D2_OTC_FDD_0014 by ADEY
+// Hide this field if the value is initial.
+
+if(this.rawValue == null)
+{
+  this.presence = "hidden";
+}   
+
+// * &lt;--- End of Change for D2_OTC_FDD_0014 by ADEY
+</script>
+                  </event>
+               </field>
+               <field h="8.62mm" name="ORDER_QTY" w="24.103mm">
+                  <ui>
+                     <textEdit multiLine="1"/>
+                  </ui>
+                  <font size="8pt" typeface="Arial" weight="bold"/>
+                  <margin bottomInset="0.5mm" leftInset="0.5mm" rightInset="0.5mm" topInset="1.27mm"/>
+                  <border>
+                     <edge thickness="0.508mm"/>
+                     <corner thickness="0.508mm"/>
+                     <corner thickness="0.175mm"/>
+                     <corner thickness="0.508mm"/>
+                     <corner presence="hidden" thickness="0.175mm"/>
+                     <edge/>
+                     <edge thickness="0.508mm"/>
+                     <edge presence="hidden"/>
+                  </border>
+                  <caption>
+                     <value>
+                        <text xmlns:xft-xliff="http://www.xfa.org/schema/xfa-xliff/1.0/"/>
+                     </value>
+                  </caption>
+                  <bind match="dataRef" ref="$.WA_ITEM_LABEL.ORDER_QTY"/>
+                  <desc>
+                     <text name="Schema Annotation">Text Line</text>
+                  </desc>
+                  <event activity="initialize" name="event__initialize">
+                     <script contentType="application/x-javascript">
+// * ---&gt; Begin of Change for D2_OTC_FDD_0014 by ADEY
+// Hide this field if the value is initial.
+
+if(this.rawValue == null)
+{
+  this.presence = "hidden";
+}   
+
+// * &lt;--- End of Change for D2_OTC_FDD_0014 by ADEY
+</script>
+                  </event>
+               </field>
+               <field h="8.62mm" name="UNIT" w="12.7mm">
+                  <ui>
+                     <textEdit multiLine="1"/>
+                  </ui>
+                  <font size="8pt" typeface="Arial" weight="bold"/>
+                  <margin bottomInset="0.5mm" leftInset="0.5mm" rightInset="0.5mm" topInset="1.27mm"/>
+                  <border>
+                     <edge thickness="0.508mm"/>
+                     <corner thickness="0.508mm"/>
+                     <corner thickness="0.175mm"/>
+                     <corner thickness="0.508mm"/>
+                     <corner presence="hidden" thickness="0.175mm"/>
+                     <edge/>
+                     <edge thickness="0.508mm"/>
+                     <edge presence="hidden"/>
+                  </border>
+                  <caption>
+                     <value>
+                        <text xmlns:xft-xliff="http://www.xfa.org/schema/xfa-xliff/1.0/"/>
+                     </value>
+                  </caption>
+                  <bind match="dataRef" ref="$.WA_ITEM_LABEL.UNIT"/>
+                  <desc>
+                     <text name="Schema Annotation">Text Line</text>
+                  </desc>
+                  <event activity="initialize" name="event__initialize">
+                     <script contentType="application/x-javascript">
+// * ---&gt; Begin of Change for D2_OTC_FDD_0014 by ADEY
+// Hide this field if the value is initial.
+
+if(this.rawValue == null)
+{
+  this.presence = "hidden";
+}   
+
+// * &lt;--- End of Change for D2_OTC_FDD_0014 by ADEY
+</script>
+                  </event>
+               </field>
+               <field h="8.62mm" name="DESCRIPTION" w="62mm">
+                  <ui>
+                     <textEdit multiLine="1"/>
+                  </ui>
+                  <font size="8pt" typeface="Arial" weight="bold"/>
+                  <margin bottomInset="0.5mm" leftInset="0.5mm" rightInset="0.5mm" topInset="1.27mm"/>
+                  <border>
+                     <edge thickness="0.508mm"/>
+                     <corner thickness="0.508mm"/>
+                     <corner thickness="0.175mm"/>
+                     <corner thickness="0.508mm"/>
+                     <corner presence="hidden" thickness="0.175mm"/>
+                     <edge/>
+                     <edge thickness="0.508mm"/>
+                     <edge presence="hidden"/>
+                  </border>
+                  <caption>
+                     <value>
+                        <text xmlns:xft-xliff="http://www.xfa.org/schema/xfa-xliff/1.0/"/>
+                     </value>
+                     <para hAlign="center"/>
+                  </caption>
+                  <bind match="dataRef" ref="$.WA_ITEM_LABEL.DESCRIPTION"/>
+                  <desc>
+                     <text name="Schema Annotation">Text Line</text>
+                  </desc>
+                  <para hAlign="center"/>
+                  <event activity="initialize" name="event__initialize">
+                     <script contentType="application/x-javascript">
+// * ---&gt; Begin of Change for D2_OTC_FDD_0014 by ADEY
+// Hide this field if the value is initial.
+
+if(this.rawValue == null)
+{
+  this.presence = "hidden";
+}   
+
+// * &lt;--- End of Change for D2_OTC_FDD_0014 by ADEY
+</script>
+                  </event>
+               </field>
+               <field h="8.62mm" name="UNIT_PRICE" w="22.56mm">
+                  <ui>
+                     <textEdit multiLine="1"/>
+                  </ui>
+                  <font size="8pt" typeface="Arial" weight="bold"/>
+                  <margin bottomInset="0.5mm" leftInset="0.5mm" rightInset="0.5mm" topInset="1.27mm"/>
+                  <border>
+                     <edge thickness="0.508mm"/>
+                     <corner thickness="0.508mm"/>
+                     <corner thickness="0.175mm"/>
+                     <corner thickness="0.508mm"/>
+                     <corner presence="hidden" thickness="0.175mm"/>
+                     <edge/>
+                     <edge thickness="0.508mm"/>
+                     <edge presence="hidden"/>
+                  </border>
+                  <caption>
+                     <value>
+                        <text xmlns:xft-xliff="http://www.xfa.org/schema/xfa-xliff/1.0/"/>
+                     </value>
+                     <para hAlign="right"/>
+                  </caption>
+                  <bind match="dataRef" ref="$.WA_ITEM_LABEL.UNIT_PRICE"/>
+                  <desc>
+                     <text name="Schema Annotation">Text Line</text>
+                  </desc>
+                  <para hAlign="right"/>
+                  <?templateDesigner expand 1?>
+                  <event activity="initialize" name="event__initialize">
+                     <script contentType="application/x-javascript">
+// * ---&gt; Begin of Change for D2_OTC_FDD_0014 by ADEY
+// Hide this field if the value is initial.
+
+if(this.rawValue == null)
+{
+  this.presence = "hidden";
+}   
+
+// * &lt;--- End of Change for D2_OTC_FDD_0014 by ADEY
+</script>
+                  </event>
+               </field>
+               <field h="8.62mm" name="EXTND_PRICE" w="47.85mm">
+                  <ui>
+                     <textEdit multiLine="1"/>
+                  </ui>
+                  <font size="8pt" typeface="Arial" weight="bold"/>
+                  <margin bottomInset="0.5mm" leftInset="0.5mm" rightInset="0.5mm" topInset="1.27mm"/>
+                  <border>
+                     <edge thickness="0.508mm"/>
+                     <corner thickness="0.508mm"/>
+                     <edge thickness="0.508mm"/>
+                     <edge thickness="0.508mm"/>
+                     <edge presence="hidden"/>
+                     <corner thickness="0.508mm"/>
+                     <corner thickness="0.508mm"/>
+                     <corner presence="hidden" thickness="0.175mm"/>
+                  </border>
+                  <caption>
+                     <value>
+                        <text xmlns:xft-xliff="http://www.xfa.org/schema/xfa-xliff/1.0/"/>
+                     </value>
+                     <para hAlign="right"/>
+                  </caption>
+                  <bind match="dataRef" ref="$.WA_ITEM_LABEL.EXTND_PRICE"/>
+                  <desc>
+                     <text name="Schema Annotation">Text Line</text>
+                  </desc>
+                  <para hAlign="right"/>
+                  <event activity="initialize" name="event__initialize">
+                     <script contentType="application/x-javascript">
+// * ---&gt; Begin of Change for D2_OTC_FDD_0014 by ADEY
+// Hide this field if the value is initial.
+
+if(this.rawValue == null)
+{
+  this.presence = "hidden";
+}   
+
+// * &lt;--- End of Change for D2_OTC_FDD_0014 by ADEY
+</script>
+                  </event>
+               </field>
+               <border>
+                  <edge presence="hidden" thickness="0.508mm"/>
+                  <corner presence="hidden" thickness="0.508mm"/>
+               </border>
+               <assist role="TH"/>
+               <?templateDesigner expand 0?></subform>
+            <field h="9mm" presence="invisible" w="62mm">
+               <ui>
+                  <textEdit>
+                     <border presence="hidden"/>
+                     <margin/>
+                  </textEdit>
+               </ui>
+               <font typeface="Arial"/>
+               <margin bottomInset="1mm" leftInset="1mm" rightInset="1mm" topInset="1mm"/>
+               <para vAlign="middle"/>
+               <caption reserve="25mm">
+                  <para vAlign="middle"/>
+                  <value>
+                     <text xliff:rid="43624FF2-54E5-4AAB-89CA-590EC0FE8776">SHIP_QTY</text>
+                  </value>
+               </caption>
+               <value>
+                  <text maxChars="264"/>
+               </value>
+               <bind match="none"/>
+               <desc>
+                  <text name="Schema Annotation">Text Line</text>
+               </desc>
+            </field>
+            <field h="9mm" presence="invisible" w="62mm">
+               <ui>
+                  <textEdit>
+                     <border presence="hidden"/>
+                     <margin/>
+                  </textEdit>
+               </ui>
+               <font typeface="Arial"/>
+               <margin bottomInset="1mm" leftInset="1mm" rightInset="1mm" topInset="1mm"/>
+               <para vAlign="middle"/>
+               <caption reserve="25mm">
+                  <para vAlign="middle"/>
+                  <value>
+                     <text xliff:rid="1E5E61AD-2AE7-4253-AE09-F791183D03C7">SHIP_QTY_FR</text>
+                  </value>
+               </caption>
+               <value>
+                  <text maxChars="264"/>
+               </value>
+               <bind match="none"/>
+               <desc>
+                  <text name="Schema Annotation">Text Line</text>
+               </desc>
+            </field>
+            <field h="9mm" presence="invisible" w="62mm">
+               <ui>
+                  <textEdit>
+                     <border presence="hidden"/>
+                     <margin/>
+                  </textEdit>
+               </ui>
+               <font typeface="Arial"/>
+               <margin bottomInset="1mm" leftInset="1mm" rightInset="1mm" topInset="1mm"/>
+               <para vAlign="middle"/>
+               <caption reserve="25mm">
+                  <para vAlign="middle"/>
+                  <value>
+                     <text xliff:rid="45074974-0A51-4D59-9A60-707D770AC8D8">SHIP_QTY</text>
+                  </value>
+               </caption>
+               <value>
+                  <text maxChars="264"/>
+               </value>
+               <bind match="none"/>
+               <desc>
+                  <text name="Schema Annotation">Text Line</text>
+               </desc>
+            </field>
+            <field h="9mm" name="SHIP_QTY_FR" presence="invisible" w="62mm">
+               <ui>
+                  <textEdit>
+                     <border presence="hidden"/>
+                     <margin/>
+                  </textEdit>
+               </ui>
+               <font typeface="Arial"/>
+               <margin bottomInset="1mm" leftInset="1mm" rightInset="1mm" topInset="1mm"/>
+               <para vAlign="middle"/>
+               <caption reserve="25mm">
+                  <para vAlign="middle"/>
+                  <value>
+                     <text xliff:rid="424BF95C-052B-4ABB-B96A-C09B13E98B4C">SHIP_QTY_FR</text>
+                  </value>
+               </caption>
+               <value>
+                  <text maxChars="264"/>
+               </value>
+               <bind match="dataRef" ref="$.WA_ITEM_LABEL.SHIP_QTY_FR"/>
+               <desc>
+                  <text name="Schema Annotation">Text Line</text>
+               </desc>
+            </field>
+            <field h="9mm" presence="invisible" w="62mm">
+               <ui>
+                  <textEdit>
+                     <border presence="hidden"/>
+                     <margin/>
+                  </textEdit>
+               </ui>
+               <font typeface="Arial"/>
+               <margin bottomInset="1mm" leftInset="1mm" rightInset="1mm" topInset="1mm"/>
+               <para vAlign="middle"/>
+               <caption reserve="25mm">
+                  <para vAlign="middle"/>
+                  <value>
+                     <text xliff:rid="BB90473C-3089-4728-9D18-D27C1494C098">SHIP_QTY</text>
+                  </value>
+               </caption>
+               <value>
+                  <text maxChars="264"/>
+               </value>
+               <bind match="none"/>
+               <desc>
+                  <text name="Schema Annotation">Text Line</text>
+               </desc>
+            </field>
+            <field h="9mm" presence="invisible" w="62mm">
+               <ui>
+                  <textEdit>
+                     <border presence="hidden"/>
+                     <margin/>
+                  </textEdit>
+               </ui>
+               <font typeface="Arial"/>
+               <margin bottomInset="1mm" leftInset="1mm" rightInset="1mm" topInset="1mm"/>
+               <para vAlign="middle"/>
+               <caption reserve="25mm">
+                  <para vAlign="middle"/>
+                  <value>
+                     <text xliff:rid="7C781D5A-43B0-4FB0-8C93-3DDB368E3149">SHIP_QTY_FR</text>
+                  </value>
+               </caption>
+               <value>
+                  <text maxChars="264"/>
+               </value>
+               <bind match="none"/>
+               <desc>
+                  <text name="Schema Annotation">Text Line</text>
+               </desc>
+            </field>
+            <?templateDesigner expand 0?></pageArea>
+         <?templateDesigner expand 1?></pageSet>
+      <proto>
+         <?templateDesigner expand 1?></proto>
+      <desc>
+         <text name="version">9.0.1.0.20091206.1.615263.583615</text>
+      </desc>
+      <subform layout="tb" name="BODY" w="203.246mm">
+         <bind match="none"/>
+         <subform layout="tb" name="Header_Text_SF" w="203.154mm">
+            <bind match="none"/>
+            <subform layout="tb" name="I_LINES">
+               <subform layout="tb" name="DATA">
+                  <assist role="TR"/>
+                  <occur max="-1"/>
+                  <bind match="dataRef" ref="DATA[*]"/>
+                  <border>
+                     <edge presence="hidden"/>
+                  </border>
+                  <?templateDesigner rowpattern first:1, next:1, firstcolor:f0f0f0, nextcolor:ffffff, apply:0?>
+                  <field minH="5.528mm" name="TDLINE" w="7.998194in">
+                     <ui>
+                        <textEdit multiLine="1">
+                           <margin/>
+                        </textEdit>
+                     </ui>
+                     <font typeface="Arial"/>
+                     <margin bottomInset="1mm" leftInset="1mm" rightInset="1mm" topInset="1mm"/>
+                     <para vAlign="middle"/>
+                     <bind match="dataRef" ref="$.TDLINE"/>
+                     <desc>
+                        <text name="Schema Annotation">Text Line</text>
+                     </desc>
+                     <border>
+                        <edge presence="hidden"/>
+                        <corner presence="hidden"/>
+                     </border>
+                  </field>
+                  <?templateDesigner expand 1?></subform>
+               <occur max="-1" min="0"/>
+               <bind match="dataRef" ref="I_LINES"/>
+               <?templateDesigner rowpattern first:1, next:1, firstcolor:f0f0f0, nextcolor:ffffff, apply:0?>
+               <?templateDesigner expand 1?></subform>
+            <border>
+               <edge presence="hidden" thickness="0.508mm"/>
+               <corner presence="hidden" thickness="0.508mm"/>
+            </border>
+            <?templateDesigner expand 1?></subform>
+         <subform layout="lr-tb" name="CUSTOMER_SF1" w="203.212mm">
+            <bind match="dataRef" ref="$.WA_CUST"/>
+            <field access="readOnly" h="7mm" name="KUNRG_TXT" w="40mm">
+               <ui>
+                  <textEdit multiLine="1">
+                     <border presence="hidden">
+                        <?templateDesigner StyleID aped0?></border>
+                     <margin/>
+                  </textEdit>
+               </ui>
+               <font size="8pt" typeface="Arial" weight="bold"/>
+               <margin bottomInset="1mm" leftInset="1mm" rightInset="1mm" topInset="1mm"/>
+               <para vAlign="middle"/>
+               <bind match="dataRef" ref="$.KUNRG_TXT"/>
+               <border>
+                  <edge presence="hidden"/>
+                  <edge presence="hidden"/>
+                  <edge stroke="dashed"/>
+                  <edge presence="hidden"/>
+                  <corner/>
+                  <corner/>
+                  <corner stroke="dashed"/>
+                  <corner/>
+               </border>
+               <desc>
+                  <text name="Schema Annotation">Text Line</text>
+               </desc>
+               <event activity="initialize" name="event__initialize">
+                  <script contentType="application/x-javascript">
+// * ---&gt; Begin of Change for D2_OTC_FDD_0014 by ADEY
+// Hide this field if the value is initial.
+
+if(this.rawValue == null)
+{
+  this.presence = "hidden";
+}   
+
+// * &lt;--- End of Change for D2_OTC_FDD_0014 by ADEY
+
+</script>
+               </event>
+            </field>
+            <field access="readOnly" h="7mm" name="VBELN_TXT" w="40mm">
+               <ui>
+                  <textEdit multiLine="1">
+                     <border presence="hidden">
+                        <?templateDesigner StyleID aped0?></border>
+                     <margin/>
+                  </textEdit>
+               </ui>
+               <font size="8pt" typeface="Arial" weight="bold"/>
+               <margin bottomInset="1mm" leftInset="1mm" rightInset="1mm" topInset="1mm"/>
+               <para vAlign="middle"/>
+               <bind match="dataRef" ref="$.VBELN_TXT"/>
+               <border>
+                  <edge presence="hidden"/>
+                  <edge presence="hidden"/>
+                  <edge stroke="dashed"/>
+                  <edge presence="hidden"/>
+                  <corner/>
+                  <corner/>
+                  <corner stroke="dashed"/>
+                  <corner/>
+               </border>
+               <desc>
+                  <text name="Schema Annotation">Text Line</text>
+               </desc>
+               <event activity="initialize" name="event__initialize">
+                  <script contentType="application/x-javascript">
+// * ---&gt; Begin of Change for D2_OTC_FDD_0014 by ADEY
+// Hide this field if the value is initial.
+
+if(this.rawValue == null)
+{
+  this.presence = "hidden";
+}   
+
+// * &lt;--- End of Change for D2_OTC_FDD_0014 by ADEY
+</script>
+               </event>
+            </field>
+            <field access="readOnly" h="7mm" locale="ar_DZ" name="FKDAT_TXT" w="40mm">
+               <ui>
+                  <textEdit multiLine="1">
+                     <border presence="hidden">
+                        <?templateDesigner StyleID aped0?></border>
+                     <margin/>
+                  </textEdit>
+               </ui>
+               <font size="8pt" typeface="Arial" weight="bold"/>
+               <margin bottomInset="1mm" leftInset="1mm" rightInset="1mm" topInset="1mm"/>
+               <para vAlign="middle"/>
+               <bind match="dataRef" ref="$.FKDAT_TXT"/>
+               <format>
+                  <picture>date{MM-DD-YYYY}</picture>
+               </format>
+               <border>
+                  <edge presence="hidden"/>
+                  <edge presence="hidden"/>
+                  <edge stroke="dashed"/>
+                  <edge presence="hidden"/>
+                  <corner/>
+                  <corner/>
+                  <corner stroke="dashed"/>
+                  <corner/>
+               </border>
+               <desc>
+                  <text name="Schema Annotation">Text Line</text>
+               </desc>
+               <event activity="initialize" name="event__initialize">
+                  <script contentType="application/x-javascript">
+// * ---&gt; Begin of Change for D2_OTC_FDD_0014 by ADEY
+// Hide this field if the value is initial.
+
+if(this.rawValue == null)
+{
+  this.presence = "hidden";
+}   
+
+// * &lt;--- End of Change for D2_OTC_FDD_0014 by ADEY
+</script>
+               </event>
+            </field>
+            <field access="readOnly" h="7mm" name="NAME1_TXT" w="41mm">
+               <ui>
+                  <textEdit multiLine="1">
+                     <border presence="hidden">
+                        <?templateDesigner StyleID aped0?></border>
+                     <margin/>
+                  </textEdit>
+               </ui>
+               <font size="8pt" typeface="Arial" weight="bold"/>
+               <margin bottomInset="1mm" leftInset="1mm" rightInset="1mm" topInset="1mm"/>
+               <para vAlign="middle"/>
+               <bind match="dataRef" ref="$.NAME1_TXT"/>
+               <border>
+                  <edge presence="hidden"/>
+                  <edge presence="hidden"/>
+                  <edge stroke="dashed"/>
+                  <edge presence="hidden"/>
+                  <corner/>
+                  <corner/>
+                  <corner stroke="dashed"/>
+                  <corner/>
+               </border>
+               <desc>
+                  <text name="Schema Annotation">Text Line</text>
+               </desc>
+               <event activity="initialize" name="event__initialize">
+                  <script contentType="application/x-javascript">
+// * ---&gt; Begin of Change for D2_OTC_FDD_0014 by ADEY
+// Hide this field if the value is initial.
+
+if(this.rawValue == null)
+{
+  this.presence = "hidden";
+}   
+
+// * &lt;--- End of Change for D2_OTC_FDD_0014 by ADEY
+</script>
+               </event>
+            </field>
+            <field access="readOnly" h="7mm" name="INCO1_TXT" w="42mm">
+               <ui>
+                  <textEdit multiLine="1">
+                     <border presence="hidden">
+                        <?templateDesigner StyleID aped0?></border>
+                     <margin/>
+                  </textEdit>
+               </ui>
+               <font size="8pt" typeface="Arial" weight="bold"/>
+               <margin bottomInset="1mm" leftInset="1mm" rightInset="1mm" topInset="1mm"/>
+               <para vAlign="middle"/>
+               <bind match="dataRef" ref="$.INCO1_TXT"/>
+               <border>
+                  <edge presence="hidden"/>
+                  <edge stroke="dashed"/>
+                  <edge stroke="dashed"/>
+                  <edge presence="hidden"/>
+                  <corner/>
+                  <corner stroke="dashed"/>
+                  <corner stroke="dashed"/>
+                  <corner/>
+               </border>
+               <desc>
+                  <text name="Schema Annotation">Text Line</text>
+               </desc>
+               <event activity="initialize" name="event__initialize">
+                  <script contentType="application/x-javascript">
+
+// * ---&gt; Begin of Change for D2_OTC_FDD_0014 by ADEY
+// Hide this field if the value is initial.
+
+if(this.rawValue == null)
+{
+  this.presence = "hidden";
+}   
+
+// * &lt;--- End of Change for D2_OTC_FDD_0014 by ADEY
+</script>
+               </event>
+            </field>
+            <field h="6.35mm" name="CUSTOMER_NO" w="40mm">
+               <ui>
+                  <textEdit/>
+               </ui>
+               <font size="8pt" typeface="Arial"/>
+               <margin bottomInset="1mm" leftInset="1mm" rightInset="1mm" topInset="1mm"/>
+               <border>
+                  <edge presence="hidden"/>
+                  <corner presence="hidden" thickness="0.175mm"/>
+                  <corner presence="hidden" thickness="0.175mm"/>
+                  <corner stroke="dashed" thickness="0.175mm"/>
+                  <corner presence="hidden" thickness="0.175mm"/>
+                  <edge presence="hidden"/>
+                  <edge stroke="dashed"/>
+                  <edge presence="hidden"/>
+               </border>
+               <caption>
+                  <value>
+                     <text xmlns:xft-xliff="http://www.xfa.org/schema/xfa-xliff/1.0/"/>
+                  </value>
+                  <para vAlign="middle"/>
+               </caption>
+               <value>
+                  <exData contentType="text/html">
+                     <body xmlns="http://www.w3.org/1999/xhtml"/>
+                  </exData>
+               </value>
+               <bind match="dataRef" ref="$.KUNRG"/>
+               <desc>
+                  <exData name="Schema Annotation">Text Node TEXT
+SAPScript Include Text 
+ NAME = ZOTC_0014_CUSTNO 
+ LANGUAGE-FIELD = WA_THEAD-TDSPRAS 
+ OBJECT-FIELD = WA_THEAD-TDOBJECT 
+ ID-FIELD = WA_THEAD-TDID</exData>
+               </desc>
+               <para vAlign="middle"/>
+               <event activity="initialize" name="event__initialize">
+                  <script contentType="application/x-javascript">
+// * ---&gt; Begin of Change for D2_OTC_FDD_0014 by ADEY
+// Hide this field if the value is initial.
+
+if(this.rawValue == null)
+{
+  this.presence = "hidden";
+}   
+
+// * &lt;--- End of Change for D2_OTC_FDD_0014 by ADEY
+</script>
+               </event>
+            </field>
+            <field h="6.35mm" name="INVOICE_NO" w="40mm">
+               <ui>
+                  <textEdit/>
+               </ui>
+               <font size="8pt" typeface="Arial"/>
+               <margin bottomInset="1mm" leftInset="1mm" rightInset="1mm" topInset="1mm"/>
+               <border>
+                  <edge presence="hidden" stroke="dashed"/>
+                  <corner presence="hidden" stroke="dashed" thickness="0.175mm"/>
+                  <corner presence="hidden" stroke="dashed" thickness="0.175mm"/>
+                  <corner stroke="dashed" thickness="0.175mm"/>
+                  <corner presence="hidden" stroke="dashed" thickness="0.175mm"/>
+                  <edge presence="hidden"/>
+                  <edge stroke="dashed"/>
+                  <edge presence="hidden"/>
+               </border>
+               <caption>
+                  <value>
+                     <text xmlns:xft-xliff="http://www.xfa.org/schema/xfa-xliff/1.0/"/>
+                  </value>
+                  <para vAlign="middle"/>
+               </caption>
+               <value>
+                  <exData contentType="text/html">
+                     <body xmlns="http://www.w3.org/1999/xhtml"/>
+                  </exData>
+               </value>
+               <bind match="dataRef" ref="$.VBELN"/>
+               <desc>
+                  <exData name="Schema Annotation">Text Node TEXT
+SAPScript Include Text 
+ NAME = ZOTC_0014_INVNUM 
+ LANGUAGE-FIELD = WA_THEAD-TDSPRAS 
+ OBJECT-FIELD = WA_THEAD-TDOBJECT 
+ ID-FIELD = WA_THEAD-TDID</exData>
+               </desc>
+               <para vAlign="middle"/>
+               <event activity="initialize" name="event__initialize">
+                  <script contentType="application/x-javascript">
+
+// * ---&gt; Begin of Change for D2_OTC_FDD_0014 by ADEY
+// Hide this field if the value is initial.
+
+if(this.rawValue == null)
+{
+  this.presence = "hidden";
+}   
+
+// * &lt;--- End of Change for D2_OTC_FDD_0014 by ADEY
+</script>
+               </event>
+            </field>
+            <field access="readOnly" h="6.35mm" name="INVOICE_DATE" w="40mm">
+               <ui>
+                  <dateTimeEdit/>
+               </ui>
+               <font size="8pt" typeface="Arial"/>
+               <margin bottomInset="1mm" leftInset="1mm" rightInset="1mm" topInset="1mm"/>
+               <value>
+                  <date/>
+               </value>
+               <caption>
+                  <value>
+                     <text xmlns:xft-xliff="http://www.xfa.org/schema/xfa-xliff/1.0/"/>
+                  </value>
+                  <para vAlign="middle"/>
+               </caption>
+               <border>
+                  <edge presence="hidden" stroke="dashed"/>
+                  <corner presence="hidden" stroke="dashed" thickness="0.175mm"/>
+                  <corner presence="hidden" stroke="dashed" thickness="0.175mm"/>
+                  <corner stroke="dashed" thickness="0.175mm"/>
+                  <corner presence="hidden" stroke="dashed" thickness="0.175mm"/>
+                  <edge presence="hidden"/>
+                  <edge stroke="dashed"/>
+                  <edge presence="hidden"/>
+               </border>
+               <bind match="dataRef" ref="$.FKDAT"/>
+               <desc>
+                  <exData name="Schema Annotation">Text Node TEXT
+SAPScript Include Text 
+ NAME = ZOTC_0014_INDVDT 
+ LANGUAGE-FIELD = WA_THEAD-TDSPRAS 
+ OBJECT-FIELD = WA_THEAD-TDOBJECT 
+ ID-FIELD = WA_THEAD-TDID</exData>
+               </desc>
+               <para vAlign="middle"/>
+               <event activity="initialize" name="event__initialize">
+                  <script contentType="application/x-javascript">
+// * ---&gt; Begin of Change for D2_OTC_FDD_0014 by ADEY
+// Hide this field if the value is initial.
+
+if(this.rawValue == null)
+{
+  this.presence = "hidden";
+}   
+
+// * &lt;--- End of Change for D2_OTC_FDD_0014 by ADEY
+</script>
+               </event>
+               <format>
+                  <picture>date{MM-DD-YYYY}</picture>
+               </format>
+            </field>
+            <field h="6.35mm" name="CARRIER" w="41mm">
+               <ui>
+                  <textEdit/>
+               </ui>
+               <font size="8pt" typeface="Arial"/>
+               <margin bottomInset="1mm" leftInset="1.5mm" rightInset="1mm" topInset="1mm"/>
+               <border>
+                  <edge presence="hidden" stroke="dashed"/>
+                  <corner presence="hidden" stroke="dashed" thickness="0.175mm"/>
+                  <corner presence="hidden" stroke="dashed" thickness="0.175mm"/>
+                  <corner stroke="dashed" thickness="0.175mm"/>
+                  <corner presence="hidden" stroke="dashed" thickness="0.175mm"/>
+                  <edge presence="hidden"/>
+                  <edge stroke="dashed"/>
+                  <edge presence="hidden"/>
+               </border>
+               <caption>
+                  <value>
+                     <text xmlns:xft-xliff="http://www.xfa.org/schema/xfa-xliff/1.0/"/>
+                  </value>
+                  <para vAlign="middle"/>
+               </caption>
+               <value>
+                  <exData contentType="text/html">
+                     <body xmlns="http://www.w3.org/1999/xhtml"/>
+                  </exData>
+               </value>
+               <bind match="dataRef" ref="$.NAME1"/>
+               <desc>
+                  <exData name="Schema Annotation">Text Node TEXT
+SAPScript Include Text 
+ NAME = ZOTC_0014_CARRIER 
+ LANGUAGE-FIELD = WA_THEAD-TDSPRAS 
+ OBJECT-FIELD = WA_THEAD-TDOBJECT 
+ ID-FIELD = WA_THEAD-TDID</exData>
+               </desc>
+               <para vAlign="middle"/>
+               <event activity="initialize" name="event__initialize">
+                  <script contentType="application/x-javascript">
+// * ---&gt; Begin of Change for D2_OTC_FDD_0014 by ADEY
+// Hide this field if the value is initial.
+
+if(this.rawValue == null)
+{
+  this.presence = "hidden";
+}   
+
+// * &lt;--- End of Change for D2_OTC_FDD_0014 by ADEY
+</script>
+               </event>
+            </field>
+            <field h="6.35mm" name="FREIGHT" w="42mm">
+               <ui>
+                  <textEdit/>
+               </ui>
+               <font size="8pt" typeface="Arial"/>
+               <margin bottomInset="1mm" leftInset="1mm" rightInset="1mm" topInset="1mm"/>
+               <border>
+                  <edge presence="hidden" stroke="dashed"/>
+                  <corner presence="hidden" stroke="dashed" thickness="0.175mm"/>
+                  <corner presence="hidden" stroke="dashed" thickness="0.175mm"/>
+                  <corner stroke="dashed" thickness="0.175mm"/>
+                  <corner presence="hidden" stroke="dashed" thickness="0.175mm"/>
+                  <edge presence="hidden"/>
+                  <edge stroke="dashed"/>
+                  <edge presence="hidden"/>
+               </border>
+               <caption>
+                  <value>
+                     <text xmlns:xft-xliff="http://www.xfa.org/schema/xfa-xliff/1.0/"/>
+                  </value>
+                  <para vAlign="middle"/>
+               </caption>
+               <value>
+                  <exData contentType="text/html">
+                     <body xmlns="http://www.w3.org/1999/xhtml"/>
+                  </exData>
+               </value>
+               <bind match="dataRef" ref="$.INCO1"/>
+               <desc>
+                  <exData name="Schema Annotation">Text Node TEXT
+SAPScript Include Text 
+ NAME = ZOTC_0014_FREIGHT 
+ LANGUAGE-FIELD = WA_THEAD-TDSPRAS 
+ OBJECT-FIELD = WA_THEAD-TDOBJECT 
+ ID-FIELD = WA_THEAD-TDID</exData>
+               </desc>
+               <para vAlign="middle"/>
+               <event activity="initialize" name="event__initialize">
+                  <script contentType="application/x-javascript">
+
+// * ---&gt; Begin of Change for D2_OTC_FDD_0014 by ADEY
+// Hide this field if the value is initial.
+
+if(this.rawValue == null)
+{
+  this.presence = "hidden";
+}   
+
+// * &lt;--- End of Change for D2_OTC_FDD_0014 by ADEY
+</script>
+               </event>
+            </field>
+            <border>
+               <edge thickness="0.508mm"/>
+               <corner thickness="0.508mm"/>
+            </border>
+            <?templateDesigner expand 0?></subform>
+         <subform layout="lr-tb" name="CUSTOMER_SF2" w="203.212mm">
+            <bind match="dataRef" ref="$.WA_CUST1"/>
+            <field access="readOnly" h="7mm" name="KUNRG_TXT" w="40mm">
+               <ui>
+                  <textEdit multiLine="1">
+                     <border presence="hidden">
+                        <?templateDesigner StyleID aped0?></border>
+                     <margin/>
+                  </textEdit>
+               </ui>
+               <font size="8pt" typeface="Arial" weight="bold"/>
+               <margin bottomInset="1mm" leftInset="1mm" rightInset="1mm" topInset="1mm"/>
+               <para vAlign="middle"/>
+               <bind match="dataRef" ref="$.KUNRG_TXT"/>
+               <border>
+                  <edge presence="hidden"/>
+                  <edge presence="hidden"/>
+                  <edge stroke="dashed"/>
+                  <edge presence="hidden"/>
+                  <corner/>
+                  <corner/>
+                  <corner stroke="dashed"/>
+                  <corner/>
+               </border>
+               <desc>
+                  <text name="Schema Annotation">Text Line</text>
+               </desc>
+               <event activity="initialize" name="event__initialize">
+                  <script contentType="application/x-javascript">
+// * ---&gt; Begin of Change for D2_OTC_FDD_0014 by ADEY
+// Hide this field if the value is initial.
+
+if(this.rawValue == null)
+{
+  this.presence = "hidden";
+}   
+
+// * &lt;--- End of Change for D2_OTC_FDD_0014 by ADEY
+
+</script>
+               </event>
+            </field>
+            <field access="readOnly" h="7mm" name="VBELN_TXT" w="40mm">
+               <ui>
+                  <textEdit multiLine="1">
+                     <border presence="hidden">
+                        <?templateDesigner StyleID aped0?></border>
+                     <margin/>
+                  </textEdit>
+               </ui>
+               <font size="8pt" typeface="Arial" weight="bold"/>
+               <margin bottomInset="1mm" leftInset="1mm" rightInset="1mm" topInset="1mm"/>
+               <para vAlign="middle"/>
+               <bind match="dataRef" ref="$.VBELN_TXT"/>
+               <border>
+                  <edge presence="hidden"/>
+                  <edge presence="hidden"/>
+                  <edge stroke="dashed"/>
+                  <edge presence="hidden"/>
+                  <corner/>
+                  <corner/>
+                  <corner stroke="dashed"/>
+                  <corner/>
+               </border>
+               <desc>
+                  <text name="Schema Annotation">Text Line</text>
+               </desc>
+               <event activity="initialize" name="event__initialize">
+                  <script contentType="application/x-javascript">
+// * ---&gt; Begin of Change for D2_OTC_FDD_0014 by ADEY
+// Hide this field if the value is initial.
+
+if(this.rawValue == null)
+{
+  this.presence = "hidden";
+}   
+
+// * &lt;--- End of Change for D2_OTC_FDD_0014 by ADEY
+</script>
+               </event>
+            </field>
+            <border>
+               <edge thickness="0.508mm"/>
+               <corner thickness="0.508mm"/>
+            </border>
+            <field access="readOnly" h="7mm" locale="ar_DZ" name="FKDAT_TXT" w="40mm">
+               <ui>
+                  <textEdit multiLine="1">
+                     <border presence="hidden">
+                        <?templateDesigner StyleID aped0?></border>
+                     <margin/>
+                  </textEdit>
+               </ui>
+               <font size="8pt" typeface="Arial" weight="bold"/>
+               <margin bottomInset="1mm" leftInset="1mm" rightInset="1mm" topInset="1mm"/>
+               <para vAlign="middle"/>
+               <bind match="dataRef" ref="$.FKDAT_TXT"/>
+               <format>
+                  <picture>date{MM-DD-YYYY}</picture>
+               </format>
+               <border>
+                  <edge presence="hidden"/>
+                  <edge presence="hidden"/>
+                  <edge stroke="dashed"/>
+                  <edge presence="hidden"/>
+                  <corner/>
+                  <corner/>
+                  <corner stroke="dashed"/>
+                  <corner/>
+               </border>
+               <desc>
+                  <text name="Schema Annotation">Text Line</text>
+               </desc>
+               <event activity="initialize" name="event__initialize">
+                  <script contentType="application/x-javascript">
+// * ---&gt; Begin of Change for D2_OTC_FDD_0014 by ADEY
+// Hide this field if the value is initial.
+
+if(this.rawValue == null)
+{
+  this.presence = "hidden";
+}   
+
+// * &lt;--- End of Change for D2_OTC_FDD_0014 by ADEY
+</script>
+               </event>
+            </field>
+            <field access="readOnly" h="7mm" name="NAME1_TXT" w="41mm">
+               <ui>
+                  <textEdit multiLine="1">
+                     <border presence="hidden">
+                        <?templateDesigner StyleID aped0?></border>
+                     <margin/>
+                  </textEdit>
+               </ui>
+               <font size="8pt" typeface="Arial" weight="bold"/>
+               <margin bottomInset="1mm" leftInset="1mm" rightInset="1mm" topInset="1mm"/>
+               <para vAlign="middle"/>
+               <bind match="dataRef" ref="$.NAME1_TXT"/>
+               <border>
+                  <edge presence="hidden"/>
+                  <edge presence="hidden"/>
+                  <edge stroke="dashed"/>
+                  <edge presence="hidden"/>
+                  <corner/>
+                  <corner/>
+                  <corner stroke="dashed"/>
+                  <corner/>
+               </border>
+               <desc>
+                  <text name="Schema Annotation">Text Line</text>
+               </desc>
+               <event activity="initialize" name="event__initialize">
+                  <script contentType="application/x-javascript">
+// * ---&gt; Begin of Change for D2_OTC_FDD_0014 by ADEY
+// Hide this field if the value is initial.
+
+if(this.rawValue == null)
+{
+  this.presence = "hidden";
+}   
+
+// * &lt;--- End of Change for D2_OTC_FDD_0014 by ADEY
+</script>
+               </event>
+            </field>
+            <field access="readOnly" h="7mm" name="INCO1_TXT" w="42mm">
+               <ui>
+                  <textEdit multiLine="1">
+                     <border presence="hidden">
+                        <?templateDesigner StyleID aped0?></border>
+                     <margin/>
+                  </textEdit>
+               </ui>
+               <font size="8pt" typeface="Arial" weight="bold"/>
+               <margin bottomInset="1mm" leftInset="1mm" rightInset="1mm" topInset="1mm"/>
+               <para vAlign="middle"/>
+               <bind match="dataRef" ref="$.INCO1_TXT"/>
+               <border>
+                  <edge presence="hidden"/>
+                  <edge stroke="dashed"/>
+                  <edge stroke="dashed"/>
+                  <edge presence="hidden"/>
+                  <corner/>
+                  <corner stroke="dashed"/>
+                  <corner stroke="dashed"/>
+                  <corner/>
+               </border>
+               <desc>
+                  <text name="Schema Annotation">Text Line</text>
+               </desc>
+               <event activity="initialize" name="event__initialize">
+                  <script contentType="application/x-javascript">
+
+// * ---&gt; Begin of Change for D2_OTC_FDD_0014 by ADEY
+// Hide this field if the value is initial.
+
+if(this.rawValue == null)
+{
+  this.presence = "hidden";
+}   
+
+// * &lt;--- End of Change for D2_OTC_FDD_0014 by ADEY
+</script>
+               </event>
+            </field>
+            <field h="6.35mm" name="KUNRG" w="40mm">
+               <ui>
+                  <textEdit/>
+               </ui>
+               <font size="8pt" typeface="Arial"/>
+               <margin bottomInset="1mm" leftInset="1mm" rightInset="1mm" topInset="1mm"/>
+               <border>
+                  <edge presence="hidden"/>
+                  <corner presence="hidden" thickness="0.175mm"/>
+                  <corner presence="hidden" thickness="0.175mm"/>
+                  <corner stroke="dashed" thickness="0.175mm"/>
+                  <corner presence="hidden" thickness="0.175mm"/>
+                  <edge presence="hidden"/>
+                  <edge stroke="dashed"/>
+                  <edge presence="hidden"/>
+               </border>
+               <caption>
+                  <value>
+                     <text xmlns:xft-xliff="http://www.xfa.org/schema/xfa-xliff/1.0/"/>
+                  </value>
+                  <para vAlign="middle"/>
+               </caption>
+               <value>
+                  <text maxChars="20"/>
+               </value>
+               <bind match="dataRef" ref="$.KUNRG"/>
+               <desc>
+                  <text name="Schema Annotation">Payer</text>
+               </desc>
+               <para vAlign="middle"/>
+               <event activity="initialize" name="event__initialize">
+                  <script contentType="application/x-javascript">
+// * ---&gt; Begin of Change for D2_OTC_FDD_0014 by ADEY
+// Hide this field if the value is initial.
+
+if(this.rawValue == null)
+{
+  this.presence = "hidden";
+}   
+
+// * &lt;--- End of Change for D2_OTC_FDD_0014 by ADEY
+</script>
+               </event>
+            </field>
+            <field h="6.35mm" name="VBELN" w="40mm">
+               <ui>
+                  <textEdit/>
+               </ui>
+               <font size="8pt" typeface="Arial"/>
+               <margin bottomInset="1mm" leftInset="1mm" rightInset="1mm" topInset="1mm"/>
+               <border>
+                  <edge presence="hidden" stroke="dashed"/>
+                  <corner presence="hidden" stroke="dashed" thickness="0.175mm"/>
+                  <corner presence="hidden" stroke="dashed" thickness="0.175mm"/>
+                  <corner stroke="dashed" thickness="0.175mm"/>
+                  <corner presence="hidden" stroke="dashed" thickness="0.175mm"/>
+                  <edge presence="hidden"/>
+                  <edge stroke="dashed"/>
+                  <edge presence="hidden"/>
+               </border>
+               <caption>
+                  <value>
+                     <text xmlns:xft-xliff="http://www.xfa.org/schema/xfa-xliff/1.0/"/>
+                  </value>
+                  <para vAlign="middle"/>
+               </caption>
+               <value>
+                  <text maxChars="20"/>
+               </value>
+               <bind match="dataRef" ref="$.VBELN"/>
+               <desc>
+                  <text name="Schema Annotation">Sales and Distribution Document Number</text>
+               </desc>
+               <para vAlign="middle"/>
+               <event activity="initialize" name="event__initialize">
+                  <script contentType="application/x-javascript">
+
+// * ---&gt; Begin of Change for D2_OTC_FDD_0014 by ADEY
+// Hide this field if the value is initial.
+
+if(this.rawValue == null)
+{
+  this.presence = "hidden";
+}   
+
+// * &lt;--- End of Change for D2_OTC_FDD_0014 by ADEY
+</script>
+               </event>
+            </field>
+            <field access="readOnly" h="6.35mm" name="FKDAT" w="40mm">
+               <ui>
+                  <dateTimeEdit/>
+               </ui>
+               <font size="8pt" typeface="Arial"/>
+               <margin bottomInset="1mm" leftInset="1mm" rightInset="1mm" topInset="1mm"/>
+               <value>
+                  <date/>
+               </value>
+               <caption>
+                  <value>
+                     <text xmlns:xft-xliff="http://www.xfa.org/schema/xfa-xliff/1.0/"/>
+                  </value>
+                  <para vAlign="middle"/>
+               </caption>
+               <border>
+                  <edge presence="hidden" stroke="dashed"/>
+                  <corner presence="hidden" stroke="dashed" thickness="0.175mm"/>
+                  <corner presence="hidden" stroke="dashed" thickness="0.175mm"/>
+                  <corner stroke="dashed" thickness="0.175mm"/>
+                  <corner presence="hidden" stroke="dashed" thickness="0.175mm"/>
+                  <edge presence="hidden"/>
+                  <edge stroke="dashed"/>
+                  <edge presence="hidden"/>
+               </border>
+               <bind match="dataRef" ref="$.FKDAT">
+                  <picture>date{YYYY-MM-DD}</picture>
+               </bind>
+               <desc>
+                  <text name="Schema Annotation">Billing date for billing index and printout</text>
+               </desc>
+               <para vAlign="middle"/>
+               <event activity="initialize" name="event__initialize">
+                  <script contentType="application/x-javascript">
+// * ---&gt; Begin of Change for D2_OTC_FDD_0014 by ADEY
+// Hide this field if the value is initial.
+
+if(this.rawValue == null)
+{
+  this.presence = "hidden";
+}   
+
+// * &lt;--- End of Change for D2_OTC_FDD_0014 by ADEY
+</script>
+               </event>
+               <format>
+                  <picture>date{MM-DD-YYYY}</picture>
+               </format>
+               <validate nullTest="error"/>
+            </field>
+            <field h="6.35mm" name="NAME1" w="41mm">
+               <ui>
+                  <textEdit/>
+               </ui>
+               <font size="8pt" typeface="Arial"/>
+               <margin bottomInset="1mm" leftInset="1.5mm" rightInset="1mm" topInset="1mm"/>
+               <border>
+                  <edge presence="hidden" stroke="dashed"/>
+                  <corner presence="hidden" stroke="dashed" thickness="0.175mm"/>
+                  <corner presence="hidden" stroke="dashed" thickness="0.175mm"/>
+                  <corner stroke="dashed" thickness="0.175mm"/>
+                  <corner presence="hidden" stroke="dashed" thickness="0.175mm"/>
+                  <edge presence="hidden"/>
+                  <edge stroke="dashed"/>
+                  <edge presence="hidden"/>
+               </border>
+               <caption>
+                  <value>
+                     <text xmlns:xft-xliff="http://www.xfa.org/schema/xfa-xliff/1.0/"/>
+                  </value>
+                  <para vAlign="middle"/>
+               </caption>
+               <value>
+                  <text maxChars="80"/>
+               </value>
+               <bind match="dataRef" ref="$.NAME1"/>
+               <desc>
+                  <text name="Schema Annotation">Name 1</text>
+               </desc>
+               <para vAlign="middle"/>
+               <event activity="initialize" name="event__initialize">
+                  <script contentType="application/x-javascript">
+// * ---&gt; Begin of Change for D2_OTC_FDD_0014 by ADEY
+// Hide this field if the value is initial.
+
+if(this.rawValue == null)
+{
+  this.presence = "hidden";
+}   
+
+// * &lt;--- End of Change for D2_OTC_FDD_0014 by ADEY
+</script>
+               </event>
+            </field>
+            <field h="6.35mm" name="INCO1" w="42mm">
+               <ui>
+                  <textEdit/>
+               </ui>
+               <font size="8pt" typeface="Arial"/>
+               <margin bottomInset="1mm" leftInset="1mm" rightInset="1mm" topInset="1mm"/>
+               <border>
+                  <edge presence="hidden" stroke="dashed"/>
+                  <corner presence="hidden" stroke="dashed" thickness="0.175mm"/>
+                  <corner presence="hidden" stroke="dashed" thickness="0.175mm"/>
+                  <corner stroke="dashed" thickness="0.175mm"/>
+                  <corner presence="hidden" stroke="dashed" thickness="0.175mm"/>
+                  <edge presence="hidden"/>
+                  <edge stroke="dashed"/>
+                  <edge presence="hidden"/>
+               </border>
+               <caption>
+                  <value>
+                     <text xmlns:xft-xliff="http://www.xfa.org/schema/xfa-xliff/1.0/"/>
+                  </value>
+                  <para vAlign="middle"/>
+               </caption>
+               <value>
+                  <text maxChars="6"/>
+               </value>
+               <bind match="dataRef" ref="$.INCO1"/>
+               <desc>
+                  <text name="Schema Annotation">Incoterms (Part 1)</text>
+               </desc>
+               <para vAlign="middle"/>
+               <event activity="initialize" name="event__initialize">
+                  <script contentType="application/x-javascript">
+
+// * ---&gt; Begin of Change for D2_OTC_FDD_0014 by ADEY
+// Hide this field if the value is initial.
+
+if(this.rawValue == null)
+{
+  this.presence = "hidden";
+}   
+
+// * &lt;--- End of Change for D2_OTC_FDD_0014 by ADEY
+</script>
+               </event>
+            </field>
+            <?templateDesigner expand 0?></subform>
+         <subform layout="lr-tb" name="PURCHASEORD_SF" w="203.246mm">
+            <bind match="dataRef" ref="$.WA_PO_TXT"/>
+            <field access="readOnly" h="7mm" name="PO_TXT" w="73.025mm">
+               <ui>
+                  <textEdit multiLine="1">
+                     <border presence="hidden">
+                        <?templateDesigner StyleID aped0?></border>
+                     <margin/>
+                  </textEdit>
+               </ui>
+               <font size="8pt" typeface="Arial" weight="bold"/>
+               <margin bottomInset="1mm" leftInset="1mm" rightInset="1mm" topInset="1mm"/>
+               <para hAlign="center" vAlign="middle"/>
+               <bind match="dataRef" ref="$.PO_TXT"/>
+               <border>
+                  <edge/>
+                  <corner thickness="0.175mm"/>
+                  <edge/>
+                  <edge stroke="dashed"/>
+                  <edge/>
+                  <corner thickness="0.175mm"/>
+                  <corner stroke="dashed" thickness="0.175mm"/>
+                  <corner thickness="0.175mm"/>
+               </border>
+               <desc>
+                  <text name="Schema Annotation">Text Line</text>
+               </desc>
+               <event activity="initialize" name="event__initialize">
+                  <script contentType="application/x-javascript">
+// * ---&gt; Begin of Change for D2_OTC_FDD_0014 by ADEY
+// Hide this field if the value is initial.
+
+if(this.rawValue == null)
+{
+  this.presence = "hidden";
+}   
+
+// * &lt;--- End of Change for D2_OTC_FDD_0014 by ADEY
+
+</script>
+               </event>
+            </field>
+            <field access="readOnly" h="7mm" name="SHIP_TXT" w="61.468mm">
+               <ui>
+                  <textEdit multiLine="1">
+                     <border presence="hidden">
+                        <?templateDesigner StyleID aped0?></border>
+                     <margin/>
+                  </textEdit>
+               </ui>
+               <font size="8pt" typeface="Arial" weight="bold"/>
+               <margin bottomInset="1mm" leftInset="1mm" rightInset="1mm" topInset="1mm"/>
+               <para hAlign="center" vAlign="middle"/>
+               <bind match="dataRef" ref="$.SHIP_TXT"/>
+               <?templateDesigner expand 1?>
+               <desc>
+                  <text name="Schema Annotation">Text Line</text>
+               </desc>
+               <border>
+                  <edge/>
+                  <corner thickness="0.175mm"/>
+                  <edge/>
+                  <edge stroke="dashed"/>
+                  <edge/>
+                  <corner thickness="0.175mm"/>
+                  <corner stroke="dashed" thickness="0.175mm"/>
+                  <corner thickness="0.175mm"/>
+               </border>
+               <event activity="initialize" name="event__initialize">
+                  <script contentType="application/x-javascript">
+// * ---&gt; Begin of Change for D2_OTC_FDD_0014 by ADEY
+// Hide this field if the value is initial.
+
+//if(this.rawValue == null)
+//{
+//  this.presence = "hidden";
+//}   
+
+// * &lt;--- End of Change for D2_OTC_FDD_0014 by ADEY
+</script>
+               </event>
+            </field>
+            <field access="readOnly" h="7mm" name="PMT_TXT" w="68.58mm">
+               <ui>
+                  <textEdit multiLine="1">
+                     <border presence="hidden">
+                        <?templateDesigner StyleID aped0?></border>
+                     <margin/>
+                  </textEdit>
+               </ui>
+               <font size="8pt" typeface="Arial" weight="bold"/>
+               <margin bottomInset="1mm" leftInset="1mm" rightInset="1mm" topInset="1mm"/>
+               <para hAlign="center" vAlign="middle"/>
+               <bind match="dataRef" ref="$.PMT_TXT"/>
+               <border>
+                  <edge/>
+                  <corner thickness="0.175mm"/>
+                  <edge/>
+                  <edge stroke="dashed"/>
+                  <edge/>
+                  <corner thickness="0.175mm"/>
+                  <corner stroke="dashed" thickness="0.175mm"/>
+                  <corner thickness="0.175mm"/>
+               </border>
+               <desc>
+                  <text name="Schema Annotation">Text Line</text>
+               </desc>
+               <event activity="initialize" name="event__initialize">
+                  <script contentType="application/x-javascript">
+// * ---&gt; Begin of Change for D2_OTC_FDD_0014 by ADEY
+// Hide this field if the value is initial.
+
+if(this.rawValue == null)
+{
+  this.presence = "hidden";
+}   
+
+// * &lt;--- End of Change for D2_OTC_FDD_0014 by ADEY
+</script>
+               </event>
+            </field>
+            <field h="6.985mm" name="BSTNK_VF" w="73.025mm">
+               <ui>
+                  <textEdit/>
+               </ui>
+               <font size="8pt" typeface="Arial"/>
+               <margin bottomInset="0.5mm" leftInset="0.5mm" rightInset="0.5mm" topInset="1.778mm"/>
+               <para hAlign="center"/>
+               <border>
+                  <edge presence="hidden"/>
+                  <corner presence="hidden" thickness="0.175mm"/>
+                  <corner presence="hidden" thickness="0.175mm"/>
+                  <edge presence="hidden"/>
+                  <edge presence="hidden" stroke="dashed"/>
+                  <edge presence="hidden"/>
+                  <corner presence="hidden" stroke="dashed" thickness="0.175mm"/>
+                  <corner presence="hidden" thickness="0.175mm"/>
+               </border>
+               <caption>
+                  <value>
+                     <text xmlns:xft-xliff="http://www.xfa.org/schema/xfa-xliff/1.0/"/>
+                  </value>
+                  <para hAlign="center"/>
+               </caption>
+               <value>
+                  <text maxChars="70"/>
+               </value>
+               <bind match="dataRef" ref="$.BSTNK_VF"/>
+               <desc>
+                  <text name="Schema Annotation">Customer purchase order number</text>
+               </desc>
+               <event activity="initialize" name="event__initialize">
+                  <script contentType="application/x-javascript">
+// * ---&gt; Begin of Change for D2_OTC_FDD_0014 by ADEY
+// Hide this field if the value is initial.
+
+if(this.rawValue == null)
+{
+this.presence = "hidden";
+}   
+
+// * &lt;--- End of Change for D2_OTC_FDD_0014 by ADEY
+</script>
+               </event>
+            </field>
+            <border>
+               <edge thickness="0.508mm"/>
+               <corner thickness="0.508mm"/>
+            </border>
+            <field h="6.985mm" name="SHIP_FRM" w="61.468mm">
+               <ui>
+                  <textEdit/>
+               </ui>
+               <font size="8pt" typeface="Arial"/>
+               <margin bottomInset="0.5mm" leftInset="0.5mm" rightInset="0.5mm" topInset="1.778mm"/>
+               <para hAlign="center"/>
+               <border>
+                  <edge presence="hidden"/>
+                  <corner presence="hidden" thickness="0.175mm"/>
+                  <corner presence="hidden" thickness="0.175mm"/>
+                  <edge presence="hidden"/>
+                  <edge presence="hidden" stroke="dashed"/>
+                  <edge presence="hidden"/>
+                  <corner presence="hidden" stroke="dashed" thickness="0.175mm"/>
+                  <corner presence="hidden" thickness="0.175mm"/>
+               </border>
+               <caption>
+                  <value>
+                     <text xmlns:xft-xliff="http://www.xfa.org/schema/xfa-xliff/1.0/"/>
+                  </value>
+               </caption>
+               <value>
+                  <text maxChars="200"/>
+               </value>
+               <bind match="dataRef" ref="$.SHIP_FRM"/>
+               <desc>
+                  <text name="Schema Annotation">Character 100</text>
+               </desc>
+               <event activity="initialize" name="event__initialize">
+                  <script contentType="application/x-javascript">
+
+// * ---&gt; Begin of Change for D2_OTC_FDD_0014 by ADEY
+// Hide this field if the value is initial.
+
+//if(this.rawValue == null)
+//{
+  //this.presence = "hidden";
+//}   
+
+// * &lt;--- End of Change for D2_OTC_FDD_0014 by ADEY
+</script>
+               </event>
+            </field>
+            <field h="6.985mm" name="ZTERM" w="68.58mm">
+               <ui>
+                  <textEdit/>
+               </ui>
+               <font size="8pt" typeface="Arial"/>
+               <margin bottomInset="0.5mm" leftInset="0.5mm" rightInset="0.5mm" topInset="1.778mm"/>
+               <para hAlign="center"/>
+               <?templateDesigner expand 1?>
+               <border>
+                  <edge presence="hidden"/>
+                  <corner presence="hidden" thickness="0.175mm"/>
+                  <edge presence="hidden"/>
+                  <edge presence="hidden" stroke="dashed"/>
+                  <edge presence="hidden"/>
+                  <corner presence="hidden" stroke="dashed" thickness="0.175mm"/>
+                  <corner presence="hidden" stroke="dashed" thickness="0.175mm"/>
+                  <corner presence="hidden" thickness="0.175mm"/>
+               </border>
+               <caption>
+                  <value>
+                     <text xmlns:xft-xliff="http://www.xfa.org/schema/xfa-xliff/1.0/"/>
+                  </value>
+                  <para hAlign="center"/>
+               </caption>
+               <value>
+                  <text maxChars="60"/>
+               </value>
+               <bind match="dataRef" ref="$.ZTERM"/>
+               <desc>
+                  <text name="Schema Annotation">Description of terms of payment</text>
+               </desc>
+               <event activity="initialize" name="event__initialize">
+                  <script contentType="application/x-javascript">
+// * ---&gt; Begin of Change for D2_OTC_FDD_0014 by ADEY
+// Hide this field if the value is initial.
+
+//if(this.rawValue == null)
+//{
+//this.presence = "hidden";
+//}   
+
+// * &lt;--- End of Change for D2_OTC_FDD_0014 by ADEY
+</script>
+               </event>
+            </field>
+            <?templateDesigner expand 0?></subform>
+         <border>
+            <edge presence="hidden" thickness="0.254mm"/>
+            <corner presence="hidden" thickness="0.254mm"/>
+         </border>
+         <margin leftInset="0mm"/>
+         <breakBefore target="Page1.CA_1" targetType="contentArea"/>
+         <?templateDesigner expand 1?></subform>
+      <subform id="BILLING_DETAILS_ID" layout="lr-tb" name="BILLING_DETAILS" w="203.274mm">
+         <bind match="none"/>
+         <border>
+            <edge thickness="0.508mm"/>
+            <corner thickness="0.508mm"/>
+         </border>
+         <subform id="SALESORD_SF_ID" layout="lr-tb" name="SALESORD_SF" w="203.2mm">
+            <bind match="none"/>
+            <subform columnWidths="202.964mm" layout="table" name="SLSORD">
+               <border>
+                  <edge presence="hidden"/>
+                  <corner presence="hidden"/>
+               </border>
+               <subform layout="row" name="Row1">
+                  <assist role="TR"/>
+                  <field minH="5.207mm" name="VAL" w="27.507mm">
+                     <ui>
+                        <textEdit multiLine="1">
+                           <border presence="hidden">
+                              <?templateDesigner StyleID aped0?></border>
+                           <margin/>
+                        </textEdit>
+                     </ui>
+                     <font size="8pt" typeface="Arial"/>
+                     <margin bottomInset="1mm" leftInset="1mm" rightInset="1mm" topInset="1mm"/>
+                     <para vAlign="middle"/>
+                     <bind match="dataRef" ref="$.VAL"/>
+                     <border>
+                        <edge presence="hidden"/>
+                        <corner presence="hidden" thickness="0.1778mm"/>
+                     </border>
+                     <desc>
+                        <text name="Schema Annotation">Character 100</text>
+                     </desc>
+                     <event activity="initialize" name="event__initialize">
+                        <script contentType="application/x-javascript">
+// * ---&gt; Begin of Change for D2_OTC_FDD_0014 by ADEY
+// Hide this field if the value is initial.
+
+if(this.rawValue == null)
+{
+  this.presence = "hidden";
+}   
+
+// * &lt;--- End of Change for D2_OTC_FDD_0014 by ADEY
+</script>
+                     </event>
+                     <caption reserve="2.7903mm">
+                        <para vAlign="middle"/>
+                     </caption>
+                  </field>
+                  <border>
+                     <edge presence="hidden"/>
+                  </border>
+                  <bind match="dataRef" ref="DATA[*]"/>
+                  <occur max="-1" min="0"/>
+                  <?templateDesigner expand 1?></subform>
+               <keep intact="contentArea"/>
+               <bind match="dataRef" ref="$.I_SALESORD"/>
+               <?templateDesigner rowpattern first:1, next:1, firstcolor:f0f0f0, nextcolor:ffffff, apply:0?>
+               <?templateDesigner expand 1?></subform>
+            <keep intact="contentArea"/>
+            <overflow target="Page2.CA_2"/>
+            <?templateDesigner expand 0?></subform>
+         <subform id="ORDCHANNEL_SF_ID" layout="lr-tb" name="ORDCHANNEL_SF" w="203.2mm">
+            <bind match="none"/>
+            <subform columnWidths="202.964mm" layout="table" name="SVC_ORDCH">
+               <border>
+                  <edge presence="hidden"/>
+                  <corner presence="hidden"/>
+               </border>
+               <subform layout="row" name="Row1">
+                  <assist role="TR"/>
+                  <field minH="5.207mm" name="VAL" w="27.507mm">
+                     <ui>
+                        <textEdit multiLine="1">
+                           <border presence="hidden">
+                              <?templateDesigner StyleID aped0?></border>
+                           <margin/>
+                        </textEdit>
+                     </ui>
+                     <font size="8pt" typeface="Arial" weight="bold"/>
+                     <margin bottomInset="1mm" leftInset="1mm" rightInset="1mm" topInset="1mm"/>
+                     <para vAlign="middle"/>
+                     <bind match="dataRef" ref="$.VAL"/>
+                     <border>
+                        <edge presence="hidden"/>
+                        <corner presence="hidden" thickness="0.1778mm"/>
+                     </border>
+                     <desc>
+                        <text name="Schema Annotation">Character 100</text>
+                     </desc>
+                     <event activity="initialize" name="event__initialize">
+                        <script contentType="application/x-javascript">
+// * ---&gt; Begin of Change for D2_OTC_FDD_0014 by ADEY
+// Hide this field if the value is initial.
+
+if(this.rawValue == null)
+{
+  this.presence = "hidden";
+}   
+
+// * &lt;--- End of Change for D2_OTC_FDD_0014 by ADEY
+</script>
+                     </event>
+                     <caption reserve="25.507mm">
+                        <para vAlign="middle"/>
+                     </caption>
+                  </field>
+                  <border>
+                     <edge presence="hidden"/>
+                  </border>
+                  <bind match="dataRef" ref="$.DATA[*]"/>
+                  <occur max="-1" min="0"/>
+                  <?templateDesigner expand 1?></subform>
+               <keep intact="contentArea"/>
+               <bind match="dataRef" ref="$.I_REFERENCE"/>
+               <?templateDesigner rowpattern first:1, next:1, firstcolor:f0f0f0, nextcolor:ffffff, apply:0?>
+               <?templateDesigner expand 0?></subform>
+            <?templateDesigner expand 0?>
+            <keep intact="contentArea"/>
+            <overflow leader="SALESORD_SF" target="Page2.CA_2"/>
+         </subform>
+         <subform id="ITEM_LABEL_FRENCH_ID" layout="lr-tb" name="ITEM_LABEL_FRENCH" w="203.274mm">
+            <bind match="none"/>
+            <field h="11mm" name="MAT_BATCH_FR" w="34.116mm">
+               <ui>
+                  <textEdit multiLine="1"/>
+               </ui>
+               <font size="8pt" typeface="Arial" weight="bold"/>
+               <margin bottomInset="0.5mm" leftInset="0.5mm" rightInset="0.5mm" topInset="1.27mm"/>
+               <border>
+                  <edge/>
+                  <corner thickness="0.175mm"/>
+                  <corner thickness="0.175mm"/>
+                  <corner presence="hidden" thickness="0.175mm"/>
+                  <corner presence="hidden" thickness="0.175mm"/>
+                  <edge/>
+                  <edge presence="hidden"/>
+                  <edge presence="hidden"/>
+               </border>
+               <caption>
+                  <value>
+                     <text xmlns:xft-xliff="http://www.xfa.org/schema/xfa-xliff/1.0/"/>
+                  </value>
+                  <para hAlign="center"/>
+               </caption>
+               <bind match="dataRef" ref="$.WA_ITEM_LABEL.MAT_BATCH_FR"/>
+               <desc>
+                  <text name="Schema Annotation">Text Line</text>
+               </desc>
+               <para hAlign="center"/>
+               <event activity="initialize" name="event__initialize">
+                  <script contentType="application/x-javascript">
+// * ---&gt; Begin of Change for D2_OTC_FDD_0014 by ADEY
+// Hide this field if the value is initial.
+
+if(this.rawValue == null)
+{
+  this.presence = "hidden";
+}   
+
+// * &lt;--- End of Change for D2_OTC_FDD_0014 by ADEY
+</script>
+               </event>
+            </field>
+            <field h="11mm" name="ORDER_QTY_FR" w="24.103mm">
+               <ui>
+                  <textEdit multiLine="1"/>
+               </ui>
+               <font size="8pt" typeface="Arial" weight="bold"/>
+               <margin bottomInset="0.5mm" leftInset="0.5mm" rightInset="0.5mm" topInset="1.27mm"/>
+               <border>
+                  <edge/>
+                  <corner thickness="0.175mm"/>
+                  <corner thickness="0.175mm"/>
+                  <corner presence="hidden" thickness="0.175mm"/>
+                  <corner presence="hidden" thickness="0.175mm"/>
+                  <edge/>
+                  <edge presence="hidden"/>
+                  <edge presence="hidden"/>
+               </border>
+               <caption>
+                  <value>
+                     <text xmlns:xft-xliff="http://www.xfa.org/schema/xfa-xliff/1.0/"/>
+                  </value>
+               </caption>
+               <bind match="dataRef" ref="$.WA_ITEM_LABEL.ORDER_QTY_FR"/>
+               <desc>
+                  <text name="Schema Annotation">Text Line</text>
+               </desc>
+               <event activity="initialize" name="event__initialize">
+                  <script contentType="application/x-javascript">
+// * ---&gt; Begin of Change for D2_OTC_FDD_0014 by ADEY
+// Hide this field if the value is initial.
+
+if(this.rawValue == null)
+{
+  this.presence = "hidden";
+}   
+
+// * &lt;--- End of Change for D2_OTC_FDD_0014 by ADEY
+</script>
+               </event>
+            </field>
+            <field h="11mm" name="UNIT_FR" w="12.7mm">
+               <ui>
+                  <textEdit multiLine="1"/>
+               </ui>
+               <font size="8pt" typeface="Arial" weight="bold"/>
+               <margin bottomInset="0.5mm" leftInset="0.5mm" rightInset="0.5mm" topInset="1.27mm"/>
+               <border>
+                  <edge/>
+                  <corner thickness="0.175mm"/>
+                  <corner thickness="0.175mm"/>
+                  <corner presence="hidden" thickness="0.175mm"/>
+                  <corner presence="hidden" thickness="0.175mm"/>
+                  <edge/>
+                  <edge presence="hidden"/>
+                  <edge presence="hidden"/>
+               </border>
+               <caption>
+                  <value>
+                     <text xmlns:xft-xliff="http://www.xfa.org/schema/xfa-xliff/1.0/"/>
+                  </value>
+               </caption>
+               <bind match="dataRef" ref="$.WA_ITEM_LABEL.UNIT_FR"/>
+               <desc>
+                  <text name="Schema Annotation">Text Line</text>
+               </desc>
+               <event activity="initialize" name="event__initialize">
+                  <script contentType="application/x-javascript">
+
+// * ---&gt; Begin of Change for D2_OTC_FDD_0014 by ADEY
+// Hide this field if the value is initial.
+
+if(this.rawValue == null)
+{
+  this.presence = "hidden";
+}   
+
+// * &lt;--- End of Change for D2_OTC_FDD_0014 by ADEY
+</script>
+               </event>
+            </field>
+            <field h="11mm" name="DESC_FR" w="62mm">
+               <ui>
+                  <textEdit multiLine="1"/>
+               </ui>
+               <font size="8pt" typeface="Arial" weight="bold"/>
+               <margin bottomInset="0.5mm" leftInset="0.5mm" rightInset="0.5mm" topInset="1.27mm"/>
+               <border>
+                  <edge/>
+                  <corner thickness="0.175mm"/>
+                  <corner thickness="0.175mm"/>
+                  <corner presence="hidden" thickness="0.175mm"/>
+                  <corner presence="hidden" thickness="0.175mm"/>
+                  <edge/>
+                  <edge presence="hidden"/>
+                  <edge presence="hidden"/>
+               </border>
+               <caption>
+                  <value>
+                     <text xmlns:xft-xliff="http://www.xfa.org/schema/xfa-xliff/1.0/"/>
+                  </value>
+                  <para hAlign="center"/>
+               </caption>
+               <bind match="dataRef" ref="$.WA_ITEM_LABEL.DESC_FR"/>
+               <desc>
+                  <text name="Schema Annotation">Text Line</text>
+               </desc>
+               <para hAlign="center"/>
+               <event activity="initialize" name="event__initialize">
+                  <script contentType="application/x-javascript">
+
+// * ---&gt; Begin of Change for D2_OTC_FDD_0014 by ADEY
+// Hide this field if the value is initial.
+
+if(this.rawValue == null)
+{
+  this.presence = "hidden";
+}   
+
+// * &lt;--- End of Change for D2_OTC_FDD_0014 by ADEY
+</script>
+               </event>
+            </field>
+            <field h="11mm" name="UNIT_PR_FR" w="22.56mm">
+               <ui>
+                  <textEdit multiLine="1"/>
+               </ui>
+               <font size="8pt" typeface="Arial" weight="bold"/>
+               <margin bottomInset="0.5mm" leftInset="0.5mm" rightInset="0.5mm" topInset="1.27mm"/>
+               <border>
+                  <edge/>
+                  <corner thickness="0.175mm"/>
+                  <corner thickness="0.175mm"/>
+                  <corner presence="hidden" thickness="0.175mm"/>
+                  <corner presence="hidden" thickness="0.175mm"/>
+                  <edge/>
+                  <edge presence="hidden"/>
+                  <edge presence="hidden"/>
+               </border>
+               <caption>
+                  <value>
+                     <text xmlns:xft-xliff="http://www.xfa.org/schema/xfa-xliff/1.0/"/>
+                  </value>
+                  <para hAlign="right"/>
+               </caption>
+               <bind match="dataRef" ref="$.WA_ITEM_LABEL.UNIT_PR_FR"/>
+               <desc>
+                  <text name="Schema Annotation">Text Line</text>
+               </desc>
+               <para hAlign="right"/>
+               <?templateDesigner expand 1?>
+               <event activity="initialize" name="event__initialize">
+                  <script contentType="application/x-javascript">
+// * ---&gt; Begin of Change for D2_OTC_FDD_0014 by ADEY
+// Hide this field if the value is initial.
+
+if(this.rawValue == null)
+{
+  this.presence = "hidden";
+}   
+
+// * &lt;--- End of Change for D2_OTC_FDD_0014 by ADEY
+</script>
+               </event>
+            </field>
+            <field h="11mm" name="EXTND_PR_FR" w="28.448mm">
+               <ui>
+                  <textEdit multiLine="1"/>
+               </ui>
+               <font size="8pt" typeface="Arial" weight="bold"/>
+               <margin bottomInset="0.5mm" leftInset="0.5mm" rightInset="0.5mm" topInset="1.27mm"/>
+               <border>
+                  <edge/>
+                  <corner thickness="0.175mm"/>
+                  <corner presence="hidden" thickness="0.175mm"/>
+                  <corner presence="hidden" thickness="0.175mm"/>
+                  <corner presence="hidden" thickness="0.175mm"/>
+                  <edge presence="hidden"/>
+                  <edge presence="hidden"/>
+                  <edge presence="hidden"/>
+               </border>
+               <caption>
+                  <value>
+                     <text xmlns:xft-xliff="http://www.xfa.org/schema/xfa-xliff/1.0/"/>
+                  </value>
+                  <para hAlign="right"/>
+               </caption>
+               <bind match="dataRef" ref="$.WA_ITEM_LABEL.EXTND_PR_FR"/>
+               <desc>
+                  <text name="Schema Annotation">Text Line</text>
+               </desc>
+               <para hAlign="right"/>
+               <event activity="initialize" name="event__initialize">
+                  <script contentType="application/x-javascript">
+// * ---&gt; Begin of Change for D2_OTC_FDD_0014 by ADEY
+// Hide this field if the value is initial.
+
+if(this.rawValue == null)
+{
+  this.presence = "hidden";
+}   
+
+// * &lt;--- End of Change for D2_OTC_FDD_0014 by ADEY
+</script>
+               </event>
+            </field>
+            <border>
+               <edge thickness="0.508mm"/>
+               <corner thickness="0.508mm"/>
+            </border>
+            <keep intact="contentArea"/>
+            <overflow leader="ORDCHANNEL_SF" target="Page2.CA_2"/>
+            <?templateDesigner expand 0?></subform>
+         <keep intact="contentArea"/>
+         <subform layout="lr-tb" name="ZITEM_LABEL_ENG" w="203.2mm">
+            <bind match="none"/>
+            <keep intact="contentArea"/>
+            <field minH="8.62mm" name="ZMAT_BATCH_SN" w="34.116mm">
+               <ui>
+                  <textEdit multiLine="1">
+                     <border presence="hidden">
+                        <?templateDesigner StyleID aped0?></border>
+                     <margin/>
+                  </textEdit>
+               </ui>
+               <font size="8pt" typeface="Arial" weight="bold"/>
+               <margin bottomInset="0.5mm" leftInset="0.5mm" rightInset="0.5mm" topInset="1.27mm"/>
+               <para hAlign="center" vAlign="middle"/>
+               <caption reserve="0mm">
+                  <para hAlign="center" vAlign="middle"/>
+               </caption>
+               <bind match="dataRef" ref="WA_ITEM_LABEL.MAT_BATCH_SN"/>
+               <event activity="initialize">
+                  <script contentType="application/x-javascript">// * ---&gt; Begin of Change for D2_OTC_FDD_0014 by MGARG
+// Hide this field if the value is initial.
+
+if(this.rawValue == null)
+{
+  this.presence = "hidden";
+}   
+
+// * &lt;--- End of Change for D2_OTC_FDD_0014 by MGARG 
+
+</script>
+               </event>
+               <border>
+                  <edge/>
+                  <edge/>
+                  <edge/>
+                  <edge presence="hidden"/>
+                  <corner/>
+               </border>
+            </field>
+            <field h="8.62mm" name="ZORDER_QTY" w="24.103mm">
+               <ui>
+                  <textEdit multiLine="1">
+                     <border presence="hidden">
+                        <?templateDesigner StyleID aped0?></border>
+                     <margin/>
+                  </textEdit>
+               </ui>
+               <font size="8pt" typeface="Arial" weight="bold"/>
+               <margin bottomInset="0.5mm" leftInset="0.5mm" rightInset="0.5mm" topInset="1.27mm"/>
+               <para vAlign="middle"/>
+               <caption reserve="0mm">
+                  <para vAlign="middle"/>
+               </caption>
+               <bind match="dataRef" ref="WA_ITEM_LABEL.ORDER_QTY"/>
+               <event activity="initialize">
+                  <script contentType="application/x-javascript">// * ---&gt; Begin of Change for D2_OTC_FDD_0014 by MGARG
+// Hide this field if the value is initial.
+
+if(this.rawValue == null)
+{
+  this.presence = "hidden";
+}   
+
+// * &lt;--- End of Change for D2_OTC_FDD_0014 by MGARG
+
+</script>
+               </event>
+               <border>
+                  <edge/>
+                  <edge/>
+                  <edge/>
+                  <edge presence="hidden"/>
+                  <corner/>
+               </border>
+            </field>
+            <field h="8.62mm" name="ZUNIT" w="12.7mm">
+               <ui>
+                  <textEdit multiLine="1">
+                     <border presence="hidden">
+                        <?templateDesigner StyleID aped0?></border>
+                     <margin/>
+                  </textEdit>
+               </ui>
+               <font size="8pt" typeface="Arial" weight="bold"/>
+               <margin bottomInset="0.5mm" leftInset="0.5mm" rightInset="0.5mm" topInset="1.27mm"/>
+               <para vAlign="middle"/>
+               <caption reserve="0mm">
+                  <para vAlign="middle"/>
+               </caption>
+               <bind match="dataRef" ref="WA_ITEM_LABEL.UNIT"/>
+               <event activity="initialize">
+                  <script contentType="application/x-javascript">// * ---&gt; Begin of Change for D2_OTC_FDD_0014 by MGARG
+// Hide this field if the value is initial.
+
+if(this.rawValue == null)
+{
+  this.presence = "hidden";
+}   
+
+// * &lt;--- End of Change for D2_OTC_FDD_0014 by MGARG
+
+</script>
+               </event>
+               <border>
+                  <edge/>
+                  <edge/>
+                  <edge/>
+                  <edge presence="hidden"/>
+                  <corner/>
+               </border>
+            </field>
+            <field h="8.62mm" name="ZDESCRIPTION" w="62mm">
+               <ui>
+                  <textEdit multiLine="1">
+                     <border presence="hidden">
+                        <?templateDesigner StyleID aped0?></border>
+                     <margin/>
+                  </textEdit>
+               </ui>
+               <font size="8pt" typeface="Arial" weight="bold"/>
+               <margin bottomInset="0.5mm" leftInset="0.5mm" rightInset="0.5mm" topInset="1.27mm"/>
+               <para hAlign="center" vAlign="middle"/>
+               <caption reserve="0mm">
+                  <para hAlign="center" vAlign="middle"/>
+               </caption>
+               <bind match="dataRef" ref="WA_ITEM_LABEL.DESCRIPTION"/>
+               <event activity="initialize">
+                  <script contentType="application/x-javascript">// * ---&gt; Begin of Change for D2_OTC_FDD_0014 by MGARG
+// Hide this field if the value is initial.
+
+if(this.rawValue == null)
+{
+  this.presence = "hidden";
+}   
+
+// * &lt;--- End of Change for D2_OTC_FDD_0014 by MGARG
+
+</script>
+               </event>
+               <border>
+                  <edge/>
+                  <edge/>
+                  <edge/>
+                  <edge presence="hidden"/>
+                  <corner/>
+               </border>
+            </field>
+            <field h="8.62mm" name="ZUNIT_PRICE" w="22.56mm">
+               <ui>
+                  <textEdit multiLine="1">
+                     <border presence="hidden">
+                        <?templateDesigner StyleID aped0?></border>
+                     <margin/>
+                  </textEdit>
+               </ui>
+               <font size="8pt" typeface="Arial" weight="bold"/>
+               <margin bottomInset="0.5mm" leftInset="0.5mm" rightInset="0.5mm" topInset="1.27mm"/>
+               <para hAlign="right" vAlign="middle"/>
+               <caption reserve="0mm">
+                  <para hAlign="right" vAlign="middle"/>
+               </caption>
+               <bind match="dataRef" ref="WA_ITEM_LABEL.UNIT_PRICE"/>
+               <event activity="initialize">
+                  <script contentType="application/x-javascript">// * ---&gt; Begin of Change for D2_OTC_FDD_0014 by MGARG
+// Hide this field if the value is initial.
+
+if(this.rawValue == null)
+{
+  this.presence = "hidden";
+}   
+
+// * &lt;--- End of Change for D2_OTC_FDD_0014 by MGARG
+
+</script>
+               </event>
+               <border>
+                  <edge/>
+                  <edge/>
+                  <edge/>
+                  <edge presence="hidden"/>
+                  <corner/>
+               </border>
+            </field>
+            <field h="8.62mm" name="ZEXTND_PRICE" w="28.448mm">
+               <ui>
+                  <textEdit multiLine="1">
+                     <border presence="hidden">
+                        <?templateDesigner StyleID aped0?></border>
+                     <margin/>
+                  </textEdit>
+               </ui>
+               <font size="8pt" typeface="Arial" weight="bold"/>
+               <margin bottomInset="0.5mm" leftInset="0.5mm" rightInset="0.5mm" topInset="0.5mm"/>
+               <para hAlign="right" vAlign="middle"/>
+               <caption reserve="0mm">
+                  <para hAlign="right" vAlign="middle"/>
+               </caption>
+               <bind match="dataRef" ref="WA_ITEM_LABEL.EXTND_PRICE"/>
+               <event activity="initialize">
+                  <script contentType="application/x-javascript">// * ---&gt; Begin of Change for D2_OTC_FDD_0014 by MGARG
+// Hide this field if the value is initial.
+
+if(this.rawValue == null)
+{
+  this.presence = "hidden";
+}   
+
+// * &lt;--- End of Change for D2_OTC_FDD_0014 by MGARG
+
+</script>
+               </event>
+               <border>
+                  <edge/>
+                  <edge presence="hidden"/>
+                  <edge/>
+                  <edge presence="hidden"/>
+                  <corner/>
+               </border>
+            </field>
+            <?templateDesigner expand 1?></subform>
+         <?templateDesigner expand 1?></subform>
+      <subform id="ITEM_TABLE_ID" layout="tb" minH="21.844mm" name="ITEM_TABLE" w="203.2mm">
+         <bind match="dataRef" ref="$.I_ITEM1"/>
+         <subform layout="lr-tb" name="BodyRow" w="203.2mm">
+            <bind match="dataRef" ref="$.DATA[*]"/>
+            <border>
+               <edge presence="hidden"/>
+               <corner presence="hidden" thickness="0.175mm"/>
+            </border>
+            <assist role="TR"/>
+            <occur max="-1"/>
+            <field minH="5.588mm" name="MAT_BAT" w="34.116mm">
+               <ui>
+                  <textEdit multiLine="1">
+                     <border presence="hidden">
+                        <?templateDesigner StyleID aped0?></border>
+                     <margin/>
+                  </textEdit>
+               </ui>
+               <font size="8pt" typeface="Arial"/>
+               <margin bottomInset="1mm" leftInset="1mm" rightInset="1mm" topInset="1mm"/>
+               <para vAlign="middle"/>
+               <bind match="dataRef" ref="$.MAT_BAT"/>
+               <desc>
+                  <text name="Schema Annotation">Field length 18</text>
+               </desc>
+               <border>
+                  <edge presence="hidden"/>
+                  <corner presence="hidden" thickness="0.176mm"/>
+               </border>
+            </field>
+            <field minH="5.588mm" name="LFIMG" w="24.103mm">
+               <ui>
+                  <textEdit multiLine="1">
+                     <border presence="hidden">
+                        <?templateDesigner StyleID aped0?></border>
+                     <margin/>
+                  </textEdit>
+               </ui>
+               <font size="8pt" typeface="Arial"/>
+               <margin bottomInset="1mm" leftInset="1mm" rightInset="1mm" topInset="1mm"/>
+               <para vAlign="middle"/>
+               <bind match="dataRef" ref="$.LFIMG"/>
+               <desc>
+                  <text name="Schema Annotation">Field length 18</text>
+               </desc>
+               <border>
+                  <edge presence="hidden"/>
+                  <corner presence="hidden" thickness="0.176mm"/>
+               </border>
+            </field>
+            <field minH="5.588mm" name="MEINS" w="12.7mm">
+               <ui>
+                  <textEdit multiLine="1">
+                     <border presence="hidden">
+                        <?templateDesigner StyleID aped0?></border>
+                     <margin/>
+                  </textEdit>
+               </ui>
+               <font size="8pt" typeface="Arial"/>
+               <margin bottomInset="1mm" leftInset="1mm" rightInset="1mm" topInset="1mm"/>
+               <para vAlign="middle"/>
+               <bind match="dataRef" ref="$.MEINS"/>
+               <desc>
+                  <text name="Schema Annotation">3-Byte field</text>
+               </desc>
+               <border>
+                  <edge presence="hidden"/>
+                  <corner presence="hidden" thickness="0.176mm"/>
+               </border>
+            </field>
+            <field minH="5.588mm" name="ARKTX" w="62mm">
+               <ui>
+                  <textEdit multiLine="1">
+                     <border presence="hidden">
+                        <?templateDesigner StyleID aped0?></border>
+                     <margin/>
+                  </textEdit>
+               </ui>
+               <font size="8pt" typeface="Arial"/>
+               <margin bottomInset="1mm" leftInset="1mm" rightInset="1mm" topInset="1mm"/>
+               <para hAlign="center" vAlign="middle"/>
+               <bind match="dataRef" ref="$.ARKTX"/>
+               <desc>
+                  <text name="Schema Annotation">Character field of length 40</text>
+               </desc>
+               <border>
+                  <edge presence="hidden"/>
+                  <corner presence="hidden" thickness="0.176mm"/>
+               </border>
+            </field>
+            <field minH="5.588mm" name="KPEIN" w="22.56mm">
+               <ui>
+                  <textEdit multiLine="1">
+                     <border presence="hidden">
+                        <?templateDesigner StyleID aped0?></border>
+                     <margin/>
+                  </textEdit>
+               </ui>
+               <font size="8pt" typeface="Arial"/>
+               <margin bottomInset="1mm" leftInset="1mm" rightInset="1mm" topInset="1mm"/>
+               <para hAlign="right" vAlign="middle"/>
+               <bind match="dataRef" ref="$.KPEIN"/>
+               <desc>
+                  <text name="Schema Annotation">Char 20</text>
+               </desc>
+               <border>
+                  <edge presence="hidden"/>
+                  <corner presence="hidden" thickness="0.176mm"/>
+               </border>
+            </field>
+            <field minH="5.588mm" name="EXT" w="28.448mm">
+               <ui>
+                  <textEdit multiLine="1">
+                     <border presence="hidden">
+                        <?templateDesigner StyleID aped0?></border>
+                     <margin/>
+                  </textEdit>
+               </ui>
+               <font size="8pt" typeface="Arial"/>
+               <margin bottomInset="1mm" leftInset="1mm" rightInset="1mm" topInset="1mm"/>
+               <para hAlign="right" vAlign="middle"/>
+               <bind match="dataRef" ref="$.EXT"/>
+               <desc>
+                  <text name="Schema Annotation">Char 20</text>
+               </desc>
+               <border>
+                  <edge presence="hidden"/>
+                  <corner presence="hidden" thickness="0.176mm"/>
+               </border>
+            </field>
+            <subform layout="tb" name="TDLINE" w="203.2mm">
+               <bind match="dataRef" ref="$.TDLINE"/>
+               <subform layout="tb" name="BodyRow2" w="203.212mm">
+                  <bind match="dataRef" ref="$.DATA[*]"/>
+                  <overflow target="Page2"/>
+                  <occur max="-1"/>
+                  <field minH="4mm" name="ITEM" w="203mm">
+                     <ui>
+                        <textEdit multiLine="1">
+                           <border presence="hidden">
+                              <?templateDesigner StyleID aped0?></border>
+                           <margin/>
+                        </textEdit>
+                     </ui>
+                     <font size="8pt" typeface="Arial"/>
+                     <margin bottomInset="1mm" leftInset="1mm" rightInset="1mm" topInset="1mm"/>
+                     <para vAlign="middle"/>
+                     <bind match="dataRef" ref="$.ITEM"/>
+                     <desc>
+                        <text name="Schema Annotation">Text Line</text>
+                     </desc>
+                     <border>
+                        <edge presence="hidden"/>
+                        <corner/>
+                        <corner presence="hidden"/>
+                        <corner/>
+                        <corner/>
+                     </border>
+                     <caption reserve="21.3886mm">
+                        <para vAlign="middle"/>
+                     </caption>
+                     <event activity="initialize" name="event__initialize">
+                        <script contentType="application/x-javascript">
+// * ---&gt; Begin of Change for D2_OTC_FDD_0014 by ADEY
+// Hide this table and subform if TDLINE contains no record.
+
+if(this.rawValue == null)
+{
+  this.presence = "hidden";
+}   
+
+// * &lt;--- End of Change for D2_OTC_FDD_0014 by ADEY
+
+</script>
+                     </event>
+                  </field>
+                  <?templateDesigner expand 1?></subform>
+               <border>
+                  <edge presence="hidden"/>
+                  <corner presence="hidden" thickness="0.175mm"/>
+               </border>
+               <?templateDesigner expand 0?></subform>
+            <keep intact="contentArea"/>
+            <overflow target="Page2.CA_2"/>
+            <?templateDesigner expand 1?></subform>
+         <assist role="Table"/>
+         <border>
+            <edge presence="hidden" thickness="0.508mm"/>
+            <corner presence="hidden" thickness="0.508mm"/>
+            <edge thickness="0.508mm"/>
+            <edge thickness="0.508mm"/>
+            <edge thickness="0.508mm"/>
+            <corner thickness="0.508mm"/>
+            <corner thickness="0.508mm"/>
+            <corner thickness="0.508mm"/>
+         </border>
+         <?templateDesigner expand 1?></subform>
+      <subform h="59.213mm" name="FOOTER" w="206.263mm">
+         <bind match="none"/>
+         <event activity="ready" name="event__layout_ready" ref="$layout">
+            <script contentType="application/x-javascript">if xfa.layout.page(this) = xfa.layout.pageCount();
+
+</script>
+         </event>
+         <validate>
+            <script contentType="application/x-javascript">if xfa.layout.page(this) == xfa.layout.pageCount();
+
+</script>
+         </validate>
+         <event activity="initialize" name="event__initialize">
+            <script contentType="application/x-javascript">if( this.resolveNode("data.BODY.TABLE.Table1.DATA.MAT_BAT").rawValue == "" || this.resolveNode("data.BODY.TABLE.Table1.DATA.MAT_BAT").rawValue == null){
+ this.presence = "hidden"; 
+} 
+else
+{
+this.presence = "visible";
+}
+
+</script>
+         </event>
+         <subform layout="tb" name="FINAL_TOT_SF" w="86.053mm" x="117.775mm" y="4.4mm">
+            <bind match="none"/>
+            <subform columnWidths="55.816mm 29.936mm" layout="table" name="FINAL_TOTAL">
+               <border>
+                  <edge presence="hidden"/>
+                  <corner presence="hidden"/>
+               </border>
+               <subform layout="row" name="Row1">
+                  <assist role="TR"/>
+                  <field h="6.248mm" name="TEXT">
+                     <ui>
+                        <textEdit/>
+                     </ui>
+                     <font typeface="Arial"/>
+                     <margin bottomInset="0.5mm" leftInset="0.5mm" rightInset="0.5mm" topInset="0.5mm"/>
+                     <para hAlign="right" vAlign="middle"/>
+                     <border>
+                        <edge presence="hidden"/>
+                        <corner presence="hidden" thickness="0.1778mm"/>
+                     </border>
+                     <bind match="dataRef" ref="$.TEXT"/>
+                     <desc>
+                        <text name="Schema Annotation">User field for cluster PC (national)</text>
+                     </desc>
+                     <?templateDesigner expand 1?></field>
+                  <field h="6.248mm" name="VAL">
+                     <ui>
+                        <textEdit/>
+                     </ui>
+                     <font typeface="Arial"/>
+                     <margin bottomInset="0.5mm" leftInset="0.5mm" rightInset="0.5mm" topInset="0.5mm"/>
+                     <para hAlign="right" vAlign="middle"/>
+                     <border>
+                        <edge presence="hidden"/>
+                        <corner presence="hidden" thickness="0.1778mm"/>
+                     </border>
+                     <value>
+                        <text maxChars="15"/>
+                     </value>
+                     <bind match="dataRef" ref="$.VAL"/>
+                     <desc>
+                        <text name="Schema Annotation">Char 15</text>
+                     </desc>
+                  </field>
+                  <border>
+                     <edge presence="hidden"/>
+                  </border>
+                  <bind match="none"/>
+                  <?templateDesigner expand 1?></subform>
+               <keep intact="contentArea" previous="contentArea"/>
+               <bind match="dataRef" ref="$.I_FINTOT.DATA[*]"/>
+               <?templateDesigner rowpattern first:1, next:1, firstcolor:f0f0f0, nextcolor:ffffff, apply:0?>
+               <overflow target="Page1.CA_1"/>
+               <occur max="-1"/>
+               <?templateDesigner expand 0?></subform>
+            <?templateDesigner expand 0?></subform>
+         <field access="readOnly" h="6mm" name="TAX_GRP_SUMMARY_FR" w="59mm" x="54.65mm" y="5.4mm">
+            <ui>
+               <textEdit multiLine="1">
+                  <border presence="hidden">
+                     <?templateDesigner StyleID aped0?></border>
+                  <margin/>
+               </textEdit>
+            </ui>
+            <font size="9pt" typeface="Arial" weight="bold"/>
+            <margin bottomInset="1mm" leftInset="1mm" rightInset="1mm" topInset="1mm"/>
+            <bind match="dataRef" ref="$.TAX_GRP_SUMMARY"/>
+            <?templateDesigner expand 1?>
+            <value>
+               <exData contentType="text/html">
+                  <body xmlns="http://www.w3.org/1999/xhtml"/>
+               </exData>
+            </value>
+            <desc>
+               <exData name="Schema Annotation">Text Node TEXT
+SAPScript Include Text 
+ NAME = ZOTC_0014_TAXGRPSUM 
+ LANGUAGE-FIELD = WA_THEAD-TDSPRAS 
+ OBJECT-FIELD = WA_THEAD-TDOBJECT 
+ ID-FIELD = WA_THEAD-TDID</exData>
+            </desc>
+         </field>
+         <field access="readOnly" h="6mm" name="TAX_GRP_SUMMARY1" w="59mm" x="54.65mm" y="11.4mm">
+            <ui>
+               <textEdit multiLine="1">
+                  <border presence="hidden">
+                     <?templateDesigner StyleID aped0?></border>
+                  <margin/>
+               </textEdit>
+            </ui>
+            <font size="9pt" typeface="Arial" weight="bold"/>
+            <margin bottomInset="1mm" leftInset="1mm" rightInset="1mm" topInset="1mm"/>
+            <bind match="dataRef" ref="$.TAX_GRP_SUMMARY1"/>
+            <?templateDesigner expand 1?>
+            <value>
+               <exData contentType="text/html">
+                  <body xmlns="http://www.w3.org/1999/xhtml"/>
+               </exData>
+            </value>
+            <desc>
+               <exData name="Schema Annotation">Text Node TEXT
+SAPScript Include Text 
+ NAME = ZOTC_0014_TAXGRPSUM 
+ LANGUAGE = E 
+ OBJECT-FIELD = WA_THEAD-TDOBJECT 
+ ID-FIELD = WA_THEAD-TDID</exData>
+            </desc>
+         </field>
+         <subform layout="tb" name="TAX_GRP_SF" w="59mm" x="54.65mm" y="18.067mm">
+            <bind match="none"/>
+            <subform columnWidths="17.001mm 24.106mm 16.493mm" layout="table" name="FINAL_TOTAL">
+               <border>
+                  <edge presence="hidden"/>
+                  <corner presence="hidden"/>
+               </border>
+               <subform layout="row" name="Row1">
+                  <assist role="TR"/>
+                  <field h="6.248mm" name="TAXTXT">
+                     <ui>
+                        <textEdit/>
+                     </ui>
+                     <font size="9pt" typeface="Arial" weight="bold"/>
+                     <margin bottomInset="0.5mm" leftInset="0.5mm" rightInset="0.5mm" topInset="0.5mm"/>
+                     <para vAlign="middle"/>
+                     <border>
+                        <edge presence="hidden"/>
+                        <corner presence="hidden" thickness="0.1778mm"/>
+                     </border>
+                     <bind match="dataRef" ref="$.TAXTXT"/>
+                     <desc>
+                        <text name="Schema Annotation">Character field 13 digits</text>
+                     </desc>
+                     <?templateDesigner expand 1?>
+                     <value>
+                        <text maxChars="13"/>
+                     </value>
+                  </field>
+                  <field minH="6.248mm" name="PERC" w="55.816mm">
+                     <ui>
+                        <textEdit>
+                           <border presence="hidden">
+                              <?templateDesigner StyleID aped0?></border>
+                           <margin/>
+                        </textEdit>
+                     </ui>
+                     <font size="9pt" typeface="Arial" weight="bold"/>
+                     <margin bottomInset="1mm" leftInset="1mm" rightInset="1mm" topInset="1mm"/>
+                     <para hAlign="center" vAlign="middle"/>
+                     <bind match="dataRef" ref="$.PERC"/>
+                     <border>
+                        <edge presence="hidden"/>
+                        <corner presence="hidden" thickness="0.1778mm"/>
+                     </border>
+                     <value>
+                        <text maxChars="15"/>
+                     </value>
+                     <desc>
+                        <text name="Schema Annotation">Char 15</text>
+                     </desc>
+                  </field>
+                  <field h="6.248mm" name="AMNT">
+                     <ui>
+                        <textEdit/>
+                     </ui>
+                     <font size="9pt" typeface="Arial" weight="bold"/>
+                     <margin bottomInset="0.5mm" leftInset="0.5mm" rightInset="0.5mm" topInset="0.5mm"/>
+                     <para hAlign="right" vAlign="middle"/>
+                     <border>
+                        <edge presence="hidden"/>
+                        <corner presence="hidden" thickness="0.1778mm"/>
+                     </border>
+                     <value>
+                        <text maxChars="15"/>
+                     </value>
+                     <bind match="dataRef" ref="$.AMNT"/>
+                     <desc>
+                        <text name="Schema Annotation">Char 15</text>
+                     </desc>
+                  </field>
+                  <border>
+                     <edge presence="hidden"/>
+                  </border>
+                  <bind match="none"/>
+                  <?templateDesigner expand 1?></subform>
+               <keep intact="contentArea" previous="contentArea"/>
+               <bind match="dataRef" ref="$.I_TAXSUMM.DATA[*]"/>
+               <?templateDesigner rowpattern first:1, next:1, firstcolor:f0f0f0, nextcolor:ffffff, apply:0?>
+               <overflow target="Page1.CA_1"/>
+               <occur max="-1"/>
+               <?templateDesigner expand 1?></subform>
+            <?templateDesigner expand 0?></subform>
+         <?templateDesigner expand 1?></subform>
+      <?templateDesigner expand 1?>
+      <?renderCache.subset "Arial" 0 0 ISO-8859-1 4 84 21 0003000600120029002B002C00330034003500360037003C0042004400470048004A004C004F0057005B #/FHIPQRSTY_adegiltx?></subform>
+   <?templateDesigner DefaultPreviewDynamic 1?>
+   <?templateDesigner DefaultRunAt client?>
+   <?templateDesigner DefaultLanguage JavaScript?>
+   <?acrobat JavaScript strictScoping?>
+   <?originalXFAVersion http://www.xfa.org/schema/xfa-template/2.8/?>
+   <?templateDesigner SavePDFWithEmbeddedFonts 1?>
+   <?templateDesigner SaveTaggedPDF 1?>
+   <?templateDesigner Grid show:1, snap:1, units:17, color:ff8080, origin:(0,0), interval:(250000,250000), objsnap:0, guidesnap:0, pagecentersnap:-607011075?>
+   <?templateDesigner FormTargetVersion 28?>
+   <?templateDesigner Rulers horizontal:0, vertical:0, guidelines:1, crosshairs:0?>
+   <?templateDesigner Zoom 75?></template>
+<config xmlns="http://www.xfa.org/schema/xci/2.8/">
+   <agent name="designer">
+      <!--  [0..n]  -->
+      <destination>pdf</destination>
+      <pdf>
+         <!--  [0..n]  -->
+         <fontInfo/>
+      </pdf>
+      <common>
+         <template>
+            <base>http://deve2dap00.global.bio-rad.com:8001/sap/bc/fp/form/layout/</base>
+         </template>
+      </common>
+   </agent>
+   <present>
+      <!--  [0..n]  -->
+      <pdf>
+         <!--  [0..n]  -->
+         <version>1.7</version>
+         <adobeExtensionLevel>3</adobeExtensionLevel>
+      </pdf>
+      <common>
+         <data>
+            <xsl>
+               <uri/>
+            </xsl>
+            <outputXSL>
+               <uri/>
+            </outputXSL>
+         </data>
+      </common>
+      <xdp>
+         <packets>*</packets>
+      </xdp>
+   </present>
+</config>
+<connectionSet xmlns="http://www.xfa.org/schema/xfa-connection-set/2.8/">
+   <xsdConnection dataDescription="data" name="ZOTC0088_PROFORMA_USA">
+      <uri/>
+      <rootElement>data</rootElement>
+   </xsdConnection>
+   <?originalXFAVersion http://www.xfa.org/schema/xfa-connection-set/2.7/?></connectionSet>
+<xfa:datasets xmlns:xfa="http://www.xfa.org/schema/xfa-data/1.0/">
+   <xfa:data xfa:dataNode="dataGroup"/>
+   <dd:dataDescription xmlns:dd="http://ns.adobe.com/data-description/" dd:name="data">
+      <data>
+         <WA_SHIPTO>
+            <NAME1/>
+            <NAME2/>
+            <NAME3/>
+            <NAME4/>
+            <CITY1/>
+            <CITY2/>
+            <POST_CODE1/>
+            <STREET/>
+            <HOUSE_NUM1/>
+            <TEL_NUMBER/>
+            <KUNNR/>
+         </WA_SHIPTO>
+         <WA_BILLTO>
+            <NAME1/>
+            <NAME2/>
+            <NAME3/>
+            <NAME4/>
+            <CITY1/>
+            <CITY2/>
+            <POST_CODE1/>
+            <STREET/>
+            <HOUSE_NUM1/>
+            <TEL_NUMBER/>
+            <KUNNR/>
+         </WA_BILLTO>
+         <WA_REMITT>
+            <NAME1/>
+            <CITY1/>
+            <CITY2/>
+            <STREET/>
+            <HOUSE_NUM1/>
+         </WA_REMITT>
+         <WA_PURCHASE>
+            <BSTNK_VF/>
+            <CITY1/>
+            <CITY2/>
+            <ZTERM/>
+            <ERNAM/>
+            <REGION/>
+            <LAND1/>
+            <ZZCASEREF/>
+            <TDLINE/>
+         </WA_PURCHASE>
+         <WA_COMPANY>
+            <NAME1/>
+            <CITY1/>
+            <CITY2/>
+            <STREET/>
+            <HOUSE_NUM1/>
+         </WA_COMPANY>
+         <SFPSY>
+            <DATE/>
+            <TIME/>
+            <USERNAME/>
+            <SUBRC/>
+         </SFPSY>
+         <STANDARD_TEXTS>
+            <INVOICE/>
+            <CREDIT_MEMO/>
+            <DEBIT_MEMO/>
+            <SERVICE dd:minOccur="0" dd:nullType="exclude"/>
+            <GV_NOTAXIND/>
+            <NO_TAX_IND dd:minOccur="0" dd:nullType="exclude"/>
+            <NO_TAX_IND1 dd:minOccur="0" dd:nullType="exclude"/>
+            <SHIP_TO/>
+            <BILL_TO/>
+            <PLEASE_REMIT_TO/>
+            <CONTACT_NAME/>
+            <QUESTION/>
+            <CONTACT_PHONE_NO/>
+            <ORDER_DATE/>
+            <SALES_ORDER/>
+            <SVC_CASEID/>
+            <GV_PAYMENT_TEXT/>
+         </STANDARD_TEXTS>
+         <WA_SALES>
+            <VBELN/>
+            <ERDAT/>
+            <NAME1/>
+            <TEL_NUMBER/>
+         </WA_SALES>
+         <SHIPT_TO/>
+         <GV_ADRNR1/>
+         <GV_LAND/>
+         <GV_ADRNR2/>
+         <BILL_TO/>
+         <GV_HEAD/>
+         <GV_ADRNR3/>
+         <GV_ADRNR4/>
+         <COMPANY_ADDRESS/>
+         <HEADER/>
+         <GV_NAME/>
+         <GV_CONTACT/>
+         <PAYMENT_TEXT dd:minOccur="0" dd:nullType="exclude"/>
+         <PAYMENT_TEXT1 dd:minOccur="0" dd:nullType="exclude"/>
+         <DRAFT dd:minOccur="0" dd:nullType="exclude"/>
+         <LOGO/>
+         <C_BMP/>
+         <GV_PRODUCTION/>
+         <GV_HTEXT/>
+         <I_STRING1 dd:minOccur="0">
+            <DATA dd:maxOccur="-1">
+               <ITEM/>
+            </DATA>
+         </I_STRING1>
+         <I_STRING2 dd:minOccur="0">
+            <DATA dd:maxOccur="-1">
+               <ITEM/>
+            </DATA>
+         </I_STRING2>
+         <GV_TAX/>
+         <GV_HC/>
+         <GV_FC/>
+         <GV_DG/>
+         <GV_TOTAL/>
+         <GV_FC_HC/>
+         <GV_SUB1/>
+         <GV_SUB/>
+         <GV_SHIP_FROM/>
+         <GV_TAX2/>
+         <GV_SUB2/>
+         <GV_TOTAL2/>
+         <GV_FC2/>
+         <GV_HC2/>
+         <GV_DG2/>
+         <GV_CUKY/>
+         <I_LINES dd:minOccur="0">
+            <DATA dd:maxOccur="-1">
+               <TDLINE/>
+            </DATA>
+         </I_LINES>
+         <GV_VBELN/>
+         <WA_THEAD>
+            <TDOBJECT/>
+            <TDNAME/>
+            <TDID/>
+            <TDSPRAS/>
+            <TDTITLE/>
+            <TDFORM/>
+            <TDSTYLE/>
+            <TDVERSION/>
+            <TDFUSER/>
+            <TDFRELES/>
+            <TDFDATE/>
+            <TDFTIME/>
+            <TDLUSER/>
+            <TDLRELES/>
+            <TDLDATE/>
+            <TDLTIME/>
+            <TDLINESIZE/>
+            <TDTXTLINES/>
+            <TDHYPHENAT/>
+            <TDOSPRAS/>
+            <TDTRANSTAT/>
+            <TDMACODE1/>
+            <TDMACODE2/>
+            <TDREFOBJ/>
+            <TDREFNAME/>
+            <TDREFID/>
+            <TDTEXTTYPE/>
+            <TDCOMPRESS/>
+            <MANDT/>
+            <TDOCLASS/>
+            <LOGSYS/>
+         </WA_THEAD>
+         <WA_PROMO dd:minOccur="0">
+            <TEXT/>
+            <VAL/>
+         </WA_PROMO>
+         <I_FINTOT dd:minOccur="0">
+            <DATA dd:maxOccur="-1">
+               <TEXT/>
+               <VAL/>
+            </DATA>
+         </I_FINTOT>
+         <TAX_GRP_SUMMARY dd:minOccur="0" dd:nullType="exclude"/>
+         <TAX_GRP_SUMMARY1 dd:minOccur="0" dd:nullType="exclude"/>
+         <GV_COUNTRY/>
+         <GV_INVOICE/>
+         <I_FEDTAX dd:minOccur="0">
+            <DATA dd:maxOccur="-1">
+               <TDFORMAT/>
+               <TDLINE/>
+            </DATA>
+         </I_FEDTAX>
+         <WA_PO_TXT>
+            <PO_TXT/>
+            <BSTNK_VF/>
+            <SHIP_TXT/>
+            <SHIP_FRM/>
+            <PMT_TXT/>
+            <ZTERM/>
+         </WA_PO_TXT>
+         <I_TAXSUMM dd:minOccur="0">
+            <DATA dd:maxOccur="-1">
+               <TAXTXT/>
+               <PERC/>
+               <AMNT/>
+            </DATA>
+         </I_TAXSUMM>
+         <I_REMITTO_ADD dd:minOccur="0">
+            <DATA dd:maxOccur="-1">
+               <TEXT/>
+               <VAL/>
+            </DATA>
+         </I_REMITTO_ADD>
+         <WA_CUST dd:minOccur="0">
+            <KUNRG/>
+            <KUNRG_TXT/>
+            <VBELN/>
+            <VBELN_TXT/>
+            <FKDAT/>
+            <FKDAT_TXT/>
+            <NAME1/>
+            <NAME1_TXT/>
+            <INCO1/>
+            <INCO1_TXT/>
+         </WA_CUST>
+         <WA_CUST1 dd:minOccur="0">
+            <KUNRG/>
+            <KUNRG_TXT/>
+            <VBELN/>
+            <VBELN_TXT/>
+            <FKDAT/>
+            <FKDAT_TXT/>
+            <NAME1/>
+            <NAME1_TXT/>
+            <INCO1/>
+            <INCO1_TXT/>
+         </WA_CUST1>
+         <WA_SOCL>
+            <VKORG/>
+            <LAND1/>
+            <LANG1/>
+            <LANG2/>
+         </WA_SOCL>
+         <WA_ITEM_LABEL>
+            <SHIPTO/>
+            <BILLTO/>
+            <INVOICE/>
+            <PLSREMIT/>
+            <QUESTION/>
+            <PAYMENT/>
+            <MAT_BATCH_FR/>
+            <ORDER_QTY_FR/>
+            <SHIP_QTY_FR/>
+            <UNIT_FR/>
+            <DESC_FR/>
+            <UNIT_PR_FR/>
+            <EXTND_PR_FR/>
+            <MAT_BATCH_SN/>
+            <ORDER_QTY/>
+            <SHIP_QTY/>
+            <UNIT/>
+            <DESCRIPTION/>
+            <UNIT_PRICE/>
+            <EXTND_PRICE/>
+         </WA_ITEM_LABEL>
+         <I_REFERENCE dd:minOccur="0">
+            <DATA dd:maxOccur="-1">
+               <TEXT/>
+               <VAL/>
+            </DATA>
+         </I_REFERENCE>
+         <I_SALESORD dd:minOccur="0">
+            <DATA dd:maxOccur="-1">
+               <TEXT/>
+               <VAL/>
+            </DATA>
+         </I_SALESORD>
+         <I_REFERENCE_2 dd:minOccur="0">
+            <DATA dd:maxOccur="-1">
+               <TEXT/>
+               <VAL/>
+            </DATA>
+         </I_REFERENCE_2>
+         <I_SALESORD_2 dd:minOccur="0">
+            <DATA dd:maxOccur="-1">
+               <TEXT/>
+               <VAL/>
+            </DATA>
+         </I_SALESORD_2>
+         <I_ITEM dd:minOccur="0">
+            <DATA dd:maxOccur="-1">
+               <MATNR/>
+               <UECHA/>
+               <CHARG/>
+               <LFIMG/>
+               <FKIMG/>
+               <MEINS/>
+               <ARKTX/>
+               <KPEIN/>
+               <EXT/>
+               <ZCFI/>
+               <FLAG/>
+               <BOM/>
+               <BOMMAT/>
+               <TDLINE dd:minOccur="0">
+                  <DATA dd:maxOccur="-1">
+                     <ITEM/>
+                  </DATA>
+               </TDLINE>
+            </DATA>
+         </I_ITEM>
+         <I_ITEM1 dd:minOccur="0">
+            <DATA dd:maxOccur="-1">
+               <MAT_BAT/>
+               <LFIMG/>
+               <FKIMG/>
+               <MEINS/>
+               <ARKTX/>
+               <KPEIN/>
+               <EXT/>
+               <BOMHDR/>
+               <UECHA/>
+               <INVQTY/>
+               <EXTDQTY/>
+               <TDLINE dd:minOccur="0">
+                  <DATA dd:maxOccur="-1">
+                     <ITEM/>
+                  </DATA>
+               </TDLINE>
+            </DATA>
+         </I_ITEM1>
+         <ADD_SHIP_AND_BILL>
+            <WA_ADD_SHIPTO>
+               <LINE1/>
+               <LINE2/>
+               <LINE3/>
+               <LINE4/>
+               <LINE5/>
+               <LINE6/>
+               <LINE7/>
+               <LINE8/>
+            </WA_ADD_SHIPTO>
+            <WA_ADD_BILLTO>
+               <LINE1/>
+               <LINE2/>
+               <LINE3/>
+               <LINE4/>
+               <LINE5/>
+               <LINE6/>
+               <LINE7/>
+               <LINE8/>
+            </WA_ADD_BILLTO>
+         </ADD_SHIP_AND_BILL>
+         <GV_FINAL_REGNO/>
+         <GV_FEIN/>
+      </data>
+   </dd:dataDescription>
+</xfa:datasets>
+<localeSet xmlns="http://www.xfa.org/schema/xfa-locale-set/2.7/">
+   <locale desc="English (United States)" name="en_US">
+      <calendarSymbols name="gregorian">
+         <monthNames>
+            <month>January</month>
+            <month>February</month>
+            <month>March</month>
+            <month>April</month>
+            <month>May</month>
+            <month>June</month>
+            <month>July</month>
+            <month>August</month>
+            <month>September</month>
+            <month>October</month>
+            <month>November</month>
+            <month>December</month>
+         </monthNames>
+         <monthNames abbr="1">
+            <month>Jan</month>
+            <month>Feb</month>
+            <month>Mar</month>
+            <month>Apr</month>
+            <month>May</month>
+            <month>Jun</month>
+            <month>Jul</month>
+            <month>Aug</month>
+            <month>Sep</month>
+            <month>Oct</month>
+            <month>Nov</month>
+            <month>Dec</month>
+         </monthNames>
+         <dayNames>
+            <day>Sunday</day>
+            <day>Monday</day>
+            <day>Tuesday</day>
+            <day>Wednesday</day>
+            <day>Thursday</day>
+            <day>Friday</day>
+            <day>Saturday</day>
+         </dayNames>
+         <dayNames abbr="1">
+            <day>Sun</day>
+            <day>Mon</day>
+            <day>Tue</day>
+            <day>Wed</day>
+            <day>Thu</day>
+            <day>Fri</day>
+            <day>Sat</day>
+         </dayNames>
+         <meridiemNames>
+            <meridiem>AM</meridiem>
+            <meridiem>PM</meridiem>
+         </meridiemNames>
+         <eraNames>
+            <era>BC</era>
+            <era>AD</era>
+         </eraNames>
+      </calendarSymbols>
+      <datePatterns>
+         <datePattern name="full">EEEE, MMMM D, YYYY</datePattern>
+         <datePattern name="long">MMMM D, YYYY</datePattern>
+         <datePattern name="med">MMM D, YYYY</datePattern>
+         <datePattern name="short">M/D/YY</datePattern>
+      </datePatterns>
+      <timePatterns>
+         <timePattern name="full">h:MM:SS A Z</timePattern>
+         <timePattern name="long">h:MM:SS A Z</timePattern>
+         <timePattern name="med">h:MM:SS A</timePattern>
+         <timePattern name="short">h:MM A</timePattern>
+      </timePatterns>
+      <dateTimeSymbols>GyMdkHmsSEDFwWahKzZ</dateTimeSymbols>
+      <numberPatterns>
+         <numberPattern name="numeric">z,zz9.zzz</numberPattern>
+         <numberPattern name="currency">$z,zz9.99|($z,zz9.99)</numberPattern>
+         <numberPattern name="percent">z,zz9%</numberPattern>
+      </numberPatterns>
+      <numberSymbols>
+         <numberSymbol name="decimal">.</numberSymbol>
+         <numberSymbol name="grouping">,</numberSymbol>
+         <numberSymbol name="percent">%</numberSymbol>
+         <numberSymbol name="minus">-</numberSymbol>
+         <numberSymbol name="zero">0</numberSymbol>
+      </numberSymbols>
+      <currencySymbols>
+         <currencySymbol name="symbol">$</currencySymbol>
+         <currencySymbol name="isoname">USD</currencySymbol>
+         <currencySymbol name="decimal">.</currencySymbol>
+      </currencySymbols>
+      <typefaces>
+         <typeface name="Myriad Pro"/>
+         <typeface name="Minion Pro"/>
+         <typeface name="Courier Std"/>
+         <typeface name="Adobe Pi Std"/>
+         <typeface name="Adobe Hebrew"/>
+         <typeface name="Adobe Arabic"/>
+         <typeface name="Adobe Thai"/>
+         <typeface name="Kozuka Gothic Pro-VI M"/>
+         <typeface name="Kozuka Mincho Pro-VI R"/>
+         <typeface name="Adobe Ming Std L"/>
+         <typeface name="Adobe Song Std L"/>
+         <typeface name="Adobe Myungjo Std M"/>
+      </typefaces>
+   </locale>
+   <locale desc="Spanish_US" name="es_US">
+      <calendarSymbols name="gregorian">
+         <monthNames>
+            <month>enero</month>
+            <month>febrero</month>
+            <month>marzo</month>
+            <month>abril</month>
+            <month>mayo</month>
+            <month>junio</month>
+            <month>julio</month>
+            <month>agosto</month>
+            <month>septiembre</month>
+            <month>octubre</month>
+            <month>noviembre</month>
+            <month>diciembre</month>
+         </monthNames>
+         <monthNames abbr="1">
+            <month>ene</month>
+            <month>feb</month>
+            <month>mar</month>
+            <month>abr</month>
+            <month>may</month>
+            <month>jun</month>
+            <month>jul</month>
+            <month>ago</month>
+            <month>sep</month>
+            <month>oct</month>
+            <month>nov</month>
+            <month>dic</month>
+         </monthNames>
+         <dayNames>
+            <day>domingo</day>
+            <day>lunes</day>
+            <day>martes</day>
+            <day>miércoles</day>
+            <day>jueves</day>
+            <day>viernes</day>
+            <day>sábado</day>
+         </dayNames>
+         <dayNames abbr="1">
+            <day>dom</day>
+            <day>lun</day>
+            <day>mar</day>
+            <day>mié</day>
+            <day>jue</day>
+            <day>vie</day>
+            <day>sáb</day>
+         </dayNames>
+         <meridiemNames>
+            <meridiem>AM</meridiem>
+            <meridiem>PM</meridiem>
+         </meridiemNames>
+         <eraNames>
+            <era>a.C.</era>
+            <era>d.C.</era>
+         </eraNames>
+      </calendarSymbols>
+      <datePatterns>
+         <datePattern name="full">EEEE D' de 'MMMM' de 'YYYY</datePattern>
+         <datePattern name="long">D' de 'MMMM' de 'YYYY</datePattern>
+         <datePattern name="med">MMM D, YYYY</datePattern>
+         <datePattern name="short">M/D/YY</datePattern>
+      </datePatterns>
+      <timePatterns>
+         <timePattern name="full">h:MM:SS A Z</timePattern>
+         <timePattern name="long">h:MM:SS A Z</timePattern>
+         <timePattern name="med">h:MM:SS A</timePattern>
+         <timePattern name="short">h:MM A</timePattern>
+      </timePatterns>
+      <dateTimeSymbols>GuMtkhmsSEDFwWahKzZ</dateTimeSymbols>
+      <numberPatterns>
+         <numberPattern name="numeric">z,zz9.zzz</numberPattern>
+         <numberPattern name="currency">$z,zz9.99|($z,zz9.99)</numberPattern>
+         <numberPattern name="percent">z,zz9%</numberPattern>
+      </numberPatterns>
+      <numberSymbols>
+         <numberSymbol name="decimal">,</numberSymbol>
+         <numberSymbol name="grouping">.</numberSymbol>
+         <numberSymbol name="percent">%</numberSymbol>
+         <numberSymbol name="minus">-</numberSymbol>
+         <numberSymbol name="zero">0</numberSymbol>
+      </numberSymbols>
+      <currencySymbols>
+         <currencySymbol name="symbol">$</currencySymbol>
+         <currencySymbol name="isoname">USD</currencySymbol>
+         <currencySymbol name="decimal">,</currencySymbol>
+      </currencySymbols>
+      <typefaces>
+         <typeface name="Myriad Pro"/>
+         <typeface name="Minion Pro"/>
+         <typeface name="Courier Std"/>
+         <typeface name="Adobe Pi Std"/>
+         <typeface name="Adobe Hebrew"/>
+         <typeface name="Adobe Arabic"/>
+         <typeface name="Adobe Thai"/>
+         <typeface name="Kozuka Gothic Pro-VI M"/>
+         <typeface name="Kozuka Mincho Pro-VI R"/>
+         <typeface name="Adobe Ming Std L"/>
+         <typeface name="Adobe Song Std L"/>
+         <typeface name="Adobe Myungjo Std M"/>
+      </typefaces>
+   </locale>
+   <locale desc="Arabic (Algeria)" name="ar_DZ">
+      <calendarSymbols name="gregorian">
+         <monthNames>
+            <month>يناير</month>
+            <month>فبراير</month>
+            <month>مارس</month>
+            <month>أبريل</month>
+            <month>مايو</month>
+            <month>يونيو</month>
+            <month>يوليو</month>
+            <month>أغسطس</month>
+            <month>سبتمبر</month>
+            <month>أكتوبر</month>
+            <month>نوفمبر</month>
+            <month>ديسمبر</month>
+         </monthNames>
+         <monthNames abbr="1">
+            <month>ينا</month>
+            <month>فبر</month>
+            <month>مار</month>
+            <month>أبر</month>
+            <month>ماي</month>
+            <month>يون</month>
+            <month>يول</month>
+            <month>أغس</month>
+            <month>سبت</month>
+            <month>أكت</month>
+            <month>نوف</month>
+            <month>ديس</month>
+         </monthNames>
+         <dayNames>
+            <day>الأحد</day>
+            <day>الاثنين</day>
+            <day>الثلاثاء</day>
+            <day>الأربعاء</day>
+            <day>الخميس</day>
+            <day>الجمعة</day>
+            <day>السبت</day>
+         </dayNames>
+         <dayNames abbr="1">
+            <day>ح</day>
+            <day>ن</day>
+            <day>ث</day>
+            <day>ر</day>
+            <day>خ</day>
+            <day>ج</day>
+            <day>س</day>
+         </dayNames>
+         <meridiemNames>
+            <meridiem>ص</meridiem>
+            <meridiem>م</meridiem>
+         </meridiemNames>
+         <eraNames>
+            <era>م.ق</era>
+            <era>م</era>
+         </eraNames>
+      </calendarSymbols>
+      <datePatterns>
+         <datePattern name="full">EEEE, D MMMM, YYYY</datePattern>
+         <datePattern name="long">D MMMM, YYYY</datePattern>
+         <datePattern name="med">DD/MM/YYYY</datePattern>
+         <datePattern name="short">D/M/YYYY</datePattern>
+      </datePatterns>
+      <timePatterns>
+         <timePattern name="full">Z h:MM:SS A</timePattern>
+         <timePattern name="long">h:MM:SS A</timePattern>
+         <timePattern name="med">h:MM:SS A</timePattern>
+         <timePattern name="short">h:MM A</timePattern>
+      </timePatterns>
+      <dateTimeSymbols>GanjkHmsSEDFwWxhKzZ</dateTimeSymbols>
+      <numberPatterns>
+         <numberPattern name="numeric">z,zz9.zzz</numberPattern>
+         <numberPattern name="currency">$ z,zz9.99s</numberPattern>
+         <numberPattern name="percent">z,zz9%</numberPattern>
+      </numberPatterns>
+      <numberSymbols>
+         <numberSymbol name="decimal">٫</numberSymbol>
+         <numberSymbol name="grouping">٬</numberSymbol>
+         <numberSymbol name="percent">٪</numberSymbol>
+         <numberSymbol name="minus">-</numberSymbol>
+         <numberSymbol name="zero">0</numberSymbol>
+      </numberSymbols>
+      <currencySymbols>
+         <currencySymbol name="symbol">د.ج.</currencySymbol>
+         <currencySymbol name="isoname">DZD</currencySymbol>
+         <currencySymbol name="decimal">٫</currencySymbol>
+      </currencySymbols>
+      <typefaces>
+         <typeface name="Adobe Arabic"/>
+         <typeface name="Myriad Pro"/>
+         <typeface name="Minion Pro"/>
+         <typeface name="Courier Std"/>
+         <typeface name="Adobe Pi Std"/>
+         <typeface name="Adobe Hebrew"/>
+         <typeface name="Adobe Thai"/>
+         <typeface name="Kozuka Gothic Pro-VI M"/>
+         <typeface name="Kozuka Mincho Pro-VI R"/>
+         <typeface name="Adobe Ming Std L"/>
+         <typeface name="Adobe Song Std L"/>
+         <typeface name="Adobe Myungjo Std M"/>
+      </typefaces>
+   </locale>
+   <?originalXFAVersion http://www.xfa.org/schema/xfa-locale-set/2.7/?></localeSet>
+<x:xmpmeta xmlns:x="adobe:ns:meta/" x:xmptk="Adobe XMP Core 4.0-c319 44.281645, Sun Mar 25 2007 16:17:34">
+   <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+      <rdf:Description xmlns:xmp="http://ns.adobe.com/xap/1.0/" xmlns:pdf="http://ns.adobe.com/pdf/1.3/" xmlns:xmpMM="http://ns.adobe.com/xap/1.0/mm/" xmlns:desc="http://ns.adobe.com/xfa/promoted-desc/" rdf:about="">
+         <xmp:MetadataDate>2019-06-26T17:06:54Z</xmp:MetadataDate>
+         <xmp:CreatorTool>Adobe LiveCycle Designer 11.0</xmp:CreatorTool>
+         <pdf:Producer>Adobe LiveCycle Designer 11.0</pdf:Producer>
+         <xmpMM:DocumentID>uuid:2019df7e-44a6-4833-ba50-563a2757f219</xmpMM:DocumentID>
+         <desc:version rdf:parseType="Resource">
+            <rdf:value>9.0.1.0.20091206.1.615263.583615</rdf:value>
+            <desc:ref>/template/subform[1]</desc:ref>
+         </desc:version>
+      </rdf:Description>
+   </rdf:RDF>
+</x:xmpmeta></xdp:xdp>

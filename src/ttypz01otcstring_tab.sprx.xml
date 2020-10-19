@@ -1,0 +1,46 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<abapGit version="v1.0.0" serializer="LCL_OBJECT_SPRX" serializer_version="v1.0.0">
+ <asx:abap xmlns:asx="http://www.sap.com/abapxml" version="1.0">
+  <asx:values>
+   <PROXY_HEADER>
+    <item>
+     <OBJECT>TTYP</OBJECT>
+     <OBJ_NAME>Z01OTCSTRING_TAB</OBJ_NAME>
+     <OBJECT_M>TTYP</OBJECT_M>
+     <OBJ_NAME_M>Z01OTCSTRING_TAB</OBJ_NAME_M>
+     <HASH_ID>FF1DB4015AF8BFFF217E3F326D13F5857A06B994</HASH_ID>
+     <ID>TableOf&lt;type&gt; string http://www.w3.org/2001/XMLSchema http://bio-rad.com/OTC/SalesOrderList</ID>
+     <IFR_GLOBAL>X</IFR_GLOBAL>
+     <IFR_TYPE>TableOftype</IFR_TYPE>
+     <IFR_NAME>string</IFR_NAME>
+     <IFR_NSPCE>http://www.w3.org/2001/XMLSchema</IFR_NSPCE>
+     <IFR_GNSPCE>http://bio-rad.com/OTC/SalesOrderList</IFR_GNSPCE>
+     <GEN_VERS>0005</GEN_VERS>
+     <PREFIX>Z01OTC</PREFIX>
+     <CATEGORY>ifmtypedef</CATEGORY>
+    </item>
+   </PROXY_HEADER>
+   <PROXY_DATA>
+    <item>
+     <OBJECT>TTYP</OBJECT>
+     <OBJ_NAME>Z01OTCSTRING_TAB</OBJ_NAME>
+     <OBJECT1>TTYP</OBJECT1>
+     <OBJ_NAME1>Z01OTCSTRING_TAB</OBJ_NAME1>
+     <OBJECT2>TTYP</OBJECT2>
+     <OBJ_NAME2>Z01OTCSTRING_TAB</OBJ_NAME2>
+     <ID>TableOf&lt;type&gt; string http://www.w3.org/2001/XMLSchema http://bio-rad.com/OTC/SalesOrderList</ID>
+     <IFR_TYPE>TableOftype</IFR_TYPE>
+     <IFR_NAME>string</IFR_NAME>
+     <IFR_LANGU>EN</IFR_LANGU>
+     <IFR_XSDTYP>string</IFR_XSDTYP>
+     <IFR_SCALE>-2</IFR_SCALE>
+     <R3_TYPE>TTYP</R3_TYPE>
+     <R3_NAME>Z01OTCSTRING_TAB</R3_NAME>
+     <R3_TEXT>Proxy Table Type (generated)</R3_TEXT>
+     <R3_DATATYP>STRG</R3_DATATYP>
+     <CATEGORY>ifmtypedef</CATEGORY>
+    </item>
+   </PROXY_DATA>
+  </asx:values>
+ </asx:abap>
+</abapGit>

@@ -1,0 +1,174 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<abapGit version="v1.0.0" serializer="LCL_OBJECT_FUGR" serializer_version="v1.0.0">
+ <asx:abap xmlns:asx="http://www.sap.com/abapxml" version="1.0">
+  <asx:values>
+   <AREAT>BOM Explosion Function Group</AREAT>
+   <INCLUDES>
+    <SOBJ_NAME>LZOTC_BOM_FGTOP</SOBJ_NAME>
+    <SOBJ_NAME>SAPLZOTC_BOM_FG</SOBJ_NAME>
+   </INCLUDES>
+   <FUNCTIONS>
+    <item>
+     <FUNCNAME>ZOTC_BOM_EXPLOSION</FUNCNAME>
+     <REMOTE_CALL>R</REMOTE_CALL>
+     <SHORT_TEXT>Function Module to explode BOM</SHORT_TEXT>
+     <TABLES>
+      <RSTBL>
+       <PARAMETER>TBL_BOM_MAT</PARAMETER>
+       <OPTIONAL>X</OPTIONAL>
+       <TYP>ZOTC_BOM_COMPONENTS_T</TYP>
+      </RSTBL>
+      <RSTBL>
+       <PARAMETER>TBL_BOM_RES</PARAMETER>
+       <OPTIONAL>X</OPTIONAL>
+       <TYP>ZOTC_T_BOM_COMPONENTS_RES</TYP>
+      </RSTBL>
+      <RSTBL>
+       <PARAMETER>TBL_MESSAGE</PARAMETER>
+       <OPTIONAL>X</OPTIONAL>
+       <TYP>ZOTC_T_MESSAGE</TYP>
+      </RSTBL>
+     </TABLES>
+     <DOCUMENTATION>
+      <RSFDO>
+       <PARAMETER>TBL_BOM_MAT</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Table type for BOM</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>TBL_BOM_RES</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Table type for BOM Component exp</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>TBL_MESSAGE</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Table for message</STEXT>
+      </RSFDO>
+     </DOCUMENTATION>
+    </item>
+   </FUNCTIONS>
+   <I18N_TPOOL>
+    <item>
+     <LANGUAGE>1</LANGUAGE>
+     <TEXTPOOL>
+      <item>
+       <ID>I</ID>
+       <KEY>002</KEY>
+       <ENTRY>Sales BOM not found for Material</ENTRY>
+       <LENGTH>38</LENGTH>
+      </item>
+      <item>
+       <ID>I</ID>
+       <KEY>003</KEY>
+       <ENTRY>and Plant</ENTRY>
+       <LENGTH>9</LENGTH>
+      </item>
+     </TEXTPOOL>
+    </item>
+    <item>
+     <LANGUAGE>F</LANGUAGE>
+     <TEXTPOOL>
+      <item>
+       <ID>I</ID>
+       <KEY>002</KEY>
+       <ENTRY>Sales BOM not found for Material</ENTRY>
+       <LENGTH>38</LENGTH>
+      </item>
+      <item>
+       <ID>I</ID>
+       <KEY>003</KEY>
+       <ENTRY>and Plant</ENTRY>
+       <LENGTH>9</LENGTH>
+      </item>
+     </TEXTPOOL>
+    </item>
+    <item>
+     <LANGUAGE>J</LANGUAGE>
+     <TEXTPOOL>
+      <item>
+       <ID>I</ID>
+       <KEY>002</KEY>
+       <ENTRY>Sales BOM not found for Material</ENTRY>
+       <LENGTH>38</LENGTH>
+      </item>
+      <item>
+       <ID>I</ID>
+       <KEY>003</KEY>
+       <ENTRY>and Plant</ENTRY>
+       <LENGTH>9</LENGTH>
+      </item>
+     </TEXTPOOL>
+    </item>
+    <item>
+     <LANGUAGE>N</LANGUAGE>
+     <TEXTPOOL>
+      <item>
+       <ID>I</ID>
+       <KEY>002</KEY>
+       <ENTRY>Sales BOM not found for Material</ENTRY>
+       <LENGTH>38</LENGTH>
+      </item>
+      <item>
+       <ID>I</ID>
+       <KEY>003</KEY>
+       <ENTRY>and Plant</ENTRY>
+       <LENGTH>9</LENGTH>
+      </item>
+     </TEXTPOOL>
+    </item>
+    <item>
+     <LANGUAGE>P</LANGUAGE>
+     <TEXTPOOL>
+      <item>
+       <ID>I</ID>
+       <KEY>002</KEY>
+       <ENTRY>Sales BOM not found for Material</ENTRY>
+       <LENGTH>38</LENGTH>
+      </item>
+      <item>
+       <ID>I</ID>
+       <KEY>003</KEY>
+       <ENTRY>and Plant</ENTRY>
+       <LENGTH>9</LENGTH>
+      </item>
+     </TEXTPOOL>
+    </item>
+    <item>
+     <LANGUAGE>R</LANGUAGE>
+     <TEXTPOOL>
+      <item>
+       <ID>I</ID>
+       <KEY>002</KEY>
+       <ENTRY>Sales BOM not found for Material</ENTRY>
+       <LENGTH>38</LENGTH>
+      </item>
+      <item>
+       <ID>I</ID>
+       <KEY>003</KEY>
+       <ENTRY>and Plant</ENTRY>
+       <LENGTH>9</LENGTH>
+      </item>
+     </TEXTPOOL>
+    </item>
+    <item>
+     <LANGUAGE>S</LANGUAGE>
+     <TEXTPOOL>
+      <item>
+       <ID>I</ID>
+       <KEY>002</KEY>
+       <ENTRY>Sales BOM not found for Material</ENTRY>
+       <LENGTH>38</LENGTH>
+      </item>
+      <item>
+       <ID>I</ID>
+       <KEY>003</KEY>
+       <ENTRY>and Plant</ENTRY>
+       <LENGTH>9</LENGTH>
+      </item>
+     </TEXTPOOL>
+    </item>
+   </I18N_TPOOL>
+  </asx:values>
+ </asx:abap>
+</abapGit>

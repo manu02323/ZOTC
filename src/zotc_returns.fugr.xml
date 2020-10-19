@@ -1,0 +1,202 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<abapGit version="v1.0.0" serializer="LCL_OBJECT_FUGR" serializer_version="v1.0.0">
+ <asx:abap xmlns:asx="http://www.sap.com/abapxml" version="1.0">
+  <asx:values>
+   <AREAT>Returns and No Charge</AREAT>
+   <INCLUDES>
+    <SOBJ_NAME>LZOTC_RETURNSTOP</SOBJ_NAME>
+    <SOBJ_NAME>SAPLZOTC_RETURNS</SOBJ_NAME>
+   </INCLUDES>
+   <FUNCTIONS>
+    <item>
+     <FUNCNAME>ZOTC_CHECK_COMPLETION</FUNCNAME>
+     <SHORT_TEXT>Returns and No Charge</SHORT_TEXT>
+     <IMPORT>
+      <RSIMP>
+       <PARAMETER>OBJTYPE</PARAMETER>
+       <OPTIONAL>X</OPTIONAL>
+       <TYP>SWETYPECOU-OBJTYPE</TYP>
+      </RSIMP>
+      <RSIMP>
+       <PARAMETER>OBJKEY</PARAMETER>
+       <OPTIONAL>X</OPTIONAL>
+       <TYP>SWEINSTCOU-OBJKEY</TYP>
+      </RSIMP>
+      <RSIMP>
+       <PARAMETER>EVENT</PARAMETER>
+       <OPTIONAL>X</OPTIONAL>
+       <TYP>SWEINSTCOU-EVENT</TYP>
+      </RSIMP>
+      <RSIMP>
+       <PARAMETER>RECTYPE</PARAMETER>
+       <OPTIONAL>X</OPTIONAL>
+       <REFERENCE>X</REFERENCE>
+       <TYP>SWETYPECOU-RECTYPE</TYP>
+      </RSIMP>
+     </IMPORT>
+     <TABLES>
+      <RSTBL>
+       <PARAMETER>EVENT_CONTAINER</PARAMETER>
+       <DBSTRUCT>SWCONT</DBSTRUCT>
+      </RSTBL>
+     </TABLES>
+     <EXCEPTION>
+      <RSEXC>
+       <EXCEPTION>INCOMPLETION</EXCEPTION>
+      </RSEXC>
+      <RSEXC>
+       <EXCEPTION>INVALID_ORDER_TYPE</EXCEPTION>
+      </RSEXC>
+      <RSEXC>
+       <EXCEPTION>NO_WF_TRIGGER</EXCEPTION>
+      </RSEXC>
+     </EXCEPTION>
+     <DOCUMENTATION>
+      <RSFDO>
+       <PARAMETER>OBJTYPE</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Object Type</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>OBJKEY</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Object key</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>EVENT</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Event</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>RECTYPE</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Name of Receiver Type</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>EVENT_CONTAINER</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Instance Structure</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>INCOMPLETION</PARAMETER>
+       <KIND>X</KIND>
+       <STEXT>Incompletion</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>INVALID_ORDER_TYPE</PARAMETER>
+       <KIND>X</KIND>
+       <STEXT>Invalid Order Type</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>NO_WF_TRIGGER</PARAMETER>
+       <KIND>X</KIND>
+       <STEXT>Do not trigger worklow</STEXT>
+      </RSFDO>
+     </DOCUMENTATION>
+    </item>
+    <item>
+     <FUNCNAME>ZOTC_ORDER_WF</FUNCNAME>
+     <SHORT_TEXT>WF flags for return and no charge orders</SHORT_TEXT>
+     <IMPORT>
+      <RSIMP>
+       <PARAMETER>I_VBELN</PARAMETER>
+       <REFERENCE>X</REFERENCE>
+       <TYP>VBELN_VA</TYP>
+      </RSIMP>
+      <RSIMP>
+       <PARAMETER>I_XVBAK</PARAMETER>
+       <REFERENCE>X</REFERENCE>
+       <TYP>VBAK</TYP>
+      </RSIMP>
+      <RSIMP>
+       <PARAMETER>I_VBUK</PARAMETER>
+       <REFERENCE>X</REFERENCE>
+       <TYP>VBUK</TYP>
+      </RSIMP>
+     </IMPORT>
+     <EXPORT>
+      <RSEXP>
+       <PARAMETER>E_RET_ORD_FLAG</PARAMETER>
+       <REFERENCE>X</REFERENCE>
+       <TYP>FLAG</TYP>
+      </RSEXP>
+      <RSEXP>
+       <PARAMETER>E_NOCHARGE_FLAG</PARAMETER>
+       <REFERENCE>X</REFERENCE>
+       <TYP>FLAG</TYP>
+      </RSEXP>
+      <RSEXP>
+       <PARAMETER>E_NOCHARGE_CREATE</PARAMETER>
+       <REFERENCE>X</REFERENCE>
+       <TYP>FLAG</TYP>
+      </RSEXP>
+      <RSEXP>
+       <PARAMETER>E_NO_TRIGGER_WF</PARAMETER>
+       <REFERENCE>X</REFERENCE>
+       <TYP>FLAG</TYP>
+      </RSEXP>
+     </EXPORT>
+     <TABLES>
+      <RSTBL>
+       <PARAMETER>T_XVBAP</PARAMETER>
+       <DBSTRUCT>VBAPVB</DBSTRUCT>
+       <OPTIONAL>X</OPTIONAL>
+      </RSTBL>
+      <RSTBL>
+       <PARAMETER>T_XVBFA</PARAMETER>
+       <DBSTRUCT>VBFAVB</DBSTRUCT>
+       <OPTIONAL>X</OPTIONAL>
+      </RSTBL>
+     </TABLES>
+     <DOCUMENTATION>
+      <RSFDO>
+       <PARAMETER>I_VBELN</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Sales Document</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>I_XVBAK</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Sales Document: Header Data</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>I_VBUK</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Sales Document: Header Status and Administrative Data</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>E_RET_ORD_FLAG</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>General Flag</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>E_NOCHARGE_FLAG</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>General Flag</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>E_NOCHARGE_CREATE</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>General Flag</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>E_NO_TRIGGER_WF</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>General Flag</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>T_XVBAP</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Document Structure for XVBAP/YVBAP</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>T_XVBFA</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Reference Structure for XVBFA/YVBFA</STEXT>
+      </RSFDO>
+     </DOCUMENTATION>
+    </item>
+   </FUNCTIONS>
+  </asx:values>
+ </asx:abap>
+</abapGit>

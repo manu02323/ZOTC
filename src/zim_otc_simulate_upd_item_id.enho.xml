@@ -1,0 +1,189 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<abapGit version="v1.0.0" serializer="LCL_OBJECT_ENHO" serializer_version="v1.0.0">
+ <asx:abap xmlns:asx="http://www.sap.com/abapxml" version="1.0">
+  <asx:values>
+   <TOOL>HOOK_IMPL</TOOL>
+   <SHORTTEXT>Update item id in case there is batch error</SHORTTEXT>
+   <ORIGINAL_OBJECT>
+    <PGMID>R3TR</PGMID>
+    <ORG_OBJ_TYPE>CLAS</ORG_OBJ_TYPE>
+    <ORG_OBJ_NAME>CL_SLS_SALESORDERERPCRTCHKQR</ORG_OBJ_NAME>
+    <ORG_MAIN_TYPE>CLAS</ORG_MAIN_TYPE>
+    <ORG_MAIN_NAME>CL_SLS_SALESORDERERPCRTCHKQR</ORG_MAIN_NAME>
+    <PROGRAMNAME>CL_SLS_SALESORDERERPCRTCHKQR==CP</PROGRAMNAME>
+   </ORIGINAL_OBJECT>
+   <ENHANCEMENTS>
+    <ENH_HOOK_IMPL>
+     <PROGRAMNAME>CL_SLS_SALESORDERERPCRTCHKQR==CP</PROGRAMNAME>
+     <ENHMODE>D</ENHMODE>
+     <FULL_NAME>\TY:CL_SLS_SALESORDERERPCRTCHKQR\ME:INPUT_MAP_ITEM\SE:END\EI</FULL_NAME>
+     <SOURCE>
+      <item>***********************************************************************</item>
+      <item>*Program    : ZIM_OTC_SIMULATE_UPD_ITEM_ID                            *</item>
+      <item>*Title      : ES Sales Order Simulation                               *</item>
+      <item>*Developer  : Shruti Gupta                                            *</item>
+      <item>*Object type: Interface                                               *</item>
+      <item>*SAP Release: SAP ECC 6.0                                             *</item>
+      <item>*---------------------------------------------------------------------*</item>
+      <item>*WRICEF ID: D2_OTC_IDD_0095_SAP                                       *</item>
+      <item>*---------------------------------------------------------------------*</item>
+      <item>*Description:Simulate Sales Order to retrieve ATP information, prices,*</item>
+      <item>*            taxes and handling charges for subscribing applications  *                                                                     *</item>
+      <item>*---------------------------------------------------------------------*</item>
+      <item>*MODIFICATION HISTORY:</item>
+      <item>*=====================================================================*</item>
+      <item>*Date           User        Transport       Description</item>
+      <item>*=========== ============== ============== ===========================*</item>
+      <item>*24-Dec-2014  SGUPTA4        E2DK900468     DEFECT #2672. Item ID is  *</item>
+      <item>*                                           populated in case of a    *</item>
+      <item>*                                           Batch ID error.           *</item>
+      <item>*19-JAN-2014  SGUPTA4        E2DK900468     DEFECT#3128, EMI check    *</item>
+      <item>*                                           included and making EMI   *</item>
+      <item>*                                           enhancement number unique.*</item>
+      <item>*---------------------------------------------------------------------*</item>
+      <item/>
+      <item>CONSTANTS: lc_productbatchid   TYPE symsgv VALUE &apos;ProductBatchID&apos;,               &quot;Message Variable</item>
+      <item>* ---&gt; Begin of Insert for Defect#3128, D2_OTC_IDD_0095 by SGUPTA4</item>
+      <item>lc_null              TYPE z_criteria    VALUE &apos;NULL&apos;,                 &quot; Enh. Criteria</item>
+      <item>lc_otc_idd_0095_0005 TYPE z_enhancement VALUE &apos;D2_OTC_IDD_0095_0005&apos;. &quot; Enhancement</item>
+      <item>* &lt;--- End   of Insert for Defect#3128, D2_OTC_IDD_0095 by SGUPTA4</item>
+      <item/>
+      <item>FIELD-SYMBOLS: &lt;lfs_message&gt;  TYPE bapiret2. &quot;Return Parameter</item>
+      <item/>
+      <item>DATA: lv_item_id TYPE sapplco_bus_trans_item_id, &quot;Business Transaction Document Item ID</item>
+      <item>* ---&gt; Begin of Insert for Defect#3128, D2_OTC_IDD_0095 by SGUPTA4</item>
+      <item>li_status  TYPE STANDARD TABLE OF zdev_enh_status. &quot; Enhancement Status</item>
+      <item>* &lt;--- End   of Insert for Defect#3128, D2_OTC_IDD_0095 by SGUPTA4</item>
+      <item/>
+      <item>* ---&gt; Begin of Insert for Defect#3128, D2_OTC_IDD_0095 by SGUPTA4</item>
+      <item/>
+      <item>* Call to EMI Function Module To Get List Of EMI Statuses</item>
+      <item>CALL FUNCTION &apos;ZDEV_ENHANCEMENT_STATUS_CHECK&apos;</item>
+      <item>EXPORTING</item>
+      <item>iv_enhancement_no = lc_otc_idd_0095_0005 &quot;D2_OTC_IDD_0095_0005</item>
+      <item>TABLES</item>
+      <item>tt_enh_status     = li_status.  &quot;Enhancement status table</item>
+      <item/>
+      <item>*Non active entries are removed.</item>
+      <item>DELETE li_status WHERE active EQ abap_false.</item>
+      <item/>
+      <item>READ TABLE li_status WITH KEY criteria = lc_null TRANSPORTING NO FIELDS. &quot;NULL.</item>
+      <item>IF sy-subrc EQ 0.</item>
+      <item/>
+      <item>* &lt;--- End   of Insert for Defect#3128, D2_OTC_IDD_0095 by SGUPTA4</item>
+      <item/>
+      <item>**In case of an error in Batch ID the Item ID was not getting populated in the proxy,</item>
+      <item>**hence an implicit enhancement has been done to populate the error log table with the</item>
+      <item>**Item ID. This item ID is then passed to z01otc_zreference_id in method</item>
+      <item>**IF_SLS_APPL_SE_SOERPCRTCHKQR~OUTBOUND_PROCESSING of BAdI ZCL_IM_SIMULATE_SO.</item>
+      <item/>
+      <item>IF cv_flag_error EQ abap_true AND &lt;ls_item_in&gt; IS ASSIGNED.</item>
+      <item>* Capturing the Item Id in case of an error.</item>
+      <item>lv_item_id = &lt;ls_item_in&gt;-buyer_document-item_id.</item>
+      <item>ENDIF. &quot; IF CV_FLAG_ERROR EQ abap_true AND &lt;ls_item_in&gt; IS ASSIGNED</item>
+      <item/>
+      <item>* Populating the Messge Log table with the Item ID</item>
+      <item>LOOP AT ct_message_log ASSIGNING &lt;lfs_message&gt;.</item>
+      <item>IF &lt;lfs_message&gt;-message_v1 EQ lc_productbatchid.</item>
+      <item>* Passing the Item ID to Parameter</item>
+      <item>&lt;lfs_message&gt;-parameter = lv_item_id.</item>
+      <item>ENDIF. &quot; IF &lt;lfs_message&gt;-MESSAGE_V1 EQ lc_ProductBatchID</item>
+      <item>ENDLOOP. &quot; LOOP AT ct_message_log ASSIGNING &lt;lfs_message&gt;</item>
+      <item/>
+      <item>* ---&gt; Begin of Insert for Defect#3128, D2_OTC_IDD_0095 by SGUPTA4</item>
+      <item/>
+      <item>ENDIF.</item>
+      <item/>
+      <item>* &lt;--- End   of Insert for Defect#3128, D2_OTC_IDD_0095 by SGUPTA4</item>
+      <item/>
+     </SOURCE>
+    </ENH_HOOK_IMPL>
+   </ENHANCEMENTS>
+   <SPACES>
+    <item>
+     <FULL_NAME>\TY:CL_SLS_SALESORDERERPCRTCHKQR\ME:INPUT_MAP_ITEM\SE:END\EI</FULL_NAME>
+     <SPACES>
+      <item>0</item>
+      <item>0</item>
+      <item>0</item>
+      <item>0</item>
+      <item>0</item>
+      <item>0</item>
+      <item>0</item>
+      <item>0</item>
+      <item>0</item>
+      <item>0</item>
+      <item>0</item>
+      <item>0</item>
+      <item>0</item>
+      <item>0</item>
+      <item>0</item>
+      <item>0</item>
+      <item>0</item>
+      <item>0</item>
+      <item>0</item>
+      <item>0</item>
+      <item>0</item>
+      <item>0</item>
+      <item>0</item>
+      <item>0</item>
+      <item>2</item>
+      <item>0</item>
+      <item>13</item>
+      <item>13</item>
+      <item>0</item>
+      <item>0</item>
+      <item>2</item>
+      <item>0</item>
+      <item>2</item>
+      <item>0</item>
+      <item>8</item>
+      <item>0</item>
+      <item>0</item>
+      <item>0</item>
+      <item>0</item>
+      <item>0</item>
+      <item>2</item>
+      <item>4</item>
+      <item>6</item>
+      <item>4</item>
+      <item>6</item>
+      <item>0</item>
+      <item>0</item>
+      <item>2</item>
+      <item>0</item>
+      <item>2</item>
+      <item>2</item>
+      <item>0</item>
+      <item>0</item>
+      <item>0</item>
+      <item>0</item>
+      <item>0</item>
+      <item>0</item>
+      <item>0</item>
+      <item>0</item>
+      <item>2</item>
+      <item>0</item>
+      <item>4</item>
+      <item>2</item>
+      <item>0</item>
+      <item>0</item>
+      <item>2</item>
+      <item>4</item>
+      <item>0</item>
+      <item>6</item>
+      <item>4</item>
+      <item>2</item>
+      <item>0</item>
+      <item>0</item>
+      <item>0</item>
+      <item>0</item>
+      <item>0</item>
+      <item>0</item>
+      <item>0</item>
+     </SPACES>
+    </item>
+   </SPACES>
+  </asx:values>
+ </asx:abap>
+</abapGit>

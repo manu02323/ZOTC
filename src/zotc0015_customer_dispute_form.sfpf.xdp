@@ -1,0 +1,1960 @@
+<?xml version="1.0" encoding="utf-8"?>
+<?xfa generator="AdobeLiveCycleDesignerES_V9.0.1.0.20091206.1.615263_SAP" APIVersion="3.2.9310.0"?><xdp:xdp xmlns:xdp="http://ns.adobe.com/xdp/" timeStamp="2018-03-23T10:57:06Z" uuid="2dbf5ecf-1f45-4349-b7a8-aee7450d41bf">
+<template xmlns:xliff="urn:oasis:names:tc:xliff:document:1.1" xmlns="http://www.xfa.org/schema/xfa-template/2.8/">
+   <tags xmlns="http://www.xfa.org/schema/xfa-xliff/1.0/"><value id="N136-4"><body xmlns="http://www.w3.org/1999/xhtml" xmlns:xft-xliff="http://www.xfa.org/schema/xfa-xliff/1.0/" xmlns:xfa="http://www.xfa.org/schema/xfa-data/1.0/" xfa:APIVersion="2.7.9246.0"><p><span style="xfa-spacerun:yes"/></p></body></value><value id="N1363-4"><body xmlns="http://www.w3.org/1999/xhtml" xmlns:xft-xliff="http://www.xfa.org/schema/xfa-xliff/1.0/" xmlns:xfa="http://www.xfa.org/schema/xfa-data/1.0/" xfa:APIVersion="2.7.9246.0"><p><span style="xfa-spacerun:yes"/></p></body></value><value id="N1468-4"><body xmlns="http://www.w3.org/1999/xhtml" xmlns:xft-xliff="http://www.xfa.org/schema/xfa-xliff/1.0/" xmlns:xfa="http://www.xfa.org/schema/xfa-data/1.0/" xfa:APIVersion="2.7.9246.0"><p><span style="xfa-spacerun:yes"/></p></body></value><value id="N1627-4"><body xmlns="http://www.w3.org/1999/xhtml" xmlns:xft-xliff="http://www.xfa.org/schema/xfa-xliff/1.0/" xmlns:xfa="http://www.xfa.org/schema/xfa-data/1.0/" xfa:APIVersion="2.7.9246.0"><p><span style="xfa-spacerun:yes"/></p></body></value><value id="N1812-4"><body xmlns="http://www.w3.org/1999/xhtml" xmlns:xft-xliff="http://www.xfa.org/schema/xfa-xliff/1.0/" xmlns:xfa="http://www.xfa.org/schema/xfa-data/1.0/" xfa:APIVersion="2.7.9246.0"><p><span style="xfa-spacerun:yes"/></p></body></value><value id="N1906-4"><body xmlns="http://www.w3.org/1999/xhtml" xmlns:xft-xliff="http://www.xfa.org/schema/xfa-xliff/1.0/" xmlns:xfa="http://www.xfa.org/schema/xfa-data/1.0/" xfa:APIVersion="2.7.9246.0"><p><span style="xfa-spacerun:yes"/></p></body></value><value id="N1983-4"><body xmlns="http://www.w3.org/1999/xhtml" xmlns:xft-xliff="http://www.xfa.org/schema/xfa-xliff/1.0/" xmlns:xfa="http://www.xfa.org/schema/xfa-data/1.0/" xfa:APIVersion="2.7.9246.0"><p><span style="xfa-spacerun:yes"/></p></body></value><value id="N221-4"><body xmlns="http://www.w3.org/1999/xhtml" xmlns:xft-xliff="http://www.xfa.org/schema/xfa-xliff/1.0/" xmlns:xfa="http://www.xfa.org/schema/xfa-data/1.0/" xfa:APIVersion="2.7.9246.0"><p><span style="xfa-spacerun:yes"/></p></body></value><value id="N3105-4"><body xmlns="http://www.w3.org/1999/xhtml" xmlns:xft-xliff="http://www.xfa.org/schema/xfa-xliff/1.0/" xmlns:xfa="http://www.xfa.org/schema/xfa-data/1.0/" xfa:APIVersion="2.7.9246.0"><p><span style="xfa-spacerun:yes"/></p></body></value><value id="N319-4"><body xmlns="http://www.w3.org/1999/xhtml" xmlns:xft-xliff="http://www.xfa.org/schema/xfa-xliff/1.0/" xmlns:xfa="http://www.xfa.org/schema/xfa-data/1.0/" xfa:APIVersion="2.7.9246.0"><p><span style="xfa-spacerun:yes"/></p></body></value><value id="N3235-4"><body xmlns="http://www.w3.org/1999/xhtml" xmlns:xft-xliff="http://www.xfa.org/schema/xfa-xliff/1.0/" xmlns:xfa="http://www.xfa.org/schema/xfa-data/1.0/" xfa:APIVersion="2.7.9246.0"><p><span style="xfa-spacerun:yes"/></p></body></value><value id="N413-4"><body xmlns="http://www.w3.org/1999/xhtml" xmlns:xft-xliff="http://www.xfa.org/schema/xfa-xliff/1.0/" xmlns:xfa="http://www.xfa.org/schema/xfa-data/1.0/" xfa:APIVersion="2.7.9246.0"><p><span style="xfa-spacerun:yes"/></p></body></value></tags>
+   <?formServer defaultPDFRenderFormat acrobat9.0dynamic?>
+   <subform layout="tb" locale="en_US" name="data" restoreState="auto">
+      <pageSet>
+         <pageArea id="Page1" name="PAGE">
+            <contentArea h="10.5in" name="CA" w="8in" x="0.25in" y="0.25in"/>
+            <medium long="11in" short="8.5in" stock="letter"/>
+            <field h="6.477mm" name="Customer_no" w="82.55mm" x="15.875mm" y="73.025mm">
+               <ui>
+                  <textEdit>
+                     <border presence="hidden">
+                        <?templateDesigner StyleID aped0?></border>
+                     <margin/>
+                  </textEdit>
+               </ui>
+               <font typeface="Arial"/>
+               <margin bottomInset="1mm" leftInset="1.0008mm" rightInset="1mm" topInset="1mm"/>
+               <para vAlign="middle"/>
+               <caption reserve="37mm">
+                  <para marginLeft="0pt" marginRight="0pt" spaceAbove="0pt" spaceBelow="0pt" textIndent="0pt" vAlign="middle"/>
+                  <font baselineShift="0pt" typeface="Arial" weight="bold"/>
+               </caption>
+               <bind match="dataRef" ref="CORRATTR.FIN_KUNNR"/>
+               <setProperty ref="$record.STANDARD_TEXT.CUST_NO" target="caption.value.#text"/>
+            </field>
+            <subform layout="tb" x="117.475mm" y="73.025mm">
+               <bind match="none"/>
+               <subform layout="lr-tb">
+                  <bind match="none"/>
+                  <field minH="6.477mm" minW="47mm" name="Original_ref">
+                     <ui>
+                        <textEdit/>
+                     </ui>
+                     <bind match="dataRef" ref="STANDARD_TEXT.ORG_INV"/>
+                     <desc>
+                        <exData name="Schema Annotation">Graphic Node for logo 
+ URL-FIELD = GV_LOGO_BIN</exData>
+                     </desc>
+                     <value>
+                        <exData xmlns:xft-xliff="http://www.xfa.org/schema/xfa-xliff/1.0/" contentType="text/html" xft-xliff:id="N136-4">
+                           <body xmlns="http://www.w3.org/1999/xhtml" xmlns:xfa="http://www.xfa.org/schema/xfa-data/1.0/" xfa:APIVersion="2.7.9246.0"><p><span style="xfa-spacerun:yes"/></p></body>
+                        </exData>
+                     </value>
+                     <font typeface="Arial" weight="bold"/>
+                  </field>
+                  <field h="6.477mm" name="Original_Ref" w="26.85mm">
+                     <ui>
+                        <textEdit>
+                           <border presence="hidden">
+                              <?templateDesigner StyleID aped0?></border>
+                           <margin/>
+                        </textEdit>
+                     </ui>
+                     <font typeface="Arial"/>
+                     <margin bottomInset="1mm" leftInset="1.0008mm" rightInset="1mm" topInset="1mm"/>
+                     <para vAlign="middle"/>
+                     <bind match="dataRef" ref="CORRATTR.EXT_REF"/>
+                  </field>
+                  <?templateDesigner expand 1?></subform>
+               <subform layout="lr-tb">
+                  <bind match="none"/>
+                  <field minH="6.477mm" minW="47mm" name="claim_text">
+                     <ui>
+                        <textEdit/>
+                     </ui>
+                     <bind match="dataRef" ref="STANDARD_TEXT.CLAIM"/>
+                     <desc>
+                        <exData name="Schema Annotation">Graphic Node for logo 
+ URL-FIELD = GV_LOGO_BIN</exData>
+                     </desc>
+                     <value>
+                        <exData xmlns:xft-xliff="http://www.xfa.org/schema/xfa-xliff/1.0/" contentType="text/html" xft-xliff:id="N221-4">
+                           <body xmlns="http://www.w3.org/1999/xhtml" xmlns:xfa="http://www.xfa.org/schema/xfa-data/1.0/" xfa:APIVersion="2.7.9246.0"><p><span style="xfa-spacerun:yes"/></p></body>
+                        </exData>
+                     </value>
+                     <font typeface="Arial" weight="bold"/>
+                  </field>
+                  <field h="6.477mm" name="Claim_No" w="26.85mm">
+                     <ui>
+                        <textEdit>
+                           <border presence="hidden">
+                              <?templateDesigner StyleID aped0?></border>
+                           <margin/>
+                        </textEdit>
+                     </ui>
+                     <font typeface="Arial"/>
+                     <margin bottomInset="1mm" leftInset="1.0008mm" rightInset="1mm" topInset="1mm"/>
+                     <para vAlign="middle"/>
+                     <bind match="dataRef" ref="CORRATTR.EXT_KEY"/>
+                  </field>
+                  <?templateDesigner expand 1?></subform>
+               <subform layout="lr-tb">
+                  <bind match="none"/>
+                  <field minH="6.477mm" minW="47mm" name="Claim_Amount_text">
+                     <ui>
+                        <textEdit>
+                           <border presence="hidden">
+                              <?templateDesigner StyleID aped0?></border>
+                           <margin/>
+                        </textEdit>
+                     </ui>
+                     <font typeface="Arial" weight="bold"/>
+                     <margin bottomInset="0mm" leftInset="0mm" rightInset="0mm" topInset="0mm"/>
+                     <para vAlign="middle"/>
+                     <bind match="dataRef" ref="STANDARD_TEXT.CLAIM_AMT"/>
+                     <value>
+                        <exData xmlns:xft-xliff="http://www.xfa.org/schema/xfa-xliff/1.0/" contentType="text/html" xft-xliff:id="N319-4">
+                           <body xmlns="http://www.w3.org/1999/xhtml" xmlns:xfa="http://www.xfa.org/schema/xfa-data/1.0/" xfa:APIVersion="2.7.9246.0"><p><span style="xfa-spacerun:yes"/></p></body>
+                        </exData>
+                     </value>
+                  </field>
+                  <field h="6.477mm" name="Claim_Amount" w="26.85mm">
+                     <ui>
+                        <textEdit>
+                           <border presence="hidden">
+                              <?templateDesigner StyleID aped0?></border>
+                           <margin/>
+                        </textEdit>
+                     </ui>
+                     <font typeface="Arial"/>
+                     <margin bottomInset="1mm" leftInset="1.0008mm" rightInset="1mm" topInset="1mm"/>
+                     <para vAlign="middle"/>
+                     <bind match="dataRef" ref="GLOBAL_DATA.GV_REMIT_AMT"/>
+                  </field>
+                  <?templateDesigner expand 1?></subform>
+               <subform layout="lr-tb">
+                  <bind match="none"/>
+                  <field minH="6.477mm" minW="47mm" name="Deduction_Date_text">
+                     <ui>
+                        <textEdit>
+                           <border presence="hidden">
+                              <?templateDesigner StyleID aped0?></border>
+                           <margin/>
+                        </textEdit>
+                     </ui>
+                     <font typeface="Arial" weight="bold"/>
+                     <margin bottomInset="0mm" leftInset="0mm" rightInset="0mm" topInset="0mm"/>
+                     <para vAlign="middle"/>
+                     <bind match="dataRef" ref="STANDARD_TEXT.DEC_DATE"/>
+                     <value>
+                        <exData xmlns:xft-xliff="http://www.xfa.org/schema/xfa-xliff/1.0/" contentType="text/html" xft-xliff:id="N413-4">
+                           <body xmlns="http://www.w3.org/1999/xhtml" xmlns:xfa="http://www.xfa.org/schema/xfa-data/1.0/" xfa:APIVersion="2.7.9246.0"><p><span style="xfa-spacerun:yes"/></p></body>
+                        </exData>
+                     </value>
+                  </field>
+                  <field h="6.477mm" name="Deduction_Date" w="26.85mm">
+                     <ui>
+                        <textEdit>
+                           <border presence="hidden">
+                              <?templateDesigner StyleID aped0?></border>
+                           <margin/>
+                        </textEdit>
+                     </ui>
+                     <font typeface="Arial"/>
+                     <margin bottomInset="1mm" leftInset="1.0008mm" rightInset="1mm" topInset="1mm"/>
+                     <para vAlign="middle"/>
+                     <bind match="dataRef" ref="GLOBAL_DATA.GV_DEDUCTION_DATE"/>
+                  </field>
+                  <?templateDesigner expand 1?></subform>
+               <?templateDesigner expand 0?></subform>
+            <field h="6.477mm" minW="82.075mm" name="Customer_name" x="15.875mm" y="82.55mm">
+               <ui>
+                  <textEdit>
+                     <border presence="hidden">
+                        <?templateDesigner StyleID aped0?></border>
+                     <margin/>
+                  </textEdit>
+               </ui>
+               <font typeface="Arial"/>
+               <margin bottomInset="1mm" leftInset="1.0008mm" rightInset="1mm" topInset="1mm"/>
+               <para vAlign="middle"/>
+               <caption reserve="37mm">
+                  <para marginLeft="0pt" marginRight="0pt" spaceAbove="0pt" spaceBelow="0pt" textIndent="0pt" vAlign="middle"/>
+                  <font baselineShift="0pt" typeface="Arial" weight="bold"/>
+               </caption>
+               <bind match="dataRef" ref="GLOBAL_DATA.WA_BILL_TO_ADDR.NAME1"/>
+               <setProperty ref="$record.STANDARD_TEXT.CUST_NAME" target="caption.value.#text"/>
+            </field>
+            <field h="10.8mm" name="LOGO" w="40.5mm" x="20.225mm" y="15.875mm">
+               <ui>
+                  <imageEdit data="embed"/>
+               </ui>
+               <caption placement="bottom" reserve="0mm">
+                  <font typeface="Arial"/>
+                  <para vAlign="middle"/>
+               </caption>
+               <bind match="dataRef" ref="GLOBAL_DATA.LOGO"/>
+               <desc>
+                  <exData name="Schema Annotation">Graphic Node for logo 
+ URL-FIELD = GV_LOGO_BIN</exData>
+                  <text name="embeddedHref">Unknown Embedded URI</text>
+               </desc>
+            </field>
+            <subform layout="tb" name="flowed_D3" presence="hidden" x="18.971mm" y="30mm">
+               <bind match="none"/>
+               <field minH="1mm" minW="69.85mm" name="LINE0">
+                  <ui>
+                     <textEdit>
+                        <border presence="hidden">
+                           <?templateDesigner StyleID aped0?></border>
+                        <margin/>
+                     </textEdit>
+                  </ui>
+                  <font typeface="Arial"/>
+                  <margin bottomInset="0.2mm" leftInset="0mm" rightInset="0mm" topInset="0.2mm"/>
+                  <para vAlign="middle"/>
+                  <value>
+                     <text maxChars="80"/>
+                  </value>
+                  <bind match="dataRef" ref="$.I_ADRS_REMIT_TO.LINE0"/>
+                  <desc>
+                     <text name="Schema Annotation">Name 1</text>
+                  </desc>
+                  <event activity="ready" name="event__form_ready" ref="$form">
+                     <script contentType="application/x-javascript">if (this.rawValue == null)
+{
+ this.presence = "invisible";
+}
+//if ( $.rawValue == null )then
+//$.presence = "invisible"
+//endif
+</script>
+                  </event>
+               </field>
+               <field minH="1mm" minW="69.85mm" name="LINE1">
+                  <ui>
+                     <textEdit>
+                        <border presence="hidden">
+                           <?templateDesigner StyleID aped0?></border>
+                        <margin/>
+                     </textEdit>
+                  </ui>
+                  <font typeface="Arial"/>
+                  <margin bottomInset="0.2mm" leftInset="0mm" rightInset="0mm" topInset="0.2mm"/>
+                  <para vAlign="middle"/>
+                  <value>
+                     <text maxChars="80"/>
+                  </value>
+                  <bind match="dataRef" ref="I_ADRS_REMIT_TO.LINE1"/>
+                  <desc>
+                     <text name="Schema Annotation">Name 2</text>
+                  </desc>
+                  <event activity="ready" name="event__form_ready" ref="$form">
+                     <script>if (this.rawValue == null)
+{
+ this.presence = "invisible";
+}
+//if ( $.rawValue == null )then
+//$.presence = "invisible"
+//endif
+
+</script>
+                  </event>
+               </field>
+               <field minH="1mm" minW="69.85mm" name="LINE2">
+                  <ui>
+                     <textEdit>
+                        <border presence="hidden">
+                           <?templateDesigner StyleID aped0?></border>
+                        <margin/>
+                     </textEdit>
+                  </ui>
+                  <font typeface="Arial"/>
+                  <margin bottomInset="0.2mm" leftInset="0mm" rightInset="0mm" topInset="0.2mm"/>
+                  <para vAlign="middle"/>
+                  <value>
+                     <text maxChars="80"/>
+                  </value>
+                  <bind match="dataRef" ref="I_ADRS_REMIT_TO.LINE2"/>
+                  <desc>
+                     <text name="Schema Annotation">Name 3</text>
+                  </desc>
+                  <event activity="ready" name="event__form_ready" ref="$form">
+                     <script>if (this.rawValue == null)
+{
+ this.presence = "invisible";
+}
+//if ( $.rawValue == null )then
+//$.presence = "invisible"
+//endif
+
+</script>
+                  </event>
+               </field>
+               <field minH="1mm" minW="69.85mm" name="LINE3">
+                  <ui>
+                     <textEdit>
+                        <border presence="hidden">
+                           <?templateDesigner StyleID aped0?></border>
+                        <margin/>
+                     </textEdit>
+                  </ui>
+                  <font typeface="Arial"/>
+                  <margin bottomInset="0.1mm" leftInset="0mm" rightInset="0mm" topInset="0.1mm"/>
+                  <para vAlign="middle"/>
+                  <value>
+                     <text maxChars="80"/>
+                  </value>
+                  <bind match="dataRef" ref="$.I_ADRS_REMIT_TO.LINE3"/>
+                  <desc>
+                     <text name="Schema Annotation">Name 3</text>
+                  </desc>
+                  <event activity="ready" name="event__form_ready" ref="$form">
+                     <script>if (this.rawValue == null)
+{
+ this.presence = "invisible";
+}
+//if ( $.rawValue == null )then
+//$.presence = "invisible"
+//endif
+
+</script>
+                  </event>
+               </field>
+               <field minH="1mm" minW="69.85mm" name="LINE4">
+                  <ui>
+                     <textEdit>
+                        <border presence="hidden">
+                           <?templateDesigner StyleID aped0?></border>
+                        <margin/>
+                     </textEdit>
+                  </ui>
+                  <font typeface="Arial"/>
+                  <margin bottomInset="0.1mm" leftInset="0mm" rightInset="0mm" topInset="0.1mm"/>
+                  <para vAlign="middle"/>
+                  <value>
+                     <text maxChars="80"/>
+                  </value>
+                  <bind match="dataRef" ref="$.I_ADRS_REMIT_TO.LINE4"/>
+                  <desc>
+                     <text name="Schema Annotation">Name 3</text>
+                  </desc>
+                  <event activity="ready" name="event__form_ready" ref="$form">
+                     <script>if (this.rawValue == null)
+{
+ this.presence = "invisible";
+}
+//if ( $.rawValue == null )then
+//$.presence = "invisible"
+//endif
+
+</script>
+                  </event>
+               </field>
+               <field minH="1mm" minW="69.85mm" name="LINE5">
+                  <ui>
+                     <textEdit>
+                        <border presence="hidden">
+                           <?templateDesigner StyleID aped0?></border>
+                        <margin/>
+                     </textEdit>
+                  </ui>
+                  <font typeface="Arial"/>
+                  <margin bottomInset="0.1mm" leftInset="0mm" rightInset="0mm" topInset="0.1mm"/>
+                  <para vAlign="middle"/>
+                  <value>
+                     <text maxChars="80"/>
+                  </value>
+                  <bind match="dataRef" ref="$.I_ADRS_REMIT_TO.LINE5"/>
+                  <desc>
+                     <text name="Schema Annotation">Name 3</text>
+                  </desc>
+                  <event activity="ready" name="event__form_ready" ref="$form">
+                     <script>if (this.rawValue == null)
+{
+ this.presence = "invisible";
+}
+//if ( $.rawValue == null )then
+//$.presence = "invisible"
+//endif
+
+</script>
+                  </event>
+               </field>
+               <field minH="1mm" minW="69.85mm" name="LINE6">
+                  <ui>
+                     <textEdit>
+                        <border presence="hidden">
+                           <?templateDesigner StyleID aped0?></border>
+                        <margin/>
+                     </textEdit>
+                  </ui>
+                  <font typeface="Arial"/>
+                  <margin bottomInset="0.1mm" leftInset="0mm" rightInset="0mm" topInset="0.1mm"/>
+                  <para vAlign="middle"/>
+                  <value>
+                     <text maxChars="80"/>
+                  </value>
+                  <bind match="dataRef" ref="$.I_ADRS_REMIT_TO.LINE6"/>
+                  <desc>
+                     <text name="Schema Annotation">Name 3</text>
+                  </desc>
+                  <event activity="ready" name="event__form_ready" ref="$form">
+                     <script>if (this.rawValue == null)
+{
+ this.presence = "invisible";
+}
+//if ( $.rawValue == null )then
+//$.presence = "invisible"
+//endif
+
+</script>
+                  </event>
+               </field>
+               <?templateDesigner expand 0?></subform>
+            <subform columnWidths="69.8503mm" layout="table" name="Remit_To_Addr" x="19.05mm" y="31.4mm">
+               <border>
+                  <edge presence="hidden"/>
+                  <corner presence="hidden"/>
+               </border>
+               <subform layout="row" name="Row">
+                  <assist role="TR"/>
+                  <field minH="3mm" name="Lines">
+                     <ui>
+                        <textEdit/>
+                     </ui>
+                     <font typeface="Arial"/>
+                     <margin bottomInset="0.2mm" leftInset="0mm" rightInset="0mm" topInset="0.2mm"/>
+                     <para vAlign="middle"/>
+                     <border>
+                        <edge presence="hidden"/>
+                        <corner presence="hidden" thickness="0.1778mm"/>
+                     </border>
+                     <bind match="dataRef" ref="$.LINES"/>
+                  </field>
+                  <border>
+                     <edge presence="hidden"/>
+                  </border>
+                  <bind match="dataRef" ref="$.DATA[*]"/>
+                  <?templateDesigner expand 1?>
+                  <occur max="-1"/>
+               </subform>
+               <bind match="dataRef" ref="$.I_REMIT_TO_ADDR"/>
+               <?templateDesigner rowpattern first:1, next:1, firstcolor:f0f0f0, nextcolor:ffffff, apply:0?>
+               <?templateDesigner expand 0?></subform>
+            <subform layout="tb" name="flowed_D2" w="69.85mm" x="18.971mm" y="30mm">
+               <bind match="none"/>
+               <field h="5mm" name="LINE0" w="69.85mm">
+                  <ui>
+                     <textEdit>
+                        <border presence="hidden">
+                           <?templateDesigner StyleID aped0?></border>
+                        <margin/>
+                     </textEdit>
+                  </ui>
+                  <font typeface="Arial"/>
+                  <margin bottomInset="1mm" leftInset="0mm" rightInset="0mm" topInset="1mm"/>
+                  <para vAlign="middle"/>
+                  <value>
+                     <text maxChars="80"/>
+                  </value>
+                  <bind match="dataRef" ref="$.I_ADRS.LINE0"/>
+                  <desc>
+                     <text name="Schema Annotation">Address line</text>
+                  </desc>
+                  <event activity="ready" name="event__form_ready" ref="$form">
+                     <script>if ( $.rawValue == null )then
+$.presence = "invisible"
+endif
+</script>
+                  </event>
+               </field>
+               <field h="5mm" name="LINE1" w="69.85mm">
+                  <ui>
+                     <textEdit>
+                        <border presence="hidden">
+                           <?templateDesigner StyleID aped0?></border>
+                        <margin/>
+                     </textEdit>
+                  </ui>
+                  <font typeface="Arial"/>
+                  <margin bottomInset="1mm" leftInset="0mm" rightInset="0mm" topInset="1mm"/>
+                  <para vAlign="middle"/>
+                  <value>
+                     <text maxChars="80"/>
+                  </value>
+                  <bind match="dataRef" ref="$.I_ADRS.LINE1"/>
+                  <desc>
+                     <text name="Schema Annotation">Address line</text>
+                  </desc>
+                  <event activity="ready" name="event__form_ready" ref="$form">
+                     <script>if ( $.rawValue == null )then
+$.presence = "invisible"
+endif
+
+</script>
+                  </event>
+               </field>
+               <field minH="5mm" name="LINE2" w="69.85mm">
+                  <ui>
+                     <textEdit>
+                        <border presence="hidden">
+                           <?templateDesigner StyleID aped0?></border>
+                        <margin/>
+                     </textEdit>
+                  </ui>
+                  <font typeface="Arial"/>
+                  <margin bottomInset="0.2mm" leftInset="0mm" rightInset="0mm" topInset="0.2mm"/>
+                  <para vAlign="middle"/>
+                  <value>
+                     <text maxChars="80"/>
+                  </value>
+                  <bind match="dataRef" ref="$.I_ADRS.LINE2"/>
+                  <desc>
+                     <text name="Schema Annotation">Address line</text>
+                  </desc>
+                  <event activity="ready" name="event__form_ready" ref="$form">
+                     <script>if ( $.rawValue == null )then
+$.presence = "invisible"
+endif
+
+</script>
+                  </event>
+               </field>
+               <field minH="5mm" name="LINE3" w="69.85mm">
+                  <ui>
+                     <textEdit>
+                        <border presence="hidden">
+                           <?templateDesigner StyleID aped0?></border>
+                        <margin/>
+                     </textEdit>
+                  </ui>
+                  <font typeface="Arial"/>
+                  <margin bottomInset="0.2mm" leftInset="0mm" rightInset="0mm" topInset="0.2mm"/>
+                  <para vAlign="middle"/>
+                  <value>
+                     <text maxChars="80"/>
+                  </value>
+                  <bind match="dataRef" ref="$.I_ADRS.LINE3"/>
+                  <desc>
+                     <text name="Schema Annotation">Address line</text>
+                  </desc>
+                  <event activity="ready" name="event__form_ready" ref="$form">
+                     <script>if ( $.rawValue == null )then
+$.presence = "invisible"
+endif
+
+</script>
+                  </event>
+               </field>
+               <?templateDesigner expand 0?></subform>
+            <subform layout="lr-tb" minH="6.477mm" name="VAT" x="18.971mm" y="56.693mm">
+               <bind match="none"/>
+               <event activity="ready" name="event__form_ready" ref="$form">
+                  <script contentType="application/x-javascript">if (this.vat_no.rawValue == null)
+{
+ this.presence = "invisible";
+}
+</script>
+               </event>
+               <event activity="ready" name="event__layout_ready" ref="$layout">
+                  <script contentType="application/x-javascript">if (this.vat_no.rawValue == null)
+{
+ this.presence = "invisible";
+}
+</script>
+               </event>
+               <?templateDesigner expand 0?></subform>
+            <subform layout="tb" name="Lockbox" w="69.85mm" x="125.075mm" y="35mm">
+               <bind match="none"/>
+               <field h="5mm" name="LINE4" w="69.85mm">
+                  <ui>
+                     <textEdit>
+                        <border presence="hidden">
+                           <?templateDesigner StyleID aped0?></border>
+                        <margin/>
+                     </textEdit>
+                  </ui>
+                  <font typeface="Arial"/>
+                  <margin bottomInset="1mm" leftInset="1mm" rightInset="1mm" topInset="1mm"/>
+                  <para vAlign="middle"/>
+                  <value>
+                     <text maxChars="80"/>
+                  </value>
+                  <bind match="dataRef" ref="I_ADRS.LINE4"/>
+                  <desc>
+                     <text name="Schema Annotation">Address line</text>
+                  </desc>
+               </field>
+               <field h="5mm" name="LINE5" w="69.85mm">
+                  <ui>
+                     <textEdit>
+                        <border presence="hidden">
+                           <?templateDesigner StyleID aped0?></border>
+                        <margin/>
+                     </textEdit>
+                  </ui>
+                  <font typeface="Arial"/>
+                  <margin bottomInset="0.2mm" leftInset="1mm" rightInset="1mm" topInset="0.2mm"/>
+                  <para vAlign="middle"/>
+                  <value>
+                     <text maxChars="80"/>
+                  </value>
+                  <bind match="dataRef" ref="I_ADRS.LINE5"/>
+                  <desc>
+                     <text name="Schema Annotation">Address line</text>
+                  </desc>
+                  <event activity="ready" ref="$form">
+                     <script>if ( $.rawValue == null )then
+$.presence = "hidden"
+endif
+
+</script>
+                  </event>
+               </field>
+               <field h="5mm" name="LINE6" w="69.85mm">
+                  <ui>
+                     <textEdit>
+                        <border presence="hidden">
+                           <?templateDesigner StyleID aped0?></border>
+                        <margin/>
+                     </textEdit>
+                  </ui>
+                  <font typeface="Arial"/>
+                  <margin bottomInset="1mm" leftInset="1mm" rightInset="1mm" topInset="1mm"/>
+                  <para vAlign="middle"/>
+                  <value>
+                     <text maxChars="80"/>
+                  </value>
+                  <bind match="dataRef" ref="I_ADRS.LINE6"/>
+                  <desc>
+                     <text name="Schema Annotation">Address line</text>
+                  </desc>
+                  <event activity="ready" ref="$form">
+                     <script>if ( $.rawValue == null )then
+$.presence = "hidden"
+endif
+
+</script>
+                  </event>
+               </field>
+               <field h="5mm" name="LINE7" w="69.85mm">
+                  <ui>
+                     <textEdit>
+                        <border presence="hidden">
+                           <?templateDesigner StyleID aped0?></border>
+                        <margin/>
+                     </textEdit>
+                  </ui>
+                  <font typeface="Arial"/>
+                  <margin bottomInset="1mm" leftInset="1mm" rightInset="1mm" topInset="1mm"/>
+                  <para vAlign="middle"/>
+                  <value>
+                     <text maxChars="80"/>
+                  </value>
+                  <bind match="dataRef" ref="I_ADRS.LINE7"/>
+                  <desc>
+                     <text name="Schema Annotation">Address line</text>
+                  </desc>
+                  <event activity="ready" ref="$form">
+                     <script>if ( $.rawValue == null )then
+$.presence = "hidden"
+endif
+
+</script>
+                  </event>
+               </field>
+               <event activity="ready" ref="$form">
+                  <script contentType="application/x-javascript">if ( $.rawValue == null )then
+$.presence = "hidden"
+endif
+
+</script>
+               </event>
+               <?templateDesigner expand 0?></subform>
+            <field h="85.725mm" name="ImageField1" w="162.323mm" x="28.575mm" y="123.825mm">
+               <ui>
+                  <imageEdit/>
+               </ui>
+               <bind match="dataRef" ref="GLOBAL_DATA.DRAFT"/>
+            </field>
+            <field h="6.477mm" name="Customer_name" w="44.3mm" x="53.975mm" y="88.9mm">
+               <ui>
+                  <textEdit>
+                     <border presence="hidden">
+                        <?templateDesigner StyleID aped0?></border>
+                     <margin/>
+                  </textEdit>
+               </ui>
+               <font typeface="Arial"/>
+               <margin bottomInset="0mm" leftInset="0mm" rightInset="0mm" topInset="0mm"/>
+               <para vAlign="middle"/>
+               <caption reserve="0mm">
+                  <para vAlign="middle"/>
+               </caption>
+               <bind match="dataRef" ref="GLOBAL_DATA.WA_BILL_TO_ADDR.NAME2"/>
+            </field>
+            <field minH="2mm" minW="47.529mm" name="vat_no" x="41.354mm" y="53.975mm">
+               <ui>
+                  <textEdit>
+                     <border presence="hidden">
+                        <?templateDesigner StyleID aped0?></border>
+                     <margin/>
+                  </textEdit>
+               </ui>
+               <font typeface="Arial"/>
+               <margin bottomInset="0mm" leftInset="0mm" rightInset="0mm" topInset="0mm"/>
+               <bind match="dataRef" ref="GLOBAL_DATA.GV_VAT"/>
+            </field>
+            <field anchorType="bottomLeft" minH="2mm" minW="22.304mm" name="vat" x="19.05mm" y="57.702mm">
+               <ui>
+                  <textEdit/>
+               </ui>
+               <bind match="dataRef" ref="STANDARD_TEXT.VAT"/>
+               <desc>
+                  <exData name="Schema Annotation">Graphic Node for logo 
+ URL-FIELD = GV_LOGO_BIN</exData>
+               </desc>
+               <font typeface="Arial"/>
+               <margin bottomInset="0mm" topInset="0mm"/>
+               <event activity="ready" name="event__form_ready" ref="$form">
+                  <script contentType="application/x-javascript">if (this.vat_no.rawValue == null)
+{
+ this.presence = "invisible";
+}
+
+</script>
+               </event>
+               <event activity="ready" name="event__layout_ready" ref="$layout">
+                  <script contentType="application/x-javascript">if (this.vat_no.rawValue == null)
+{
+ this.presence = "invisible";
+}
+</script>
+               </event>
+            </field>
+            <field minH="2mm" name="GV_VAT_IT" w="70.146mm" x="19.05mm" y="54.6mm">
+               <ui>
+                  <textEdit>
+                     <border presence="hidden">
+                        <?templateDesigner StyleID aped0?></border>
+                     <margin/>
+                  </textEdit>
+               </ui>
+               <font typeface="Arial"/>
+               <margin bottomInset="0mm" leftInset="0mm" rightInset="0mm" topInset="0mm"/>
+               <bind match="dataRef" ref="$.GLOBAL_DATA.GV_VAT_IT"/>
+               <desc>
+                  <exData name="Schema Annotation">Text for VAT Number Italy
+SAPScript Include Text 
+ NAME = ZOTC0015_VAT_TEXT 
+ LANGUAGE = I 
+ OBJECT = TEXT 
+ ID = ST</exData>
+               </desc>
+            </field>
+            <field minH="2mm" minW="135.146mm" name="GV_CC_IT" x="19.05mm" y="58mm">
+               <ui>
+                  <textEdit multiLine="1">
+                     <border presence="hidden">
+                        <?templateDesigner StyleID aped0?></border>
+                     <margin/>
+                  </textEdit>
+               </ui>
+               <font typeface="Arial"/>
+               <margin bottomInset="0mm" leftInset="0mm" rightInset="0mm" topInset="0mm"/>
+               <para vAlign="middle"/>
+               <bind match="dataRef" ref="$.GLOBAL_DATA.GV_CC_IT"/>
+            </field>
+            <?templateDesigner expand 1?></pageArea>
+         <?templateDesigner expand 1?></pageSet>
+      <subform h="10.5in" w="8in">
+         <subform h="143.764mm" name="Subform1" w="196.85mm" x="6.35mm" y="92.075mm">
+            <bind match="none"/>
+            <field minH="5.08mm" name="To_txt" w="38.812mm" x="3.175mm" y="58.975mm">
+               <ui>
+                  <textEdit/>
+               </ui>
+               <font baselineShift="0pt" typeface="Arial" weight="bold"/>
+               <margin bottomInset="0.5mm" leftInset="0.5mm" rightInset="0.5mm" topInset="0.5mm"/>
+               <para marginLeft="0pt" marginRight="0pt" spaceAbove="0pt" spaceBelow="0pt" textIndent="0pt"/>
+               <value>
+                  <exData xmlns:xft-xliff="http://www.xfa.org/schema/xfa-xliff/1.0/" contentType="text/html" xft-xliff:id="N1363-4">
+                     <body xmlns="http://www.w3.org/1999/xhtml" xmlns:xfa="http://www.xfa.org/schema/xfa-data/1.0/" xfa:APIVersion="2.7.9246.0"><p><span style="xfa-spacerun:yes"/></p></body>
+                  </exData>
+               </value>
+               <bind match="dataRef" ref="STANDARD_TEXT.TO"/>
+            </field>
+            <field h="4.445mm" name="Bill_name" w="66.675mm" x="94.775mm" y="112.8mm">
+               <ui>
+                  <textEdit>
+                     <border presence="hidden">
+                        <?templateDesigner StyleID aped0?></border>
+                     <margin/>
+                  </textEdit>
+               </ui>
+               <font typeface="Arial"/>
+               <margin bottomInset="1mm" leftInset="0mm" rightInset="1mm" topInset="1mm"/>
+               <para vAlign="middle"/>
+               <caption reserve="0.01in">
+                  <para marginLeft="0pt" marginRight="0pt" spaceAbove="0pt" spaceBelow="0pt" textIndent="0pt" vAlign="middle"/>
+                  <font baselineShift="0pt" typeface="Arial" weight="bold"/>
+               </caption>
+               <bind match="dataRef" ref="GLOBAL_DATA.WA_BILL_TO_ADDR.NAME1"/>
+            </field>
+            <field minH="5.08mm" name="Customer_bill" w="57.15mm" x="94.775mm" y="106.275mm">
+               <ui>
+                  <textEdit/>
+               </ui>
+               <font baselineShift="0pt" typeface="Arial" weight="bold"/>
+               <margin bottomInset="0.5mm" leftInset="0.5mm" rightInset="0.5mm" topInset="0.5mm"/>
+               <para marginLeft="0pt" marginRight="0pt" spaceAbove="0pt" spaceBelow="0pt" textIndent="0pt"/>
+               <value>
+                  <exData xmlns:xft-xliff="http://www.xfa.org/schema/xfa-xliff/1.0/" contentType="text/html" xft-xliff:id="N1468-4">
+                     <body xmlns="http://www.w3.org/1999/xhtml" xmlns:xfa="http://www.xfa.org/schema/xfa-data/1.0/" xfa:APIVersion="2.7.9246.0"><p><span style="xfa-spacerun:yes"/></p></body>
+                  </exData>
+               </value>
+               <bind match="dataRef" ref="STANDARD_TEXT.BILL_TO"/>
+            </field>
+            <field h="4.445mm" name="GV_STREET" w="66.675mm" x="94.775mm" y="117.245mm">
+               <ui>
+                  <textEdit>
+                     <border presence="hidden">
+                        <?templateDesigner StyleID aped0?></border>
+                     <margin/>
+                  </textEdit>
+               </ui>
+               <font typeface="Arial"/>
+               <margin bottomInset="1mm" leftInset="0mm" rightInset="1mm" topInset="1mm"/>
+               <para vAlign="middle"/>
+               <caption reserve="0.01in">
+                  <para marginLeft="0pt" marginRight="0pt" spaceAbove="0pt" spaceBelow="0pt" textIndent="0pt" vAlign="middle"/>
+                  <font baselineShift="0pt" typeface="Arial" weight="bold"/>
+                  <value>
+                     <text xmlns:xft-xliff="http://www.xfa.org/schema/xfa-xliff/1.0/"/>
+                  </value>
+               </caption>
+               <bind match="dataRef" ref="$.GLOBAL_DATA.GV_STREET"/>
+               <value>
+                  <text maxChars="50"/>
+               </value>
+               <desc>
+                  <text name="Schema Annotation">Comment</text>
+               </desc>
+            </field>
+            <field h="4.445mm" name="bill_city" w="76.2mm" x="94.775mm" y="121.69mm">
+               <ui>
+                  <textEdit>
+                     <border presence="hidden">
+                        <?templateDesigner StyleID aped0?></border>
+                     <margin/>
+                  </textEdit>
+               </ui>
+               <font typeface="Arial"/>
+               <margin bottomInset="1mm" leftInset="0mm" rightInset="1mm" topInset="1mm"/>
+               <para vAlign="middle"/>
+               <caption reserve="0.01in">
+                  <para marginLeft="0pt" marginRight="0pt" spaceAbove="0pt" spaceBelow="0pt" textIndent="0pt" vAlign="middle"/>
+                  <font baselineShift="0pt" typeface="Arial" weight="bold"/>
+               </caption>
+               <bind match="dataRef" ref="GLOBAL_DATA.WA_BILL_TO_ADDR.CITY_ADDR"/>
+            </field>
+            <field minH="5.08mm" minW="90.432mm" name="Thank_you" x="3.175mm" y="106.275mm">
+               <ui>
+                  <textEdit/>
+               </ui>
+               <font baselineShift="0pt" typeface="Arial" weight="bold"/>
+               <margin bottomInset="0.5mm" leftInset="0.5mm" rightInset="0.5mm" topInset="0.5mm"/>
+               <para marginLeft="0pt" marginRight="0pt" spaceAbove="0pt" spaceBelow="0pt" textIndent="0pt"/>
+               <value>
+                  <exData xmlns:xft-xliff="http://www.xfa.org/schema/xfa-xliff/1.0/" contentType="text/html" xft-xliff:id="N1627-4">
+                     <body xmlns="http://www.w3.org/1999/xhtml" xmlns:xfa="http://www.xfa.org/schema/xfa-data/1.0/" xfa:APIVersion="2.7.9246.0"><p><span style="xfa-spacerun:yes"/></p></body>
+                  </exData>
+               </value>
+               <bind match="dataRef" ref="STANDARD_TEXT.THANK"/>
+            </field>
+            <field h="4.445mm" name="Cord_name" w="56.896mm" x="3.175mm" y="104.775mm">
+               <ui>
+                  <textEdit>
+                     <border presence="hidden">
+                        <?templateDesigner StyleID aped0?></border>
+                     <margin/>
+                  </textEdit>
+               </ui>
+               <font typeface="Arial"/>
+               <margin bottomInset="1mm" leftInset="0.5mm" rightInset="1mm" topInset="1mm"/>
+               <para vAlign="middle"/>
+               <bind match="dataRef" ref="GLOBAL_DATA.GV_CO_NAME"/>
+            </field>
+            <subform layout="tb" x="3.175mm" y="112.8mm">
+               <bind match="none"/>
+               <subform layout="lr-tb">
+                  <bind match="none"/>
+                  <field minH="5.588mm" minW="15.875mm" name="Text_PHONE">
+                     <ui>
+                        <textEdit>
+                           <border presence="hidden">
+                              <?templateDesigner StyleID aped0?></border>
+                           <margin/>
+                        </textEdit>
+                     </ui>
+                     <font typeface="Arial"/>
+                     <margin bottomInset="1mm" leftInset="1mm" rightInset="1mm" topInset="1mm"/>
+                     <para vAlign="middle"/>
+                     <bind match="dataRef" ref="STANDARD_TEXT.PHONE"/>
+                  </field>
+                  <field h="5.588mm" minW="25mm" name="TextField1">
+                     <ui>
+                        <textEdit>
+                           <border presence="hidden">
+                              <?templateDesigner StyleID aped0?></border>
+                           <margin/>
+                        </textEdit>
+                     </ui>
+                     <font typeface="Arial"/>
+                     <margin bottomInset="1mm" leftInset="1mm" rightInset="1mm" topInset="1mm"/>
+                     <para vAlign="middle"/>
+                     <bind match="dataRef" ref="GLOBAL_DATA.GV_PHONE"/>
+                  </field>
+                  <?templateDesigner expand 1?></subform>
+               <subform layout="lr-tb" w="63.5mm">
+                  <bind match="none"/>
+                  <field minH="6.35mm" minW="31.75mm" name="TextFAX">
+                     <ui>
+                        <textEdit>
+                           <border presence="hidden">
+                              <?templateDesigner StyleID aped0?></border>
+                           <margin/>
+                        </textEdit>
+                     </ui>
+                     <font typeface="Arial" weight="bold"/>
+                     <margin bottomInset="1mm" leftInset="1mm" rightInset="1mm" topInset="1mm"/>
+                     <para vAlign="middle"/>
+                     <bind match="dataRef" ref="STANDARD_TEXT.FAX"/>
+                     <value>
+                        <exData xmlns:xft-xliff="http://www.xfa.org/schema/xfa-xliff/1.0/" contentType="text/html" xft-xliff:id="N1812-4">
+                           <body xmlns="http://www.w3.org/1999/xhtml" xmlns:xfa="http://www.xfa.org/schema/xfa-data/1.0/" xfa:APIVersion="2.7.9246.0"><p><span style="xfa-spacerun:yes"/></p></body>
+                        </exData>
+                     </value>
+                  </field>
+                  <field h="6.35mm" minW="31.75mm" name="TextField1">
+                     <ui>
+                        <textEdit>
+                           <border presence="hidden">
+                              <?templateDesigner StyleID aped0?></border>
+                           <margin/>
+                        </textEdit>
+                     </ui>
+                     <font typeface="Arial"/>
+                     <margin bottomInset="1mm" leftInset="1mm" rightInset="1mm" topInset="1mm"/>
+                     <para vAlign="middle"/>
+                     <bind match="dataRef" ref="GLOBAL_DATA.GV_FAX"/>
+                  </field>
+                  <?templateDesigner expand 1?></subform>
+               <subform layout="lr-tb">
+                  <bind match="none"/>
+                  <field minH="6.35mm" minW="31.75mm" name="Text_EMAIL">
+                     <ui>
+                        <textEdit>
+                           <border presence="hidden">
+                              <?templateDesigner StyleID aped0?></border>
+                           <margin/>
+                        </textEdit>
+                     </ui>
+                     <font typeface="Arial" weight="bold"/>
+                     <margin bottomInset="1mm" leftInset="1mm" rightInset="1mm" topInset="1mm"/>
+                     <para vAlign="middle"/>
+                     <bind match="dataRef" ref="STANDARD_TEXT.EMAIL"/>
+                     <value>
+                        <exData xmlns:xft-xliff="http://www.xfa.org/schema/xfa-xliff/1.0/" contentType="text/html" xft-xliff:id="N1906-4">
+                           <body xmlns="http://www.w3.org/1999/xhtml" xmlns:xfa="http://www.xfa.org/schema/xfa-data/1.0/" xfa:APIVersion="2.7.9246.0"><p><span style="xfa-spacerun:yes"/></p></body>
+                        </exData>
+                     </value>
+                  </field>
+                  <field h="6.35mm" minW="53.975mm" name="TextField1">
+                     <ui>
+                        <textEdit>
+                           <border presence="hidden">
+                              <?templateDesigner StyleID aped0?></border>
+                           <margin/>
+                        </textEdit>
+                     </ui>
+                     <font typeface="Arial"/>
+                     <margin bottomInset="1mm" leftInset="1mm" rightInset="1mm" topInset="1mm"/>
+                     <para vAlign="middle"/>
+                     <bind match="dataRef" ref="GLOBAL_DATA.GV_EMAIL"/>
+                  </field>
+                  <?templateDesigner expand 1?></subform>
+               <?templateDesigner expand 1?></subform>
+            <field minH="5.233mm" minW="44.45mm" name="ATTENTION" x="3.175mm" y="6.35mm">
+               <ui>
+                  <textEdit/>
+               </ui>
+               <font typeface="Arial"/>
+               <margin bottomInset="0.5mm" leftInset="0.5mm" rightInset="0.5mm" topInset="0.5mm"/>
+               <value>
+                  <exData xmlns:xft-xliff="http://www.xfa.org/schema/xfa-xliff/1.0/" contentType="text/html" xft-xliff:id="N1983-4">
+                     <body xmlns="http://www.w3.org/1999/xhtml" xmlns:xfa="http://www.xfa.org/schema/xfa-data/1.0/" xfa:APIVersion="2.7.9246.0"><p><span style="xfa-spacerun:yes"/></p></body>
+                  </exData>
+               </value>
+               <bind match="dataRef" ref="STANDARD_TEXT.ATTENTION"/>
+            </field>
+            <field minH="5mm" name="DISPUTE_TEXT" w="177.8mm" x="3.175mm" y="19.05mm">
+               <ui>
+                  <textEdit multiLine="1"/>
+               </ui>
+               <font typeface="Arial"/>
+               <margin bottomInset="0.5mm" leftInset="0.5mm" rightInset="0.5mm" topInset="0.5mm"/>
+               <bind match="dataRef" ref="$.STANDARD_TEXT.DISPUTE_TEXT"/>
+               <value>
+                  <exData contentType="text/html"/>
+               </value>
+            </field>
+            <subform layout="tb" name="PESOS" w="69.85mm" x="3.175mm" y="65.325mm">
+               <bind match="none"/>
+               <field h="5mm" name="LINE0" w="69.85mm">
+                  <ui>
+                     <textEdit>
+                        <border presence="hidden">
+                           <?templateDesigner StyleID aped0?></border>
+                        <margin/>
+                     </textEdit>
+                  </ui>
+                  <font typeface="Arial"/>
+                  <margin bottomInset="1mm" leftInset="1mm" rightInset="1mm" topInset="1mm"/>
+                  <para vAlign="middle"/>
+                  <value>
+                     <text maxChars="80"/>
+                  </value>
+                  <bind match="dataRef" ref="I_ADRS.LINE0"/>
+                  <desc>
+                     <text name="Schema Annotation">Address line</text>
+                  </desc>
+               </field>
+               <field h="5mm" name="LINE1" w="69.85mm">
+                  <ui>
+                     <textEdit>
+                        <border presence="hidden">
+                           <?templateDesigner StyleID aped0?></border>
+                        <margin/>
+                     </textEdit>
+                  </ui>
+                  <font typeface="Arial"/>
+                  <margin bottomInset="1mm" leftInset="1mm" rightInset="1mm" topInset="1mm"/>
+                  <para vAlign="middle"/>
+                  <value>
+                     <text maxChars="80"/>
+                  </value>
+                  <bind match="dataRef" ref="I_ADRS.LINE1"/>
+                  <desc>
+                     <text name="Schema Annotation">Address line</text>
+                  </desc>
+               </field>
+               <field h="5mm" name="LINE2" w="69.85mm">
+                  <ui>
+                     <textEdit>
+                        <border presence="hidden">
+                           <?templateDesigner StyleID aped0?></border>
+                        <margin/>
+                     </textEdit>
+                  </ui>
+                  <font typeface="Arial"/>
+                  <margin bottomInset="1mm" leftInset="1mm" rightInset="1mm" topInset="1mm"/>
+                  <para vAlign="middle"/>
+                  <value>
+                     <text maxChars="80"/>
+                  </value>
+                  <bind match="dataRef" ref="I_ADRS.LINE2"/>
+                  <desc>
+                     <text name="Schema Annotation">Address line</text>
+                  </desc>
+               </field>
+               <field h="5mm" name="LINE3" w="69.85mm">
+                  <ui>
+                     <textEdit>
+                        <border presence="hidden">
+                           <?templateDesigner StyleID aped0?></border>
+                        <margin/>
+                     </textEdit>
+                  </ui>
+                  <font typeface="Arial"/>
+                  <margin bottomInset="1mm" leftInset="1mm" rightInset="1mm" topInset="1mm"/>
+                  <para vAlign="middle"/>
+                  <value>
+                     <text maxChars="80"/>
+                  </value>
+                  <bind match="dataRef" ref="I_ADRS.LINE3"/>
+                  <desc>
+                     <text name="Schema Annotation">Address line</text>
+                  </desc>
+               </field>
+               <?templateDesigner expand 0?></subform>
+            <subform name="Remit_to" x="3.175mm" y="65.325mm">
+               <bind match="none"/>
+               <subform layout="tb" name="Lockbox" w="69.85mm">
+                  <bind match="none"/>
+                  <field h="5mm" name="LINE4" w="69.85mm">
+                     <ui>
+                        <textEdit>
+                           <border presence="hidden">
+                              <?templateDesigner StyleID aped0?></border>
+                           <margin/>
+                        </textEdit>
+                     </ui>
+                     <font typeface="Arial"/>
+                     <margin bottomInset="1mm" leftInset="1mm" rightInset="1mm" topInset="1mm"/>
+                     <para vAlign="middle"/>
+                     <value>
+                        <text maxChars="80"/>
+                     </value>
+                     <bind match="dataRef" ref="I_ADRS.LINE4"/>
+                     <desc>
+                        <text name="Schema Annotation">Address line</text>
+                     </desc>
+                  </field>
+                  <field h="5mm" name="LINE5" w="69.85mm">
+                     <ui>
+                        <textEdit>
+                           <border presence="hidden">
+                              <?templateDesigner StyleID aped0?></border>
+                           <margin/>
+                        </textEdit>
+                     </ui>
+                     <font typeface="Arial"/>
+                     <margin bottomInset="1mm" leftInset="1mm" rightInset="1mm" topInset="1mm"/>
+                     <para vAlign="middle"/>
+                     <value>
+                        <text maxChars="80"/>
+                     </value>
+                     <bind match="dataRef" ref="I_ADRS.LINE5"/>
+                     <desc>
+                        <text name="Schema Annotation">Address line</text>
+                     </desc>
+                  </field>
+                  <field h="5mm" name="LINE6" w="69.85mm">
+                     <ui>
+                        <textEdit>
+                           <border presence="hidden">
+                              <?templateDesigner StyleID aped0?></border>
+                           <margin/>
+                        </textEdit>
+                     </ui>
+                     <font typeface="Arial"/>
+                     <margin bottomInset="1mm" leftInset="1mm" rightInset="1mm" topInset="1mm"/>
+                     <para vAlign="middle"/>
+                     <value>
+                        <text maxChars="80"/>
+                     </value>
+                     <bind match="dataRef" ref="I_ADRS.LINE6"/>
+                     <desc>
+                        <text name="Schema Annotation">Address line</text>
+                     </desc>
+                  </field>
+                  <field h="5mm" name="LINE3" w="69.85mm">
+                     <ui>
+                        <textEdit>
+                           <border presence="hidden">
+                              <?templateDesigner StyleID aped0?></border>
+                           <margin/>
+                        </textEdit>
+                     </ui>
+                     <font typeface="Arial"/>
+                     <margin bottomInset="1mm" leftInset="1mm" rightInset="1mm" topInset="1mm"/>
+                     <para vAlign="middle"/>
+                     <value>
+                        <text maxChars="80"/>
+                     </value>
+                     <bind match="dataRef" ref="I_ADRS_REMIT_TO.LINE3"/>
+                     <desc>
+                        <text name="Schema Annotation">Address line</text>
+                     </desc>
+                     <caption>
+                        <value>
+                           <text xmlns:xft-xliff="http://www.xfa.org/schema/xfa-xliff/1.0/"/>
+                        </value>
+                     </caption>
+                  </field>
+                  <?templateDesigner expand 1?></subform>
+               <subform layout="lr-tb" name="BIORAD_ADRS" w="69.85mm">
+                  <bind match="none"/>
+                  <field h="5mm" name="NAME1" w="69.85mm">
+                     <ui>
+                        <textEdit>
+                           <border presence="hidden">
+                              <?templateDesigner StyleID aped0?></border>
+                           <margin/>
+                        </textEdit>
+                     </ui>
+                     <font typeface="Arial"/>
+                     <margin bottomInset="1mm" leftInset="1mm" rightInset="1mm" topInset="1mm"/>
+                     <para vAlign="middle"/>
+                     <value>
+                        <text maxChars="80"/>
+                     </value>
+                     <bind match="dataRef" ref="I_ADRS_REMIT_TO.LINE0"/>
+                     <desc>
+                        <text name="Schema Annotation">Name 1</text>
+                     </desc>
+                  </field>
+                  <field h="5mm" name="PO_BOX" w="69.85mm">
+                     <ui>
+                        <textEdit>
+                           <border presence="hidden">
+                              <?templateDesigner StyleID aped0?></border>
+                           <margin/>
+                        </textEdit>
+                     </ui>
+                     <font typeface="Arial"/>
+                     <margin bottomInset="1mm" leftInset="1mm" rightInset="1mm" topInset="1mm"/>
+                     <para vAlign="middle"/>
+                     <value>
+                        <text maxChars="80"/>
+                     </value>
+                     <bind match="dataRef" ref="I_ADRS_REMIT_TO.LINE1"/>
+                     <desc>
+                        <text name="Schema Annotation">Name 2</text>
+                     </desc>
+                  </field>
+                  <field h="5mm" name="CITY_ADDR" w="69.85mm">
+                     <ui>
+                        <textEdit>
+                           <border presence="hidden">
+                              <?templateDesigner StyleID aped0?></border>
+                           <margin/>
+                        </textEdit>
+                     </ui>
+                     <font typeface="Arial"/>
+                     <margin bottomInset="1mm" leftInset="1mm" rightInset="1mm" topInset="1mm"/>
+                     <para vAlign="middle"/>
+                     <value>
+                        <text maxChars="80"/>
+                     </value>
+                     <bind match="dataRef" ref="I_ADRS_REMIT_TO.LINE2"/>
+                     <desc>
+                        <text name="Schema Annotation">Name 3</text>
+                     </desc>
+                  </field>
+                  <?templateDesigner expand 1?></subform>
+               <keep intact="none"/>
+               <?templateDesigner expand 1?></subform>
+            <field minH="5.08mm" name="BANK_TXT" w="38.812mm" x="94.775mm" y="58.975mm">
+               <ui>
+                  <textEdit/>
+               </ui>
+               <font baselineShift="0pt" typeface="Arial" weight="bold"/>
+               <margin bottomInset="0.5mm" leftInset="0.5mm" rightInset="0.5mm" topInset="0.5mm"/>
+               <para marginLeft="0pt" marginRight="0pt" spaceAbove="0pt" spaceBelow="0pt" textIndent="0pt"/>
+               <value>
+                  <exData contentType="text/html">
+                     <body xmlns="http://www.w3.org/1999/xhtml"/>
+                  </exData>
+               </value>
+               <bind match="dataRef" ref="STANDARD_TEXT.BANK"/>
+               <desc>
+                  <exData name="Schema Annotation">Text Node TEXT
+SAPScript Include Text 
+ NAME = ZOTC_0015_BANK_EU 
+ LANGUAGE-FIELD = GV_LANGUAGE 
+ OBJECT = TEXT 
+ ID = ST</exData>
+               </desc>
+            </field>
+            <subform name="BANKDETAILS" w="102.192mm" x="94.657mm" y="64.325mm">
+               <bind match="none"/>
+               <subform layout="tb" name="BANKNAME" w="86.2mm" x="0.001mm">
+                  <bind match="none"/>
+                  <field h="5mm" minW="69.85mm" name="BANKA">
+                     <ui>
+                        <textEdit>
+                           <border presence="hidden">
+                              <?templateDesigner StyleID aped0?></border>
+                           <margin/>
+                        </textEdit>
+                     </ui>
+                     <font typeface="Arial"/>
+                     <margin bottomInset="0.5mm" leftInset="0.5mm" rightInset="0.5mm" topInset="0.5mm"/>
+                     <para vAlign="middle"/>
+                     <value>
+                        <text maxChars="60"/>
+                     </value>
+                     <bind match="dataRef" ref="GLOBAL_DATA.X_HOUSEBANK.BANKA"/>
+                     <desc>
+                        <text name="Schema Annotation">Name of bank</text>
+                     </desc>
+                     <caption reserve="0mm"/>
+                  </field>
+                  <field h="5mm" minW="69.85mm" name="ORT01">
+                     <ui>
+                        <textEdit>
+                           <border presence="hidden">
+                              <?templateDesigner StyleID aped0?></border>
+                           <margin/>
+                        </textEdit>
+                     </ui>
+                     <font typeface="Arial"/>
+                     <margin bottomInset="0.5mm" leftInset="0.5mm" rightInset="0.5mm" topInset="0.5mm"/>
+                     <para vAlign="middle"/>
+                     <value>
+                        <text maxChars="60"/>
+                     </value>
+                     <bind match="dataRef" ref="GLOBAL_DATA.X_HOUSEBANK.ORT01"/>
+                     <desc>
+                        <text name="Schema Annotation">Name of bank</text>
+                     </desc>
+                     <caption reserve="0mm"/>
+                  </field>
+                  <?templateDesigner expand 1?></subform>
+               <subform h="5mm" name="IBAN" w="102.192mm" x="0mm" y="10mm">
+                  <bind match="none"/>
+                  <field h="5mm" minW="69mm" name="GV_IBAN" x="33.192mm">
+                     <ui>
+                        <textEdit>
+                           <border presence="hidden">
+                              <?templateDesigner StyleID aped0?></border>
+                           <margin/>
+                        </textEdit>
+                     </ui>
+                     <font typeface="Arial"/>
+                     <margin bottomInset="0.5mm" leftInset="0.5mm" rightInset="0.5mm" topInset="0.5mm"/>
+                     <para vAlign="middle"/>
+                     <value>
+                        <text maxChars="50"/>
+                     </value>
+                     <bind match="dataRef" ref="$.GLOBAL_DATA.GV_IBAN"/>
+                     <desc>
+                        <text name="Schema Annotation">Comment</text>
+                     </desc>
+                     <caption reserve="0mm">
+                        <value>
+                           <text xmlns:xft-xliff="http://www.xfa.org/schema/xfa-xliff/1.0/"/>
+                        </value>
+                     </caption>
+                  </field>
+                  <field minH="5mm" minW="21mm" name="IBAN">
+                     <ui>
+                        <textEdit/>
+                     </ui>
+                     <font baselineShift="0pt" typeface="Arial"/>
+                     <margin bottomInset="0.5mm" leftInset="0.5mm" rightInset="0.5mm" topInset="0.5mm"/>
+                     <para marginLeft="0pt" marginRight="0pt" spaceAbove="0pt" spaceBelow="0pt" textIndent="0pt"/>
+                     <bind match="dataRef" ref="$.STANDARD_TEXT.IBAN"/>
+                     <desc>
+                        <exData name="Schema Annotation">Text Node TEXT
+SAPScript Include Text 
+ NAME = ZOTC_0015_IBAN_EU 
+ LANGUAGE-FIELD = GV_LANGUAGE 
+ OBJECT = TEXT 
+ ID = ST</exData>
+                     </desc>
+                     <value>
+                        <exData contentType="text/html">
+                           <body xmlns="http://www.w3.org/1999/xhtml"/>
+                        </exData>
+                     </value>
+                  </field>
+                  <?templateDesigner expand 1?></subform>
+               <subform h="5mm" name="SWIFT" w="102.192mm" x="0mm" y="15mm">
+                  <bind match="none"/>
+                  <field h="5mm" minW="69mm" name="SWIFT" x="33.192mm">
+                     <ui>
+                        <textEdit multiLine="1">
+                           <border presence="hidden">
+                              <?templateDesigner StyleID aped0?></border>
+                           <margin/>
+                        </textEdit>
+                     </ui>
+                     <font typeface="Arial"/>
+                     <margin bottomInset="0.5mm" leftInset="0.5mm" rightInset="0.5mm" topInset="0.5mm"/>
+                     <para vAlign="middle"/>
+                     <value>
+                        <text maxChars="11"/>
+                     </value>
+                     <bind match="dataRef" ref="$.GLOBAL_DATA.X_HOUSEBANK.SWIFT"/>
+                     <desc>
+                        <text name="Schema Annotation">SWIFT/BIC for International Payments</text>
+                     </desc>
+                  </field>
+                  <field minH="5mm" minW="21mm" name="SWIFTTEXT" y="0mm">
+                     <ui>
+                        <textEdit/>
+                     </ui>
+                     <font baselineShift="0pt" typeface="Arial"/>
+                     <margin bottomInset="0.5mm" leftInset="0.5mm" rightInset="0.5mm" topInset="0.5mm"/>
+                     <para marginLeft="0pt" marginRight="0pt" spaceAbove="0pt" spaceBelow="0pt" textIndent="0pt"/>
+                     <bind match="dataRef" ref="$.STANDARD_TEXT.SWIFT"/>
+                     <desc>
+                        <exData name="Schema Annotation">Text Node TEXT
+SAPScript Include Text 
+ NAME = ZOTC_0015_BANK_ACCNT_EU 
+ LANGUAGE-FIELD = GV_LANGUAGE 
+ OBJECT = TEXT 
+ ID = ST</exData>
+                     </desc>
+                     <value>
+                        <exData xmlns:xft-xliff="http://www.xfa.org/schema/xfa-xliff/1.0/" contentType="text/html" xft-xliff:id="N3105-4">
+                           <body xmlns="http://www.w3.org/1999/xhtml" xmlns:xfa="http://www.xfa.org/schema/xfa-data/1.0/" xfa:APIVersion="2.7.9246.0"><p><span style="xfa-spacerun:yes"/></p></body>
+                        </exData>
+                     </value>
+                  </field>
+                  <?templateDesigner expand 1?></subform>
+               <subform h="10mm" name="ACCOUNT" w="102mm" x="0.001mm" y="20mm">
+                  <bind match="none"/>
+                  <field h="5mm" minW="69mm" name="ACCT" x="33mm" y="0mm">
+                     <ui>
+                        <textEdit>
+                           <border presence="hidden">
+                              <?templateDesigner StyleID aped0?></border>
+                           <margin/>
+                        </textEdit>
+                     </ui>
+                     <font typeface="Arial"/>
+                     <margin bottomInset="0.5mm" leftInset="0.5mm" rightInset="0.5mm" topInset="0.5mm"/>
+                     <para vAlign="middle"/>
+                     <value>
+                        <text maxChars="25"/>
+                     </value>
+                     <bind match="dataRef" ref="$.GLOBAL_DATA.GV_BANK_ACCOUNT"/>
+                     <desc>
+                        <text name="Schema Annotation">User field for cluster PC (national)</text>
+                     </desc>
+                     <caption reserve="0mm"/>
+                  </field>
+                  <field h="5mm" minW="21mm" name="bank_accnt">
+                     <ui>
+                        <textEdit/>
+                     </ui>
+                     <font baselineShift="0pt" typeface="Arial"/>
+                     <margin bottomInset="0.5mm" leftInset="0.5mm" rightInset="0.5mm" topInset="0.5mm"/>
+                     <para marginLeft="0pt" marginRight="0pt" spaceAbove="0pt" spaceBelow="0pt" textIndent="0pt"/>
+                     <bind match="dataRef" ref="$.STANDARD_TEXT.BANK_ACCNT"/>
+                     <desc>
+                        <exData name="Schema Annotation">Text Node TEXT
+SAPScript Include Text 
+ NAME = ZOTC_0015_IBAN_EU 
+ LANGUAGE-FIELD = GV_LANGUAGE 
+ OBJECT = TEXT 
+ ID = ST</exData>
+                     </desc>
+                     <value>
+                        <exData xmlns:xft-xliff="http://www.xfa.org/schema/xfa-xliff/1.0/" contentType="text/html" xft-xliff:id="N3235-4">
+                           <body xmlns="http://www.w3.org/1999/xhtml" xmlns:xfa="http://www.xfa.org/schema/xfa-data/1.0/" xfa:APIVersion="2.7.9246.0"><p><span style="xfa-spacerun:yes"/></p></body>
+                        </exData>
+                     </value>
+                  </field>
+                  <event activity="initialize" name="event__initialize">
+                     <script contentType="application/x-javascript">//Begin of change for CR356 defect#9636 by U033867
+if ( this.ACCT.rawValue == null )
+{
+ this.presence = "hidden";
+}
+//End of change for CR356 defect#9636 by U033867
+</script>
+                  </event>
+                  <?templateDesigner expand 1?></subform>
+               <subform name="CLEARING" w="102.192mm" y="25mm">
+                  <bind match="none"/>
+                  <field h="5mm" minW="21mm" name="Clearing">
+                     <ui>
+                        <textEdit>
+                           <margin/>
+                        </textEdit>
+                     </ui>
+                     <font baselineShift="0pt" typeface="Arial"/>
+                     <margin bottomInset="0.5mm" leftInset="0.5mm" rightInset="0.5mm" topInset="0.5mm"/>
+                     <para marginLeft="0pt" marginRight="0pt" spaceAbove="0pt" spaceBelow="0pt" textIndent="0pt"/>
+                     <bind match="dataRef" ref="$.GLOBAL_DATA.GV_CLEARING_TEXT"/>
+                     <desc>
+                        <exData name="Schema Annotation">Text Node TEXT
+SAPScript Include Text 
+ NAME = ZOTC_0015_IBAN_EU 
+ LANGUAGE-FIELD = GV_LANGUAGE 
+ OBJECT = TEXT 
+ ID = ST</exData>
+                     </desc>
+                     <value>
+                        <exData xmlns:xft-xliff="http://www.xfa.org/schema/xfa-xliff/1.0/" contentType="text/html" xft-xliff:id="N3235-4">
+                           <body xmlns="http://www.w3.org/1999/xhtml" xmlns:xfa="http://www.xfa.org/schema/xfa-data/1.0/" xfa:APIVersion="2.7.9246.0"><p><span style="xfa-spacerun:yes"/></p></body>
+                        </exData>
+                     </value>
+                  </field>
+                  <field h="5mm" minW="69mm" name="CLEARINGAC" x="33.192mm">
+                     <ui>
+                        <textEdit>
+                           <border presence="hidden">
+                              <?templateDesigner StyleID aped0?></border>
+                           <margin/>
+                        </textEdit>
+                     </ui>
+                     <font typeface="Arial"/>
+                     <margin bottomInset="0.5mm" leftInset="0.5mm" rightInset="0.5mm" topInset="0.5mm"/>
+                     <para vAlign="middle"/>
+                     <bind match="dataRef" ref="$.GLOBAL_DATA.X_HOUSEBANK.BANK_KEY"/>
+                  </field>
+                  <event activity="initialize" name="event__initialize">
+                     <script contentType="application/x-javascript">//Begin of change for CR356 defect#9636 by U033867
+if ( this.CLEARINGAC.rawValue == null )
+{
+ this.presence = "hidden";
+}
+
+//End of change for CR356 defect#9636 by U033867
+</script>
+                  </event>
+                  <?templateDesigner expand 1?></subform>
+               <subform h="5mm" name="FRACC" w="102.192mm" x="0mm" y="20mm">
+                  <bind match="none"/>
+                  <field h="5mm" minW="69mm" name="FRACCT" x="33.192mm">
+                     <ui>
+                        <textEdit>
+                           <border presence="hidden"/>
+                           <margin/>
+                        </textEdit>
+                     </ui>
+                     <font typeface="Arial"/>
+                     <margin bottomInset="0.5mm" leftInset="0.5mm" rightInset="0.5mm" topInset="0.5mm"/>
+                     <para vAlign="middle"/>
+                     <bind match="dataRef" ref="$.GLOBAL_DATA.GV_FR_ACCT"/>
+                     <value>
+                        <text maxChars="25"/>
+                     </value>
+                     <desc>
+                        <text name="Schema Annotation">User field for cluster PC (national)</text>
+                     </desc>
+                  </field>
+                  <field h="5mm" minW="21mm" name="FRACCTEXT">
+                     <ui>
+                        <textEdit>
+                           <border presence="hidden"/>
+                           <margin/>
+                        </textEdit>
+                     </ui>
+                     <font typeface="Arial"/>
+                     <margin bottomInset="0.5mm" leftInset="0.5mm" rightInset="0.5mm" topInset="0.5mm"/>
+                     <para vAlign="middle"/>
+                     <bind match="dataRef" ref="$.STANDARD_TEXT.FRACCTTEXT"/>
+                     <desc>
+                        <exData name="Schema Annotation">Label text for FR account
+SAPScript Include Text 
+ NAME = ZOTC_0015_ACCTFR 
+ LANGUAGE-FIELD = GV_BANK_COUNTRY 
+ OBJECT = TEXT 
+ ID = ST</exData>
+                     </desc>
+                  </field>
+                  <event activity="initialize" name="event__initialize">
+                     <script contentType="application/x-javascript">//Begin of change for CR356 defect#9636 by U033867
+if ( this.FRACCT.rawValue == null )
+{
+ this.presence = "hidden";
+}
+//End of change for CR356 defect#9636 by U033867
+</script>
+                  </event>
+                  <?templateDesigner expand 1?></subform>
+               <keep intact="none"/>
+               <?templateDesigner expand 1?></subform>
+            <keep intact="none"/>
+            <?templateDesigner expand 1?></subform>
+         <keep intact="none"/>
+         <?templateDesigner expand 1?></subform>
+      <proto/>
+      <desc>
+         <text name="version">9.0.1.0.20091206.1.615263.583615</text>
+      </desc>
+      <?templateDesigner expand 1?></subform>
+   <?templateDesigner DefaultPreviewDynamic 1?>
+   <?templateDesigner DefaultRunAt client?>
+   <?templateDesigner DefaultLanguage JavaScript?>
+   <?acrobat JavaScript strictScoping?>
+   <?templateDesigner Grid show:1, snap:1, units:17, color:ff8080, origin:(0,0), interval:(79375,79375), objsnap:0, guidesnap:0, pagecentersnap:982646879?>
+   <?originalXFAVersion http://www.xfa.org/schema/xfa-template/2.7/?>
+   <?templateDesigner SaveTaggedPDF 1?>
+   <?templateDesigner FormTargetVersion 28?>
+   <?templateDesigner Rulers horizontal:1, vertical:1, guidelines:1, crosshairs:0?>
+   <?templateDesigner Zoom 119?></template>
+<config xmlns="http://www.xfa.org/schema/xci/2.8/">
+   <agent name="designer">
+      <!--  [0..n]  -->
+      <destination>pdf</destination>
+      <pdf>
+         <!--  [0..n]  -->
+         <fontInfo/>
+      </pdf>
+      <common>
+         <template>
+            <base>http://deve1dap00.global.bio-rad.com:8001/sap/bc/fp/form/layout/</base>
+         </template>
+      </common>
+   </agent>
+   <present>
+      <!--  [0..n]  -->
+      <pdf>
+         <!--  [0..n]  -->
+         <version>1.7</version>
+         <adobeExtensionLevel>3</adobeExtensionLevel>
+      </pdf>
+      <common>
+         <data>
+            <xsl>
+               <uri/>
+            </xsl>
+            <outputXSL>
+               <uri/>
+            </outputXSL>
+         </data>
+      </common>
+      <xdp>
+         <packets>*</packets>
+      </xdp>
+   </present>
+</config>
+<connectionSet xmlns="http://www.xfa.org/schema/xfa-connection-set/2.8/">
+   <xsdConnection dataDescription="data" name="ZOTC0015_CUSTOMER_DISPUTE_FORM">
+      <uri/>
+      <rootElement>data</rootElement>
+   </xsdConnection>
+   <?originalXFAVersion http://www.xfa.org/schema/xfa-connection-set/2.7/?></connectionSet>
+<xfa:datasets xmlns:xfa="http://www.xfa.org/schema/xfa-data/1.0/">
+   <xfa:data xfa:dataNode="dataGroup"/>
+   <dd:dataDescription xmlns:dd="http://ns.adobe.com/data-description/" dd:name="data">
+      <data>
+         <CORRATTR>
+            <CASE_GUID/>
+            <CASE_TYPE/>
+            <EXT_KEY/>
+            <EXT_REF/>
+            <CREATED_BY/>
+            <CREATE_TIME/>
+            <CHANGED_BY/>
+            <CHANGE_TIME/>
+            <CLOSED_BY/>
+            <CLOSING_TIME/>
+            <PLAN_END_DATE/>
+            <PROCESSOR/>
+            <RESPONSIBLE/>
+            <CASE_TITLE/>
+            <ESCAL_REASON/>
+            <CATEGORY/>
+            <PRIORITY/>
+            <SECURE_LEVEL/>
+            <PROFILE_ID/>
+            <STAT_ORDERNO/>
+            <STAT_PARA/>
+            <STAT_OBJNR/>
+            <STAT_LINE/>
+            <STAT_USER_LINE/>
+            <REASON_CODE/>
+            <FIN_SEMAPHORE/>
+            <FIN_RFC_CREATOR/>
+            <FIN_COORDINATOR/>
+            <FIN_ROOT_CCODE/>
+            <FIN_DUE_DATE/>
+            <FIN_ORIGINAL_AMT/>
+            <FIN_DISPUTED_AMT/>
+            <FIN_PAID_AMT/>
+            <FIN_CREDITED_AMT/>
+            <FIN_WRT_OFF_AMT/>
+            <FIN_NOT_SOLV_AMT/>
+            <FIN_DISPUTE_CURR/>
+            <FIN_CUSTDISP_AMT/>
+            <FIN_CUSTDISP_CUR/>
+            <FIN_PROC_SEQNR/>
+            <FIN_LOG_SYSTEM/>
+            <FIN_CONTACT_NAME/>
+            <FIN_CONTACT_MAIL/>
+            <FIN_CONTACT_TEL/>
+            <FIN_CONTACT_FAX/>
+            <FIN_CONTACT_FAXC/>
+            <FIN_CONTACT_KEY/>
+            <FIN_KUNNR/>
+            <FIN_BUKRS/>
+            <FIN_ORIGIN/>
+            <FIN_STAT_PARA/>
+            <FIN_EXTAPPL_PRO/>
+         </CORRATTR>
+         <GLOBAL_DATA>
+            <GV_REMIT_AMT/>
+            <GV_CLAIM_AMT/>
+            <GV_IBAN/>
+            <GV_EMAIL/>
+            <GV_PHONE/>
+            <GV_FAX/>
+            <GV_DEDUCTION_DATE/>
+            <WA_COMPANY_ADDR>
+               <ADDRNUMBER/>
+               <NAME1/>
+               <NAME2/>
+               <NAME3/>
+               <CITY1/>
+               <POST_CODE1/>
+               <POST_CODE2/>
+               <PO_BOX/>
+               <PO_BOX_LOC/>
+               <PO_BOX_REG/>
+               <STREET/>
+               <HOUSE_NUM1/>
+               <COUNTRY/>
+               <REGION/>
+               <TEL_NUMBER/>
+               <FAX_NUMBER/>
+            </WA_COMPANY_ADDR>
+            <WA_CORD_ADDR>
+               <ADDRNUMBER/>
+               <NAME1/>
+               <NAME2/>
+               <NAME3/>
+               <CITY1/>
+               <POST_CODE1/>
+               <POST_CODE2/>
+               <PO_BOX/>
+               <PO_BOX_LOC/>
+               <PO_BOX_REG/>
+               <STREET/>
+               <HOUSE_NUM1/>
+               <COUNTRY/>
+               <REGION/>
+               <TEL_NUMBER/>
+               <FAX_NUMBER/>
+            </WA_CORD_ADDR>
+            <GV_CO_NAME/>
+            <GV_PRODUCTION/>
+            <GV_IMAGE_BIN/>
+            <C_BMP/>
+            <DRAFT dd:minOccur="0" dd:nullType="exclude"/>
+            <WA_REMIT_TO_ADDR>
+               <ADDRNUMBER/>
+               <NAME1/>
+               <NAME2/>
+               <NAME3/>
+               <CITY1/>
+               <POST_CODE1/>
+               <POST_CODE2/>
+               <PO_BOX/>
+               <PO_BOX_LOC/>
+               <PO_BOX_REG/>
+               <STREET/>
+               <HOUSE_NUM1/>
+               <COUNTRY/>
+               <REGION/>
+               <TEL_NUMBER/>
+               <FAX_NUMBER/>
+               <CITY_ADDR/>
+            </WA_REMIT_TO_ADDR>
+            <WA_BILL_TO_ADDR>
+               <ADDRNUMBER/>
+               <NAME1/>
+               <NAME2/>
+               <NAME3/>
+               <CITY1/>
+               <POST_CODE1/>
+               <POST_CODE2/>
+               <PO_BOX/>
+               <PO_BOX_LOC/>
+               <PO_BOX_REG/>
+               <STREET/>
+               <HOUSE_NUM1/>
+               <COUNTRY/>
+               <REGION/>
+               <TEL_NUMBER/>
+               <FAX_NUMBER/>
+               <CITY_ADDR/>
+            </WA_BILL_TO_ADDR>
+            <LOGO/>
+            <X_HOUSEBANK>
+               <BANKA/>
+               <STRAS/>
+               <ORT01/>
+               <SWIFT/>
+               <BANKN/>
+               <IBAN/>
+               <BANK_KEY/>
+            </X_HOUSEBANK>
+            <GV_VAT/>
+            <GV_VAT_IT/>
+            <GV_CC_IT/>
+            <GV_CLEARING_TEXT/>
+            <GV_FR_ACCT/>
+            <GV_BANK_COUNTRY/>
+            <GV_BANK_ACCOUNT/>
+            <GV_STREET/>
+         </GLOBAL_DATA>
+         <STANDARD_TEXT>
+            <ADDRESS/>
+            <ADDRESS1/>
+            <CUST_NO/>
+            <CUST_NAME/>
+            <ORG_INV/>
+            <CLAIM/>
+            <CLAIM_AMT/>
+            <IBAN/>
+            <DEC_DATE/>
+            <SWIFT/>
+            <ATTENTION/>
+            <TO/>
+            <BILL_TO/>
+            <THANK/>
+            <PHONE/>
+            <FAX/>
+            <EMAIL/>
+            <BANK/>
+            <BANK_ACCNT/>
+            <DISPUTE_TEXT/>
+            <BANK_NAME/>
+            <BANK_CITY/>
+            <ACCOUNT/>
+            <FRACCTTEXT/>
+            <CC_TEXT/>
+            <VAT_TEXT/>
+         </STANDARD_TEXT>
+         <I_ADRS>
+            <LINE0/>
+            <LINE1/>
+            <LINE2/>
+            <LINE3/>
+            <LINE4/>
+            <LINE5/>
+            <LINE6/>
+            <LINE7/>
+            <LINE8/>
+            <LINE9/>
+         </I_ADRS>
+         <I_ADRS_REMIT_TO>
+            <LINE0/>
+            <LINE1/>
+            <LINE2/>
+            <LINE3/>
+            <LINE4/>
+            <LINE5/>
+            <LINE6/>
+            <LINE7/>
+            <LINE8/>
+            <LINE9/>
+         </I_ADRS_REMIT_TO>
+         <GV_DISPUTE_TEXT/>
+         <GV_LANGUAGE/>
+         <I_REMIT_TO_ADDR dd:minOccur="0">
+            <DATA dd:maxOccur="-1">
+               <LINES/>
+            </DATA>
+         </I_REMIT_TO_ADDR>
+      </data>
+   </dd:dataDescription>
+</xfa:datasets>
+<localeSet xmlns="http://www.xfa.org/schema/xfa-locale-set/2.7/">
+   <locale desc="English (United States)" name="en_US">
+      <calendarSymbols name="gregorian">
+         <monthNames>
+            <month>January</month>
+            <month>February</month>
+            <month>March</month>
+            <month>April</month>
+            <month>May</month>
+            <month>June</month>
+            <month>July</month>
+            <month>August</month>
+            <month>September</month>
+            <month>October</month>
+            <month>November</month>
+            <month>December</month>
+         </monthNames>
+         <monthNames abbr="1">
+            <month>Jan</month>
+            <month>Feb</month>
+            <month>Mar</month>
+            <month>Apr</month>
+            <month>May</month>
+            <month>Jun</month>
+            <month>Jul</month>
+            <month>Aug</month>
+            <month>Sep</month>
+            <month>Oct</month>
+            <month>Nov</month>
+            <month>Dec</month>
+         </monthNames>
+         <dayNames>
+            <day>Sunday</day>
+            <day>Monday</day>
+            <day>Tuesday</day>
+            <day>Wednesday</day>
+            <day>Thursday</day>
+            <day>Friday</day>
+            <day>Saturday</day>
+         </dayNames>
+         <dayNames abbr="1">
+            <day>Sun</day>
+            <day>Mon</day>
+            <day>Tue</day>
+            <day>Wed</day>
+            <day>Thu</day>
+            <day>Fri</day>
+            <day>Sat</day>
+         </dayNames>
+         <meridiemNames>
+            <meridiem>AM</meridiem>
+            <meridiem>PM</meridiem>
+         </meridiemNames>
+         <eraNames>
+            <era>BC</era>
+            <era>AD</era>
+         </eraNames>
+      </calendarSymbols>
+      <datePatterns>
+         <datePattern name="full">EEEE, MMMM D, YYYY</datePattern>
+         <datePattern name="long">MMMM D, YYYY</datePattern>
+         <datePattern name="med">MMM D, YYYY</datePattern>
+         <datePattern name="short">M/D/YY</datePattern>
+      </datePatterns>
+      <timePatterns>
+         <timePattern name="full">h:MM:SS A Z</timePattern>
+         <timePattern name="long">h:MM:SS A Z</timePattern>
+         <timePattern name="med">h:MM:SS A</timePattern>
+         <timePattern name="short">h:MM A</timePattern>
+      </timePatterns>
+      <dateTimeSymbols>GyMdkHmsSEDFwWahKzZ</dateTimeSymbols>
+      <numberPatterns>
+         <numberPattern name="numeric">z,zz9.zzz</numberPattern>
+         <numberPattern name="currency">$z,zz9.99|($z,zz9.99)</numberPattern>
+         <numberPattern name="percent">z,zz9%</numberPattern>
+      </numberPatterns>
+      <numberSymbols>
+         <numberSymbol name="decimal">.</numberSymbol>
+         <numberSymbol name="grouping">,</numberSymbol>
+         <numberSymbol name="percent">%</numberSymbol>
+         <numberSymbol name="minus">-</numberSymbol>
+         <numberSymbol name="zero">0</numberSymbol>
+      </numberSymbols>
+      <currencySymbols>
+         <currencySymbol name="symbol">$</currencySymbol>
+         <currencySymbol name="isoname">USD</currencySymbol>
+         <currencySymbol name="decimal">.</currencySymbol>
+      </currencySymbols>
+      <typefaces>
+         <typeface name="Myriad Pro"/>
+         <typeface name="Minion Pro"/>
+         <typeface name="Courier Std"/>
+         <typeface name="Adobe Pi Std"/>
+         <typeface name="Adobe Hebrew"/>
+         <typeface name="Adobe Arabic"/>
+         <typeface name="Adobe Thai"/>
+         <typeface name="Kozuka Gothic Pro-VI M"/>
+         <typeface name="Kozuka Mincho Pro-VI R"/>
+         <typeface name="Adobe Ming Std L"/>
+         <typeface name="Adobe Song Std L"/>
+         <typeface name="Adobe Myungjo Std M"/>
+      </typefaces>
+   </locale>
+   <?originalXFAVersion http://www.xfa.org/schema/xfa-locale-set/2.7/?></localeSet>
+<x:xmpmeta xmlns:x="adobe:ns:meta/" x:xmptk="Adobe XMP Core 4.0-c319 44.281645, Sun Mar 25 2007 16:17:34">
+   <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+      <rdf:Description xmlns:xmp="http://ns.adobe.com/xap/1.0/" rdf:about="">
+         <xmp:MetadataDate>2018-03-23T10:57:06Z</xmp:MetadataDate>
+         <xmp:CreatorTool>Adobe LiveCycle Designer ES 9.0</xmp:CreatorTool>
+      </rdf:Description>
+      <rdf:Description xmlns:pdf="http://ns.adobe.com/pdf/1.3/" rdf:about="">
+         <pdf:Producer>Adobe LiveCycle Designer ES 9.0</pdf:Producer>
+      </rdf:Description>
+      <rdf:Description xmlns:xmpMM="http://ns.adobe.com/xap/1.0/mm/" rdf:about="">
+         <xmpMM:DocumentID>uuid:2dbf5ecf-1f45-4349-b7a8-aee7450d41bf</xmpMM:DocumentID>
+      </rdf:Description>
+      <rdf:Description xmlns:desc="http://ns.adobe.com/xfa/promoted-desc/" rdf:about="">
+         <desc:version rdf:parseType="Resource">
+            <rdf:value>9.0.1.0.20091206.1.615263.583615</rdf:value>
+            <desc:ref>/template/subform[1]</desc:ref>
+         </desc:version>
+      </rdf:Description>
+   </rdf:RDF>
+</x:xmpmeta></xdp:xdp>

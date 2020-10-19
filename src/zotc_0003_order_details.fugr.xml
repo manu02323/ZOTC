@@ -1,0 +1,336 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<abapGit version="v1.0.0" serializer="LCL_OBJECT_FUGR" serializer_version="v1.0.0">
+ <asx:abap xmlns:asx="http://www.sap.com/abapxml" version="1.0">
+  <asx:values>
+   <AREAT>Get order Details for MDD_0003</AREAT>
+   <INCLUDES>
+    <SOBJ_NAME>LZOTC_0003_ORDER_DETAILSF01</SOBJ_NAME>
+    <SOBJ_NAME>LZOTC_0003_ORDER_DETAILSTOP</SOBJ_NAME>
+    <SOBJ_NAME>SAPLZOTC_0003_ORDER_DETAILS</SOBJ_NAME>
+   </INCLUDES>
+   <FUNCTIONS>
+    <item>
+     <FUNCNAME>ZOTC_0003_GET_ORDER_DETAILS</FUNCNAME>
+     <REMOTE_CALL>R</REMOTE_CALL>
+     <SHORT_TEXT>Order Details RFC FM for MDD_0003</SHORT_TEXT>
+     <IMPORT>
+      <RSIMP>
+       <PARAMETER>IM_SALES_ORDER</PARAMETER>
+       <OPTIONAL>X</OPTIONAL>
+       <TYP>VBELN</TYP>
+      </RSIMP>
+      <RSIMP>
+       <PARAMETER>IM_PO_NO</PARAMETER>
+       <OPTIONAL>X</OPTIONAL>
+       <TYP>BSTKD</TYP>
+      </RSIMP>
+     </IMPORT>
+     <EXPORT>
+      <RSEXP>
+       <PARAMETER>EX_HEADER_DATA</PARAMETER>
+       <TYP>ZOTC_ORDER_HEADER</TYP>
+      </RSEXP>
+      <RSEXP>
+       <PARAMETER>ET_ITEM_DATA</PARAMETER>
+       <TYP>ZOTC_ORDER_ITEM_T</TYP>
+      </RSEXP>
+      <RSEXP>
+       <PARAMETER>ET_ITEM_DETAILS</PARAMETER>
+       <TYP>ZOTC_ORDER_ITEM_DETAILS_T</TYP>
+      </RSEXP>
+      <RSEXP>
+       <PARAMETER>EX_ORDERS_LIST</PARAMETER>
+       <TYP>ZOTC_ORDER_LIST_T</TYP>
+      </RSEXP>
+     </EXPORT>
+     <DOCUMENTATION>
+      <RSFDO>
+       <PARAMETER>IM_SALES_ORDER</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Sales and Distribution Document Number</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>IM_PO_NO</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Customer Purchase Order Number</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>EX_HEADER_DATA</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Order Header Data</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>ET_ITEM_DATA</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Order Item Details</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>ET_ITEM_DETAILS</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Order Item Details table data</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>EX_ORDERS_LIST</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Order List for PO</STEXT>
+      </RSFDO>
+     </DOCUMENTATION>
+    </item>
+    <item>
+     <FUNCNAME>ZOTC_0003_GET_PDF_DETAILS</FUNCNAME>
+     <REMOTE_CALL>R</REMOTE_CALL>
+     <SHORT_TEXT>Get PDF details</SHORT_TEXT>
+     <IMPORT>
+      <RSIMP>
+       <PARAMETER>I_VBELN</PARAMETER>
+       <TYP>VBELN</TYP>
+      </RSIMP>
+     </IMPORT>
+     <EXPORT>
+      <RSEXP>
+       <PARAMETER>E_MESSAGE</PARAMETER>
+       <TYP>STRING</TYP>
+      </RSEXP>
+     </EXPORT>
+     <DOCUMENTATION>
+      <RSFDO>
+       <PARAMETER>I_VBELN</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Sales and Distribution Document Number</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>E_MESSAGE</PARAMETER>
+       <KIND>P</KIND>
+      </RSFDO>
+     </DOCUMENTATION>
+    </item>
+    <item>
+     <FUNCNAME>ZOTC_003_GET_OPEN_ORDERS</FUNCNAME>
+     <REMOTE_CALL>R</REMOTE_CALL>
+     <SHORT_TEXT>Get Open orders</SHORT_TEXT>
+     <EXPORT>
+      <RSEXP>
+       <PARAMETER>ET_ORDER_COUNT</PARAMETER>
+       <TYP>ZOTC_OPEN_ORDERS_T</TYP>
+      </RSEXP>
+     </EXPORT>
+     <DOCUMENTATION>
+      <RSFDO>
+       <PARAMETER>ET_ORDER_COUNT</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Order Count</STEXT>
+      </RSFDO>
+     </DOCUMENTATION>
+    </item>
+    <item>
+     <FUNCNAME>ZOTC_GET_ANNOUNCEMENT</FUNCNAME>
+     <REMOTE_CALL>R</REMOTE_CALL>
+     <SHORT_TEXT>Get Announcement Data</SHORT_TEXT>
+     <IMPORT>
+      <RSIMP>
+       <PARAMETER>IM_CS_GRP</PARAMETER>
+       <OPTIONAL>X</OPTIONAL>
+       <TYP>CHAR10</TYP>
+      </RSIMP>
+     </IMPORT>
+     <EXPORT>
+      <RSEXP>
+       <PARAMETER>EX_ANCEMENT_DATA</PARAMETER>
+       <TYP>STRING_VALUE</TYP>
+      </RSEXP>
+     </EXPORT>
+     <DOCUMENTATION>
+      <RSFDO>
+       <PARAMETER>IM_CS_GRP</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Character Field Length = 10</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>EX_ANCEMENT_DATA</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Second key field for operand value</STEXT>
+      </RSFDO>
+     </DOCUMENTATION>
+    </item>
+    <item>
+     <FUNCNAME>ZOTC_SAVE_TEXT</FUNCNAME>
+     <REMOTE_CALL>R</REMOTE_CALL>
+     <SHORT_TEXT>Save Text RFC Function Module</SHORT_TEXT>
+     <IMPORT>
+      <RSIMP>
+       <PARAMETER>CLIENT</PARAMETER>
+       <DBFIELD>SY-MANDT</DBFIELD>
+       <DEFAULT>SY-MANDT</DEFAULT>
+       <OPTIONAL>X</OPTIONAL>
+      </RSIMP>
+      <RSIMP>
+       <PARAMETER>INSERT</PARAMETER>
+       <DEFAULT>SPACE</DEFAULT>
+       <OPTIONAL>X</OPTIONAL>
+       <TYP>CHAR10</TYP>
+      </RSIMP>
+      <RSIMP>
+       <PARAMETER>SAVEMODE_DIRECT</PARAMETER>
+       <DEFAULT>SPACE</DEFAULT>
+       <OPTIONAL>X</OPTIONAL>
+       <TYP>CHAR10</TYP>
+      </RSIMP>
+      <RSIMP>
+       <PARAMETER>OWNER_SPECIFIED</PARAMETER>
+       <DEFAULT>SPACE</DEFAULT>
+       <OPTIONAL>X</OPTIONAL>
+       <TYP>CHAR10</TYP>
+      </RSIMP>
+      <RSIMP>
+       <PARAMETER>LOCAL_CAT</PARAMETER>
+       <DEFAULT>SPACE</DEFAULT>
+       <OPTIONAL>X</OPTIONAL>
+       <TYP>CHAR10</TYP>
+      </RSIMP>
+      <RSIMP>
+       <PARAMETER>TDOBJECT</PARAMETER>
+       <OPTIONAL>X</OPTIONAL>
+       <TYP>TDOBJECT</TYP>
+      </RSIMP>
+      <RSIMP>
+       <PARAMETER>TDNAME</PARAMETER>
+       <OPTIONAL>X</OPTIONAL>
+       <TYP>TDOBNAME</TYP>
+      </RSIMP>
+      <RSIMP>
+       <PARAMETER>TDID</PARAMETER>
+       <OPTIONAL>X</OPTIONAL>
+       <TYP>TDID</TYP>
+      </RSIMP>
+      <RSIMP>
+       <PARAMETER>TDSPRAS</PARAMETER>
+       <OPTIONAL>X</OPTIONAL>
+       <TYP>TDSPRAS</TYP>
+      </RSIMP>
+     </IMPORT>
+     <EXPORT>
+      <RSEXP>
+       <PARAMETER>FUNCTION</PARAMETER>
+       <TYP>CHAR10</TYP>
+      </RSEXP>
+      <RSEXP>
+       <PARAMETER>NEWHEADER</PARAMETER>
+       <DBFIELD>THEAD</DBFIELD>
+      </RSEXP>
+     </EXPORT>
+     <TABLES>
+      <RSTBL>
+       <PARAMETER>LINES</PARAMETER>
+       <DBSTRUCT>TLINE</DBSTRUCT>
+      </RSTBL>
+      <RSTBL>
+       <PARAMETER>LINES_READ</PARAMETER>
+       <DBSTRUCT>TLINE</DBSTRUCT>
+      </RSTBL>
+     </TABLES>
+     <EXCEPTION>
+      <RSEXC>
+       <EXCEPTION>ID</EXCEPTION>
+      </RSEXC>
+      <RSEXC>
+       <EXCEPTION>LANGUAGE</EXCEPTION>
+      </RSEXC>
+      <RSEXC>
+       <EXCEPTION>NAME</EXCEPTION>
+      </RSEXC>
+      <RSEXC>
+       <EXCEPTION>OBJECT</EXCEPTION>
+      </RSEXC>
+     </EXCEPTION>
+     <DOCUMENTATION>
+      <RSFDO>
+       <PARAMETER>CLIENT</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>ABAP System Field: Client ID of Current User</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>INSERT</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Character Field Length = 10</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>SAVEMODE_DIRECT</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Character Field Length = 10</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>OWNER_SPECIFIED</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Character Field Length = 10</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>LOCAL_CAT</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Character Field Length = 10</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>TDOBJECT</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Texts: application object</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>TDNAME</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Name</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>TDID</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Text ID</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>TDSPRAS</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Language key</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>FUNCTION</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Character Field Length = 10</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>NEWHEADER</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>SAPscript: Text Header</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>LINES</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>SAPscript: Text Lines</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>LINES_READ</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>SAPscript: Text Lines</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>ID</PARAMETER>
+       <KIND>X</KIND>
+       <STEXT>Text ID in text header invalid</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>LANGUAGE</PARAMETER>
+       <KIND>X</KIND>
+       <STEXT>Language in text header invalid</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>NAME</PARAMETER>
+       <KIND>X</KIND>
+       <STEXT>Text name in text header invalid</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>OBJECT</PARAMETER>
+       <KIND>X</KIND>
+       <STEXT>Text object in text header invalid</STEXT>
+      </RSFDO>
+     </DOCUMENTATION>
+    </item>
+   </FUNCTIONS>
+  </asx:values>
+ </asx:abap>
+</abapGit>

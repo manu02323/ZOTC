@@ -1,0 +1,50 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<abapGit version="v1.0.0" serializer="LCL_OBJECT_SPRX" serializer_version="v1.0.0">
+ <asx:abap xmlns:asx="http://www.sap.com/abapxml" version="1.0">
+  <asx:values>
+   <PROXY_HEADER>
+    <item>
+     <OBJECT>DTEL</OBJECT>
+     <OBJ_NAME>Z01OTC_EG__DTE_PURCHASE_ORDER</OBJ_NAME>
+     <OBJECT_M>DTEL</OBJECT_M>
+     <OBJ_NAME_M>Z01OTC_EG__DTE_PURCHASE_ORDER</OBJ_NAME_M>
+     <HASH_ID>38BF6051CF7C3B0BC4960B815DD7EDE5B074E3A6</HASH_ID>
+     <ID>&lt;type&gt; EG..DTE_PurchaseOrderItem.ZOrderQuantity.Content http://bio-rad.com/OTC/PurchaseOrderConfirmation http://bio-rad.com/OTC/PurchaseOrderConfirmation</ID>
+     <IFR_GLOBAL>X</IFR_GLOBAL>
+     <IFR_TYPE>type</IFR_TYPE>
+     <IFR_NAME>EG..DTE_PurchaseOrderItem.ZOrderQuantity.Content</IFR_NAME>
+     <IFR_NSPCE>http://bio-rad.com/OTC/PurchaseOrderConfirmation</IFR_NSPCE>
+     <IFR_GNSPCE>http://bio-rad.com/OTC/PurchaseOrderConfirmation</IFR_GNSPCE>
+     <GEN_VERS>0005</GEN_VERS>
+     <PREFIX>Z01OTC_</PREFIX>
+     <CATEGORY>ifmtypedef</CATEGORY>
+     <X-ML_NSPCE>http://bio-rad.com/OTC/PurchaseOrderConfirmation</X-ML_NSPCE>
+     <X-ML_NAME>EG..DTE_PurchaseOrderItem.ZOrderQuantity.Content</X-ML_NAME>
+    </item>
+   </PROXY_HEADER>
+   <PROXY_DATA>
+    <item>
+     <OBJECT>DTEL</OBJECT>
+     <OBJ_NAME>Z01OTC_EG__DTE_PURCHASE_ORDER</OBJ_NAME>
+     <OBJECT1>DTEL</OBJECT1>
+     <OBJ_NAME1>Z01OTC_EG__DTE_PURCHASE_ORDER</OBJ_NAME1>
+     <OBJECT2>DTEL</OBJECT2>
+     <OBJ_NAME2>Z01OTC_EG__DTE_PURCHASE_ORDER</OBJ_NAME2>
+     <ID>&lt;type&gt; EG..DTE_PurchaseOrderItem.ZOrderQuantity.Content http://bio-rad.com/OTC/PurchaseOrderConfirmation http://bio-rad.com/OTC/PurchaseOrderConfirmation</ID>
+     <IFR_TYPE>type</IFR_TYPE>
+     <IFR_NAME>EG..DTE_PurchaseOrderItem.ZOrderQuantity.Content</IFR_NAME>
+     <IFR_TEXT>Data type enhancement on PurchaseOrderItem for IDD 0167</IFR_TEXT>
+     <IFR_XSDTYP>string</IFR_XSDTYP>
+     <IFR_MAXLEN>15</IFR_MAXLEN>
+     <IFR_SCALE>-2</IFR_SCALE>
+     <R3_TYPE>DTEL</R3_TYPE>
+     <R3_NAME>Z01OTC_EG__DTE_PURCHASE_ORDER</R3_NAME>
+     <R3_TEXT>Data type enhancement on PurchaseOrderItem for IDD 0167</R3_TEXT>
+     <R3_DATATYP>CHAR</R3_DATATYP>
+     <R3_LENGTH>000015</R3_LENGTH>
+     <CATEGORY>ifmtypedef</CATEGORY>
+    </item>
+   </PROXY_DATA>
+  </asx:values>
+ </asx:abap>
+</abapGit>

@@ -1,0 +1,134 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<abapGit version="v1.0.0" serializer="LCL_OBJECT_FUGR" serializer_version="v1.0.0">
+ <asx:abap xmlns:asx="http://www.sap.com/abapxml" version="1.0">
+  <asx:values>
+   <AREAT>To determine the Source for Dicount in P</AREAT>
+   <INCLUDES>
+    <SOBJ_NAME>LZOTC_DISC_CHECK_SOURCETOP</SOBJ_NAME>
+    <SOBJ_NAME>SAPLZOTC_DISC_CHECK_SOURCE</SOBJ_NAME>
+   </INCLUDES>
+   <FUNCTIONS>
+    <item>
+     <FUNCNAME>ZOTC_DISC_CHECK_SOURCE</FUNCNAME>
+     <SHORT_TEXT>To determine the Source for Dicount in Price Simulation</SHORT_TEXT>
+     <IMPORT>
+      <RSIMP>
+       <PARAMETER>IT_COND</PARAMETER>
+       <REFERENCE>X</REFERENCE>
+       <TYP>CMP_T_COND</TYP>
+      </RSIMP>
+      <RSIMP>
+       <PARAMETER>IM_MATERIAL</PARAMETER>
+       <REFERENCE>X</REFERENCE>
+       <TYP>MATNR</TYP>
+      </RSIMP>
+      <RSIMP>
+       <PARAMETER>IM_VKORG</PARAMETER>
+       <REFERENCE>X</REFERENCE>
+       <TYP>VKORG</TYP>
+      </RSIMP>
+      <RSIMP>
+       <PARAMETER>IM_VTWEG</PARAMETER>
+       <REFERENCE>X</REFERENCE>
+       <TYP>VTWEG</TYP>
+      </RSIMP>
+      <RSIMP>
+       <PARAMETER>IM_SPART</PARAMETER>
+       <REFERENCE>X</REFERENCE>
+       <TYP>SPART</TYP>
+      </RSIMP>
+      <RSIMP>
+       <PARAMETER>IM_KUNAG</PARAMETER>
+       <REFERENCE>X</REFERENCE>
+       <TYP>KUNAG</TYP>
+      </RSIMP>
+      <RSIMP>
+       <PARAMETER>IM_KUNWE</PARAMETER>
+       <REFERENCE>X</REFERENCE>
+       <TYP>KUNWE</TYP>
+      </RSIMP>
+     </IMPORT>
+     <EXPORT>
+      <RSEXP>
+       <PARAMETER>EX_BEZEI</PARAMETER>
+       <REFERENCE>X</REFERENCE>
+       <TYP>STRING</TYP>
+      </RSEXP>
+      <RSEXP>
+       <PARAMETER>EX_RET</PARAMETER>
+       <REFERENCE>X</REFERENCE>
+       <TYP>BAPIRET2</TYP>
+      </RSEXP>
+      <RSEXP>
+       <PARAMETER>EX_DATBI</PARAMETER>
+       <REFERENCE>X</REFERENCE>
+       <TYP>KODATBI</TYP>
+      </RSEXP>
+      <RSEXP>
+       <PARAMETER>EX_DATAB</PARAMETER>
+       <REFERENCE>X</REFERENCE>
+       <TYP>KODATAB</TYP>
+      </RSEXP>
+     </EXPORT>
+     <DOCUMENTATION>
+      <RSFDO>
+       <PARAMETER>IT_COND</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Table Type for BAPI Cond</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>IM_MATERIAL</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Material Number</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>IM_VKORG</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Sales Organization</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>IM_VTWEG</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Distribution Channel</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>IM_SPART</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Division</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>IM_KUNAG</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Sold-To Party</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>IM_KUNWE</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Ship-To Party</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>EX_BEZEI</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Name of the controlling area</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>EX_RET</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Return Parameter</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>EX_DATBI</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Validity end date of the condition record</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>EX_DATAB</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Validity start date of the condition record</STEXT>
+      </RSFDO>
+     </DOCUMENTATION>
+    </item>
+   </FUNCTIONS>
+  </asx:values>
+ </asx:abap>
+</abapGit>

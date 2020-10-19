@@ -1,0 +1,3 @@
+FUNCTION-POOL ZOTC_0212_CHAR_UPDATE.        "MESSAGE-ID ..
+
+* INCLUDE LZOTC_0212_CHAR_UPDATED...         " Local class definition

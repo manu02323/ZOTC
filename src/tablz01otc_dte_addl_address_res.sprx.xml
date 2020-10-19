@@ -1,0 +1,69 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<abapGit version="v1.0.0" serializer="LCL_OBJECT_SPRX" serializer_version="v1.0.0">
+ <asx:abap xmlns:asx="http://www.sap.com/abapxml" version="1.0">
+  <asx:values>
+   <PROXY_HEADER>
+    <item>
+     <OBJECT>TABL</OBJECT>
+     <OBJ_NAME>Z01OTC_DTE_ADDL_ADDRESS_RES</OBJ_NAME>
+     <OBJECT_M>TABL</OBJECT_M>
+     <OBJ_NAME_M>Z01OTC_DTE_ADDL_ADDRESS_RES</OBJ_NAME_M>
+     <HASH_ID>7AB28EDE75A14FE237FA916E07564D232A2B916E</HASH_ID>
+     <ID>&lt;groupOrAttributeGroup&gt; DTE_AddlAddress_Res http://bio-rad.com/OTC/OrderStatus http://bio-rad.com/OTC/OrderStatus</ID>
+     <IFR_GLOBAL>X</IFR_GLOBAL>
+     <IFR_TYPE>groupOrAttributeGroup</IFR_TYPE>
+     <IFR_NAME>DTE_AddlAddress_Res</IFR_NAME>
+     <IFR_NSPCE>http://bio-rad.com/OTC/OrderStatus</IFR_NSPCE>
+     <IFR_GNSPCE>http://bio-rad.com/OTC/OrderStatus</IFR_GNSPCE>
+     <GEN_VERS>0005</GEN_VERS>
+     <PREFIX>Z01OTC_</PREFIX>
+     <CATEGORY>ifmtypeenh</CATEGORY>
+     <ENH_NAME>SlsOrdERPByIDRsp_s_V3PtyAddr</ENH_NAME>
+     <ENH_NSPCE>http://sap.com/xi/APPL/Global2</ENH_NSPCE>
+     <X-ML_NSPCE>http://bio-rad.com/OTC/OrderStatus</X-ML_NSPCE>
+     <X-ML_NAME>DTE_AddlAddress_Res</X-ML_NAME>
+     <VERSION_ID>01bccbb060ca11e4c0aa000001225726</VERSION_ID>
+    </item>
+   </PROXY_HEADER>
+   <PROXY_DATA>
+    <item>
+     <OBJECT>TABL</OBJECT>
+     <OBJ_NAME>Z01OTC_DTE_ADDL_ADDRESS_RES</OBJ_NAME>
+     <OBJECT1>FIEL</OBJECT1>
+     <OBJ_NAME1>Z01OTC_ZADDL_ADDR</OBJ_NAME1>
+     <OBJECT2>FIEL</OBJECT2>
+     <OBJ_NAME2>Z01OTC_ZADDL_ADDR</OBJ_NAME2>
+     <OBJECT_R>TABL</OBJECT_R>
+     <OBJ_NAME_R>Z01OTC_DTE_ADDL_ADDRESS_RES_ZA</OBJ_NAME_R>
+     <ID>&lt;element&gt; {http://bio-rad.com/OTC/OrderStatus}ZAddlAddr &lt;groupOrAttributeGroup&gt; DTE_AddlAddress_Res http://bio-rad.com/OTC/OrderStatus http://bio-rad.com/OTC/OrderStatus</ID>
+     <IFR_TYPE>element</IFR_TYPE>
+     <IFR_NAME>ZAddlAddr</IFR_NAME>
+     <IFR_TAGTYP>E</IFR_TAGTYP>
+     <IFR_MAXOCC>1</IFR_MAXOCC>
+     <IFR_OPTNL>X</IFR_OPTNL>
+     <IFR_QUALIF>X</IFR_QUALIF>
+     <IFR_SCALE>-2</IFR_SCALE>
+     <R3_TYPE>FIEL</R3_TYPE>
+     <R3_NAME>Z01OTC_ZADDL_ADDR</R3_NAME>
+     <R3_SEQNUM>000001</R3_SEQNUM>
+    </item>
+    <item>
+     <OBJECT>TABL</OBJECT>
+     <OBJ_NAME>Z01OTC_DTE_ADDL_ADDRESS_RES</OBJ_NAME>
+     <OBJECT1>TABL</OBJECT1>
+     <OBJ_NAME1>Z01OTC_DTE_ADDL_ADDRESS_RES</OBJ_NAME1>
+     <OBJECT2>TABL</OBJECT2>
+     <OBJ_NAME2>Z01OTC_DTE_ADDL_ADDRESS_RES</OBJ_NAME2>
+     <ID>&lt;groupOrAttributeGroup&gt; DTE_AddlAddress_Res http://bio-rad.com/OTC/OrderStatus http://bio-rad.com/OTC/OrderStatus</ID>
+     <IFR_TYPE>groupOrAttributeGroup</IFR_TYPE>
+     <IFR_NAME>DTE_AddlAddress_Res</IFR_NAME>
+     <IFR_SCALE>-2</IFR_SCALE>
+     <R3_TYPE>TABL</R3_TYPE>
+     <R3_NAME>Z01OTC_DTE_ADDL_ADDRESS_RES</R3_NAME>
+     <R3_TEXT>Proxy Structure (generated)</R3_TEXT>
+     <CATEGORY>ifmtypeenh</CATEGORY>
+    </item>
+   </PROXY_DATA>
+  </asx:values>
+ </asx:abap>
+</abapGit>

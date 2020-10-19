@@ -1,0 +1,209 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<abapGit version="v1.0.0" serializer="LCL_OBJECT_ENHO" serializer_version="v1.0.0">
+ <asx:abap xmlns:asx="http://www.sap.com/abapxml" version="1.0">
+  <asx:values>
+   <TOOL>HOOK_IMPL</TOOL>
+   <SHORTTEXT>Reference for Payment Run</SHORTTEXT>
+   <ORIGINAL_OBJECT>
+    <PGMID>R3TR</PGMID>
+    <ORG_OBJ_TYPE>PROG</ORG_OBJ_TYPE>
+    <ORG_OBJ_NAME>SAPF110S</ORG_OBJ_NAME>
+    <ORG_MAIN_TYPE>PROG</ORG_MAIN_TYPE>
+    <ORG_MAIN_NAME>SAPF110S</ORG_MAIN_NAME>
+    <PROGRAMNAME>SAPF110S</PROGRAMNAME>
+   </ORIGINAL_OBJECT>
+   <ENHANCEMENTS>
+    <ENH_HOOK_IMPL>
+     <PROGRAMNAME>SAPF110S</PROGRAMNAME>
+     <ENHMODE>D</ENHMODE>
+     <FULL_NAME>\PR:SAPF110S\FO:BELEGKOPF_MERKEN\SE:BEGIN\EI</FULL_NAME>
+     <SOURCE>
+      <item>*</item>
+      <item>*Program    : ZIM_OTC_0421_PAYMENT_REFERENCE                          *</item>
+      <item>*Title      : Update reference in FBL5N                               *</item>
+      <item>*Developer  : Ashita Dutta                                            *</item>
+      <item>*Object type: Enhancement                                             *</item>
+      <item>*SAP Release: SAP ECC 6.0                                             *</item>
+      <item>*---------------------------------------------------------------------*</item>
+      <item>*WRICEF ID: OTC_EDD_0421                                              *</item>
+      <item>*---------------------------------------------------------------------*</item>
+      <item>*Description: RIBA Payment reference                                  *</item>
+      <item>*                                                                     *</item>
+      <item>*---------------------------------------------------------------------*</item>
+      <item>*MODIFICATION HISTORY:</item>
+      <item>*=====================================================================*</item>
+      <item>*Date           User        Transport       Description</item>
+      <item>*=========== ============== ============== ===========================*</item>
+      <item>*11-DEC-2018  U104864       E1DK939435     Defect 7030 - Initial</item>
+      <item>*                                                        Development</item>
+      <item>*---------------------------------------------------------------------*</item>
+      <item>CONSTANTS : LC_OTC_EDD_0421  TYPE  Z_ENHANCEMENT  VALUE &apos;OTC_EDD_0421&apos;,   &quot; Enhancement No.</item>
+      <item>LC_BUKRS         TYPE  Z_CRITERIA     VALUE &apos;BUKRS&apos;,          &quot; Enh. Criteria</item>
+      <item>LC_ZWELS         TYPE  Z_CRITERIA     VALUE &apos;ZLSCH&apos;,          &quot; Enh. Criteria</item>
+      <item>LC_NULL          TYPE  Z_CRITERIA     VALUE &apos;NULL&apos;,           &quot; Enh. Criteria</item>
+      <item>LC_SIGN          TYPE  CHAR1          VALUE &apos;I&apos;,              &quot; Sign</item>
+      <item>LC_OPTION        TYPE  CHAR2          VALUE &apos;EQ&apos;.             &quot; Option</item>
+      <item/>
+      <item>TYPES : BEGIN OF LTY_BUKRS,</item>
+      <item>SIGN   TYPE CHAR1,  &quot; SIGN OF TYPE CHAR1</item>
+      <item>OPTION TYPE CHAR2,  &quot; OPTION OF TYPE CHAR2</item>
+      <item>LOW    TYPE BUKRS,  &quot; COMPANY CODE</item>
+      <item>HIGH   TYPE BUKRS,  &quot; Company Code</item>
+      <item>END OF LTY_BUKRS,</item>
+      <item>BEGIN OF LTY_ZWELS,</item>
+      <item>SIGN   TYPE CHAR1,  &quot; SIGN OF TYPE CHAR1</item>
+      <item>OPTION TYPE CHAR2,  &quot; OPTION OF TYPE CHAR2</item>
+      <item>LOW    TYPE DZWELS, &quot; PAYMENT METHOD</item>
+      <item>HIGH   TYPE DZWELS, &quot; Payment Method</item>
+      <item>END OF lty_ZWELS.</item>
+      <item/>
+      <item>DATA : LI_STATUS     TYPE STANDARD TABLE OF ZDEV_ENH_STATUS, &quot; ENHANCEMENT STATUS</item>
+      <item>LI_BUKRS      TYPE STANDARD TABLE OF LTY_BUKRS,       &quot; COMPANY CODE</item>
+      <item>LI_ZWELS      TYPE STANDARD TABLE OF LTY_ZWELS,       &quot; PAYMENT METHOD</item>
+      <item>LWA_BUKRS     TYPE LTY_BUKRS,                         &quot; COMPANY CODE</item>
+      <item>LWA_ZWELS     TYPE LTY_ZWELS,                         &quot; PAYMENT METHOD</item>
+      <item>LWA_STATUS    TYPE ZDEV_ENH_STATUS.                   &quot; ENHANCEMENT STATUS</item>
+      <item/>
+      <item>*  Check enhancement is active or not and fetch the company code and payment method</item>
+      <item>CALL FUNCTION &apos;ZDEV_ENHANCEMENT_STATUS_CHECK&apos;</item>
+      <item>EXPORTING</item>
+      <item>IV_ENHANCEMENT_NO = LC_OTC_EDD_0421</item>
+      <item>TABLES</item>
+      <item>TT_ENH_STATUS     = LI_STATUS.</item>
+      <item/>
+      <item>DELETE LI_STATUS WHERE ACTIVE = ABAP_FALSE.</item>
+      <item/>
+      <item>*  BINARY SEARCH NOT REQUIRED AS FEW RECORDS FETCHED FROM EMI</item>
+      <item>READ TABLE LI_STATUS WITH KEY CRITERIA = LC_NULL</item>
+      <item>ACTIVE   = ABAP_TRUE</item>
+      <item>TRANSPORTING NO FIELDS.</item>
+      <item>IF SY-SUBRC IS INITIAL.</item>
+      <item>LOOP AT LI_STATUS INTO LWA_STATUS.</item>
+      <item>CASE LWA_STATUS-CRITERIA.</item>
+      <item>*  COMPANY CODE</item>
+      <item>WHEN LC_BUKRS.</item>
+      <item>LWA_BUKRS-SIGN   = LC_SIGN.</item>
+      <item>LWA_BUKRS-OPTION = LC_OPTION.</item>
+      <item>LWA_BUKRS-LOW    = LWA_STATUS-SEL_LOW.</item>
+      <item>APPEND LWA_BUKRS TO LI_BUKRS.</item>
+      <item>CLEAR LWA_BUKRS.</item>
+      <item>*  PAYMENT METHOD</item>
+      <item>WHEN LC_ZWELS.</item>
+      <item>LWA_ZWELS-SIGN   = LC_SIGN.</item>
+      <item>LWA_ZWELS-OPTION = LC_OPTION.</item>
+      <item>LWA_ZWELS-LOW    = LWA_STATUS-SEL_LOW.</item>
+      <item>APPEND LWA_ZWELS TO LI_ZWELS.</item>
+      <item>CLEAR LWA_ZWELS.</item>
+      <item>WHEN OTHERS.</item>
+      <item>ENDCASE.</item>
+      <item>ENDLOOP. &quot; LOOP AT LI_STATUS INTO LWA_STATUS</item>
+      <item/>
+      <item>*  If the company code and payment method  in the line item being processed match the EMI entries</item>
+      <item>IF REGUP-ZBUKR IN  LI_BUKRS AND</item>
+      <item>LI_BUKRS[] IS NOT INITIAL AND</item>
+      <item>REGUP-ZWELS IN  LI_ZWELS AND</item>
+      <item>LI_ZWELS[] IS NOT INITIAL.</item>
+      <item>BKPF-XBLNR = REGUP-BELNR.&quot;UPDATE XBLNR FIELD</item>
+      <item>ENDIF.</item>
+      <item>ENDIF.</item>
+     </SOURCE>
+    </ENH_HOOK_IMPL>
+   </ENHANCEMENTS>
+   <SPACES>
+    <item>
+     <FULL_NAME>\PR:SAPF110S\FO:BELEGKOPF_MERKEN\SE:BEGIN\EI</FULL_NAME>
+     <SPACES>
+      <item>0</item>
+      <item>0</item>
+      <item>0</item>
+      <item>0</item>
+      <item>0</item>
+      <item>0</item>
+      <item>0</item>
+      <item>0</item>
+      <item>0</item>
+      <item>0</item>
+      <item>0</item>
+      <item>0</item>
+      <item>0</item>
+      <item>0</item>
+      <item>0</item>
+      <item>0</item>
+      <item>0</item>
+      <item>0</item>
+      <item>0</item>
+      <item>2</item>
+      <item>14</item>
+      <item>14</item>
+      <item>14</item>
+      <item>14</item>
+      <item>14</item>
+      <item>0</item>
+      <item>2</item>
+      <item>11</item>
+      <item>11</item>
+      <item>11</item>
+      <item>11</item>
+      <item>10</item>
+      <item>10</item>
+      <item>11</item>
+      <item>11</item>
+      <item>11</item>
+      <item>11</item>
+      <item>10</item>
+      <item>0</item>
+      <item>2</item>
+      <item>9</item>
+      <item>9</item>
+      <item>9</item>
+      <item>9</item>
+      <item>9</item>
+      <item>0</item>
+      <item>0</item>
+      <item>2</item>
+      <item>4</item>
+      <item>6</item>
+      <item>4</item>
+      <item>6</item>
+      <item>0</item>
+      <item>2</item>
+      <item>0</item>
+      <item>0</item>
+      <item>2</item>
+      <item>32</item>
+      <item>32</item>
+      <item>2</item>
+      <item>8</item>
+      <item>6</item>
+      <item>0</item>
+      <item>8</item>
+      <item>10</item>
+      <item>10</item>
+      <item>10</item>
+      <item>10</item>
+      <item>10</item>
+      <item>0</item>
+      <item>8</item>
+      <item>10</item>
+      <item>10</item>
+      <item>10</item>
+      <item>10</item>
+      <item>10</item>
+      <item>8</item>
+      <item>6</item>
+      <item>4</item>
+      <item>0</item>
+      <item>0</item>
+      <item>4</item>
+      <item>7</item>
+      <item>7</item>
+      <item>7</item>
+      <item>7</item>
+      <item>4</item>
+      <item>2</item>
+     </SPACES>
+    </item>
+   </SPACES>
+  </asx:values>
+ </asx:abap>
+</abapGit>

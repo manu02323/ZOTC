@@ -1,0 +1,249 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<abapGit version="v1.0.0" serializer="LCL_OBJECT_ENHO" serializer_version="v1.0.0">
+ <asx:abap xmlns:asx="http://www.sap.com/abapxml" version="1.0">
+  <asx:values>
+   <TOOL>HOOK_IMPL</TOOL>
+   <SHORTTEXT>CR-1354: Retrofit: Formula-&gt; Cond Val -&gt; 908</SHORTTEXT>
+   <ORIGINAL_OBJECT>
+    <PGMID>R3TR</PGMID>
+    <ORG_OBJ_TYPE>FUGR</ORG_OBJ_TYPE>
+    <ORG_OBJ_NAME>V61A</ORG_OBJ_NAME>
+    <ORG_MAIN_TYPE>FUGR</ORG_MAIN_TYPE>
+    <ORG_MAIN_NAME>V61A</ORG_MAIN_NAME>
+    <PROGRAMNAME>SAPLV61A</PROGRAMNAME>
+   </ORIGINAL_OBJECT>
+   <ENHANCEMENTS>
+    <ENH_HOOK_IMPL>
+     <PROGRAMNAME>SAPLV61A</PROGRAMNAME>
+     <ENHMODE>D</ENHMODE>
+     <FULL_NAME>\PR:SAPLV61A\FO:FRM_KONDI_WERT_908\SE:BEGIN\EI</FULL_NAME>
+     <SOURCE>
+      <item>*************************************************************************</item>
+      <item>* PROGRAM     : RV64A908                                               *</item>
+      <item>* TITLE       : Pricing Routine Enhancement                            *</item>
+      <item>* DEVELOPER   : Rohit Verma                                            *</item>
+      <item>* OBJECT TYPE : INCLUDE                                                *</item>
+      <item>* SAP RELEASE : SAP ECC 6.0                                            *</item>
+      <item>*----------------------------------------------------------------------*</item>
+      <item>* WRICEF ID:    OTC_EDD_0011_Pricing Routine Enhancement               *</item>
+      <item>*----------------------------------------------------------------------*</item>
+      <item>* DESCRIPTION: This include contains custom logic to calculate price   *</item>
+      <item>*              difference final price and list price and populate that *</item>
+      <item>*              in ZCMP condition type.                                 *</item>
+      <item>*----------------------------------------------------------------------*</item>
+      <item>* MODIFICATION HISTORY:                                                *</item>
+      <item>*======================================================================*</item>
+      <item>* DATE        USER     TRANSPORT  DESCRIPTION                          *</item>
+      <item>* =========== ======== ========== =====================================*</item>
+      <item>* 12-May-2014 RVERMA   E1DK913520 INITIAL DEVELOPMENT - CR#1354        *</item>
+      <item>*&amp;---------------------------------------------------------------------*</item>
+      <item/>
+      <item>TYPES:</item>
+      <item>BEGIN OF lty_control,</item>
+      <item>mvalue1     TYPE z_mvalue_low,          &quot;Value Low</item>
+      <item>mvalue2     TYPE z_mvalue_high,         &quot;Value High</item>
+      <item>zz_comments TYPE z_comments,            &quot;Comments</item>
+      <item>END OF lty_control,</item>
+      <item>*&amp;--Table type for Control data table</item>
+      <item>lty_t_control TYPE STANDARD TABLE OF lty_control.</item>
+      <item/>
+      <item>*&amp;--Local Constants Declaration</item>
+      <item>CONSTANTS:</item>
+      <item>lc_mprogram   TYPE programm        VALUE &apos;EDD0011_RV64A908&apos;,  &quot;Program Name</item>
+      <item>lc_mparameter TYPE enhee_parameter VALUE &apos;KSCHL&apos;,             &quot;Parameter Name</item>
+      <item>lc_active     TYPE char01          VALUE &apos;X&apos;,                 &quot;Active</item>
+      <item>lc_opt_eq     TYPE char02          VALUE &apos;EQ&apos;.                &quot;Equal</item>
+      <item/>
+      <item>*&amp;--Local Data Declaration</item>
+      <item>DATA:</item>
+      <item>lv_cond1      TYPE kscha,           &quot;ZR00 Condition Type</item>
+      <item>lv_cond2      TYPE kscha,           &quot;ZL00 Condition Type</item>
+      <item>lv_price1     TYPE kwert,           &quot;ZR00 Condition Type Price</item>
+      <item>lv_price2     TYPE kwert,           &quot;ZL00 Condition Type Price</item>
+      <item/>
+      <item>li_control    TYPE lty_t_control.    &quot;Control Data Table</item>
+      <item/>
+      <item>*&amp;--Local Field Symbol Declaration</item>
+      <item>FIELD-SYMBOLS:</item>
+      <item>&lt;lfs_xkomv&gt;   TYPE komv_index,      &quot;Condition record str</item>
+      <item>&lt;lfs_control&gt; TYPE lty_control.      &quot;Control Data</item>
+      <item/>
+      <item/>
+      <item>*&amp;--Read condition type value of final price, list price from</item>
+      <item>*&amp;--OTC control table</item>
+      <item>SELECT mvalue1</item>
+      <item>mvalue2</item>
+      <item>zz_comments</item>
+      <item>FROM zotc_prc_control</item>
+      <item>INTO TABLE li_control</item>
+      <item>WHERE vkorg      EQ komk-vkorg</item>
+      <item>AND vtweg      EQ komk-vtweg</item>
+      <item>AND mprogram   EQ lc_mprogram</item>
+      <item>AND mparameter EQ lc_mparameter</item>
+      <item>AND mactive    EQ lc_active</item>
+      <item>AND soption    EQ lc_opt_eq.</item>
+      <item/>
+      <item>IF sy-subrc EQ 0.</item>
+      <item/>
+      <item>SORT li_control by zz_comments ASCENDING.</item>
+      <item/>
+      <item>*&amp;--Read condition type value of final price</item>
+      <item>READ TABLE li_control ASSIGNING &lt;lfs_control&gt; INDEX 1.</item>
+      <item>IF sy-subrc EQ 0.</item>
+      <item>MOVE &lt;lfs_control&gt;-mvalue1 TO lv_cond1.</item>
+      <item>ENDIF.</item>
+      <item/>
+      <item>*&amp;--Read condition type value of list price</item>
+      <item>READ TABLE li_control ASSIGNING &lt;lfs_control&gt; INDEX 2.</item>
+      <item>IF sy-subrc EQ 0.</item>
+      <item>MOVE &lt;lfs_control&gt;-mvalue1 TO lv_cond2.</item>
+      <item>ENDIF.</item>
+      <item/>
+      <item>ENDIF.</item>
+      <item/>
+      <item/>
+      <item>*&amp;--If condition type value found from control table</item>
+      <item>IF lv_cond1 IS NOT INITIAL AND</item>
+      <item>lv_cond2 IS NOT INITIAL.</item>
+      <item/>
+      <item>*&amp;--Read price for final price (ZR00) cond type of a item</item>
+      <item>READ TABLE xkomv ASSIGNING &lt;lfs_xkomv&gt;</item>
+      <item>WITH KEY kschl = lv_cond1.</item>
+      <item>IF sy-subrc EQ 0.</item>
+      <item>lv_price1 = &lt;lfs_xkomv&gt;-kwert.</item>
+      <item>ENDIF.</item>
+      <item/>
+      <item>*&amp;--Read price for list price (ZL00) cond type of a item</item>
+      <item>READ TABLE xkomv ASSIGNING &lt;lfs_xkomv&gt;</item>
+      <item>WITH KEY kschl = lv_cond2.</item>
+      <item>IF sy-subrc EQ 0.</item>
+      <item>lv_price2 = &lt;lfs_xkomv&gt;-kwert.</item>
+      <item>ENDIF.</item>
+      <item/>
+      <item>*&amp;--List Comparison Price = Final Price - List Price</item>
+      <item>xkwert = lv_price1 - lv_price2.</item>
+      <item/>
+      <item>ENDIF.</item>
+      <item/>
+      <item/>
+     </SOURCE>
+    </ENH_HOOK_IMPL>
+   </ENHANCEMENTS>
+   <SPACES>
+    <item>
+     <FULL_NAME>\PR:SAPLV61A\FO:FRM_KONDI_WERT_908\SE:BEGIN\EI</FULL_NAME>
+     <SPACES>
+      <item>0</item>
+      <item>0</item>
+      <item>0</item>
+      <item>0</item>
+      <item>0</item>
+      <item>0</item>
+      <item>0</item>
+      <item>0</item>
+      <item>0</item>
+      <item>0</item>
+      <item>0</item>
+      <item>0</item>
+      <item>0</item>
+      <item>0</item>
+      <item>0</item>
+      <item>0</item>
+      <item>0</item>
+      <item>0</item>
+      <item>0</item>
+      <item>0</item>
+      <item>0</item>
+      <item>2</item>
+      <item>4</item>
+      <item>4</item>
+      <item>4</item>
+      <item>2</item>
+      <item>0</item>
+      <item>2</item>
+      <item>0</item>
+      <item>0</item>
+      <item>0</item>
+      <item>2</item>
+      <item>2</item>
+      <item>2</item>
+      <item>2</item>
+      <item>0</item>
+      <item>0</item>
+      <item>0</item>
+      <item>2</item>
+      <item>2</item>
+      <item>2</item>
+      <item>2</item>
+      <item>0</item>
+      <item>2</item>
+      <item>0</item>
+      <item>0</item>
+      <item>0</item>
+      <item>2</item>
+      <item>2</item>
+      <item>0</item>
+      <item>0</item>
+      <item>0</item>
+      <item>0</item>
+      <item>0</item>
+      <item>7</item>
+      <item>7</item>
+      <item>2</item>
+      <item>2</item>
+      <item>2</item>
+      <item>4</item>
+      <item>4</item>
+      <item>4</item>
+      <item>4</item>
+      <item>4</item>
+      <item>0</item>
+      <item>0</item>
+      <item>0</item>
+      <item>2</item>
+      <item>0</item>
+      <item>0</item>
+      <item>2</item>
+      <item>2</item>
+      <item>4</item>
+      <item>2</item>
+      <item>0</item>
+      <item>0</item>
+      <item>2</item>
+      <item>2</item>
+      <item>4</item>
+      <item>2</item>
+      <item>0</item>
+      <item>0</item>
+      <item>0</item>
+      <item>0</item>
+      <item>0</item>
+      <item>0</item>
+      <item>3</item>
+      <item>0</item>
+      <item>0</item>
+      <item>2</item>
+      <item>19</item>
+      <item>2</item>
+      <item>4</item>
+      <item>2</item>
+      <item>0</item>
+      <item>0</item>
+      <item>2</item>
+      <item>19</item>
+      <item>2</item>
+      <item>4</item>
+      <item>2</item>
+      <item>0</item>
+      <item>0</item>
+      <item>2</item>
+      <item>0</item>
+      <item>0</item>
+      <item>0</item>
+      <item>0</item>
+     </SPACES>
+    </item>
+   </SPACES>
+  </asx:values>
+ </asx:abap>
+</abapGit>

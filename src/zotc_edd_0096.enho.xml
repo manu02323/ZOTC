@@ -1,0 +1,205 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<abapGit version="v1.0.0" serializer="LCL_OBJECT_ENHO" serializer_version="v1.0.0">
+ <asx:abap xmlns:asx="http://www.sap.com/abapxml" version="1.0">
+  <asx:values>
+   <TOOL>HOOK_IMPL</TOOL>
+   <SHORTTEXT>Enhancement Implementation for Partner Function Redetermination</SHORTTEXT>
+   <ORIGINAL_OBJECT>
+    <PGMID>R3TR</PGMID>
+    <ORG_OBJ_TYPE>FUGR</ORG_OBJ_TYPE>
+    <ORG_OBJ_NAME>V09A</ORG_OBJ_NAME>
+    <ORG_MAIN_TYPE>FUGR</ORG_MAIN_TYPE>
+    <ORG_MAIN_NAME>V09A</ORG_MAIN_NAME>
+    <PROGRAMNAME>SAPLV09A</PROGRAMNAME>
+   </ORIGINAL_OBJECT>
+   <ENHANCEMENTS>
+    <ENH_HOOK_IMPL>
+     <PROGRAMNAME>SAPLV09A</PROGRAMNAME>
+     <ENHMODE>D</ENHMODE>
+     <FULL_NAME>\FU:SD_PARTNER_SINGLE_MODIFY\SE:BEGIN\EI</FULL_NAME>
+     <SOURCE>
+      <item>************************************************************************</item>
+      <item>* Function Module:  SD_PARTNER_SINGLE_MODIFY                           *</item>
+      <item>* TITLE      :  OTC_EDD_0096_Redetermination of PF in Sales Order      *</item>
+      <item>* DEVELOPER  :  Shushant Nigam                                         *</item>
+      <item>* OBJECT TYPE:  Enhancement                                            *</item>
+      <item>* SAP RELEASE:  SAP ECC 6.0                                            *</item>
+      <item>*----------------------------------------------------------------------*</item>
+      <item>* WRICEF ID:    OTC_EDD_0096_Redetermination of PF in Sales Order      *</item>
+      <item>*----------------------------------------------------------------------*</item>
+      <item>* DESCRIPTION:  Redetermination of PF in Sales Order                   *</item>
+      <item>*                                                                      *</item>
+      <item>*----------------------------------------------------------------------*</item>
+      <item>* MODIFICATION HISTORY:                                                *</item>
+      <item>*======================================================================*</item>
+      <item>* DATE        USER      TRANSPORT    DESCRIPTION                       *</item>
+      <item>* =========== ========  ==========   ==================================*</item>
+      <item>* 04-Sep-13   SNIGAM    E1DK911381   INITIAL DEVELOPMENT CR#674        *</item>
+      <item>*&amp;---------------------------------------------------------------------*</item>
+      <item>* Local Constants Decleration</item>
+      <item>CONSTANTS:</item>
+      <item>*            Parameter in TVARVC table for Ship-To party partner function</item>
+      <item>lc_parameter  TYPE RVARI_VNAM VALUE &apos;ZOTC_EDD_0096_PARVW&apos;,</item>
+      <item>*            Transaction is &apos;Create&apos; ( &apos;H&apos; )</item>
+      <item>lc_so_create  TYPE TRTYP VALUE &apos;H&apos;,</item>
+      <item>*            Transaction is &apos;Change&apos; ( &apos;V&apos; )</item>
+      <item>lc_so_change  TYPE TRTYP VALUE &apos;V&apos;,</item>
+      <item>*            Constants for Stack</item>
+      <item>lc_prog_stk   TYPE char20 VALUE &apos;(SAPMV45A)T180-TRTYP&apos;,</item>
+      <item>lc_prog_stk1  TYPE char20 VALUE &apos;(SAPMV45A)TVAK-PARGR&apos;.</item>
+      <item/>
+      <item>* Local Data Decleration</item>
+      <item>DATA: lv_trtyp TYPE trtyp,    &quot;Transaction Type</item>
+      <item>lv_pargr TYPE pargr,    &quot;Partner Determination Procedure</item>
+      <item>lv_parvw TYPE parvw.    &quot;Partner Function</item>
+      <item/>
+      <item>* Local Field Symbol Decleration</item>
+      <item>FIELD-SYMBOLS: &lt;lfs_transaction_type&gt;  TYPE trtyp,</item>
+      <item>&lt;lfs_partner_det_procd&gt; TYPE pargr.</item>
+      <item/>
+      <item>* Assign stack values to the field symbol</item>
+      <item>ASSIGN (lc_prog_stk) TO &lt;lfs_transaction_type&gt;.</item>
+      <item>IF sy-subrc = 0.</item>
+      <item>*   Store Transaction Type into Local Variable</item>
+      <item>lv_trtyp = &lt;lfs_transaction_type&gt;.</item>
+      <item>ENDIF.</item>
+      <item/>
+      <item>* Assign stack values to the field symbol</item>
+      <item>ASSIGN (lc_prog_stk1) TO &lt;lfs_partner_det_procd&gt;.</item>
+      <item>IF sy-subrc = 0.</item>
+      <item>*   Store Partner Determination Procedure into Local Variable</item>
+      <item>lv_pargr = &lt;lfs_partner_det_procd&gt;.</item>
+      <item>ENDIF.</item>
+      <item/>
+      <item>* Fetch Partner Function for Ship-to Party</item>
+      <item>SELECT low</item>
+      <item>UP TO 1 ROWS</item>
+      <item>FROM tvarvc</item>
+      <item>INTO lv_parvw</item>
+      <item>WHERE name = lc_parameter.</item>
+      <item>ENDSELECT.</item>
+      <item/>
+      <item>IF sy-subrc EQ 0..</item>
+      <item/>
+      <item>IF ( ( lv_trtyp    EQ lc_so_create ) OR      &quot;If its creation of Sales Order</item>
+      <item>( lv_trtyp    EQ lc_so_change )  ) AND  &quot;If its change in Sales Order</item>
+      <item/>
+      <item>( fif_parvw     EQ lv_parvw        ) AND  &quot;If its Ship-to Party</item>
+      <item>( fif_kunnr_old IS NOT INITIAL     ) AND  &quot;If Old Ship-to Party is not blank</item>
+      <item>( fif_kunnr_new IS NOT INITIAL     ) AND  &quot;If New Ship-to Party is not blank</item>
+      <item>( fif_kunnr_old NE fif_kunnr_new   ).     &quot;If Old Ship-to Party was differnt from new one</item>
+      <item/>
+      <item>*        Set Flag for Partner Function Redtermination</item>
+      <item>fif_partial_new_determination = abap_true.</item>
+      <item/>
+      <item>IF fif_posnr IS NOT INITIAL.</item>
+      <item/>
+      <item>*     Update Partner Determination Procedure</item>
+      <item>fif_pargr = lv_pargr.</item>
+      <item/>
+      <item>ENDIF.</item>
+      <item/>
+      <item/>
+      <item>ENDIF.</item>
+      <item/>
+      <item>ENDIF.</item>
+      <item/>
+     </SOURCE>
+    </ENH_HOOK_IMPL>
+   </ENHANCEMENTS>
+   <SPACES>
+    <item>
+     <FULL_NAME>\FU:SD_PARTNER_SINGLE_MODIFY\SE:BEGIN\EI</FULL_NAME>
+     <SPACES>
+      <item>0</item>
+      <item>0</item>
+      <item>0</item>
+      <item>0</item>
+      <item>0</item>
+      <item>0</item>
+      <item>0</item>
+      <item>0</item>
+      <item>0</item>
+      <item>0</item>
+      <item>0</item>
+      <item>0</item>
+      <item>0</item>
+      <item>0</item>
+      <item>0</item>
+      <item>0</item>
+      <item>0</item>
+      <item>0</item>
+      <item>0</item>
+      <item>2</item>
+      <item>0</item>
+      <item>13</item>
+      <item>0</item>
+      <item>13</item>
+      <item>0</item>
+      <item>13</item>
+      <item>0</item>
+      <item>13</item>
+      <item>13</item>
+      <item>0</item>
+      <item>0</item>
+      <item>2</item>
+      <item>8</item>
+      <item>8</item>
+      <item>0</item>
+      <item>0</item>
+      <item>2</item>
+      <item>17</item>
+      <item>0</item>
+      <item>0</item>
+      <item>2</item>
+      <item>2</item>
+      <item>0</item>
+      <item>4</item>
+      <item>2</item>
+      <item>0</item>
+      <item>0</item>
+      <item>2</item>
+      <item>2</item>
+      <item>0</item>
+      <item>4</item>
+      <item>2</item>
+      <item>0</item>
+      <item>0</item>
+      <item>2</item>
+      <item>4</item>
+      <item>4</item>
+      <item>4</item>
+      <item>4</item>
+      <item>2</item>
+      <item>0</item>
+      <item>2</item>
+      <item>0</item>
+      <item>4</item>
+      <item>9</item>
+      <item>0</item>
+      <item>7</item>
+      <item>7</item>
+      <item>7</item>
+      <item>7</item>
+      <item>0</item>
+      <item>0</item>
+      <item>9</item>
+      <item>0</item>
+      <item>4</item>
+      <item>0</item>
+      <item>0</item>
+      <item>6</item>
+      <item>0</item>
+      <item>4</item>
+      <item>0</item>
+      <item>0</item>
+      <item>4</item>
+      <item>0</item>
+      <item>2</item>
+      <item>0</item>
+     </SPACES>
+    </item>
+   </SPACES>
+  </asx:values>
+ </asx:abap>
+</abapGit>

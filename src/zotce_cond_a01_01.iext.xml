@@ -1,0 +1,35 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<abapGit version="v1.0.0" serializer="LCL_OBJECT_IEXT" serializer_version="v1.0.0">
+ <asx:abap xmlns:asx="http://www.sap.com/abapxml" version="1.0">
+  <asx:values>
+   <IEXT>
+    <ATTRIBUTES>
+     <DESCRP>Extension of Condition IDOC A01</DESCRP>
+     <CLOSED>X</CLOSED>
+     <RELEASED>731</RELEASED>
+     <FIRSTTYP>ZOTCE_COND_A01_01</FIRSTTYP>
+     <LASTTYP>ZOTCE_COND_A01_01</LASTTYP>
+     <IDOCTYP>COND_A01</IDOCTYP>
+    </ATTRIBUTES>
+    <T_SYNTAX>
+     <EDI_IAPI03>
+      <REFSEGTYP>E1KOMG</REFSEGTYP>
+      <NR>0001</NR>
+      <SEGTYP>Z1OTC_COND_KEY_FIELDS</SEGTYP>
+      <OCCMIN>0000000001</OCCMIN>
+      <OCCMAX>0000000001</OCCMAX>
+      <HLEVEL>01</HLEVEL>
+     </EDI_IAPI03>
+     <EDI_IAPI03>
+      <REFSEGTYP>E1KONP</REFSEGTYP>
+      <NR>0001</NR>
+      <SEGTYP>Z1OTC_KONP_EXT</SEGTYP>
+      <OCCMIN>0000000001</OCCMIN>
+      <OCCMAX>0000000001</OCCMAX>
+      <HLEVEL>01</HLEVEL>
+     </EDI_IAPI03>
+    </T_SYNTAX>
+   </IEXT>
+  </asx:values>
+ </asx:abap>
+</abapGit>

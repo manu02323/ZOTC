@@ -1,0 +1,45 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<abapGit version="v1.0.0" serializer="LCL_OBJECT_SPRX" serializer_version="v1.0.0">
+ <asx:abap xmlns:asx="http://www.sap.com/abapxml" version="1.0">
+  <asx:values>
+   <PROXY_HEADER>
+    <item>
+     <OBJECT>TTYP</OBJECT>
+     <OBJ_NAME>Z01OTCDT_PAYMENT_COMPLEME_TAB3</OBJ_NAME>
+     <OBJECT_M>TABL</OBJECT_M>
+     <OBJ_NAME_M>Z01OTCDT_PAYMENT_COMPLEMENT_39</OBJ_NAME_M>
+     <HASH_ID>0AFEF667996346F26E0C703245F89958BD314AC8</HASH_ID>
+     <ID>TableOf&lt;type&gt; Concepts_RT05 &lt;element&gt; Concepts_RT05 &lt;type&gt; DT_PaymentComplement_3_3 http://bio-rad.com/OTC/PaymentComplement_MexicoCFDI http://bio-rad.com/OTC/PaymentComplement_MexicoCFDI</ID>
+     <IFR_TYPE>TableOftype</IFR_TYPE>
+     <IFR_NAME>Concepts_RT05</IFR_NAME>
+     <IFR_NSPCE>http://bio-rad.com/OTC/PaymentComplement_MexicoCFDI</IFR_NSPCE>
+     <IFR_GNSPCE>http://bio-rad.com/OTC/PaymentComplement_MexicoCFDI</IFR_GNSPCE>
+     <GEN_VERS>0005</GEN_VERS>
+     <PREFIX>Z01OTC</PREFIX>
+     <CATEGORY>ifmtypedef</CATEGORY>
+    </item>
+   </PROXY_HEADER>
+   <PROXY_DATA>
+    <item>
+     <OBJECT>TTYP</OBJECT>
+     <OBJ_NAME>Z01OTCDT_PAYMENT_COMPLEME_TAB3</OBJ_NAME>
+     <OBJECT1>TTYP</OBJECT1>
+     <OBJ_NAME1>Z01OTCDT_PAYMENT_COMPLEME_TAB3</OBJ_NAME1>
+     <OBJECT2>TTYP</OBJECT2>
+     <OBJ_NAME2>Z01OTCDT_PAYMENT_COMPLEME_TAB3</OBJ_NAME2>
+     <OBJECT_R>TABL</OBJECT_R>
+     <OBJ_NAME_R>Z01OTCDT_PAYMENT_COMPLEMENT_38</OBJ_NAME_R>
+     <ID>TableOf&lt;type&gt; Concepts_RT05 &lt;element&gt; Concepts_RT05 &lt;type&gt; DT_PaymentComplement_3_3 http://bio-rad.com/OTC/PaymentComplement_MexicoCFDI http://bio-rad.com/OTC/PaymentComplement_MexicoCFDI</ID>
+     <IFR_TYPE>TableOftype</IFR_TYPE>
+     <IFR_NAME>Concepts_RT05</IFR_NAME>
+     <IFR_LANGU>EN</IFR_LANGU>
+     <IFR_SCALE>-2</IFR_SCALE>
+     <R3_TYPE>TTYP</R3_TYPE>
+     <R3_NAME>Z01OTCDT_PAYMENT_COMPLEME_TAB3</R3_NAME>
+     <R3_TEXT>Proxy Table Type (generated)</R3_TEXT>
+     <CATEGORY>ifmtypedef</CATEGORY>
+    </item>
+   </PROXY_DATA>
+  </asx:values>
+ </asx:abap>
+</abapGit>

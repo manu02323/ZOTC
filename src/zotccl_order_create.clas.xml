@@ -1,0 +1,54 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<abapGit version="v1.0.0" serializer="LCL_OBJECT_CLAS" serializer_version="v1.0.0">
+ <asx:abap xmlns:asx="http://www.sap.com/abapxml" version="1.0">
+  <asx:values>
+   <VSEOCLASS>
+    <CLSNAME>ZOTCCL_ORDER_CREATE</CLSNAME>
+    <LANGU>E</LANGU>
+    <DESCRIPT>Asynch Sales Order Create</DESCRIPT>
+    <STATE>1</STATE>
+    <CLSCCINCL>X</CLSCCINCL>
+    <FIXPT>X</FIXPT>
+    <UNICODE>X</UNICODE>
+   </VSEOCLASS>
+   <DESCRIPTIONS>
+    <SEOCOMPOTX>
+     <CLSNAME>ZOTCCL_ORDER_CREATE</CLSNAME>
+     <CMPNAME>ATTRV_FEH_GUID</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Payload ID</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>ZOTCCL_ORDER_CREATE</CLSNAME>
+     <CMPNAME>ATTR_S_P_ECH_ACTION</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Asynch Sales Order Create</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>ZOTCCL_ORDER_CREATE</CLSNAME>
+     <CMPNAME>GREF_MESSAGE_CONTAINER</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Message container</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>ZOTCCL_ORDER_CREATE</CLSNAME>
+     <CMPNAME>GV_ECH_OBJTYPE</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Object Type</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>ZOTCCL_ORDER_CREATE</CLSNAME>
+     <CMPNAME>GV_PROCESSING_CONTEXT</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Processing context of service implementation</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>ZOTCCL_ORDER_CREATE</CLSNAME>
+     <CMPNAME>I_FEH_DATA</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>FEH table type</DESCRIPT>
+    </SEOCOMPOTX>
+   </DESCRIPTIONS>
+  </asx:values>
+ </asx:abap>
+</abapGit>

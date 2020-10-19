@@ -1,0 +1,66 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<abapGit version="v1.0.0" serializer="LCL_OBJECT_CLAS" serializer_version="v1.0.0">
+ <asx:abap xmlns:asx="http://www.sap.com/abapxml" version="1.0">
+  <asx:values>
+   <VSEOCLASS>
+    <CLSNAME>ZOTCCL_RECEIVEPRICE_IMP</CLSNAME>
+    <LANGU>E</LANGU>
+    <DESCRIPT>OTC_IDD_0203</DESCRIPT>
+    <STATE>1</STATE>
+    <CLSCCINCL>X</CLSCCINCL>
+    <FIXPT>X</FIXPT>
+    <UNICODE>X</UNICODE>
+   </VSEOCLASS>
+   <DESCRIPTIONS>
+    <SEOCOMPOTX>
+     <CLSNAME>ZOTCCL_RECEIVEPRICE_IMP</CLSNAME>
+     <CMPNAME>EXECUTE</CMPNAME>
+     <LANGU>1</LANGU>
+     <DESCRIPT>Process Main Class execute method</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>ZOTCCL_RECEIVEPRICE_IMP</CLSNAME>
+     <CMPNAME>EXECUTE</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Process Main Class execute method</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>ZOTCCL_RECEIVEPRICE_IMP</CLSNAME>
+     <CMPNAME>EXECUTE</CMPNAME>
+     <LANGU>F</LANGU>
+     <DESCRIPT>Process Main Class execute method</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>ZOTCCL_RECEIVEPRICE_IMP</CLSNAME>
+     <CMPNAME>EXECUTE</CMPNAME>
+     <LANGU>J</LANGU>
+     <DESCRIPT>Process Main Class execute method</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>ZOTCCL_RECEIVEPRICE_IMP</CLSNAME>
+     <CMPNAME>EXECUTE</CMPNAME>
+     <LANGU>N</LANGU>
+     <DESCRIPT>Process Main Class execute method</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>ZOTCCL_RECEIVEPRICE_IMP</CLSNAME>
+     <CMPNAME>EXECUTE</CMPNAME>
+     <LANGU>P</LANGU>
+     <DESCRIPT>Process Main Class execute method</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>ZOTCCL_RECEIVEPRICE_IMP</CLSNAME>
+     <CMPNAME>EXECUTE</CMPNAME>
+     <LANGU>R</LANGU>
+     <DESCRIPT>Process Main Class execute method</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>ZOTCCL_RECEIVEPRICE_IMP</CLSNAME>
+     <CMPNAME>EXECUTE</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Process Main Class execute method</DESCRIPT>
+    </SEOCOMPOTX>
+   </DESCRIPTIONS>
+  </asx:values>
+ </asx:abap>
+</abapGit>

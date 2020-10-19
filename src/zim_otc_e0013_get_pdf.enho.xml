@@ -1,0 +1,79 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<abapGit version="v1.0.0" serializer="LCL_OBJECT_ENHO" serializer_version="v1.0.0">
+ <asx:abap xmlns:asx="http://www.sap.com/abapxml" version="1.0">
+  <asx:values>
+   <TOOL>HOOK_IMPL</TOOL>
+   <SHORTTEXT>Get PDF for Email - Print parameters</SHORTTEXT>
+   <ORIGINAL_OBJECT>
+    <PGMID>R3TR</PGMID>
+    <ORG_OBJ_TYPE>PROG</ORG_OBJ_TYPE>
+    <ORG_OBJ_NAME>ZOTCP0013O_MONTHLY_OPEN_AR_STM</ORG_OBJ_NAME>
+    <ORG_MAIN_TYPE>PROG</ORG_MAIN_TYPE>
+    <ORG_MAIN_NAME>ZOTCP0013O_MONTHLY_OPEN_AR_STM</ORG_MAIN_NAME>
+    <PROGRAMNAME>ZOTCP0013O_MONTHLY_OPEN_AR_STM</PROGRAMNAME>
+   </ORIGINAL_OBJECT>
+   <ENHANCEMENTS>
+    <ENH_HOOK_IMPL>
+     <PROGRAMNAME>ZOTCP0013O_MONTHLY_OPEN_AR_STM</PROGRAMNAME>
+     <ENHMODE>D</ENHMODE>
+     <FULL_NAME>\PR:ZOTCP0013O_MONTHLY_OPEN_AR_STM\FO:FILL_OUTPUTPARAMS_PDF\SE:END\EI</FULL_NAME>
+     <SOURCE>
+      <item>*======================================================================*</item>
+      <item>* DATE        USER     TRANSPORT  DESCRIPTION                          *</item>
+      <item>* =========== ======== ========== =====================================*</item>
+      <item>* 04-Jan-2013 ADAS1    E1DK908816 Check the parameter to get PDF content</item>
+      <item>************************************************************************</item>
+      <item>*Begin of change ADD By ADAS1 D#2244*********************</item>
+      <item/>
+      <item/>
+      <item>DATA: lv_comm TYPE AD_COMM.</item>
+      <item/>
+      <item>SELECT DEFLT_COMM</item>
+      <item>FROM adrc</item>
+      <item>INTO lv_comm</item>
+      <item>UP TO 1 ROWS</item>
+      <item>WHERE addrnumber = dkadr-adrnr.</item>
+      <item>ENDSELECT.</item>
+      <item/>
+      <item>IF lv_comm &lt;&gt; &apos;PRT&apos;.</item>
+      <item>IF NOT sy-batch IS INITIAL.</item>
+      <item>p_outputparams-GETPDF       = &apos;X&apos;.</item>
+      <item>ENDIF.</item>
+      <item>ENDIF.</item>
+      <item>*End of change ADD By ADAS1 D#2244*********************</item>
+     </SOURCE>
+    </ENH_HOOK_IMPL>
+   </ENHANCEMENTS>
+   <SPACES>
+    <item>
+     <FULL_NAME>\PR:ZOTCP0013O_MONTHLY_OPEN_AR_STM\FO:FILL_OUTPUTPARAMS_PDF\SE:END\EI</FULL_NAME>
+     <SPACES>
+      <item>0</item>
+      <item>0</item>
+      <item>0</item>
+      <item>0</item>
+      <item>0</item>
+      <item>0</item>
+      <item>0</item>
+      <item>0</item>
+      <item>0</item>
+      <item>0</item>
+      <item>0</item>
+      <item>7</item>
+      <item>7</item>
+      <item>7</item>
+      <item>7</item>
+      <item>0</item>
+      <item>0</item>
+      <item>2</item>
+      <item>4</item>
+      <item>6</item>
+      <item>4</item>
+      <item>2</item>
+      <item>0</item>
+     </SPACES>
+    </item>
+   </SPACES>
+  </asx:values>
+ </asx:abap>
+</abapGit>

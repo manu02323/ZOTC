@@ -1,0 +1,1477 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<abapGit version="v1.0.0" serializer="LCL_OBJECT_SFPI" serializer_version="v1.0.0">
+ <asx:abap version="1.0" xmlns:asx="http://www.sap.com/abapxml">
+  <asx:values>
+   <VERSION>1</VERSION>
+   <TYPE/>
+   <INTERFACE href="#o1"/>
+   <INTERFACET>
+    <FPINTERFACET>
+     <NAME/>
+     <STATE/>
+     <LANGUAGE>N</LANGUAGE>
+     <ID/>
+     <TEXT>Returns RGA Form</TEXT>
+    </FPINTERFACET>
+    <FPINTERFACET>
+     <NAME/>
+     <STATE/>
+     <LANGUAGE>E</LANGUAGE>
+     <ID/>
+     <TEXT>Returns RGA Form</TEXT>
+    </FPINTERFACET>
+    <FPINTERFACET>
+     <NAME/>
+     <STATE/>
+     <LANGUAGE>F</LANGUAGE>
+     <ID/>
+     <TEXT>Returns RGA Form</TEXT>
+    </FPINTERFACET>
+    <FPINTERFACET>
+     <NAME/>
+     <STATE/>
+     <LANGUAGE>P</LANGUAGE>
+     <ID/>
+     <TEXT>Returns RGA Form</TEXT>
+    </FPINTERFACET>
+    <FPINTERFACET>
+     <NAME/>
+     <STATE/>
+     <LANGUAGE>R</LANGUAGE>
+     <ID/>
+     <TEXT>Returns RGA Form</TEXT>
+    </FPINTERFACET>
+    <FPINTERFACET>
+     <NAME/>
+     <STATE/>
+     <LANGUAGE>S</LANGUAGE>
+     <ID/>
+     <TEXT>Returns RGA Form</TEXT>
+    </FPINTERFACET>
+    <FPINTERFACET>
+     <NAME/>
+     <STATE/>
+     <LANGUAGE>J</LANGUAGE>
+     <ID/>
+     <TEXT>Returns RGA Form</TEXT>
+    </FPINTERFACET>
+    <FPINTERFACET>
+     <NAME/>
+     <STATE/>
+     <LANGUAGE>1</LANGUAGE>
+     <ID/>
+     <TEXT>Returns RGA Form</TEXT>
+    </FPINTERFACET>
+    <FPINTERFACET>
+     <NAME/>
+     <STATE/>
+     <LANGUAGE>I</LANGUAGE>
+     <ID/>
+     <TEXT>Returns RGA Form</TEXT>
+    </FPINTERFACET>
+    <FPINTERFACET>
+     <NAME/>
+     <STATE/>
+     <LANGUAGE>K</LANGUAGE>
+     <ID/>
+     <TEXT>Returns RGA Form</TEXT>
+    </FPINTERFACET>
+    <FPINTERFACET>
+     <NAME/>
+     <STATE/>
+     <LANGUAGE>H</LANGUAGE>
+     <ID/>
+     <TEXT>Returns RGA Form</TEXT>
+    </FPINTERFACET>
+    <FPINTERFACET>
+     <NAME/>
+     <STATE/>
+     <LANGUAGE>O</LANGUAGE>
+     <ID/>
+     <TEXT>Returns RGA Form</TEXT>
+    </FPINTERFACET>
+    <FPINTERFACET>
+     <NAME/>
+     <STATE/>
+     <LANGUAGE>V</LANGUAGE>
+     <ID/>
+     <TEXT>Returns RGA Form</TEXT>
+    </FPINTERFACET>
+    <FPINTERFACET>
+     <NAME/>
+     <STATE/>
+     <LANGUAGE>U</LANGUAGE>
+     <ID/>
+     <TEXT>Returns RGA Form</TEXT>
+    </FPINTERFACET>
+    <FPINTERFACET>
+     <NAME/>
+     <STATE/>
+     <LANGUAGE>G</LANGUAGE>
+     <ID/>
+     <TEXT>Returns RGA Form</TEXT>
+    </FPINTERFACET>
+   </INTERFACET>
+  </asx:values>
+  <asx:heap xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:abap="http://www.sap.com/abapxml/types/built-in" xmlns:cls="http://www.sap.com/abapxml/classes/global" xmlns:dic="http://www.sap.com/abapxml/types/dictionary">
+   <cls:CL_FP_INTERFACE_DATA id="o1">
+    <CL_FP_INTERFACE_DATA classVersion="1">
+     <CODING href="#o5"/>
+     <PARAMETERS href="#o4"/>
+     <GLOBAL_DEFINITIONS href="#o3"/>
+     <REFERENCE_FIELDS href="#o2"/>
+     <XSD_DEFINITIONS/>
+    </CL_FP_INTERFACE_DATA>
+   </cls:CL_FP_INTERFACE_DATA>
+   <cls:CL_FP_REFERENCE_FIELDS id="o2">
+    <CL_FP_INTERFACE_DATA_CHANGED classVersion="1">
+     <INTERFACE_DATA href="#o1"/>
+    </CL_FP_INTERFACE_DATA_CHANGED>
+    <CL_FP_REFERENCE_FIELDS classVersion="1">
+     <REFERENCE_FIELDS/>
+    </CL_FP_REFERENCE_FIELDS>
+   </cls:CL_FP_REFERENCE_FIELDS>
+   <cls:CL_FP_GLOBAL_DEFINITIONS id="o3">
+    <CL_FP_INTERFACE_DATA_CHANGED classVersion="1">
+     <INTERFACE_DATA href="#o1"/>
+    </CL_FP_INTERFACE_DATA_CHANGED>
+    <CL_FP_GLOBAL_DEFINITIONS classVersion="1">
+     <GLOBAL_DATA>
+      <SFPGDATA>
+       <NAME>GV_RGA_TXT</NAME>
+       <TYPING>TYPE</TYPING>
+       <TYPENAME>STRING</TYPENAME>
+       <DEFAULTVAL/>
+       <CONSTANT/>
+      </SFPGDATA>
+      <SFPGDATA>
+       <NAME>I_TLINE</NAME>
+       <TYPING>TYPE</TYPING>
+       <TYPENAME>TY_T_TLINE</TYPENAME>
+       <DEFAULTVAL/>
+       <CONSTANT/>
+      </SFPGDATA>
+      <SFPGDATA>
+       <NAME>GV_CASE</NAME>
+       <TYPING>TYPE</TYPING>
+       <TYPENAME>Z_CASEREF</TYPENAME>
+       <DEFAULTVAL/>
+       <CONSTANT/>
+      </SFPGDATA>
+      <SFPGDATA>
+       <NAME>I_ITEM_DISPLAY</NAME>
+       <TYPING>TYPE</TYPING>
+       <TYPENAME>TY_T_ITEM_DISPLAY</TYPENAME>
+       <DEFAULTVAL/>
+       <CONSTANT/>
+      </SFPGDATA>
+      <SFPGDATA>
+       <NAME>C_BMP</NAME>
+       <TYPING>TYPE</TYPING>
+       <TYPENAME>STRING</TYPENAME>
+       <DEFAULTVAL>&apos;images/bmp&apos;</DEFAULTVAL>
+       <CONSTANT>X</CONSTANT>
+      </SFPGDATA>
+      <SFPGDATA>
+       <NAME>GV_PRODUCTION</NAME>
+       <TYPING>TYPE</TYPING>
+       <TYPENAME>BOOLEAN</TYPENAME>
+       <DEFAULTVAL/>
+       <CONSTANT/>
+      </SFPGDATA>
+      <SFPGDATA>
+       <NAME>GV_LOGO_BIN</NAME>
+       <TYPING>TYPE</TYPING>
+       <TYPENAME>XSTRING</TYPENAME>
+       <DEFAULTVAL/>
+       <CONSTANT/>
+      </SFPGDATA>
+      <SFPGDATA>
+       <NAME>GV_IMAGE_BIN</NAME>
+       <TYPING>TYPE</TYPING>
+       <TYPENAME>XSTRING</TYPENAME>
+       <DEFAULTVAL/>
+       <CONSTANT/>
+      </SFPGDATA>
+      <SFPGDATA>
+       <NAME>GV_LANG</NAME>
+       <TYPING>TYPE</TYPING>
+       <TYPENAME>SPRAS</TYPENAME>
+       <DEFAULTVAL/>
+       <CONSTANT/>
+      </SFPGDATA>
+      <SFPGDATA>
+       <NAME>I_DISPLAY</NAME>
+       <TYPING>TYPE</TYPING>
+       <TYPENAME>TY_T_DISPLAY</TYPENAME>
+       <DEFAULTVAL/>
+       <CONSTANT/>
+      </SFPGDATA>
+      <SFPGDATA>
+       <NAME>C_EMAIL</NAME>
+       <TYPING>TYPE</TYPING>
+       <TYPENAME>CHAR9</TYPENAME>
+       <DEFAULTVAL>&apos;(Email: &apos;</DEFAULTVAL>
+       <CONSTANT>X</CONSTANT>
+      </SFPGDATA>
+      <SFPGDATA>
+       <NAME>C_COMMA</NAME>
+       <TYPING>TYPE</TYPING>
+       <TYPENAME>CHAR2</TYPENAME>
+       <DEFAULTVAL>&apos;, &apos;</DEFAULTVAL>
+       <CONSTANT>X</CONSTANT>
+      </SFPGDATA>
+      <SFPGDATA>
+       <NAME>C_BRAK_CL</NAME>
+       <TYPING>TYPE</TYPING>
+       <TYPENAME>CHAR1</TYPENAME>
+       <DEFAULTVAL>&apos;)&apos;</DEFAULTVAL>
+       <CONSTANT>X</CONSTANT>
+      </SFPGDATA>
+      <SFPGDATA>
+       <NAME>GV_REMITT_CITY</NAME>
+       <TYPING>TYPE</TYPING>
+       <TYPENAME>STRING</TYPENAME>
+       <DEFAULTVAL/>
+       <CONSTANT/>
+      </SFPGDATA>
+      <SFPGDATA>
+       <NAME>GV_COUNTRY</NAME>
+       <TYPING>TYPE</TYPING>
+       <TYPENAME>LAND1</TYPENAME>
+       <DEFAULTVAL/>
+       <CONSTANT/>
+      </SFPGDATA>
+      <SFPGDATA>
+       <NAME>GV_CREATED_BY_NAME</NAME>
+       <TYPING>TYPE</TYPING>
+       <TYPENAME>STRING</TYPENAME>
+       <DEFAULTVAL/>
+       <CONSTANT/>
+      </SFPGDATA>
+      <SFPGDATA>
+       <NAME>X_TEXTNAME</NAME>
+       <TYPING>TYPE</TYPING>
+       <TYPENAME>TY_TEXTNAME</TYPENAME>
+       <DEFAULTVAL/>
+       <CONSTANT/>
+      </SFPGDATA>
+     </GLOBAL_DATA>
+     <TYPES>
+      <FPCLINE>************************************************************************</FPCLINE>
+      <FPCLINE>* Interface  : ZOTC0022_RETURN_RGA                                     *</FPCLINE>
+      <FPCLINE>* Title      : Returns RGA Form                                        *</FPCLINE>
+      <FPCLINE>* Developer  : Rohit Verma                                             *</FPCLINE>
+      <FPCLINE>* Object Type: Form Interface                                          *</FPCLINE>
+      <FPCLINE>* SAP Release: SAP ECC 6.0                                             *</FPCLINE>
+      <FPCLINE>*----------------------------------------------------------------------*</FPCLINE>
+      <FPCLINE>* WRICEF ID  : OTC_FDD_0022_Returns RGA Form                           *</FPCLINE>
+      <FPCLINE>*----------------------------------------------------------------------*</FPCLINE>
+      <FPCLINE>* Description: Returns Goods Authorization form is sent to the customer*</FPCLINE>
+      <FPCLINE>*              through email, fax or print. These forms need to be     *</FPCLINE>
+      <FPCLINE>*              auto-generated at the time the return order is saved.   *</FPCLINE>
+      <FPCLINE>*----------------------------------------------------------------------*</FPCLINE>
+      <FPCLINE>* Modification History:                                                *</FPCLINE>
+      <FPCLINE>*======================================================================*</FPCLINE>
+      <FPCLINE>* Date        User      Transport  Description                         *</FPCLINE>
+      <FPCLINE>* =========== ========  ========== ====================================*</FPCLINE>
+      <FPCLINE>* 24-APR-2012 RVERMA    E1DK901239 Initial development                 *</FPCLINE>
+      <FPCLINE>* 14-NOV-2014 SGORAY    E2DK906535 D2 changes                          *</FPCLINE>
+      <FPCLINE>* 16-SEP-2016 U034334   E1DK921274 D3_OTC_FDD_0022 SO10 texts structure*</FPCLINE>
+      <FPCLINE>* 28-OCT-2016 U034334   E1DK921274 Defect_5450 Read &amp; print Item SNo in*</FPCLINE>
+      <FPCLINE>*                                  sold-to party language              *</FPCLINE>
+      <FPCLINE>*&amp;---------------------------------------------------------------------*</FPCLINE>
+      <FPCLINE/>
+      <FPCLINE/>
+      <FPCLINE>*&amp;--Display Structure</FPCLINE>
+      <FPCLINE>TYPES: BEGIN OF ty_display,</FPCLINE>
+      <FPCLINE>         werks    TYPE CHAR04, &quot;Plant</FPCLINE>
+      <FPCLINE>         posn     TYPE int4,   &quot;Position</FPCLINE>
+      <FPCLINE>         mat_desc TYPE char40, &quot;Material &amp; Description</FPCLINE>
+      <FPCLINE>* ---&gt; Begin of Change for D2_OTC_FDD_0022 CR D2_2545 by &lt;Dmoiran&gt;</FPCLINE>
+      <FPCLINE>         sernr    TYPE string, &quot;Serial Number</FPCLINE>
+      <FPCLINE>* ---&gt; End of Change for D2_OTC_FDD_0022 CR D2_2545 by &lt;Dmoiran&gt;</FPCLINE>
+      <FPCLINE>         qty_uom  TYPE char20, &quot;Quantity &amp; UoM</FPCLINE>
+      <FPCLINE>       END OF ty_display,</FPCLINE>
+      <FPCLINE/>
+      <FPCLINE>       ty_t_display TYPE STANDARD TABLE OF ty_display,</FPCLINE>
+      <FPCLINE>* ---&gt; Begin of Change/Insert/ for D2_OTC_FDD_0022 by Sgoray</FPCLINE>
+      <FPCLINE>       BEGIN OF ty_vbak,</FPCLINE>
+      <FPCLINE>         vkorg TYPE vkorg,     &quot;Sales Organization</FPCLINE>
+      <FPCLINE>         Case  TYPE Z_CASEREF, &quot;Case Ref No</FPCLINE>
+      <FPCLINE>       END OF ty_vbak,</FPCLINE>
+      <FPCLINE/>
+      <FPCLINE>       BEGIN OF ty_item_display,</FPCLINE>
+      <FPCLINE>         werks    TYPE CHAR04, &quot;Plant</FPCLINE>
+      <FPCLINE>         posn     TYPE int4,   &quot;Position</FPCLINE>
+      <FPCLINE>         mat      TYPE char18, &quot;Material</FPCLINE>
+      <FPCLINE>         desc     TYPE char40, &quot;Description</FPCLINE>
+      <FPCLINE>* ---&gt; Begin of Change for D2_OTC_FDD_0022 CR D2_2545 by &lt;Dmoiran&gt;</FPCLINE>
+      <FPCLINE>         sernr    TYPE string, &quot;Serial Number</FPCLINE>
+      <FPCLINE>* ---&gt; End of Change for D2_OTC_FDD_0022 CR D2_2545 by &lt;Dmoiran&gt;</FPCLINE>
+      <FPCLINE>         qty      TYPE char15, &quot;Quantity</FPCLINE>
+      <FPCLINE>         uom      TYPE char3,  &quot;UOM</FPCLINE>
+      <FPCLINE>* ---&gt; Begin of Insert for D3_OTC_FDD_0022 by U034334</FPCLINE>
+      <FPCLINE>         kdmat    TYPE matnr_ku, &quot; Material Number Used by Customer</FPCLINE>
+      <FPCLINE>* &lt;--- End   of Insert for D3_OTC_FDD_0022 by U034334</FPCLINE>
+      <FPCLINE>* ---&gt; Begin of Insert for D3_OTC_FDD_0022 Defect_5450 by U034334</FPCLINE>
+      <FPCLINE>         objname  TYPE tdobname, &quot; Sales Document Item</FPCLINE>
+      <FPCLINE>* &lt;--- End   of Insert for D3_OTC_FDD_0022 Defect_5450 by U034334</FPCLINE>
+      <FPCLINE>       END OF ty_item_display,</FPCLINE>
+      <FPCLINE>       ty_t_item_display TYPE STANDARD TABLE OF ty_item_display,</FPCLINE>
+      <FPCLINE>       ty_t_tline        TYPE STANDARD TABLE OF TLINE, &quot; SAPscript: Text Lines</FPCLINE>
+      <FPCLINE>* ---&gt; End of Change/Insert/ for D2_OTC_FDD_0022 by Sgoray</FPCLINE>
+      <FPCLINE/>
+      <FPCLINE>* ---&gt; Begin of Insert for D3_OTC_FDD_0022 by U034334</FPCLINE>
+      <FPCLINE>       BEGIN OF ty_textname,</FPCLINE>
+      <FPCLINE>         cust_email        TYPE tdobname, &quot; Text name ZOTC_CUSTOMER_SERVICE_EMAIL</FPCLINE>
+      <FPCLINE>         email             TYPE tdobname, &quot; Text name ZOTC_EMAIL</FPCLINE>
+      <FPCLINE>         quantity          TYPE tdobname, &quot; Text name ZOTC_FDD_QUANTITY</FPCLINE>
+      <FPCLINE>         instructions      TYPE tdobname, &quot; Text Name ZOTC_INSTRUCTIONS</FPCLINE>
+      <FPCLINE>         mat_desc          TYPE tdobname, &quot; Text Name ZOTC_MATERIAL_NUMBER</FPCLINE>
+      <FPCLINE>         order_comments    TYPE tdobname, &quot; Text Name ZOTC_ORDER_COMMENTS</FPCLINE>
+      <FPCLINE>         original_order    TYPE tdobname, &quot; Text Name ZOTC_ORIGINAL_ORDER</FPCLINE>
+      <FPCLINE>         original_po       TYPE tdobname, &quot; Text Name ZOTC_ORIGINAL_PO</FPCLINE>
+      <FPCLINE>         page              TYPE tdobname, &quot; Text Name ZOTC_PAGE</FPCLINE>
+      <FPCLINE>         posn              TYPE tdobname, &quot; Text Name ZOTC_POSN</FPCLINE>
+      <FPCLINE>         reference         TYPE tdobname, &quot; Text Name ZOTC_REFERENCE</FPCLINE>
+      <FPCLINE>         returns_by        TYPE tdobname, &quot; Text Name ZOTC_RETURNS_BY</FPCLINE>
+      <FPCLINE>         return_address    TYPE tdobname, &quot; Text Name ZOTC_RETURN_ADDRESS</FPCLINE>
+      <FPCLINE>         return_rga        TYPE tdobname, &quot; Text Name ZOTC_RETURN_RGA</FPCLINE>
+      <FPCLINE>         rga_num           TYPE tdobname, &quot; Text Name ZOTC_RGA_NUMBER</FPCLINE>
+      <FPCLINE>         serial_num        TYPE tdobname, &quot; Text Name ZOTC_SERIAL_NUMBER</FPCLINE>
+      <FPCLINE>         to                TYPE tdobname, &quot; Text Name ZOTC_TO</FPCLINE>
+      <FPCLINE>         uom               TYPE tdobname, &quot; Text Name ZOTC_UOM</FPCLINE>
+      <FPCLINE>       END OF ty_textname.</FPCLINE>
+      <FPCLINE>* &lt;--- End   of Insert for D3_OTC_FDD_0022 by U034334</FPCLINE>
+     </TYPES>
+     <FIELDSYMBOLS/>
+    </CL_FP_GLOBAL_DEFINITIONS>
+   </cls:CL_FP_GLOBAL_DEFINITIONS>
+   <cls:CL_FP_PARAMETERS id="o4">
+    <CL_FP_INTERFACE_DATA_CHANGED classVersion="1">
+     <INTERFACE_DATA href="#o1"/>
+    </CL_FP_INTERFACE_DATA_CHANGED>
+    <CL_FP_PARAMETERS classVersion="1">
+     <IMPORT_PARAMETERS>
+      <SFPIOPAR>
+       <NAME>IM_VBELN</NAME>
+       <TYPING>TYPE</TYPING>
+       <TYPENAME>VBELN_VA</TYPENAME>
+       <OPTIONAL/>
+       <BYVALUE/>
+       <DEFAULTVAL/>
+       <STANDARD/>
+       <CONSTANT/>
+      </SFPIOPAR>
+      <SFPIOPAR>
+       <NAME>IM_HEADER</NAME>
+       <TYPING>TYPE</TYPING>
+       <TYPENAME>ZOTC_RETURN_RGA_HEAD</TYPENAME>
+       <OPTIONAL>X</OPTIONAL>
+       <BYVALUE>X</BYVALUE>
+       <DEFAULTVAL/>
+       <STANDARD/>
+       <CONSTANT/>
+      </SFPIOPAR>
+      <SFPIOPAR>
+       <NAME>IM_ITEM</NAME>
+       <TYPING>TYPE</TYPING>
+       <TYPENAME>ZOTC_T_RETURN_RGA_ITEM</TYPENAME>
+       <OPTIONAL>X</OPTIONAL>
+       <BYVALUE/>
+       <DEFAULTVAL/>
+       <STANDARD/>
+       <CONSTANT/>
+      </SFPIOPAR>
+      <SFPIOPAR>
+       <NAME>IM_PLANT_ADDR</NAME>
+       <TYPING>TYPE</TYPING>
+       <TYPENAME>ZOTC_T_RETURN_RGA_ADDRESS</TYPENAME>
+       <OPTIONAL>X</OPTIONAL>
+       <BYVALUE/>
+       <DEFAULTVAL/>
+       <STANDARD/>
+       <CONSTANT/>
+      </SFPIOPAR>
+      <SFPIOPAR>
+       <NAME>IM_CRE_ADDR</NAME>
+       <TYPING>TYPE</TYPING>
+       <TYPENAME>BAPIADDR3</TYPENAME>
+       <OPTIONAL>X</OPTIONAL>
+       <BYVALUE/>
+       <DEFAULTVAL/>
+       <STANDARD/>
+       <CONSTANT/>
+      </SFPIOPAR>
+     </IMPORT_PARAMETERS>
+     <EXPORT_PARAMETERS/>
+     <TABLE_PARAMETERS/>
+     <EXCEPTIONS/>
+    </CL_FP_PARAMETERS>
+   </cls:CL_FP_PARAMETERS>
+   <cls:CL_FP_CODING id="o5">
+    <CL_FP_INTERFACE_DATA_CHANGED classVersion="1">
+     <INTERFACE_DATA href="#o1"/>
+    </CL_FP_INTERFACE_DATA_CHANGED>
+    <CL_FP_CODING classVersion="1">
+     <INPUT_PARAMETERS/>
+     <OUTPUT_PARAMETERS/>
+     <INITIALIZATION>
+      <FPCLINE>************************************************************************</FPCLINE>
+      <FPCLINE>* Interface  : ZOTC0022_RETURN_RGA                                     *</FPCLINE>
+      <FPCLINE>* Title      : Returns RGA Form                                        *</FPCLINE>
+      <FPCLINE>* Developer  : Rohit Verma                                             *</FPCLINE>
+      <FPCLINE>* Object Type: Form Interface                                          *</FPCLINE>
+      <FPCLINE>* SAP Release: SAP ECC 6.0                                             *</FPCLINE>
+      <FPCLINE>*----------------------------------------------------------------------*</FPCLINE>
+      <FPCLINE>* WRICEF ID  : OTC_FDD_0022_Returns RGA Form                           *</FPCLINE>
+      <FPCLINE>*----------------------------------------------------------------------*</FPCLINE>
+      <FPCLINE>* Description: Returns Goods Authorization form is sent to the customer*</FPCLINE>
+      <FPCLINE>*              through email, fax or print. These forms need to be     *</FPCLINE>
+      <FPCLINE>*              auto-generated at the time the return order is saved.   *</FPCLINE>
+      <FPCLINE>*----------------------------------------------------------------------*</FPCLINE>
+      <FPCLINE>* Modification History:                                                *</FPCLINE>
+      <FPCLINE>*======================================================================*</FPCLINE>
+      <FPCLINE>* Date        User      Transport  Description                         *</FPCLINE>
+      <FPCLINE>* =========== ========  ========== ====================================*</FPCLINE>
+      <FPCLINE>* 24-APR-2012 RVERMA    E1DK901239 Initial development                 *</FPCLINE>
+      <FPCLINE>* 14-NOV-2014 SGORAY    E2DK906535 D2_OTC_FDD_0022                     *</FPCLINE>
+      <FPCLINE>* 12-SEP-2016 U034334   E1DK921274 D3_OTC_FDD_0022 Get sold-to customer*</FPCLINE>
+      <FPCLINE>*                                  lang &amp; ctry for date,decimal format.*</FPCLINE>
+      <FPCLINE>*                                  Format qty,date,UOM for D3 countries*</FPCLINE>
+      <FPCLINE>* 28-OCT-2016 U034334   E1DK921274 Defect_5450 Read &amp; print Item SNo in*</FPCLINE>
+      <FPCLINE>*                                  sold-to party language              *</FPCLINE>
+      <FPCLINE>*&amp;---------------------------------------------------------------------*</FPCLINE>
+      <FPCLINE/>
+      <FPCLINE>* ---&gt; Begin of Insert for D3_OTC_FDD_0022 by U034334</FPCLINE>
+      <FPCLINE>DATA: lv_d3_format_flag TYPE flag,                              &quot; General Flag</FPCLINE>
+      <FPCLINE>      lv_d3_lang_flag   TYPE flag,                              &quot; General Flag</FPCLINE>
+      <FPCLINE>      lv_soldtoctry     TYPE land1,                             &quot; Country Key</FPCLINE>
+      <FPCLINE>      lv_soldtolang     TYPE langu,                             &quot; Language Key</FPCLINE>
+      <FPCLINE>      li_status         TYPE STANDARD TABLE OF zdev_enh_status. &quot; Enhancement Status</FPCLINE>
+      <FPCLINE/>
+      <FPCLINE>PERFORM f_get_emi_status CHANGING li_status.</FPCLINE>
+      <FPCLINE/>
+      <FPCLINE>*&amp;--Get sold-to partner data.</FPCLINE>
+      <FPCLINE>PERFORM f_get_partner_data USING    im_vbeln</FPCLINE>
+      <FPCLINE>                           CHANGING lv_soldtoctry</FPCLINE>
+      <FPCLINE>                                    lv_soldtolang.</FPCLINE>
+      <FPCLINE/>
+      <FPCLINE>*&amp;--Check if it is a D3 country.</FPCLINE>
+      <FPCLINE>PERFORM f_check_d3_format USING    im_header-vkorg</FPCLINE>
+      <FPCLINE>                                   li_status</FPCLINE>
+      <FPCLINE>                          CHANGING lv_d3_format_flag.</FPCLINE>
+      <FPCLINE/>
+      <FPCLINE>IF lv_d3_format_flag = abap_true.</FPCLINE>
+      <FPCLINE>  SET COUNTRY lv_soldtoctry. &quot;Set country for decimal format</FPCLINE>
+      <FPCLINE>ENDIF. &quot; IF lv_d3_format_flag = abap_true</FPCLINE>
+      <FPCLINE/>
+      <FPCLINE>*&amp;--Determine the language of the form.</FPCLINE>
+      <FPCLINE>PERFORM f_get_language USING    im_vbeln</FPCLINE>
+      <FPCLINE>                                li_status</FPCLINE>
+      <FPCLINE>                                lv_soldtolang</FPCLINE>
+      <FPCLINE>                       CHANGING gv_lang</FPCLINE>
+      <FPCLINE>                                gv_case</FPCLINE>
+      <FPCLINE>                                lv_d3_lang_flag.</FPCLINE>
+      <FPCLINE/>
+      <FPCLINE>*&amp;--Populate standard texts based on D3 country check</FPCLINE>
+      <FPCLINE>PERFORM f_get_textname USING    lv_d3_lang_flag</FPCLINE>
+      <FPCLINE>                                gv_lang</FPCLINE>
+      <FPCLINE>                       CHANGING x_textname.</FPCLINE>
+      <FPCLINE/>
+      <FPCLINE>*&amp;--Format Dates in the document.</FPCLINE>
+      <FPCLINE>PERFORM f_format_date USING    lv_d3_format_flag</FPCLINE>
+      <FPCLINE>                               gv_lang</FPCLINE>
+      <FPCLINE>                      CHANGING im_header.</FPCLINE>
+      <FPCLINE>* &lt;--- End   of Insert for D3_OTC_FDD_0022 by U034334</FPCLINE>
+      <FPCLINE/>
+      <FPCLINE>*&amp;--Format Addresses in the document</FPCLINE>
+      <FPCLINE>PERFORM f_format_address USING    im_header</FPCLINE>
+      <FPCLINE>                                  im_cre_addr</FPCLINE>
+      <FPCLINE>                         CHANGING gv_remitt_city</FPCLINE>
+      <FPCLINE>                                  gv_created_by_name.</FPCLINE>
+      <FPCLINE/>
+      <FPCLINE>*&amp;--Format display in Form</FPCLINE>
+      <FPCLINE>PERFORM f_fomat_display_table USING    im_item</FPCLINE>
+      <FPCLINE>* ---&gt; Begin of Insert for D3_OTC_FDD_0022 by U034334</FPCLINE>
+      <FPCLINE>                                       lv_d3_format_flag</FPCLINE>
+      <FPCLINE>                                       gv_lang</FPCLINE>
+      <FPCLINE>* &lt;--- End   of Insert for D3_OTC_FDD_0022 by U034334</FPCLINE>
+      <FPCLINE>                              CHANGING i_display.</FPCLINE>
+      <FPCLINE/>
+      <FPCLINE>* ---&gt; Begin of Change/Insert/ for D2_OTC_FDD_0022 by Sgoray</FPCLINE>
+      <FPCLINE>PERFORM f_item_display_table USING    im_item</FPCLINE>
+      <FPCLINE>* ---&gt; Begin of Insert for D3_OTC_FDD_0022 by U034334</FPCLINE>
+      <FPCLINE>                                      lv_d3_format_flag</FPCLINE>
+      <FPCLINE>                                      gv_lang</FPCLINE>
+      <FPCLINE>* &lt;--- End   of Insert for D3_OTC_FDD_0022 by U034334</FPCLINE>
+      <FPCLINE>* ---&gt; Begin of Insert for D3_OTC_FDD_0022 Defect_5450 by U034334</FPCLINE>
+      <FPCLINE>                                      im_vbeln</FPCLINE>
+      <FPCLINE>* &lt;--- End   of Insert for D3_OTC_FDD_0022 Defect_5450 by U034334</FPCLINE>
+      <FPCLINE>                             CHANGING i_item_display.</FPCLINE>
+      <FPCLINE/>
+      <FPCLINE>* ---&gt; Begin of Delete for D3_OTC_FDD_0022 by U034334</FPCLINE>
+      <FPCLINE>*PERFORM f_get_language USING    im_vbeln</FPCLINE>
+      <FPCLINE>*                       CHANGING gv_lang</FPCLINE>
+      <FPCLINE>*                                gv_case.</FPCLINE>
+      <FPCLINE>* &lt;--- End   of Delete for D3_OTC_FDD_0022 by U034334</FPCLINE>
+      <FPCLINE/>
+      <FPCLINE>PERFORM f_get_oatext   USING    im_vbeln</FPCLINE>
+      <FPCLINE>* ---&gt; Begin of Insert for D3_OTC_FDD_0022 by U034334</FPCLINE>
+      <FPCLINE>                                lv_d3_lang_flag</FPCLINE>
+      <FPCLINE>* &lt;--- End   of Insert for D3_OTC_FDD_0022 by U034334</FPCLINE>
+      <FPCLINE>                       CHANGING i_tline.</FPCLINE>
+      <FPCLINE>* * ---&gt; End of Change/Insert/ for D2_OTC_FDD_0022 by Sgoray</FPCLINE>
+      <FPCLINE/>
+      <FPCLINE>*&amp;--Check production system for Watermark printing</FPCLINE>
+      <FPCLINE>PERFORM f_check_production_system.</FPCLINE>
+      <FPCLINE/>
+      <FPCLINE>*&amp;--Convert Logo in bin format</FPCLINE>
+      <FPCLINE>PERFORM f_convert_logo_bin.</FPCLINE>
+     </INITIALIZATION>
+     <FORMS>
+      <FPCLINE>************************************************************************</FPCLINE>
+      <FPCLINE>* Interface  : ZOTCP0022O_RETURN_RGA_FORM                              *</FPCLINE>
+      <FPCLINE>* Title      : Returns RGA Form                                        *</FPCLINE>
+      <FPCLINE>* Developer  : Rohit Verma                                             *</FPCLINE>
+      <FPCLINE>* Object Type: Form Interface                                          *</FPCLINE>
+      <FPCLINE>* SAP Release: SAP ECC 6.0                                             *</FPCLINE>
+      <FPCLINE>*----------------------------------------------------------------------*</FPCLINE>
+      <FPCLINE>* WRICEF ID  : OTC_FDD_0022_Returns RGA Form                           *</FPCLINE>
+      <FPCLINE>*----------------------------------------------------------------------*</FPCLINE>
+      <FPCLINE>* Description: Returns Goods Authorization form is sent to the customer*</FPCLINE>
+      <FPCLINE>*              through email, fax or print. These forms need to be     *</FPCLINE>
+      <FPCLINE>*              auto-generated at the time the return order is saved.   *</FPCLINE>
+      <FPCLINE>*----------------------------------------------------------------------*</FPCLINE>
+      <FPCLINE>* Modification History:                                                *</FPCLINE>
+      <FPCLINE>*======================================================================*</FPCLINE>
+      <FPCLINE>* Date        User      Transport  Description                         *</FPCLINE>
+      <FPCLINE>* =========== ========  ========== ====================================*</FPCLINE>
+      <FPCLINE>* 24-APR-2012 RVERMA    E1DK901239 Initial development                 *</FPCLINE>
+      <FPCLINE>* 14-NOV-2014 SGORAY    E2DK906535 D2_OTC_FDD_0022                     *</FPCLINE>
+      <FPCLINE>* 06-JAN-2015 MGARG     E2DK906535 Defect 2545, Serial Number of item  *</FPCLINE>
+      <FPCLINE>*                                  should be read by using Read_Text   *</FPCLINE>
+      <FPCLINE>*                                  function module                     *</FPCLINE>
+      <FPCLINE>* 03-MAR-2015 DCHAKRA   E2DK906535 Defect #4254: The standard text     *</FPCLINE>
+      <FPCLINE>*                                  ZOTC_RGA_NUMBER is read and concate-*</FPCLINE>
+      <FPCLINE>*                                  nated with the Order no. VBELN for  *</FPCLINE>
+      <FPCLINE>*                                  printing.                           *</FPCLINE>
+      <FPCLINE>* 08-SEP-2016 U034334   E1DK921274 D3_OTC_FDD_0022: Check if D3 country*</FPCLINE>
+      <FPCLINE>*                                  Change logic for getting D3 language*</FPCLINE>
+      <FPCLINE>*                                  Change date, decimal format, UOM and*</FPCLINE>
+      <FPCLINE>*                                  translation texts for D3            *</FPCLINE>
+      <FPCLINE>* 28-OCT-2016 U034334   E1DK921274 Defect_5450 Read &amp; print Item SNo in*</FPCLINE>
+      <FPCLINE>*                                  sold-to party language              *</FPCLINE>
+      <FPCLINE>* 11-Nov-2017 U034229   E1DK931117 Defect# 4089: Updates to the Nordic *</FPCLINE>
+      <FPCLINE>*                                  labels                              *</FPCLINE>
+      <FPCLINE>*&amp;---------------------------------------------------------------------*</FPCLINE>
+      <FPCLINE/>
+      <FPCLINE>**&amp;---------------------------------------------------------------------</FPCLINE>
+      <FPCLINE>*</FPCLINE>
+      <FPCLINE>*&amp;      Form  f_format_address</FPCLINE>
+      <FPCLINE>*&amp;---------------------------------------------------------------------*</FPCLINE>
+      <FPCLINE>*       Format addresses in the document</FPCLINE>
+      <FPCLINE>*----------------------------------------------------------------------*</FPCLINE>
+      <FPCLINE>*      --&gt;FP_SADR          Sales Organisation Address</FPCLINE>
+      <FPCLINE>*      --&gt;FP_CRE_ADDR      Created by Address</FPCLINE>
+      <FPCLINE>*      &lt;--FP_REMITT_CITY   Remitt City</FPCLINE>
+      <FPCLINE>*      &lt;--FP_CREATED_NAME  Created By Name</FPCLINE>
+      <FPCLINE>*----------------------------------------------------------------------*</FPCLINE>
+      <FPCLINE>FORM f_format_address USING fp_header       TYPE zotc_return_rga_head &quot; Header data for Returns RGA Form</FPCLINE>
+      <FPCLINE>                            fp_cre_addr     TYPE bapiaddr3            &quot; BAPI reference structure for addresses (contact person)</FPCLINE>
+      <FPCLINE>                   CHANGING fp_remitt_city  TYPE string</FPCLINE>
+      <FPCLINE>                            fp_created_name TYPE string.</FPCLINE>
+      <FPCLINE/>
+      <FPCLINE>*&amp;--Concatenate City &amp; Region</FPCLINE>
+      <FPCLINE>  CONCATENATE fp_header-comp_city1</FPCLINE>
+      <FPCLINE>              c_comma</FPCLINE>
+      <FPCLINE>              fp_header-comp_regio</FPCLINE>
+      <FPCLINE>         INTO fp_remitt_city.</FPCLINE>
+      <FPCLINE>*&amp;--Concatenate Remittance City &amp; Postal Code</FPCLINE>
+      <FPCLINE>  CONCATENATE fp_remitt_city</FPCLINE>
+      <FPCLINE>              fp_header-comp_pcode</FPCLINE>
+      <FPCLINE>         INTO fp_remitt_city</FPCLINE>
+      <FPCLINE>         SEPARATED BY space.</FPCLINE>
+      <FPCLINE/>
+      <FPCLINE>*&amp;--Concatenate E-mail Address &amp; Name of person who craeted document</FPCLINE>
+      <FPCLINE>  CONCATENATE c_email</FPCLINE>
+      <FPCLINE>              fp_cre_addr-e_mail</FPCLINE>
+      <FPCLINE>         INTO fp_created_name</FPCLINE>
+      <FPCLINE>         SEPARATED BY space.</FPCLINE>
+      <FPCLINE/>
+      <FPCLINE>  CONCATENATE fp_created_name</FPCLINE>
+      <FPCLINE>              c_brak_cl</FPCLINE>
+      <FPCLINE>         INTO fp_created_name.</FPCLINE>
+      <FPCLINE/>
+      <FPCLINE>  CONCATENATE fp_cre_addr-firstname</FPCLINE>
+      <FPCLINE>              fp_cre_addr-lastname</FPCLINE>
+      <FPCLINE>              fp_created_name</FPCLINE>
+      <FPCLINE>         INTO fp_created_name</FPCLINE>
+      <FPCLINE>         SEPARATED BY space.</FPCLINE>
+      <FPCLINE/>
+      <FPCLINE>ENDFORM. &quot;f_format_address</FPCLINE>
+      <FPCLINE/>
+      <FPCLINE>*&amp;---------------------------------------------------------------------*</FPCLINE>
+      <FPCLINE>*&amp;      Form  f_fomat_display_table</FPCLINE>
+      <FPCLINE>*&amp;---------------------------------------------------------------------*</FPCLINE>
+      <FPCLINE>*       Format Display table</FPCLINE>
+      <FPCLINE>*----------------------------------------------------------------------*</FPCLINE>
+      <FPCLINE>*      --&gt;FP_I_ITEM               Return RGA Item data</FPCLINE>
+      <FPCLINE>*      --&gt;FP_D3_FORMAT_FLAG       Indicator for D3 format</FPCLINE>
+      <FPCLINE>*      --&gt;FP_P_LANG               Form Language</FPCLINE>
+      <FPCLINE>*      &lt;--FP_I_DISPLAY            Display data table</FPCLINE>
+      <FPCLINE>*----------------------------------------------------------------------*</FPCLINE>
+      <FPCLINE>FORM f_fomat_display_table</FPCLINE>
+      <FPCLINE>               USING    fp_i_item         TYPE zotc_t_return_rga_item</FPCLINE>
+      <FPCLINE>* ---&gt; Begin of Insert for D3_OTC_FDD_0022 by U034334</FPCLINE>
+      <FPCLINE>                        fp_d3_format_flag TYPE flag  &quot; D3 format Flag</FPCLINE>
+      <FPCLINE>                        fp_p_lang         TYPE spras &quot; Language Key</FPCLINE>
+      <FPCLINE>* &lt;--- End    of Insert for D3_OTC_FDD_0022 by U034334</FPCLINE>
+      <FPCLINE>               CHANGING fp_i_display      TYPE ty_t_display.</FPCLINE>
+      <FPCLINE/>
+      <FPCLINE>  CONSTANTS:</FPCLINE>
+      <FPCLINE>*&amp;--Check constant</FPCLINE>
+      <FPCLINE>    lc_check TYPE char1 VALUE &apos;X&apos;. &quot; Check of type CHAR1</FPCLINE>
+      <FPCLINE/>
+      <FPCLINE>  FIELD-SYMBOLS:</FPCLINE>
+      <FPCLINE>*&amp;--Item Data</FPCLINE>
+      <FPCLINE>      &lt;fs_item&gt;     TYPE zotc_return_rga_item, &quot; Return RGA Item data</FPCLINE>
+      <FPCLINE>      &lt;fs_item_tmp&gt; TYPE zotc_return_rga_item. &quot; Return RGA Item data</FPCLINE>
+      <FPCLINE/>
+      <FPCLINE>  DATA:</FPCLINE>
+      <FPCLINE>*&amp;--Display table work area</FPCLINE>
+      <FPCLINE>      lwa_display   TYPE ty_display,</FPCLINE>
+      <FPCLINE>*&amp;--Index</FPCLINE>
+      <FPCLINE>      lv_index      TYPE sytabix, &quot; Index of Internal Tables</FPCLINE>
+      <FPCLINE>*&amp;--Counter</FPCLINE>
+      <FPCLINE>      lv_count      TYPE i, &quot; Count of type Integers</FPCLINE>
+      <FPCLINE>*&amp;--UoM field</FPCLINE>
+      <FPCLINE>      lv_uom        TYPE char20, &quot; Uom of type CHAR20</FPCLINE>
+      <FPCLINE>*&amp;--flag to check the next record has same POSN &amp; WERKS</FPCLINE>
+      <FPCLINE>      lv_flag_next  TYPE char1, &quot; Flag_next of type CHAR1</FPCLINE>
+      <FPCLINE>*&amp;--Material in print format</FPCLINE>
+      <FPCLINE>      lv_matnr      TYPE char18, &quot; Matnr of type CHAR18</FPCLINE>
+      <FPCLINE>* ---&gt; Begin of change for D2_OTC_FDD_0022 Defect 2545 by MGARG</FPCLINE>
+      <FPCLINE>*&amp;--Serial number in print format</FPCLINE>
+      <FPCLINE>      lv_sernr      TYPE string.</FPCLINE>
+      <FPCLINE>* ---&gt; End of Change for D2_OTC_FDD_0022 Defect 2545 by MGARG</FPCLINE>
+      <FPCLINE/>
+      <FPCLINE>  LOOP AT fp_i_item ASSIGNING &lt;fs_item&gt;.</FPCLINE>
+      <FPCLINE/>
+      <FPCLINE>    lv_index = sy-tabix + 1.</FPCLINE>
+      <FPCLINE/>
+      <FPCLINE>    CALL FUNCTION &apos;CONVERSION_EXIT_ALPHA_OUTPUT&apos;</FPCLINE>
+      <FPCLINE>      EXPORTING</FPCLINE>
+      <FPCLINE>        input  = &lt;fs_item&gt;-sernr</FPCLINE>
+      <FPCLINE>      IMPORTING</FPCLINE>
+      <FPCLINE>        output = lv_sernr.</FPCLINE>
+      <FPCLINE/>
+      <FPCLINE>    AT NEW posn.</FPCLINE>
+      <FPCLINE>*&amp;--Item Plant</FPCLINE>
+      <FPCLINE>      lwa_display-werks      = &lt;fs_item&gt;-werks.</FPCLINE>
+      <FPCLINE>*&amp;--Item Position</FPCLINE>
+      <FPCLINE>      lwa_display-posn       = &lt;fs_item&gt;-posn.</FPCLINE>
+      <FPCLINE>*&amp;--Item</FPCLINE>
+      <FPCLINE>      CALL FUNCTION &apos;CONVERSION_EXIT_ALPHA_OUTPUT&apos;</FPCLINE>
+      <FPCLINE>        EXPORTING</FPCLINE>
+      <FPCLINE>          input  = &lt;fs_item&gt;-matnr</FPCLINE>
+      <FPCLINE>        IMPORTING</FPCLINE>
+      <FPCLINE>          output = lv_matnr.</FPCLINE>
+      <FPCLINE/>
+      <FPCLINE>      lwa_display-mat_desc   = lv_matnr.</FPCLINE>
+      <FPCLINE>*&amp;--Serial Number</FPCLINE>
+      <FPCLINE>      lwa_display-sernr      = lv_sernr.</FPCLINE>
+      <FPCLINE/>
+      <FPCLINE>*&amp;--Quantity</FPCLINE>
+      <FPCLINE/>
+      <FPCLINE>      WRITE &lt;fs_item&gt;-zmeng TO lwa_display-qty_uom</FPCLINE>
+      <FPCLINE>                            UNIT &lt;fs_item&gt;-zieme.</FPCLINE>
+      <FPCLINE>*&amp;--UoM</FPCLINE>
+      <FPCLINE>* &lt;--- Begin of Delete for D3_OTC_FDD_0022 by U034334</FPCLINE>
+      <FPCLINE>*        lv_uom = &lt;fs_item&gt;-zieme.</FPCLINE>
+      <FPCLINE>* &lt;--- End   of Delete for D3_OTC_FDD_0022 by U034334</FPCLINE>
+      <FPCLINE>* &lt;--- Begin of Insert for D3_OTC_FDD_0022 by U034334</FPCLINE>
+      <FPCLINE>      IF fp_d3_format_flag EQ abap_true. &quot;If D3 format required</FPCLINE>
+      <FPCLINE>        CALL FUNCTION &apos;CONVERSION_EXIT_CUNIT_OUTPUT&apos;</FPCLINE>
+      <FPCLINE>          EXPORTING</FPCLINE>
+      <FPCLINE>            INPUT          = &lt;fs_item&gt;-zieme</FPCLINE>
+      <FPCLINE>            LANGUAGE       = fp_p_lang</FPCLINE>
+      <FPCLINE>          IMPORTING</FPCLINE>
+      <FPCLINE>            OUTPUT         = lv_uom</FPCLINE>
+      <FPCLINE>          EXCEPTIONS</FPCLINE>
+      <FPCLINE>            UNIT_NOT_FOUND = 1</FPCLINE>
+      <FPCLINE>            OTHERS         = 2.</FPCLINE>
+      <FPCLINE/>
+      <FPCLINE>        IF SY-SUBRC NE 0.</FPCLINE>
+      <FPCLINE>          lv_uom = &lt;fs_item&gt;-zieme.</FPCLINE>
+      <FPCLINE>        ENDIF. &quot; IF SY-SUBRC NE 0</FPCLINE>
+      <FPCLINE>      ELSE. &quot; ELSE -&gt; IF fp_d3_format_flag EQ abap_true</FPCLINE>
+      <FPCLINE>        lv_uom = &lt;fs_item&gt;-zieme.</FPCLINE>
+      <FPCLINE>      ENDIF. &quot; IF fp_d3_format_flag EQ abap_true</FPCLINE>
+      <FPCLINE>* &lt;--- End   of Insert for D3_OTC_FDD_0022 by U034334</FPCLINE>
+      <FPCLINE/>
+      <FPCLINE>      APPEND lwa_display TO fp_i_display.</FPCLINE>
+      <FPCLINE>      CLEAR: lwa_display.</FPCLINE>
+      <FPCLINE/>
+      <FPCLINE>*&amp;--Check next record and if next record has new plant or posn then</FPCLINE>
+      <FPCLINE>*&amp;--append a record in FP_I_DISPLAY for item description, UoM</FPCLINE>
+      <FPCLINE>      READ TABLE fp_i_item ASSIGNING &lt;fs_item_tmp&gt;</FPCLINE>
+      <FPCLINE>                           INDEX lv_index.</FPCLINE>
+      <FPCLINE>      IF sy-subrc NE 0.</FPCLINE>
+      <FPCLINE>        lv_flag_next = lc_check.</FPCLINE>
+      <FPCLINE>      ELSE. &quot; ELSE -&gt; IF sy-subrc NE 0</FPCLINE>
+      <FPCLINE>        IF &lt;fs_item_tmp&gt;-werks NE &lt;fs_item&gt;-werks OR</FPCLINE>
+      <FPCLINE>           &lt;fs_item_tmp&gt;-posn  NE &lt;fs_item&gt;-posn.</FPCLINE>
+      <FPCLINE>          lv_flag_next = lc_check.</FPCLINE>
+      <FPCLINE>        ENDIF. &quot; IF &lt;fs_item_tmp&gt;-werks NE &lt;fs_item&gt;-werks OR</FPCLINE>
+      <FPCLINE>      ENDIF. &quot; IF sy-subrc NE 0</FPCLINE>
+      <FPCLINE/>
+      <FPCLINE>      IF lv_flag_next EQ lc_check.</FPCLINE>
+      <FPCLINE/>
+      <FPCLINE>*&amp;--Item Plant</FPCLINE>
+      <FPCLINE>        lwa_display-werks      = &lt;fs_item&gt;-werks.</FPCLINE>
+      <FPCLINE>*&amp;--Item Description</FPCLINE>
+      <FPCLINE>        lwa_display-mat_desc   = &lt;fs_item&gt;-arktx.</FPCLINE>
+      <FPCLINE>*&amp;--UoM</FPCLINE>
+      <FPCLINE>        lwa_display-qty_uom    = lv_uom.</FPCLINE>
+      <FPCLINE/>
+      <FPCLINE>        APPEND lwa_display TO fp_i_display.</FPCLINE>
+      <FPCLINE>        CLEAR: lwa_display.</FPCLINE>
+      <FPCLINE/>
+      <FPCLINE>      ENDIF. &quot; IF lv_flag_next EQ lc_check</FPCLINE>
+      <FPCLINE/>
+      <FPCLINE>      lv_count = 1.</FPCLINE>
+      <FPCLINE/>
+      <FPCLINE>    ENDAT.</FPCLINE>
+      <FPCLINE/>
+      <FPCLINE>*&amp;--Item Plant</FPCLINE>
+      <FPCLINE>    lwa_display-werks      = &lt;fs_item&gt;-werks.</FPCLINE>
+      <FPCLINE>*&amp;--Serial Number</FPCLINE>
+      <FPCLINE>    lwa_display-sernr      = lv_sernr.</FPCLINE>
+      <FPCLINE/>
+      <FPCLINE>*&amp;--Check for same plant and posn, if lv_count is 2 (i.e. one record is</FPCLINE>
+      <FPCLINE>*&amp;--appended for same plant and posn) then populate description, UoM,</FPCLINE>
+      <FPCLINE>*&amp;--serial number in internal table FP_I_DISPLAY</FPCLINE>
+      <FPCLINE>    IF lv_count EQ 2.</FPCLINE>
+      <FPCLINE>*&amp;--Description</FPCLINE>
+      <FPCLINE>      lwa_display-mat_desc   = &lt;fs_item&gt;-arktx.</FPCLINE>
+      <FPCLINE>*&amp;--UoM</FPCLINE>
+      <FPCLINE>      lwa_display-qty_uom    = lv_uom.</FPCLINE>
+      <FPCLINE/>
+      <FPCLINE>      APPEND lwa_display TO fp_i_display.</FPCLINE>
+      <FPCLINE/>
+      <FPCLINE>*&amp;--Check for same plant and posn, if lv_count GE 3 (i.e. two or more</FPCLINE>
+      <FPCLINE>*&amp;--than two record is appended for same plant and posn) then populate</FPCLINE>
+      <FPCLINE>*&amp;--Serial number in internal table FP_I_DISPLAY</FPCLINE>
+      <FPCLINE>    ELSEIF lv_count GE 3.</FPCLINE>
+      <FPCLINE>      APPEND lwa_display TO fp_i_display.</FPCLINE>
+      <FPCLINE>    ENDIF. &quot; IF lv_count EQ 2</FPCLINE>
+      <FPCLINE/>
+      <FPCLINE>    lv_count = lv_count + 1.</FPCLINE>
+      <FPCLINE/>
+      <FPCLINE>    CLEAR: lwa_display, lv_index.</FPCLINE>
+      <FPCLINE>  ENDLOOP. &quot; LOOP AT fp_i_item ASSIGNING &lt;fs_item&gt;</FPCLINE>
+      <FPCLINE/>
+      <FPCLINE>ENDFORM. &quot;f_fomat_display_table</FPCLINE>
+      <FPCLINE/>
+      <FPCLINE>*&amp;---------------------------------------------------------------------*</FPCLINE>
+      <FPCLINE>*&amp;      Form  F_CHECK_PRODUCTION_SYSTEM</FPCLINE>
+      <FPCLINE>*&amp;---------------------------------------------------------------------*</FPCLINE>
+      <FPCLINE>*       Check production system for Watermark Printing</FPCLINE>
+      <FPCLINE>*----------------------------------------------------------------------*</FPCLINE>
+      <FPCLINE>FORM f_check_production_system.</FPCLINE>
+      <FPCLINE/>
+      <FPCLINE>  CONSTANTS:</FPCLINE>
+      <FPCLINE>*&amp;--SAPscript Graphics Management: Application object</FPCLINE>
+      <FPCLINE>    lc_graphics    TYPE tdobjectgr VALUE &apos;GRAPHICS&apos;, &quot; SAPscript Graphics Management: Application object</FPCLINE>
+      <FPCLINE>*&amp;--Name</FPCLINE>
+      <FPCLINE>    lc_draft_image TYPE tdobname   VALUE &apos;ZOTC_DRAFT&apos;, &quot; Name</FPCLINE>
+      <FPCLINE>*&amp;--SAPscript Graphics Management: ID</FPCLINE>
+      <FPCLINE>    lc_image_id    TYPE tdidgr     VALUE &apos;BMAP&apos;, &quot; SAPscript Graphics Management: ID</FPCLINE>
+      <FPCLINE>*&amp;--SAPscript: Type of graphic</FPCLINE>
+      <FPCLINE>    lc_image_type  TYPE tdbtype    VALUE &apos;BCOL&apos;,</FPCLINE>
+      <FPCLINE>*&amp;--Production system</FPCLINE>
+      <FPCLINE>    lc_prod_name   TYPE rvari_vnam VALUE &apos;ZPRODUCTION&apos;, &quot; ABAP: Name of Variant Variable</FPCLINE>
+      <FPCLINE>*&amp;--ABAP: Type of selection</FPCLINE>
+      <FPCLINE>    lc_type        TYPE rsscr_kind VALUE &apos;P&apos;,</FPCLINE>
+      <FPCLINE>*&amp;--ABAP: Current selection number</FPCLINE>
+      <FPCLINE>    lc_numb        TYPE tvarv_numb VALUE &apos;0000&apos;. &quot; ABAP: Current selection number</FPCLINE>
+      <FPCLINE/>
+      <FPCLINE>  DATA:</FPCLINE>
+      <FPCLINE>*&amp;--Production system</FPCLINE>
+      <FPCLINE>    lv_prod        TYPE sysysid. &quot; Name of the SAP System</FPCLINE>
+      <FPCLINE/>
+      <FPCLINE>*&amp;--Check Production Client</FPCLINE>
+      <FPCLINE>  SELECT SINGLE low    &quot; ABAP/4: Selection value (LOW or HIGH value, external format)</FPCLINE>
+      <FPCLINE>           FROM tvarvc &quot; Table of Variant Variables (Client-Specific)</FPCLINE>
+      <FPCLINE>           INTO lv_prod</FPCLINE>
+      <FPCLINE>          WHERE name = lc_prod_name</FPCLINE>
+      <FPCLINE>            AND type = lc_type</FPCLINE>
+      <FPCLINE>            AND numb = lc_numb.</FPCLINE>
+      <FPCLINE>  IF sy-sysid = lv_prod.</FPCLINE>
+      <FPCLINE>    gv_production = abap_true.</FPCLINE>
+      <FPCLINE>*&amp;--If not Production client then</FPCLINE>
+      <FPCLINE>*&amp;--convert watermark image to Binary format</FPCLINE>
+      <FPCLINE>  ELSE. &quot; ELSE -&gt; IF sy-sysid = lv_prod</FPCLINE>
+      <FPCLINE>    CALL METHOD cl_ssf_xsf_utilities=&gt;get_bds_graphic_as_bmp</FPCLINE>
+      <FPCLINE>      EXPORTING</FPCLINE>
+      <FPCLINE>        p_object       = lc_graphics</FPCLINE>
+      <FPCLINE>        p_name         = lc_draft_image</FPCLINE>
+      <FPCLINE>        p_id           = lc_image_id</FPCLINE>
+      <FPCLINE>        p_btype        = lc_image_type</FPCLINE>
+      <FPCLINE>      RECEIVING</FPCLINE>
+      <FPCLINE>        p_bmp          = gv_image_bin</FPCLINE>
+      <FPCLINE>      EXCEPTIONS</FPCLINE>
+      <FPCLINE>        not_found      = 1</FPCLINE>
+      <FPCLINE>        internal_error = 2</FPCLINE>
+      <FPCLINE>        OTHERS         = 3.</FPCLINE>
+      <FPCLINE>    IF sy-subrc &lt;&gt; 0.</FPCLINE>
+      <FPCLINE>      MESSAGE ID sy-msgid TYPE sy-msgty NUMBER sy-msgno</FPCLINE>
+      <FPCLINE>                 WITH sy-msgv1 sy-msgv2 sy-msgv3 sy-msgv4.</FPCLINE>
+      <FPCLINE>    ENDIF. &quot; IF sy-subrc &lt;&gt; 0</FPCLINE>
+      <FPCLINE>  ENDIF. &quot; IF sy-sysid = lv_prod</FPCLINE>
+      <FPCLINE/>
+      <FPCLINE>ENDFORM. &quot;F_CHECK_PRODUCTION_SYSTEM</FPCLINE>
+      <FPCLINE/>
+      <FPCLINE>*&amp;---------------------------------------------------------------------*</FPCLINE>
+      <FPCLINE>*&amp;      Form  F_CONNVERT_LOGO_BIN</FPCLINE>
+      <FPCLINE>*&amp;---------------------------------------------------------------------*</FPCLINE>
+      <FPCLINE>*       Convert logo to bin format</FPCLINE>
+      <FPCLINE>*----------------------------------------------------------------------*</FPCLINE>
+      <FPCLINE>FORM f_convert_logo_bin.</FPCLINE>
+      <FPCLINE/>
+      <FPCLINE>  CONSTANTS:</FPCLINE>
+      <FPCLINE>*&amp;--SAPscript Graphics Management: Application object</FPCLINE>
+      <FPCLINE>    lc_graphics    TYPE tdobjectgr VALUE &apos;GRAPHICS&apos;, &quot; SAPscript Graphics Management: Application object</FPCLINE>
+      <FPCLINE>*&amp;--Name</FPCLINE>
+      <FPCLINE>    lc_draft_image TYPE tdobname   VALUE &apos;ZBIORAD_LOGO&apos;, &quot; Name</FPCLINE>
+      <FPCLINE>*&amp;--SAPscript Graphics Management: ID</FPCLINE>
+      <FPCLINE>    lc_image_id    TYPE tdidgr     VALUE &apos;BMAP&apos;, &quot; SAPscript Graphics Management: ID</FPCLINE>
+      <FPCLINE>*&amp;--SAPscript: Type of graphic</FPCLINE>
+      <FPCLINE>    lc_image_type  TYPE tdbtype    VALUE &apos;BCOL&apos;.</FPCLINE>
+      <FPCLINE/>
+      <FPCLINE>  CALL METHOD cl_ssf_xsf_utilities=&gt;get_bds_graphic_as_bmp</FPCLINE>
+      <FPCLINE>    EXPORTING</FPCLINE>
+      <FPCLINE>      p_object       = lc_graphics</FPCLINE>
+      <FPCLINE>      p_name         = lc_draft_image</FPCLINE>
+      <FPCLINE>      p_id           = lc_image_id</FPCLINE>
+      <FPCLINE>      p_btype        = lc_image_type</FPCLINE>
+      <FPCLINE>    RECEIVING</FPCLINE>
+      <FPCLINE>      p_bmp          = gv_logo_bin</FPCLINE>
+      <FPCLINE>    EXCEPTIONS</FPCLINE>
+      <FPCLINE>      not_found      = 1</FPCLINE>
+      <FPCLINE>      internal_error = 2</FPCLINE>
+      <FPCLINE>      OTHERS         = 3.</FPCLINE>
+      <FPCLINE>  IF sy-subrc &lt;&gt; 0.</FPCLINE>
+      <FPCLINE>    MESSAGE ID sy-msgid TYPE sy-msgty NUMBER sy-msgno</FPCLINE>
+      <FPCLINE>               WITH sy-msgv1 sy-msgv2 sy-msgv3 sy-msgv4.</FPCLINE>
+      <FPCLINE>  ENDIF. &quot; IF sy-subrc &lt;&gt; 0</FPCLINE>
+      <FPCLINE>ENDFORM. &quot;f_convert_logo_bin</FPCLINE>
+      <FPCLINE/>
+      <FPCLINE>* ---&gt; Begin of Change/Insert/ for D2_OTC_FDD_0022 by Sgoray</FPCLINE>
+      <FPCLINE>*&amp;---------------------------------------------------------------------*</FPCLINE>
+      <FPCLINE>*&amp;      Form  f_item_display_table</FPCLINE>
+      <FPCLINE>*&amp;---------------------------------------------------------------------*</FPCLINE>
+      <FPCLINE>*       Item Display table</FPCLINE>
+      <FPCLINE>*----------------------------------------------------------------------*</FPCLINE>
+      <FPCLINE>*      --&gt;FP_I_ITEM               Return RGA Item data</FPCLINE>
+      <FPCLINE>*      --&gt;FP_D3_FORMAT_FLAG       Indicator for D3 format</FPCLINE>
+      <FPCLINE>*      --&gt;FP_P_LANG               Language</FPCLINE>
+      <FPCLINE>*      --&gt;FP_VBELN                Document Number</FPCLINE>
+      <FPCLINE>*      &lt;--FP_I_ITEM_DISPLAY       Display data table</FPCLINE>
+      <FPCLINE>*----------------------------------------------------------------------*</FPCLINE>
+      <FPCLINE>FORM f_item_display_table</FPCLINE>
+      <FPCLINE>               USING    fp_i_item         TYPE zotc_t_return_rga_item</FPCLINE>
+      <FPCLINE>* ---&gt; Begin of Insert for D3_OTC_FDD_0022 by U034334</FPCLINE>
+      <FPCLINE>                        fp_d3_format_flag TYPE flag  &quot; D3 format Flag</FPCLINE>
+      <FPCLINE>                        fp_p_lang         TYPE spras &quot; Language Key</FPCLINE>
+      <FPCLINE>* &lt;--- End   of Insert for D3_OTC_FDD_0022 by U034334</FPCLINE>
+      <FPCLINE>* ---&gt; Begin of Insert for D3_OTC_FDD_0022 Defect_5450 by U034334</FPCLINE>
+      <FPCLINE>                        fp_vbeln          TYPE vbeln &quot; Document Number</FPCLINE>
+      <FPCLINE>* &lt;--- End   of Insert for D3_OTC_FDD_0022 Defect_5450 by U034334</FPCLINE>
+      <FPCLINE>               CHANGING fp_i_item_display TYPE ty_t_item_display.</FPCLINE>
+      <FPCLINE/>
+      <FPCLINE>  FIELD-SYMBOLS:</FPCLINE>
+      <FPCLINE>*&amp;--Item Data</FPCLINE>
+      <FPCLINE>      &lt;lfs_items&gt;     TYPE zotc_return_rga_item. &quot; Return RGA Item data</FPCLINE>
+      <FPCLINE/>
+      <FPCLINE>  DATA:</FPCLINE>
+      <FPCLINE>*&amp;--Display table work area</FPCLINE>
+      <FPCLINE>      lwa_item_display   TYPE ty_item_display.</FPCLINE>
+      <FPCLINE/>
+      <FPCLINE>  LOOP AT fp_i_item ASSIGNING &lt;lfs_items&gt;.</FPCLINE>
+      <FPCLINE>*&amp;--Item Plant</FPCLINE>
+      <FPCLINE>    lwa_item_display-werks      = &lt;lfs_items&gt;-werks.</FPCLINE>
+      <FPCLINE>*&amp;--Item Position</FPCLINE>
+      <FPCLINE>    lwa_item_display-posn       = &lt;lfs_items&gt;-posn.</FPCLINE>
+      <FPCLINE>*&amp;--Item serial number</FPCLINE>
+      <FPCLINE>* ---&gt; Begin of Delete for D3_OTC_FDD_0022 Defect_5450 by U034334</FPCLINE>
+      <FPCLINE>*    CALL FUNCTION &apos;CONVERSION_EXIT_ALPHA_OUTPUT&apos;</FPCLINE>
+      <FPCLINE>*      EXPORTING</FPCLINE>
+      <FPCLINE>*        input  = &lt;lfs_items&gt;-sernr</FPCLINE>
+      <FPCLINE>*      IMPORTING</FPCLINE>
+      <FPCLINE>*        output = lwa_item_display-sernr.</FPCLINE>
+      <FPCLINE>* ---&gt; End   of Delete for D3_OTC_FDD_0022 Defect_5450 by U034334</FPCLINE>
+      <FPCLINE>* ---&gt; Begin of Insert for D3_OTC_FDD_0022 Defect_5450 by U034334</FPCLINE>
+      <FPCLINE>    CONCATENATE fp_vbeln &lt;lfs_items&gt;-posnr INTO lwa_item_display-objname.</FPCLINE>
+      <FPCLINE>* ---&gt; End   of Insert for D3_OTC_FDD_0022 Defect_5450 by U034334</FPCLINE>
+      <FPCLINE>*&amp;--Item material number</FPCLINE>
+      <FPCLINE>    CALL FUNCTION &apos;CONVERSION_EXIT_ALPHA_OUTPUT&apos;</FPCLINE>
+      <FPCLINE>      EXPORTING</FPCLINE>
+      <FPCLINE>        input  = &lt;lfs_items&gt;-matnr</FPCLINE>
+      <FPCLINE>      IMPORTING</FPCLINE>
+      <FPCLINE>        output = lwa_item_display-mat.</FPCLINE>
+      <FPCLINE>*&amp;--Item material description</FPCLINE>
+      <FPCLINE>    lwa_item_display-desc = &lt;lfs_items&gt;-arktx.</FPCLINE>
+      <FPCLINE>*&amp;--Quantity</FPCLINE>
+      <FPCLINE>    WRITE &lt;lfs_items&gt;-zmeng TO lwa_item_display-qty</FPCLINE>
+      <FPCLINE>                          UNIT &lt;lfs_items&gt;-zieme.</FPCLINE>
+      <FPCLINE>*&amp;--UoM</FPCLINE>
+      <FPCLINE>* ---&gt; Begin of Delete for D3_OTC_FDD_0022 by U034334</FPCLINE>
+      <FPCLINE>*      lwa_item_display-uom    = &lt;lfs_items&gt;-zieme.</FPCLINE>
+      <FPCLINE>* &lt;--- End   of Delete for D3_OTC_FDD_0022 by U034334</FPCLINE>
+      <FPCLINE>* ---&gt; Begin of Insert for D3_OTC_FDD_0022 by U034334</FPCLINE>
+      <FPCLINE>    IF fp_d3_format_flag EQ abap_true. &quot;If D3 format required</FPCLINE>
+      <FPCLINE/>
+      <FPCLINE>      CALL FUNCTION &apos;CONVERSION_EXIT_CUNIT_OUTPUT&apos;</FPCLINE>
+      <FPCLINE>        EXPORTING</FPCLINE>
+      <FPCLINE>          INPUT          = &lt;lfs_items&gt;-zieme</FPCLINE>
+      <FPCLINE>          LANGUAGE       = fp_p_lang</FPCLINE>
+      <FPCLINE>        IMPORTING</FPCLINE>
+      <FPCLINE>          OUTPUT         = lwa_item_display-uom</FPCLINE>
+      <FPCLINE>        EXCEPTIONS</FPCLINE>
+      <FPCLINE>          UNIT_NOT_FOUND = 1</FPCLINE>
+      <FPCLINE>          OTHERS         = 2.</FPCLINE>
+      <FPCLINE/>
+      <FPCLINE>      IF SY-SUBRC NE 0.</FPCLINE>
+      <FPCLINE>        lwa_item_display-uom    = &lt;lfs_items&gt;-zieme.</FPCLINE>
+      <FPCLINE>      ENDIF. &quot; IF SY-SUBRC NE 0</FPCLINE>
+      <FPCLINE>    ELSE. &quot; ELSE -&gt; IF fp_d3_format_flag EQ abap_true</FPCLINE>
+      <FPCLINE>      lwa_item_display-uom    = &lt;lfs_items&gt;-zieme.</FPCLINE>
+      <FPCLINE>    ENDIF. &quot; IF fp_d3_format_flag EQ abap_true</FPCLINE>
+      <FPCLINE>*&amp;--Customer Material Number</FPCLINE>
+      <FPCLINE>    lwa_item_display-kdmat  = &lt;lfs_items&gt;-kdmat.</FPCLINE>
+      <FPCLINE>* &lt;--- End   of Insert for D3_OTC_FDD_0022 by U034334</FPCLINE>
+      <FPCLINE>    APPEND lwa_item_display TO i_item_display.</FPCLINE>
+      <FPCLINE>    CLEAR: lwa_item_display.</FPCLINE>
+      <FPCLINE>  ENDLOOP. &quot; LOOP AT fp_i_item ASSIGNING &lt;lfs_items&gt;</FPCLINE>
+      <FPCLINE>  IF &lt;lfs_items&gt; IS ASSIGNED.</FPCLINE>
+      <FPCLINE>    UNASSIGN &lt;lfs_items&gt;.</FPCLINE>
+      <FPCLINE>  ENDIF. &quot; IF &lt;lfs_items&gt; IS ASSIGNED</FPCLINE>
+      <FPCLINE>ENDFORM. &quot;f_item_display_table</FPCLINE>
+      <FPCLINE/>
+      <FPCLINE>*&amp;---------------------------------------------------------------------*</FPCLINE>
+      <FPCLINE>*&amp;      Form  f_get_language</FPCLINE>
+      <FPCLINE>*&amp;---------------------------------------------------------------------*</FPCLINE>
+      <FPCLINE>*       language and case reference number</FPCLINE>
+      <FPCLINE>*----------------------------------------------------------------------*</FPCLINE>
+      <FPCLINE>*      --&gt;FP_P_VBELN            Document number</FPCLINE>
+      <FPCLINE>*      --&gt;FP_STATUS             Enhancement Status table</FPCLINE>
+      <FPCLINE>*      --&gt;FP_SOLDTOLANG         Language of sold-to party</FPCLINE>
+      <FPCLINE>*      &lt;--FP_P_LANG             Form language</FPCLINE>
+      <FPCLINE>*      &lt;--FP_P_CASE             Case reference number</FPCLINE>
+      <FPCLINE>*      &lt;--FP_D3_LANG_FLAG       Indicator for D3 languages</FPCLINE>
+      <FPCLINE>*----------------------------------------------------------------------*</FPCLINE>
+      <FPCLINE/>
+      <FPCLINE>FORM f_get_language</FPCLINE>
+      <FPCLINE>               USING    fp_p_vbeln      TYPE vbeln &quot; SD Document Number</FPCLINE>
+      <FPCLINE>* ---&gt; Begin of Insert for D3_OTC_FDD_0022 by U034334</FPCLINE>
+      <FPCLINE>                        fp_status       TYPE zdev_tt_enh_status</FPCLINE>
+      <FPCLINE>                        fp_soldtolang   TYPE spras &quot; Language Key</FPCLINE>
+      <FPCLINE>* ---&gt; End of Insert for D3_OTC_FDD_0022 by U034334</FPCLINE>
+      <FPCLINE>               CHANGING fp_p_lang       TYPE spras     &quot; Language Key</FPCLINE>
+      <FPCLINE>                        fp_p_case       TYPE z_caseref &quot; Case Ref No</FPCLINE>
+      <FPCLINE>* ---&gt; Begin of Insert for D3_OTC_FDD_0022 by U034334</FPCLINE>
+      <FPCLINE>                        fp_d3_lang_flag TYPE flag. &quot; D3 languages flag</FPCLINE>
+      <FPCLINE>* ---&gt; End of   Insert for D3_OTC_FDD_0022 by U034334</FPCLINE>
+      <FPCLINE>  CONSTANTS:</FPCLINE>
+      <FPCLINE>    lc_null       TYPE char4      VALUE &apos;NULL&apos;,         &quot;Null criteria</FPCLINE>
+      <FPCLINE>    lc_default    TYPE char30     VALUE &apos;DEFAULT_LANG&apos;, &quot;Default language</FPCLINE>
+      <FPCLINE>    lc_vkorg_lang TYPE z_criteria VALUE &apos;VKORG_LANG&apos;,   &quot;sales org.&amp;l anguage</FPCLINE>
+      <FPCLINE>* ---&gt; Begin of Delete for D3_OTC_FDD_0022 by U034334</FPCLINE>
+      <FPCLINE>*    lc_fdd_0022   TYPE z_enhancement                    &quot; Enh. No.</FPCLINE>
+      <FPCLINE>*                  VALUE &apos;D2_OTC_FDD_0022&apos;,              &quot; Enh. No.</FPCLINE>
+      <FPCLINE>* &lt;--- End   of Delete for D3_OTC_FDD_0022 by U034334</FPCLINE>
+      <FPCLINE>* ---&gt; Begin of Insert for D3_OTC_FDD_0022 by U034334</FPCLINE>
+      <FPCLINE>    lc_eu_langu   TYPE z_criteria VALUE &apos;EU_LANGU&apos;. &quot; D3 acceptable languages</FPCLINE>
+      <FPCLINE>* &lt;--- End   of Insert for D3_OTC_FDD_0022 by U034334</FPCLINE>
+      <FPCLINE/>
+      <FPCLINE>  FIELD-SYMBOLS:</FPCLINE>
+      <FPCLINE>    &lt;lfs_status&gt; TYPE zdev_enh_status. &quot; Field symbol for status table</FPCLINE>
+      <FPCLINE/>
+      <FPCLINE>  DATA:</FPCLINE>
+      <FPCLINE>    lv_vkorg TYPE vkorg. &quot;Sales organization</FPCLINE>
+      <FPCLINE>  DATA:</FPCLINE>
+      <FPCLINE>*  Enhancement Status internal table</FPCLINE>
+      <FPCLINE>    li_status  TYPE TABLE OF zdev_enh_status. &quot; Enhancement Status</FPCLINE>
+      <FPCLINE>  DATA:</FPCLINE>
+      <FPCLINE>    lwa_vbak   TYPE ty_vbak. &quot; Work area for VBAK fields</FPCLINE>
+      <FPCLINE/>
+      <FPCLINE>  CLEAR: lwa_vbak,lv_vkorg.</FPCLINE>
+      <FPCLINE/>
+      <FPCLINE>* ---&gt; Begin of Insert for D3_OTC_FDD_0022 by U034334</FPCLINE>
+      <FPCLINE>  li_status = fp_status.</FPCLINE>
+      <FPCLINE>* ---&gt; End of   Insert for D3_OTC_FDD_0022 by U034334</FPCLINE>
+      <FPCLINE/>
+      <FPCLINE/>
+      <FPCLINE>*Fetching data from VBAK table based on Sales Document number</FPCLINE>
+      <FPCLINE>  SELECT SINGLE</FPCLINE>
+      <FPCLINE>     vkorg     &quot;Sales Organization</FPCLINE>
+      <FPCLINE>     zzcaseref &quot;Case Ref No</FPCLINE>
+      <FPCLINE>  FROM vbak    &quot; Sales Document: Header Data</FPCLINE>
+      <FPCLINE>  INTO lwa_vbak</FPCLINE>
+      <FPCLINE>  WHERE vbeln = fp_p_vbeln.</FPCLINE>
+      <FPCLINE/>
+      <FPCLINE>  IF sy-subrc EQ 0. &quot; if the record foundin VBAK table</FPCLINE>
+      <FPCLINE>    lv_vkorg = lwa_vbak-vkorg.</FPCLINE>
+      <FPCLINE>    fp_p_case = lwa_vbak-case.</FPCLINE>
+      <FPCLINE/>
+      <FPCLINE>* ---&gt; Begin of Delete for D3_OTC_FDD_0022 by U034334</FPCLINE>
+      <FPCLINE>**Get constants from EMI tools</FPCLINE>
+      <FPCLINE>*    CALL FUNCTION &apos;ZDEV_ENHANCEMENT_STATUS_CHECK&apos;</FPCLINE>
+      <FPCLINE>*      EXPORTING</FPCLINE>
+      <FPCLINE>*        iv_enhancement_no = lc_fdd_0022 &quot;D2_OTC_FDD_0022</FPCLINE>
+      <FPCLINE>*      TABLES</FPCLINE>
+      <FPCLINE>*        tt_enh_status     = li_status.</FPCLINE>
+      <FPCLINE>*</FPCLINE>
+      <FPCLINE>**Deleting records where active check is not marked</FPCLINE>
+      <FPCLINE>*    DELETE li_status WHERE active = abap_false.</FPCLINE>
+      <FPCLINE>* ---&gt; End of   Delete for D3_OTC_FDD_0022 by U034334</FPCLINE>
+      <FPCLINE/>
+      <FPCLINE>    READ TABLE li_status WITH KEY criteria = lc_null &quot;NULL</FPCLINE>
+      <FPCLINE>                                  TRANSPORTING NO FIELDS.</FPCLINE>
+      <FPCLINE>    IF sy-subrc EQ 0.</FPCLINE>
+      <FPCLINE/>
+      <FPCLINE>      READ TABLE li_status ASSIGNING &lt;lfs_status&gt;</FPCLINE>
+      <FPCLINE>      WITH KEY criteria = lc_vkorg_lang &quot;sales organization and language</FPCLINE>
+      <FPCLINE>               sel_low  = lv_vkorg.     &quot;sales organization</FPCLINE>
+      <FPCLINE/>
+      <FPCLINE>      IF sy-subrc EQ 0.</FPCLINE>
+      <FPCLINE>*If language key is found in T002 table then passing it to fp_p_lang</FPCLINE>
+      <FPCLINE>        SELECT SINGLE</FPCLINE>
+      <FPCLINE>          spras &quot;Language Key</FPCLINE>
+      <FPCLINE>          FROM t002 INTO fp_p_lang</FPCLINE>
+      <FPCLINE>          WHERE laiso = &lt;lfs_status&gt;-sel_high.</FPCLINE>
+      <FPCLINE>        IF sy-subrc NE 0. &quot; if record not found in T002 table</FPCLINE>
+      <FPCLINE>* ---&gt; Begin of Insert for D3_OTC_FDD_0022 by U034334</FPCLINE>
+      <FPCLINE>          CLEAR fp_p_lang.</FPCLINE>
+      <FPCLINE>        ENDIF. &quot; IF sy-subrc NE 0</FPCLINE>
+      <FPCLINE>* ---&gt; End of   Insert for D3_OTC_FDD_0022 by U034334</FPCLINE>
+      <FPCLINE/>
+      <FPCLINE>* ---&gt; Begin of Delete for D3_OTC_FDD_0022 by U034334</FPCLINE>
+      <FPCLINE>*          IF &lt;lfs_status&gt; IS ASSIGNED.</FPCLINE>
+      <FPCLINE>*            UNASSIGN &lt;lfs_status&gt;.</FPCLINE>
+      <FPCLINE>*          ENDIF. &quot; IF &lt;lfs_status&gt; IS ASSIGNED</FPCLINE>
+      <FPCLINE>*          READ TABLE li_status ASSIGNING &lt;lfs_status&gt;</FPCLINE>
+      <FPCLINE>*          WITH KEY criteria = lc_default.</FPCLINE>
+      <FPCLINE>*          IF sy-subrc EQ 0.</FPCLINE>
+      <FPCLINE>*            fp_p_lang = &lt;lfs_status&gt;-sel_low. &quot;assigning default language</FPCLINE>
+      <FPCLINE>*          ENDIF. &quot; IF sy-subrc EQ 0</FPCLINE>
+      <FPCLINE>*        ENDIF. &quot; IF sy-subrc NE 0</FPCLINE>
+      <FPCLINE>*</FPCLINE>
+      <FPCLINE>*If Sales organization &amp; language key is not maintained in EMI then</FPCLINE>
+      <FPCLINE>*assigning default language key &apos;E&apos; that is English to fp_p_lang.</FPCLINE>
+      <FPCLINE>*      ELSE. &quot; ELSE -&gt; IF sy-subrc EQ 0</FPCLINE>
+      <FPCLINE>*        IF &lt;lfs_status&gt; IS ASSIGNED.</FPCLINE>
+      <FPCLINE>*          UNASSIGN &lt;lfs_status&gt;.</FPCLINE>
+      <FPCLINE>*        ENDIF. &quot; IF &lt;lfs_status&gt; IS ASSIGNED</FPCLINE>
+      <FPCLINE>*        READ TABLE li_status ASSIGNING &lt;lfs_status&gt;</FPCLINE>
+      <FPCLINE>*        WITH KEY criteria = lc_default.</FPCLINE>
+      <FPCLINE>*        IF sy-subrc EQ 0.</FPCLINE>
+      <FPCLINE>*          fp_p_lang = &lt;lfs_status&gt;-sel_low. &quot;assigning default language EN</FPCLINE>
+      <FPCLINE>*        ENDIF. &quot; IF sy-subrc EQ 0</FPCLINE>
+      <FPCLINE>* ---&gt; End of   Delete for D3_OTC_FDD_0022 by U034334</FPCLINE>
+      <FPCLINE>      ENDIF. &quot; IF sy-subrc EQ 0</FPCLINE>
+      <FPCLINE>    ENDIF. &quot; IF sy-subrc EQ 0</FPCLINE>
+      <FPCLINE>  ENDIF. &quot; IF sy-subrc EQ 0</FPCLINE>
+      <FPCLINE/>
+      <FPCLINE>* ---&gt; Begin of Insert for D3_OTC_FDD_0022 by U034334</FPCLINE>
+      <FPCLINE/>
+      <FPCLINE>*If Sales organization &amp; language key is not maintained in EMI, means we have a D3 country.</FPCLINE>
+      <FPCLINE>*Compare the sold-to party language with EMI constants(DE, FR, ES) &amp; if it&apos;s blank or other</FPCLINE>
+      <FPCLINE>*language, assigning default language &apos;EN&apos;.</FPCLINE>
+      <FPCLINE/>
+      <FPCLINE>  IF fp_p_lang IS INITIAL.</FPCLINE>
+      <FPCLINE>    READ TABLE li_status ASSIGNING &lt;lfs_status&gt; &quot;Binary search not used due to very few entries</FPCLINE>
+      <FPCLINE>    WITH KEY criteria = lc_eu_langu</FPCLINE>
+      <FPCLINE>             sel_low  = fp_soldtolang.</FPCLINE>
+      <FPCLINE>    IF sy-subrc = 0.</FPCLINE>
+      <FPCLINE>      fp_p_lang = fp_soldtolang.</FPCLINE>
+      <FPCLINE>      fp_d3_lang_flag = abap_true.</FPCLINE>
+      <FPCLINE>    ELSE. &quot; ELSE -&gt; IF sy-subrc = 0</FPCLINE>
+      <FPCLINE>      READ TABLE li_status ASSIGNING &lt;lfs_status&gt; &quot;Binary search not used due to very few entries</FPCLINE>
+      <FPCLINE>          WITH KEY criteria = lc_default.         &quot;DEFAULT_LANG</FPCLINE>
+      <FPCLINE>      IF sy-subrc EQ 0.</FPCLINE>
+      <FPCLINE>        fp_p_lang = &lt;lfs_status&gt;-sel_low. &quot;assigning default language EN</FPCLINE>
+      <FPCLINE>      ENDIF. &quot; IF sy-subrc EQ 0</FPCLINE>
+      <FPCLINE>    ENDIF. &quot; IF sy-subrc = 0</FPCLINE>
+      <FPCLINE>  ENDIF. &quot; IF fp_p_lang IS INITIAL</FPCLINE>
+      <FPCLINE>* &lt;--- End   of Insert for D3_OTC_FDD_0022 by U034334</FPCLINE>
+      <FPCLINE/>
+      <FPCLINE>ENDFORM. &quot;f_get_language</FPCLINE>
+      <FPCLINE/>
+      <FPCLINE>*&amp;---------------------------------------------------------------------*</FPCLINE>
+      <FPCLINE>*&amp;      Form  f_get_oatext</FPCLINE>
+      <FPCLINE>*&amp;---------------------------------------------------------------------*</FPCLINE>
+      <FPCLINE>*       Read header text for order number</FPCLINE>
+      <FPCLINE>*----------------------------------------------------------------------*</FPCLINE>
+      <FPCLINE>*      --&gt;FP_P_VBELN            Document number</FPCLINE>
+      <FPCLINE>*      --&gt;FP_D3_LANG_FLAG       Indicator for D3 languages</FPCLINE>
+      <FPCLINE>*      &lt;--FP_I_TLINE            Header text internal table</FPCLINE>
+      <FPCLINE>*----------------------------------------------------------------------*</FPCLINE>
+      <FPCLINE/>
+      <FPCLINE>FORM f_get_oatext</FPCLINE>
+      <FPCLINE>               USING    fp_p_vbeln      TYPE vbeln &quot; Sales and Distribution Document Number</FPCLINE>
+      <FPCLINE>* ---&gt; Begin of Insert for D3_OTC_FDD_0022 by U034334</FPCLINE>
+      <FPCLINE>                        fp_d3_lang_flag TYPE flag &quot; D3 languages flag</FPCLINE>
+      <FPCLINE>* &lt;--- End   of Insert for D3_OTC_FDD_0022 by U034334</FPCLINE>
+      <FPCLINE>               CHANGING fp_i_tline      TYPE ty_t_tline.</FPCLINE>
+      <FPCLINE/>
+      <FPCLINE>  CONSTANTS:</FPCLINE>
+      <FPCLINE>   lc_text_id    TYPE tdid     VALUE &apos;Z009&apos;, &quot;Text id for Invoice OA text</FPCLINE>
+      <FPCLINE>   lc_object     TYPE tdobject VALUE &apos;VBBK&apos;, &quot;Header text table</FPCLINE>
+      <FPCLINE>*--&gt;&gt;&gt; Begin of change for Defect #4254 by DCHAKRA</FPCLINE>
+      <FPCLINE>   lc_st         TYPE tdid     VALUE &apos;ST&apos;,              &quot;Text ID</FPCLINE>
+      <FPCLINE>   lc_space      TYPE c        VALUE &apos; &apos;,               &quot;Space of type Character</FPCLINE>
+      <FPCLINE>   lc_rga_txt    TYPE tdobname VALUE &apos;ZOTC_RGA_NUMBER&apos;, &quot;Name</FPCLINE>
+      <FPCLINE>   lc_text       TYPE tdobject VALUE &apos;TEXT&apos;,            &quot;Texts: Application Object</FPCLINE>
+      <FPCLINE>*&lt;&lt;&lt;-- End of change for Defect #4254 by DCHAKRA</FPCLINE>
+      <FPCLINE>* &lt;--- Begin of Insert for D3_OTC_FDD_0022 by U034334</FPCLINE>
+      <FPCLINE>   lc_rga_txt_eu TYPE tdobname VALUE &apos;ZOTC_RGA_NUMBER_EU&apos;. &quot;Name</FPCLINE>
+      <FPCLINE>* &lt;--- End   of Insert for D3_OTC_FDD_0022 by U034334</FPCLINE>
+      <FPCLINE/>
+      <FPCLINE>  DATA:</FPCLINE>
+      <FPCLINE>    lv_vbeln  TYPE tdobname. &quot;Field name</FPCLINE>
+      <FPCLINE/>
+      <FPCLINE>  DATA:</FPCLINE>
+      <FPCLINE>    li_tline TYPE STANDARD TABLE OF tline, &quot;Internal table for header text</FPCLINE>
+      <FPCLINE>*--&gt;&gt;&gt; Begin of change for Defect #4254 by DCHAKRA</FPCLINE>
+      <FPCLINE>    lwa_line TYPE tline. &quot; SAPscript: Text Lines</FPCLINE>
+      <FPCLINE>*&lt;&lt;&lt;-- End of change for Defect #4254 by DCHAKRA</FPCLINE>
+      <FPCLINE>  lv_vbeln  = fp_p_vbeln.</FPCLINE>
+      <FPCLINE/>
+      <FPCLINE>  CALL FUNCTION &apos;READ_TEXT&apos;</FPCLINE>
+      <FPCLINE>    EXPORTING</FPCLINE>
+      <FPCLINE>      id                      = lc_text_id</FPCLINE>
+      <FPCLINE>      language                = gv_lang</FPCLINE>
+      <FPCLINE>      name                    = lv_vbeln</FPCLINE>
+      <FPCLINE>      object                  = lc_object</FPCLINE>
+      <FPCLINE>    TABLES</FPCLINE>
+      <FPCLINE>      lines                   = li_tline</FPCLINE>
+      <FPCLINE>    EXCEPTIONS</FPCLINE>
+      <FPCLINE>      id                      = 1</FPCLINE>
+      <FPCLINE>      language                = 2</FPCLINE>
+      <FPCLINE>      name                    = 3</FPCLINE>
+      <FPCLINE>      not_found               = 4</FPCLINE>
+      <FPCLINE>      object                  = 5</FPCLINE>
+      <FPCLINE>      reference_check         = 6</FPCLINE>
+      <FPCLINE>      wrong_access_to_archive = 7</FPCLINE>
+      <FPCLINE>      OTHERS                  = 8.</FPCLINE>
+      <FPCLINE>  IF sy-subrc EQ 0.</FPCLINE>
+      <FPCLINE>    fp_i_tline = li_tline.</FPCLINE>
+      <FPCLINE>  ENDIF. &quot; IF sy-subrc EQ 0</FPCLINE>
+      <FPCLINE/>
+      <FPCLINE>*--&gt;&gt;&gt; Begin of change for Defect #4254 by DCHAKRA</FPCLINE>
+      <FPCLINE>  REFRESH li_tline.</FPCLINE>
+      <FPCLINE>* ---&gt; Begin of Insert for D3_OTC_FDD_0022 by U034334</FPCLINE>
+      <FPCLINE>  IF fp_d3_lang_flag IS INITIAL.</FPCLINE>
+      <FPCLINE>* &lt;--- End   of Insert for D3_OTC_FDD_0022 by U034334</FPCLINE>
+      <FPCLINE>    CALL FUNCTION &apos;READ_TEXT&apos;</FPCLINE>
+      <FPCLINE>      EXPORTING</FPCLINE>
+      <FPCLINE>        id                      = lc_st</FPCLINE>
+      <FPCLINE>        language                = gv_lang</FPCLINE>
+      <FPCLINE>        name                    = lc_rga_txt</FPCLINE>
+      <FPCLINE>        object                  = lc_text</FPCLINE>
+      <FPCLINE>      TABLES</FPCLINE>
+      <FPCLINE>        lines                   = li_tline</FPCLINE>
+      <FPCLINE>      EXCEPTIONS</FPCLINE>
+      <FPCLINE>        id                      = 1</FPCLINE>
+      <FPCLINE>        language                = 2</FPCLINE>
+      <FPCLINE>        name                    = 3</FPCLINE>
+      <FPCLINE>        not_found               = 4</FPCLINE>
+      <FPCLINE>        object                  = 5</FPCLINE>
+      <FPCLINE>        reference_check         = 6</FPCLINE>
+      <FPCLINE>        wrong_access_to_archive = 7</FPCLINE>
+      <FPCLINE>        OTHERS                  = 8.</FPCLINE>
+      <FPCLINE>* ---&gt; Begin of Insert for D3_OTC_FDD_0022 by U034334</FPCLINE>
+      <FPCLINE>  ELSE. &quot; ELSE -&gt; IF fp_d3_lang_flag IS INITIAL</FPCLINE>
+      <FPCLINE>    CALL FUNCTION &apos;READ_TEXT&apos;</FPCLINE>
+      <FPCLINE>      EXPORTING</FPCLINE>
+      <FPCLINE>        id                      = lc_st</FPCLINE>
+      <FPCLINE>        language                = gv_lang</FPCLINE>
+      <FPCLINE>        name                    = lc_rga_txt_eu</FPCLINE>
+      <FPCLINE>        object                  = lc_text</FPCLINE>
+      <FPCLINE>      TABLES</FPCLINE>
+      <FPCLINE>        lines                   = li_tline</FPCLINE>
+      <FPCLINE>      EXCEPTIONS</FPCLINE>
+      <FPCLINE>        id                      = 1</FPCLINE>
+      <FPCLINE>        language                = 2</FPCLINE>
+      <FPCLINE>        name                    = 3</FPCLINE>
+      <FPCLINE>        not_found               = 4</FPCLINE>
+      <FPCLINE>        object                  = 5</FPCLINE>
+      <FPCLINE>        reference_check         = 6</FPCLINE>
+      <FPCLINE>        wrong_access_to_archive = 7</FPCLINE>
+      <FPCLINE>        OTHERS                  = 8.</FPCLINE>
+      <FPCLINE>  ENDIF. &quot; IF fp_d3_lang_flag IS INITIAL</FPCLINE>
+      <FPCLINE>* &lt;--- End   of Insert for D3_OTC_FDD_0022 by U034334</FPCLINE>
+      <FPCLINE>  IF sy-subrc EQ 0.</FPCLINE>
+      <FPCLINE>    CLEAR: lwa_line,</FPCLINE>
+      <FPCLINE>           gv_rga_txt.</FPCLINE>
+      <FPCLINE>    LOOP AT li_tline INTO lwa_line.</FPCLINE>
+      <FPCLINE>      CONCATENATE gv_rga_txt</FPCLINE>
+      <FPCLINE>                  lwa_line-tdline</FPCLINE>
+      <FPCLINE>             INTO gv_rga_txt.</FPCLINE>
+      <FPCLINE>    ENDLOOP. &quot; LOOP AT li_tline INTO lwa_line</FPCLINE>
+      <FPCLINE>* ---&gt; Begin of Delete for D3_OTC_FDD_0022_Defect# 4089 by U034229</FPCLINE>
+      <FPCLINE>*    CONCATENATE gv_rga_txt</FPCLINE>
+      <FPCLINE>*                lc_space</FPCLINE>
+      <FPCLINE>*                lv_vbeln</FPCLINE>
+      <FPCLINE>*           INTO gv_rga_txt</FPCLINE>
+      <FPCLINE>* &lt;--- End of Delete for D3_OTC_FDD_0022_Defect# 4089 by U034229</FPCLINE>
+      <FPCLINE>* ---&gt; Begin of Insert for D3_OTC_FDD_0022_Defect# 4089 by U034229</FPCLINE>
+      <FPCLINE>CONCATENATE gv_rga_txt</FPCLINE>
+      <FPCLINE>            lv_vbeln</FPCLINE>
+      <FPCLINE>           INTO gv_rga_txt</FPCLINE>
+      <FPCLINE>           SEPARATED BY lc_space.</FPCLINE>
+      <FPCLINE>* &lt;--- End of Insert for D3_OTC_FDD_0022_Defect# 4089 by U034229</FPCLINE>
+      <FPCLINE/>
+      <FPCLINE>  ENDIF. &quot; IF sy-subrc EQ 0</FPCLINE>
+      <FPCLINE/>
+      <FPCLINE>*&lt;&lt;&lt;-- End of change for Defect #4254 by DCHAKRA</FPCLINE>
+      <FPCLINE/>
+      <FPCLINE>ENDFORM. &quot;f_get_oatext</FPCLINE>
+      <FPCLINE>* ---&gt; End of Change/Insert/ for D2_OTC_FDD_0022 by Sgoray</FPCLINE>
+      <FPCLINE/>
+      <FPCLINE>* ---&gt; Begin of Insert for D3_OTC_FDD_0022 by U034334</FPCLINE>
+      <FPCLINE>*&amp;---------------------------------------------------------------------</FPCLINE>
+      <FPCLINE>*&amp;      Form  f_check_d3_format</FPCLINE>
+      <FPCLINE>*&amp;---------------------------------------------------------------------*</FPCLINE>
+      <FPCLINE>*       Checking if we have a D3 country based on sales org</FPCLINE>
+      <FPCLINE>*----------------------------------------------------------------------*</FPCLINE>
+      <FPCLINE>*      --&gt;FP_VKORG            Sales Organization</FPCLINE>
+      <FPCLINE>*      --&gt;FP_STATUS           Enhancement Status table</FPCLINE>
+      <FPCLINE>*      &lt;--FP_D3_FORMAT        Flag to identify D3 country</FPCLINE>
+      <FPCLINE>*----------------------------------------------------------------------*</FPCLINE>
+      <FPCLINE>FORM f_check_d3_format    USING    fp_vkorg     TYPE vkorg              &quot; Sales Organization</FPCLINE>
+      <FPCLINE>                                   fp_status    TYPE zdev_tt_enh_status &quot;Enh. Status table</FPCLINE>
+      <FPCLINE>                          CHANGING fp_d3_format TYPE flag.              &quot; D3 country flag</FPCLINE>
+      <FPCLINE>  CONSTANTS :</FPCLINE>
+      <FPCLINE>        lc_vkorg_format TYPE z_criteria      VALUE &apos;VKORG_FORMAT&apos;. &quot;D3 sales organizations</FPCLINE>
+      <FPCLINE/>
+      <FPCLINE>  FIELD-SYMBOLS:</FPCLINE>
+      <FPCLINE>        &lt;lfs_status&gt; TYPE zdev_enh_status. &quot; Field symbol for status table</FPCLINE>
+      <FPCLINE/>
+      <FPCLINE>  READ TABLE fp_status ASSIGNING &lt;lfs_status&gt; &quot;Binary search not used due to very few entries</FPCLINE>
+      <FPCLINE>  WITH KEY criteria = lc_vkorg_format         &quot;D3 sales organizations</FPCLINE>
+      <FPCLINE>           sel_low  = fp_vkorg.               &quot;sales organization</FPCLINE>
+      <FPCLINE/>
+      <FPCLINE>  IF sy-subrc EQ 0. &quot;If entry found in EMI table i.e. D3 country</FPCLINE>
+      <FPCLINE>    fp_d3_format = abap_true.</FPCLINE>
+      <FPCLINE>  ELSE. &quot; ELSE -&gt; IF sy-subrc EQ 0</FPCLINE>
+      <FPCLINE>    fp_d3_format = abap_false.</FPCLINE>
+      <FPCLINE>  ENDIF. &quot; IF sy-subrc EQ 0</FPCLINE>
+      <FPCLINE>ENDFORM. &quot;f_check_if_d3</FPCLINE>
+      <FPCLINE/>
+      <FPCLINE>*&amp;---------------------------------------------------------------------*</FPCLINE>
+      <FPCLINE>*&amp;      Form  f_get_textname</FPCLINE>
+      <FPCLINE>*&amp;---------------------------------------------------------------------*</FPCLINE>
+      <FPCLINE>*       Determine Standard texts dynamically based on D1/D2/D3 country</FPCLINE>
+      <FPCLINE>*----------------------------------------------------------------------*</FPCLINE>
+      <FPCLINE>*      --&gt;FP_D3_LANG_FLAG       Indicator for D3 languages</FPCLINE>
+      <FPCLINE>*      --&gt;FP_P_LANG             Language</FPCLINE>
+      <FPCLINE>*      &lt;--FP_X_TEXTNAME         Structure</FPCLINE>
+      <FPCLINE>*----------------------------------------------------------------------*</FPCLINE>
+      <FPCLINE>FORM f_get_textname USING    fp_d3_lang_flag TYPE flag         &quot; D3 Flag</FPCLINE>
+      <FPCLINE>                             fp_p_lang       TYPE spras        &quot; Language Key</FPCLINE>
+      <FPCLINE>                    CHANGING fp_x_textname   TYPE ty_textname. &quot;Work Area for texts</FPCLINE>
+      <FPCLINE>  CONSTANTS:</FPCLINE>
+      <FPCLINE>       lc_cust_email        TYPE tdobname VALUE &apos;ZOTC_CUSTOMER_SERVICE_EMAIL&apos;,    &quot; Text name</FPCLINE>
+      <FPCLINE>       lc_email             TYPE tdobname VALUE &apos;ZOTC_EMAIL&apos;,                     &quot; Text name</FPCLINE>
+      <FPCLINE>       lc_quantity          TYPE tdobname VALUE &apos;ZOTC_FDD_QUANTITY&apos;,              &quot; Text name</FPCLINE>
+      <FPCLINE>       lc_instructions      TYPE tdobname VALUE &apos;ZOTC_INSTRUCTIONS&apos;,              &quot; Text Name</FPCLINE>
+      <FPCLINE>       lc_mat_desc          TYPE tdobname VALUE &apos;ZOTC_MATERIAL_NUMBER&apos;,           &quot; Text Name</FPCLINE>
+      <FPCLINE>       lc_order_comments    TYPE tdobname VALUE &apos;ZOTC_ORDER_COMMENTS&apos;,            &quot; Text Name</FPCLINE>
+      <FPCLINE>       lc_original_order    TYPE tdobname VALUE &apos;ZOTC_ORIGINAL_ORDER&apos;,            &quot; Text Name</FPCLINE>
+      <FPCLINE>       lc_original_po       TYPE tdobname VALUE &apos;ZOTC_ORIGINAL_PO&apos;,               &quot; Text Name</FPCLINE>
+      <FPCLINE>       lc_page              TYPE tdobname VALUE &apos;ZOTC_PAGE&apos;,                      &quot; Text Name</FPCLINE>
+      <FPCLINE>       lc_posn              TYPE tdobname VALUE &apos;ZOTC_POSN&apos;,                      &quot; Text Name</FPCLINE>
+      <FPCLINE>       lc_reference         TYPE tdobname VALUE &apos;ZOTC_REFERENCE&apos;,                 &quot; Text Name</FPCLINE>
+      <FPCLINE>       lc_returns_by        TYPE tdobname VALUE &apos;ZOTC_RETURNS_BY&apos;,                &quot; Text Name</FPCLINE>
+      <FPCLINE>       lc_return_address    TYPE tdobname VALUE &apos;ZOTC_RETURN_ADDRESS&apos;,            &quot; Text Name</FPCLINE>
+      <FPCLINE>       lc_return_rga        TYPE tdobname VALUE &apos;ZOTC_RETURN_RGA&apos;,                &quot; Text Name</FPCLINE>
+      <FPCLINE>       lc_rga_num           TYPE tdobname VALUE &apos;ZOTC_RGA_NUMBER&apos;,                &quot; Text Name</FPCLINE>
+      <FPCLINE>       lc_serial_num        TYPE tdobname VALUE &apos;ZOTC_SERIAL_NUMBER&apos;,             &quot; Text Name</FPCLINE>
+      <FPCLINE>       lc_to                TYPE tdobname VALUE &apos;ZOTC_TO&apos;,                        &quot; Text Name</FPCLINE>
+      <FPCLINE>       lc_uom               TYPE tdobname VALUE &apos;ZOTC_UOM&apos;,                       &quot; Text Name</FPCLINE>
+      <FPCLINE>       lc_cust_email_eu     TYPE tdobname VALUE &apos;ZOTC_CUSTOMER_SERVICE_EMAIL_EU&apos;, &quot; D3 Text name</FPCLINE>
+      <FPCLINE>       lc_email_eu          TYPE tdobname VALUE &apos;ZOTC0022_EMAIL_EU&apos;,              &quot; D3 Text name</FPCLINE>
+      <FPCLINE>       lc_quantity_eu       TYPE tdobname VALUE &apos;ZOTC_FDD_QUANTITY_EU&apos;,           &quot; D3 Text name</FPCLINE>
+      <FPCLINE>       lc_instructions_eu   TYPE tdobname VALUE &apos;ZOTC_INSTRUCTIONS_EU&apos;,           &quot; D3 Text name</FPCLINE>
+      <FPCLINE>       lc_mat_desc_eu       TYPE tdobname VALUE &apos;ZOTC_MATERIAL_NUMBER_EU&apos;,        &quot; D3 Text name</FPCLINE>
+      <FPCLINE>       lc_order_comments_eu TYPE tdobname VALUE &apos;ZOTC0022_ORDER_COMMENTS_EU&apos;,     &quot; D3 Text name</FPCLINE>
+      <FPCLINE>       lc_original_order_eu TYPE tdobname VALUE &apos;ZOTC_ORIGINAL_ORDER_EU&apos;,         &quot; D3 Text name</FPCLINE>
+      <FPCLINE>       lc_original_po_eu    TYPE tdobname VALUE &apos;ZOTC_ORIGINAL_PO_EU&apos;,            &quot; D3 Text name</FPCLINE>
+      <FPCLINE>       lc_page_eu           TYPE tdobname VALUE &apos;ZOTC_PAGE_EU&apos;,                   &quot; D3 Text name</FPCLINE>
+      <FPCLINE>       lc_posn_eu           TYPE tdobname VALUE &apos;ZOTC0022_POSN_EU&apos;,               &quot; D3 Text name</FPCLINE>
+      <FPCLINE>       lc_reference_eu      TYPE tdobname VALUE &apos;ZOTC_REFERENCE_EU&apos;,              &quot; D3 Text name</FPCLINE>
+      <FPCLINE>       lc_returns_by_eu     TYPE tdobname VALUE &apos;ZOTC_RETURNS_BY_EU&apos;,             &quot; D3 Text name</FPCLINE>
+      <FPCLINE>       lc_return_address_eu TYPE tdobname VALUE &apos;ZOTC_RETURN_ADDRESS_EU&apos;,         &quot; D3 Text name</FPCLINE>
+      <FPCLINE>       lc_return_rga_eu     TYPE tdobname VALUE &apos;ZOTC_RETURN_RGA_EU&apos;,             &quot; D3 Text name</FPCLINE>
+      <FPCLINE>       lc_rga_num_eu        TYPE tdobname VALUE &apos;ZOTC_RGA_NUMBER_EU&apos;,             &quot; D3 Text name</FPCLINE>
+      <FPCLINE>       lc_serial_num_eu     TYPE tdobname VALUE &apos;ZOTC_SERIAL_NUMBER_EU&apos;,          &quot; D3 Text name</FPCLINE>
+      <FPCLINE>       lc_to_eu             TYPE tdobname VALUE &apos;ZOTC0022_TO_EU&apos;,                 &quot; D3 Text name</FPCLINE>
+      <FPCLINE>       lc_uom_eu            TYPE tdobname VALUE &apos;ZOTC_UOM_EU&apos;.                    &quot; D3 Text name</FPCLINE>
+      <FPCLINE/>
+      <FPCLINE>  IF fp_d3_lang_flag IS INITIAL. &quot;IF NOT D3 language, print existing texts</FPCLINE>
+      <FPCLINE/>
+      <FPCLINE>    fp_x_textname-cust_email     = lc_cust_email.</FPCLINE>
+      <FPCLINE>    fp_x_textname-email          = lc_email.</FPCLINE>
+      <FPCLINE>    fp_x_textname-quantity       = lc_quantity.</FPCLINE>
+      <FPCLINE>    fp_x_textname-instructions   = lc_instructions.</FPCLINE>
+      <FPCLINE>    fp_x_textname-mat_desc       = lc_mat_desc.</FPCLINE>
+      <FPCLINE>    fp_x_textname-order_comments = lc_order_comments.</FPCLINE>
+      <FPCLINE>    fp_x_textname-original_order = lc_original_order.</FPCLINE>
+      <FPCLINE>    fp_x_textname-original_po    = lc_original_po.</FPCLINE>
+      <FPCLINE>    fp_x_textname-page           = lc_page.</FPCLINE>
+      <FPCLINE>    fp_x_textname-posn           = lc_posn.</FPCLINE>
+      <FPCLINE>    fp_x_textname-reference      = lc_reference.</FPCLINE>
+      <FPCLINE>    fp_x_textname-returns_by     = lc_returns_by.</FPCLINE>
+      <FPCLINE>    fp_x_textname-return_address = lc_return_address.</FPCLINE>
+      <FPCLINE>    fp_x_textname-return_rga     = lc_return_rga.</FPCLINE>
+      <FPCLINE>    fp_x_textname-rga_num        = lc_rga_num.</FPCLINE>
+      <FPCLINE>    fp_x_textname-serial_num     = lc_serial_num.</FPCLINE>
+      <FPCLINE>    fp_x_textname-to             = lc_to.</FPCLINE>
+      <FPCLINE>    fp_x_textname-uom            = lc_uom.</FPCLINE>
+      <FPCLINE/>
+      <FPCLINE>  ELSE. &quot; ELSE -&gt; IF fp_d3_lang_flag IS INITIAL</FPCLINE>
+      <FPCLINE/>
+      <FPCLINE>    fp_x_textname-cust_email     = lc_cust_email_eu.</FPCLINE>
+      <FPCLINE>    fp_x_textname-email          = lc_email_eu.</FPCLINE>
+      <FPCLINE>    fp_x_textname-quantity       = lc_quantity_eu.</FPCLINE>
+      <FPCLINE>    fp_x_textname-instructions   = lc_instructions_eu.</FPCLINE>
+      <FPCLINE>    fp_x_textname-mat_desc       = lc_mat_desc_eu.</FPCLINE>
+      <FPCLINE>    fp_x_textname-order_comments = lc_order_comments_eu.</FPCLINE>
+      <FPCLINE>    fp_x_textname-original_order = lc_original_order_eu.</FPCLINE>
+      <FPCLINE>    fp_x_textname-original_po    = lc_original_po_eu.</FPCLINE>
+      <FPCLINE>    fp_x_textname-page           = lc_page_eu.</FPCLINE>
+      <FPCLINE>    fp_x_textname-posn           = lc_posn_eu.</FPCLINE>
+      <FPCLINE>    fp_x_textname-reference      = lc_reference_eu.</FPCLINE>
+      <FPCLINE>    fp_x_textname-returns_by     = lc_returns_by_eu.</FPCLINE>
+      <FPCLINE>    fp_x_textname-return_address = lc_return_address_eu.</FPCLINE>
+      <FPCLINE>    fp_x_textname-return_rga     = lc_return_rga_eu.</FPCLINE>
+      <FPCLINE>    fp_x_textname-rga_num        = lc_rga_num_eu.</FPCLINE>
+      <FPCLINE>    fp_x_textname-serial_num     = lc_serial_num_eu.</FPCLINE>
+      <FPCLINE>    fp_x_textname-to             = lc_to_eu.</FPCLINE>
+      <FPCLINE>    fp_x_textname-uom            = lc_uom_eu.</FPCLINE>
+      <FPCLINE>  ENDIF. &quot; IF fp_d3_lang_flag IS INITIAL</FPCLINE>
+      <FPCLINE>ENDFORM. &quot;f_get_textname</FPCLINE>
+      <FPCLINE/>
+      <FPCLINE>*&amp;---------------------------------------------------------------------*</FPCLINE>
+      <FPCLINE>*&amp;      Form  f_format_date</FPCLINE>
+      <FPCLINE>*&amp;---------------------------------------------------------------------*</FPCLINE>
+      <FPCLINE>*       Format Dates in the document</FPCLINE>
+      <FPCLINE>*----------------------------------------------------------------------*</FPCLINE>
+      <FPCLINE>*      --&gt;FP_D3_FORMAT_FLAG     Indicator for D3 format</FPCLINE>
+      <FPCLINE>*      --&gt;FP_P_LANG             Language</FPCLINE>
+      <FPCLINE>*      &lt;--FP_HEADER             Header data for Returns RGA Form</FPCLINE>
+      <FPCLINE>*----------------------------------------------------------------------*</FPCLINE>
+      <FPCLINE>FORM f_format_date</FPCLINE>
+      <FPCLINE>             USING    fp_d3_format_flag  TYPE flag                  &quot; D3 Format Flag</FPCLINE>
+      <FPCLINE>                      fp_p_lang          TYPE spras                 &quot; Language Key</FPCLINE>
+      <FPCLINE>             CHANGING fp_header          TYPE zotc_return_rga_head. &quot; Header data</FPCLINE>
+      <FPCLINE/>
+      <FPCLINE>  CONSTANTS :</FPCLINE>
+      <FPCLINE>      lc_format       TYPE char15          VALUE &apos;DD-MMM-YYYY&apos;. &quot;D3 Date format</FPCLINE>
+      <FPCLINE/>
+      <FPCLINE>  IF fp_d3_format_flag EQ abap_true. &quot;If D3 format required</FPCLINE>
+      <FPCLINE/>
+      <FPCLINE>    CALL FUNCTION &apos;ZDEV_DATE_FORMAT&apos;</FPCLINE>
+      <FPCLINE>      EXPORTING</FPCLINE>
+      <FPCLINE>        i_date       = sy-datum</FPCLINE>
+      <FPCLINE>        i_format     = lc_format               &quot;DD-MMM-YYYY</FPCLINE>
+      <FPCLINE>        i_langu      = fp_p_lang</FPCLINE>
+      <FPCLINE>      IMPORTING</FPCLINE>
+      <FPCLINE>        e_date_final = fp_header-sysdate_char. &quot;Print Date in D3 char format</FPCLINE>
+      <FPCLINE/>
+      <FPCLINE>    CALL FUNCTION &apos;ZDEV_DATE_FORMAT&apos;</FPCLINE>
+      <FPCLINE>      EXPORTING</FPCLINE>
+      <FPCLINE>        i_date       = fp_header-erdat</FPCLINE>
+      <FPCLINE>        i_format     = lc_format             &quot;DD-MMM-YYYY</FPCLINE>
+      <FPCLINE>        i_langu      = fp_p_lang</FPCLINE>
+      <FPCLINE>      IMPORTING</FPCLINE>
+      <FPCLINE>        e_date_final = fp_header-erdat_char. &quot;Returns Date in D3 char format</FPCLINE>
+      <FPCLINE/>
+      <FPCLINE>  ENDIF. &quot; IF fp_d3_format_flag EQ abap_true</FPCLINE>
+      <FPCLINE>ENDFORM. &quot;f_format_date</FPCLINE>
+      <FPCLINE/>
+      <FPCLINE>*&amp;---------------------------------------------------------------------*</FPCLINE>
+      <FPCLINE>*&amp;      Form  f_get_partner_data</FPCLINE>
+      <FPCLINE>*&amp;---------------------------------------------------------------------*</FPCLINE>
+      <FPCLINE>*       text</FPCLINE>
+      <FPCLINE>*----------------------------------------------------------------------*</FPCLINE>
+      <FPCLINE>*      --&gt;IM_VBELN       Document Number</FPCLINE>
+      <FPCLINE>*      &lt;--FP_SOLDTOCTRY  Sold-to party Country key</FPCLINE>
+      <FPCLINE>*      &lt;--FP_SOLDTOLANG  SOld-to party Language</FPCLINE>
+      <FPCLINE>*----------------------------------------------------------------------*</FPCLINE>
+      <FPCLINE>FORM f_get_partner_data    USING    im_vbeln</FPCLINE>
+      <FPCLINE>                           CHANGING fp_soldtoctry</FPCLINE>
+      <FPCLINE>                                    fp_soldtolang.</FPCLINE>
+      <FPCLINE>  DATA : lv_adrnr TYPE adrnr. &quot; Country Key</FPCLINE>
+      <FPCLINE/>
+      <FPCLINE>  CONSTANTS :</FPCLINE>
+      <FPCLINE>     lc_soldto  TYPE parvw    VALUE &apos;AG&apos;,     &quot;Sold-to Party</FPCLINE>
+      <FPCLINE>     lc_posnr   TYPE posnr    VALUE &apos;000000&apos;. &quot;Item number of SD Document</FPCLINE>
+      <FPCLINE/>
+      <FPCLINE>* Get the address number for sold to party from Partner table and use it</FPCLINE>
+      <FPCLINE>* to get the sold-to party country code and language.</FPCLINE>
+      <FPCLINE/>
+      <FPCLINE>  SELECT adrnr                &quot;Address Number</FPCLINE>
+      <FPCLINE>    FROM vbpa                 &quot; Sales Document: Partner</FPCLINE>
+      <FPCLINE>    UP TO 1 ROWS</FPCLINE>
+      <FPCLINE>    INTO lv_adrnr</FPCLINE>
+      <FPCLINE>    WHERE vbeln EQ im_vbeln</FPCLINE>
+      <FPCLINE>      AND parvw EQ lc_soldto. &quot;AG&quot;</FPCLINE>
+      <FPCLINE>  ENDSELECT.</FPCLINE>
+      <FPCLINE>  IF sy-subrc = 0.</FPCLINE>
+      <FPCLINE/>
+      <FPCLINE>    SELECT country langu &quot; Country Key, Language</FPCLINE>
+      <FPCLINE>      FROM adrc          &quot; Addresses (Business Address Services)</FPCLINE>
+      <FPCLINE>      INTO (fp_soldtoctry, fp_soldtolang)</FPCLINE>
+      <FPCLINE>      UP TO 1 ROWS</FPCLINE>
+      <FPCLINE>     WHERE addrnumber = lv_adrnr.</FPCLINE>
+      <FPCLINE>    ENDSELECT.</FPCLINE>
+      <FPCLINE>    IF sy-subrc = 0.</FPCLINE>
+      <FPCLINE>    ENDIF. &quot; IF sy-subrc = 0</FPCLINE>
+      <FPCLINE>  ENDIF. &quot; IF sy-subrc = 0</FPCLINE>
+      <FPCLINE/>
+      <FPCLINE>ENDFORM. &quot;f_get_partner_data</FPCLINE>
+      <FPCLINE/>
+      <FPCLINE>*&amp;---------------------------------------------------------------------*</FPCLINE>
+      <FPCLINE>*&amp;      Form  f_get_emi_status</FPCLINE>
+      <FPCLINE>*&amp;---------------------------------------------------------------------*</FPCLINE>
+      <FPCLINE>*       Read constants from EMI table</FPCLINE>
+      <FPCLINE>*----------------------------------------------------------------------*</FPCLINE>
+      <FPCLINE>*      &lt;--LI_STATUS  Enhancement Status table</FPCLINE>
+      <FPCLINE>*----------------------------------------------------------------------*</FPCLINE>
+      <FPCLINE>FORM f_get_emi_status CHANGING fp_status TYPE zdev_tt_enh_status.</FPCLINE>
+      <FPCLINE/>
+      <FPCLINE>  CONSTANTS:   lc_fdd_0022   TYPE z_enhancement VALUE &apos;D2_OTC_FDD_0022&apos;. &quot; Enh. No.</FPCLINE>
+      <FPCLINE/>
+      <FPCLINE>*Get constants from EMI tools</FPCLINE>
+      <FPCLINE>  CALL FUNCTION &apos;ZDEV_ENHANCEMENT_STATUS_CHECK&apos;</FPCLINE>
+      <FPCLINE>    EXPORTING</FPCLINE>
+      <FPCLINE>      iv_enhancement_no = lc_fdd_0022 &quot;D2_OTC_FDD_0022</FPCLINE>
+      <FPCLINE>    TABLES</FPCLINE>
+      <FPCLINE>      tt_enh_status     = fp_status.  &quot;Read table done via linear search as it will contain very few entries</FPCLINE>
+      <FPCLINE/>
+      <FPCLINE>*Deleting records where active check is not marked</FPCLINE>
+      <FPCLINE>  DELETE fp_status WHERE active = abap_false.</FPCLINE>
+      <FPCLINE>ENDFORM. &quot;f_get_emi_status</FPCLINE>
+      <FPCLINE>* &lt;--- End   of Insert for D3_OTC_FDD_0022 by U034334</FPCLINE>
+     </FORMS>
+    </CL_FP_CODING>
+   </cls:CL_FP_CODING>
+  </asx:heap>
+ </asx:abap>
+</abapGit>

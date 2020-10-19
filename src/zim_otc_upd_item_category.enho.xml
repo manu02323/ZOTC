@@ -1,0 +1,107 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<abapGit version="v1.0.0" serializer="LCL_OBJECT_ENHO" serializer_version="v1.0.0">
+ <asx:abap xmlns:asx="http://www.sap.com/abapxml" version="1.0">
+  <asx:values>
+   <TOOL>HOOK_IMPL</TOOL>
+   <SHORTTEXT>Implicit enhancement to flip item category value based on the value of Billing Method and Billing Frequency.</SHORTTEXT>
+   <ORIGINAL_OBJECT>
+    <PGMID>R3TR</PGMID>
+    <ORG_OBJ_TYPE>PROG</ORG_OBJ_TYPE>
+    <ORG_OBJ_NAME>SAPMV45A</ORG_OBJ_NAME>
+    <ORG_MAIN_TYPE>PROG</ORG_MAIN_TYPE>
+    <ORG_MAIN_NAME>SAPMV45A</ORG_MAIN_NAME>
+    <PROGRAMNAME>SAPMV45A</PROGRAMNAME>
+   </ORIGINAL_OBJECT>
+   <ENHANCEMENTS>
+    <ENH_HOOK_IMPL>
+     <PROGRAMNAME>SAPMV45A</PROGRAMNAME>
+     <ENHMODE>D</ENHMODE>
+     <FULL_NAME>\PR:SAPMV45A\FO:USEREXIT_SOURCE_DETERMINATION\SE:BEGIN\EI</FULL_NAME>
+     <SOURCE>
+      <item>***********************************************************************</item>
+      <item>*Program    : ZIM_OTC_UPD_ITEM_CATEGORY(Enhancement)                  *</item>
+      <item>*Title      : Custom Fields on Sales Document                         *</item>
+      <item>*Developer  : Shruti Gupta                                            *</item>
+      <item>*Object type: Enhancement                                             *</item>
+      <item>*SAP Release: SAP ECC 6.0                                             *</item>
+      <item>*---------------------------------------------------------------------*</item>
+      <item>*WRICEF ID: D2_OTC_EDD_0136                                           *</item>
+      <item>*---------------------------------------------------------------------*</item>
+      <item>*Description: Custom Fields on Sales Document Header &amp; Item           *</item>
+      <item>*---------------------------------------------------------------------*</item>
+      <item>*MODIFICATION HISTORY:</item>
+      <item>*=====================================================================*</item>
+      <item>*Date           User        Transport       Description</item>
+      <item>*=========== ============== ============== ===========================*</item>
+      <item>*05-FEB-2015  SGUPTA4       E2DK900492      CR D2_484, Updating the   *</item>
+      <item>*                                           Item Category on the basis*</item>
+      <item>*                                           of doc type,billing method*</item>
+      <item>*                                           and billing frequency.    *</item>
+      <item>*---------------------------------------------------------------------*</item>
+      <item>*&amp;---------------------------------------------------------------------*</item>
+      <item>*&amp;  Include           ZOTCN0136O_UPD_ITEM_CAT</item>
+      <item>*&amp;---------------------------------------------------------------------*</item>
+      <item/>
+      <item>* Popup logic should work only in Foreground Mode and Call activity is</item>
+      <item>* used to check if the call is from enterprise service or not.</item>
+      <item/>
+      <item>IF sy-batch EQ abap_false.</item>
+      <item/>
+      <item>*Include to generate popup to enter the values of Billing Method and</item>
+      <item>*Billing Frequency, on the basis of which the Item Category should get</item>
+      <item>*flipped.</item>
+      <item>INCLUDE zotcn0136o_upd_item_cat. &quot; Include ZOTCN0136O_ITEM_CAT</item>
+      <item/>
+      <item>ENDIF. &quot; IF sy-batch EQ abap_false AND</item>
+      <item/>
+      <item/>
+     </SOURCE>
+    </ENH_HOOK_IMPL>
+   </ENHANCEMENTS>
+   <SPACES>
+    <item>
+     <FULL_NAME>\PR:SAPMV45A\FO:USEREXIT_SOURCE_DETERMINATION\SE:BEGIN\EI</FULL_NAME>
+     <SPACES>
+      <item>0</item>
+      <item>0</item>
+      <item>0</item>
+      <item>0</item>
+      <item>0</item>
+      <item>0</item>
+      <item>0</item>
+      <item>0</item>
+      <item>0</item>
+      <item>0</item>
+      <item>0</item>
+      <item>0</item>
+      <item>0</item>
+      <item>0</item>
+      <item>0</item>
+      <item>0</item>
+      <item>0</item>
+      <item>0</item>
+      <item>0</item>
+      <item>0</item>
+      <item>0</item>
+      <item>0</item>
+      <item>0</item>
+      <item>0</item>
+      <item>0</item>
+      <item>0</item>
+      <item>0</item>
+      <item>0</item>
+      <item>0</item>
+      <item>0</item>
+      <item>0</item>
+      <item>0</item>
+      <item>2</item>
+      <item>0</item>
+      <item>0</item>
+      <item>0</item>
+      <item>0</item>
+     </SPACES>
+    </item>
+   </SPACES>
+  </asx:values>
+ </asx:abap>
+</abapGit>

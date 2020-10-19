@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<abapGit version="v1.0.0" serializer="LCL_OBJECT_SXCI" serializer_version="v1.0.0">
+ <asx:abap xmlns:asx="http://www.sap.com/abapxml" version="1.0">
+  <asx:values>
+   <SXCI>
+    <IMPLEMENTATION_DATA>
+     <IMP_NAME>ZOTC_DMEE_BADI_01</IMP_NAME>
+     <TEXT>Badi Implementation for OTC_IDD_201</TEXT>
+     <IMP_CLASS>ZCL_IM_OTC_DMEE_BADI_01</IMP_CLASS>
+     <EXIT_NAME>DMEE_BADI_01</EXIT_NAME>
+     <INTER_NAME>IF_EX_DMEE_BADI_01</INTER_NAME>
+    </IMPLEMENTATION_DATA>
+    <FILTERS>
+     <item>
+      <FLT_VAL>ZOTC_CITI_SEPADD</FLT_VAL>
+     </item>
+    </FILTERS>
+   </SXCI>
+  </asx:values>
+ </asx:abap>
+</abapGit>

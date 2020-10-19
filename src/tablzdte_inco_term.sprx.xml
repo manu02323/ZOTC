@@ -1,0 +1,72 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<abapGit version="v1.0.0" serializer="LCL_OBJECT_SPRX" serializer_version="v1.0.0">
+ <asx:abap xmlns:asx="http://www.sap.com/abapxml" version="1.0">
+  <asx:values>
+   <PROXY_HEADER>
+    <item>
+     <OBJECT>TABL</OBJECT>
+     <OBJ_NAME>ZDTE_INCO_TERM</OBJ_NAME>
+     <OBJECT_M>TABL</OBJECT_M>
+     <OBJ_NAME_M>ZDTE_INCO_TERM</OBJ_NAME_M>
+     <HASH_ID>7B759F4142F9AABA1F2373C506AA3B273E6BA3E2</HASH_ID>
+     <ID>&lt;groupOrAttributeGroup&gt; DTE_IncoTerm http://bio-rad.com/OTC/PurchaseOrderConfirmation http://bio-rad.com/OTC/PurchaseOrderConfirmation</ID>
+     <IFR_GLOBAL>X</IFR_GLOBAL>
+     <IFR_TYPE>groupOrAttributeGroup</IFR_TYPE>
+     <IFR_NAME>DTE_IncoTerm</IFR_NAME>
+     <IFR_NSPCE>http://bio-rad.com/OTC/PurchaseOrderConfirmation</IFR_NSPCE>
+     <IFR_GNSPCE>http://bio-rad.com/OTC/PurchaseOrderConfirmation</IFR_GNSPCE>
+     <GEN_VERS>0005</GEN_VERS>
+     <CATEGORY>ifmtypeenh</CATEGORY>
+     <ENH_NAME>Incoterms</ENH_NAME>
+     <ENH_NSPCE>http://sap.com/xi/APPL/SE/Global</ENH_NSPCE>
+     <X-ML_NSPCE>http://bio-rad.com/OTC/PurchaseOrderConfirmation</X-ML_NSPCE>
+     <X-ML_NAME>DTE_IncoTerm</X-ML_NAME>
+     <VERSION_ID>169b2bcdd75311e6b8610000010d7702</VERSION_ID>
+    </item>
+   </PROXY_HEADER>
+   <PROXY_DATA>
+    <item>
+     <OBJECT>TABL</OBJECT>
+     <OBJ_NAME>ZDTE_INCO_TERM</OBJ_NAME>
+     <OBJECT1>FIEL</OBJECT1>
+     <OBJ_NAME1>ZINCO_TERM</OBJ_NAME1>
+     <OBJECT2>FIEL</OBJECT2>
+     <OBJ_NAME2>ZINCO_TERM</OBJ_NAME2>
+     <ID>&lt;element&gt; {http://bio-rad.com/OTC/PurchaseOrderConfirmation}ZIncoTerm &lt;groupOrAttributeGroup&gt; DTE_IncoTerm http://bio-rad.com/OTC/PurchaseOrderConfirmation http://bio-rad.com/OTC/PurchaseOrderConfirmation</ID>
+     <IFR_TYPE>element</IFR_TYPE>
+     <IFR_NAME>ZIncoTerm</IFR_NAME>
+     <IFR_TEXT>Concatenation of Inco1 and Inco2</IFR_TEXT>
+     <IFR_TAGTYP>E</IFR_TAGTYP>
+     <IFR_MAXOCC>1</IFR_MAXOCC>
+     <IFR_OPTNL>X</IFR_OPTNL>
+     <IFR_QUALIF>X</IFR_QUALIF>
+     <IFR_XSDTYP>string</IFR_XSDTYP>
+     <IFR_MAXLEN>32</IFR_MAXLEN>
+     <IFR_SCALE>-2</IFR_SCALE>
+     <R3_TYPE>FIEL</R3_TYPE>
+     <R3_NAME>ZINCO_TERM</R3_NAME>
+     <R3_TEXT>Concatenation of Inco1 and Inco2</R3_TEXT>
+     <R3_DATATYP>CHAR</R3_DATATYP>
+     <R3_LENGTH>000032</R3_LENGTH>
+     <R3_SEQNUM>000001</R3_SEQNUM>
+    </item>
+    <item>
+     <OBJECT>TABL</OBJECT>
+     <OBJ_NAME>ZDTE_INCO_TERM</OBJ_NAME>
+     <OBJECT1>TABL</OBJECT1>
+     <OBJ_NAME1>ZDTE_INCO_TERM</OBJ_NAME1>
+     <OBJECT2>TABL</OBJECT2>
+     <OBJ_NAME2>ZDTE_INCO_TERM</OBJ_NAME2>
+     <ID>&lt;groupOrAttributeGroup&gt; DTE_IncoTerm http://bio-rad.com/OTC/PurchaseOrderConfirmation http://bio-rad.com/OTC/PurchaseOrderConfirmation</ID>
+     <IFR_TYPE>groupOrAttributeGroup</IFR_TYPE>
+     <IFR_NAME>DTE_IncoTerm</IFR_NAME>
+     <IFR_SCALE>-2</IFR_SCALE>
+     <R3_TYPE>TABL</R3_TYPE>
+     <R3_NAME>ZDTE_INCO_TERM</R3_NAME>
+     <R3_TEXT>Proxy Structure (generated)</R3_TEXT>
+     <CATEGORY>ifmtypeenh</CATEGORY>
+    </item>
+   </PROXY_DATA>
+  </asx:values>
+ </asx:abap>
+</abapGit>

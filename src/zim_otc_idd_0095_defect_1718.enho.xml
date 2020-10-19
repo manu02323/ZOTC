@@ -1,0 +1,91 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<abapGit version="v1.0.0" serializer="LCL_OBJECT_ENHO" serializer_version="v1.0.0">
+ <asx:abap xmlns:asx="http://www.sap.com/abapxml" version="1.0">
+  <asx:values>
+   <TOOL>HOOK_IMPL</TOOL>
+   <SHORTTEXT>Item category flipping functionality for FOC scenario in case of BOM and dropship items</SHORTTEXT>
+   <ORIGINAL_OBJECT>
+    <PGMID>R3TR</PGMID>
+    <ORG_OBJ_TYPE>PROG</ORG_OBJ_TYPE>
+    <ORG_OBJ_NAME>SAPMV45A</ORG_OBJ_NAME>
+    <ORG_MAIN_TYPE>PROG</ORG_MAIN_TYPE>
+    <ORG_MAIN_NAME>SAPMV45A</ORG_MAIN_NAME>
+    <PROGRAMNAME>SAPMV45A</PROGRAMNAME>
+   </ORIGINAL_OBJECT>
+   <ENHANCEMENTS>
+    <ENH_HOOK_IMPL>
+     <PROGRAMNAME>SAPMV45A</PROGRAMNAME>
+     <ENHMODE>S</ENHMODE>
+     <FULL_NAME>\PR:SAPMV45A\FO:USEREXIT_SAVE_DOCUMENT_PREPARE\SE:END\EI</FULL_NAME>
+     <SOURCE>
+      <item>************************************************************************</item>
+      <item>* PROGRAM    :  ZIM_OTC_IDD_0095_DEFECT_1718 (Enhancement)             *</item>
+      <item>* TITLE      :  Item category flipping functionality for FOC scenario  *</item>
+      <item>*               in case of BOM and dropship items.                     *</item>
+      <item>* DEVELOPER  :  Amlan Mohapatra                                        *</item>
+      <item>* OBJECT TYPE:  Interface                                              *</item>
+      <item>* SAP RELEASE:  SAP ECC 7.0                                            *</item>
+      <item>*----------------------------------------------------------------------*</item>
+      <item>* WRICEF ID:    Defect#1718(D2_OTC_IDD_0095)                           *</item>
+      <item>*----------------------------------------------------------------------*</item>
+      <item>* DESCRIPTION:  Item category flipping functionality for FOC scenario  *</item>
+      <item>*               in case of BOM and dropship items.                     *</item>
+      <item>*----------------------------------------------------------------------*</item>
+      <item>* MODIFICATION HISTORY:                                                *</item>
+      <item>*======================================================================*</item>
+      <item>* DATE        USER     TRANSPORT  DESCRIPTION                          *</item>
+      <item>* =========== ======== ========== =====================================*</item>
+      <item>* 25-May-2016 AMOHAPA  E2DK917879 Defect#1718: Item category flipping  *</item>
+      <item>*                                 functionality for FOC scenario in    *</item>
+      <item>*                                 case of BOM and dropship items.      *</item>
+      <item>* 01-Feb-2018 U033876  E1DK934294 SCTASK0541633 Corresponding Batch    *</item>
+      <item>*                                 determination in sales order save    *</item>
+      <item>*&amp;---------------------------------------------------------------------*</item>
+      <item/>
+      <item>INCLUDE zotcn0095O_flip_item_cat.</item>
+      <item/>
+      <item>* Below Include for D3_PTM_EDD_0027-Corresponding Batch determination in sales order</item>
+      <item>INCLUDE ZPTMN0027O_DETER_CORRESP_BATCH.</item>
+      <item/>
+     </SOURCE>
+    </ENH_HOOK_IMPL>
+   </ENHANCEMENTS>
+   <SPACES>
+    <item>
+     <FULL_NAME>\PR:SAPMV45A\FO:USEREXIT_SAVE_DOCUMENT_PREPARE\SE:END\EI</FULL_NAME>
+     <SPACES>
+      <item>0</item>
+      <item>0</item>
+      <item>0</item>
+      <item>0</item>
+      <item>0</item>
+      <item>0</item>
+      <item>0</item>
+      <item>0</item>
+      <item>0</item>
+      <item>0</item>
+      <item>0</item>
+      <item>0</item>
+      <item>0</item>
+      <item>0</item>
+      <item>0</item>
+      <item>0</item>
+      <item>0</item>
+      <item>0</item>
+      <item>0</item>
+      <item>0</item>
+      <item>0</item>
+      <item>0</item>
+      <item>0</item>
+      <item>0</item>
+      <item>0</item>
+      <item>0</item>
+      <item>0</item>
+      <item>0</item>
+      <item>0</item>
+     </SPACES>
+    </item>
+   </SPACES>
+  </asx:values>
+ </asx:abap>
+</abapGit>

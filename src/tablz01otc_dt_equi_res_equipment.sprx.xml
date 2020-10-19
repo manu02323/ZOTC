@@ -1,0 +1,89 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<abapGit version="v1.0.0" serializer="LCL_OBJECT_SPRX" serializer_version="v1.0.0">
+ <asx:abap xmlns:asx="http://www.sap.com/abapxml" version="1.0">
+  <asx:values>
+   <PROXY_HEADER>
+    <item>
+     <OBJECT>TABL</OBJECT>
+     <OBJ_NAME>Z01OTC_DT_EQUI_RES_EQUIPMENT</OBJ_NAME>
+     <OBJECT_M>TABL</OBJECT_M>
+     <OBJ_NAME_M>Z01OTC_DT_EQUI_RES</OBJ_NAME_M>
+     <HASH_ID>735D5713ED582FD26FC26DCFF1B4F841CABFAB75</HASH_ID>
+     <ID>&lt;type&gt; Equipment &lt;element&gt; Equipment &lt;type&gt; DT_EQUI_RES http://bio-rad.com/OTC/EquipmentMasterUpdate http://bio-rad.com/OTC/EquipmentMasterUpdate</ID>
+     <IFR_TYPE>type</IFR_TYPE>
+     <IFR_NAME>Equipment</IFR_NAME>
+     <IFR_NSPCE>http://bio-rad.com/OTC/EquipmentMasterUpdate</IFR_NSPCE>
+     <IFR_GNSPCE>http://bio-rad.com/OTC/EquipmentMasterUpdate</IFR_GNSPCE>
+     <GEN_VERS>0005</GEN_VERS>
+     <PREFIX>Z01OTC_</PREFIX>
+     <CATEGORY>ifmtypedef</CATEGORY>
+     <X-ML_NSPCE>http://bio-rad.com/OTC/EquipmentMasterUpdate</X-ML_NSPCE>
+     <X-ML_NAME>Equipment</X-ML_NAME>
+    </item>
+   </PROXY_HEADER>
+   <PROXY_DATA>
+    <item>
+     <OBJECT>TABL</OBJECT>
+     <OBJ_NAME>Z01OTC_DT_EQUI_RES_EQUIPMENT</OBJ_NAME>
+     <OBJECT1>FIEL</OBJECT1>
+     <OBJ_NAME1>EQUIP_ID</OBJ_NAME1>
+     <OBJECT2>FIEL</OBJECT2>
+     <OBJ_NAME2>EQUIP_ID</OBJ_NAME2>
+     <ID>&lt;element&gt; EquipID &lt;type&gt; Equipment &lt;element&gt; Equipment &lt;type&gt; DT_EQUI_RES http://bio-rad.com/OTC/EquipmentMasterUpdate http://bio-rad.com/OTC/EquipmentMasterUpdate</ID>
+     <IFR_TYPE>element</IFR_TYPE>
+     <IFR_NAME>EquipID</IFR_NAME>
+     <IFR_LANGU>EN</IFR_LANGU>
+     <IFR_TAGTYP>E</IFR_TAGTYP>
+     <IFR_MAXOCC>1</IFR_MAXOCC>
+     <IFR_OPTNL>X</IFR_OPTNL>
+     <IFR_XSDTYP>string</IFR_XSDTYP>
+     <IFR_MAXLEN>20</IFR_MAXLEN>
+     <IFR_SCALE>-2</IFR_SCALE>
+     <R3_TYPE>FIEL</R3_TYPE>
+     <R3_NAME>EQUIP_ID</R3_NAME>
+     <R3_DATATYP>CHAR</R3_DATATYP>
+     <R3_LENGTH>000020</R3_LENGTH>
+     <R3_SEQNUM>000001</R3_SEQNUM>
+    </item>
+    <item>
+     <OBJECT>TABL</OBJECT>
+     <OBJ_NAME>Z01OTC_DT_EQUI_RES_EQUIPMENT</OBJ_NAME>
+     <OBJECT1>FIEL</OBJECT1>
+     <OBJ_NAME1>LOG</OBJ_NAME1>
+     <OBJECT2>FIEL</OBJECT2>
+     <OBJ_NAME2>LOG</OBJ_NAME2>
+     <OBJECT_R>TABL</OBJECT_R>
+     <OBJ_NAME_R>SAPPLCO_LOG</OBJ_NAME_R>
+     <ID>&lt;element&gt; Log &lt;type&gt; Equipment &lt;element&gt; Equipment &lt;type&gt; DT_EQUI_RES http://bio-rad.com/OTC/EquipmentMasterUpdate http://bio-rad.com/OTC/EquipmentMasterUpdate</ID>
+     <IFR_TYPE>element</IFR_TYPE>
+     <IFR_NAME>Log</IFR_NAME>
+     <IFR_LANGU>EN</IFR_LANGU>
+     <IFR_TAGTYP>E</IFR_TAGTYP>
+     <IFR_MINOCC>1</IFR_MINOCC>
+     <IFR_MAXOCC>1</IFR_MAXOCC>
+     <IFR_SCALE>-2</IFR_SCALE>
+     <R3_TYPE>FIEL</R3_TYPE>
+     <R3_NAME>LOG</R3_NAME>
+     <R3_SEQNUM>000002</R3_SEQNUM>
+    </item>
+    <item>
+     <OBJECT>TABL</OBJECT>
+     <OBJ_NAME>Z01OTC_DT_EQUI_RES_EQUIPMENT</OBJ_NAME>
+     <OBJECT1>TABL</OBJECT1>
+     <OBJ_NAME1>Z01OTC_DT_EQUI_RES_EQUIPMENT</OBJ_NAME1>
+     <OBJECT2>TABL</OBJECT2>
+     <OBJ_NAME2>Z01OTC_DT_EQUI_RES_EQUIPMENT</OBJ_NAME2>
+     <ID>&lt;type&gt; Equipment &lt;element&gt; Equipment &lt;type&gt; DT_EQUI_RES http://bio-rad.com/OTC/EquipmentMasterUpdate http://bio-rad.com/OTC/EquipmentMasterUpdate</ID>
+     <IFR_TYPE>type</IFR_TYPE>
+     <IFR_NAME>Equipment</IFR_NAME>
+     <IFR_LANGU>EN</IFR_LANGU>
+     <IFR_SCALE>-2</IFR_SCALE>
+     <R3_TYPE>TABL</R3_TYPE>
+     <R3_NAME>Z01OTC_DT_EQUI_RES_EQUIPMENT</R3_NAME>
+     <R3_TEXT>Proxy Structure (generated)</R3_TEXT>
+     <CATEGORY>ifmtypedef</CATEGORY>
+    </item>
+   </PROXY_DATA>
+  </asx:values>
+ </asx:abap>
+</abapGit>

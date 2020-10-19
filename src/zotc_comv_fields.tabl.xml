@@ -1,0 +1,41 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<abapGit version="v1.0.0" serializer="LCL_OBJECT_TABL" serializer_version="v1.0.0">
+ <asx:abap xmlns:asx="http://www.sap.com/abapxml" version="1.0">
+  <asx:values>
+   <DD02V>
+    <TABNAME>ZOTC_COMV_FIELDS</TABNAME>
+    <DDLANGUAGE>E</DDLANGUAGE>
+    <TABCLASS>INTTAB</TABCLASS>
+    <DDTEXT>Lean Order - Header Data (Values)</DDTEXT>
+    <EXCLASS>2</EXCLASS>
+   </DD02V>
+   <DD03P_TABLE>
+    <DD03P>
+     <TABNAME>ZOTC_COMV_FIELDS</TABNAME>
+     <FIELDNAME>ZZIHREZ</FIELDNAME>
+     <POSITION>0001</POSITION>
+     <ROLLNAME>IHREZ</ROLLNAME>
+     <ADMINFIELD>0</ADMINFIELD>
+     <COMPTYPE>E</COMPTYPE>
+    </DD03P>
+    <DD03P>
+     <TABNAME>ZOTC_COMV_FIELDS</TABNAME>
+     <FIELDNAME>ZFBUDA</FIELDNAME>
+     <POSITION>0002</POSITION>
+     <ROLLNAME>FBUDA</ROLLNAME>
+     <ADMINFIELD>0</ADMINFIELD>
+     <SHLPORIGIN>T</SHLPORIGIN>
+     <COMPTYPE>E</COMPTYPE>
+    </DD03P>
+    <DD03P>
+     <TABNAME>ZOTC_COMV_FIELDS</TABNAME>
+     <FIELDNAME>ZERNAM</FIELDNAME>
+     <POSITION>0003</POSITION>
+     <ROLLNAME>ERNAM</ROLLNAME>
+     <ADMINFIELD>0</ADMINFIELD>
+     <COMPTYPE>E</COMPTYPE>
+    </DD03P>
+   </DD03P_TABLE>
+  </asx:values>
+ </asx:abap>
+</abapGit>

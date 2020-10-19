@@ -1,0 +1,100 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<abapGit version="v1.0.0" serializer="LCL_OBJECT_DTEL" serializer_version="v1.0.0">
+ <asx:abap xmlns:asx="http://www.sap.com/abapxml" version="1.0">
+  <asx:values>
+   <DD04V>
+    <ROLLNAME>Z_AGMNT_TYP</ROLLNAME>
+    <DDLANGUAGE>E</DDLANGUAGE>
+    <DOMNAME>Z_AGMNT_TYP</DOMNAME>
+    <LOGFLAG>X</LOGFLAG>
+    <HEADLEN>08</HEADLEN>
+    <SCRLEN1>08</SCRLEN1>
+    <SCRLEN2>08</SCRLEN2>
+    <SCRLEN3>08</SCRLEN3>
+    <DDTEXT>ID Type</DDTEXT>
+    <REPTEXT>ID Type</REPTEXT>
+    <SCRTEXT_S>ID Type</SCRTEXT_S>
+    <SCRTEXT_M>ID Type</SCRTEXT_M>
+    <SCRTEXT_L>ID Type</SCRTEXT_L>
+    <DTELMASTER>E</DTELMASTER>
+    <REFKIND>D</REFKIND>
+   </DD04V>
+   <I18N_LANGS>
+    <LANGU>1</LANGU>
+    <LANGU>D</LANGU>
+    <LANGU>F</LANGU>
+    <LANGU>J</LANGU>
+    <LANGU>N</LANGU>
+    <LANGU>P</LANGU>
+    <LANGU>R</LANGU>
+    <LANGU>S</LANGU>
+   </I18N_LANGS>
+   <DD04_TEXTS>
+    <item>
+     <DDLANGUAGE>1</DDLANGUAGE>
+     <DDTEXT>ID Type</DDTEXT>
+     <REPTEXT>ID Type</REPTEXT>
+     <SCRTEXT_S>ID Type</SCRTEXT_S>
+     <SCRTEXT_M>ID Type</SCRTEXT_M>
+     <SCRTEXT_L>ID Type</SCRTEXT_L>
+    </item>
+    <item>
+     <DDLANGUAGE>D</DDLANGUAGE>
+     <DDTEXT>ID Typ</DDTEXT>
+     <REPTEXT>ID Typ</REPTEXT>
+     <SCRTEXT_S>ID Typ</SCRTEXT_S>
+     <SCRTEXT_M>ID Typ</SCRTEXT_M>
+     <SCRTEXT_L>ID Typ</SCRTEXT_L>
+    </item>
+    <item>
+     <DDLANGUAGE>F</DDLANGUAGE>
+     <DDTEXT>Type de contrat</DDTEXT>
+     <REPTEXT>Type</REPTEXT>
+     <SCRTEXT_S>Type</SCRTEXT_S>
+     <SCRTEXT_M>Type</SCRTEXT_M>
+     <SCRTEXT_L>Type</SCRTEXT_L>
+    </item>
+    <item>
+     <DDLANGUAGE>J</DDLANGUAGE>
+     <DDTEXT>ID Type</DDTEXT>
+     <REPTEXT>ID Type</REPTEXT>
+     <SCRTEXT_S>ID Type</SCRTEXT_S>
+     <SCRTEXT_M>ID Type</SCRTEXT_M>
+     <SCRTEXT_L>ID Type</SCRTEXT_L>
+    </item>
+    <item>
+     <DDLANGUAGE>N</DDLANGUAGE>
+     <DDTEXT>ID Type</DDTEXT>
+     <REPTEXT>ID Type</REPTEXT>
+     <SCRTEXT_S>ID Type</SCRTEXT_S>
+     <SCRTEXT_M>ID Type</SCRTEXT_M>
+     <SCRTEXT_L>ID Type</SCRTEXT_L>
+    </item>
+    <item>
+     <DDLANGUAGE>P</DDLANGUAGE>
+     <DDTEXT>ID Type</DDTEXT>
+     <REPTEXT>ID Type</REPTEXT>
+     <SCRTEXT_S>ID Type</SCRTEXT_S>
+     <SCRTEXT_M>ID Type</SCRTEXT_M>
+     <SCRTEXT_L>ID Type</SCRTEXT_L>
+    </item>
+    <item>
+     <DDLANGUAGE>R</DDLANGUAGE>
+     <DDTEXT>ID Type</DDTEXT>
+     <REPTEXT>ID Type</REPTEXT>
+     <SCRTEXT_S>ID Type</SCRTEXT_S>
+     <SCRTEXT_M>ID Type</SCRTEXT_M>
+     <SCRTEXT_L>ID Type</SCRTEXT_L>
+    </item>
+    <item>
+     <DDLANGUAGE>S</DDLANGUAGE>
+     <DDTEXT>ID Type</DDTEXT>
+     <REPTEXT>ID Type</REPTEXT>
+     <SCRTEXT_S>ID Type</SCRTEXT_S>
+     <SCRTEXT_M>ID Type</SCRTEXT_M>
+     <SCRTEXT_L>ID Type</SCRTEXT_L>
+    </item>
+   </DD04_TEXTS>
+  </asx:values>
+ </asx:abap>
+</abapGit>

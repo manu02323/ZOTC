@@ -1,0 +1,1681 @@
+<?xml version="1.0" encoding="utf-8"?>
+<?xfa generator="AdobeLiveCycleDesignerES_V9.0.1.0.20091206.1.615263_SAP" APIVersion="3.2.9310.0"?><xdp:xdp xmlns:xdp="http://ns.adobe.com/xdp/" timeStamp="2018-02-07T09:19:54Z" uuid="4f8e630a-33bc-4ea6-8b95-6db576be2ed6">
+<template xmlns:xliff="urn:oasis:names:tc:xliff:document:1.1" xmlns="http://www.xfa.org/schema/xfa-template/2.8/">
+   <tags xmlns="http://www.xfa.org/schema/xfa-xliff/1.0/"><value id="5D742022-D5DD-494E-BAA5-090FFBECBAFF"><body xmlns="http://www.w3.org/1999/xhtml" xmlns:xft-xliff="http://www.xfa.org/schema/xfa-xliff/1.0/" xmlns:xfa="http://www.xfa.org/schema/xfa-data/1.0/" xfa:APIVersion="2.7.0.0"><p style="letter-spacing:0in"><span xfa:embed="#floatingField006334" xfa:embedMode="raw" xfa:embedType="uri"/><span style="xfa-spacerun:yes"> </span><span xfa:embed="#floatingField000041" xfa:embedMode="raw" xfa:embedType="uri"/> /<span style="xfa-spacerun:yes"> </span><span xfa:embed="#floatingField018467" xfa:embedMode="raw" xfa:embedType="uri"/></p></body></value><value id="6B8DD748-9D7D-40CF-94D4-8F9DFFD19CE4">Text Field</value><value id="6C53FEC4-3613-4E86-A5CB-E161E22A63A9">Text Field</value><value id="944BE7E2-3793-41EF-9FB6-6CDB56544112">Text Field</value><value id="B6561D49-E58C-4F80-9D83-822CED416C5F"><body xmlns="http://www.w3.org/1999/xhtml" xmlns:xft-xliff="http://www.xfa.org/schema/xfa-xliff/1.0/" xmlns:xfa="http://www.xfa.org/schema/xfa-data/1.0/" xfa:APIVersion="2.7.0.0"><p style="letter-spacing:0in"><span xfa:embed="#floatingField026500" xfa:embedMode="raw" xfa:embedType="uri"/><span style="xfa-spacerun:yes"> </span><span xfa:embed="#floatingField019169" xfa:embedMode="raw" xfa:embedType="uri"/> /<span style="xfa-spacerun:yes"> </span><span xfa:embed="#floatingField015724" xfa:embedMode="raw" xfa:embedType="uri"/></p></body></value><value id="D006DBD1-01EC-4E0F-AAF4-DE34618BFFAB">Text Field</value><value id="N2420-4"><body xmlns="http://www.w3.org/1999/xhtml" xmlns:xft-xliff="http://www.xfa.org/schema/xfa-xliff/1.0/" xmlns:xfa="http://www.xfa.org/schema/xfa-data/1.0/" xfa:APIVersion="2.7.9246.0"><p><span style="xfa-spacerun:yes"/></p></body></value></tags>
+   <?formServer defaultPDFRenderFormat acrobat9.0static?>
+   <?formServer allowRenderCaching 0?>
+   <?formServer formModel both?>
+   <subform layout="tb" locale="en_US" name="data">
+      <pageSet>
+         <pageArea id="Page1" name="Page_First">
+            <medium long="11in" short="8.5in" stock="letter"/>
+            <field access="readOnly" h="9mm" id="floatingField006334" name="TextField" presence="hidden" w="62mm" x="0mm" y="0mm">
+               <ui>
+                  <textEdit>
+                     <border>
+                        <?templateDesigner StyleID aped3?>
+                        <edge stroke="lowered"/>
+                     </border>
+                     <margin/>
+                  </textEdit>
+               </ui>
+               <font typeface="Arial"/>
+               <margin bottomInset="1mm" leftInset="1mm" rightInset="1mm" topInset="1mm"/>
+               <para vAlign="middle"/>
+               <bind match="dataRef" ref="$.STANDARD_TEXT.PAGE"/>
+            </field>
+            <draw name="Pages" x="184.15mm" y="260.35mm">
+               <ui>
+                  <textEdit>
+                     <margin/>
+                  </textEdit>
+               </ui>
+               <value>
+                  <exData xmlns:xft-xliff="http://www.xfa.org/schema/xfa-xliff/1.0/" contentType="text/html" maxLength="0" xft-xliff:id="5D742022-D5DD-494E-BAA5-090FFBECBAFF" xliff:rid="5D742022-D5DD-494E-BAA5-090FFBECBAFF">
+                     <body xmlns="http://www.w3.org/1999/xhtml" xmlns:xfa="http://www.xfa.org/schema/xfa-data/1.0/" xfa:APIVersion="2.7.0.0"><p style="letter-spacing:0in"><span xfa:embed="#floatingField006334" xfa:embedMode="raw" xfa:embedType="uri"/><span style="xfa-spacerun:yes"> </span><span xfa:embed="#floatingField000041" xfa:embedMode="raw" xfa:embedType="uri"/> /<span style="xfa-spacerun:yes"> </span><span xfa:embed="#floatingField018467" xfa:embedMode="raw" xfa:embedType="uri"/></p></body>
+                  </exData>
+               </value>
+               <font typeface="Arial"/>
+               <margin bottomInset="0mm" leftInset="0mm" rightInset="0mm" topInset="0mm"/>
+               <para vAlign="middle"/>
+            </draw>
+            <field access="readOnly" h="7.5mm" id="floatingField000041" name="CurrentPage" presence="hidden" w="55mm" x="174.625mm" y="266.7mm">
+               <ui>
+                  <numericEdit>
+                     <border>
+                        <edge stroke="lowered"/>
+                     </border>
+                     <margin/>
+                  </numericEdit>
+               </ui>
+               <font typeface="Arial"/>
+               <margin bottomInset="1mm" leftInset="1mm" rightInset="1mm" topInset="1mm"/>
+               <para vAlign="middle"/>
+               <caption reserve="20mm">
+                  <para vAlign="middle"/>
+                  <value>
+                     <text xmlns:xft-xliff="http://www.xfa.org/schema/xfa-xliff/1.0/" xft-xliff:id="944BE7E2-3793-41EF-9FB6-6CDB56544112" xliff:rid="944BE7E2-3793-41EF-9FB6-6CDB56544112">Text Field</text>
+                  </value>
+               </caption>
+               <calculate override="error"/>
+               <event activity="ready" name="event__layout_ready" ref="$layout">
+                  <script contentType="application/x-javascript">this.rawValue = xfa.layout.page(this);
+</script>
+               </event>
+               <?templateDesigner floatingFieldPlaceholder #?>
+               <bind match="none"/>
+            </field>
+            <field access="readOnly" h="7.5mm" id="floatingField018467" name="PageCount" presence="hidden" w="55mm" x="174.625mm" y="266.7mm">
+               <ui>
+                  <numericEdit>
+                     <border>
+                        <edge stroke="lowered"/>
+                     </border>
+                     <margin/>
+                  </numericEdit>
+               </ui>
+               <font typeface="Arial"/>
+               <margin bottomInset="1mm" leftInset="1mm" rightInset="1mm" topInset="1mm"/>
+               <para vAlign="middle"/>
+               <caption reserve="20mm">
+                  <para vAlign="middle"/>
+                  <value>
+                     <text xmlns:xft-xliff="http://www.xfa.org/schema/xfa-xliff/1.0/" xft-xliff:id="6B8DD748-9D7D-40CF-94D4-8F9DFFD19CE4" xliff:rid="6B8DD748-9D7D-40CF-94D4-8F9DFFD19CE4">Text Field</text>
+                  </value>
+               </caption>
+               <calculate override="error"/>
+               <event activity="ready" name="event__layout_ready" ref="$layout">
+                  <script contentType="application/x-javascript">this.rawValue = xfa.layout.pageCount();
+</script>
+               </event>
+               <?templateDesigner floatingFieldPlaceholder ##?>
+               <bind match="none"/>
+            </field>
+            <field h="73.025mm" name="DRAFT" w="146.05mm" x="34.925mm" y="111.125mm">
+               <ui>
+                  <imageEdit data="embed"/>
+               </ui>
+               <value>
+                  <image aspect="none"/>
+               </value>
+               <bind match="dataRef" ref="F006.DRAFT"/>
+               <desc>
+                  <exData name="Schema Annotation">WaterMark 
+ URL-FIELD = GV_IMAGE_BIN</exData>
+                  <text name="embeddedHref">Unknown Embedded URI</text>
+               </desc>
+            </field>
+            <subform h="33.02mm" name="F1_HEADER" w="190.5mm" x="12.7mm" y="22.225mm">
+               <bind match="none"/>
+               <subform name="Date" x="0.567mm" y="3.175mm">
+                  <bind match="none"/>
+                  <field access="readOnly" minH="4.47mm" minW="15.24mm" name="DATE" x="0mm">
+                     <ui>
+                        <dateTimeEdit>
+                           <border presence="hidden">
+                              <?templateDesigner StyleID aped0?></border>
+                           <margin/>
+                        </dateTimeEdit>
+                     </ui>
+                     <font size="7pt" typeface="Arial"/>
+                     <margin bottomInset="1mm" leftInset="1mm" rightInset="1mm" topInset="1mm"/>
+                     <para vAlign="middle"/>
+                     <value>
+                        <date/>
+                     </value>
+                     <bind match="dataRef" ref="F001.DATE">
+                        <picture>date{YYYY-MM-DD}</picture>
+                     </bind>
+                     <desc>
+                        <text name="Schema Annotation">Current Date of Application Server</text>
+                     </desc>
+                     <validate nullTest="error"/>
+                  </field>
+                  <field minH="4.47mm" minW="15.24mm" name="Date_char" x="0.001mm">
+                     <ui>
+                        <textEdit>
+                           <border presence="hidden"/>
+                           <margin/>
+                        </textEdit>
+                     </ui>
+                     <font size="7pt" typeface="Arial"/>
+                     <margin bottomInset="1mm" leftInset="1mm" rightInset="1mm" topInset="1mm"/>
+                     <para vAlign="middle"/>
+                     <bind match="dataRef" ref="$.F001.SYSDATE_CHAR"/>
+                  </field>
+                  <?templateDesigner expand 1?></subform>
+               <field access="readOnly" minH="6.35mm" minW="37.533mm" name="CUST_SERVICE_EMAIL" x="0.567mm" y="20.32mm">
+                  <ui>
+                     <textEdit multiLine="1"/>
+                  </ui>
+                  <font typeface="Arial"/>
+                  <margin bottomInset="0.5mm" leftInset="0.5mm" rightInset="0.5mm" topInset="0.5mm"/>
+                  <value>
+                     <exData contentType="text/html">
+                        <body xmlns="http://www.w3.org/1999/xhtml"/>
+                     </exData>
+                  </value>
+                  <bind match="dataRef" ref="STANDARD_TEXT.CUST_SERVICE_EMAIL"/>
+               </field>
+               <field access="readOnly" minH="4.47mm" minW="76.225mm" name="GV_CREATED_BY_NAME" presence="invisible" x="110.217mm" y="28.575mm">
+                  <ui>
+                     <textEdit multiLine="1"/>
+                  </ui>
+                  <font typeface="Arial"/>
+                  <margin bottomInset="0.254mm" leftInset="0.5002mm" rightInset="0mm" topInset="0.254mm"/>
+                  <bind match="dataRef" ref="F001.GV_CREATED_BY_NAME"/>
+               </field>
+               <field access="readOnly" minH="3.913mm" minW="76.2mm" name="NAME1" x="0.567mm" y="12.7mm">
+                  <ui>
+                     <textEdit/>
+                  </ui>
+                  <font typeface="Arial"/>
+                  <margin bottomInset="0.254mm" leftInset="0.254mm" rightInset="0.254mm" topInset="0.254mm"/>
+                  <bind match="dataRef" ref="F001.COMP_NAME1"/>
+               </field>
+               <field access="readOnly" minH="4.47mm" minW="63.5mm" name="RETURN_RGA" x="76.2mm" y="3.175mm">
+                  <ui>
+                     <textEdit multiLine="1"/>
+                  </ui>
+                  <font size="14pt" typeface="Arial" weight="bold"/>
+                  <margin bottomInset="0.5mm" leftInset="0.5mm" rightInset="0.5mm" topInset="0.5mm"/>
+                  <value>
+                     <exData contentType="text/html">
+                        <body xmlns="http://www.w3.org/1999/xhtml"/>
+                     </exData>
+                  </value>
+                  <bind match="dataRef" ref="STANDARD_TEXT.RETURNS_RGA"/>
+                  <para vAlign="middle"/>
+                  <border>
+                     <edge presence="hidden"/>
+                     <fill/>
+                  </border>
+               </field>
+               <field access="readOnly" minH="4.47mm" minW="27.94mm" name="ORDER_CREATED_BY" presence="invisible" x="81.642mm" y="28.575mm">
+                  <ui>
+                     <textEdit multiLine="1">
+                        <border presence="hidden">
+                           <?templateDesigner StyleID aped0?></border>
+                        <margin/>
+                     </textEdit>
+                  </ui>
+                  <font typeface="Arial"/>
+                  <margin bottomInset="0mm" leftInset="1mm" rightInset="1mm" topInset="0.254mm"/>
+                  <bind match="dataRef" ref="$.STANDARD_TEXT.ORDER_CREATED_BY"/>
+                  <desc>
+                     <exData name="Schema Annotation">Order created by
+SAPScript Include Text 
+ NAME = ZOTC_CREATED_BY 
+ LANGUAGE = E 
+ OBJECT = TEXT 
+ ID = ST</exData>
+                  </desc>
+                  <validate nullTest="error"/>
+               </field>
+               <field anchorType="topRight" hAlign="right" minH="6.35mm" name="GV_RGA_TXT" w="127mm" x="7.5in" y="0.75in">
+                  <ui>
+                     <textEdit multiLine="1">
+                        <border presence="hidden">
+                           <?templateDesigner StyleID aped0?></border>
+                        <margin/>
+                     </textEdit>
+                  </ui>
+                  <font typeface="Arial"/>
+                  <margin bottomInset="1mm" leftInset="1mm" rightInset="1mm" topInset="1mm"/>
+                  <para vAlign="middle"/>
+                  <bind match="dataRef" ref="$.GV_RGA_TXT"/>
+               </field>
+               <?templateDesigner expand 1?></subform>
+            <contentArea h="200.025mm" name="CA_First" w="190.127mm" x="12.887mm" y="57.15mm"/>
+            <field h="10.846mm" name="LOGO" w="40.513mm" x="158.75mm" y="9.525mm">
+               <ui>
+                  <imageEdit data="embed"/>
+               </ui>
+               <value>
+                  <image aspect="none"/>
+               </value>
+               <bind match="dataRef" ref="F007.LOGO"/>
+               <desc>
+                  <exData name="Schema Annotation">Bio-Rad Logo 
+ URL-FIELD = GV_LOGO_BIN</exData>
+                  <text name="embeddedHref">Unknown Embedded URI</text>
+               </desc>
+            </field>
+            <?templateDesigner expand 0?></pageArea>
+         <pageArea id="Page2_ID" name="Page_Second">
+            <medium long="11in" short="8.5in" stock="letter"/>
+            <contentArea h="238.125mm" id="CA_Second_ID" name="CA_Second" w="187.632mm" x="14.133mm" y="22.225mm"/>
+            <field h="73.025mm" name="DRAFT" w="146.05mm" x="34.925mm" y="103.188mm">
+               <ui>
+                  <imageEdit data="embed"/>
+               </ui>
+               <value>
+                  <image aspect="none"/>
+               </value>
+               <bind match="dataRef" ref="F006.DRAFT"/>
+               <desc>
+                  <exData name="Schema Annotation">WaterMark 
+ URL-FIELD = GV_IMAGE_BIN</exData>
+                  <text name="embeddedHref">Unknown Embedded URI</text>
+               </desc>
+            </field>
+            <draw name="Pages" x="180.975mm" y="263.525mm">
+               <ui>
+                  <textEdit>
+                     <margin/>
+                  </textEdit>
+               </ui>
+               <value>
+                  <exData xmlns:xft-xliff="http://www.xfa.org/schema/xfa-xliff/1.0/" contentType="text/html" maxLength="0" xft-xliff:id="B6561D49-E58C-4F80-9D83-822CED416C5F" xliff:rid="B6561D49-E58C-4F80-9D83-822CED416C5F">
+                     <body xmlns="http://www.w3.org/1999/xhtml" xmlns:xfa="http://www.xfa.org/schema/xfa-data/1.0/" xfa:APIVersion="2.7.0.0"><p style="letter-spacing:0in"><span xfa:embed="#floatingField026500" xfa:embedMode="raw" xfa:embedType="uri"/><span style="xfa-spacerun:yes"> </span><span xfa:embed="#floatingField019169" xfa:embedMode="raw" xfa:embedType="uri"/> /<span style="xfa-spacerun:yes"> </span><span xfa:embed="#floatingField015724" xfa:embedMode="raw" xfa:embedType="uri"/></p></body>
+                  </exData>
+               </value>
+               <font typeface="Arial"/>
+               <margin bottomInset="0mm" leftInset="0mm" rightInset="0mm" topInset="0mm"/>
+               <para vAlign="middle"/>
+            </draw>
+            <field access="readOnly" h="9mm" id="floatingField026500" name="TextField" presence="hidden" w="62mm" x="187.325mm" y="266.7mm">
+               <ui>
+                  <textEdit>
+                     <border>
+                        <?templateDesigner StyleID aped3?>
+                        <edge stroke="lowered"/>
+                     </border>
+                     <margin/>
+                  </textEdit>
+               </ui>
+               <font typeface="Arial"/>
+               <margin bottomInset="1mm" leftInset="1mm" rightInset="1mm" topInset="1mm"/>
+               <para vAlign="middle"/>
+               <bind match="dataRef" ref="$.STANDARD_TEXT.PAGE"/>
+            </field>
+            <field access="readOnly" h="7.5mm" id="floatingField019169" name="CurrentPage" presence="hidden" w="55mm" x="361.95mm" y="533.4mm">
+               <ui>
+                  <numericEdit>
+                     <border>
+                        <edge stroke="lowered"/>
+                     </border>
+                     <margin/>
+                  </numericEdit>
+               </ui>
+               <font typeface="Arial"/>
+               <margin bottomInset="1mm" leftInset="1mm" rightInset="1mm" topInset="1mm"/>
+               <para vAlign="middle"/>
+               <caption reserve="20mm">
+                  <para vAlign="middle"/>
+                  <value>
+                     <text xmlns:xft-xliff="http://www.xfa.org/schema/xfa-xliff/1.0/" xft-xliff:id="D006DBD1-01EC-4E0F-AAF4-DE34618BFFAB" xliff:rid="D006DBD1-01EC-4E0F-AAF4-DE34618BFFAB">Text Field</text>
+                  </value>
+               </caption>
+               <calculate override="error"/>
+               <event activity="ready" name="event__layout_ready" ref="$layout">
+                  <script contentType="application/x-javascript">this.rawValue = xfa.layout.page(this);
+</script>
+               </event>
+               <?templateDesigner floatingFieldPlaceholder #?>
+               <bind match="none"/>
+            </field>
+            <field access="readOnly" h="7.5mm" id="floatingField015724" name="PageCount" presence="hidden" w="55mm" x="361.95mm" y="533.4mm">
+               <ui>
+                  <numericEdit>
+                     <border>
+                        <edge stroke="lowered"/>
+                     </border>
+                     <margin/>
+                  </numericEdit>
+               </ui>
+               <font typeface="Arial"/>
+               <margin bottomInset="1mm" leftInset="1mm" rightInset="1mm" topInset="1mm"/>
+               <para vAlign="middle"/>
+               <caption reserve="20mm">
+                  <para vAlign="middle"/>
+                  <value>
+                     <text xmlns:xft-xliff="http://www.xfa.org/schema/xfa-xliff/1.0/" xft-xliff:id="6C53FEC4-3613-4E86-A5CB-E161E22A63A9" xliff:rid="6C53FEC4-3613-4E86-A5CB-E161E22A63A9">Text Field</text>
+                  </value>
+               </caption>
+               <calculate override="error"/>
+               <event activity="ready" name="event__layout_ready" ref="$layout">
+                  <script contentType="application/x-javascript">this.rawValue = xfa.layout.pageCount();
+</script>
+               </event>
+               <?templateDesigner floatingFieldPlaceholder ##?>
+               <bind match="none"/>
+            </field>
+            <field h="10.846mm" name="LOGO" w="40.513mm" x="158.75mm" y="9.525mm">
+               <ui>
+                  <imageEdit data="embed"/>
+               </ui>
+               <value>
+                  <image aspect="none"/>
+               </value>
+               <bind match="dataRef" ref="F007.LOGO"/>
+               <desc>
+                  <exData name="Schema Annotation">Bio-Rad Logo 
+ URL-FIELD = GV_LOGO_BIN</exData>
+                  <text name="embeddedHref">Unknown Embedded URI</text>
+               </desc>
+            </field>
+            <?templateDesigner expand 1?></pageArea>
+         <?templateDesigner expand 0?></pageSet>
+      <subform layout="tb" name="Body_Page" w="190.127mm">
+         <subform layout="tb" minH="39.105mm" name="flowed" w="190.313mm">
+            <bind match="none"/>
+            <subform layout="tb" name="FlwIns" w="187.033mm">
+               <bind match="none"/>
+               <field access="readOnly" minH="4.528mm" name="INSTRUCTIONS_HEAD" w="174.333mm">
+                  <ui>
+                     <textEdit multiLine="1"/>
+                  </ui>
+                  <font typeface="Arial" weight="bold"/>
+                  <margin bottomInset="0.5mm" leftInset="0.5mm" rightInset="0.5mm" topInset="0.5mm"/>
+                  <value>
+                     <exData contentType="text/html">
+                        <body xmlns="http://www.w3.org/1999/xhtml"/>
+                     </exData>
+                  </value>
+                  <bind match="dataRef" ref="STANDARD_TEXT.INSTRUCTIONS_HEAD"/>
+                  <desc>
+                     <exData name="Schema Annotation">Instructions Heading
+SAPScript Include Text 
+ NAME = ZOTC_INSTRUCTIONS_HEAD_EU 
+ LANGUAGE-FIELD = GV_LANG 
+ OBJECT = TEXT 
+ ID = ST</exData>
+                  </desc>
+                  <?templateDesigner expand 1?></field>
+               <field access="readOnly" minH="4.528mm" name="INSTRUCTIONS" w="174.333mm">
+                  <ui>
+                     <textEdit multiLine="1">
+                        <margin/>
+                     </textEdit>
+                  </ui>
+                  <font typeface="Arial"/>
+                  <margin bottomInset="0.5mm" leftInset="0.5mm" rightInset="0.5mm" topInset="0.5mm"/>
+                  <value>
+                     <exData contentType="text/html">
+                        <body xmlns="http://www.w3.org/1999/xhtml"/>
+                     </exData>
+                  </value>
+                  <bind match="dataRef" ref="STANDARD_TEXT.INSTRUCTIONS"/>
+                  <desc>
+                     <exData name="Schema Annotation">Instructions
+SAPScript Include Text 
+ NAME = ZOTC_INSTRUCTIONS 
+ LANGUAGE = E 
+ OBJECT = TEXT 
+ ID = ST</exData>
+                  </desc>
+               </field>
+               <?templateDesigner expand 1?></subform>
+            <subform name="F2_HEADER" w="187.579mm">
+               <bind match="none"/>
+               <field access="readOnly" minH="6.35mm" minW="6.35mm" name="TO">
+                  <ui>
+                     <textEdit>
+                        <border presence="hidden">
+                           <?templateDesigner StyleID aped0?></border>
+                        <margin/>
+                     </textEdit>
+                  </ui>
+                  <font typeface="Arial"/>
+                  <margin bottomInset="1mm" leftInset="1mm" rightInset="1mm" topInset="1mm"/>
+                  <para vAlign="middle"/>
+                  <value>
+                     <exData contentType="text/html">
+                        <body xmlns="http://www.w3.org/1999/xhtml"/>
+                     </exData>
+                  </value>
+                  <bind match="dataRef" ref="STANDARD_TEXT.TO"/>
+                  <desc>
+                     <exData name="Schema Annotation">To
+SAPScript Include Text 
+ NAME = ZOTC_TO 
+ LANGUAGE = E 
+ OBJECT = TEXT 
+ ID = ST</exData>
+                  </desc>
+               </field>
+               <field access="readOnly" minH="6.35mm" name="E_MAIL" w="14.561mm" x="66.488mm">
+                  <ui>
+                     <textEdit multiLine="1">
+                        <border presence="hidden">
+                           <?templateDesigner StyleID aped0?></border>
+                        <margin/>
+                     </textEdit>
+                  </ui>
+                  <font typeface="Arial"/>
+                  <margin bottomInset="1mm" leftInset="1mm" rightInset="1mm" topInset="1mm"/>
+                  <para vAlign="middle"/>
+                  <value>
+                     <exData contentType="text/html">
+                        <body xmlns="http://www.w3.org/1999/xhtml"/>
+                     </exData>
+                  </value>
+                  <bind match="dataRef" ref="STANDARD_TEXT.EMAIL"/>
+                  <desc>
+                     <exData name="Schema Annotation">E-mail
+SAPScript Include Text 
+ NAME = ZOTC_EMAIL 
+ LANGUAGE = E 
+ OBJECT = TEXT 
+ ID = ST</exData>
+                  </desc>
+               </field>
+               <field access="readOnly" minH="6.35mm" minW="23.386mm" name="REFERENCE" x="136.193mm">
+                  <ui>
+                     <textEdit>
+                        <border presence="hidden">
+                           <?templateDesigner StyleID aped0?></border>
+                        <margin/>
+                     </textEdit>
+                  </ui>
+                  <font typeface="Arial"/>
+                  <margin bottomInset="1mm" leftInset="1mm" rightInset="1mm" topInset="1mm"/>
+                  <para hAlign="right" vAlign="middle"/>
+                  <value>
+                     <exData contentType="text/html">
+                        <body xmlns="http://www.w3.org/1999/xhtml"/>
+                     </exData>
+                  </value>
+                  <bind match="dataRef" ref="STANDARD_TEXT.REFERENCE"/>
+                  <desc>
+                     <exData name="Schema Annotation">Reference
+SAPScript Include Text 
+ NAME = ZOTC_REFERENCE 
+ LANGUAGE = E 
+ OBJECT = TEXT 
+ ID = ST</exData>
+                  </desc>
+               </field>
+               <margin bottomInset="1.27mm" topInset="1.27mm"/>
+               <border>
+                  <edge/>
+                  <corner thickness="0.175mm"/>
+               </border>
+               <field access="readOnly" minH="6.35mm" minW="47.958mm" name="NAME1" x="9.192mm">
+                  <ui>
+                     <textEdit>
+                        <border presence="hidden">
+                           <?templateDesigner StyleID aped0?></border>
+                        <margin/>
+                     </textEdit>
+                  </ui>
+                  <font typeface="Arial"/>
+                  <margin bottomInset="1mm" leftInset="1mm" rightInset="1mm" topInset="1mm"/>
+                  <para vAlign="middle"/>
+                  <value>
+                     <text maxChars="30"/>
+                  </value>
+                  <bind match="dataRef" ref="F002.CNTCT_NAME1"/>
+                  <desc>
+                     <exData name="Schema Annotation">To
+SAPScript Include Text 
+ NAME = ZOTC_TO 
+ LANGUAGE = E 
+ OBJECT = TEXT 
+ ID = ST</exData>
+                  </desc>
+               </field>
+               <field access="readOnly" minH="6.35mm" name="SMTP_ADDR" w="53.975mm" x="82.217mm">
+                  <ui>
+                     <textEdit multiLine="1">
+                        <border presence="hidden">
+                           <?templateDesigner StyleID aped0?></border>
+                        <margin/>
+                     </textEdit>
+                  </ui>
+                  <font typeface="Arial"/>
+                  <margin bottomInset="1mm" leftInset="1mm" rightInset="1mm" topInset="1mm"/>
+                  <para vAlign="middle"/>
+                  <bind match="dataRef" ref="F002.CNTCT_SMTP_ADDR"/>
+                  <desc>
+                     <exData name="Schema Annotation">E-mail
+SAPScript Include Text 
+ NAME = ZOTC_EMAIL 
+ LANGUAGE = E 
+ OBJECT = TEXT 
+ ID = ST</exData>
+                  </desc>
+               </field>
+               <field access="readOnly" minH="6.35mm" minW="27.432mm" name="TEL_NUMBER" x="159.579mm">
+                  <ui>
+                     <textEdit>
+                        <border presence="hidden">
+                           <?templateDesigner StyleID aped0?></border>
+                        <margin/>
+                     </textEdit>
+                  </ui>
+                  <font typeface="Arial"/>
+                  <margin bottomInset="1mm" leftInset="1mm" rightInset="1mm" topInset="1mm"/>
+                  <para hAlign="right" vAlign="middle"/>
+                  <value>
+                     <text maxChars="30"/>
+                  </value>
+                  <bind match="dataRef" ref="F002.CNTCT_TEL_NUMBER"/>
+                  <desc>
+                     <exData name="Schema Annotation">Reference
+SAPScript Include Text 
+ NAME = ZOTC_REFERENCE 
+ LANGUAGE = E 
+ OBJECT = TEXT 
+ ID = ST</exData>
+                  </desc>
+               </field>
+               <?templateDesigner expand 0?></subform>
+            <?templateDesigner expand 0?></subform>
+         <subform layout="tb" name="F3_F4_F5" w="189.039mm">
+            <bind match="dataRef" ref="$.F003_F005.IM_PLANT_ADDR.DATA[*]"/>
+            <border>
+               <edge presence="hidden"/>
+               <corner presence="hidden"/>
+            </border>
+            <field h="0.307917in" name="WERKS" w="62mm">
+               <ui>
+                  <textEdit>
+                     <border>
+                        <?templateDesigner StyleID aped3?>
+                        <edge stroke="lowered"/>
+                     </border>
+                     <margin/>
+                  </textEdit>
+               </ui>
+               <font typeface="Arial"/>
+               <margin bottomInset="1mm" leftInset="1mm" rightInset="1mm" topInset="1mm"/>
+               <para vAlign="middle"/>
+               <caption reserve="0.01in">
+                  <para vAlign="middle"/>
+               </caption>
+               <value>
+                  <text maxChars="4"/>
+               </value>
+               <bind match="dataRef" ref="WERKS"/>
+               <desc>
+                  <text name="Schema Annotation">Plant (Own or External)</text>
+               </desc>
+               <event activity="initialize" name="event__initialize">
+                  <script runAt="both"> F3_F4_F5.WERKS.presence = "hidden"
+
+</script>
+               </event>
+            </field>
+            <field h="0.217639in" name="blank" w="72.838mm">
+               <ui>
+                  <textEdit>
+                     <border presence="hidden">
+                        <?templateDesigner StyleID aped0?></border>
+                     <margin/>
+                  </textEdit>
+               </ui>
+               <font typeface="Arial"/>
+               <margin bottomInset="1mm" leftInset="1mm" rightInset="1mm" topInset="1mm"/>
+               <para vAlign="middle"/>
+               <bind match="none"/>
+            </field>
+            <subform layout="tb" name="F3_F4_F5HEADER" w="187.578mm">
+               <bind match="none"/>
+               <subform name="F3_PLANT_ADDRESS">
+                  <bind match="none"/>
+                  <field minH="5.177mm" minW="63.5mm" name="RETURN_TO" x="0.187mm">
+                     <ui>
+                        <textEdit/>
+                     </ui>
+                     <font typeface="Arial" weight="bold"/>
+                     <margin bottomInset="0.5mm" leftInset="0.5mm" rightInset="0.5mm" topInset="0.5mm"/>
+                     <bind match="dataRef" ref="$record.STANDARD_TEXT.RETURN_ADDR"/>
+                  </field>
+                  <field h="26.955mm" name="PLANT_ADDRESS" w="63.313mm" x="0.186mm" y="4.983mm">
+                     <ui>
+                        <textEdit multiLine="1"/>
+                     </ui>
+                     <font typeface="Arial"/>
+                     <margin bottomInset="0.5mm" leftInset="0.5mm" rightInset="0.5mm" topInset="0.5mm"/>
+                     <bind match="dataRef" ref="PLANT_ADDRESS"/>
+                  </field>
+                  <border>
+                     <edge/>
+                     <corner/>
+                  </border>
+                  <?templateDesigner expand 0?></subform>
+               <field h="0.217639in" name="blank" w="72.838mm">
+                  <ui>
+                     <textEdit>
+                        <border presence="hidden">
+                           <?templateDesigner StyleID aped0?></border>
+                        <margin/>
+                     </textEdit>
+                  </ui>
+                  <font typeface="Arial"/>
+                  <margin bottomInset="1mm" leftInset="1mm" rightInset="1mm" topInset="1mm"/>
+                  <para vAlign="middle"/>
+                  <bind match="none"/>
+               </field>
+               <subform h="15.24mm" name="F6_ORDER_COMMENTS" w="187.196mm">
+                  <bind match="none"/>
+                  <border>
+                     <edge/>
+                     <corner thickness="0.175mm"/>
+                  </border>
+                  <field access="readOnly" h="7.62mm" name="ORDER_COMMENTS" w="113.706mm" x="0.261mm">
+                     <ui>
+                        <textEdit hScrollPolicy="off">
+                           <border presence="hidden">
+                              <?templateDesigner StyleID aped0?></border>
+                           <margin/>
+                        </textEdit>
+                     </ui>
+                     <font typeface="Arial"/>
+                     <margin bottomInset="1mm" leftInset="1mm" rightInset="1mm" topInset="1mm"/>
+                     <para vAlign="middle"/>
+                     <bind match="dataRef" ref="$record.STANDARD_TEXT.ORDER_COMMENTS"/>
+                     <desc>
+                        <exData name="Schema Annotation">Order comments
+SAPScript Include Text 
+ NAME = ZOTC_ORDER_COMMENTS 
+ LANGUAGE-FIELD = GV_LANG 
+ OBJECT = TEXT 
+ ID = ST</exData>
+                     </desc>
+                     <value>
+                        <exData contentType="text/html">
+                           <body xmlns="http://www.w3.org/1999/xhtml"/>
+                        </exData>
+                     </value>
+                  </field>
+                  <field access="readOnly" h="7.62mm" minW="15.875mm" name="CASE_NUMBER" x="117.141mm">
+                     <ui>
+                        <textEdit>
+                           <border presence="hidden">
+                              <?templateDesigner StyleID aped0?></border>
+                           <margin/>
+                        </textEdit>
+                     </ui>
+                     <font typeface="Arial"/>
+                     <margin bottomInset="1mm" leftInset="1mm" rightInset="1mm" topInset="1mm"/>
+                     <para vAlign="middle"/>
+                     <bind match="dataRef" ref="$record.STANDARD_TEXT.CASE_NUMBER"/>
+                     <desc>
+                        <exData name="Schema Annotation">Case Number
+SAPScript Include Text 
+ NAME = ZOTC_CASE_NUMBER 
+ LANGUAGE-FIELD = GV_LANG 
+ OBJECT = TEXT 
+ ID = ST</exData>
+                     </desc>
+                     <value>
+                        <exData contentType="text/html">
+                           <body xmlns="http://www.w3.org/1999/xhtml"/>
+                        </exData>
+                     </value>
+                  </field>
+                  <field access="readOnly" h="7.62mm" minW="19.05mm" name="GV_CASE" x="136.191mm">
+                     <ui>
+                        <textEdit>
+                           <border presence="hidden">
+                              <?templateDesigner StyleID aped0?></border>
+                           <margin/>
+                        </textEdit>
+                     </ui>
+                     <font typeface="Arial"/>
+                     <margin bottomInset="1mm" leftInset="1mm" rightInset="1mm" topInset="1mm"/>
+                     <para vAlign="middle"/>
+                     <bind match="dataRef" ref="$record.F001.GV_CASE"/>
+                     <desc>
+                        <text name="Schema Annotation">Case Ref No</text>
+                     </desc>
+                     <value>
+                        <text maxChars="18"/>
+                     </value>
+                  </field>
+                  <subform columnWidths="157.96mm" layout="table" name="OA_TEXT" x="0.26mm" y="7.62mm">
+                     <border>
+                        <edge presence="hidden"/>
+                        <corner presence="hidden"/>
+                     </border>
+                     <subform layout="row" name="Row1">
+                        <assist role="TR"/>
+                        <field h="7.62mm" name="TDLINE">
+                           <ui>
+                              <textEdit/>
+                           </ui>
+                           <font typeface="Arial"/>
+                           <margin bottomInset="0.5mm" leftInset="0.5mm" rightInset="0.5mm" topInset="0.5mm"/>
+                           <para vAlign="middle"/>
+                           <border>
+                              <edge presence="hidden"/>
+                              <corner presence="hidden" thickness="0.1778mm"/>
+                           </border>
+                           <value>
+                              <text maxChars="132"/>
+                           </value>
+                           <bind match="dataRef" ref="$.TDLINE"/>
+                           <desc>
+                              <text name="Schema Annotation">Text Line</text>
+                           </desc>
+                        </field>
+                        <border>
+                           <edge presence="hidden"/>
+                        </border>
+                        <bind match="dataRef" ref="$record.F001.I_TLINE.DATA[*]"/>
+                        <?templateDesigner expand 1?></subform>
+                     <bind match="none"/>
+                     <?templateDesigner rowpattern first:1, next:1, firstcolor:f0f0f0, nextcolor:ffffff, apply:0?>
+                     <keep intact="contentArea"/>
+                     <?templateDesigner expand 1?></subform>
+                  <?templateDesigner expand 1?></subform>
+               <subform layout="tb" name="F4_PO_NUM" w="187.196mm">
+                  <bind match="none"/>
+                  <border>
+                     <edge/>
+                     <corner thickness="0.175mm"/>
+                  </border>
+                  <subform name="F4_PO_DETAILS" w="179.07mm">
+                     <bind match="none"/>
+                     <field access="readOnly" minH="7.62mm" name="ORIGINAL_PO" w="31.563mm" y="0.018mm">
+                        <ui>
+                           <textEdit multiLine="1">
+                              <border presence="hidden">
+                                 <?templateDesigner StyleID aped0?></border>
+                              <margin/>
+                           </textEdit>
+                        </ui>
+                        <font typeface="Arial"/>
+                        <margin bottomInset="1mm" leftInset="1mm" rightInset="1mm" topInset="1mm"/>
+                        <para vAlign="middle"/>
+                        <bind match="dataRef" ref="$record.STANDARD_TEXT.ORIGINAL_PO"/>
+                        <desc>
+                           <exData name="Schema Annotation">Original PO#
+SAPScript Include Text 
+ NAME = ZOTC_ORIGINAL_PO 
+ LANGUAGE = E 
+ OBJECT = TEXT 
+ ID = ST</exData>
+                        </desc>
+                     </field>
+                     <field access="readOnly" minH="7.62mm" name="ORIGINAL_ORDER" w="28.085mm" x="83.003mm" y="0.018mm">
+                        <ui>
+                           <textEdit multiLine="1">
+                              <border presence="hidden">
+                                 <?templateDesigner StyleID aped0?></border>
+                              <margin/>
+                           </textEdit>
+                        </ui>
+                        <font typeface="Arial"/>
+                        <margin bottomInset="1mm" leftInset="1mm" rightInset="1mm" topInset="1mm"/>
+                        <para vAlign="middle"/>
+                        <bind match="dataRef" ref="$record.STANDARD_TEXT.ORIGINAL_ORDER"/>
+                        <desc>
+                           <exData name="Schema Annotation">Original Order #
+SAPScript Include Text 
+ NAME = ZOTC_ORIGINAL_ORDER 
+ LANGUAGE = E 
+ OBJECT = TEXT 
+ ID = ST</exData>
+                        </desc>
+                     </field>
+                     <field access="readOnly" minH="7.62mm" name="RETURN_BY_TEXT" w="18.161mm" x="141.997mm">
+                        <ui>
+                           <textEdit multiLine="1">
+                              <border presence="hidden">
+                                 <?templateDesigner StyleID aped0?></border>
+                              <margin/>
+                           </textEdit>
+                        </ui>
+                        <font typeface="Arial"/>
+                        <margin bottomInset="1mm" leftInset="1mm" rightInset="1mm" topInset="1mm"/>
+                        <para vAlign="middle"/>
+                        <bind match="dataRef" ref="$record.STANDARD_TEXT.RETURN_BY"/>
+                        <desc>
+                           <exData name="Schema Annotation">Contract Start Date
+SAPScript Include Text 
+ NAME = ZOTC_CONTRACT_START_DATE 
+ LANGUAGE = E 
+ OBJECT = TEXT 
+ ID = ST</exData>
+                        </desc>
+                     </field>
+                     <field access="readOnly" minH="7.62mm" name="PO_NUMBER" w="51.439mm" x="31.563mm" y="0.017mm">
+                        <ui>
+                           <textEdit>
+                              <border presence="hidden">
+                                 <?templateDesigner StyleID aped0?></border>
+                              <margin/>
+                           </textEdit>
+                        </ui>
+                        <font typeface="Arial"/>
+                        <margin bottomInset="1mm" leftInset="1mm" rightInset="1mm" topInset="1mm"/>
+                        <para vAlign="middle"/>
+                        <value>
+                           <text maxChars="35"/>
+                        </value>
+                        <bind match="dataRef" ref="$record.F004.BSTKD"/>
+                        <desc>
+                           <exData name="Schema Annotation">PO Number
+SAPScript Include Text 
+ NAME = ZOTC_CUSTOMER_SERVICE_PHONE 
+ LANGUAGE = E 
+ OBJECT = TEXT 
+ ID = ST</exData>
+                        </desc>
+                     </field>
+                     <field access="readOnly" minH="7.62mm" name="ORIG_ORDER" w="28.575mm" x="111.933mm" y="0.017mm">
+                        <ui>
+                           <textEdit multiLine="1">
+                              <border presence="hidden">
+                                 <?templateDesigner StyleID aped0?></border>
+                              <margin/>
+                           </textEdit>
+                        </ui>
+                        <font typeface="Arial"/>
+                        <margin bottomInset="1mm" leftInset="1mm" rightInset="1mm" topInset="1mm"/>
+                        <para vAlign="middle"/>
+                        <bind match="dataRef" ref="$record.F004.ORIG_ORDER"/>
+                        <desc>
+                           <exData name="Schema Annotation">PO Number
+SAPScript Include Text 
+ NAME = ZOTC_CUSTOMER_SERVICE_PHONE 
+ LANGUAGE = E 
+ OBJECT = TEXT 
+ ID = ST</exData>
+                        </desc>
+                        <validate nullTest="error"/>
+                     </field>
+                     <subform h="7.62mm" name="returnbydate" w="18.277mm" x="160.793mm" y="0.017mm">
+                        <bind match="none"/>
+                        <field access="readOnly" minH="7.62mm" minW="18.277mm" name="RETURN_BY_DATE" x="0mm" y="0mm">
+                           <ui>
+                              <dateTimeEdit>
+                                 <border presence="hidden">
+                                    <?templateDesigner StyleID aped0?></border>
+                                 <margin/>
+                              </dateTimeEdit>
+                           </ui>
+                           <font typeface="Arial"/>
+                           <margin bottomInset="1mm" leftInset="1mm" rightInset="1mm" topInset="1mm"/>
+                           <para vAlign="middle"/>
+                           <value>
+                              <date/>
+                           </value>
+                           <bind match="dataRef" ref="$record.F004.ERDAT">
+                              <picture>date{YYYY-MM-DD}</picture>
+                           </bind>
+                           <desc>
+                              <exData name="Schema Annotation">PO Number
+SAPScript Include Text 
+ NAME = ZOTC_CUSTOMER_SERVICE_PHONE 
+ LANGUAGE = E 
+ OBJECT = TEXT 
+ ID = ST</exData>
+                           </desc>
+                           <validate nullTest="error"/>
+                        </field>
+                        <field access="readOnly" minH="7.62mm" minW="18.277mm" name="RETURN_BY_DATE_CHAR">
+                           <ui>
+                              <textEdit>
+                                 <border presence="hidden">
+                                    <?templateDesigner StyleID aped0?></border>
+                                 <margin/>
+                              </textEdit>
+                           </ui>
+                           <font typeface="Arial"/>
+                           <margin bottomInset="1mm" leftInset="1mm" rightInset="1mm" topInset="1mm"/>
+                           <para vAlign="middle"/>
+                           <bind match="dataRef" ref="$record.F004.ERDAT_CHAR"/>
+                           <desc>
+                              <exData name="Schema Annotation">PO Number
+SAPScript Include Text 
+ NAME = ZOTC_CUSTOMER_SERVICE_PHONE 
+ LANGUAGE = E 
+ OBJECT = TEXT 
+ ID = ST</exData>
+                           </desc>
+                           <validate nullTest="error"/>
+                        </field>
+                        <?templateDesigner expand 1?></subform>
+                     <?templateDesigner expand 0?></subform>
+                  <?templateDesigner expand 0?></subform>
+               <subform layout="tb" name="ITEM_DETAILS" w="187.138mm" y="55.898mm">
+                  <bind match="none"/>
+                  <subform id="HEADER_FLOWED_ID" layout="tb" name="HEADER_FLOWED" w="187.196mm">
+                     <bind match="none"/>
+                     <subform name="HEADER">
+                        <bind match="none"/>
+                        <field minH="5.964mm" name="posn" w="19.144mm">
+                           <ui>
+                              <textEdit multiLine="1">
+                                 <border presence="hidden">
+                                    <?templateDesigner StyleID aped0?></border>
+                                 <margin/>
+                              </textEdit>
+                           </ui>
+                           <font typeface="Arial"/>
+                           <margin bottomInset="1mm" leftInset="1mm" rightInset="1mm" topInset="1mm"/>
+                           <para vAlign="middle"/>
+                           <bind match="dataRef" ref="$record.STANDARD_TEXT.POSN"/>
+                           <keep intact="contentArea"/>
+                           <value>
+                              <exData contentType="text/html"/>
+                           </value>
+                        </field>
+                        <field minH="5.964mm" name="MATNR" w="74.039mm" x="19.144mm">
+                           <ui>
+                              <textEdit>
+                                 <border presence="hidden">
+                                    <?templateDesigner StyleID aped0?></border>
+                                 <margin/>
+                              </textEdit>
+                           </ui>
+                           <font typeface="Arial"/>
+                           <margin bottomInset="1mm" leftInset="1mm" rightInset="1mm" topInset="1mm"/>
+                           <para vAlign="middle"/>
+                           <bind match="dataRef" ref="$record.STANDARD_TEXT.MATERIAL_NUMBER"/>
+                           <keep intact="contentArea"/>
+                           <value>
+                              <exData xmlns:xft-xliff="http://www.xfa.org/schema/xfa-xliff/1.0/" contentType="text/html" xft-xliff:id="N2420-4">
+                                 <body xmlns="http://www.w3.org/1999/xhtml" xmlns:xfa="http://www.xfa.org/schema/xfa-data/1.0/" xfa:APIVersion="2.7.9246.0"><p><span style="xfa-spacerun:yes"/></p></body>
+                              </exData>
+                           </value>
+                        </field>
+                        <field minH="5.964mm" name="QTY" w="23.436mm" x="93.183mm">
+                           <ui>
+                              <textEdit multiLine="1">
+                                 <border presence="hidden">
+                                    <?templateDesigner StyleID aped0?></border>
+                                 <margin/>
+                              </textEdit>
+                           </ui>
+                           <font typeface="Arial"/>
+                           <margin bottomInset="1mm" leftInset="1mm" rightInset="1mm" topInset="1mm"/>
+                           <para hAlign="center" vAlign="middle"/>
+                           <bind match="dataRef" ref="$record.STANDARD_TEXT.QTY"/>
+                           <keep intact="contentArea"/>
+                        </field>
+                        <field minH="5.964mm" name="UOM" w="23.436mm" x="116.619mm">
+                           <ui>
+                              <textEdit multiLine="1">
+                                 <border presence="hidden">
+                                    <?templateDesigner StyleID aped0?></border>
+                                 <margin/>
+                              </textEdit>
+                           </ui>
+                           <font typeface="Arial"/>
+                           <margin bottomInset="1mm" leftInset="1mm" rightInset="1mm" topInset="1mm"/>
+                           <para hAlign="center" vAlign="middle"/>
+                           <bind match="dataRef" ref="$record.STANDARD_TEXT.UOM"/>
+                           <keep intact="contentArea"/>
+                        </field>
+                        <field minH="5.964mm" name="SERIAL_NUMBER" w="46.723mm" x="140.055mm">
+                           <ui>
+                              <textEdit multiLine="1"/>
+                           </ui>
+                           <font typeface="Arial"/>
+                           <margin bottomInset="0.5mm" leftInset="0.5mm" rightInset="0.5mm" topInset="0.5mm"/>
+                           <para hAlign="center" vAlign="middle"/>
+                           <border>
+                              <edge presence="hidden"/>
+                              <corner presence="hidden" thickness="0.1778mm"/>
+                           </border>
+                           <desc>
+                              <exData name="Schema Annotation">Serial Number
+SAPScript Include Text 
+ NAME = ZOTC_SERIAL_NUM 
+ LANGUAGE = E 
+ OBJECT = TEXT 
+ ID = ST</exData>
+                           </desc>
+                           <bind match="dataRef" ref="$record.STANDARD_TEXT.SERIAL_NUMBER"/>
+                           <keep intact="contentArea"/>
+                           <value>
+                              <exData contentType="text/html"/>
+                           </value>
+                        </field>
+                        <?templateDesigner expand 0?></subform>
+                     <border>
+                        <edge/>
+                        <corner thickness="0.175mm"/>
+                     </border>
+                     <?templateDesigner expand 1?></subform>
+                  <subform layout="tb" name="ITEM" w="185.892mm" y="11.928mm">
+                     <bind match="none"/>
+                     <subform columnWidths="19.1438mm 74.0385mm 23.4364mm 23.4364mm 45.837mm" layout="table" name="I_ITEM_DISPLAY">
+                        <border>
+                           <edge presence="hidden"/>
+                           <corner presence="hidden"/>
+                        </border>
+                        <subform layout="row" name="Row1" x="0.007mm">
+                           <assist role="TR"/>
+                           <field minH="5.362mm" name="POSN">
+                              <ui>
+                                 <numericEdit/>
+                              </ui>
+                              <font typeface="Arial"/>
+                              <margin bottomInset="0.5mm" leftInset="0.5mm" rightInset="0.5mm" topInset="0.5mm"/>
+                              <para hAlign="center" vAlign="middle"/>
+                              <value>
+                                 <integer/>
+                              </value>
+                              <border>
+                                 <edge presence="hidden"/>
+                                 <corner presence="hidden" thickness="0.1778mm"/>
+                              </border>
+                              <desc>
+                                 <text name="Schema Annotation">Natural Number</text>
+                              </desc>
+                              <validate nullTest="error">
+                                 <script contentType="application/x-javascript">function testTotalDigits(maxDigits)
+
+{
+
+  var value = this.rawValue.toString();
+
+  var numDigits = 0;
+
+  for (i = 0; i &lt; value.length; i++)
+
+  {
+
+    if (value.charAt(i) &gt;= '0' &amp;&amp; value.charAt(i) &lt;= '9')
+
+      numDigits++;
+
+  }
+
+  return (numDigits &lt;= maxDigits);
+
+}
+
+this.isNull || (this.rawValue &gt;= -2147483648 &amp;&amp; this.rawValue &lt;= 2147483647 &amp;&amp; testTotalDigits(10));
+
+</script>
+                              </validate>
+                              <bind match="dataRef" ref="$.POSN"/>
+                           </field>
+                           <field h="5.362mm" name="MAT">
+                              <ui>
+                                 <textEdit/>
+                              </ui>
+                              <font typeface="Arial"/>
+                              <margin bottomInset="0.5mm" leftInset="0.5mm" rightInset="0.5mm" topInset="0.5mm"/>
+                              <para vAlign="middle"/>
+                              <border>
+                                 <edge presence="hidden"/>
+                                 <corner presence="hidden" thickness="0.1778mm"/>
+                              </border>
+                              <value>
+                                 <text maxChars="18"/>
+                              </value>
+                              <bind match="dataRef" ref="$.MAT"/>
+                              <desc>
+                                 <text name="Schema Annotation">Field length 18</text>
+                              </desc>
+                           </field>
+                           <field h="5.362mm" name="QTY">
+                              <ui>
+                                 <textEdit/>
+                              </ui>
+                              <font typeface="Arial"/>
+                              <margin bottomInset="0.5mm" leftInset="0.5mm" rightInset="0.5mm" topInset="0.5mm"/>
+                              <para hAlign="center" vAlign="middle"/>
+                              <border>
+                                 <edge presence="hidden"/>
+                                 <corner presence="hidden" thickness="0.1778mm"/>
+                              </border>
+                              <value>
+                                 <text maxChars="15"/>
+                              </value>
+                              <bind match="dataRef" ref="$.QTY"/>
+                              <desc>
+                                 <text name="Schema Annotation">Char 15</text>
+                              </desc>
+                           </field>
+                           <field h="5.362mm" name="UOM">
+                              <ui>
+                                 <textEdit/>
+                              </ui>
+                              <font typeface="Arial"/>
+                              <margin bottomInset="0.5mm" leftInset="0.5mm" rightInset="0.5mm" topInset="0.5mm"/>
+                              <para hAlign="center" vAlign="middle"/>
+                              <border>
+                                 <edge presence="hidden"/>
+                                 <corner presence="hidden" thickness="0.1778mm"/>
+                              </border>
+                              <value>
+                                 <text maxChars="3"/>
+                              </value>
+                              <bind match="dataRef" ref="$.UOM"/>
+                              <desc>
+                                 <text name="Schema Annotation">3-Byte field</text>
+                              </desc>
+                           </field>
+                           <field minH="5.362mm" name="SERNR">
+                              <ui>
+                                 <textEdit multiLine="1">
+                                    <border presence="hidden">
+                                       <?templateDesigner StyleID aped0?></border>
+                                 </textEdit>
+                              </ui>
+                              <font typeface="Arial"/>
+                              <margin bottomInset="0.5mm" leftInset="0.5mm" rightInset="0.5mm" topInset="2.8448mm"/>
+                              <para hAlign="center" vAlign="middle"/>
+                              <border>
+                                 <edge presence="hidden"/>
+                                 <corner presence="hidden" thickness="0.1778mm"/>
+                              </border>
+                              <bind match="dataRef" ref="$.SERIAL_NO"/>
+                              <value>
+                                 <exData contentType="text/html"/>
+                              </value>
+                           </field>
+                           <border>
+                              <edge presence="hidden"/>
+                           </border>
+                           <bind match="none"/>
+                           <?templateDesigner expand 1?></subform>
+                        <subform layout="row" name="Row2" x="0.007mm">
+                           <assist role="TR"/>
+                           <draw h="6.292mm" name="Cell1" x="0.005mm" y="0.002mm">
+                              <border>
+                                 <edge presence="hidden"/>
+                                 <corner presence="hidden" thickness="0.1778mm"/>
+                              </border>
+                              <ui>
+                                 <textEdit/>
+                              </ui>
+                              <font typeface="Arial"/>
+                              <margin bottomInset="0.5mm" leftInset="0.5mm" rightInset="0.5mm" topInset="0.5mm"/>
+                              <para hAlign="center" vAlign="middle"/>
+                           </draw>
+                           <field minH="6.291mm" name="DESC" w="74.039mm">
+                              <ui>
+                                 <textEdit/>
+                              </ui>
+                              <font typeface="Arial"/>
+                              <margin bottomInset="0.5mm" leftInset="0.5mm" rightInset="0.5mm" topInset="0.5mm"/>
+                              <para vAlign="middle"/>
+                              <border>
+                                 <edge presence="hidden"/>
+                                 <corner presence="hidden" thickness="0.1778mm"/>
+                              </border>
+                              <value>
+                                 <text maxChars="40"/>
+                              </value>
+                              <bind match="dataRef" ref="$.DESC"/>
+                              <desc>
+                                 <text name="Schema Annotation">Character field of length 40</text>
+                              </desc>
+                           </field>
+                           <draw h="6.292mm" name="Cell3" y="0.002mm">
+                              <border>
+                                 <edge presence="hidden"/>
+                                 <corner presence="hidden" thickness="0.1778mm"/>
+                              </border>
+                              <ui>
+                                 <textEdit/>
+                              </ui>
+                              <font typeface="Arial"/>
+                              <margin bottomInset="0.5mm" leftInset="0.5mm" rightInset="0.5mm" topInset="0.5mm"/>
+                              <para hAlign="center" vAlign="middle"/>
+                           </draw>
+                           <draw h="6.292mm" name="Cell4" y="0.002mm">
+                              <border>
+                                 <edge presence="hidden"/>
+                                 <corner presence="hidden" thickness="0.1778mm"/>
+                              </border>
+                              <ui>
+                                 <textEdit/>
+                              </ui>
+                              <font typeface="Arial"/>
+                              <margin bottomInset="0.5mm" leftInset="0.5mm" rightInset="0.5mm" topInset="0.5mm"/>
+                              <para hAlign="center" vAlign="middle"/>
+                           </draw>
+                           <draw minH="6.292mm" name="Cell5" y="0.002mm">
+                              <ui>
+                                 <textEdit/>
+                              </ui>
+                              <font typeface="Arial"/>
+                              <margin bottomInset="0.5mm" leftInset="0.5mm" rightInset="0.5mm" topInset="0.5mm"/>
+                              <para hAlign="center" vAlign="middle"/>
+                              <border>
+                                 <edge presence="hidden"/>
+                                 <corner presence="hidden" thickness="0.1778mm"/>
+                              </border>
+                              <desc>
+                                 <text name="Schema Annotation">Field length 18</text>
+                              </desc>
+                           </draw>
+                           <border>
+                              <edge presence="hidden"/>
+                           </border>
+                           <bind match="none"/>
+                           <?templateDesigner expand 1?></subform>
+                        <bind match="dataRef" ref="$.I_ITEM_DISPLAY.DATA[*]"/>
+                        <?templateDesigner rowpattern first:1, next:1, firstcolor:f0f0f0, nextcolor:ffffff, apply:0?>
+                        <occur max="-1"/>
+                        <keep intact="contentArea"/>
+                        <subform layout="row" name="Row3">
+                           <assist role="TR"/>
+                           <draw h="6.292mm">
+                              <ui>
+                                 <textEdit>
+                                    <margin/>
+                                 </textEdit>
+                              </ui>
+                              <font typeface="Arial"/>
+                              <para vAlign="middle"/>
+                              <margin bottomInset="0.5mm" leftInset="0.5mm" rightInset="0.5mm" topInset="0.5mm"/>
+                              <border>
+                                 <edge presence="hidden"/>
+                                 <corner presence="hidden" thickness="0.1778mm"/>
+                              </border>
+                           </draw>
+                           <subform name="Cust_mat_sub">
+                              <bind match="none"/>
+                              <field h="6.291mm" minW="43.66mm" name="Cust_Mat_Label" y="0.061mm">
+                                 <ui>
+                                    <textEdit>
+                                       <margin/>
+                                    </textEdit>
+                                 </ui>
+                                 <font typeface="Arial"/>
+                                 <margin bottomInset="0.5mm" leftInset="0.5mm" rightInset="0.5mm" topInset="0.5mm"/>
+                                 <para vAlign="middle"/>
+                                 <border>
+                                    <edge presence="hidden"/>
+                                    <corner presence="hidden" thickness="0.1778mm"/>
+                                 </border>
+                                 <bind match="dataRef" ref="$record.STANDARD_TEXT.D3_CUST_MATNR"/>
+                              </field>
+                              <field h="6.291mm" minW="30.378mm" name="Cust_Mat_Value" x="43.661mm" y="0.061mm">
+                                 <ui>
+                                    <textEdit>
+                                       <margin/>
+                                    </textEdit>
+                                 </ui>
+                                 <font typeface="Arial"/>
+                                 <margin bottomInset="0.5mm" leftInset="0.5mm" rightInset="0.5mm" topInset="0.5mm"/>
+                                 <para vAlign="middle"/>
+                                 <border>
+                                    <edge presence="hidden"/>
+                                    <corner presence="hidden" thickness="0.1778mm"/>
+                                 </border>
+                                 <bind match="dataRef" ref="$.KDMAT"/>
+                                 <desc>
+                                    <text name="Schema Annotation">Material Number Used by Customer</text>
+                                 </desc>
+                              </field>
+                              <para vAlign="middle"/>
+                              <event activity="initialize" name="event__initialize">
+                                 <script>// Start of Insert for D3_OTC_FDD_0022 by U034334
+if (not(HasValue($.Cust_Mat_Value))) then
+$.presence = "hidden"
+endif
+// End of Insert for D3_OTC_FDD_0022 by U034334
+
+</script>
+                              </event>
+                              <?templateDesigner expand 1?></subform>
+                           <draw h="6.292mm">
+                              <ui>
+                                 <textEdit>
+                                    <margin/>
+                                 </textEdit>
+                              </ui>
+                              <font typeface="Arial"/>
+                              <para vAlign="middle"/>
+                              <margin bottomInset="0.5mm" leftInset="0.5mm" rightInset="0.5mm" topInset="0.5mm"/>
+                              <border>
+                                 <edge presence="hidden"/>
+                                 <corner presence="hidden" thickness="0.1778mm"/>
+                              </border>
+                           </draw>
+                           <draw h="6.292mm">
+                              <ui>
+                                 <textEdit>
+                                    <margin/>
+                                 </textEdit>
+                              </ui>
+                              <font typeface="Arial"/>
+                              <para vAlign="middle"/>
+                              <margin bottomInset="0.5mm" leftInset="0.5mm" rightInset="0.5mm" topInset="0.5mm"/>
+                              <border>
+                                 <edge presence="hidden"/>
+                                 <corner presence="hidden" thickness="0.1778mm"/>
+                              </border>
+                           </draw>
+                           <draw minH="6.292mm">
+                              <ui>
+                                 <textEdit>
+                                    <margin/>
+                                 </textEdit>
+                              </ui>
+                              <font typeface="Arial"/>
+                              <para vAlign="middle"/>
+                              <margin bottomInset="0.5mm" leftInset="0.5mm" rightInset="0.5mm" topInset="0.5mm"/>
+                              <border>
+                                 <edge presence="hidden"/>
+                                 <corner presence="hidden" thickness="0.1778mm"/>
+                              </border>
+                           </draw>
+                           <bind match="none"/>
+                           <?templateDesigner expand 1?></subform>
+                        <?templateDesigner expand 1?></subform>
+                     <overflow leader="HEADER_FLOWED"/>
+                     <?templateDesigner expand 1?></subform>
+                  <?templateDesigner expand 1?></subform>
+               <?templateDesigner expand 1?></subform>
+            <breakBefore startNew="1" target="Page_First" targetType="pageArea">
+               <script>F3_F4_F5[-1].WERKS ne F3_F4_F5.WERKS</script>
+            </breakBefore>
+            <?templateDesigner expand 1?></subform>
+         <occur max="-1"/>
+         <bind match="none"/>
+         <overflow target="Page_Second"/>
+         <?templateDesigner expand 1?></subform>
+      <proto/>
+      <desc>
+         <text name="version">8.1.2.4246.1.597341.521646</text>
+      </desc>
+      <?templateDesigner Hyphenation excludeInitialCap:1, excludeAllCaps:1, wordCharCnt:7, remainCharCnt:3, pushCharCnt:3?>
+      <?templateDesigner expand 1?>
+      <?renderCache.subset "Arial" 0 0 ISO-8859-1 4 52 13 0003000600120029003700470048004C004F0057005B005E0060 #/FTdeiltx{}?></subform>
+   <?originalXFAVersion http://www.xfa.org/schema/xfa-template/2.4/ v2.7-scripting:0?>
+   <?templateDesigner Grid show:0, snap:1, units:0, color:ff8080, origin:(0,0), interval:(125000,125000), objsnap:0, guidesnap:0, pagecentersnap:1068748544?>
+   <?templateDesigner DefaultLanguage FormCalc?>
+   <?templateDesigner DefaultRunAt client?>
+   <?acrobat JavaScript strictScoping?>
+   <?PDFPrintOptions embedViewerPrefs 0?>
+   <?PDFPrintOptions embedPrintOnFormOpen 0?>
+   <?PDFPrintOptions scalingPrefs 0?>
+   <?PDFPrintOptions enforceScalingPrefs 0?>
+   <?PDFPrintOptions paperSource 0?>
+   <?PDFPrintOptions duplexMode 0?>
+   <?templateDesigner DefaultPreviewType interactive?>
+   <?templateDesigner DefaultPreviewPagination simplex?>
+   <?templateDesigner XDPPreviewFormat 19?>
+   <?templateDesigner DefaultCaptionFontSettings face:Arial;size:10;weight:normal;style:normal?>
+   <?templateDesigner DefaultValueFontSettings face:Arial;size:10;weight:normal;style:normal?>
+   <?templateDesigner SaveTaggedPDF 1?>
+   <?templateDesigner SavePDFWithEmbeddedFonts 1?>
+   <?templateDesigner FormTargetVersion 28?>
+   <?templateDesigner Rulers horizontal:1, vertical:1, guidelines:1, crosshairs:0?>
+   <?templateDesigner Zoom 106?></template>
+<config xmlns="http://www.xfa.org/schema/xci/2.8/">
+   <agent name="designer">
+      <!--  [0..n]  -->
+      <destination>pdf</destination>
+      <pdf>
+         <!--  [0..n]  -->
+         <fontInfo/>
+      </pdf>
+      <common>
+         <template>
+            <base>http://deve1dap00.global.bio-rad.com:8001/sap/bc/fp/form/layout/</base>
+         </template>
+      </common>
+   </agent>
+   <present>
+      <!--  [0..n]  -->
+      <pdf>
+         <!--  [0..n]  -->
+         <version>1.7</version>
+         <adobeExtensionLevel>3</adobeExtensionLevel>
+      </pdf>
+      <common>
+         <data>
+            <xsl>
+               <uri/>
+            </xsl>
+            <outputXSL>
+               <uri/>
+            </outputXSL>
+         </data>
+      </common>
+      <xdp>
+         <packets>*</packets>
+      </xdp>
+   </present>
+</config>
+<connectionSet xmlns="http://www.xfa.org/schema/xfa-connection-set/2.8/">
+   <xsdConnection dataDescription="data" name="ZOTC0022_RETURN_RGA">
+      <uri/>
+      <rootElement>data</rootElement>
+   </xsdConnection>
+   <?originalXFAVersion http://www.xfa.org/schema/xfa-connection-set/2.1/?></connectionSet>
+<xfa:datasets xmlns:xfa="http://www.xfa.org/schema/xfa-data/1.0/">
+   <xfa:data xfa:dataNode="dataGroup"/>
+   <dd:dataDescription xmlns:dd="http://ns.adobe.com/data-description/" dd:name="data">
+      <data>
+         <F001>
+            <IM_VBELN/>
+            <DATE dd:minOccur="0" dd:nullType="exclude"/>
+            <TIME/>
+            <I_TLINE dd:minOccur="0">
+               <DATA dd:maxOccur="-1">
+                  <TDFORMAT/>
+                  <TDLINE/>
+               </DATA>
+            </I_TLINE>
+            <COMP_NAME1/>
+            <GV_REMITT_CITY/>
+            <GV_CREATED_BY_NAME/>
+            <GV_CASE/>
+            <SYSDATE_CHAR/>
+         </F001>
+         <F002>
+            <CNTCT_NAME1/>
+            <CNTCT_TEL_NUMBER/>
+            <CNTCT_SMTP_ADDR/>
+         </F002>
+         <F003_F005>
+            <IM_PLANT_ADDR dd:minOccur="0">
+               <DATA dd:maxOccur="-1">
+                  <WERKS/>
+                  <ADRNR/>
+                  <LAND1/>
+                  <PLANT_ADDRESS/>
+                  <I_ITEM_DISPLAY dd:minOccur="0">
+                     <DATA dd:maxOccur="-1">
+                        <WERKS/>
+                        <POSN/>
+                        <MAT/>
+                        <DESC/>
+                        <SERNR/>
+                        <QTY/>
+                        <UOM/>
+                        <KDMAT/>
+                        <OBJNAME/>
+                        <SERIAL_NO/>
+                     </DATA>
+                  </I_ITEM_DISPLAY>
+                  <I_DISPLAY dd:minOccur="0">
+                     <DATA dd:maxOccur="-1">
+                        <WERKS/>
+                        <POSN/>
+                        <MAT_DESC/>
+                        <SERNR/>
+                        <QTY_UOM/>
+                     </DATA>
+                  </I_DISPLAY>
+               </DATA>
+            </IM_PLANT_ADDR>
+         </F003_F005>
+         <F004>
+            <BSTKD/>
+            <ERDAT dd:minOccur="0" dd:nullType="exclude"/>
+            <ORIG_ORDER/>
+            <ERDAT_CHAR/>
+         </F004>
+         <F006>
+            <GV_PRODUCTION/>
+            <DRAFT dd:minOccur="0" dd:nullType="exclude"/>
+         </F006>
+         <F007>
+            <LOGO/>
+         </F007>
+         <STANDARD_TEXT>
+            <CUST_SERVICE_PHONE/>
+            <BIO_RAD_DIAG_SALES/>
+            <CUST_SERVICE_FAX/>
+            <RETURNS_RGA/>
+            <THANKS_NOTE/>
+            <RETURN_NOTE/>
+            <TO/>
+            <EMAIL/>
+            <REFERENCE/>
+            <RETURN_ADDR/>
+            <PO_NUMBER/>
+            <ORDER/>
+            <RETURN_BY/>
+            <POSN/>
+            <ITEM/>
+            <DESCRIPTION/>
+            <QUANTITY/>
+            <UOM/>
+            <SERIAL_NUM/>
+            <CLINICAL_DIAG/>
+            <CUST_SERVICE_EMAIL/>
+            <RETURN_GOODS_AUTHORIZATION/>
+            <FIRST_INSTRUCTION/>
+            <SECOND_INSTRUCTION/>
+            <THIRD_INSTRUCTION/>
+            <FOURTH_INSTRUCTION/>
+            <INSTRUCTIONS/>
+            <ORDER_CREATED_BY/>
+            <MATERIAL_NUMBER/>
+            <SERIAL_NUMBER/>
+            <ORIGINAL_PO/>
+            <ORIGINAL_ORDER/>
+            <ORDER_COMMENTS/>
+            <CASE_NUMBER dd:minOccur="0" dd:nullType="exclude"/>
+            <QTY/>
+            <PAGE/>
+            <D3_CUST_MATNR/>
+            <INSTRUCTIONS_HEAD/>
+         </STANDARD_TEXT>
+         <GV_RGA_TXT/>
+      </data>
+   </dd:dataDescription>
+</xfa:datasets>
+<localeSet xmlns="http://www.xfa.org/schema/xfa-locale-set/2.7/">
+   <locale desc="English (United States)" name="en_US">
+      <calendarSymbols name="gregorian">
+         <monthNames>
+            <month>January</month>
+            <month>February</month>
+            <month>March</month>
+            <month>April</month>
+            <month>May</month>
+            <month>June</month>
+            <month>July</month>
+            <month>August</month>
+            <month>September</month>
+            <month>October</month>
+            <month>November</month>
+            <month>December</month>
+         </monthNames>
+         <monthNames abbr="1">
+            <month>Jan</month>
+            <month>Feb</month>
+            <month>Mar</month>
+            <month>Apr</month>
+            <month>May</month>
+            <month>Jun</month>
+            <month>Jul</month>
+            <month>Aug</month>
+            <month>Sep</month>
+            <month>Oct</month>
+            <month>Nov</month>
+            <month>Dec</month>
+         </monthNames>
+         <dayNames>
+            <day>Sunday</day>
+            <day>Monday</day>
+            <day>Tuesday</day>
+            <day>Wednesday</day>
+            <day>Thursday</day>
+            <day>Friday</day>
+            <day>Saturday</day>
+         </dayNames>
+         <dayNames abbr="1">
+            <day>Sun</day>
+            <day>Mon</day>
+            <day>Tue</day>
+            <day>Wed</day>
+            <day>Thu</day>
+            <day>Fri</day>
+            <day>Sat</day>
+         </dayNames>
+         <meridiemNames>
+            <meridiem>AM</meridiem>
+            <meridiem>PM</meridiem>
+         </meridiemNames>
+         <eraNames>
+            <era>BC</era>
+            <era>AD</era>
+         </eraNames>
+      </calendarSymbols>
+      <datePatterns>
+         <datePattern name="full">EEEE, MMMM D, YYYY</datePattern>
+         <datePattern name="long">MMMM D, YYYY</datePattern>
+         <datePattern name="med">MMM D, YYYY</datePattern>
+         <datePattern name="short">M/D/YY</datePattern>
+      </datePatterns>
+      <timePatterns>
+         <timePattern name="full">h:MM:SS A Z</timePattern>
+         <timePattern name="long">h:MM:SS A Z</timePattern>
+         <timePattern name="med">h:MM:SS A</timePattern>
+         <timePattern name="short">h:MM A</timePattern>
+      </timePatterns>
+      <dateTimeSymbols>GyMdkHmsSEDFwWahKzZ</dateTimeSymbols>
+      <numberPatterns>
+         <numberPattern name="numeric">z,zz9.zzz</numberPattern>
+         <numberPattern name="currency">$z,zz9.99|($z,zz9.99)</numberPattern>
+         <numberPattern name="percent">z,zz9%</numberPattern>
+      </numberPatterns>
+      <numberSymbols>
+         <numberSymbol name="decimal">.</numberSymbol>
+         <numberSymbol name="grouping">,</numberSymbol>
+         <numberSymbol name="percent">%</numberSymbol>
+         <numberSymbol name="minus">-</numberSymbol>
+         <numberSymbol name="zero">0</numberSymbol>
+      </numberSymbols>
+      <currencySymbols>
+         <currencySymbol name="symbol">$</currencySymbol>
+         <currencySymbol name="isoname">USD</currencySymbol>
+         <currencySymbol name="decimal">.</currencySymbol>
+      </currencySymbols>
+      <typefaces>
+         <typeface name="Myriad Pro"/>
+         <typeface name="Minion Pro"/>
+         <typeface name="Courier Std"/>
+         <typeface name="Adobe Pi Std"/>
+         <typeface name="Adobe Hebrew"/>
+         <typeface name="Adobe Arabic"/>
+         <typeface name="Adobe Thai"/>
+         <typeface name="Kozuka Gothic Pro-VI M"/>
+         <typeface name="Kozuka Mincho Pro-VI R"/>
+         <typeface name="Adobe Ming Std L"/>
+         <typeface name="Adobe Song Std L"/>
+         <typeface name="Adobe Myungjo Std M"/>
+      </typefaces>
+   </locale>
+   <?originalXFAVersion http://www.xfa.org/schema/xfa-locale-set/2.1/?></localeSet>
+<x:xmpmeta xmlns:x="adobe:ns:meta/" x:xmptk="Adobe XMP Core 4.0-c319 44.281645, Sun Mar 25 2007 16:17:34">
+   <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+      <rdf:Description xmlns:xmp="http://ns.adobe.com/xap/1.0/" rdf:about="">
+         <xmp:MetadataDate>2018-02-07T09:19:54Z</xmp:MetadataDate>
+         <xmp:CreatorTool>Adobe LiveCycle Designer ES 9.0</xmp:CreatorTool>
+      </rdf:Description>
+      <rdf:Description xmlns:pdf="http://ns.adobe.com/pdf/1.3/" rdf:about="">
+         <pdf:Producer>Adobe LiveCycle Designer ES 9.0</pdf:Producer>
+      </rdf:Description>
+      <rdf:Description xmlns:xmpMM="http://ns.adobe.com/xap/1.0/mm/" rdf:about="">
+         <xmpMM:DocumentID>uuid:4f8e630a-33bc-4ea6-8b95-6db576be2ed6</xmpMM:DocumentID>
+      </rdf:Description>
+      <rdf:Description xmlns:desc="http://ns.adobe.com/xfa/promoted-desc/" rdf:about="">
+         <desc:version rdf:parseType="Resource">
+            <rdf:value>8.1.2.4246.1.597341.521646</rdf:value>
+            <desc:ref>/template/subform[1]</desc:ref>
+         </desc:version>
+      </rdf:Description>
+   </rdf:RDF>
+</x:xmpmeta></xdp:xdp>

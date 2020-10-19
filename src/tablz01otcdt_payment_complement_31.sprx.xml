@@ -1,0 +1,108 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<abapGit version="v1.0.0" serializer="LCL_OBJECT_SPRX" serializer_version="v1.0.0">
+ <asx:abap xmlns:asx="http://www.sap.com/abapxml" version="1.0">
+  <asx:values>
+   <PROXY_HEADER>
+    <item>
+     <OBJECT>TABL</OBJECT>
+     <OBJ_NAME>Z01OTCDT_PAYMENT_COMPLEMENT_31</OBJ_NAME>
+     <OBJECT_M>TABL</OBJECT_M>
+     <OBJ_NAME_M>Z01OTCDT_PAYMENT_COMPLEMENT_39</OBJ_NAME_M>
+     <HASH_ID>E665BD07B8C06D3DE2C14E3810D03EA56013E7AF</HASH_ID>
+     <ID>&lt;type&gt; Voucher_Related_RT02A &lt;element&gt; Voucher_Related_RT02A &lt;type&gt; DT_PaymentComplement_3_3 http://bio-rad.com/OTC/PaymentComplement_MexicoCFDI http://bio-rad.com/OTC/PaymentComplement_MexicoCFDI</ID>
+     <IFR_TYPE>type</IFR_TYPE>
+     <IFR_NAME>Voucher_Related_RT02A</IFR_NAME>
+     <IFR_NSPCE>http://bio-rad.com/OTC/PaymentComplement_MexicoCFDI</IFR_NSPCE>
+     <IFR_GNSPCE>http://bio-rad.com/OTC/PaymentComplement_MexicoCFDI</IFR_GNSPCE>
+     <GEN_VERS>0005</GEN_VERS>
+     <PREFIX>Z01OTC</PREFIX>
+     <CATEGORY>ifmtypedef</CATEGORY>
+     <X-ML_NSPCE>http://bio-rad.com/OTC/PaymentComplement_MexicoCFDI</X-ML_NSPCE>
+     <X-ML_NAME>Voucher_Related_RT02A</X-ML_NAME>
+    </item>
+   </PROXY_HEADER>
+   <PROXY_DATA>
+    <item>
+     <OBJECT>TABL</OBJECT>
+     <OBJ_NAME>Z01OTCDT_PAYMENT_COMPLEMENT_31</OBJ_NAME>
+     <OBJECT1>FIEL</OBJECT1>
+     <OBJ_NAME1>REGISTRY_TYPE</OBJ_NAME1>
+     <OBJECT2>FIEL</OBJECT2>
+     <OBJ_NAME2>REGISTRY_TYPE</OBJ_NAME2>
+     <ID>&lt;element&gt; RegistryType &lt;type&gt; Voucher_Related_RT02A &lt;element&gt; Voucher_Related_RT02A &lt;type&gt; DT_PaymentComplement_3_3 http://bio-rad.com/OTC/PaymentComplement_MexicoCFDI http://bio-rad.com/OTC/PaymentComplement_MexicoCFDI</ID>
+     <IFR_TYPE>element</IFR_TYPE>
+     <IFR_NAME>RegistryType</IFR_NAME>
+     <IFR_LANGU>EN</IFR_LANGU>
+     <IFR_TAGTYP>E</IFR_TAGTYP>
+     <IFR_MINOCC>1</IFR_MINOCC>
+     <IFR_MAXOCC>1</IFR_MAXOCC>
+     <IFR_XSDTYP>string</IFR_XSDTYP>
+     <IFR_SCALE>-2</IFR_SCALE>
+     <R3_TYPE>FIEL</R3_TYPE>
+     <R3_NAME>REGISTRY_TYPE</R3_NAME>
+     <R3_DATATYP>STRG</R3_DATATYP>
+     <R3_SEQNUM>000001</R3_SEQNUM>
+    </item>
+    <item>
+     <OBJECT>TABL</OBJECT>
+     <OBJ_NAME>Z01OTCDT_PAYMENT_COMPLEMENT_31</OBJ_NAME>
+     <OBJECT1>FIEL</OBJECT1>
+     <OBJ_NAME1>RELATIONED_IDENTIFIER</OBJ_NAME1>
+     <OBJECT2>FIEL</OBJECT2>
+     <OBJ_NAME2>RELATIONED_IDENTIFIER</OBJ_NAME2>
+     <ID>&lt;element&gt; RelationedIdentifier &lt;type&gt; Voucher_Related_RT02A &lt;element&gt; Voucher_Related_RT02A &lt;type&gt; DT_PaymentComplement_3_3 http://bio-rad.com/OTC/PaymentComplement_MexicoCFDI http://bio-rad.com/OTC/PaymentComplement_MexicoCFDI</ID>
+     <IFR_TYPE>element</IFR_TYPE>
+     <IFR_NAME>RelationedIdentifier</IFR_NAME>
+     <IFR_LANGU>EN</IFR_LANGU>
+     <IFR_TAGTYP>E</IFR_TAGTYP>
+     <IFR_MINOCC>1</IFR_MINOCC>
+     <IFR_MAXOCC>1</IFR_MAXOCC>
+     <IFR_XSDTYP>string</IFR_XSDTYP>
+     <IFR_SCALE>-2</IFR_SCALE>
+     <R3_TYPE>FIEL</R3_TYPE>
+     <R3_NAME>RELATIONED_IDENTIFIER</R3_NAME>
+     <R3_DATATYP>STRG</R3_DATATYP>
+     <R3_SEQNUM>000002</R3_SEQNUM>
+    </item>
+    <item>
+     <OBJECT>TABL</OBJECT>
+     <OBJ_NAME>Z01OTCDT_PAYMENT_COMPLEMENT_31</OBJ_NAME>
+     <OBJECT1>FIEL</OBJECT1>
+     <OBJ_NAME1>UUID</OBJ_NAME1>
+     <OBJECT2>FIEL</OBJECT2>
+     <OBJ_NAME2>UUID</OBJ_NAME2>
+     <ID>&lt;element&gt; UUID &lt;type&gt; Voucher_Related_RT02A &lt;element&gt; Voucher_Related_RT02A &lt;type&gt; DT_PaymentComplement_3_3 http://bio-rad.com/OTC/PaymentComplement_MexicoCFDI http://bio-rad.com/OTC/PaymentComplement_MexicoCFDI</ID>
+     <IFR_TYPE>element</IFR_TYPE>
+     <IFR_NAME>UUID</IFR_NAME>
+     <IFR_LANGU>EN</IFR_LANGU>
+     <IFR_TAGTYP>E</IFR_TAGTYP>
+     <IFR_MAXOCC>1</IFR_MAXOCC>
+     <IFR_OPTNL>X</IFR_OPTNL>
+     <IFR_XSDTYP>string</IFR_XSDTYP>
+     <IFR_SCALE>-2</IFR_SCALE>
+     <R3_TYPE>FIEL</R3_TYPE>
+     <R3_NAME>UUID</R3_NAME>
+     <R3_DATATYP>STRG</R3_DATATYP>
+     <R3_SEQNUM>000003</R3_SEQNUM>
+    </item>
+    <item>
+     <OBJECT>TABL</OBJECT>
+     <OBJ_NAME>Z01OTCDT_PAYMENT_COMPLEMENT_31</OBJ_NAME>
+     <OBJECT1>TABL</OBJECT1>
+     <OBJ_NAME1>Z01OTCDT_PAYMENT_COMPLEMENT_31</OBJ_NAME1>
+     <OBJECT2>TABL</OBJECT2>
+     <OBJ_NAME2>Z01OTCDT_PAYMENT_COMPLEMENT_31</OBJ_NAME2>
+     <ID>&lt;type&gt; Voucher_Related_RT02A &lt;element&gt; Voucher_Related_RT02A &lt;type&gt; DT_PaymentComplement_3_3 http://bio-rad.com/OTC/PaymentComplement_MexicoCFDI http://bio-rad.com/OTC/PaymentComplement_MexicoCFDI</ID>
+     <IFR_TYPE>type</IFR_TYPE>
+     <IFR_NAME>Voucher_Related_RT02A</IFR_NAME>
+     <IFR_LANGU>EN</IFR_LANGU>
+     <IFR_SCALE>-2</IFR_SCALE>
+     <R3_TYPE>TABL</R3_TYPE>
+     <R3_NAME>Z01OTCDT_PAYMENT_COMPLEMENT_31</R3_NAME>
+     <R3_TEXT>Proxy Structure (generated)</R3_TEXT>
+     <CATEGORY>ifmtypedef</CATEGORY>
+    </item>
+   </PROXY_DATA>
+  </asx:values>
+ </asx:abap>
+</abapGit>

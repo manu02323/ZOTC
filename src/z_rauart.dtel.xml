@@ -1,0 +1,90 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<abapGit version="v1.0.0" serializer="LCL_OBJECT_DTEL" serializer_version="v1.0.0">
+ <asx:abap xmlns:asx="http://www.sap.com/abapxml" version="1.0">
+  <asx:values>
+   <DD04V>
+    <ROLLNAME>Z_RAUART</ROLLNAME>
+    <DDLANGUAGE>E</DDLANGUAGE>
+    <DOMNAME>AUART</DOMNAME>
+    <HEADLEN>29</HEADLEN>
+    <SCRLEN1>09</SCRLEN1>
+    <SCRLEN2>19</SCRLEN2>
+    <SCRLEN3>29</SCRLEN3>
+    <DDTEXT>Reference Sales Document Type</DDTEXT>
+    <REPTEXT>Reference Sales Document Type</REPTEXT>
+    <SCRTEXT_S>Ref. Type</SCRTEXT_S>
+    <SCRTEXT_M>Ref. Sales Doc Type</SCRTEXT_M>
+    <SCRTEXT_L>Reference Sales Document Type</SCRTEXT_L>
+    <DTELMASTER>E</DTELMASTER>
+    <REFKIND>D</REFKIND>
+   </DD04V>
+   <I18N_LANGS>
+    <LANGU>1</LANGU>
+    <LANGU>F</LANGU>
+    <LANGU>J</LANGU>
+    <LANGU>N</LANGU>
+    <LANGU>P</LANGU>
+    <LANGU>R</LANGU>
+    <LANGU>S</LANGU>
+   </I18N_LANGS>
+   <DD04_TEXTS>
+    <item>
+     <DDLANGUAGE>1</DDLANGUAGE>
+     <DDTEXT>Reference Sales Document Type</DDTEXT>
+     <REPTEXT>Reference Sales Document Type</REPTEXT>
+     <SCRTEXT_S>Ref. Type</SCRTEXT_S>
+     <SCRTEXT_M>Ref. Sales Doc Type</SCRTEXT_M>
+     <SCRTEXT_L>Reference Sales Document Type</SCRTEXT_L>
+    </item>
+    <item>
+     <DDLANGUAGE>F</DDLANGUAGE>
+     <DDTEXT>Reference Sales Document Type</DDTEXT>
+     <REPTEXT>Reference Sales Document Type</REPTEXT>
+     <SCRTEXT_S>Ref. Type</SCRTEXT_S>
+     <SCRTEXT_M>Ref. Sales Doc Type</SCRTEXT_M>
+     <SCRTEXT_L>Reference Sales Document Type</SCRTEXT_L>
+    </item>
+    <item>
+     <DDLANGUAGE>J</DDLANGUAGE>
+     <DDTEXT>Reference Sales Document Type</DDTEXT>
+     <REPTEXT>Reference Sales Document Type</REPTEXT>
+     <SCRTEXT_S>Ref. Type</SCRTEXT_S>
+     <SCRTEXT_M>Ref. Sales Doc Type</SCRTEXT_M>
+     <SCRTEXT_L>Reference Sales Document Type</SCRTEXT_L>
+    </item>
+    <item>
+     <DDLANGUAGE>N</DDLANGUAGE>
+     <DDTEXT>Reference Sales Document Type</DDTEXT>
+     <REPTEXT>Reference Sales Document Type</REPTEXT>
+     <SCRTEXT_S>Ref. Type</SCRTEXT_S>
+     <SCRTEXT_M>Ref. Sales Doc Type</SCRTEXT_M>
+     <SCRTEXT_L>Reference Sales Document Type</SCRTEXT_L>
+    </item>
+    <item>
+     <DDLANGUAGE>P</DDLANGUAGE>
+     <DDTEXT>Reference Sales Document Type</DDTEXT>
+     <REPTEXT>Reference Sales Document Type</REPTEXT>
+     <SCRTEXT_S>Ref. Type</SCRTEXT_S>
+     <SCRTEXT_M>Ref. Sales Doc Type</SCRTEXT_M>
+     <SCRTEXT_L>Reference Sales Document Type</SCRTEXT_L>
+    </item>
+    <item>
+     <DDLANGUAGE>R</DDLANGUAGE>
+     <DDTEXT>Reference Sales Document Type</DDTEXT>
+     <REPTEXT>Reference Sales Document Type</REPTEXT>
+     <SCRTEXT_S>Ref. Type</SCRTEXT_S>
+     <SCRTEXT_M>Ref. Sales Doc Type</SCRTEXT_M>
+     <SCRTEXT_L>Reference Sales Document Type</SCRTEXT_L>
+    </item>
+    <item>
+     <DDLANGUAGE>S</DDLANGUAGE>
+     <DDTEXT>Reference Sales Document Type</DDTEXT>
+     <REPTEXT>Reference Sales Document Type</REPTEXT>
+     <SCRTEXT_S>Ref. Type</SCRTEXT_S>
+     <SCRTEXT_M>Ref. Sales Doc Type</SCRTEXT_M>
+     <SCRTEXT_L>Reference Sales Document Type</SCRTEXT_L>
+    </item>
+   </DD04_TEXTS>
+  </asx:values>
+ </asx:abap>
+</abapGit>

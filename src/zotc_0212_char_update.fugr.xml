@@ -1,0 +1,90 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<abapGit version="v1.0.0" serializer="LCL_OBJECT_FUGR" serializer_version="v1.0.0">
+ <asx:abap xmlns:asx="http://www.sap.com/abapxml" version="1.0">
+  <asx:values>
+   <AREAT>Update Characteristic Detail fr Material</AREAT>
+   <INCLUDES>
+    <SOBJ_NAME>LZOTC_0212_CHAR_UPDATETOP</SOBJ_NAME>
+    <SOBJ_NAME>SAPLZOTC_0212_CHAR_UPDATE</SOBJ_NAME>
+   </INCLUDES>
+   <FUNCTIONS>
+    <item>
+     <FUNCNAME>ZOTC_0212_CHAR_UPD_CLF00200</FUNCNAME>
+     <SHORT_TEXT>Update Characteristic Detail for Material - P/S - CLF00200</SHORT_TEXT>
+     <IMPORT>
+      <RSIMP>
+       <PARAMETER>IDOC_HEADER</PARAMETER>
+       <DBFIELD>EDIDC</DBFIELD>
+       <REFERENCE>X</REFERENCE>
+      </RSIMP>
+      <RSIMP>
+       <PARAMETER>FLG_APPEND_STATUS</PARAMETER>
+       <REFERENCE>X</REFERENCE>
+       <TYP>XFELD</TYP>
+      </RSIMP>
+     </IMPORT>
+     <TABLES>
+      <RSTBL>
+       <PARAMETER>IDOC_DATA</PARAMETER>
+       <DBSTRUCT>EDIDD</DBSTRUCT>
+      </RSTBL>
+      <RSTBL>
+       <PARAMETER>IDOC_STATUS</PARAMETER>
+       <DBSTRUCT>BDIDOCSTAT</DBSTRUCT>
+      </RSTBL>
+     </TABLES>
+     <EXCEPTION>
+      <RSEXC>
+       <EXCEPTION>ERROR</EXCEPTION>
+      </RSEXC>
+     </EXCEPTION>
+     <DOCUMENTATION>
+      <RSFDO>
+       <PARAMETER>IDOC_HEADER</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Control Record (IDoc)</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>FLG_APPEND_STATUS</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Checkbox Field</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>IDOC_DATA</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Data record (IDoc)</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>IDOC_STATUS</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Status Record (IDoc)</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>ERROR</PARAMETER>
+       <KIND>X</KIND>
+       <STEXT>Processing error</STEXT>
+      </RSFDO>
+     </DOCUMENTATION>
+    </item>
+    <item>
+     <FUNCNAME>ZOTC_0212_INSERT_CHAR_VALUE</FUNCNAME>
+     <UPDATE_TASK>1</UPDATE_TASK>
+     <SHORT_TEXT>Insert material char value into custom table ZOTC_BOM_CREATE</SHORT_TEXT>
+     <IMPORT>
+      <RSIMP>
+       <PARAMETER>IM_BOM_DATA</PARAMETER>
+       <TYP>ZOTC_BOM_CREATE_TBL</TYP>
+      </RSIMP>
+     </IMPORT>
+     <DOCUMENTATION>
+      <RSFDO>
+       <PARAMETER>IM_BOM_DATA</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Characteristics information for sales BOM creation</STEXT>
+      </RSFDO>
+     </DOCUMENTATION>
+    </item>
+   </FUNCTIONS>
+  </asx:values>
+ </asx:abap>
+</abapGit>

@@ -1,0 +1,115 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<abapGit version="v1.0.0" serializer="LCL_OBJECT_SPRX" serializer_version="v1.0.0">
+ <asx:abap xmlns:asx="http://www.sap.com/abapxml" version="1.0">
+  <asx:values>
+   <PROXY_HEADER>
+    <item>
+     <OBJECT>INTF</OBJECT>
+     <OBJ_NAME>Z01OTC_II_SI_PRICE_LOAD_SAP_IN</OBJ_NAME>
+     <OBJECT_M>INTF</OBJECT_M>
+     <OBJ_NAME_M>Z01OTC_II_SI_PRICE_LOAD_SAP_IN</OBJ_NAME_M>
+     <HASH_ID>306276F145A147B7F360B7D2245AB83B7B8028E0</HASH_ID>
+     <ID>&lt;portType&gt; SI_PriceLoad_SAP_In http://bio-rad.com/OTC/TransferPriceLoad http://bio-rad.com/OTC/TransferPriceLoad</ID>
+     <IFR_GLOBAL>X</IFR_GLOBAL>
+     <IFR_TYPE>portType</IFR_TYPE>
+     <IFR_NAME>SI_PriceLoad_SAP_In</IFR_NAME>
+     <IFR_NSPCE>http://bio-rad.com/OTC/TransferPriceLoad</IFR_NSPCE>
+     <IFR_GNSPCE>http://bio-rad.com/OTC/TransferPriceLoad</IFR_GNSPCE>
+     <GEN_VERS>0006</GEN_VERS>
+     <PREFIX>Z01OTC_</PREFIX>
+     <CATEGORY>ifmmessif</CATEGORY>
+     <DIRECTION>I</DIRECTION>
+     <X-ML_NSPCE>http://bio-rad.com/OTC/TransferPriceLoad</X-ML_NSPCE>
+     <X-ML_NAME>SI_PriceLoad_SAP_In</X-ML_NAME>
+     <FURTHER_DATA>﻿&lt;asx:abap xmlns:asx=&quot;http://www.sap.com/abapxml&quot; version=&quot;1.0&quot;&gt;&lt;asx:values&gt;&lt;DATA&gt;&lt;SOAP_APPL&gt;urn:sap-com:soap:application:esr:server:710&lt;/SOAP_APPL&gt;&lt;/DATA&gt;&lt;/asx:values&gt;&lt;/asx:abap&gt;</FURTHER_DATA>
+     <VERSION_ID>8ffd8405e50811e69ef70000010d7703</VERSION_ID>
+    </item>
+   </PROXY_HEADER>
+   <PROXY_DATA>
+    <item>
+     <OBJECT>INTF</OBJECT>
+     <OBJ_NAME>Z01OTC_II_SI_PRICE_LOAD_SAP_IN</OBJ_NAME>
+     <OBJECT1>CLAS</OBJECT1>
+     <OBJ_NAME1>Z01OTC_CL_SI_PRICE_LOAD_SAP_IN</OBJ_NAME1>
+     <OBJECT2>CLAS</OBJECT2>
+     <OBJ_NAME2>Z01OTC_CL_SI_PRICE_LOAD_SAP_IN</OBJ_NAME2>
+     <ID>&lt;CLIM&gt; SI_PriceLoad_SAP_In http://bio-rad.com/OTC/TransferPriceLoad http://bio-rad.com/OTC/TransferPriceLoad</ID>
+     <IFR_TYPE>CLIM</IFR_TYPE>
+     <IFR_NAME>SI_PriceLoad_SAP_In</IFR_NAME>
+     <IFR_LANGU>EN</IFR_LANGU>
+     <R3_TYPE>CLAS</R3_TYPE>
+     <R3_NAME>Z01OTC_CL_SI_PRICE_LOAD_SAP_IN</R3_NAME>
+     <R3_TEXT>Proxy Class (generated)</R3_TEXT>
+    </item>
+    <item>
+     <OBJECT>INTF</OBJECT>
+     <OBJ_NAME>Z01OTC_II_SI_PRICE_LOAD_SAP_IN</OBJ_NAME>
+     <OBJECT1>INTF</OBJECT1>
+     <OBJ_NAME1>Z01OTC_II_SI_PRICE_LOAD_SAP_IN</OBJ_NAME1>
+     <OBJECT2>INTF</OBJECT2>
+     <OBJ_NAME2>Z01OTC_II_SI_PRICE_LOAD_SAP_IN</OBJ_NAME2>
+     <ID>&lt;portType&gt; SI_PriceLoad_SAP_In http://bio-rad.com/OTC/TransferPriceLoad http://bio-rad.com/OTC/TransferPriceLoad</ID>
+     <IFR_TYPE>portType</IFR_TYPE>
+     <IFR_NAME>SI_PriceLoad_SAP_In</IFR_NAME>
+     <IFR_LANGU>EN</IFR_LANGU>
+     <IFR_SCALE>-2</IFR_SCALE>
+     <R3_TYPE>INTF</R3_TYPE>
+     <R3_NAME>Z01OTC_II_SI_PRICE_LOAD_SAP_IN</R3_NAME>
+     <R3_TEXT>Proxy Interface (generated)</R3_TEXT>
+     <CATEGORY>ifmmessif</CATEGORY>
+     <DIRECTION>I</DIRECTION>
+    </item>
+    <item>
+     <OBJECT>INTF</OBJECT>
+     <OBJ_NAME>Z01OTC_II_SI_PRICE_LOAD_SAP_IN</OBJ_NAME>
+     <OBJECT1>METH</OBJECT1>
+     <OBJ_NAME1>MT_TRANSFER_PRICE_LOAD_SAP_PPM</OBJ_NAME1>
+     <OBJECT2>EXCE</OBJECT2>
+     <OBJ_NAME2>CX_SAPPLCO_STANDARD_MSG_FAULT</OBJ_NAME2>
+     <OBJECT_R>CLAS</OBJECT_R>
+     <OBJ_NAME_R>CX_SAPPLCO_STANDARD_MSG_FAULT</OBJ_NAME_R>
+     <ID>&lt;fault&gt; p3.StandardMessageFault &lt;operation&gt; MT_TransferPriceLoad_SAP_PPM_In &lt;portType&gt; SI_PriceLoad_SAP_In http://bio-rad.com/OTC/TransferPriceLoad http://bio-rad.com/OTC/TransferPriceLoad</ID>
+     <IFR_TYPE>fault</IFR_TYPE>
+     <IFR_NAME>p3.StandardMessageFault</IFR_NAME>
+     <IFR_SCALE>-2</IFR_SCALE>
+     <R3_TYPE>EXCE</R3_TYPE>
+     <R3_SEQNUM>000001</R3_SEQNUM>
+    </item>
+    <item>
+     <OBJECT>INTF</OBJECT>
+     <OBJ_NAME>Z01OTC_II_SI_PRICE_LOAD_SAP_IN</OBJ_NAME>
+     <OBJECT1>METH</OBJECT1>
+     <OBJ_NAME1>MT_TRANSFER_PRICE_LOAD_SAP_PPM</OBJ_NAME1>
+     <OBJECT2>METH</OBJECT2>
+     <OBJ_NAME2>MT_TRANSFER_PRICE_LOAD_SAP_PPM</OBJ_NAME2>
+     <ID>&lt;operation&gt; MT_TransferPriceLoad_SAP_PPM_In &lt;portType&gt; SI_PriceLoad_SAP_In http://bio-rad.com/OTC/TransferPriceLoad http://bio-rad.com/OTC/TransferPriceLoad</ID>
+     <IFR_TYPE>operation</IFR_TYPE>
+     <IFR_NAME>MT_TransferPriceLoad_SAP_PPM_In</IFR_NAME>
+     <IFR_LANGU>EN</IFR_LANGU>
+     <IFR_SCALE>-2</IFR_SCALE>
+     <R3_TYPE>METH</R3_TYPE>
+     <R3_NAME>MT_TRANSFER_PRICE_LOAD_SAP_PPM</R3_NAME>
+     <R3_SEQNUM>000001</R3_SEQNUM>
+     <DIRECTION>I</DIRECTION>
+    </item>
+    <item>
+     <OBJECT>INTF</OBJECT>
+     <OBJ_NAME>Z01OTC_II_SI_PRICE_LOAD_SAP_IN</OBJ_NAME>
+     <OBJECT1>METH</OBJECT1>
+     <OBJ_NAME1>MT_TRANSFER_PRICE_LOAD_SAP_PPM</OBJ_NAME1>
+     <OBJECT2>PAIM</OBJECT2>
+     <OBJ_NAME2>INPUT</OBJ_NAME2>
+     <OBJECT_R>TABL</OBJECT_R>
+     <OBJ_NAME_R>Z01OTC_MT_TRANSFER_PRICE_LOAD</OBJ_NAME_R>
+     <ID>&lt;input&gt; input &lt;operation&gt; MT_TransferPriceLoad_SAP_PPM_In &lt;portType&gt; SI_PriceLoad_SAP_In http://bio-rad.com/OTC/TransferPriceLoad http://bio-rad.com/OTC/TransferPriceLoad</ID>
+     <IFR_TYPE>PartInput</IFR_TYPE>
+     <IFR_NAME>input</IFR_NAME>
+     <IFR_SCALE>-2</IFR_SCALE>
+     <R3_TYPE>PAIM</R3_TYPE>
+     <R3_NAME>INPUT</R3_NAME>
+     <R3_SEQNUM>000001</R3_SEQNUM>
+    </item>
+   </PROXY_DATA>
+  </asx:values>
+ </asx:abap>
+</abapGit>

@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<abapGit version="v1.0.0" serializer="LCL_OBJECT_SXCI" serializer_version="v1.0.0">
+ <asx:abap xmlns:asx="http://www.sap.com/abapxml" version="1.0">
+  <asx:values>
+   <SXCI>
+    <IMPLEMENTATION_DATA>
+     <IMP_NAME>ZCL_IM_INV_ECC_2_GTS</IMP_NAME>
+     <TEXT>Commercial Invoice fields from ECC to GTS</TEXT>
+     <IMP_CLASS>ZCL_IM_CL_IM_INV_ECC_2_GTS</IMP_CLASS>
+     <EXIT_NAME>/SAPSLL/IFEX_SD0C_R3</EXIT_NAME>
+     <INTER_NAME>/SAPSLL/IF_EX_IFEX_SD0C_R3</INTER_NAME>
+    </IMPLEMENTATION_DATA>
+   </SXCI>
+  </asx:values>
+ </asx:abap>
+</abapGit>

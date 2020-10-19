@@ -1,0 +1,47 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<abapGit version="v1.0.0" serializer="LCL_OBJECT_SPRX" serializer_version="v1.0.0">
+ <asx:abap xmlns:asx="http://www.sap.com/abapxml" version="1.0">
+  <asx:values>
+   <PROXY_HEADER>
+    <item>
+     <OBJECT>DTEL</OBJECT>
+     <OBJ_NAME>Z01OTC_CODICE_FISCALE_TYPE1</OBJ_NAME>
+     <OBJECT_M>CLAS</OBJECT_M>
+     <OBJ_NAME_M>Z01OTC_CO_SI_INTREST_CHARGES_O</OBJ_NAME_M>
+     <HASH_ID>4F4ABD2DB01313598293541D7D3B82E4496D497B</HASH_ID>
+     <ID>&lt;type&gt; CodiceFiscaleType http://ivaservizi.agenziaentrate.gov.it/docs/xsd/fatture/v1.2 SI_IntrestCharges_Out(http://bio-rad.com/OTC/InterestCharges)</ID>
+     <IFR_TYPE>type</IFR_TYPE>
+     <IFR_NAME>CodiceFiscaleType</IFR_NAME>
+     <IFR_NSPCE>http://ivaservizi.agenziaentrate.gov.it/docs/xsd/fatture/v1.2</IFR_NSPCE>
+     <IFR_GNSPCE>SI_IntrestCharges_Out(http://bio-rad.com/OTC/InterestCharges)</IFR_GNSPCE>
+     <GEN_VERS>0005</GEN_VERS>
+     <PREFIX>Z01OTC_</PREFIX>
+     <CATEGORY>ifmtypedef</CATEGORY>
+     <X-ML_NSPCE>http://ivaservizi.agenziaentrate.gov.it/docs/xsd/fatture/v1.2</X-ML_NSPCE>
+     <X-ML_NAME>CodiceFiscaleType</X-ML_NAME>
+    </item>
+   </PROXY_HEADER>
+   <PROXY_DATA>
+    <item>
+     <OBJECT>DTEL</OBJECT>
+     <OBJ_NAME>Z01OTC_CODICE_FISCALE_TYPE1</OBJ_NAME>
+     <OBJECT1>DTEL</OBJECT1>
+     <OBJ_NAME1>Z01OTC_CODICE_FISCALE_TYPE1</OBJ_NAME1>
+     <OBJECT2>DTEL</OBJECT2>
+     <OBJ_NAME2>Z01OTC_CODICE_FISCALE_TYPE1</OBJ_NAME2>
+     <ID>&lt;type&gt; CodiceFiscaleType http://ivaservizi.agenziaentrate.gov.it/docs/xsd/fatture/v1.2 SI_IntrestCharges_Out(http://bio-rad.com/OTC/InterestCharges)</ID>
+     <IFR_TYPE>type</IFR_TYPE>
+     <IFR_NAME>CodiceFiscaleType</IFR_NAME>
+     <IFR_XSDTYP>string</IFR_XSDTYP>
+     <IFR_PATTRN>[A-Z0-9]{11,16}</IFR_PATTRN>
+     <IFR_SCALE>-2</IFR_SCALE>
+     <R3_TYPE>DTEL</R3_TYPE>
+     <R3_NAME>Z01OTC_CODICE_FISCALE_TYPE1</R3_NAME>
+     <R3_TEXT>Proxy Data Element (generated)</R3_TEXT>
+     <R3_DATATYP>STRG</R3_DATATYP>
+     <CATEGORY>ifmtypedef</CATEGORY>
+    </item>
+   </PROXY_DATA>
+  </asx:values>
+ </asx:abap>
+</abapGit>

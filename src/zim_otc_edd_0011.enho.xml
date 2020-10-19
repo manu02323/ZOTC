@@ -1,0 +1,157 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<abapGit version="v1.0.0" serializer="LCL_OBJECT_ENHO" serializer_version="v1.0.0">
+ <asx:abap xmlns:asx="http://www.sap.com/abapxml" version="1.0">
+  <asx:values>
+   <TOOL>HOOK_IMPL</TOOL>
+   <SHORTTEXT>Enhancement for OTC_EDD_0011 Pricing Routines</SHORTTEXT>
+   <ORIGINAL_OBJECT>
+    <PGMID>R3TR</PGMID>
+    <ORG_OBJ_TYPE>FUGR</ORG_OBJ_TYPE>
+    <ORG_OBJ_NAME>V61A</ORG_OBJ_NAME>
+    <ORG_MAIN_TYPE>FUGR</ORG_MAIN_TYPE>
+    <ORG_MAIN_NAME>V61A</ORG_MAIN_NAME>
+    <PROGRAMNAME>SAPLV61A</PROGRAMNAME>
+   </ORIGINAL_OBJECT>
+   <ENHANCEMENTS>
+    <ENH_HOOK_IMPL>
+     <PROGRAMNAME>SAPLV61A</PROGRAMNAME>
+     <ENHMODE>D</ENHMODE>
+     <FULL_NAME>\PR:SAPLV61A\FO:USEREXIT_XKOMV_BEWERTEN_INIT\SE:BEGIN\EI</FULL_NAME>
+     <SOURCE>
+      <item>*----------------------------------------------------------------------*</item>
+      <item>* INCLUDE    :  RV61AFZB                                               *</item>
+      <item>* TITLE      :  D2_OTC_EDD_0011 Pricing Routines                       *</item>
+      <item>* DEVELOPER  :  Raktima Nathak                                         *</item>
+      <item>* OBJECT TYPE:  Enhancement                                            *</item>
+      <item>* SAP RELEASE:  SAP ECC 7.0                                            *</item>
+      <item>*----------------------------------------------------------------------*</item>
+      <item>* WRICEF ID:    D2_OTC_EDD_0011 Pricing Routines                       *</item>
+      <item>*----------------------------------------------------------------------*</item>
+      <item>* DESCRIPTION:  In order to address the complex pricing requirements   *</item>
+      <item>*               for Deployment 2 including pricing for sales BOMs,     *</item>
+      <item>*               development of pricing requirement routines, condition *</item>
+      <item>*               value formulas and condition base formulas will need to*</item>
+      <item>*               be developed.                                          *</item>
+      <item>*----------------------------------------------------------------------*</item>
+      <item>* MODIFICATION HISTORY:                                                *</item>
+      <item>*======================================================================*</item>
+      <item>* DATE        USER     TRANSPORT   DESCRIPTION                         *</item>
+      <item>* =========== ======== ==========  ====================================*</item>
+      <item>* 22-JUL-14  RNATHAK   E2DK902362  INITIAL DEVELOPMENT                 *</item>
+      <item>*----------------------------------------------------------------------*</item>
+      <item/>
+      <item>CLEAR: zwork1,</item>
+      <item>zwork2,</item>
+      <item>zwork3,</item>
+      <item>zswork4,</item>
+      <item>zswork5.   &quot;CR D2_129</item>
+      <item/>
+      <item>data : wa_komv type komv,</item>
+      <item>it_komv type STANDARD TABLE OF komv,</item>
+      <item>lv_kbetr type KWERT.</item>
+      <item/>
+      <item/>
+      <item>if not xkomv[] is INITIAL.</item>
+      <item>refresh it_komv[].</item>
+      <item>it_komv[] = xkomv[].</item>
+      <item>loop at it_komv into wa_komv.</item>
+      <item>if wa_komv-kschl = &apos;ZSUB&apos; and wa_komv-kwert is not INITIAL.</item>
+      <item>lv_kbetr = wa_komv-kwert.</item>
+      <item>endif.</item>
+      <item/>
+      <item>if wa_komv-kschl = &apos;ZPIC&apos; and lv_kbetr is not INITIAL.</item>
+      <item>CALL FUNCTION &apos;Z_DIVIDE&apos;</item>
+      <item>EXPORTING</item>
+      <item>IM_KBETR       = lv_kbetr</item>
+      <item>IM_MENGE       = komp-mglme</item>
+      <item>IMPORTING</item>
+      <item>EX_KBETR       = lv_kbetr.</item>
+      <item/>
+      <item/>
+      <item>wa_komv-kbetr = lv_kbetr.</item>
+      <item>modify it_komv from wa_komv TRANSPORTING kbetr.</item>
+      <item>clear : lv_kbetr.</item>
+      <item/>
+      <item/>
+      <item>endif.</item>
+      <item>endloop.</item>
+      <item/>
+      <item>refresh xkomv[].</item>
+      <item>xkomv[] = it_komv[].</item>
+      <item>endif.</item>
+      <item/>
+     </SOURCE>
+    </ENH_HOOK_IMPL>
+   </ENHANCEMENTS>
+   <SPACES>
+    <item>
+     <FULL_NAME>\PR:SAPLV61A\FO:USEREXIT_XKOMV_BEWERTEN_INIT\SE:BEGIN\EI</FULL_NAME>
+     <SPACES>
+      <item>0</item>
+      <item>0</item>
+      <item>0</item>
+      <item>0</item>
+      <item>0</item>
+      <item>0</item>
+      <item>0</item>
+      <item>0</item>
+      <item>0</item>
+      <item>0</item>
+      <item>0</item>
+      <item>0</item>
+      <item>0</item>
+      <item>0</item>
+      <item>0</item>
+      <item>0</item>
+      <item>0</item>
+      <item>0</item>
+      <item>0</item>
+      <item>0</item>
+      <item>0</item>
+      <item>0</item>
+      <item>0</item>
+      <item>7</item>
+      <item>7</item>
+      <item>7</item>
+      <item>7</item>
+      <item>0</item>
+      <item>0</item>
+      <item>7</item>
+      <item>7</item>
+      <item>0</item>
+      <item>0</item>
+      <item>0</item>
+      <item>0</item>
+      <item>0</item>
+      <item>0</item>
+      <item>0</item>
+      <item>1</item>
+      <item>0</item>
+      <item>0</item>
+      <item>0</item>
+      <item>15</item>
+      <item>17</item>
+      <item>19</item>
+      <item>19</item>
+      <item>16</item>
+      <item>18</item>
+      <item>0</item>
+      <item>0</item>
+      <item>2</item>
+      <item>1</item>
+      <item>2</item>
+      <item>0</item>
+      <item>0</item>
+      <item>0</item>
+      <item>0</item>
+      <item>0</item>
+      <item>0</item>
+      <item>0</item>
+      <item>0</item>
+      <item>0</item>
+     </SPACES>
+    </item>
+   </SPACES>
+  </asx:values>
+ </asx:abap>
+</abapGit>

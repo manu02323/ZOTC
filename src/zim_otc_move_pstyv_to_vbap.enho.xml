@@ -1,0 +1,281 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<abapGit version="v1.0.0" serializer="LCL_OBJECT_ENHO" serializer_version="v1.0.0">
+ <asx:abap xmlns:asx="http://www.sap.com/abapxml" version="1.0">
+  <asx:values>
+   <TOOL>HOOK_IMPL</TOOL>
+   <SHORTTEXT>Change the item category for sales area and doc type maintained in control table</SHORTTEXT>
+   <ORIGINAL_OBJECT>
+    <PGMID>R3TR</PGMID>
+    <ORG_OBJ_TYPE>PROG</ORG_OBJ_TYPE>
+    <ORG_OBJ_NAME>SAPMV45A</ORG_OBJ_NAME>
+    <ORG_MAIN_TYPE>PROG</ORG_MAIN_TYPE>
+    <ORG_MAIN_NAME>SAPMV45A</ORG_MAIN_NAME>
+    <PROGRAMNAME>SAPMV45A</PROGRAMNAME>
+   </ORIGINAL_OBJECT>
+   <ENHANCEMENTS>
+    <ENH_HOOK_IMPL>
+     <PROGRAMNAME>SAPMV45A</PROGRAMNAME>
+     <ENHMODE>D</ENHMODE>
+     <FULL_NAME>\PR:SAPMV45A\FO:USEREXIT_MOVE_FIELD_TO_VBAP\SE:BEGIN\EI</FULL_NAME>
+     <SOURCE>
+      <item>***********************************************************************</item>
+      <item>*Program    : ZIM_OTC_MOVE_PSTYV_TO_VBAP (Implicit Enhancement)       *</item>
+      <item>*Title      : Flip the Item Category to new value from BRFPlus table  *</item>
+      <item>*Developer  : NASRIN ALI                                              *</item>
+      <item>*Object type: Enhancement                                             *</item>
+      <item>*SAP Release: SAP ECC 6.0                                             *</item>
+      <item>*---------------------------------------------------------------------*</item>
+      <item>*WRICEF ID: D3_OTC_EDD_0339                                           *</item>
+      <item>*---------------------------------------------------------------------*</item>
+      <item>*Description: EHQ_EU_Sales Order Enhancements                         *</item>
+      <item>*---------------------------------------------------------------------*</item>
+      <item>*MODIFICATION HISTORY:</item>
+      <item>*=====================================================================*</item>
+      <item>*Date         User ID     Transport      Description</item>
+      <item>*===========  ==========  ============== =============================*</item>
+      <item>*27-MAY-2016  NALI        E1DK918444     Initial Development          *</item>
+      <item>*---------------------------------------------------------------------*</item>
+      <item>*15-JUN-2016  NALI        E1DK918444     CR# D3_0014 to read config   *</item>
+      <item>*                                        table TVEPZ with the new     *</item>
+      <item>*                                        PSTYV and fetch the correct  *</item>
+      <item>*                                        BEDAE and update VBAP-BEDAE  *</item>
+      <item>*---------------------------------------------------------------------*</item>
+      <item/>
+      <item>CONSTANTS: lc_emi_proj         TYPE z_enhancement VALUE &apos;OTC_EDD_0339&apos;, &quot; Enhancement No.</item>
+      <item>lc_null             TYPE z_criteria    VALUE &apos;NULL&apos;,         &quot; Enh. Criteria</item>
+      <item>lc_separator        TYPE xfeld         VALUE &apos;.&apos;              , &quot; Checkbox</item>
+      <item>lc_name_appl        TYPE string        VALUE &apos;ZA_OTC_EDD_0339_FLIP_ITEM_CATG&apos;, &quot; BRFPlus Application</item>
+      <item>lc_name_func_item   TYPE string        VALUE &apos;ZF_OTC_EDD_0339_FLIP_ITEM_CATG&apos;, &quot; BRFPlus Function</item>
+      <item>lc_vkorg            TYPE char10 VALUE &apos;EL_VKORG&apos;, &quot; VKORG</item>
+      <item>lc_vtweg            TYPE char10 VALUE &apos;VTWEG&apos;, &quot; VTWEG</item>
+      <item>lc_el_auart         TYPE char10 VALUE &apos;AUART&apos;, &quot; AUART</item>
+      <item>lc_pstyv_t184       TYPE char10 VALUE &apos;PSTYV_T184&apos;. &quot; PSTYV_T184</item>
+      <item/>
+      <item>DATA: li_status          TYPE STANDARD TABLE OF zdev_enh_status, &quot; Enhancement Status</item>
+      <item>lv_pstyv           TYPE pstyv,                          &quot; Sales document item category</item>
+      <item>lref_utility       TYPE REF TO /bofu/cl_fdt_util,       &quot; BRFplus Utilities</item>
+      <item>lref_admin_data    TYPE REF TO if_fdt_admin_data,       &quot; FDT: Administrative Data</item>
+      <item>lref_function      TYPE REF TO if_fdt_function,         &quot; FDT: Function</item>
+      <item>lref_context       TYPE REF TO if_fdt_context,          &quot; FDT: Context</item>
+      <item>lref_result        TYPE REF TO if_fdt_result,           &quot; FDT: Result</item>
+      <item>lref_fdt           TYPE REF TO cx_fdt,                  &quot; FDT: Abstract Exception Class   ##NEEDED</item>
+      <item>lv_query_in        TYPE        string,                  &quot; Query in</item>
+      <item>lv_query_out       TYPE        if_fdt_types=&gt;id,        &quot; Quesry out</item>
+      <item>* ---&gt; Begin of Insert for CR# D3_0014 by NALI</item>
+      <item>lv_bedae           TYPE bedae.                          &quot;Requirements type</item>
+      <item>* &lt;--- End    of Insert for CR# D3_0014 by NALI</item>
+      <item/>
+      <item/>
+      <item>** Check if the object is active from EMI.</item>
+      <item>CALL FUNCTION &apos;ZDEV_ENHANCEMENT_STATUS_CHECK&apos;</item>
+      <item>EXPORTING</item>
+      <item>iv_enhancement_no = lc_emi_proj</item>
+      <item>TABLES</item>
+      <item>tt_enh_status     = li_status.</item>
+      <item/>
+      <item>IF li_status IS NOT INITIAL.</item>
+      <item>SORT li_status by criteria active.</item>
+      <item>READ TABLE li_status WITH KEY</item>
+      <item>criteria = lc_null</item>
+      <item>active = abap_true</item>
+      <item>BINARY SEARCH</item>
+      <item>TRANSPORTING NO FIELDS.</item>
+      <item>IF sy-subrc EQ 0.</item>
+      <item>CLEAR: lref_utility, lv_query_in, lv_query_out.</item>
+      <item>*-- Create an instance of BRFPlus Utility class</item>
+      <item>lref_utility ?= /bofu/cl_fdt_util=&gt;get_instance( ).</item>
+      <item/>
+      <item>*-- Make BRF query by concatenation of BRF application name and BRF Function name</item>
+      <item>CONCATENATE lc_name_appl lc_name_func_item</item>
+      <item>INTO lv_query_in</item>
+      <item>SEPARATED BY lc_separator.</item>
+      <item>*-- To get GUID of query string</item>
+      <item>IF lref_utility IS BOUND.</item>
+      <item>CALL METHOD lref_utility-&gt;convert_function_input</item>
+      <item>EXPORTING</item>
+      <item>iv_input  = lv_query_in</item>
+      <item>IMPORTING</item>
+      <item>ev_output = lv_query_out</item>
+      <item>EXCEPTIONS</item>
+      <item>failed    = 1</item>
+      <item>OTHERS    = 2.</item>
+      <item>IF sy-subrc IS INITIAL.</item>
+      <item>*-- Set the variable value(s)</item>
+      <item>cl_fdt_factory=&gt;get_instance_generic( EXPORTING iv_id = lv_query_out</item>
+      <item>IMPORTING eo_instance = lref_admin_data ).</item>
+      <item>lref_function ?= lref_admin_data.</item>
+      <item>lref_context  ?= lref_function-&gt;get_process_context( ).</item>
+      <item/>
+      <item>* Set the value of Sales Organization</item>
+      <item>lref_context-&gt;set_value( iv_name = lc_vkorg  ia_value = vbak-vkorg ).</item>
+      <item>* Set the value of Distribution Channel</item>
+      <item>lref_context-&gt;set_value( iv_name = lc_vtweg  ia_value = vbak-vtweg ).</item>
+      <item>* Set the value of Sales Document Type</item>
+      <item>lref_context-&gt;set_value( iv_name = lc_el_auart  ia_value = vbak-auart ).</item>
+      <item>* Set the value of Sales document item category(old)</item>
+      <item>lref_context-&gt;set_value( iv_name = lc_pstyv_t184  ia_value = vbap-pstyv ).</item>
+      <item>TRY.</item>
+      <item>lref_function-&gt;process( EXPORTING io_context = lref_context</item>
+      <item>IMPORTING eo_result = lref_result ).</item>
+      <item/>
+      <item>lref_result-&gt;get_value( IMPORTING ea_value = lv_pstyv ).</item>
+      <item/>
+      <item>CATCH cx_fdt INTO lref_fdt.                      ##no_handler</item>
+      <item>CLEAR lv_pstyv.</item>
+      <item>ENDTRY.</item>
+      <item>IF lv_pstyv IS NOT INITIAL.</item>
+      <item>vbap-pstyv = lv_pstyv.</item>
+      <item>* ---&gt; Begin of Insert for CR# D3_0014 by NALI</item>
+      <item>*          SELECT bedae</item>
+      <item>*            UP TO 1 ROWS</item>
+      <item>*            FROM tvepz</item>
+      <item>*            INTO lv_bedae</item>
+      <item>*            WHERE pstyv = lv_pstyv.</item>
+      <item>*          ENDSELECT.</item>
+      <item>*          IF sy-subrc = 0.</item>
+      <item>*            vbap-bedae = lv_bedae.</item>
+      <item>*          ENDIF.</item>
+      <item>* ---&gt; End of Insert for CR# D3_0014 by NALI</item>
+      <item>ENDIF.</item>
+      <item>CLEAR lv_pstyv.</item>
+      <item>ENDIF. &quot; IF sy-subrc IS INITIAL</item>
+      <item>ENDIF. &quot; IF lref_utility IS BOUND</item>
+      <item>ENDIF. &quot; IF sy-subrc EQ 0</item>
+      <item>ENDIF. &quot; IF li_status IS NOT INITIAL</item>
+     </SOURCE>
+    </ENH_HOOK_IMPL>
+   </ENHANCEMENTS>
+   <SPACES>
+    <item>
+     <FULL_NAME>\PR:SAPMV45A\FO:USEREXIT_MOVE_FIELD_TO_VBAP\SE:BEGIN\EI</FULL_NAME>
+     <SPACES>
+      <item>0</item>
+      <item>0</item>
+      <item>0</item>
+      <item>0</item>
+      <item>0</item>
+      <item>0</item>
+      <item>0</item>
+      <item>0</item>
+      <item>0</item>
+      <item>0</item>
+      <item>0</item>
+      <item>0</item>
+      <item>0</item>
+      <item>0</item>
+      <item>0</item>
+      <item>0</item>
+      <item>0</item>
+      <item>0</item>
+      <item>0</item>
+      <item>0</item>
+      <item>0</item>
+      <item>0</item>
+      <item>0</item>
+      <item>0</item>
+      <item>11</item>
+      <item>11</item>
+      <item>11</item>
+      <item>11</item>
+      <item>11</item>
+      <item>11</item>
+      <item>11</item>
+      <item>11</item>
+      <item>0</item>
+      <item>0</item>
+      <item>6</item>
+      <item>6</item>
+      <item>6</item>
+      <item>6</item>
+      <item>6</item>
+      <item>6</item>
+      <item>6</item>
+      <item>6</item>
+      <item>6</item>
+      <item>0</item>
+      <item>6</item>
+      <item>0</item>
+      <item>0</item>
+      <item>0</item>
+      <item>0</item>
+      <item>2</item>
+      <item>4</item>
+      <item>6</item>
+      <item>4</item>
+      <item>6</item>
+      <item>0</item>
+      <item>2</item>
+      <item>4</item>
+      <item>4</item>
+      <item>23</item>
+      <item>23</item>
+      <item>23</item>
+      <item>23</item>
+      <item>4</item>
+      <item>6</item>
+      <item>0</item>
+      <item>4</item>
+      <item>0</item>
+      <item>0</item>
+      <item>4</item>
+      <item>11</item>
+      <item>11</item>
+      <item>0</item>
+      <item>4</item>
+      <item>6</item>
+      <item>8</item>
+      <item>10</item>
+      <item>8</item>
+      <item>10</item>
+      <item>8</item>
+      <item>10</item>
+      <item>10</item>
+      <item>6</item>
+      <item>0</item>
+      <item>8</item>
+      <item>46</item>
+      <item>8</item>
+      <item>8</item>
+      <item>0</item>
+      <item>0</item>
+      <item>8</item>
+      <item>0</item>
+      <item>8</item>
+      <item>0</item>
+      <item>8</item>
+      <item>0</item>
+      <item>8</item>
+      <item>8</item>
+      <item>12</item>
+      <item>36</item>
+      <item>0</item>
+      <item>12</item>
+      <item>0</item>
+      <item>10</item>
+      <item>13</item>
+      <item>8</item>
+      <item>8</item>
+      <item>10</item>
+      <item>0</item>
+      <item>0</item>
+      <item>0</item>
+      <item>0</item>
+      <item>0</item>
+      <item>0</item>
+      <item>0</item>
+      <item>0</item>
+      <item>0</item>
+      <item>0</item>
+      <item>0</item>
+      <item>8</item>
+      <item>8</item>
+      <item>6</item>
+      <item>4</item>
+      <item>4</item>
+      <item>2</item>
+     </SPACES>
+    </item>
+   </SPACES>
+  </asx:values>
+ </asx:abap>
+</abapGit>

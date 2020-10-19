@@ -1,0 +1,322 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<abapGit version="v1.0.0" serializer="LCL_OBJECT_FUGR" serializer_version="v1.0.0">
+ <asx:abap xmlns:asx="http://www.sap.com/abapxml" version="1.0">
+  <asx:values>
+   <AREAT>Billback Enhancement</AREAT>
+   <INCLUDES>
+    <SOBJ_NAME>LZOTC_BILLBACK_FGF01</SOBJ_NAME>
+    <SOBJ_NAME>LZOTC_BILLBACK_FGTOP</SOBJ_NAME>
+    <SOBJ_NAME>SAPLZOTC_BILLBACK_FG</SOBJ_NAME>
+   </INCLUDES>
+   <FUNCTIONS>
+    <item>
+     <FUNCNAME>ZOTC_0043_BILLBACK_MOD_TAB</FUNCNAME>
+     <UPDATE_TASK>1</UPDATE_TASK>
+     <SHORT_TEXT>Create Entries in Billback table</SHORT_TEXT>
+     <IMPORT>
+      <RSIMP>
+       <PARAMETER>IM_ZOTC_BILLBACK</PARAMETER>
+       <TYP>ZOTC_T_BILLBACK</TYP>
+      </RSIMP>
+     </IMPORT>
+     <DOCUMENTATION>
+      <RSFDO>
+       <PARAMETER>IM_ZOTC_BILLBACK</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Table type for Billback Enhancement</STEXT>
+      </RSFDO>
+     </DOCUMENTATION>
+    </item>
+    <item>
+     <FUNCNAME>ZOTC_0043_BILLBACK_PRICE_BILL</FUNCNAME>
+     <SHORT_TEXT>Billback Enh: Update Billing pricing at item level</SHORT_TEXT>
+     <IMPORT>
+      <RSIMP>
+       <PARAMETER>IM_XVBRP</PARAMETER>
+       <REFERENCE>X</REFERENCE>
+       <TYP>VBRPVB</TYP>
+      </RSIMP>
+      <RSIMP>
+       <PARAMETER>IM_MAAPV</PARAMETER>
+       <REFERENCE>X</REFERENCE>
+       <TYP>MAAPV</TYP>
+      </RSIMP>
+      <RSIMP>
+       <PARAMETER>IM_T_XVBRP</PARAMETER>
+       <REFERENCE>X</REFERENCE>
+       <TYP>VBRPVB_T</TYP>
+      </RSIMP>
+      <RSIMP>
+       <PARAMETER>IM_T_VBAP</PARAMETER>
+       <OPTIONAL>X</OPTIONAL>
+       <REFERENCE>X</REFERENCE>
+       <TYP>VA_VBAPVB_T</TYP>
+      </RSIMP>
+      <RSIMP>
+       <PARAMETER>IM_T_LIPS</PARAMETER>
+       <OPTIONAL>X</OPTIONAL>
+       <REFERENCE>X</REFERENCE>
+       <TYP>VA_LIPSVB_T</TYP>
+      </RSIMP>
+      <RSIMP>
+       <PARAMETER>IM_VBRK</PARAMETER>
+       <OPTIONAL>X</OPTIONAL>
+       <REFERENCE>X</REFERENCE>
+       <TYP>VBRK</TYP>
+      </RSIMP>
+     </IMPORT>
+     <CHANGING>
+      <RSCHA>
+       <PARAMETER>CHNG_TKOMP</PARAMETER>
+       <REFERENCE>X</REFERENCE>
+       <TYP>KOMP</TYP>
+      </RSCHA>
+     </CHANGING>
+     <DOCUMENTATION>
+      <RSFDO>
+       <PARAMETER>IM_XVBRP</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Document Structure for XVBAP/YVBAP</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>IM_MAAPV</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Material Master View: Sales Screen 1</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>IM_T_XVBRP</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Billing Item Data</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>IM_T_VBAP</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Sales Document: Item Data</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>IM_T_LIPS</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Table for Structure LIPSVB</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>IM_VBRK</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Billing Document: Header Data</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>CHNG_TKOMP</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Communication Item for Pricing</STEXT>
+      </RSFDO>
+     </DOCUMENTATION>
+    </item>
+    <item>
+     <FUNCNAME>ZOTC_0043_BILLBACK_PRICE_FM</FUNCNAME>
+     <SHORT_TEXT>Billback Enhancement</SHORT_TEXT>
+     <IMPORT>
+      <RSIMP>
+       <PARAMETER>IM_KUAGV</PARAMETER>
+       <REFERENCE>X</REFERENCE>
+       <TYP>KUAGV</TYP>
+      </RSIMP>
+      <RSIMP>
+       <PARAMETER>IM_KUWEV</PARAMETER>
+       <OPTIONAL>X</OPTIONAL>
+       <REFERENCE>X</REFERENCE>
+       <TYP>KUWEV</TYP>
+      </RSIMP>
+      <RSIMP>
+       <PARAMETER>IM_XVBAP</PARAMETER>
+       <OPTIONAL>X</OPTIONAL>
+       <REFERENCE>X</REFERENCE>
+       <TYP>VBAPVB</TYP>
+      </RSIMP>
+      <RSIMP>
+       <PARAMETER>IM_VBAK</PARAMETER>
+       <OPTIONAL>X</OPTIONAL>
+       <REFERENCE>X</REFERENCE>
+       <TYP>VBAK</TYP>
+      </RSIMP>
+      <RSIMP>
+       <PARAMETER>IM_XVBRP</PARAMETER>
+       <OPTIONAL>X</OPTIONAL>
+       <REFERENCE>X</REFERENCE>
+       <TYP>VBRP</TYP>
+      </RSIMP>
+     </IMPORT>
+     <CHANGING>
+      <RSCHA>
+       <PARAMETER>CHNG_TKOMK</PARAMETER>
+       <REFERENCE>X</REFERENCE>
+       <TYP>KOMK</TYP>
+      </RSCHA>
+     </CHANGING>
+     <DOCUMENTATION>
+      <RSFDO>
+       <PARAMETER>IM_KUAGV</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Sold-to Party View of the Customer Master Record</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>IM_KUWEV</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Ship-to Party&apos;s View of the Customer Master Record</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>IM_XVBAP</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Sales Document: Item Data</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>IM_VBAK</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Sales Document: Header Data</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>IM_XVBRP</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Billing Document: Item Data</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>CHNG_TKOMK</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Communication Header for Pricing</STEXT>
+      </RSFDO>
+     </DOCUMENTATION>
+    </item>
+    <item>
+     <FUNCNAME>ZOTC_0043_BILLBACK_PRICE_ITEM</FUNCNAME>
+     <SHORT_TEXT>Billback Pricing update at Item level</SHORT_TEXT>
+     <IMPORT>
+      <RSIMP>
+       <PARAMETER>IM_XVBAP</PARAMETER>
+       <REFERENCE>X</REFERENCE>
+       <TYP>VBAPVB</TYP>
+      </RSIMP>
+      <RSIMP>
+       <PARAMETER>IM_MAAPV</PARAMETER>
+       <REFERENCE>X</REFERENCE>
+       <TYP>MAAPV</TYP>
+      </RSIMP>
+      <RSIMP>
+       <PARAMETER>IM_VBKD</PARAMETER>
+       <OPTIONAL>X</OPTIONAL>
+       <REFERENCE>X</REFERENCE>
+       <TYP>VBKD</TYP>
+      </RSIMP>
+      <RSIMP>
+       <PARAMETER>IM_T_XVBAP</PARAMETER>
+       <REFERENCE>X</REFERENCE>
+       <TYP>VA_VBAPVB_T</TYP>
+      </RSIMP>
+      <RSIMP>
+       <PARAMETER>IM_MAEPV</PARAMETER>
+       <OPTIONAL>X</OPTIONAL>
+       <REFERENCE>X</REFERENCE>
+       <TYP>MAEPV</TYP>
+      </RSIMP>
+      <RSIMP>
+       <PARAMETER>IM_VBAP</PARAMETER>
+       <OPTIONAL>X</OPTIONAL>
+       <REFERENCE>X</REFERENCE>
+       <TYP>VBAP</TYP>
+      </RSIMP>
+      <RSIMP>
+       <PARAMETER>IM_VBAK</PARAMETER>
+       <OPTIONAL>X</OPTIONAL>
+       <REFERENCE>X</REFERENCE>
+       <TYP>VBAK</TYP>
+      </RSIMP>
+     </IMPORT>
+     <CHANGING>
+      <RSCHA>
+       <PARAMETER>CHNG_TKOMP</PARAMETER>
+       <REFERENCE>X</REFERENCE>
+       <TYP>KOMP</TYP>
+      </RSCHA>
+     </CHANGING>
+     <DOCUMENTATION>
+      <RSFDO>
+       <PARAMETER>IM_XVBAP</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Document Structure for XVBAP/YVBAP</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>IM_MAAPV</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Material Master View: Sales Screen 1</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>IM_VBKD</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Sales Document: Business Data</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>IM_T_XVBAP</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Table for structure VBAPVB</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>IM_MAEPV</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Material Master View: Sales 2</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>IM_VBAP</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Document Structure for VBAP</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>IM_VBAK</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Sales Document: Header Data</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>CHNG_TKOMP</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Communication Item for Pricing</STEXT>
+      </RSFDO>
+     </DOCUMENTATION>
+    </item>
+    <item>
+     <FUNCNAME>ZOTC_0043_BILLBACK_UPDATE_FM</FUNCNAME>
+     <SHORT_TEXT>FM to update Billback Process Control Table</SHORT_TEXT>
+     <IMPORT>
+      <RSIMP>
+       <PARAMETER>IM_VBRK</PARAMETER>
+       <REFERENCE>X</REFERENCE>
+       <TYP>VBRK</TYP>
+      </RSIMP>
+      <RSIMP>
+       <PARAMETER>IM_CVBRP</PARAMETER>
+       <REFERENCE>X</REFERENCE>
+       <TYP>VBRPVB_T</TYP>
+      </RSIMP>
+      <RSIMP>
+       <PARAMETER>IM_CKOMV</PARAMETER>
+       <REFERENCE>X</REFERENCE>
+       <TYP>KOMV_TAB</TYP>
+      </RSIMP>
+     </IMPORT>
+     <DOCUMENTATION>
+      <RSFDO>
+       <PARAMETER>IM_VBRK</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Billing Document: Header Data</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>IM_CVBRP</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Billing Item Data</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>IM_CKOMV</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Table type komv</STEXT>
+      </RSFDO>
+     </DOCUMENTATION>
+    </item>
+   </FUNCTIONS>
+  </asx:values>
+ </asx:abap>
+</abapGit>

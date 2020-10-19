@@ -1,0 +1,65 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<abapGit version="v1.0.0" serializer="LCL_OBJECT_SPRX" serializer_version="v1.0.0">
+ <asx:abap xmlns:asx="http://www.sap.com/abapxml" version="1.0">
+  <asx:values>
+   <PROXY_HEADER>
+    <item>
+     <OBJECT>TABL</OBJECT>
+     <OBJ_NAME>Z01OTC_MT_CPQPRICE</OBJ_NAME>
+     <OBJECT_M>TABL</OBJECT_M>
+     <OBJ_NAME_M>Z01OTC_MT_CPQPRICE</OBJ_NAME_M>
+     <HASH_ID>14479B1305CA8B0F2982CB626A95DA18F3C87A0F</HASH_ID>
+     <ID>&lt;message&gt; MT_CPQPrice http://bio-rad.com/OTC/ReceivePrice http://bio-rad.com/OTC/ReceivePrice</ID>
+     <IFR_GLOBAL>X</IFR_GLOBAL>
+     <IFR_TYPE>message</IFR_TYPE>
+     <IFR_NAME>MT_CPQPrice</IFR_NAME>
+     <IFR_NSPCE>http://bio-rad.com/OTC/ReceivePrice</IFR_NSPCE>
+     <IFR_GNSPCE>http://bio-rad.com/OTC/ReceivePrice</IFR_GNSPCE>
+     <GEN_VERS>0006</GEN_VERS>
+     <PREFIX>Z01OTC_</PREFIX>
+     <CATEGORY>ifmmessage</CATEGORY>
+     <X-ML_NSPCE>http://bio-rad.com/OTC/ReceivePrice</X-ML_NSPCE>
+     <X-ML_NAME>MT_CPQPrice</X-ML_NAME>
+     <VERSION_ID>f5ccb2ef86cc11e98c5f000001225726</VERSION_ID>
+    </item>
+   </PROXY_HEADER>
+   <PROXY_DATA>
+    <item>
+     <OBJECT>TABL</OBJECT>
+     <OBJ_NAME>Z01OTC_MT_CPQPRICE</OBJ_NAME>
+     <OBJECT1>FIEL</OBJECT1>
+     <OBJ_NAME1>MT_CPQPRICE</OBJ_NAME1>
+     <OBJECT2>FIEL</OBJECT2>
+     <OBJ_NAME2>MT_CPQPRICE</OBJ_NAME2>
+     <OBJECT_R>TABL</OBJECT_R>
+     <OBJ_NAME_R>Z01OTC_DT_CPQPRICE</OBJ_NAME_R>
+     <ID>&lt;part&gt; MT_CPQPrice &lt;message&gt; MT_CPQPrice http://bio-rad.com/OTC/ReceivePrice http://bio-rad.com/OTC/ReceivePrice</ID>
+     <IFR_TYPE>part</IFR_TYPE>
+     <IFR_NAME>MT_CPQPrice</IFR_NAME>
+     <IFR_SCALE>-2</IFR_SCALE>
+     <R3_TYPE>FIEL</R3_TYPE>
+     <R3_NAME>MT_CPQPRICE</R3_NAME>
+     <R3_SEQNUM>000001</R3_SEQNUM>
+    </item>
+    <item>
+     <OBJECT>TABL</OBJECT>
+     <OBJ_NAME>Z01OTC_MT_CPQPRICE</OBJ_NAME>
+     <OBJECT1>TABL</OBJECT1>
+     <OBJ_NAME1>Z01OTC_MT_CPQPRICE</OBJ_NAME1>
+     <OBJECT2>TABL</OBJECT2>
+     <OBJ_NAME2>Z01OTC_MT_CPQPRICE</OBJ_NAME2>
+     <ID>&lt;message&gt; MT_CPQPrice http://bio-rad.com/OTC/ReceivePrice http://bio-rad.com/OTC/ReceivePrice</ID>
+     <IFR_TYPE>message</IFR_TYPE>
+     <IFR_NAME>MT_CPQPrice</IFR_NAME>
+     <IFR_TEXT>OTC_IDD_0230_Price update to SAP: MT</IFR_TEXT>
+     <IFR_LANGU>EN</IFR_LANGU>
+     <IFR_SCALE>-2</IFR_SCALE>
+     <R3_TYPE>TABL</R3_TYPE>
+     <R3_NAME>Z01OTC_MT_CPQPRICE</R3_NAME>
+     <R3_TEXT>OTC_IDD_0230_Price update to SAP: MT</R3_TEXT>
+     <CATEGORY>ifmmessage</CATEGORY>
+    </item>
+   </PROXY_DATA>
+  </asx:values>
+ </asx:abap>
+</abapGit>

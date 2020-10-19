@@ -1,0 +1,65 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<abapGit version="v1.0.0" serializer="LCL_OBJECT_CLAS" serializer_version="v1.0.0">
+ <asx:abap xmlns:asx="http://www.sap.com/abapxml" version="1.0">
+  <asx:values>
+   <VSEOCLASS>
+    <CLSNAME>ZCL_IM_OTC_FDD_0067_DOWN_PAY</CLSNAME>
+    <LANGU>E</LANGU>
+    <STATE>1</STATE>
+    <CLSCCINCL>X</CLSCCINCL>
+    <FIXPT>X</FIXPT>
+    <UNICODE>X</UNICODE>
+   </VSEOCLASS>
+   <DESCRIPTIONS>
+    <SEOCOMPOTX>
+     <CLSNAME>ZCL_IM_OTC_FDD_0067_DOWN_PAY</CLSNAME>
+     <CMPNAME>ATTRV_FORM_FLIP</CMPNAME>
+     <LANGU>1</LANGU>
+     <DESCRIPT>Indicator for fomr flip</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>ZCL_IM_OTC_FDD_0067_DOWN_PAY</CLSNAME>
+     <CMPNAME>ATTRV_FORM_FLIP</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Indicator for fomr flip</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>ZCL_IM_OTC_FDD_0067_DOWN_PAY</CLSNAME>
+     <CMPNAME>ATTRV_FORM_FLIP</CMPNAME>
+     <LANGU>F</LANGU>
+     <DESCRIPT>Indicator for fomr flip</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>ZCL_IM_OTC_FDD_0067_DOWN_PAY</CLSNAME>
+     <CMPNAME>ATTRV_FORM_FLIP</CMPNAME>
+     <LANGU>J</LANGU>
+     <DESCRIPT>Indicator for fomr flip</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>ZCL_IM_OTC_FDD_0067_DOWN_PAY</CLSNAME>
+     <CMPNAME>ATTRV_FORM_FLIP</CMPNAME>
+     <LANGU>N</LANGU>
+     <DESCRIPT>Indicator for fomr flip</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>ZCL_IM_OTC_FDD_0067_DOWN_PAY</CLSNAME>
+     <CMPNAME>ATTRV_FORM_FLIP</CMPNAME>
+     <LANGU>P</LANGU>
+     <DESCRIPT>Indicator for fomr flip</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>ZCL_IM_OTC_FDD_0067_DOWN_PAY</CLSNAME>
+     <CMPNAME>ATTRV_FORM_FLIP</CMPNAME>
+     <LANGU>R</LANGU>
+     <DESCRIPT>Indicator for fomr flip</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>ZCL_IM_OTC_FDD_0067_DOWN_PAY</CLSNAME>
+     <CMPNAME>ATTRV_FORM_FLIP</CMPNAME>
+     <LANGU>S</LANGU>
+     <DESCRIPT>Indicator for fomr flip</DESCRIPT>
+    </SEOCOMPOTX>
+   </DESCRIPTIONS>
+  </asx:values>
+ </asx:abap>
+</abapGit>

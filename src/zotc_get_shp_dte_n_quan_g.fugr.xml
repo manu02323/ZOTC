@@ -1,0 +1,53 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<abapGit version="v1.0.0" serializer="LCL_OBJECT_FUGR" serializer_version="v1.0.0">
+ <asx:abap xmlns:asx="http://www.sap.com/abapxml" version="1.0">
+  <asx:values>
+   <AREAT>Get Delivery date and quantity</AREAT>
+   <INCLUDES>
+    <SOBJ_NAME>LZOTC_GET_SHP_DTE_N_QUAN_GF01</SOBJ_NAME>
+    <SOBJ_NAME>LZOTC_GET_SHP_DTE_N_QUAN_GTOP</SOBJ_NAME>
+    <SOBJ_NAME>SAPLZOTC_GET_SHP_DTE_N_QUAN_G</SOBJ_NAME>
+   </INCLUDES>
+   <FUNCTIONS>
+    <item>
+     <FUNCNAME>ZOTC_GET_SHP_DTE_N_QUAN_FM</FUNCNAME>
+     <SHORT_TEXT>Get Delivery date and quantity</SHORT_TEXT>
+     <IMPORT>
+      <RSIMP>
+       <PARAMETER>IM_SALS_ORDER</PARAMETER>
+       <TYP>VBELN</TYP>
+      </RSIMP>
+     </IMPORT>
+     <EXPORT>
+      <RSEXP>
+       <PARAMETER>EX_DELV_DATA</PARAMETER>
+       <TYP>ZOTC_DELV_DATA</TYP>
+      </RSEXP>
+      <RSEXP>
+       <PARAMETER>EX_FLAG</PARAMETER>
+       <REFERENCE>X</REFERENCE>
+       <TYP>CHAR1</TYP>
+      </RSEXP>
+     </EXPORT>
+     <DOCUMENTATION>
+      <RSFDO>
+       <PARAMETER>IM_SALS_ORDER</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Sales and Distribution Document Number</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>EX_DELV_DATA</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Table type of ZZGET_DELV_DATA</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>EX_FLAG</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Single-Character Indicator</STEXT>
+      </RSFDO>
+     </DOCUMENTATION>
+    </item>
+   </FUNCTIONS>
+  </asx:values>
+ </asx:abap>
+</abapGit>

@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<abapGit version="v1.0.0" serializer="LCL_OBJECT_ENHO" serializer_version="v1.0.0">
+ <asx:abap xmlns:asx="http://www.sap.com/abapxml" version="1.0">
+  <asx:values>
+   <TOOL>BADI_IMPL</TOOL>
+   <SHORTTEXT>Implementation for Determine Delivery Type</SHORTTEXT>
+   <SPOT_NAME>LE_SHP_DELIVERY_PROC</SPOT_NAME>
+   <IMPL>
+    <ENH_BADI_IMPL_DATA>
+     <SPOT_NAME>LE_SHP_DELIVERY_PROC</SPOT_NAME>
+     <BADI_NAME>LE_SHP_DELIVERY_PROC</BADI_NAME>
+     <IMPL_NAME>ZCL_IM_OTC_DET_DELTY</IMPL_NAME>
+     <IMPL_CLASS>ZCL_IM_CL_IM_OTC_DET_DELTY</IMPL_CLASS>
+     <ACTIVE>X</ACTIVE>
+     <IMPL_SHORTTEXT>Implementation for Determine Delivery Type</IMPL_SHORTTEXT>
+     <IMPL_SHORTTEXT_ID>005056B342CF1EE48AD8094306BEEBC1</IMPL_SHORTTEXT_ID>
+     <MIG_BADI_IMPL>ZCL_IM_OTC_DET_DELTY</MIG_BADI_IMPL>
+    </ENH_BADI_IMPL_DATA>
+   </IMPL>
+  </asx:values>
+ </asx:abap>
+</abapGit>

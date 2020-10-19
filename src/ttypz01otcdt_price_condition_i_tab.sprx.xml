@@ -1,0 +1,45 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<abapGit version="v1.0.0" serializer="LCL_OBJECT_SPRX" serializer_version="v1.0.0">
+ <asx:abap xmlns:asx="http://www.sap.com/abapxml" version="1.0">
+  <asx:values>
+   <PROXY_HEADER>
+    <item>
+     <OBJECT>TTYP</OBJECT>
+     <OBJ_NAME>Z01OTCDT_PRICE_CONDITION_I_TAB</OBJ_NAME>
+     <OBJECT_M>TABL</OBJECT_M>
+     <OBJ_NAME_M>Z01OTCDT_PRICE_CONDITION</OBJ_NAME_M>
+     <HASH_ID>BF67FD661686F93E1D9BA7755D562ED65A1A2B75</HASH_ID>
+     <ID>TableOf&lt;type&gt; Item &lt;element&gt; Item &lt;type&gt; DT_PriceCondition http://bio-rad.com/OTC/TransferPriceLoad http://bio-rad.com/OTC/TransferPriceLoad</ID>
+     <IFR_TYPE>TableOftype</IFR_TYPE>
+     <IFR_NAME>Item</IFR_NAME>
+     <IFR_NSPCE>http://bio-rad.com/OTC/TransferPriceLoad</IFR_NSPCE>
+     <IFR_GNSPCE>http://bio-rad.com/OTC/TransferPriceLoad</IFR_GNSPCE>
+     <GEN_VERS>0005</GEN_VERS>
+     <PREFIX>Z01OTC</PREFIX>
+     <CATEGORY>ifmtypedef</CATEGORY>
+    </item>
+   </PROXY_HEADER>
+   <PROXY_DATA>
+    <item>
+     <OBJECT>TTYP</OBJECT>
+     <OBJ_NAME>Z01OTCDT_PRICE_CONDITION_I_TAB</OBJ_NAME>
+     <OBJECT1>TTYP</OBJECT1>
+     <OBJ_NAME1>Z01OTCDT_PRICE_CONDITION_I_TAB</OBJ_NAME1>
+     <OBJECT2>TTYP</OBJECT2>
+     <OBJ_NAME2>Z01OTCDT_PRICE_CONDITION_I_TAB</OBJ_NAME2>
+     <OBJECT_R>TABL</OBJECT_R>
+     <OBJ_NAME_R>Z01OTCDT_PRICE_CONDITION_ITEM</OBJ_NAME_R>
+     <ID>TableOf&lt;type&gt; Item &lt;element&gt; Item &lt;type&gt; DT_PriceCondition http://bio-rad.com/OTC/TransferPriceLoad http://bio-rad.com/OTC/TransferPriceLoad</ID>
+     <IFR_TYPE>TableOftype</IFR_TYPE>
+     <IFR_NAME>Item</IFR_NAME>
+     <IFR_LANGU>EN</IFR_LANGU>
+     <IFR_SCALE>-2</IFR_SCALE>
+     <R3_TYPE>TTYP</R3_TYPE>
+     <R3_NAME>Z01OTCDT_PRICE_CONDITION_I_TAB</R3_NAME>
+     <R3_TEXT>Proxy Table Type (generated)</R3_TEXT>
+     <CATEGORY>ifmtypedef</CATEGORY>
+    </item>
+   </PROXY_DATA>
+  </asx:values>
+ </asx:abap>
+</abapGit>

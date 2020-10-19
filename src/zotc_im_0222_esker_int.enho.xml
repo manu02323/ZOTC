@@ -1,0 +1,87 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<abapGit version="v1.0.0" serializer="LCL_OBJECT_ENHO" serializer_version="v1.0.0">
+ <asx:abap xmlns:asx="http://www.sap.com/abapxml" version="1.0">
+  <asx:values>
+   <TOOL>HOOK_IMPL</TOOL>
+   <SHORTTEXT>Linking Contract for ESKER INterface</SHORTTEXT>
+   <ORIGINAL_OBJECT>
+    <PGMID>R3TR</PGMID>
+    <ORG_OBJ_TYPE>PROG</ORG_OBJ_TYPE>
+    <ORG_OBJ_NAME>SAPMV45A</ORG_OBJ_NAME>
+    <ORG_MAIN_TYPE>PROG</ORG_MAIN_TYPE>
+    <ORG_MAIN_NAME>SAPMV45A</ORG_MAIN_NAME>
+    <PROGRAMNAME>SAPMV45A</PROGRAMNAME>
+   </ORIGINAL_OBJECT>
+   <ENHANCEMENTS>
+    <ENH_HOOK_IMPL>
+     <PROGRAMNAME>SAPMV45A</PROGRAMNAME>
+     <ENHMODE>D</ENHMODE>
+     <FULL_NAME>\PR:SAPMV45A\FO:MAT_AUF_HINWEIS_PRUEFEN\SE:BEGIN\EI</FULL_NAME>
+     <SOURCE>
+      <item>**********************************************************************</item>
+      <item>*Imp. Enhnacement   : ZOTC_IM_0222_ESKER_INT *</item>
+      <item>*Title      : ESKER Order linking with COntract                       *</item>
+      <item>*Developer  : Manoj Thatha/ Raghav Sureddi                            *</item>
+      <item>*Object type: Interface                                               *</item>
+      <item>*SAP Release: SAP ECC 6.0                                             *</item>
+      <item>*---------------------------------------------------------------------*</item>
+      <item>*WRICEF ID: OTC_IDD_0222_SAP                                          *</item>
+      <item>*---------------------------------------------------------------------*</item>
+      <item>*Description: Create Sales Order Async                                *</item>
+      <item>*---------------------------------------------------------------------*</item>
+      <item>*MODIFICATION HISTORY:</item>
+      <item>*=====================================================================*</item>
+      <item>*Date           User        Transport       Description</item>
+      <item>*=========== ============== ============== ===========================*</item>
+      <item>*05-Apr-2019 ASK /E1DK940993     Defect 9035 Esker order not linking</item>
+      <item>*                                to ZRRC contract</item>
+      <item/>
+      <item/>
+      <item>DATA : lv_esker  TYPE flag.                           &quot; Defect 9035</item>
+      <item/>
+      <item>* In case of ESKER interface we should clear the flag IF_NO_MESSAGES_DOC</item>
+      <item>* so that BADI in EDD-0086 triggers to link contract no at item level.</item>
+      <item>IMPORT lv_esker TO lv_esker FROM MEMORY ID &apos;ESKER&apos;.</item>
+      <item>if lv_esker = abap_true.</item>
+      <item>CLEAR gf_no_messages_doc.</item>
+      <item>ENDIF.</item>
+     </SOURCE>
+    </ENH_HOOK_IMPL>
+   </ENHANCEMENTS>
+   <SPACES>
+    <item>
+     <FULL_NAME>\PR:SAPMV45A\FO:MAT_AUF_HINWEIS_PRUEFEN\SE:BEGIN\EI</FULL_NAME>
+     <SPACES>
+      <item>0</item>
+      <item>0</item>
+      <item>0</item>
+      <item>0</item>
+      <item>0</item>
+      <item>0</item>
+      <item>0</item>
+      <item>0</item>
+      <item>0</item>
+      <item>0</item>
+      <item>0</item>
+      <item>0</item>
+      <item>0</item>
+      <item>0</item>
+      <item>0</item>
+      <item>0</item>
+      <item>0</item>
+      <item>0</item>
+      <item>0</item>
+      <item>0</item>
+      <item>0</item>
+      <item>0</item>
+      <item>0</item>
+      <item>0</item>
+      <item>0</item>
+      <item>3</item>
+      <item>0</item>
+     </SPACES>
+    </item>
+   </SPACES>
+  </asx:values>
+ </asx:abap>
+</abapGit>

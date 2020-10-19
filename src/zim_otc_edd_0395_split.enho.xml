@@ -1,0 +1,73 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<abapGit version="v1.0.0" serializer="LCL_OBJECT_ENHO" serializer_version="v1.0.0">
+ <asx:abap xmlns:asx="http://www.sap.com/abapxml" version="1.0">
+  <asx:values>
+   <TOOL>HOOK_IMPL</TOOL>
+   <SHORTTEXT>Gross weight calculation when invoice split</SHORTTEXT>
+   <ORIGINAL_OBJECT>
+    <PGMID>R3TR</PGMID>
+    <ORG_OBJ_TYPE>FUGR</ORG_OBJ_TYPE>
+    <ORG_OBJ_NAME>V60A</ORG_OBJ_NAME>
+    <ORG_MAIN_TYPE>FUGR</ORG_MAIN_TYPE>
+    <ORG_MAIN_NAME>V60A</ORG_MAIN_NAME>
+    <PROGRAMNAME>SAPLV60A</PROGRAMNAME>
+   </ORIGINAL_OBJECT>
+   <ENHANCEMENTS>
+    <ENH_HOOK_IMPL>
+     <PROGRAMNAME>SAPLV60A</PROGRAMNAME>
+     <ENHMODE>D</ENHMODE>
+     <FULL_NAME>\PR:SAPLV60A\FO:USEREXIT_PRICING_PREPARE_TKOMP\SE:BEGIN\EI</FULL_NAME>
+     <SOURCE>
+      <item>* EHNO       :  ZIM_OTC_EDD_0395_SPLIT    (Enh. Implementation)         *</item>
+      <item>* TITLE      :  Populate the Billing item gross weight based on value  *</item>
+      <item>*               from EWM HU weights and Delivery weights               *</item>
+      <item>* DEVELOPER  :  Raghav Sureddi                                         *</item>
+      <item>* OBJECT TYPE:  ENHANCEMENT                                            *</item>
+      <item>* SAP RELEASE:  SAP ECC 6.0                                            *</item>
+      <item>*----------------------------------------------------------------------*</item>
+      <item>* WRICEF ID:  OTC_EDD_0395                                            *</item>
+      <item>*----------------------------------------------------------------------*</item>
+      <item>* DESCRIPTION: Populate the Billing item gross weight for Split invoice*</item>
+      <item>*                                                                      *</item>
+      <item>*----------------------------------------------------------------------*</item>
+      <item>* MODIFICATION HISTORY:                                                *</item>
+      <item>*======================================================================*</item>
+      <item>* DATE         USER    TRANSPORT    DESCRIPTION                        *</item>
+      <item>* =========== ======== ========== =====================================*</item>
+      <item>* 12/Oct/2019 U033876  E2DK927499  Billing Item gross weight for split *</item>
+      <item>*======================================================================*</item>
+      <item/>
+      <item>INCLUDE ZOTCN0395O_EDD_SPLIT_INV.</item>
+     </SOURCE>
+    </ENH_HOOK_IMPL>
+   </ENHANCEMENTS>
+   <SPACES>
+    <item>
+     <FULL_NAME>\PR:SAPLV60A\FO:USEREXIT_PRICING_PREPARE_TKOMP\SE:BEGIN\EI</FULL_NAME>
+     <SPACES>
+      <item>0</item>
+      <item>0</item>
+      <item>0</item>
+      <item>0</item>
+      <item>0</item>
+      <item>0</item>
+      <item>0</item>
+      <item>0</item>
+      <item>0</item>
+      <item>0</item>
+      <item>0</item>
+      <item>0</item>
+      <item>0</item>
+      <item>0</item>
+      <item>0</item>
+      <item>0</item>
+      <item>0</item>
+      <item>0</item>
+      <item>0</item>
+      <item>2</item>
+     </SPACES>
+    </item>
+   </SPACES>
+  </asx:values>
+ </asx:abap>
+</abapGit>

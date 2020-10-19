@@ -1,0 +1,100 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<abapGit version="v1.0.0" serializer="LCL_OBJECT_DTEL" serializer_version="v1.0.0">
+ <asx:abap xmlns:asx="http://www.sap.com/abapxml" version="1.0">
+  <asx:values>
+   <DD04V>
+    <ROLLNAME>Z_DOCREF</ROLLNAME>
+    <DDLANGUAGE>E</DDLANGUAGE>
+    <DOMNAME>Z_DOCREF</DOMNAME>
+    <LOGFLAG>X</LOGFLAG>
+    <HEADLEN>14</HEADLEN>
+    <SCRLEN1>08</SCRLEN1>
+    <SCRLEN2>14</SCRLEN2>
+    <SCRLEN3>14</SCRLEN3>
+    <DDTEXT>Legacy Doc Ref</DDTEXT>
+    <REPTEXT>Legacy Doc Ref</REPTEXT>
+    <SCRTEXT_S>Doc. Ref</SCRTEXT_S>
+    <SCRTEXT_M>Legacy Doc Ref</SCRTEXT_M>
+    <SCRTEXT_L>Legacy Doc Ref</SCRTEXT_L>
+    <DTELMASTER>E</DTELMASTER>
+    <REFKIND>D</REFKIND>
+   </DD04V>
+   <I18N_LANGS>
+    <LANGU>1</LANGU>
+    <LANGU>D</LANGU>
+    <LANGU>F</LANGU>
+    <LANGU>J</LANGU>
+    <LANGU>N</LANGU>
+    <LANGU>P</LANGU>
+    <LANGU>R</LANGU>
+    <LANGU>S</LANGU>
+   </I18N_LANGS>
+   <DD04_TEXTS>
+    <item>
+     <DDLANGUAGE>1</DDLANGUAGE>
+     <DDTEXT>Legacy Doc Ref</DDTEXT>
+     <REPTEXT>Legacy Doc Ref</REPTEXT>
+     <SCRTEXT_S>Doc. Ref</SCRTEXT_S>
+     <SCRTEXT_M>Legacy Doc Ref</SCRTEXT_M>
+     <SCRTEXT_L>Legacy Doc Ref</SCRTEXT_L>
+    </item>
+    <item>
+     <DDLANGUAGE>D</DDLANGUAGE>
+     <DDTEXT>Dok. Ref. Altsystem</DDTEXT>
+     <REPTEXT>Dok.Ref.Altsys</REPTEXT>
+     <SCRTEXT_S>Dok. Ref</SCRTEXT_S>
+     <SCRTEXT_M>Dok.Ref.Altsys</SCRTEXT_M>
+     <SCRTEXT_L>Dok.Ref.Altsys</SCRTEXT_L>
+    </item>
+    <item>
+     <DDLANGUAGE>F</DDLANGUAGE>
+     <DDTEXT>Référence du doc legacy system</DDTEXT>
+     <REPTEXT>legacy Ref doc</REPTEXT>
+     <SCRTEXT_S>Ref doc</SCRTEXT_S>
+     <SCRTEXT_M>legacy Ref doc</SCRTEXT_M>
+     <SCRTEXT_L>legacy Ref doc</SCRTEXT_L>
+    </item>
+    <item>
+     <DDLANGUAGE>J</DDLANGUAGE>
+     <DDTEXT>Legacy Doc Ref</DDTEXT>
+     <REPTEXT>Legacy Doc Ref</REPTEXT>
+     <SCRTEXT_S>Doc. Ref</SCRTEXT_S>
+     <SCRTEXT_M>Legacy Doc Ref</SCRTEXT_M>
+     <SCRTEXT_L>Legacy Doc Ref</SCRTEXT_L>
+    </item>
+    <item>
+     <DDLANGUAGE>N</DDLANGUAGE>
+     <DDTEXT>Legacy Doc Ref</DDTEXT>
+     <REPTEXT>Legacy Doc Ref</REPTEXT>
+     <SCRTEXT_S>Doc. Ref</SCRTEXT_S>
+     <SCRTEXT_M>Legacy Doc Ref</SCRTEXT_M>
+     <SCRTEXT_L>Legacy Doc Ref</SCRTEXT_L>
+    </item>
+    <item>
+     <DDLANGUAGE>P</DDLANGUAGE>
+     <DDTEXT>Legacy Doc Ref</DDTEXT>
+     <REPTEXT>Legacy Doc Ref</REPTEXT>
+     <SCRTEXT_S>Doc. Ref</SCRTEXT_S>
+     <SCRTEXT_M>Legacy Doc Ref</SCRTEXT_M>
+     <SCRTEXT_L>Legacy Doc Ref</SCRTEXT_L>
+    </item>
+    <item>
+     <DDLANGUAGE>R</DDLANGUAGE>
+     <DDTEXT>Legacy Doc Ref</DDTEXT>
+     <REPTEXT>Legacy Doc Ref</REPTEXT>
+     <SCRTEXT_S>Doc. Ref</SCRTEXT_S>
+     <SCRTEXT_M>Legacy Doc Ref</SCRTEXT_M>
+     <SCRTEXT_L>Legacy Doc Ref</SCRTEXT_L>
+    </item>
+    <item>
+     <DDLANGUAGE>S</DDLANGUAGE>
+     <DDTEXT>Legacy Doc Ref</DDTEXT>
+     <REPTEXT>Legacy Doc Ref</REPTEXT>
+     <SCRTEXT_S>Doc. Ref</SCRTEXT_S>
+     <SCRTEXT_M>Legacy Doc Ref</SCRTEXT_M>
+     <SCRTEXT_L>Legacy Doc Ref</SCRTEXT_L>
+    </item>
+   </DD04_TEXTS>
+  </asx:values>
+ </asx:abap>
+</abapGit>

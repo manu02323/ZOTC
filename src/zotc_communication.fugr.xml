@@ -1,0 +1,165 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<abapGit version="v1.0.0" serializer="LCL_OBJECT_FUGR" serializer_version="v1.0.0">
+ <asx:abap xmlns:asx="http://www.sap.com/abapxml" version="1.0">
+  <asx:values>
+   <AREAT>External Communication - Mail/Fax/Print</AREAT>
+   <INCLUDES>
+    <SOBJ_NAME>LZOTC_COMMUNICATIONF01</SOBJ_NAME>
+    <SOBJ_NAME>LZOTC_COMMUNICATIONTOP</SOBJ_NAME>
+    <SOBJ_NAME>SAPLZOTC_COMMUNICATION</SOBJ_NAME>
+   </INCLUDES>
+   <FUNCTIONS>
+    <item>
+     <FUNCNAME>ZOTC_STANDARD_COMMUNICATION</FUNCNAME>
+     <SHORT_TEXT>External Communication for Mail/Fax/Print</SHORT_TEXT>
+     <IMPORT>
+      <RSIMP>
+       <PARAMETER>IM_ADRNR</PARAMETER>
+       <REFERENCE>X</REFERENCE>
+       <TYP>ADRNR</TYP>
+      </RSIMP>
+      <RSIMP>
+       <PARAMETER>IM_SUBJECT</PARAMETER>
+       <OPTIONAL>X</OPTIONAL>
+       <REFERENCE>X</REFERENCE>
+       <TYP>SO_OBJ_DES</TYP>
+      </RSIMP>
+      <RSIMP>
+       <PARAMETER>IM_FORM_OUTPUT</PARAMETER>
+       <REFERENCE>X</REFERENCE>
+       <TYP>FPFORMOUTPUT</TYP>
+      </RSIMP>
+      <RSIMP>
+       <PARAMETER>IM_T_TEXT</PARAMETER>
+       <OPTIONAL>X</OPTIONAL>
+       <REFERENCE>X</REFERENCE>
+       <TYP>BCSY_TEXT</TYP>
+      </RSIMP>
+      <RSIMP>
+       <PARAMETER>IM_ATTACHMENT_NAME</PARAMETER>
+       <OPTIONAL>X</OPTIONAL>
+       <REFERENCE>X</REFERENCE>
+       <TYP>SOOD-OBJDES</TYP>
+      </RSIMP>
+      <RSIMP>
+       <PARAMETER>IM_TLFXS</PARAMETER>
+       <OPTIONAL>X</OPTIONAL>
+       <REFERENCE>X</REFERENCE>
+       <TYP>TLFXS</TYP>
+      </RSIMP>
+      <RSIMP>
+       <PARAMETER>IM_INTAD</PARAMETER>
+       <OPTIONAL>X</OPTIONAL>
+       <REFERENCE>X</REFERENCE>
+       <TYP>INTAD</TYP>
+      </RSIMP>
+      <RSIMP>
+       <PARAMETER>IM_ADRNR_SENDER</PARAMETER>
+       <OPTIONAL>X</OPTIONAL>
+       <REFERENCE>X</REFERENCE>
+       <TYP>ADRNR</TYP>
+      </RSIMP>
+     </IMPORT>
+     <EXPORT>
+      <RSEXP>
+       <PARAMETER>EX_STATUS</PARAMETER>
+       <REFERENCE>X</REFERENCE>
+       <TYP>STRING</TYP>
+      </RSEXP>
+      <RSEXP>
+       <PARAMETER>EX_PRINT_DOC</PARAMETER>
+       <REFERENCE>X</REFERENCE>
+       <TYP>BOOLEAN</TYP>
+      </RSEXP>
+     </EXPORT>
+     <EXCEPTION>
+      <RSEXC>
+       <EXCEPTION>NO_EMAIL_ADDRESS</EXCEPTION>
+      </RSEXC>
+      <RSEXC>
+       <EXCEPTION>NO_FAX_NUMBER</EXCEPTION>
+      </RSEXC>
+      <RSEXC>
+       <EXCEPTION>MAIL_FAILURE</EXCEPTION>
+      </RSEXC>
+      <RSEXC>
+       <EXCEPTION>FAX_FAILURE</EXCEPTION>
+      </RSEXC>
+     </EXCEPTION>
+     <DOCUMENTATION>
+      <RSFDO>
+       <PARAMETER>IM_ADRNR</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Address No.</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>IM_SUBJECT</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Mail Subject</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>IM_FORM_OUTPUT</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Form Output (PDF, PDL)</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>IM_T_TEXT</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Text Content</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>IM_ATTACHMENT_NAME</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Short description of contents</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>IM_TLFXS</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Accounting clerk&apos;s fax number at the customer/vendor</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>IM_INTAD</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Internet address of partner company clerk</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>IM_ADRNR_SENDER</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Address</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>EX_STATUS</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Document Status</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>EX_PRINT_DOC</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Print Flag</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>NO_EMAIL_ADDRESS</PARAMETER>
+       <KIND>X</KIND>
+       <STEXT>E-mail address not maintained</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>NO_FAX_NUMBER</PARAMETER>
+       <KIND>X</KIND>
+       <STEXT>Fax number not maintained</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>MAIL_FAILURE</PARAMETER>
+       <KIND>X</KIND>
+       <STEXT>Mail sending failed</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>FAX_FAILURE</PARAMETER>
+       <KIND>X</KIND>
+       <STEXT>Fax sending failed</STEXT>
+      </RSFDO>
+     </DOCUMENTATION>
+    </item>
+   </FUNCTIONS>
+  </asx:values>
+ </asx:abap>
+</abapGit>

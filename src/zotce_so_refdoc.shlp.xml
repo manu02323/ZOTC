@@ -1,0 +1,40 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<abapGit version="v1.0.0" serializer="LCL_OBJECT_SHLP" serializer_version="v1.0.0">
+ <asx:abap xmlns:asx="http://www.sap.com/abapxml" version="1.0">
+  <asx:values>
+   <DD30V>
+    <SHLPNAME>ZOTCE_SO_REFDOC</SHLPNAME>
+    <DDLANGUAGE>E</DDLANGUAGE>
+    <DDTEXT>Sales document according to Legacy Doc Ref</DDTEXT>
+    <ISSIMPLE>X</ISSIMPLE>
+    <SELMTYPE>F</SELMTYPE>
+    <SELMEXIT>ZOTC_F4IF_SHLP_EXIT_DOCREF</SELMEXIT>
+    <HOTKEY>Z</HOTKEY>
+    <DIALOGTYPE>C</DIALOGTYPE>
+   </DD30V>
+   <DD32P_TABLE>
+    <DD32P>
+     <SHLPNAME>ZOTCE_SO_REFDOC</SHLPNAME>
+     <FIELDNAME>VBELN</FIELDNAME>
+     <FLPOSITION>0001</FLPOSITION>
+     <ROLLNAME>VBELN</ROLLNAME>
+     <SHLPOUTPUT>X</SHLPOUTPUT>
+     <SHLPSELPOS>02</SHLPSELPOS>
+     <SHLPLISPOS>02</SHLPLISPOS>
+     <ROLLCHANGE>N</ROLLCHANGE>
+     <SCRLEN3>20</SCRLEN3>
+    </DD32P>
+    <DD32P>
+     <SHLPNAME>ZOTCE_SO_REFDOC</SHLPNAME>
+     <FIELDNAME>ZZDOCREF</FIELDNAME>
+     <FLPOSITION>0002</FLPOSITION>
+     <ROLLNAME>Z_DOCREF</ROLLNAME>
+     <SHLPSELPOS>01</SHLPSELPOS>
+     <SHLPLISPOS>01</SHLPLISPOS>
+     <ROLLCHANGE>N</ROLLCHANGE>
+     <SCRLEN3>14</SCRLEN3>
+    </DD32P>
+   </DD32P_TABLE>
+  </asx:values>
+ </asx:abap>
+</abapGit>

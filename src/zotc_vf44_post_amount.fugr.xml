@@ -1,0 +1,145 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<abapGit version="v1.0.0" serializer="LCL_OBJECT_FUGR" serializer_version="v1.0.0">
+ <asx:abap xmlns:asx="http://www.sap.com/abapxml" version="1.0">
+  <asx:values>
+   <AREAT>to include billing quantities in Stock</AREAT>
+   <INCLUDES>
+    <SOBJ_NAME>LZOTC_VF44_POST_AMOUNTTOP</SOBJ_NAME>
+    <SOBJ_NAME>SAPLZOTC_VF44_POST_AMOUNT</SOBJ_NAME>
+   </INCLUDES>
+   <FUNCTIONS>
+    <item>
+     <FUNCNAME>ZOTC_0337_BILLQUAN_00503110</FUNCNAME>
+     <SHORT_TEXT>D3_OTC_EDD_0337_Interface for BTE 00503110</SHORT_TEXT>
+     <TABLES>
+      <RSTBL>
+       <PARAMETER>FIT_ACCHD</PARAMETER>
+       <DBSTRUCT>ACCHD</DBSTRUCT>
+      </RSTBL>
+      <RSTBL>
+       <PARAMETER>FIT_ACCCR</PARAMETER>
+       <DBSTRUCT>ACCCR</DBSTRUCT>
+      </RSTBL>
+      <RSTBL>
+       <PARAMETER>FIT_ACCIT</PARAMETER>
+       <DBSTRUCT>ACCIT</DBSTRUCT>
+      </RSTBL>
+     </TABLES>
+     <DOCUMENTATION>
+      <RSFDO>
+       <PARAMETER>FIT_ACCHD</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Interface to Accounting: Header Information</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>FIT_ACCCR</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Accounting Interface: Currency Information</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>FIT_ACCIT</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Accounting Interface: Item Information</STEXT>
+      </RSFDO>
+     </DOCUMENTATION>
+    </item>
+    <item>
+     <FUNCNAME>ZOTC_0337_BILLQUAN_00503114</FUNCNAME>
+     <SHORT_TEXT>D3_OTC_EDD_0337_Interface for BTE 00503114</SHORT_TEXT>
+     <IMPORT>
+      <RSIMP>
+       <PARAMETER>FIS_CALLER</PARAMETER>
+       <DEFAULT>SPACE</DEFAULT>
+       <OPTIONAL>X</OPTIONAL>
+       <REFERENCE>X</REFERENCE>
+       <TYP>CHAR1</TYP>
+      </RSIMP>
+      <RSIMP>
+       <PARAMETER>FIS_VBREVK</PARAMETER>
+       <OPTIONAL>X</OPTIONAL>
+       <REFERENCE>X</REFERENCE>
+       <TYP>VBREVKVB</TYP>
+      </RSIMP>
+      <RSIMP>
+       <PARAMETER>FIS_VBREVE</PARAMETER>
+       <OPTIONAL>X</OPTIONAL>
+       <REFERENCE>X</REFERENCE>
+       <TYP>VBREVEVB</TYP>
+      </RSIMP>
+      <RSIMP>
+       <PARAMETER>FIS_VBREVR</PARAMETER>
+       <OPTIONAL>X</OPTIONAL>
+       <REFERENCE>X</REFERENCE>
+       <TYP>VBREVRVB</TYP>
+      </RSIMP>
+     </IMPORT>
+     <CHANGING>
+      <RSCHA>
+       <PARAMETER>FCF_CHANGE</PARAMETER>
+       <DEFAULT>SPACE</DEFAULT>
+       <REFERENCE>X</REFERENCE>
+       <TYP>C</TYP>
+      </RSCHA>
+      <RSCHA>
+       <PARAMETER>FCS_ACCIT</PARAMETER>
+       <REFERENCE>X</REFERENCE>
+       <TYP>ACCIT</TYP>
+      </RSCHA>
+      <RSCHA>
+       <PARAMETER>FCS_ACCCR</PARAMETER>
+       <REFERENCE>X</REFERENCE>
+       <TYP>ACCCR</TYP>
+      </RSCHA>
+      <RSCHA>
+       <PARAMETER>FCF_BUDAT</PARAMETER>
+       <REFERENCE>X</REFERENCE>
+       <TYP>WWERT_D</TYP>
+      </RSCHA>
+     </CHANGING>
+     <DOCUMENTATION>
+      <RSFDO>
+       <PARAMETER>FIS_CALLER</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Changing Flag</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>FIS_VBREVK</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Revenue Recognition: Reference structure for XVBREVK/YVBREVK</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>FIS_VBREVE</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Revenue Recognition: Reference structure for XVBREVE/YVBREVE</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>FIS_VBREVR</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Revenue Recognition: Reference structure for XVBREVR/YVBREVR</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>FCF_CHANGE</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Changing Flag</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>FCS_ACCIT</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Interface to Accounting item information</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>FCS_ACCCR</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Accounting Interface: Currency Information</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>FCF_BUDAT</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Translation Date</STEXT>
+      </RSFDO>
+     </DOCUMENTATION>
+    </item>
+   </FUNCTIONS>
+  </asx:values>
+ </asx:abap>
+</abapGit>

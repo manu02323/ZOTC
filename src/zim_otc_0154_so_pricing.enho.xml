@@ -1,0 +1,233 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<abapGit version="v1.0.0" serializer="LCL_OBJECT_ENHO" serializer_version="v1.0.0">
+ <asx:abap xmlns:asx="http://www.sap.com/abapxml" version="1.0">
+  <asx:values>
+   <TOOL>HOOK_IMPL</TOOL>
+   <SHORTTEXT>New pricing in Sales order</SHORTTEXT>
+   <ORIGINAL_OBJECT>
+    <PGMID>R3TR</PGMID>
+    <ORG_OBJ_TYPE>PROG</ORG_OBJ_TYPE>
+    <ORG_OBJ_NAME>SAPMV45A</ORG_OBJ_NAME>
+    <ORG_MAIN_TYPE>PROG</ORG_MAIN_TYPE>
+    <ORG_MAIN_NAME>SAPMV45A</ORG_MAIN_NAME>
+    <PROGRAMNAME>SAPMV45A</PROGRAMNAME>
+   </ORIGINAL_OBJECT>
+   <ENHANCEMENTS>
+    <ENH_HOOK_IMPL>
+     <PROGRAMNAME>SAPMV45A</PROGRAMNAME>
+     <ENHMODE>D</ENHMODE>
+     <FULL_NAME>\PR:SAPMV45A\FO:USEREXIT_NEW_PRICING_VBKD\SE:END\EI</FULL_NAME>
+     <SOURCE>
+      <item>************************************************************************</item>
+      <item>* PROGRAM    :   ZIM_OTC_0154_SO_PRICING(Enhancement)                  *</item>
+      <item>* TITLE      :   New pricing in Sales order                            *</item>
+      <item>* DEVELOPER  :   Vinita Choudhary                                      *</item>
+      <item>* OBJECT TYPE:   Implicit enhancement                                  *</item>
+      <item>* SAP RELEASE:  SAP ECC 6.0                                            *</item>
+      <item>*----------------------------------------------------------------------*</item>
+      <item>* WRICEF ID:  D2_OTC_EDD_0154                                          *</item>
+      <item>*----------------------------------------------------------------------*</item>
+      <item>* DESCRIPTION:  New pricing in Sales order                             *</item>
+      <item>*----------------------------------------------------------------------*</item>
+      <item>* MODIFICATION HISTORY:                                                *</item>
+      <item>*======================================================================*</item>
+      <item>* DATE        USER     TRANSPORT  DESCRIPTION                          *</item>
+      <item>* =========== ======== ========== =====================================*</item>
+      <item>* 26-06-2014  PMISHRA  E2DK901812 Initial Development                  *</item>
+      <item>*&amp;---------------------------------------------------------------------*</item>
+      <item>* 08-01-2015  PMISHRA  E2DK901812 Changes for Defect # 1853 - Code     *</item>
+      <item>*                                 commented                            *</item>
+      <item>*&amp;---------------------------------------------------------------------*</item>
+      <item>* 28-Jul-2015  ASK  E2DK914330   Defect#  8784 This Enhnacement should *</item>
+      <item>*                                trigger for document type &apos;C&apos;         *</item>
+      <item>*                                ( Sales Order) only                   *</item>
+      <item>*&amp;---------------------------------------------------------------------*</item>
+      <item>* 02-May-2016 SMUKHER4 E2DK917726 Defect# 1706 Cumulative price should *</item>
+      <item>*                                 correctly populate in sales order    *</item>
+      <item>*                                 when created through EDI             *</item>
+      <item>*&amp;---------------------------------------------------------------------*</item>
+      <item>CONSTANTS:</item>
+      <item>lc_nprice    TYPE char1          VALUE &apos;C&apos;,               &quot; Nprice of type CHAR1</item>
+      <item>lc_null_0154 TYPE z_criteria     VALUE &apos;NULL&apos;,            &quot; Enh. Criteria</item>
+      <item>lc_0154      TYPE z_enhancement  VALUE &apos;D2_OTC_EDD_0154&apos;, &quot; Enhancement No,</item>
+      <item>lc_order     TYPE vbtyp          VALUE &apos;C&apos;.    &quot; Doc Type Defect 8784</item>
+      <item/>
+      <item>* ---&gt; Begin of change for D2_OTC_EDD_0011 Def#1706 by SMUKHER4 on 02-05-2016</item>
+      <item>* Local constants Declarations</item>
+      <item>CONSTANTS: lc_knprs TYPE z_criteria VALUE &apos;KNPRS&apos;, &quot;local constants for maintaing criteria in EMI entries</item>
+      <item>lc_flag    TYPE char1     VALUE &apos;X&apos;,    &quot; local costants for flag</item>
+      <item>lc_ucomm TYPE z_criteria  VALUE &apos;UCOMM&apos;. &quot; local constants for criteria VALUE &apos;UCOMM&apos; &quot;</item>
+      <item>* Local variable declarations</item>
+      <item>DATA: lv_ucomm TYPE sy-ucomm, &quot;local variable for UCOMM</item>
+      <item>lv_knprs TYPE char1.    &quot; Local variable for KNPRS</item>
+      <item>* Decaring field symbols</item>
+      <item>FIELD-SYMBOLS: &lt;lfs_constant&gt; TYPE zdev_enh_status. &quot; Field symbols for zdev_enh_status</item>
+      <item>* &lt;--- End of change for D2_OTC_EDD_0011 Def#1706 by SMUKHER4 on 02-05-2016</item>
+      <item/>
+      <item>DATA li_constant  TYPE STANDARD TABLE OF zdev_enh_status. &quot;    enhance ment status .</item>
+      <item/>
+      <item>CALL FUNCTION &apos;ZDEV_ENHANCEMENT_STATUS_CHECK&apos;</item>
+      <item>EXPORTING</item>
+      <item>iv_enhancement_no = lc_0154</item>
+      <item>TABLES</item>
+      <item>tt_enh_status     = li_constant.</item>
+      <item/>
+      <item/>
+      <item>READ TABLE li_constant WITH KEY criteria = lc_null_0154</item>
+      <item>active   = abap_true</item>
+      <item>TRANSPORTING NO FIELDS.</item>
+      <item>IF sy-subrc = 0 .</item>
+      <item>IF vbak-vbtyp = lc_order.         &quot; Defect 8784</item>
+      <item>IF vbkd-bsark &lt;&gt; *vbkd-bsark.</item>
+      <item>new_pricing = lc_nprice. &quot;  to re-determine all conditions except manual conditions.</item>
+      <item>ENDIF. &quot; IF vbkd-bsark &lt;&gt; *vbkd-bsark</item>
+      <item/>
+      <item>ENDIF.                            &quot; Defect 8784</item>
+      <item/>
+      <item>* ---&gt; Begin of Change for D2_OTC_EDD_0154_Defect_1853 by PMISHRA</item>
+      <item>*  IF xvbap-stlnr IS NOT INITIAL AND xvbap-uepos IS NOT INITIAL. &quot;    Bill of material</item>
+      <item>*    new_pricing = lc_nprice.</item>
+      <item>*  ENDIF. &quot; IF sy-subrc = 0</item>
+      <item>* &lt;--- End of Change for D2_OTC_EDD_0154_Defect_1853 by PMISHRA</item>
+      <item>ENDIF. &quot; IF sy-subrc = 0</item>
+      <item/>
+      <item>* ---&gt; Begin of change for D2_OTC_EDD_0011 Def#1706 by SMUKHER4 on 02-05-2016</item>
+      <item>*&amp;--First thing is to check for field criterion,for value &apos;KNPRS&apos; &amp; &apos;UCOMM&apos; and</item>
+      <item>*&amp;--field Active value:</item>
+      <item>DELETE li_constant WHERE active &lt;&gt; abap_true.</item>
+      <item>SORT li_constant BY criteria.</item>
+      <item>READ TABLE li_constant ASSIGNING &lt;lfs_constant&gt;</item>
+      <item>WITH KEY criteria = lc_ucomm</item>
+      <item>BINARY SEARCH.</item>
+      <item>IF sy-subrc IS INITIAL.</item>
+      <item>lv_ucomm = &lt;lfs_constant&gt;-sel_low.</item>
+      <item/>
+      <item>ENDIF. &quot; IF sy-subrc IS INITIAL</item>
+      <item>READ TABLE li_constant ASSIGNING &lt;lfs_constant&gt;</item>
+      <item>WITH KEY criteria = lc_knprs</item>
+      <item>BINARY SEARCH.</item>
+      <item>IF sy-subrc IS INITIAL.</item>
+      <item>lv_knprs = &lt;lfs_constant&gt;-sel_low.</item>
+      <item/>
+      <item>ENDIF. &quot; IF sy-subrc IS INITIAL</item>
+      <item>* Assigning the values to the fields that we have got from EMI</item>
+      <item>IF sy-binpt = lc_flag AND fcode = lv_ucomm.</item>
+      <item>new_pricing = lv_knprs.</item>
+      <item>ENDIF.</item>
+      <item>UNASSIGN: &lt;lfs_constant&gt;.</item>
+      <item/>
+      <item>* &lt;--- End of change for D2_OTC_EDD_0011 Def#1706 by SMUKHER4 on 02-05-2016</item>
+      <item/>
+     </SOURCE>
+    </ENH_HOOK_IMPL>
+   </ENHANCEMENTS>
+   <SPACES>
+    <item>
+     <FULL_NAME>\PR:SAPMV45A\FO:USEREXIT_NEW_PRICING_VBKD\SE:END\EI</FULL_NAME>
+     <SPACES>
+      <item>0</item>
+      <item>0</item>
+      <item>0</item>
+      <item>0</item>
+      <item>0</item>
+      <item>0</item>
+      <item>0</item>
+      <item>0</item>
+      <item>0</item>
+      <item>0</item>
+      <item>0</item>
+      <item>0</item>
+      <item>0</item>
+      <item>0</item>
+      <item>0</item>
+      <item>0</item>
+      <item>0</item>
+      <item>0</item>
+      <item>0</item>
+      <item>0</item>
+      <item>0</item>
+      <item>0</item>
+      <item>0</item>
+      <item>0</item>
+      <item>0</item>
+      <item>0</item>
+      <item>0</item>
+      <item>0</item>
+      <item>0</item>
+      <item>4</item>
+      <item>4</item>
+      <item>4</item>
+      <item>4</item>
+      <item>0</item>
+      <item>0</item>
+      <item>0</item>
+      <item>0</item>
+      <item>11</item>
+      <item>11</item>
+      <item>0</item>
+      <item>0</item>
+      <item>6</item>
+      <item>0</item>
+      <item>0</item>
+      <item>0</item>
+      <item>0</item>
+      <item>0</item>
+      <item>0</item>
+      <item>0</item>
+      <item>2</item>
+      <item>4</item>
+      <item>2</item>
+      <item>4</item>
+      <item>0</item>
+      <item>0</item>
+      <item>0</item>
+      <item>32</item>
+      <item>32</item>
+      <item>0</item>
+      <item>1</item>
+      <item>2</item>
+      <item>4</item>
+      <item>2</item>
+      <item>0</item>
+      <item>1</item>
+      <item>0</item>
+      <item>0</item>
+      <item>0</item>
+      <item>0</item>
+      <item>0</item>
+      <item>0</item>
+      <item>0</item>
+      <item>0</item>
+      <item>0</item>
+      <item>0</item>
+      <item>0</item>
+      <item>0</item>
+      <item>0</item>
+      <item>0</item>
+      <item>23</item>
+      <item>23</item>
+      <item>1</item>
+      <item>6</item>
+      <item>0</item>
+      <item>4</item>
+      <item>4</item>
+      <item>23</item>
+      <item>23</item>
+      <item>4</item>
+      <item>6</item>
+      <item>0</item>
+      <item>4</item>
+      <item>0</item>
+      <item>0</item>
+      <item>2</item>
+      <item>0</item>
+      <item>2</item>
+      <item>0</item>
+      <item>0</item>
+      <item>0</item>
+     </SPACES>
+    </item>
+   </SPACES>
+  </asx:values>
+ </asx:abap>
+</abapGit>

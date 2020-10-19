@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<abapGit version="v1.0.0" serializer="LCL_OBJECT_SXCI" serializer_version="v1.0.0">
+ <asx:abap xmlns:asx="http://www.sap.com/abapxml" version="1.0">
+  <asx:values>
+   <SXCI>
+    <IMPLEMENTATION_DATA>
+     <IMP_NAME>ZCL_IM_STO_BATCH_TFR</IMP_NAME>
+     <TEXT>Implementation for Batch transfer to GTS</TEXT>
+     <IMP_CLASS>ZOTC_CL_STO_BATCH_TRANSFER</IMP_CLASS>
+     <EXIT_NAME>/SAPSLL/IFEX_MM0A_R3</EXIT_NAME>
+     <INTER_NAME>/SAPSLL/IF_EX_IFEX_MM0A_R3</INTER_NAME>
+    </IMPLEMENTATION_DATA>
+   </SXCI>
+  </asx:values>
+ </asx:abap>
+</abapGit>

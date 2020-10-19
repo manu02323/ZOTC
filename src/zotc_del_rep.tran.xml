@@ -1,0 +1,26 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<abapGit version="v1.0.0" serializer="LCL_OBJECT_TRAN" serializer_version="v1.0.0">
+ <asx:abap xmlns:asx="http://www.sap.com/abapxml" version="1.0">
+  <asx:values>
+   <TSTC>
+    <TCODE>ZOTC_DEL_REP</TCODE>
+    <CINFO>Ag==</CINFO>
+   </TSTC>
+   <TSTCC>
+    <TCODE>ZOTC_DEL_REP</TCODE>
+    <S_WEBGUI>1</S_WEBGUI>
+    <S_WIN32>X</S_WIN32>
+    <S_PLATIN>X</S_PLATIN>
+   </TSTCC>
+   <TSTCT>
+    <SPRSL>E</SPRSL>
+    <TCODE>ZOTC_DEL_REP</TCODE>
+    <TTEXT>ZOTC Outbound Delivery Report</TTEXT>
+   </TSTCT>
+   <TSTCP>
+    <TCODE>ZOTC_DEL_REP</TCODE>
+    <PARAM>/*START_REPORT D_SREPOVARI-EXTDREPORT=ZOTC_BREXIT_1;D_SREPOVARI-REPORT=ZOTC        G;D_SREPOVARI-REPORTTYPE=AQ;</PARAM>
+   </TSTCP>
+  </asx:values>
+ </asx:abap>
+</abapGit>

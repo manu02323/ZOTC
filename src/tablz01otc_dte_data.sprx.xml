@@ -1,0 +1,69 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<abapGit version="v1.0.0" serializer="LCL_OBJECT_SPRX" serializer_version="v1.0.0">
+ <asx:abap xmlns:asx="http://www.sap.com/abapxml" version="1.0">
+  <asx:values>
+   <PROXY_HEADER>
+    <item>
+     <OBJECT>TABL</OBJECT>
+     <OBJ_NAME>Z01OTC_DTE_DATA</OBJ_NAME>
+     <OBJECT_M>TABL</OBJECT_M>
+     <OBJ_NAME_M>Z01OTC_DTE_DATA</OBJ_NAME_M>
+     <HASH_ID>4FED68AEE6DF3A624E018FD061A9227794AF03F7</HASH_ID>
+     <ID>&lt;groupOrAttributeGroup&gt; DTE_Data http://bio-rad.com/OTC/ChangeSalesOrder http://bio-rad.com/OTC/ChangeSalesOrder</ID>
+     <IFR_GLOBAL>X</IFR_GLOBAL>
+     <IFR_TYPE>groupOrAttributeGroup</IFR_TYPE>
+     <IFR_NAME>DTE_Data</IFR_NAME>
+     <IFR_NSPCE>http://bio-rad.com/OTC/ChangeSalesOrder</IFR_NSPCE>
+     <IFR_GNSPCE>http://bio-rad.com/OTC/ChangeSalesOrder</IFR_GNSPCE>
+     <GEN_VERS>0005</GEN_VERS>
+     <PREFIX>Z01OTC_</PREFIX>
+     <CATEGORY>ifmtypeenh</CATEGORY>
+     <ENH_NAME>SlsOrdERPChgReq_sItm</ENH_NAME>
+     <ENH_NSPCE>http://sap.com/xi/APPL/Global2</ENH_NSPCE>
+     <X-ML_NSPCE>http://bio-rad.com/OTC/ChangeSalesOrder</X-ML_NSPCE>
+     <X-ML_NAME>DTE_Data</X-ML_NAME>
+     <VERSION_ID>0c6f88ac8b5e11e4a9a9000001225726</VERSION_ID>
+    </item>
+   </PROXY_HEADER>
+   <PROXY_DATA>
+    <item>
+     <OBJECT>TABL</OBJECT>
+     <OBJ_NAME>Z01OTC_DTE_DATA</OBJ_NAME>
+     <OBJECT1>FIEL</OBJECT1>
+     <OBJ_NAME1>Z01OTC_ZADD_DATA</OBJ_NAME1>
+     <OBJECT2>FIEL</OBJECT2>
+     <OBJ_NAME2>Z01OTC_ZADD_DATA</OBJ_NAME2>
+     <OBJECT_R>TABL</OBJECT_R>
+     <OBJ_NAME_R>Z01OTC_DTE_DATA_ZADD_DATA</OBJ_NAME_R>
+     <ID>&lt;element&gt; {http://bio-rad.com/OTC/ChangeSalesOrder}ZAdd_Data &lt;groupOrAttributeGroup&gt; DTE_Data http://bio-rad.com/OTC/ChangeSalesOrder http://bio-rad.com/OTC/ChangeSalesOrder</ID>
+     <IFR_TYPE>element</IFR_TYPE>
+     <IFR_NAME>ZAdd_Data</IFR_NAME>
+     <IFR_TAGTYP>E</IFR_TAGTYP>
+     <IFR_MAXOCC>1</IFR_MAXOCC>
+     <IFR_OPTNL>X</IFR_OPTNL>
+     <IFR_QUALIF>X</IFR_QUALIF>
+     <IFR_SCALE>-2</IFR_SCALE>
+     <R3_TYPE>FIEL</R3_TYPE>
+     <R3_NAME>Z01OTC_ZADD_DATA</R3_NAME>
+     <R3_SEQNUM>000001</R3_SEQNUM>
+    </item>
+    <item>
+     <OBJECT>TABL</OBJECT>
+     <OBJ_NAME>Z01OTC_DTE_DATA</OBJ_NAME>
+     <OBJECT1>TABL</OBJECT1>
+     <OBJ_NAME1>Z01OTC_DTE_DATA</OBJ_NAME1>
+     <OBJECT2>TABL</OBJECT2>
+     <OBJ_NAME2>Z01OTC_DTE_DATA</OBJ_NAME2>
+     <ID>&lt;groupOrAttributeGroup&gt; DTE_Data http://bio-rad.com/OTC/ChangeSalesOrder http://bio-rad.com/OTC/ChangeSalesOrder</ID>
+     <IFR_TYPE>groupOrAttributeGroup</IFR_TYPE>
+     <IFR_NAME>DTE_Data</IFR_NAME>
+     <IFR_SCALE>-2</IFR_SCALE>
+     <R3_TYPE>TABL</R3_TYPE>
+     <R3_NAME>Z01OTC_DTE_DATA</R3_NAME>
+     <R3_TEXT>Proxy Structure (generated)</R3_TEXT>
+     <CATEGORY>ifmtypeenh</CATEGORY>
+    </item>
+   </PROXY_DATA>
+  </asx:values>
+ </asx:abap>
+</abapGit>

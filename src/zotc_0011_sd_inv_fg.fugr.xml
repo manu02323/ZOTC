@@ -1,0 +1,43 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<abapGit version="v1.0.0" serializer="LCL_OBJECT_FUGR" serializer_version="v1.0.0">
+ <asx:abap xmlns:asx="http://www.sap.com/abapxml" version="1.0">
+  <asx:values>
+   <AREAT>Function Grp. for Outbound Customer inv</AREAT>
+   <INCLUDES>
+    <SOBJ_NAME>LZOTC_0011_SD_INV_FGTOP</SOBJ_NAME>
+    <SOBJ_NAME>SAPLZOTC_0011_SD_INV_FG</SOBJ_NAME>
+   </INCLUDES>
+   <FUNCTIONS>
+    <item>
+     <FUNCNAME>ZOTC_0011_SD_GET_LIFNR</FUNCNAME>
+     <SHORT_TEXT>FM to fetch vendor from Sales Order</SHORT_TEXT>
+     <IMPORT>
+      <RSIMP>
+       <PARAMETER>IM_BELNR</PARAMETER>
+       <REFERENCE>X</REFERENCE>
+       <TYP>VBELN_VF</TYP>
+      </RSIMP>
+     </IMPORT>
+     <EXPORT>
+      <RSEXP>
+       <PARAMETER>EX_LIFNR</PARAMETER>
+       <REFERENCE>X</REFERENCE>
+       <TYP>LIFNR_ED1</TYP>
+      </RSEXP>
+     </EXPORT>
+     <DOCUMENTATION>
+      <RSFDO>
+       <PARAMETER>IM_BELNR</PARAMETER>
+       <KIND>P</KIND>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>EX_LIFNR</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Vendor Account Number</STEXT>
+      </RSFDO>
+     </DOCUMENTATION>
+    </item>
+   </FUNCTIONS>
+  </asx:values>
+ </asx:abap>
+</abapGit>

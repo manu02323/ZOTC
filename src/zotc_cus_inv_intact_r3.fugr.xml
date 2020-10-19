@@ -1,0 +1,95 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<abapGit version="v1.0.0" serializer="LCL_OBJECT_FUGR" serializer_version="v1.0.0">
+ <asx:abap xmlns:asx="http://www.sap.com/abapxml" version="1.0">
+  <asx:values>
+   <AREAT>ZOTC_CUS_INV_INTACT_R3</AREAT>
+   <INCLUDES>
+    <SOBJ_NAME>/SAPSLL/LCUS_INV_INTACT_R3F01</SOBJ_NAME>
+    <SOBJ_NAME>/SAPSLL/LCUS_INV_INTACT_R3F03</SOBJ_NAME>
+    <SOBJ_NAME>LZOTC_CUS_INV_INTACT_R3TOP</SOBJ_NAME>
+    <SOBJ_NAME>SAPLZOTC_CUS_INV_INTACT_R3</SOBJ_NAME>
+   </INCLUDES>
+   <FUNCTIONS>
+    <item>
+     <FUNCNAME>ZOTC_SHIPMENT_DATA_SELECT</FUNCNAME>
+     <SHORT_TEXT>Sendungsbildung: Daten selektieren</SHORT_TEXT>
+     <IMPORT>
+      <RSIMP>
+       <PARAMETER>IS_CRIT</PARAMETER>
+       <REFERENCE>X</REFERENCE>
+       <TYP>/SAPSLL/CUS_INV_CRIT_R3_S</TYP>
+      </RSIMP>
+      <RSIMP>
+       <PARAMETER>IM_LFART</PARAMETER>
+       <REFERENCE>X</REFERENCE>
+       <TYP>/ISDFPS/RG_T_LFART</TYP>
+      </RSIMP>
+      <RSIMP>
+       <PARAMETER>IM_AGMDAT</PARAMETER>
+       <REFERENCE>X</REFERENCE>
+       <TYP>/SAPSLL/WADAT_R_T</TYP>
+      </RSIMP>
+      <RSIMP>
+       <PARAMETER>IM_ERDAT</PARAMETER>
+       <OPTIONAL>X</OPTIONAL>
+       <REFERENCE>X</REFERENCE>
+       <TYP>/SAPSLL/ERDAT_R3_R_T</TYP>
+      </RSIMP>
+      <RSIMP>
+       <PARAMETER>IM_ZDF8</PARAMETER>
+       <OPTIONAL>X</OPTIONAL>
+       <REFERENCE>X</REFERENCE>
+       <TYP>FLAG</TYP>
+      </RSIMP>
+     </IMPORT>
+     <EXPORT>
+      <RSEXP>
+       <PARAMETER>ET_CUS_INV</PARAMETER>
+       <REFERENCE>X</REFERENCE>
+       <TYP>/SAPSLL/CUS_INV_R3_T</TYP>
+      </RSEXP>
+     </EXPORT>
+     <EXCEPTION>
+      <RSEXC>
+       <EXCEPTION>NO_DATA</EXCEPTION>
+      </RSEXC>
+     </EXCEPTION>
+     <DOCUMENTATION>
+      <RSFDO>
+       <PARAMETER>IS_CRIT</PARAMETER>
+       <KIND>P</KIND>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>IM_LFART</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Delivery Type</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>IM_AGMDAT</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Goods Issue Date</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>IM_ERDAT</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Table Type for /SAPSLL/EDAT_R3_R_S</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>IM_ZDF8</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>General Flag</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>ET_CUS_INV</PARAMETER>
+       <KIND>P</KIND>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>NO_DATA</PARAMETER>
+       <KIND>X</KIND>
+      </RSFDO>
+     </DOCUMENTATION>
+    </item>
+   </FUNCTIONS>
+  </asx:values>
+ </asx:abap>
+</abapGit>

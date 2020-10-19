@@ -1,0 +1,252 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<abapGit version="v1.0.0" serializer="LCL_OBJECT_SPRX" serializer_version="v1.0.0">
+ <asx:abap xmlns:asx="http://www.sap.com/abapxml" version="1.0">
+  <asx:values>
+   <PROXY_HEADER>
+    <item>
+     <OBJECT>TABL</OBJECT>
+     <OBJ_NAME>ZOTCSI_E2EMONITORING_IN_DATA_A</OBJ_NAME>
+     <OBJECT_M>INTF</OBJECT_M>
+     <OBJ_NAME_M>ZOTCII_SI_E2EMONITORING_IN</OBJ_NAME_M>
+     <HASH_ID>6F869F101A8F10197D8FA1D3BF8D55E03D2EFF3F</HASH_ID>
+     <ID>&lt;type&gt; DataArea &lt;element&gt; {http://www.openapplications.org/oagis/9}DataArea &lt;type&gt; MonitorBOD &lt;element&gt; MonitorBOD http://www.openapplications.org/oagis/9 SI_E2EMonitoring_In(http://bio-rad.com/OTC/E2EMonitoringForOutboundMessage)</ID>
+     <IFR_TYPE>type</IFR_TYPE>
+     <IFR_NAME>DataArea</IFR_NAME>
+     <IFR_NSPCE>http://www.openapplications.org/oagis/9</IFR_NSPCE>
+     <IFR_GNSPCE>SI_E2EMonitoring_In(http://bio-rad.com/OTC/E2EMonitoringForOutboundMessage)</IFR_GNSPCE>
+     <GEN_VERS>0005</GEN_VERS>
+     <PREFIX>ZOTC</PREFIX>
+     <CATEGORY>ifmtypedef</CATEGORY>
+     <X-ML_NSPCE>http://www.openapplications.org/oagis/9</X-ML_NSPCE>
+     <X-ML_NAME>DataArea</X-ML_NAME>
+    </item>
+   </PROXY_HEADER>
+   <PROXY_DATA>
+    <item>
+     <OBJECT>TABL</OBJECT>
+     <OBJ_NAME>ZOTCSI_E2EMONITORING_IN_DATA_A</OBJ_NAME>
+     <OBJECT1>FIEL</OBJECT1>
+     <OBJ_NAME1>BODID</OBJ_NAME1>
+     <OBJECT2>FIEL</OBJECT2>
+     <OBJ_NAME2>BODID</OBJ_NAME2>
+     <ID>&lt;element&gt; {http://www.openapplications.org/oagis/9}BODID &lt;type&gt; DataArea &lt;element&gt; {http://www.openapplications.org/oagis/9}DataArea &lt;type&gt; MonitorBOD &lt;element&gt; MonitorBOD http://www.openapplications.org/oagis/9 SI_E2EMonitoring_In(http://bio-rad.com/OTC/E2EMonitoringForOutboundMessage)</ID>
+     <IFR_TYPE>element</IFR_TYPE>
+     <IFR_NAME>BODID</IFR_NAME>
+     <IFR_TEXT>Unique identifier for the BOD. It could be an IDOC Number.</IFR_TEXT>
+     <IFR_TAGTYP>E</IFR_TAGTYP>
+     <IFR_MINOCC>1</IFR_MINOCC>
+     <IFR_MAXOCC>1</IFR_MAXOCC>
+     <IFR_QUALIF>X</IFR_QUALIF>
+     <IFR_XSDTYP>string</IFR_XSDTYP>
+     <IFR_SCALE>-2</IFR_SCALE>
+     <R3_TYPE>FIEL</R3_TYPE>
+     <R3_NAME>BODID</R3_NAME>
+     <R3_TEXT>Unique identifier for the BOD. It could be an IDOC Number.</R3_TEXT>
+     <R3_DATATYP>STRG</R3_DATATYP>
+     <R3_SEQNUM>000002</R3_SEQNUM>
+    </item>
+    <item>
+     <OBJECT>TABL</OBJECT>
+     <OBJ_NAME>ZOTCSI_E2EMONITORING_IN_DATA_A</OBJ_NAME>
+     <OBJECT1>FIEL</OBJECT1>
+     <OBJ_NAME1>BODSTATUS_CODE</OBJ_NAME1>
+     <OBJECT2>FIEL</OBJECT2>
+     <OBJ_NAME2>BODSTATUS_CODE</OBJ_NAME2>
+     <ID>&lt;element&gt; {http://www.openapplications.org/oagis/9}BODStatusCode &lt;type&gt; DataArea &lt;element&gt; {http://www.openapplications.org/oagis/9}DataArea &lt;type&gt; MonitorBOD &lt;element&gt; MonitorBOD http://www.openapplications.org/oagis/9 SI_E2EMonitoring_In(http://bio-rad.com/OTC/E2EMonitoringForOutboundMessage)</ID>
+     <IFR_TYPE>element</IFR_TYPE>
+     <IFR_NAME>BODStatusCode</IFR_NAME>
+     <IFR_TEXT>BOD Status code to indicate whether its success (41)/failure/partial success or warning.</IFR_TEXT>
+     <IFR_TAGTYP>E</IFR_TAGTYP>
+     <IFR_MINOCC>1</IFR_MINOCC>
+     <IFR_MAXOCC>1</IFR_MAXOCC>
+     <IFR_QUALIF>X</IFR_QUALIF>
+     <IFR_XSDTYP>string</IFR_XSDTYP>
+     <IFR_SCALE>-2</IFR_SCALE>
+     <R3_TYPE>FIEL</R3_TYPE>
+     <R3_NAME>BODSTATUS_CODE</R3_NAME>
+     <R3_TEXT>BOD Status code to indicate whether its success (41)/failure</R3_TEXT>
+     <R3_DATATYP>STRG</R3_DATATYP>
+     <R3_SEQNUM>000008</R3_SEQNUM>
+    </item>
+    <item>
+     <OBJECT>TABL</OBJECT>
+     <OBJ_NAME>ZOTCSI_E2EMONITORING_IN_DATA_A</OBJ_NAME>
+     <OBJECT1>FIEL</OBJECT1>
+     <OBJ_NAME1>BODSTATUS_MESSAGE</OBJ_NAME1>
+     <OBJECT2>FIEL</OBJECT2>
+     <OBJ_NAME2>BODSTATUS_MESSAGE</OBJ_NAME2>
+     <ID>&lt;element&gt; {http://www.openapplications.org/oagis/9}BODStatusMessage &lt;type&gt; DataArea &lt;element&gt; {http://www.openapplications.org/oagis/9}DataArea &lt;type&gt; MonitorBOD &lt;element&gt; MonitorBOD http://www.openapplications.org/oagis/9 SI_E2EMonitoring_In(http://bio-rad.com/OTC/E2EMonitoringForOutboundMessage)</ID>
+     <IFR_TYPE>element</IFR_TYPE>
+     <IFR_NAME>BODStatusMessage</IFR_NAME>
+     <IFR_TEXT>BOD status message indicating the type of error in case of errors or warning or partial success.</IFR_TEXT>
+     <IFR_TAGTYP>E</IFR_TAGTYP>
+     <IFR_MAXOCC>1</IFR_MAXOCC>
+     <IFR_OPTNL>X</IFR_OPTNL>
+     <IFR_QUALIF>X</IFR_QUALIF>
+     <IFR_XSDTYP>string</IFR_XSDTYP>
+     <IFR_SCALE>-2</IFR_SCALE>
+     <R3_TYPE>FIEL</R3_TYPE>
+     <R3_NAME>BODSTATUS_MESSAGE</R3_NAME>
+     <R3_TEXT>BOD status message indicating the type of error in case of e</R3_TEXT>
+     <R3_DATATYP>STRG</R3_DATATYP>
+     <R3_SEQNUM>000009</R3_SEQNUM>
+    </item>
+    <item>
+     <OBJECT>TABL</OBJECT>
+     <OBJ_NAME>ZOTCSI_E2EMONITORING_IN_DATA_A</OBJ_NAME>
+     <OBJECT1>FIEL</OBJECT1>
+     <OBJ_NAME1>BODSTATUS_TYPE</OBJ_NAME1>
+     <OBJECT2>FIEL</OBJECT2>
+     <OBJ_NAME2>BODSTATUS_TYPE</OBJ_NAME2>
+     <ID>&lt;element&gt; {http://www.openapplications.org/oagis/9}BODStatusType &lt;type&gt; DataArea &lt;element&gt; {http://www.openapplications.org/oagis/9}DataArea &lt;type&gt; MonitorBOD &lt;element&gt; MonitorBOD http://www.openapplications.org/oagis/9 SI_E2EMonitoring_In(http://bio-rad.com/OTC/E2EMonitoringForOutboundMessage)</ID>
+     <IFR_TYPE>element</IFR_TYPE>
+     <IFR_NAME>BODStatusType</IFR_NAME>
+     <IFR_TEXT>Status of the BOD.</IFR_TEXT>
+     <IFR_TAGTYP>E</IFR_TAGTYP>
+     <IFR_MINOCC>1</IFR_MINOCC>
+     <IFR_MAXOCC>1</IFR_MAXOCC>
+     <IFR_QUALIF>X</IFR_QUALIF>
+     <IFR_XSDTYP>string</IFR_XSDTYP>
+     <IFR_SCALE>-2</IFR_SCALE>
+     <R3_TYPE>FIEL</R3_TYPE>
+     <R3_NAME>BODSTATUS_TYPE</R3_NAME>
+     <R3_TEXT>Status of the BOD.</R3_TEXT>
+     <R3_DATATYP>STRG</R3_DATATYP>
+     <R3_SEQNUM>000007</R3_SEQNUM>
+     <FURTHERDATA>﻿&lt;asx:abap xmlns:asx=&quot;http://www.sap.com/abapxml&quot; version=&quot;1.0&quot;&gt;&lt;asx:values&gt;&lt;DATA&gt;&lt;IFR_T_ENUM&gt;&lt;item&gt;Success&lt;/item&gt;&lt;item&gt;Error&lt;/item&gt;&lt;item&gt;PartialSuccess&lt;/item&gt;&lt;item&gt;Warning&lt;/item&gt;&lt;/IFR_T_ENUM&gt;&lt;/DATA&gt;&lt;/asx:values&gt;&lt;/asx:abap&gt;</FURTHERDATA>
+    </item>
+    <item>
+     <OBJECT>TABL</OBJECT>
+     <OBJ_NAME>ZOTCSI_E2EMONITORING_IN_DATA_A</OBJ_NAME>
+     <OBJECT1>FIEL</OBJECT1>
+     <OBJ_NAME1>CREATION_DATE_TIME</OBJ_NAME1>
+     <OBJECT2>FIEL</OBJECT2>
+     <OBJ_NAME2>CREATION_DATE_TIME</OBJ_NAME2>
+     <ID>&lt;element&gt; {http://www.openapplications.org/oagis/9}CreationDateTime &lt;type&gt; DataArea &lt;element&gt; {http://www.openapplications.org/oagis/9}DataArea &lt;type&gt; MonitorBOD &lt;element&gt; MonitorBOD http://www.openapplications.org/oagis/9 SI_E2EMonitoring_In(http://bio-rad.com/OTC/E2EMonitoringForOutboundMessage)</ID>
+     <IFR_TYPE>element</IFR_TYPE>
+     <IFR_NAME>CreationDateTime</IFR_NAME>
+     <IFR_TEXT>Date and time when the BOD status is reported back.</IFR_TEXT>
+     <IFR_TAGTYP>E</IFR_TAGTYP>
+     <IFR_MINOCC>1</IFR_MINOCC>
+     <IFR_MAXOCC>1</IFR_MAXOCC>
+     <IFR_QUALIF>X</IFR_QUALIF>
+     <IFR_XSDTYP>string</IFR_XSDTYP>
+     <IFR_SCALE>-2</IFR_SCALE>
+     <R3_TYPE>FIEL</R3_TYPE>
+     <R3_NAME>CREATION_DATE_TIME</R3_NAME>
+     <R3_TEXT>Date and time when the BOD status is reported back.</R3_TEXT>
+     <R3_DATATYP>STRG</R3_DATATYP>
+     <R3_SEQNUM>000001</R3_SEQNUM>
+    </item>
+    <item>
+     <OBJECT>TABL</OBJECT>
+     <OBJ_NAME>ZOTCSI_E2EMONITORING_IN_DATA_A</OBJ_NAME>
+     <OBJECT1>FIEL</OBJECT1>
+     <OBJ_NAME1>DOCUMENT_ID</OBJ_NAME1>
+     <OBJECT2>FIEL</OBJECT2>
+     <OBJ_NAME2>DOCUMENT_ID</OBJ_NAME2>
+     <ID>&lt;element&gt; {http://www.openapplications.org/oagis/9}DocumentID &lt;type&gt; DataArea &lt;element&gt; {http://www.openapplications.org/oagis/9}DataArea &lt;type&gt; MonitorBOD &lt;element&gt; MonitorBOD http://www.openapplications.org/oagis/9 SI_E2EMonitoring_In(http://bio-rad.com/OTC/E2EMonitoringForOutboundMessage)</ID>
+     <IFR_TYPE>element</IFR_TYPE>
+     <IFR_NAME>DocumentID</IFR_NAME>
+     <IFR_TEXT>Identifies the ID for the document. For example this could contain the SalesOrder No, Invoice NO, Or</IFR_TEXT>
+     <IFR_TAGTYP>E</IFR_TAGTYP>
+     <IFR_MAXOCC>1</IFR_MAXOCC>
+     <IFR_OPTNL>X</IFR_OPTNL>
+     <IFR_QUALIF>X</IFR_QUALIF>
+     <IFR_XSDTYP>string</IFR_XSDTYP>
+     <IFR_SCALE>-2</IFR_SCALE>
+     <R3_TYPE>FIEL</R3_TYPE>
+     <R3_NAME>DOCUMENT_ID</R3_NAME>
+     <R3_TEXT>Identifies the ID for the document. For example this could c</R3_TEXT>
+     <R3_DATATYP>STRG</R3_DATATYP>
+     <R3_SEQNUM>000004</R3_SEQNUM>
+    </item>
+    <item>
+     <OBJECT>TABL</OBJECT>
+     <OBJ_NAME>ZOTCSI_E2EMONITORING_IN_DATA_A</OBJ_NAME>
+     <OBJECT1>FIEL</OBJECT1>
+     <OBJ_NAME1>MESSAGE_TYPE</OBJ_NAME1>
+     <OBJECT2>FIEL</OBJECT2>
+     <OBJ_NAME2>MESSAGE_TYPE</OBJ_NAME2>
+     <ID>&lt;element&gt; {http://www.openapplications.org/oagis/9}MessageType &lt;type&gt; DataArea &lt;element&gt; {http://www.openapplications.org/oagis/9}DataArea &lt;type&gt; MonitorBOD &lt;element&gt; MonitorBOD http://www.openapplications.org/oagis/9 SI_E2EMonitoring_In(http://bio-rad.com/OTC/E2EMonitoringForOutboundMessage)</ID>
+     <IFR_TYPE>element</IFR_TYPE>
+     <IFR_NAME>MessageType</IFR_NAME>
+     <IFR_TEXT>Identifies the MessageType like - Invoice, OrderAcknowledgement, SalesOrder, etc</IFR_TEXT>
+     <IFR_TAGTYP>E</IFR_TAGTYP>
+     <IFR_MINOCC>1</IFR_MINOCC>
+     <IFR_MAXOCC>1</IFR_MAXOCC>
+     <IFR_QUALIF>X</IFR_QUALIF>
+     <IFR_XSDTYP>string</IFR_XSDTYP>
+     <IFR_SCALE>-2</IFR_SCALE>
+     <R3_TYPE>FIEL</R3_TYPE>
+     <R3_NAME>MESSAGE_TYPE</R3_NAME>
+     <R3_TEXT>Identifies the MessageType like - Invoice, OrderAcknowledgem</R3_TEXT>
+     <R3_DATATYP>STRG</R3_DATATYP>
+     <R3_SEQNUM>000003</R3_SEQNUM>
+    </item>
+    <item>
+     <OBJECT>TABL</OBJECT>
+     <OBJ_NAME>ZOTCSI_E2EMONITORING_IN_DATA_A</OBJ_NAME>
+     <OBJECT1>FIEL</OBJECT1>
+     <OBJ_NAME1>RECEIVER_SYSTEM</OBJ_NAME1>
+     <OBJECT2>FIEL</OBJECT2>
+     <OBJ_NAME2>RECEIVER_SYSTEM</OBJ_NAME2>
+     <ID>&lt;element&gt; {http://www.openapplications.org/oagis/9}ReceiverSystem &lt;type&gt; DataArea &lt;element&gt; {http://www.openapplications.org/oagis/9}DataArea &lt;type&gt; MonitorBOD &lt;element&gt; MonitorBOD http://www.openapplications.org/oagis/9 SI_E2EMonitoring_In(http://bio-rad.com/OTC/E2EMonitoringForOutboundMessage)</ID>
+     <IFR_TYPE>element</IFR_TYPE>
+     <IFR_NAME>ReceiverSystem</IFR_NAME>
+     <IFR_TEXT>Target system where status has to be reported.</IFR_TEXT>
+     <IFR_TAGTYP>E</IFR_TAGTYP>
+     <IFR_MINOCC>1</IFR_MINOCC>
+     <IFR_MAXOCC>1</IFR_MAXOCC>
+     <IFR_QUALIF>X</IFR_QUALIF>
+     <IFR_XSDTYP>string</IFR_XSDTYP>
+     <IFR_SCALE>-2</IFR_SCALE>
+     <R3_TYPE>FIEL</R3_TYPE>
+     <R3_NAME>RECEIVER_SYSTEM</R3_NAME>
+     <R3_TEXT>Target system where status has to be reported.</R3_TEXT>
+     <R3_DATATYP>STRG</R3_DATATYP>
+     <R3_SEQNUM>000006</R3_SEQNUM>
+    </item>
+    <item>
+     <OBJECT>TABL</OBJECT>
+     <OBJ_NAME>ZOTCSI_E2EMONITORING_IN_DATA_A</OBJ_NAME>
+     <OBJECT1>FIEL</OBJECT1>
+     <OBJ_NAME1>SENDER_SYSTEM</OBJ_NAME1>
+     <OBJECT2>FIEL</OBJECT2>
+     <OBJ_NAME2>SENDER_SYSTEM</OBJ_NAME2>
+     <ID>&lt;element&gt; {http://www.openapplications.org/oagis/9}SenderSystem &lt;type&gt; DataArea &lt;element&gt; {http://www.openapplications.org/oagis/9}DataArea &lt;type&gt; MonitorBOD &lt;element&gt; MonitorBOD http://www.openapplications.org/oagis/9 SI_E2EMonitoring_In(http://bio-rad.com/OTC/E2EMonitoringForOutboundMessage)</ID>
+     <IFR_TYPE>element</IFR_TYPE>
+     <IFR_NAME>SenderSystem</IFR_NAME>
+     <IFR_TEXT>Source system sending the status of BOD.</IFR_TEXT>
+     <IFR_TAGTYP>E</IFR_TAGTYP>
+     <IFR_MINOCC>1</IFR_MINOCC>
+     <IFR_MAXOCC>1</IFR_MAXOCC>
+     <IFR_QUALIF>X</IFR_QUALIF>
+     <IFR_XSDTYP>string</IFR_XSDTYP>
+     <IFR_SCALE>-2</IFR_SCALE>
+     <R3_TYPE>FIEL</R3_TYPE>
+     <R3_NAME>SENDER_SYSTEM</R3_NAME>
+     <R3_TEXT>Source system sending the status of BOD.</R3_TEXT>
+     <R3_DATATYP>STRG</R3_DATATYP>
+     <R3_SEQNUM>000005</R3_SEQNUM>
+    </item>
+    <item>
+     <OBJECT>TABL</OBJECT>
+     <OBJ_NAME>ZOTCSI_E2EMONITORING_IN_DATA_A</OBJ_NAME>
+     <OBJECT1>TABL</OBJECT1>
+     <OBJ_NAME1>ZOTCSI_E2EMONITORING_IN_DATA_A</OBJ_NAME1>
+     <OBJECT2>TABL</OBJECT2>
+     <OBJ_NAME2>ZOTCSI_E2EMONITORING_IN_DATA_A</OBJ_NAME2>
+     <ID>&lt;type&gt; DataArea &lt;element&gt; {http://www.openapplications.org/oagis/9}DataArea &lt;type&gt; MonitorBOD &lt;element&gt; MonitorBOD http://www.openapplications.org/oagis/9 SI_E2EMonitoring_In(http://bio-rad.com/OTC/E2EMonitoringForOutboundMessage)</ID>
+     <IFR_TYPE>type</IFR_TYPE>
+     <IFR_NAME>DataArea</IFR_NAME>
+     <IFR_SCALE>-2</IFR_SCALE>
+     <R3_TYPE>TABL</R3_TYPE>
+     <R3_NAME>ZOTCSI_E2EMONITORING_IN_DATA_A</R3_NAME>
+     <R3_TEXT>Proxy Structure (generated)</R3_TEXT>
+     <CATEGORY>ifmtypedef</CATEGORY>
+    </item>
+   </PROXY_DATA>
+  </asx:values>
+ </asx:abap>
+</abapGit>

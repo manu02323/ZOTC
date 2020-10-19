@@ -1,0 +1,42 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<abapGit version="v1.0.0" serializer="LCL_OBJECT_CLAS" serializer_version="v1.0.0">
+ <asx:abap xmlns:asx="http://www.sap.com/abapxml" version="1.0">
+  <asx:values>
+   <VSEOCLASS>
+    <CLSNAME>ZOTCCL_CPQ_PRICE_COND_INBOUND</CLSNAME>
+    <LANGU>E</LANGU>
+    <DESCRIPT>CPQ Prince Condition Inbound</DESCRIPT>
+    <STATE>1</STATE>
+    <CLSCCINCL>X</CLSCCINCL>
+    <FIXPT>X</FIXPT>
+    <UNICODE>X</UNICODE>
+   </VSEOCLASS>
+   <DESCRIPTIONS>
+    <SEOCOMPOTX>
+     <CLSNAME>ZOTCCL_CPQ_PRICE_COND_INBOUND</CLSNAME>
+     <CMPNAME>EXECUTE</CMPNAME>
+     <LANGU>B</LANGU>
+     <DESCRIPT>Process Main Class execute method</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>ZOTCCL_CPQ_PRICE_COND_INBOUND</CLSNAME>
+     <CMPNAME>EXECUTE</CMPNAME>
+     <LANGU>C</LANGU>
+     <DESCRIPT>Process Main Class execute method</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>ZOTCCL_CPQ_PRICE_COND_INBOUND</CLSNAME>
+     <CMPNAME>EXECUTE</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Process Main Class execute method</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>ZOTCCL_CPQ_PRICE_COND_INBOUND</CLSNAME>
+     <CMPNAME>EXECUTE</CMPNAME>
+     <LANGU>L</LANGU>
+     <DESCRIPT>Process Main Class execute method</DESCRIPT>
+    </SEOCOMPOTX>
+   </DESCRIPTIONS>
+  </asx:values>
+ </asx:abap>
+</abapGit>

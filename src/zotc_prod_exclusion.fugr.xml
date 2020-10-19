@@ -1,0 +1,108 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<abapGit version="v1.0.0" serializer="LCL_OBJECT_FUGR" serializer_version="v1.0.0">
+ <asx:abap xmlns:asx="http://www.sap.com/abapxml" version="1.0">
+  <asx:values>
+   <AREAT>D2_OTC_EDD_0210_Listings And Exclusions</AREAT>
+   <INCLUDES>
+    <SOBJ_NAME>LZOTC_PROD_EXCLUSIONTOP</SOBJ_NAME>
+    <SOBJ_NAME>SAPLZOTC_PROD_EXCLUSION</SOBJ_NAME>
+   </INCLUDES>
+   <FUNCTIONS>
+    <item>
+     <FUNCNAME>ZOTC_0210_PROD_LIST_EXCLUSION</FUNCNAME>
+     <REMOTE_CALL>R</REMOTE_CALL>
+     <SHORT_TEXT>D2_OTC_EDD_0210_Requirement routine for Listings Exclusions</SHORT_TEXT>
+     <IMPORT>
+      <RSIMP>
+       <PARAMETER>IM_APPLICATION</PARAMETER>
+       <DBFIELD>T683-KAPPL</DBFIELD>
+      </RSIMP>
+      <RSIMP>
+       <PARAMETER>IM_DATE</PARAMETER>
+       <DBFIELD>SY-DATUM</DBFIELD>
+      </RSIMP>
+      <RSIMP>
+       <PARAMETER>IM_HEADER_COMMUNICATION</PARAMETER>
+       <DBFIELD>KOMKG</DBFIELD>
+      </RSIMP>
+      <RSIMP>
+       <PARAMETER>IM_ITEM_COMMUNICATION</PARAMETER>
+       <DBFIELD>KOMPG</DBFIELD>
+      </RSIMP>
+      <RSIMP>
+       <PARAMETER>IM_LIST</PARAMETER>
+       <TYP>FLAG</TYP>
+      </RSIMP>
+      <RSIMP>
+       <PARAMETER>IM_VERLI</PARAMETER>
+       <DBFIELD>TVAK-VERLI</DBFIELD>
+       <OPTIONAL>X</OPTIONAL>
+      </RSIMP>
+      <RSIMP>
+       <PARAMETER>IM_SCHEME</PARAMETER>
+       <DBFIELD>T683-KALSM</DBFIELD>
+      </RSIMP>
+      <RSIMP>
+       <PARAMETER>IM_PROTOKOLL</PARAMETER>
+       <OPTIONAL>X</OPTIONAL>
+       <TYP>FLAG</TYP>
+      </RSIMP>
+     </IMPORT>
+     <EXPORT>
+      <RSEXP>
+       <PARAMETER>EX_ENTRY_FOUND</PARAMETER>
+       <TYP>CHAR1</TYP>
+      </RSEXP>
+     </EXPORT>
+     <DOCUMENTATION>
+      <RSFDO>
+       <PARAMETER>IM_APPLICATION</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Application</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>IM_DATE</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Current Date of Application Server</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>IM_HEADER_COMMUNICATION</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Conditions: Material Listing/Exclusion - Header</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>IM_ITEM_COMMUNICATION</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Material Listing/Exclusion - Item</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>IM_LIST</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>General Flag</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>IM_VERLI</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Procedure for material listing</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>IM_SCHEME</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Procedure (Pricing, Output Control, Acct. Det., Costing,...)</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>IM_PROTOKOLL</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>General Flag</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>EX_ENTRY_FOUND</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Single-Character Indicator</STEXT>
+      </RSFDO>
+     </DOCUMENTATION>
+    </item>
+   </FUNCTIONS>
+  </asx:values>
+ </asx:abap>
+</abapGit>

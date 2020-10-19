@@ -1,0 +1,95 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<abapGit version="v1.0.0" serializer="LCL_OBJECT_DTEL" serializer_version="v1.0.0">
+ <asx:abap xmlns:asx="http://www.sap.com/abapxml" version="1.0">
+  <asx:values>
+   <DD04V>
+    <ROLLNAME>Z_SHIPTO_NO</ROLLNAME>
+    <DDLANGUAGE>E</DDLANGUAGE>
+    <DOMNAME>KUNNR</DOMNAME>
+    <MEMORYID>KUN</MEMORYID>
+    <LOGFLAG>X</LOGFLAG>
+    <HEADLEN>23</HEADLEN>
+    <SCRLEN1>10</SCRLEN1>
+    <SCRLEN2>19</SCRLEN2>
+    <SCRLEN3>23</SCRLEN3>
+    <DDTEXT>Ship To Customer Number</DDTEXT>
+    <REPTEXT>Ship To Customer Number</REPTEXT>
+    <SCRTEXT_S>Ship To No</SCRTEXT_S>
+    <SCRTEXT_M>Ship To Customer No</SCRTEXT_M>
+    <SCRTEXT_L>Ship To Customer Number</SCRTEXT_L>
+    <DTELMASTER>E</DTELMASTER>
+    <SHLPNAME>C_KUNNR</SHLPNAME>
+    <SHLPFIELD>KUNNR</SHLPFIELD>
+    <DEFFDNAME>CUSTOMER</DEFFDNAME>
+    <REFKIND>D</REFKIND>
+   </DD04V>
+   <I18N_LANGS>
+    <LANGU>1</LANGU>
+    <LANGU>F</LANGU>
+    <LANGU>J</LANGU>
+    <LANGU>N</LANGU>
+    <LANGU>P</LANGU>
+    <LANGU>R</LANGU>
+    <LANGU>S</LANGU>
+   </I18N_LANGS>
+   <DD04_TEXTS>
+    <item>
+     <DDLANGUAGE>1</DDLANGUAGE>
+     <DDTEXT>Ship To Customer Number</DDTEXT>
+     <REPTEXT>Ship To Customer Number</REPTEXT>
+     <SCRTEXT_S>Ship To No</SCRTEXT_S>
+     <SCRTEXT_M>Ship To Customer No</SCRTEXT_M>
+     <SCRTEXT_L>Ship To Customer Number</SCRTEXT_L>
+    </item>
+    <item>
+     <DDLANGUAGE>F</DDLANGUAGE>
+     <DDTEXT>Ship To Customer Number</DDTEXT>
+     <REPTEXT>Ship To Customer Number</REPTEXT>
+     <SCRTEXT_S>Ship To No</SCRTEXT_S>
+     <SCRTEXT_M>Ship To Customer No</SCRTEXT_M>
+     <SCRTEXT_L>Ship To Customer Number</SCRTEXT_L>
+    </item>
+    <item>
+     <DDLANGUAGE>J</DDLANGUAGE>
+     <DDTEXT>Ship To Customer Number</DDTEXT>
+     <REPTEXT>Ship To Customer Number</REPTEXT>
+     <SCRTEXT_S>Ship To No</SCRTEXT_S>
+     <SCRTEXT_M>Ship To Customer No</SCRTEXT_M>
+     <SCRTEXT_L>Ship To Customer Number</SCRTEXT_L>
+    </item>
+    <item>
+     <DDLANGUAGE>N</DDLANGUAGE>
+     <DDTEXT>Ship To Customer Number</DDTEXT>
+     <REPTEXT>Ship To Customer Number</REPTEXT>
+     <SCRTEXT_S>Ship To No</SCRTEXT_S>
+     <SCRTEXT_M>Ship To Customer No</SCRTEXT_M>
+     <SCRTEXT_L>Ship To Customer Number</SCRTEXT_L>
+    </item>
+    <item>
+     <DDLANGUAGE>P</DDLANGUAGE>
+     <DDTEXT>Ship To Customer Number</DDTEXT>
+     <REPTEXT>Ship To Customer Number</REPTEXT>
+     <SCRTEXT_S>Ship To No</SCRTEXT_S>
+     <SCRTEXT_M>Ship To Customer No</SCRTEXT_M>
+     <SCRTEXT_L>Ship To Customer Number</SCRTEXT_L>
+    </item>
+    <item>
+     <DDLANGUAGE>R</DDLANGUAGE>
+     <DDTEXT>Ship To Customer Number</DDTEXT>
+     <REPTEXT>Ship To Customer Number</REPTEXT>
+     <SCRTEXT_S>Ship To No</SCRTEXT_S>
+     <SCRTEXT_M>Ship To Customer No</SCRTEXT_M>
+     <SCRTEXT_L>Ship To Customer Number</SCRTEXT_L>
+    </item>
+    <item>
+     <DDLANGUAGE>S</DDLANGUAGE>
+     <DDTEXT>Ship To Customer Number</DDTEXT>
+     <REPTEXT>Ship To Customer Number</REPTEXT>
+     <SCRTEXT_S>Ship To No</SCRTEXT_S>
+     <SCRTEXT_M>Ship To Customer No</SCRTEXT_M>
+     <SCRTEXT_L>Ship To Customer Number</SCRTEXT_L>
+    </item>
+   </DD04_TEXTS>
+  </asx:values>
+ </asx:abap>
+</abapGit>

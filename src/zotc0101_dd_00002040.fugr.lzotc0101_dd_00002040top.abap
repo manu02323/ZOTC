@@ -1,0 +1,3 @@
+FUNCTION-POOL ZOTC0101_DD_00002040.         "MESSAGE-ID ..
+
+* INCLUDE LZOTC0101_DD_00002040D...          " Local class definition

@@ -1,0 +1,100 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<abapGit version="v1.0.0" serializer="LCL_OBJECT_DTEL" serializer_version="v1.0.0">
+ <asx:abap xmlns:asx="http://www.sap.com/abapxml" version="1.0">
+  <asx:values>
+   <DD04V>
+    <ROLLNAME>Z_CASEREF</ROLLNAME>
+    <DDLANGUAGE>E</DDLANGUAGE>
+    <DOMNAME>Z_CASEREF</DOMNAME>
+    <LOGFLAG>X</LOGFLAG>
+    <HEADLEN>11</HEADLEN>
+    <SCRLEN1>10</SCRLEN1>
+    <SCRLEN2>11</SCRLEN2>
+    <SCRLEN3>11</SCRLEN3>
+    <DDTEXT>Case Ref No</DDTEXT>
+    <REPTEXT>Case Ref No</REPTEXT>
+    <SCRTEXT_S>Case Ref.</SCRTEXT_S>
+    <SCRTEXT_M>Case Ref No</SCRTEXT_M>
+    <SCRTEXT_L>Case Ref No</SCRTEXT_L>
+    <DTELMASTER>E</DTELMASTER>
+    <REFKIND>D</REFKIND>
+   </DD04V>
+   <I18N_LANGS>
+    <LANGU>1</LANGU>
+    <LANGU>D</LANGU>
+    <LANGU>F</LANGU>
+    <LANGU>J</LANGU>
+    <LANGU>N</LANGU>
+    <LANGU>P</LANGU>
+    <LANGU>R</LANGU>
+    <LANGU>S</LANGU>
+   </I18N_LANGS>
+   <DD04_TEXTS>
+    <item>
+     <DDLANGUAGE>1</DDLANGUAGE>
+     <DDTEXT>Case Ref No</DDTEXT>
+     <REPTEXT>Case Ref No</REPTEXT>
+     <SCRTEXT_S>Case Ref.</SCRTEXT_S>
+     <SCRTEXT_M>Case Ref No</SCRTEXT_M>
+     <SCRTEXT_L>Case Ref No</SCRTEXT_L>
+    </item>
+    <item>
+     <DDLANGUAGE>D</DDLANGUAGE>
+     <DDTEXT>Fall Ref. Nr.</DDTEXT>
+     <REPTEXT>Vorgang Ref</REPTEXT>
+     <SCRTEXT_S>VorgangRef</SCRTEXT_S>
+     <SCRTEXT_M>Vorgang Ref</SCRTEXT_M>
+     <SCRTEXT_L>Vorgang Ref</SCRTEXT_L>
+    </item>
+    <item>
+     <DDLANGUAGE>F</DDLANGUAGE>
+     <DDTEXT>Ref du Numéro du case</DDTEXT>
+     <REPTEXT>Ref  case</REPTEXT>
+     <SCRTEXT_S>Ref  case</SCRTEXT_S>
+     <SCRTEXT_M>Ref  case</SCRTEXT_M>
+     <SCRTEXT_L>Ref  case</SCRTEXT_L>
+    </item>
+    <item>
+     <DDLANGUAGE>J</DDLANGUAGE>
+     <DDTEXT>Case Ref No</DDTEXT>
+     <REPTEXT>Case Ref No</REPTEXT>
+     <SCRTEXT_S>Case Ref.</SCRTEXT_S>
+     <SCRTEXT_M>Case Ref No</SCRTEXT_M>
+     <SCRTEXT_L>Case Ref No</SCRTEXT_L>
+    </item>
+    <item>
+     <DDLANGUAGE>N</DDLANGUAGE>
+     <DDTEXT>Case Ref No</DDTEXT>
+     <REPTEXT>Case Ref No</REPTEXT>
+     <SCRTEXT_S>Case Ref.</SCRTEXT_S>
+     <SCRTEXT_M>Case Ref No</SCRTEXT_M>
+     <SCRTEXT_L>Case Ref No</SCRTEXT_L>
+    </item>
+    <item>
+     <DDLANGUAGE>P</DDLANGUAGE>
+     <DDTEXT>Case Ref No</DDTEXT>
+     <REPTEXT>Case Ref No</REPTEXT>
+     <SCRTEXT_S>Case Ref.</SCRTEXT_S>
+     <SCRTEXT_M>Case Ref No</SCRTEXT_M>
+     <SCRTEXT_L>Case Ref No</SCRTEXT_L>
+    </item>
+    <item>
+     <DDLANGUAGE>R</DDLANGUAGE>
+     <DDTEXT>Case Ref No</DDTEXT>
+     <REPTEXT>Case Ref No</REPTEXT>
+     <SCRTEXT_S>Case Ref.</SCRTEXT_S>
+     <SCRTEXT_M>Case Ref No</SCRTEXT_M>
+     <SCRTEXT_L>Case Ref No</SCRTEXT_L>
+    </item>
+    <item>
+     <DDLANGUAGE>S</DDLANGUAGE>
+     <DDTEXT>Case Ref No</DDTEXT>
+     <REPTEXT>Case Ref No</REPTEXT>
+     <SCRTEXT_S>Case Ref.</SCRTEXT_S>
+     <SCRTEXT_M>Case Ref No</SCRTEXT_M>
+     <SCRTEXT_L>Case Ref No</SCRTEXT_L>
+    </item>
+   </DD04_TEXTS>
+  </asx:values>
+ </asx:abap>
+</abapGit>

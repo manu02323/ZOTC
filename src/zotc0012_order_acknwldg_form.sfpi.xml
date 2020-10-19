@@ -1,0 +1,2220 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<abapGit version="v1.0.0" serializer="LCL_OBJECT_SFPI" serializer_version="v1.0.0">
+ <asx:abap version="1.0" xmlns:asx="http://www.sap.com/abapxml">
+  <asx:values>
+   <VERSION>1</VERSION>
+   <TYPE/>
+   <INTERFACE href="#o1"/>
+   <INTERFACET>
+    <FPINTERFACET>
+     <NAME/>
+     <STATE/>
+     <LANGUAGE>N</LANGUAGE>
+     <ID/>
+     <TEXT>Order Acknowledgement Form</TEXT>
+    </FPINTERFACET>
+    <FPINTERFACET>
+     <NAME/>
+     <STATE/>
+     <LANGUAGE>E</LANGUAGE>
+     <ID/>
+     <TEXT>Order Acknowledgement Form</TEXT>
+    </FPINTERFACET>
+    <FPINTERFACET>
+     <NAME/>
+     <STATE/>
+     <LANGUAGE>F</LANGUAGE>
+     <ID/>
+     <TEXT>Order Acknowledgement Form</TEXT>
+    </FPINTERFACET>
+    <FPINTERFACET>
+     <NAME/>
+     <STATE/>
+     <LANGUAGE>P</LANGUAGE>
+     <ID/>
+     <TEXT>Order Acknowledgement Form</TEXT>
+    </FPINTERFACET>
+    <FPINTERFACET>
+     <NAME/>
+     <STATE/>
+     <LANGUAGE>R</LANGUAGE>
+     <ID/>
+     <TEXT>Order Acknowledgement Form</TEXT>
+    </FPINTERFACET>
+    <FPINTERFACET>
+     <NAME/>
+     <STATE/>
+     <LANGUAGE>S</LANGUAGE>
+     <ID/>
+     <TEXT>Order Acknowledgement Form</TEXT>
+    </FPINTERFACET>
+    <FPINTERFACET>
+     <NAME/>
+     <STATE/>
+     <LANGUAGE>J</LANGUAGE>
+     <ID/>
+     <TEXT>Order Acknowledgement Form</TEXT>
+    </FPINTERFACET>
+    <FPINTERFACET>
+     <NAME/>
+     <STATE/>
+     <LANGUAGE>1</LANGUAGE>
+     <ID/>
+     <TEXT>Order Acknowledgement Form</TEXT>
+    </FPINTERFACET>
+    <FPINTERFACET>
+     <NAME/>
+     <STATE/>
+     <LANGUAGE>V</LANGUAGE>
+     <ID/>
+     <TEXT>Order Acknowledgement Form</TEXT>
+    </FPINTERFACET>
+    <FPINTERFACET>
+     <NAME/>
+     <STATE/>
+     <LANGUAGE>U</LANGUAGE>
+     <ID/>
+     <TEXT>Order Acknowledgement Form</TEXT>
+    </FPINTERFACET>
+    <FPINTERFACET>
+     <NAME/>
+     <STATE/>
+     <LANGUAGE>O</LANGUAGE>
+     <ID/>
+     <TEXT>Order Acknowledgement Form</TEXT>
+    </FPINTERFACET>
+    <FPINTERFACET>
+     <NAME/>
+     <STATE/>
+     <LANGUAGE>K</LANGUAGE>
+     <ID/>
+     <TEXT>Order Acknowledgement Form</TEXT>
+    </FPINTERFACET>
+    <FPINTERFACET>
+     <NAME/>
+     <STATE/>
+     <LANGUAGE>I</LANGUAGE>
+     <ID/>
+     <TEXT>Order Acknowledgement Form</TEXT>
+    </FPINTERFACET>
+    <FPINTERFACET>
+     <NAME/>
+     <STATE/>
+     <LANGUAGE>H</LANGUAGE>
+     <ID/>
+     <TEXT>Order Acknowledgement Form</TEXT>
+    </FPINTERFACET>
+    <FPINTERFACET>
+     <NAME/>
+     <STATE/>
+     <LANGUAGE>G</LANGUAGE>
+     <ID/>
+     <TEXT>Order Acknowledgement Form</TEXT>
+    </FPINTERFACET>
+   </INTERFACET>
+  </asx:values>
+  <asx:heap xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:abap="http://www.sap.com/abapxml/types/built-in" xmlns:cls="http://www.sap.com/abapxml/classes/global" xmlns:dic="http://www.sap.com/abapxml/types/dictionary">
+   <cls:CL_FP_INTERFACE_DATA id="o1">
+    <CL_FP_INTERFACE_DATA classVersion="1">
+     <CODING href="#o5"/>
+     <PARAMETERS href="#o4"/>
+     <GLOBAL_DEFINITIONS href="#o3"/>
+     <REFERENCE_FIELDS href="#o2"/>
+     <XSD_DEFINITIONS/>
+    </CL_FP_INTERFACE_DATA>
+   </cls:CL_FP_INTERFACE_DATA>
+   <cls:CL_FP_REFERENCE_FIELDS id="o2">
+    <CL_FP_INTERFACE_DATA_CHANGED classVersion="1">
+     <INTERFACE_DATA href="#o1"/>
+    </CL_FP_INTERFACE_DATA_CHANGED>
+    <CL_FP_REFERENCE_FIELDS classVersion="1">
+     <REFERENCE_FIELDS/>
+    </CL_FP_REFERENCE_FIELDS>
+   </cls:CL_FP_REFERENCE_FIELDS>
+   <cls:CL_FP_GLOBAL_DEFINITIONS id="o3">
+    <CL_FP_INTERFACE_DATA_CHANGED classVersion="1">
+     <INTERFACE_DATA href="#o1"/>
+    </CL_FP_INTERFACE_DATA_CHANGED>
+    <CL_FP_GLOBAL_DEFINITIONS classVersion="1">
+     <GLOBAL_DATA>
+      <SFPGDATA>
+       <NAME>GV_INCOTERM</NAME>
+       <TYPING>TYPE</TYPING>
+       <TYPENAME>CHAR32</TYPENAME>
+       <DEFAULTVAL/>
+       <CONSTANT/>
+      </SFPGDATA>
+      <SFPGDATA>
+       <NAME>I_SOLD_ADDRESS</NAME>
+       <TYPING>TYPE</TYPING>
+       <TYPENAME>FSBP_ADDRESS_PRINTF_LINE_TTY</TYPENAME>
+       <DEFAULTVAL/>
+       <CONSTANT/>
+      </SFPGDATA>
+      <SFPGDATA>
+       <NAME>I_SHIP_ADDRESS</NAME>
+       <TYPING>TYPE</TYPING>
+       <TYPENAME>FSBP_ADDRESS_PRINTF_LINE_TTY</TYPENAME>
+       <DEFAULTVAL/>
+       <CONSTANT/>
+      </SFPGDATA>
+      <SFPGDATA>
+       <NAME>GV_SOLD_HOUSE</NAME>
+       <TYPING>TYPE</TYPING>
+       <TYPENAME>CHAR255</TYPENAME>
+       <DEFAULTVAL/>
+       <CONSTANT/>
+      </SFPGDATA>
+      <SFPGDATA>
+       <NAME>GV_TOTAL_AMOUNT</NAME>
+       <TYPING>TYPE</TYPING>
+       <TYPENAME>CHAR22</TYPENAME>
+       <DEFAULTVAL/>
+       <CONSTANT/>
+      </SFPGDATA>
+      <SFPGDATA>
+       <NAME>C_BMP</NAME>
+       <TYPING>TYPE</TYPING>
+       <TYPENAME>STRING</TYPENAME>
+       <DEFAULTVAL>&apos;images/bmp&apos;</DEFAULTVAL>
+       <CONSTANT>X</CONSTANT>
+      </SFPGDATA>
+      <SFPGDATA>
+       <NAME>GV_PRODUCTION</NAME>
+       <TYPING>TYPE</TYPING>
+       <TYPENAME>BOOLEAN</TYPENAME>
+       <DEFAULTVAL/>
+       <CONSTANT/>
+      </SFPGDATA>
+      <SFPGDATA>
+       <NAME>GV_LOGO_BIN</NAME>
+       <TYPING>TYPE</TYPING>
+       <TYPENAME>XSTRING</TYPENAME>
+       <DEFAULTVAL/>
+       <CONSTANT/>
+      </SFPGDATA>
+      <SFPGDATA>
+       <NAME>GV_IMAGE_BIN</NAME>
+       <TYPING>TYPE</TYPING>
+       <TYPENAME>XSTRING</TYPENAME>
+       <DEFAULTVAL/>
+       <CONSTANT/>
+      </SFPGDATA>
+      <SFPGDATA>
+       <NAME>I_DISPLAY</NAME>
+       <TYPING>TYPE</TYPING>
+       <TYPENAME>TT_DISPLAY</TYPENAME>
+       <DEFAULTVAL/>
+       <CONSTANT/>
+      </SFPGDATA>
+      <SFPGDATA>
+       <NAME>GV_HAZARDOUS</NAME>
+       <TYPING>TYPE</TYPING>
+       <TYPENAME>CHAR15</TYPENAME>
+       <DEFAULTVAL/>
+       <CONSTANT/>
+      </SFPGDATA>
+      <SFPGDATA>
+       <NAME>GV_FREIGHT</NAME>
+       <TYPING>TYPE</TYPING>
+       <TYPENAME>CHAR15</TYPENAME>
+       <DEFAULTVAL/>
+       <CONSTANT/>
+      </SFPGDATA>
+      <SFPGDATA>
+       <NAME>GV_HANDLING</NAME>
+       <TYPING>TYPE</TYPING>
+       <TYPENAME>CHAR15</TYPENAME>
+       <DEFAULTVAL/>
+       <CONSTANT/>
+      </SFPGDATA>
+      <SFPGDATA>
+       <NAME>GV_SUBTOTAL</NAME>
+       <TYPING>TYPE</TYPING>
+       <TYPENAME>CHAR15</TYPENAME>
+       <DEFAULTVAL/>
+       <CONSTANT/>
+      </SFPGDATA>
+      <SFPGDATA>
+       <NAME>GV_TAX</NAME>
+       <TYPING>TYPE</TYPING>
+       <TYPENAME>CHAR15</TYPENAME>
+       <DEFAULTVAL/>
+       <CONSTANT/>
+      </SFPGDATA>
+      <SFPGDATA>
+       <NAME>GV_DATE_TIME</NAME>
+       <TYPING>TYPE</TYPING>
+       <TYPENAME>STRING</TYPENAME>
+       <DEFAULTVAL/>
+       <CONSTANT/>
+      </SFPGDATA>
+      <SFPGDATA>
+       <NAME>GV_SEND_COUNTRY</NAME>
+       <TYPING>TYPE</TYPING>
+       <TYPENAME>LAND1</TYPENAME>
+       <DEFAULTVAL/>
+       <CONSTANT/>
+      </SFPGDATA>
+      <SFPGDATA>
+       <NAME>GV_SOLD_NAME</NAME>
+       <TYPING>TYPE</TYPING>
+       <TYPENAME>CHAR255</TYPENAME>
+       <DEFAULTVAL/>
+       <CONSTANT/>
+      </SFPGDATA>
+      <SFPGDATA>
+       <NAME>GV_SHIP_NAME</NAME>
+       <TYPING>TYPE</TYPING>
+       <TYPENAME>CHAR255</TYPENAME>
+       <DEFAULTVAL/>
+       <CONSTANT/>
+      </SFPGDATA>
+      <SFPGDATA>
+       <NAME>GV_SHIP_FLOOR</NAME>
+       <TYPING>TYPE</TYPING>
+       <TYPENAME>CHAR255</TYPENAME>
+       <DEFAULTVAL/>
+       <CONSTANT/>
+      </SFPGDATA>
+      <SFPGDATA>
+       <NAME>GV_SHIP_HOUSE</NAME>
+       <TYPING>TYPE</TYPING>
+       <TYPENAME>CHAR255</TYPENAME>
+       <DEFAULTVAL/>
+       <CONSTANT/>
+      </SFPGDATA>
+      <SFPGDATA>
+       <NAME>GV_SHIP_CITY</NAME>
+       <TYPING>TYPE</TYPING>
+       <TYPENAME>CHAR255</TYPENAME>
+       <DEFAULTVAL/>
+       <CONSTANT/>
+      </SFPGDATA>
+      <SFPGDATA>
+       <NAME>GV_SOLD_FLOOR</NAME>
+       <TYPING>TYPE</TYPING>
+       <TYPENAME>CHAR255</TYPENAME>
+       <DEFAULTVAL/>
+       <CONSTANT/>
+      </SFPGDATA>
+      <SFPGDATA>
+       <NAME>GV_ENVIRONMENT</NAME>
+       <TYPING>TYPE</TYPING>
+       <TYPENAME>CHAR15</TYPENAME>
+       <DEFAULTVAL/>
+       <CONSTANT/>
+      </SFPGDATA>
+      <SFPGDATA>
+       <NAME>GV_INSURANCE</NAME>
+       <TYPING>TYPE</TYPING>
+       <TYPENAME>CHAR15</TYPENAME>
+       <DEFAULTVAL/>
+       <CONSTANT/>
+      </SFPGDATA>
+      <SFPGDATA>
+       <NAME>I_BILL_ADDRESS</NAME>
+       <TYPING>TYPE</TYPING>
+       <TYPENAME>FSBP_ADDRESS_PRINTF_LINE_TTY</TYPENAME>
+       <DEFAULTVAL/>
+       <CONSTANT/>
+      </SFPGDATA>
+      <SFPGDATA>
+       <NAME>GV_BILL_NAME</NAME>
+       <TYPING>TYPE</TYPING>
+       <TYPENAME>CHAR255</TYPENAME>
+       <DEFAULTVAL/>
+       <CONSTANT/>
+      </SFPGDATA>
+      <SFPGDATA>
+       <NAME>GV_BILL_HOUSE</NAME>
+       <TYPING>TYPE</TYPING>
+       <TYPENAME>CHAR255</TYPENAME>
+       <DEFAULTVAL/>
+       <CONSTANT/>
+      </SFPGDATA>
+      <SFPGDATA>
+       <NAME>GV_BILL_FLOOR</NAME>
+       <TYPING>TYPE</TYPING>
+       <TYPENAME>CHAR255</TYPENAME>
+       <DEFAULTVAL/>
+       <CONSTANT/>
+      </SFPGDATA>
+      <SFPGDATA>
+       <NAME>GV_BILL_CITY</NAME>
+       <TYPING>TYPE</TYPING>
+       <TYPENAME>CHAR255</TYPENAME>
+       <DEFAULTVAL/>
+       <CONSTANT/>
+      </SFPGDATA>
+      <SFPGDATA>
+       <NAME>GV_SOLD_CITY</NAME>
+       <TYPING>TYPE</TYPING>
+       <TYPENAME>CHAR255</TYPENAME>
+       <DEFAULTVAL/>
+       <CONSTANT/>
+      </SFPGDATA>
+      <SFPGDATA>
+       <NAME>GV_DOCUMENT</NAME>
+       <TYPING>TYPE</TYPING>
+       <TYPENAME>CHAR15</TYPENAME>
+       <DEFAULTVAL/>
+       <CONSTANT/>
+      </SFPGDATA>
+     </GLOBAL_DATA>
+     <TYPES>
+      <FPCLINE>************************************************************************</FPCLINE>
+      <FPCLINE>* Interface  : ZOTC0012_ORDER_ACKNWLDG_FORM                            *</FPCLINE>
+      <FPCLINE>* Title      : Order Acknowledgement Form                              *</FPCLINE>
+      <FPCLINE>* Developer  : Nidhi Saxena                                            *</FPCLINE>
+      <FPCLINE>* Object Type: Form Interface                                          *</FPCLINE>
+      <FPCLINE>* SAP Release: SAP ECC 6.0                                             *</FPCLINE>
+      <FPCLINE>*----------------------------------------------------------------------*</FPCLINE>
+      <FPCLINE>* WRICEF ID  : D2_OTC_FDD_0012_Order acknowledgement form                 *</FPCLINE>
+      <FPCLINE>*----------------------------------------------------------------------*</FPCLINE>
+      <FPCLINE>* Description: Order Acknowledgement is sent to the customer through   *</FPCLINE>
+      <FPCLINE>*              email, fax, or print. These forms will need to be auto  *</FPCLINE>
+      <FPCLINE>*              generated at the time the Order is saved.               *</FPCLINE>
+      <FPCLINE>*----------------------------------------------------------------------*</FPCLINE>
+      <FPCLINE>* Modification History:                                                *</FPCLINE>
+      <FPCLINE>*=======================================================================*</FPCLINE>
+      <FPCLINE>* Date         User      Transport  Description                         *</FPCLINE>
+      <FPCLINE>* ===========  ========  ========== ====================================*</FPCLINE>
+      <FPCLINE>* 12-Nov-2014   NSaxena   E2DK906561  INITIAL DEVELOPMENT               *                                                    *</FPCLINE>
+      <FPCLINE>*&amp;----------------------------------------------------------------------*</FPCLINE>
+      <FPCLINE>*----------------------------------------------------------------------*</FPCLINE>
+      <FPCLINE>* 02-Sep-2015 U034336 E1DK921270    Changes for D3_OTC_FDD_0012        *</FPCLINE>
+      <FPCLINE>* Two flags are set in the program one is D3_format_flag</FPCLINE>
+      <FPCLINE>* If this flag is set then appropriate changes in dates, UOM and Currency</FPCLINE>
+      <FPCLINE>* are made specific to the country.</FPCLINE>
+      <FPCLINE>* Other is language flag , which is set if D2 check for langauge is</FPCLINE>
+      <FPCLINE>* not true, then the language to print texts and labels in the form</FPCLINE>
+      <FPCLINE>* is taken from Sold to customer language.</FPCLINE>
+      <FPCLINE>*----------------------------------------------------------------------*</FPCLINE>
+      <FPCLINE>*----------------------------------------------------------------------*</FPCLINE>
+      <FPCLINE>* 02-Sep-2015 U034336 E1DK921270    Changes for Defect 5472,5486,5480  *</FPCLINE>
+      <FPCLINE>*Change in order of fields displayed under material description        *</FPCLINE>
+      <FPCLINE>*Separate material desc and external product line text                 *</FPCLINE>
+      <FPCLINE>*----------------------------------------------------------------------*</FPCLINE>
+      <FPCLINE>*16-Dec-2016 U034336 E1DK917654     Changes for CR#289                 *</FPCLINE>
+      <FPCLINE>* Change number of address lines for sold to and ship to address       *</FPCLINE>
+      <FPCLINE>* along with country should come concatenated                          *</FPCLINE>
+      <FPCLINE>* at the end of the last line                                          *</FPCLINE>
+      <FPCLINE>* 2. Check if text id&apos;s text is blank for form language , fetch the    *</FPCLINE>
+      <FPCLINE>* text using english langauge                                          *</FPCLINE>
+      <FPCLINE>*----------------------------------------------------------------------*</FPCLINE>
+      <FPCLINE>*07-Feb-2019   U029267               R6 Defect#8304:Include billing    *</FPCLINE>
+      <FPCLINE>*                                    plan details in order acknowldgemt*</FPCLINE>
+      <FPCLINE>*----------------------------------------------------------------------*</FPCLINE>
+      <FPCLINE>TYPES:</FPCLINE>
+      <FPCLINE/>
+      <FPCLINE>*&amp;--Display table consist of line item data</FPCLINE>
+      <FPCLINE>    BEGIN OF ty_display,</FPCLINE>
+      <FPCLINE>      posn       TYPE char6,    &quot;Position</FPCLINE>
+      <FPCLINE>      matnr      TYPE char18,   &quot;Material</FPCLINE>
+      <FPCLINE>      descr      TYPE char1500, &quot;Material Description</FPCLINE>
+      <FPCLINE>      qty        TYPE char17,   &quot;Quantity</FPCLINE>
+      <FPCLINE>      conf_qty   TYPE char17,   &quot;Confirmed Qty</FPCLINE>
+      <FPCLINE>      batch      TYPE char15,   &quot;Batch</FPCLINE>
+      <FPCLINE>      bo_qty     TYPE char17,   &quot;Back Order Qty</FPCLINE>
+      <FPCLINE>      exp_date   TYPE char15,   &quot;Expiration date</FPCLINE>
+      <FPCLINE>      ship_date  TYPE char15,   &quot;Planned Ship Date</FPCLINE>
+      <FPCLINE>      unit_price TYPE char22,   &quot;Unit Price</FPCLINE>
+      <FPCLINE>      amount     TYPE char22,   &quot;Amount</FPCLINE>
+      <FPCLINE>      sales_text TYPE char255,  &quot; Text of type CHAR255</FPCLINE>
+      <FPCLINE>      qoute_text TYPE char255,  &quot; Text of type CHAR255</FPCLINE>
+      <FPCLINE>      promo_text TYPE char255,  &quot; Text of type CHAR255</FPCLINE>
+      <FPCLINE>*Begin of insert for D3_OTC_FDD_0012 by U034336</FPCLINE>
+      <FPCLINE>      cust_mat   TYPE char100, &quot; Mat of type CHAR100</FPCLINE>
+      <FPCLINE>*Begin of insert for D3_OTC_FDD_0012 by U034336</FPCLINE>
+      <FPCLINE>* Begin of insert for D3_OTC_FDD_0012, Defect#5480 by U034336</FPCLINE>
+      <FPCLINE>      ext_line_text TYPE char255, &quot; Line_text of type CHAR255</FPCLINE>
+      <FPCLINE>      ext_prod_text TYPE char255, &quot; Prod_text of type CHAR255</FPCLINE>
+      <FPCLINE>* End of insert for D3_OTC_FDD_0012, Defect#5480 by U034336</FPCLINE>
+      <FPCLINE>*&amp;--&gt; Begin of insert for R6 Upgrade D3_OTC_FDD_0012_Defect#8304 SCTASK0793188 by U029267 on 07-Feb-2019</FPCLINE>
+      <FPCLINE>      fkrel         TYPE fkrel,    &quot; Relevant for Billing</FPCLINE>
+      <FPCLINE>      fkdat         TYPE char100,  &quot; Billing Start date</FPCLINE>
+      <FPCLINE>      contract_info TYPE char100,  &quot; Recurring contrat dates info</FPCLINE>
+      <FPCLINE>*&amp;&lt;-- End of insert for R6 Upgrade D3_OTC_FDD_0012_Defect#8304 SCTASK0793188 by U029267 on 07-Feb-2019</FPCLINE>
+      <FPCLINE>    END OF ty_display,</FPCLINE>
+      <FPCLINE/>
+      <FPCLINE/>
+      <FPCLINE>*&amp;--Table type for Display table</FPCLINE>
+      <FPCLINE>    tt_display   TYPE STANDARD TABLE OF ty_display.</FPCLINE>
+     </TYPES>
+     <FIELDSYMBOLS/>
+    </CL_FP_GLOBAL_DEFINITIONS>
+   </cls:CL_FP_GLOBAL_DEFINITIONS>
+   <cls:CL_FP_PARAMETERS id="o4">
+    <CL_FP_INTERFACE_DATA_CHANGED classVersion="1">
+     <INTERFACE_DATA href="#o1"/>
+    </CL_FP_INTERFACE_DATA_CHANGED>
+    <CL_FP_PARAMETERS classVersion="1">
+     <IMPORT_PARAMETERS>
+      <SFPIOPAR>
+       <NAME>IM_TOTAL_PRICE</NAME>
+       <TYPING>TYPE</TYPING>
+       <TYPENAME>CHAR15</TYPENAME>
+       <OPTIONAL>X</OPTIONAL>
+       <BYVALUE/>
+       <DEFAULTVAL/>
+       <STANDARD/>
+       <CONSTANT/>
+      </SFPIOPAR>
+      <SFPIOPAR>
+       <NAME>IM_SADR</NAME>
+       <TYPING>TYPE</TYPING>
+       <TYPENAME>SADR</TYPENAME>
+       <OPTIONAL>X</OPTIONAL>
+       <BYVALUE/>
+       <DEFAULTVAL/>
+       <STANDARD/>
+       <CONSTANT/>
+      </SFPIOPAR>
+      <SFPIOPAR>
+       <NAME>IM_CONTACT_ADDR</NAME>
+       <TYPING>TYPE</TYPING>
+       <TYPENAME>ZOTC_CUST_ORDER_ACK_ADD_INFO</TYPENAME>
+       <OPTIONAL>X</OPTIONAL>
+       <BYVALUE/>
+       <DEFAULTVAL/>
+       <STANDARD/>
+       <CONSTANT/>
+      </SFPIOPAR>
+      <SFPIOPAR>
+       <NAME>IM_SHIP_TO_ADDR</NAME>
+       <TYPING>TYPE</TYPING>
+       <TYPENAME>ZOTC_CUST_ORDER_ACK_ADD_INFO</TYPENAME>
+       <OPTIONAL>X</OPTIONAL>
+       <BYVALUE/>
+       <DEFAULTVAL/>
+       <STANDARD/>
+       <CONSTANT/>
+      </SFPIOPAR>
+      <SFPIOPAR>
+       <NAME>IM_SOLD_TO_ADDR</NAME>
+       <TYPING>TYPE</TYPING>
+       <TYPENAME>ZOTC_CUST_ORDER_ACK_ADD_INFO</TYPENAME>
+       <OPTIONAL>X</OPTIONAL>
+       <BYVALUE/>
+       <DEFAULTVAL/>
+       <STANDARD/>
+       <CONSTANT/>
+      </SFPIOPAR>
+      <SFPIOPAR>
+       <NAME>IM_VBELN</NAME>
+       <TYPING>TYPE</TYPING>
+       <TYPENAME>VBELN_VA</TYPENAME>
+       <OPTIONAL/>
+       <BYVALUE/>
+       <DEFAULTVAL/>
+       <STANDARD/>
+       <CONSTANT/>
+      </SFPIOPAR>
+      <SFPIOPAR>
+       <NAME>IM_HEADER</NAME>
+       <TYPING>TYPE</TYPING>
+       <TYPENAME>ZOTC_CUST_ORDER_ACK_HEADER</TYPENAME>
+       <OPTIONAL>X</OPTIONAL>
+       <BYVALUE/>
+       <DEFAULTVAL/>
+       <STANDARD/>
+       <CONSTANT/>
+      </SFPIOPAR>
+      <SFPIOPAR>
+       <NAME>IM_ITEM</NAME>
+       <TYPING>TYPE</TYPING>
+       <TYPENAME>ZOTC_T_CUST_ORDER_ACK_ITEM</TYPENAME>
+       <OPTIONAL>X</OPTIONAL>
+       <BYVALUE/>
+       <DEFAULTVAL/>
+       <STANDARD/>
+       <CONSTANT/>
+      </SFPIOPAR>
+      <SFPIOPAR>
+       <NAME>IM_SHIP_NO</NAME>
+       <TYPING>TYPE</TYPING>
+       <TYPENAME>CHAR10</TYPENAME>
+       <OPTIONAL>X</OPTIONAL>
+       <BYVALUE/>
+       <DEFAULTVAL/>
+       <STANDARD/>
+       <CONSTANT/>
+      </SFPIOPAR>
+      <SFPIOPAR>
+       <NAME>IM_SOLD_NO</NAME>
+       <TYPING>TYPE</TYPING>
+       <TYPENAME>CHAR10</TYPENAME>
+       <OPTIONAL>X</OPTIONAL>
+       <BYVALUE/>
+       <DEFAULTVAL/>
+       <STANDARD/>
+       <CONSTANT/>
+      </SFPIOPAR>
+      <SFPIOPAR>
+       <NAME>IM_HAZARDOUS</NAME>
+       <TYPING>TYPE</TYPING>
+       <TYPENAME>CHAR15</TYPENAME>
+       <OPTIONAL/>
+       <BYVALUE/>
+       <DEFAULTVAL/>
+       <STANDARD/>
+       <CONSTANT/>
+      </SFPIOPAR>
+      <SFPIOPAR>
+       <NAME>IM_FREIGHT</NAME>
+       <TYPING>TYPE</TYPING>
+       <TYPENAME>CHAR15</TYPENAME>
+       <OPTIONAL/>
+       <BYVALUE/>
+       <DEFAULTVAL/>
+       <STANDARD/>
+       <CONSTANT/>
+      </SFPIOPAR>
+      <SFPIOPAR>
+       <NAME>IM_HANDLING</NAME>
+       <TYPING>TYPE</TYPING>
+       <TYPENAME>CHAR15</TYPENAME>
+       <OPTIONAL/>
+       <BYVALUE/>
+       <DEFAULTVAL/>
+       <STANDARD/>
+       <CONSTANT/>
+      </SFPIOPAR>
+      <SFPIOPAR>
+       <NAME>IM_TAX</NAME>
+       <TYPING>TYPE</TYPING>
+       <TYPENAME>CHAR15</TYPENAME>
+       <OPTIONAL/>
+       <BYVALUE/>
+       <DEFAULTVAL/>
+       <STANDARD/>
+       <CONSTANT/>
+      </SFPIOPAR>
+      <SFPIOPAR>
+       <NAME>IM_SUBTOTAL</NAME>
+       <TYPING>TYPE</TYPING>
+       <TYPENAME>CHAR15</TYPENAME>
+       <OPTIONAL/>
+       <BYVALUE/>
+       <DEFAULTVAL/>
+       <STANDARD/>
+       <CONSTANT/>
+      </SFPIOPAR>
+      <SFPIOPAR>
+       <NAME>IM_SHIP_ATT</NAME>
+       <TYPING>TYPE</TYPING>
+       <TYPENAME>CHAR255</TYPENAME>
+       <OPTIONAL/>
+       <BYVALUE/>
+       <DEFAULTVAL/>
+       <STANDARD/>
+       <CONSTANT/>
+      </SFPIOPAR>
+      <SFPIOPAR>
+       <NAME>IM_COUNTRY_KEY</NAME>
+       <TYPING>TYPE</TYPING>
+       <TYPENAME>CHAR3</TYPENAME>
+       <OPTIONAL/>
+       <BYVALUE/>
+       <DEFAULTVAL/>
+       <STANDARD/>
+       <CONSTANT/>
+      </SFPIOPAR>
+      <SFPIOPAR>
+       <NAME>IM_SALES_ORG</NAME>
+       <TYPING>TYPE</TYPING>
+       <TYPENAME>CHAR4</TYPENAME>
+       <OPTIONAL/>
+       <BYVALUE/>
+       <DEFAULTVAL/>
+       <STANDARD/>
+       <CONSTANT/>
+      </SFPIOPAR>
+      <SFPIOPAR>
+       <NAME>IM_BIO_RAD_CONF</NAME>
+       <TYPING>TYPE</TYPING>
+       <TYPENAME>CHAR255</TYPENAME>
+       <OPTIONAL/>
+       <BYVALUE/>
+       <DEFAULTVAL/>
+       <STANDARD/>
+       <CONSTANT/>
+      </SFPIOPAR>
+      <SFPIOPAR>
+       <NAME>IM_CONTACT_ID</NAME>
+       <TYPING>TYPE</TYPING>
+       <TYPENAME>CHAR255</TYPENAME>
+       <OPTIONAL/>
+       <BYVALUE/>
+       <DEFAULTVAL/>
+       <STANDARD/>
+       <CONSTANT/>
+      </SFPIOPAR>
+      <SFPIOPAR>
+       <NAME>IM_THANKS</NAME>
+       <TYPING>TYPE</TYPING>
+       <TYPENAME>CHAR255</TYPENAME>
+       <OPTIONAL/>
+       <BYVALUE/>
+       <DEFAULTVAL/>
+       <STANDARD/>
+       <CONSTANT/>
+      </SFPIOPAR>
+      <SFPIOPAR>
+       <NAME>IM_ORD_DATE</NAME>
+       <TYPING>TYPE</TYPING>
+       <TYPENAME>CHAR70</TYPENAME>
+       <OPTIONAL/>
+       <BYVALUE/>
+       <DEFAULTVAL/>
+       <STANDARD/>
+       <CONSTANT/>
+      </SFPIOPAR>
+      <SFPIOPAR>
+       <NAME>IM_TO</NAME>
+       <TYPING>TYPE</TYPING>
+       <TYPENAME>CHAR70</TYPENAME>
+       <OPTIONAL/>
+       <BYVALUE/>
+       <DEFAULTVAL/>
+       <STANDARD/>
+       <CONSTANT/>
+      </SFPIOPAR>
+      <SFPIOPAR>
+       <NAME>IM_EMAIL</NAME>
+       <TYPING>TYPE</TYPING>
+       <TYPENAME>CHAR70</TYPENAME>
+       <OPTIONAL/>
+       <BYVALUE/>
+       <DEFAULTVAL/>
+       <STANDARD/>
+       <CONSTANT/>
+      </SFPIOPAR>
+      <SFPIOPAR>
+       <NAME>IM_PHONE</NAME>
+       <TYPING>TYPE</TYPING>
+       <TYPENAME>CHAR70</TYPENAME>
+       <OPTIONAL/>
+       <BYVALUE/>
+       <DEFAULTVAL/>
+       <STANDARD/>
+       <CONSTANT/>
+      </SFPIOPAR>
+      <SFPIOPAR>
+       <NAME>IM_PO_NUM</NAME>
+       <TYPING>TYPE</TYPING>
+       <TYPENAME>CHAR255</TYPENAME>
+       <OPTIONAL/>
+       <BYVALUE/>
+       <DEFAULTVAL/>
+       <STANDARD/>
+       <CONSTANT/>
+      </SFPIOPAR>
+      <SFPIOPAR>
+       <NAME>IM_CARRIER</NAME>
+       <TYPING>TYPE</TYPING>
+       <TYPENAME>CHAR70</TYPENAME>
+       <OPTIONAL/>
+       <BYVALUE/>
+       <DEFAULTVAL/>
+       <STANDARD/>
+       <CONSTANT/>
+      </SFPIOPAR>
+      <SFPIOPAR>
+       <NAME>IM_FREIGHT_HEAD</NAME>
+       <TYPING>TYPE</TYPING>
+       <TYPENAME>CHAR70</TYPENAME>
+       <OPTIONAL/>
+       <BYVALUE/>
+       <DEFAULTVAL/>
+       <STANDARD/>
+       <CONSTANT/>
+      </SFPIOPAR>
+      <SFPIOPAR>
+       <NAME>IM_ORD_CMT</NAME>
+       <TYPING>TYPE</TYPING>
+       <TYPENAME>CHAR255</TYPENAME>
+       <OPTIONAL/>
+       <BYVALUE/>
+       <DEFAULTVAL/>
+       <STANDARD/>
+       <CONSTANT/>
+      </SFPIOPAR>
+      <SFPIOPAR>
+       <NAME>IM_SOLD_TO</NAME>
+       <TYPING>TYPE</TYPING>
+       <TYPENAME>CHAR70</TYPENAME>
+       <OPTIONAL/>
+       <BYVALUE/>
+       <DEFAULTVAL/>
+       <STANDARD/>
+       <CONSTANT/>
+      </SFPIOPAR>
+      <SFPIOPAR>
+       <NAME>IM_SHIP_TO</NAME>
+       <TYPING>TYPE</TYPING>
+       <TYPENAME>CHAR70</TYPENAME>
+       <OPTIONAL/>
+       <BYVALUE/>
+       <DEFAULTVAL/>
+       <STANDARD/>
+       <CONSTANT/>
+      </SFPIOPAR>
+      <SFPIOPAR>
+       <NAME>IM_LINE_NUM</NAME>
+       <TYPING>TYPE</TYPING>
+       <TYPENAME>CHAR70</TYPENAME>
+       <OPTIONAL/>
+       <BYVALUE/>
+       <DEFAULTVAL/>
+       <STANDARD/>
+       <CONSTANT/>
+      </SFPIOPAR>
+      <SFPIOPAR>
+       <NAME>IM_MAT_NUM</NAME>
+       <TYPING>TYPE</TYPING>
+       <TYPENAME>CHAR70</TYPENAME>
+       <OPTIONAL/>
+       <BYVALUE/>
+       <DEFAULTVAL/>
+       <STANDARD/>
+       <CONSTANT/>
+      </SFPIOPAR>
+      <SFPIOPAR>
+       <NAME>IM_MAT_DESCR</NAME>
+       <TYPING>TYPE</TYPING>
+       <TYPENAME>CHAR70</TYPENAME>
+       <OPTIONAL/>
+       <BYVALUE/>
+       <DEFAULTVAL/>
+       <STANDARD/>
+       <CONSTANT/>
+      </SFPIOPAR>
+      <SFPIOPAR>
+       <NAME>IM_ORD_QTY</NAME>
+       <TYPING>TYPE</TYPING>
+       <TYPENAME>CHAR70</TYPENAME>
+       <OPTIONAL/>
+       <BYVALUE/>
+       <DEFAULTVAL/>
+       <STANDARD/>
+       <CONSTANT/>
+      </SFPIOPAR>
+      <SFPIOPAR>
+       <NAME>IM_CONF_QTY</NAME>
+       <TYPING>TYPE</TYPING>
+       <TYPENAME>CHAR70</TYPENAME>
+       <OPTIONAL/>
+       <BYVALUE/>
+       <DEFAULTVAL/>
+       <STANDARD/>
+       <CONSTANT/>
+      </SFPIOPAR>
+      <SFPIOPAR>
+       <NAME>IM_BACK_QTY</NAME>
+       <TYPING>TYPE</TYPING>
+       <TYPENAME>CHAR70</TYPENAME>
+       <OPTIONAL/>
+       <BYVALUE/>
+       <DEFAULTVAL/>
+       <STANDARD/>
+       <CONSTANT/>
+      </SFPIOPAR>
+      <SFPIOPAR>
+       <NAME>IM_SHIP_DATE</NAME>
+       <TYPING>TYPE</TYPING>
+       <TYPENAME>CHAR70</TYPENAME>
+       <OPTIONAL/>
+       <BYVALUE/>
+       <DEFAULTVAL/>
+       <STANDARD/>
+       <CONSTANT/>
+      </SFPIOPAR>
+      <SFPIOPAR>
+       <NAME>IM_UNIT_PRICE</NAME>
+       <TYPING>TYPE</TYPING>
+       <TYPENAME>CHAR70</TYPENAME>
+       <OPTIONAL/>
+       <BYVALUE/>
+       <DEFAULTVAL/>
+       <STANDARD/>
+       <CONSTANT/>
+      </SFPIOPAR>
+      <SFPIOPAR>
+       <NAME>IM_AMOUNT</NAME>
+       <TYPING>TYPE</TYPING>
+       <TYPENAME>CHAR70</TYPENAME>
+       <OPTIONAL/>
+       <BYVALUE/>
+       <DEFAULTVAL/>
+       <STANDARD/>
+       <CONSTANT/>
+      </SFPIOPAR>
+      <SFPIOPAR>
+       <NAME>IM_BATCH</NAME>
+       <TYPING>TYPE</TYPING>
+       <TYPENAME>CHAR70</TYPENAME>
+       <OPTIONAL/>
+       <BYVALUE/>
+       <DEFAULTVAL/>
+       <STANDARD/>
+       <CONSTANT/>
+      </SFPIOPAR>
+      <SFPIOPAR>
+       <NAME>IM_EXPIRY_DATE</NAME>
+       <TYPING>TYPE</TYPING>
+       <TYPENAME>CHAR70</TYPENAME>
+       <OPTIONAL/>
+       <BYVALUE/>
+       <DEFAULTVAL/>
+       <STANDARD/>
+       <CONSTANT/>
+      </SFPIOPAR>
+      <SFPIOPAR>
+       <NAME>IM_HAZARDOUS_HEAD</NAME>
+       <TYPING>TYPE</TYPING>
+       <TYPENAME>CHAR70</TYPENAME>
+       <OPTIONAL/>
+       <BYVALUE/>
+       <DEFAULTVAL/>
+       <STANDARD/>
+       <CONSTANT/>
+      </SFPIOPAR>
+      <SFPIOPAR>
+       <NAME>IM_HANDLING_HEAD</NAME>
+       <TYPING>TYPE</TYPING>
+       <TYPENAME>CHAR70</TYPENAME>
+       <OPTIONAL/>
+       <BYVALUE/>
+       <DEFAULTVAL/>
+       <STANDARD/>
+       <CONSTANT/>
+      </SFPIOPAR>
+      <SFPIOPAR>
+       <NAME>IM_TAX_HEAD</NAME>
+       <TYPING>TYPE</TYPING>
+       <TYPENAME>CHAR70</TYPENAME>
+       <OPTIONAL/>
+       <BYVALUE/>
+       <DEFAULTVAL/>
+       <STANDARD/>
+       <CONSTANT/>
+      </SFPIOPAR>
+      <SFPIOPAR>
+       <NAME>IM_TOTAL_HEAD</NAME>
+       <TYPING>TYPE</TYPING>
+       <TYPENAME>CHAR70</TYPENAME>
+       <OPTIONAL/>
+       <BYVALUE/>
+       <DEFAULTVAL/>
+       <STANDARD/>
+       <CONSTANT/>
+      </SFPIOPAR>
+      <SFPIOPAR>
+       <NAME>IM_FOOTER</NAME>
+       <TYPING>TYPE</TYPING>
+       <TYPENAME>CHAR30000</TYPENAME>
+       <OPTIONAL/>
+       <BYVALUE/>
+       <DEFAULTVAL/>
+       <STANDARD/>
+       <CONSTANT/>
+      </SFPIOPAR>
+      <SFPIOPAR>
+       <NAME>IM_FREIGHT_FOOTER</NAME>
+       <TYPING>TYPE</TYPING>
+       <TYPENAME>CHAR70</TYPENAME>
+       <OPTIONAL/>
+       <BYVALUE/>
+       <DEFAULTVAL/>
+       <STANDARD/>
+       <CONSTANT/>
+      </SFPIOPAR>
+      <SFPIOPAR>
+       <NAME>IM_SUBTOTAL_HEAD</NAME>
+       <TYPING>TYPE</TYPING>
+       <TYPENAME>CHAR70</TYPENAME>
+       <OPTIONAL/>
+       <BYVALUE/>
+       <DEFAULTVAL/>
+       <STANDARD/>
+       <CONSTANT/>
+      </SFPIOPAR>
+      <SFPIOPAR>
+       <NAME>IM_INCOTERM</NAME>
+       <TYPING>TYPE</TYPING>
+       <TYPENAME>CHAR70</TYPENAME>
+       <OPTIONAL/>
+       <BYVALUE/>
+       <DEFAULTVAL/>
+       <STANDARD/>
+       <CONSTANT/>
+      </SFPIOPAR>
+      <SFPIOPAR>
+       <NAME>IM_INSURANCE</NAME>
+       <TYPING>TYPE</TYPING>
+       <TYPENAME>CHAR15</TYPENAME>
+       <OPTIONAL/>
+       <BYVALUE/>
+       <DEFAULTVAL/>
+       <STANDARD/>
+       <CONSTANT/>
+      </SFPIOPAR>
+      <SFPIOPAR>
+       <NAME>IM_ENVIRONMENT</NAME>
+       <TYPING>TYPE</TYPING>
+       <TYPENAME>CHAR15</TYPENAME>
+       <OPTIONAL/>
+       <BYVALUE/>
+       <DEFAULTVAL/>
+       <STANDARD/>
+       <CONSTANT/>
+      </SFPIOPAR>
+      <SFPIOPAR>
+       <NAME>IM_BILL_TO</NAME>
+       <TYPING>TYPE</TYPING>
+       <TYPENAME>ZOTC_CUST_ORDER_ACK_ADD_INFO</TYPENAME>
+       <OPTIONAL/>
+       <BYVALUE/>
+       <DEFAULTVAL/>
+       <STANDARD/>
+       <CONSTANT/>
+      </SFPIOPAR>
+      <SFPIOPAR>
+       <NAME>IM_BILL_NO</NAME>
+       <TYPING>TYPE</TYPING>
+       <TYPENAME>CHAR10</TYPENAME>
+       <OPTIONAL/>
+       <BYVALUE/>
+       <DEFAULTVAL/>
+       <STANDARD/>
+       <CONSTANT/>
+      </SFPIOPAR>
+      <SFPIOPAR>
+       <NAME>IM_INS_LB</NAME>
+       <TYPING>TYPE</TYPING>
+       <TYPENAME>CHAR70</TYPENAME>
+       <OPTIONAL/>
+       <BYVALUE/>
+       <DEFAULTVAL/>
+       <STANDARD/>
+       <CONSTANT/>
+      </SFPIOPAR>
+      <SFPIOPAR>
+       <NAME>IM_ENV_LB</NAME>
+       <TYPING>TYPE</TYPING>
+       <TYPENAME>CHAR70</TYPENAME>
+       <OPTIONAL/>
+       <BYVALUE/>
+       <DEFAULTVAL/>
+       <STANDARD/>
+       <CONSTANT/>
+      </SFPIOPAR>
+      <SFPIOPAR>
+       <NAME>IM_BILL_LB</NAME>
+       <TYPING>TYPE</TYPING>
+       <TYPENAME>CHAR70</TYPENAME>
+       <OPTIONAL/>
+       <BYVALUE/>
+       <DEFAULTVAL/>
+       <STANDARD/>
+       <CONSTANT/>
+      </SFPIOPAR>
+      <SFPIOPAR>
+       <NAME>IM_LOC_LB</NAME>
+       <TYPING>TYPE</TYPING>
+       <TYPENAME>CHAR70</TYPENAME>
+       <OPTIONAL/>
+       <BYVALUE/>
+       <DEFAULTVAL/>
+       <STANDARD/>
+       <CONSTANT/>
+      </SFPIOPAR>
+      <SFPIOPAR>
+       <NAME>IM_GLN_SHIPTO</NAME>
+       <TYPING>TYPE</TYPING>
+       <TYPENAME>CHAR12</TYPENAME>
+       <OPTIONAL/>
+       <BYVALUE/>
+       <DEFAULTVAL/>
+       <STANDARD/>
+       <CONSTANT/>
+      </SFPIOPAR>
+      <SFPIOPAR>
+       <NAME>IM_GLN_SOLDTO</NAME>
+       <TYPING>TYPE</TYPING>
+       <TYPENAME>CHAR12</TYPENAME>
+       <OPTIONAL/>
+       <BYVALUE/>
+       <DEFAULTVAL/>
+       <STANDARD/>
+       <CONSTANT/>
+      </SFPIOPAR>
+      <SFPIOPAR>
+       <NAME>IM_GLN_BILLTO</NAME>
+       <TYPING>TYPE</TYPING>
+       <TYPENAME>CHAR12</TYPENAME>
+       <OPTIONAL/>
+       <BYVALUE/>
+       <DEFAULTVAL/>
+       <STANDARD/>
+       <CONSTANT/>
+      </SFPIOPAR>
+      <SFPIOPAR>
+       <NAME>IM_FOOTER_ENG</NAME>
+       <TYPING>TYPE</TYPING>
+       <TYPENAME>CHAR30000</TYPENAME>
+       <OPTIONAL/>
+       <BYVALUE/>
+       <DEFAULTVAL/>
+       <STANDARD/>
+       <CONSTANT/>
+      </SFPIOPAR>
+      <SFPIOPAR>
+       <NAME>IM_DOCUMENT</NAME>
+       <TYPING>TYPE</TYPING>
+       <TYPENAME>CHAR15</TYPENAME>
+       <OPTIONAL/>
+       <BYVALUE/>
+       <DEFAULTVAL/>
+       <STANDARD/>
+       <CONSTANT/>
+      </SFPIOPAR>
+      <SFPIOPAR>
+       <NAME>IM_DOCUMENT_LB</NAME>
+       <TYPING>TYPE</TYPING>
+       <TYPENAME>CHAR70</TYPENAME>
+       <OPTIONAL/>
+       <BYVALUE/>
+       <DEFAULTVAL/>
+       <STANDARD/>
+       <CONSTANT/>
+      </SFPIOPAR>
+      <SFPIOPAR>
+       <NAME>IM_CUP_CIG_TEXT</NAME>
+       <TYPING>TYPE</TYPING>
+       <TYPENAME>CHAR8</TYPENAME>
+       <OPTIONAL/>
+       <BYVALUE/>
+       <DEFAULTVAL/>
+       <STANDARD/>
+       <CONSTANT/>
+      </SFPIOPAR>
+      <SFPIOPAR>
+       <NAME>IM_CUP_CIG_VAL</NAME>
+       <TYPING>TYPE</TYPING>
+       <TYPENAME>CHAR30</TYPENAME>
+       <OPTIONAL/>
+       <BYVALUE/>
+       <DEFAULTVAL/>
+       <STANDARD/>
+       <CONSTANT/>
+      </SFPIOPAR>
+     </IMPORT_PARAMETERS>
+     <EXPORT_PARAMETERS/>
+     <TABLE_PARAMETERS/>
+     <EXCEPTIONS/>
+    </CL_FP_PARAMETERS>
+   </cls:CL_FP_PARAMETERS>
+   <cls:CL_FP_CODING id="o5">
+    <CL_FP_INTERFACE_DATA_CHANGED classVersion="1">
+     <INTERFACE_DATA href="#o1"/>
+    </CL_FP_INTERFACE_DATA_CHANGED>
+    <CL_FP_CODING classVersion="1">
+     <INPUT_PARAMETERS/>
+     <OUTPUT_PARAMETERS/>
+     <INITIALIZATION>
+      <FPCLINE>************************************************************************</FPCLINE>
+      <FPCLINE>* Interface  : ZOTC0012_ORDER_ACKNWLDG_FORM                            *</FPCLINE>
+      <FPCLINE>* Title      : Order Acknowledgement Form                              *</FPCLINE>
+      <FPCLINE>* Developer  : Nidhi Saxena                                            *</FPCLINE>
+      <FPCLINE>* Object Type: Form Interface                                          *</FPCLINE>
+      <FPCLINE>* SAP Release: SAP ECC 6.0                                             *</FPCLINE>
+      <FPCLINE>*----------------------------------------------------------------------*</FPCLINE>
+      <FPCLINE>* WRICEF ID  : D2_OTC_FDD_0012_Order acknowledgement form              *</FPCLINE>
+      <FPCLINE>*----------------------------------------------------------------------*</FPCLINE>
+      <FPCLINE>* Description: Order Acknowledgement is sent to the customer through   *</FPCLINE>
+      <FPCLINE>*              email, fax, or print. These forms will need to be auto  *</FPCLINE>
+      <FPCLINE>*              generated at the time the Order is saved.               *</FPCLINE>
+      <FPCLINE>*----------------------------------------------------------------------*</FPCLINE>
+      <FPCLINE>* Modification History:                                                *</FPCLINE>
+      <FPCLINE>*======================================================================*</FPCLINE>
+      <FPCLINE>* Date        User      Transport  Description                         *</FPCLINE>
+      <FPCLINE>* =========== ========  ========== ====================================*</FPCLINE>
+      <FPCLINE>*  12-Nov-2014   NSaxena   E2DK906561  INITIAL DEVELOPMENT             *</FPCLINE>
+      <FPCLINE>*  02-Sep-2015 U034336 E1DK921270    Changes for D3_OTC_FDD_0012       *                                                                   *</FPCLINE>
+      <FPCLINE>*&amp;---------------------------------------------------------------------*</FPCLINE>
+      <FPCLINE>*----------------------------------------------------------------------*</FPCLINE>
+      <FPCLINE>* 10-Oct-2016 U034336 E1DK917654    Changes for D3_OTC_FDD_0012        *</FPCLINE>
+      <FPCLINE>* Two flags are set in the program one is D3_format_flag</FPCLINE>
+      <FPCLINE>* If this flag is set then appropriate changes in dates, UOM and Currency</FPCLINE>
+      <FPCLINE>* are made specific to the country.</FPCLINE>
+      <FPCLINE>* Other is language flag , which is set if D2 check for langauge is</FPCLINE>
+      <FPCLINE>* not true, then the language to print texts and labels in the form</FPCLINE>
+      <FPCLINE>* is taken from Sold to customer language.</FPCLINE>
+      <FPCLINE>*----------------------------------------------------------------------*</FPCLINE>
+      <FPCLINE>* 26-Oct-2016 U034336 E1DK917654    Changes for Defect 5480            *</FPCLINE>
+      <FPCLINE>*Change in order of fields displayed under material description        *</FPCLINE>
+      <FPCLINE>*Separate material desc and external product line text                 *</FPCLINE>
+      <FPCLINE>*----------------------------------------------------------------------*</FPCLINE>
+      <FPCLINE>*16-Dec-2016 U034336 E1DK917654     Changes for CR#289                 *</FPCLINE>
+      <FPCLINE>* Change number of address lines for sold to and ship to address       *</FPCLINE>
+      <FPCLINE>* along with country should come concatenated                          *</FPCLINE>
+      <FPCLINE>* at the end of the last line                                          *</FPCLINE>
+      <FPCLINE>* 2. Check if text id&apos;s text is blank for form language , fetch the    *</FPCLINE>
+      <FPCLINE>* text using english langauge                                          *</FPCLINE>
+      <FPCLINE>*----------------------------------------------------------------------*</FPCLINE>
+      <FPCLINE>*----------------------------------------------------------------------*</FPCLINE>
+      <FPCLINE>*04-Jan-2017 U034336 E1DK917654     Changes for CR#301                 *</FPCLINE>
+      <FPCLINE>*Changes are done only for D3 sales orgnaizations                      *</FPCLINE>
+      <FPCLINE>* ADD INCO2 after INCO1 in the form ( taken from VBKD )                *</FPCLINE>
+      <FPCLINE>* Pass Name of title of form from ADRC-name1 and ADRC-name2            *</FPCLINE>
+      <FPCLINE>* Pass estd delivery date of non confirmed qty only when order type is *</FPCLINE>
+      <FPCLINE>* a standing order                                                     *</FPCLINE>
+      <FPCLINE>*----------------------------------------------------------------------*</FPCLINE>
+      <FPCLINE>*9-Jan-2017  U034336 E1DK917654     Changes for CR#301_Part-2          *</FPCLINE>
+      <FPCLINE>*If sold to language is french then reverse the order of printing      *</FPCLINE>
+      <FPCLINE>* of title of the form with name1 and name 2 appearing first and       *</FPCLINE>
+      <FPCLINE>* fixed text order acknowledgemnt as second                            *</FPCLINE>
+      <FPCLINE>* Address into printform - Post code changes have been taken back      *</FPCLINE>
+      <FPCLINE>* Also country needs to be printed in last line and buliding, room     *</FPCLINE>
+      <FPCLINE>* and floor number in last second line if exist.                       *</FPCLINE>
+      <FPCLINE>* if d3 flag is set or is shipping cond exist in TVSBT table           *</FPCLINE>
+      <FPCLINE>* then in both cases we can get the address data in address tables     *</FPCLINE>
+      <FPCLINE>*----------------------------------------------------------------------*</FPCLINE>
+      <FPCLINE>*23-Feb-2017  DMOIRAN E1DK926027    D3 Defect 9886.                    *</FPCLINE>
+      <FPCLINE>* For D1/D2 get incoterm from Frieght field</FPCLINE>
+      <FPCLINE>*10-Oct-2017   AMOHAPA  E1DK931099   D3_R2 Defect: 1)Adding of Bill to *</FPCLINE>
+      <FPCLINE>*                                    partner details in the form header*</FPCLINE>
+      <FPCLINE>*                                    2)Printing of TBD in Est.Del.date *</FPCLINE>
+      <FPCLINE>*                                    if conf.order quantity is zero    *</FPCLINE>
+      <FPCLINE>*                                    3)Adding of Insurance fee and     *</FPCLINE>
+      <FPCLINE>*                                    Environment Fee in the form output*</FPCLINE>
+      <FPCLINE>*----------------------------------------------------------------------*</FPCLINE>
+      <FPCLINE>*29-Jan-2018   U029267  E1DK931099   D3_R3 Defect: 1)EMI configuration *</FPCLINE>
+      <FPCLINE>*                                    for Portugal, Spain, Italy and    *</FPCLINE>
+      <FPCLINE>*                                    Greece(TBD).                      *</FPCLINE>
+      <FPCLINE>*                                    2)GLN suppression (Global Location*</FPCLINE>
+      <FPCLINE>*                                    Number partners)Subtotal field for*</FPCLINE>
+      <FPCLINE>*                                    the documentation charge (ZDOC).  *</FPCLINE>
+      <FPCLINE>*                                    3)Suppression of subtotal when    *</FPCLINE>
+      <FPCLINE>*                                    value is 0 (freight, dangerous    *</FPCLINE>
+      <FPCLINE>*                                    goods, handling, insurance and    *</FPCLINE>
+      <FPCLINE>*                                    documentation).                   *</FPCLINE>
+      <FPCLINE>*                                    4)Italy CUP/CIG Code.             *</FPCLINE>
+      <FPCLINE>*                                    5)Translation                     *</FPCLINE>
+      <FPCLINE>*----------------------------------------------------------------------*</FPCLINE>
+      <FPCLINE>*We will pass the header,item,schedule line tables and other parameter</FPCLINE>
+      <FPCLINE>*will update the field that need to be displayed on adobe in specific format.</FPCLINE>
+      <FPCLINE>PERFORM f_fomat_display_table USING im_header</FPCLINE>
+      <FPCLINE>                                    im_item</FPCLINE>
+      <FPCLINE>                                    im_total_price</FPCLINE>
+      <FPCLINE>                                    im_hazardous</FPCLINE>
+      <FPCLINE>                                    im_freight</FPCLINE>
+      <FPCLINE>                                    im_handling</FPCLINE>
+      <FPCLINE>                                    im_tax</FPCLINE>
+      <FPCLINE>                                    im_subtotal</FPCLINE>
+      <FPCLINE>*&amp;--&gt; Begin of insert D3_R2 for D3_OTC_FDD_0012 by AMOHAPA on 10-Oct-2017</FPCLINE>
+      <FPCLINE>                                    im_insurance</FPCLINE>
+      <FPCLINE>                                    im_environment</FPCLINE>
+      <FPCLINE>*&amp;&lt;-- End of insert D3_R2 for D3_OTC_FDD_0012 by AMOHAPA on 10-Oct-2017</FPCLINE>
+      <FPCLINE>*&amp;--&gt; Begin of insert D3_R3 for D3_OTC_FDD_0012 by U029267 on 29-Jan-2018</FPCLINE>
+      <FPCLINE>                                    im_document.</FPCLINE>
+      <FPCLINE>*&amp;&lt;-- End of insert D3_R3 for D3_OTC_FDD_0012 by U029267 on 29-Jan-2018</FPCLINE>
+      <FPCLINE/>
+      <FPCLINE>*&amp;--For Bio Rad Logo and Draft Watermark</FPCLINE>
+      <FPCLINE>PERFORM f_logo_watermark_image CHANGING gv_production</FPCLINE>
+      <FPCLINE>                                        gv_image_bin</FPCLINE>
+      <FPCLINE>                                        gv_logo_bin.</FPCLINE>
+      <FPCLINE>*To get the sendig country details.</FPCLINE>
+      <FPCLINE>PERFORM f_get_send_country USING im_vbeln.</FPCLINE>
+      <FPCLINE>*&amp;--Format Addresses in the document</FPCLINE>
+      <FPCLINE>PERFORM f_format_address USING im_sold_to_addr</FPCLINE>
+      <FPCLINE>                               im_ship_to_addr</FPCLINE>
+      <FPCLINE>                               im_country_key</FPCLINE>
+      <FPCLINE>*&amp;--&gt; Begin of insert D3_R2 for D3_OTC_FDD_0012 by AMOHAPA on 10-Oct-2017</FPCLINE>
+      <FPCLINE>                               im_bill_to.</FPCLINE>
+      <FPCLINE>*&amp;&lt;-- End of insert D3_R2 for D3_OTC_FDD_0012 by AMOHAPA on 10-Oct-2017</FPCLINE>
+      <FPCLINE/>
+      <FPCLINE>*Begin of insert for D3_OTC_FDD_0012 CR#289 by U034336</FPCLINE>
+      <FPCLINE>*if D3 flag is set then only proceed with the address format changes</FPCLINE>
+      <FPCLINE/>
+      <FPCLINE>IF im_header-d3_format_flag IS NOT INITIAL.</FPCLINE>
+      <FPCLINE/>
+      <FPCLINE>  PERFORM f_get_address USING im_sold_to_addr</FPCLINE>
+      <FPCLINE>                              im_country_key</FPCLINE>
+      <FPCLINE>                              im_header</FPCLINE>
+      <FPCLINE>                      CHANGING i_sold_address.</FPCLINE>
+      <FPCLINE/>
+      <FPCLINE>  PERFORM f_get_address USING im_ship_to_addr</FPCLINE>
+      <FPCLINE>                              im_country_key</FPCLINE>
+      <FPCLINE>                              im_header</FPCLINE>
+      <FPCLINE>                      CHANGING i_ship_address.</FPCLINE>
+      <FPCLINE>*&amp;--&gt; Begin of insert D3_R2 for D3_OTC_FDD_0012 by AMOHAPA on 10-Oct-2017</FPCLINE>
+      <FPCLINE>  PERFORM f_get_address USING im_bill_to</FPCLINE>
+      <FPCLINE>                              im_country_key</FPCLINE>
+      <FPCLINE>                              im_header</FPCLINE>
+      <FPCLINE>                        CHANGING i_bill_address.</FPCLINE>
+      <FPCLINE/>
+      <FPCLINE>*&amp;&lt;-- End of insert D3_R2 for D3_OTC_FDD_0012 by AMOHAPA on 10-Oct-2017</FPCLINE>
+      <FPCLINE/>
+      <FPCLINE>ENDIF. &quot; IF im_header-d3_format_flag IS NOT INITIAL</FPCLINE>
+      <FPCLINE>*End of insert for D3_OTC_FDD_0012 CR#289 by U034336</FPCLINE>
+      <FPCLINE>* GV_incoterm is created because Header structure was</FPCLINE>
+      <FPCLINE>* created in D1/D2 development so did not change</FPCLINE>
+      <FPCLINE>* the existing structure</FPCLINE>
+      <FPCLINE>*--&gt;Begin of insert for D3 Defect 9886 by DMOIRAN</FPCLINE>
+      <FPCLINE>IF im_header-d3_format_flag IS INITIAL.</FPCLINE>
+      <FPCLINE>* D1/D2 used to have the field Freight. In D3 this has been replaced by incoterms.</FPCLINE>
+      <FPCLINE>* For D1/D2 the value is mapped from EMI but in D3 the value in incoterm itself is printed.</FPCLINE>
+      <FPCLINE>  gv_incoterm = im_header-freight.</FPCLINE>
+      <FPCLINE>ELSE. &quot; ELSE -&gt; IF im_header-d3_format_flag IS INITIAL</FPCLINE>
+      <FPCLINE>*&lt;--End of insert for D3 Defect 9886 by DMOIRAN</FPCLINE>
+      <FPCLINE/>
+      <FPCLINE>*Begin of insert for D3_OTC_FDD_0012 CR#301 by U034336</FPCLINE>
+      <FPCLINE>  CONCATENATE im_header-inco1  im_header-inco2</FPCLINE>
+      <FPCLINE>  INTO gv_incoterm SEPARATED BY space.</FPCLINE>
+      <FPCLINE>*End of insert for D3_OTC_FDD_0012 CR#301 by U034336</FPCLINE>
+      <FPCLINE>ENDIF. &quot; IF im_header-d3_format_flag IS INITIAL</FPCLINE>
+     </INITIALIZATION>
+     <FORMS>
+      <FPCLINE>************************************************************************</FPCLINE>
+      <FPCLINE>* Interface  : ZOTC0012_ORDER_ACKNWLDG_FORM                            *</FPCLINE>
+      <FPCLINE>* Title      : Order Acknowledgement Form                              *</FPCLINE>
+      <FPCLINE>* Developer  : Nidhi Saxena                                            *</FPCLINE>
+      <FPCLINE>* Object Type: Form Interface                                          *</FPCLINE>
+      <FPCLINE>* SAP Release: SAP ECC 6.0                                             *</FPCLINE>
+      <FPCLINE>*----------------------------------------------------------------------*</FPCLINE>
+      <FPCLINE>* WRICEF ID  : D2_OTC_FDD_0012_Order acknowledgement form                 *</FPCLINE>
+      <FPCLINE>*----------------------------------------------------------------------*</FPCLINE>
+      <FPCLINE>* Description: Order Acknowledgement is sent to the customer through   *</FPCLINE>
+      <FPCLINE>*              email, fax, or print. These forms will need to be auto  *</FPCLINE>
+      <FPCLINE>*              generated at the time the Order is saved.               *</FPCLINE>
+      <FPCLINE>*----------------------------------------------------------------------*</FPCLINE>
+      <FPCLINE>* Modification History:                                                *</FPCLINE>
+      <FPCLINE>*======================================================================*</FPCLINE>
+      <FPCLINE>* Date        User      Transport  Description                         *</FPCLINE>
+      <FPCLINE>* =========== ========  ========== ====================================*</FPCLINE>
+      <FPCLINE>*  12-Nov-2014   NSaxena   E2DK906561  INITIAL DEVELOPMENT             *                                                                    *</FPCLINE>
+      <FPCLINE>*----------------------------------------------------------------------*</FPCLINE>
+      <FPCLINE>*24-Feb-2015  NSAXENA       E2DK906561      Defect #4073 Multpl Issues *</FPCLINE>
+      <FPCLINE>*                                           with Order Confirmtin PDF  *</FPCLINE>
+      <FPCLINE>*05-Mar-2015  NSAXENA       E2DK906561      Defect #4518 Ship To addres*</FPCLINE>
+      <FPCLINE>*                                           does not wrap &amp; Street3 is *</FPCLINE>
+      <FPCLINE>*                                           missing when BLD/Flr/Rm is *</FPCLINE>
+      <FPCLINE>*                                           not present                *</FPCLINE>
+      <FPCLINE>*----------------------------------------------------------------------*</FPCLINE>
+      <FPCLINE>* 15-Dec-2015   SAGARWA1   E2DK916245   Defect#850:Delete B/O Qty and  *</FPCLINE>
+      <FPCLINE>*                                       give TBD in ship date if confir*</FPCLINE>
+      <FPCLINE>*                                       *mation quantity is 0          *</FPCLINE>
+      <FPCLINE>*&amp;---------------------------------------------------------------------&amp;</FPCLINE>
+      <FPCLINE>* 02-May-2016   PDEBARU    E2DK917643   Defect # 1697 / CR 1612 : If   *</FPCLINE>
+      <FPCLINE>*                                       material is not confirmed ,    *</FPCLINE>
+      <FPCLINE>*                                       populate date instead of &apos;TBD&apos; *</FPCLINE>
+      <FPCLINE>*&amp;---------------------------------------------------------------------&amp;</FPCLINE>
+      <FPCLINE>*----------------------------------------------------------------------*</FPCLINE>
+      <FPCLINE>* 10-Oct-2016 U034336 E1DK917654    Changes for D3_OTC_FDD_0012        *</FPCLINE>
+      <FPCLINE>* Two flags are set in the program one is D3_format_flag</FPCLINE>
+      <FPCLINE>* If this flag is set then appropriate changes in dates, UOM and Currency</FPCLINE>
+      <FPCLINE>* are made specific to the country.</FPCLINE>
+      <FPCLINE>* Other is language flag , which is set if D2 check for langauge is</FPCLINE>
+      <FPCLINE>* not true, then the language to print texts and labels in the form</FPCLINE>
+      <FPCLINE>* is taken from Sold to customer language.</FPCLINE>
+      <FPCLINE>*----------------------------------------------------------------------*</FPCLINE>
+      <FPCLINE>* 26-Oct-2016 U034336 E1DK917654    Changes for Defect 5480.           *</FPCLINE>
+      <FPCLINE>*Change in order of fields displayed under material description        *</FPCLINE>
+      <FPCLINE>*Separate material desc and external product line text                 *</FPCLINE>
+      <FPCLINE>*----------------------------------------------------------------------*</FPCLINE>
+      <FPCLINE>*16-Dec-2016 U034336 E1DK917654     Changes for CR#289                 *</FPCLINE>
+      <FPCLINE>* Change number of address lines for sold to and ship to address       *</FPCLINE>
+      <FPCLINE>* along with country should come concatenated                          *</FPCLINE>
+      <FPCLINE>* at the end of the last line                                          *</FPCLINE>
+      <FPCLINE>* 2. Check if text id&apos;s text is blank for form language , fetch the    *</FPCLINE>
+      <FPCLINE>* text using english langauge                                          *</FPCLINE>
+      <FPCLINE>*----------------------------------------------------------------------*</FPCLINE>
+      <FPCLINE>*9-Jan-2017  U034336 E1DK917654     Changes for CR#301_Part-2          *</FPCLINE>
+      <FPCLINE>*If sold to language is french then reverse the order of printing      *</FPCLINE>
+      <FPCLINE>* of title of the form with name1 and name 2 appearing first and       *</FPCLINE>
+      <FPCLINE>* fixed text order acknowledgemnt as second                            *</FPCLINE>
+      <FPCLINE>* Address into printform - Post code changes have been taken back      *</FPCLINE>
+      <FPCLINE>* Also country needs to be printed in last line and buliding, room     *</FPCLINE>
+      <FPCLINE>* and floor number in last second line if exist.                       *</FPCLINE>
+      <FPCLINE>* if d3 flag is set or is shipping cond exist in TVSBT table           *</FPCLINE>
+      <FPCLINE>* then in both cases we can get the address data in address tables     *</FPCLINE>
+      <FPCLINE>*----------------------------------------------------------------------*</FPCLINE>
+      <FPCLINE>*19-Apr-2017  DMOIRAN  E1DK927294    D3 COE Defect 2605.               *</FPCLINE>
+      <FPCLINE>* Building, Room, Floor is getting printed only when all 3 values are  *</FPCLINE>
+      <FPCLINE>* there. Fix done to print if any of the values are there.             *</FPCLINE>
+      <FPCLINE/>
+      <FPCLINE>*10-Oct-2017   AMOHAPA  E1DK931099   D3_R2 Defect: 1)Adding of Bill to *</FPCLINE>
+      <FPCLINE>*                                    partner details in the form header*</FPCLINE>
+      <FPCLINE>*                                    2)Printing of TBD in Est.Del.date *</FPCLINE>
+      <FPCLINE>*                                    if conf.order quantity is zero    *</FPCLINE>
+      <FPCLINE>*                                    3)Adding of Insurance fee and     *</FPCLINE>
+      <FPCLINE>*                                    Environment Fee in the form output*</FPCLINE>
+      <FPCLINE>*02-Nov-2017  AMOHAPA  E1DK931099    Defect# 3909: Incorrect Delivery  *</FPCLINE>
+      <FPCLINE>*                                    populated                         *</FPCLINE>
+      <FPCLINE>**&amp;--------------------------------------------------------------------*</FPCLINE>
+      <FPCLINE>*29-Jan-2018   U029267  E1DK931099   D3_R3 Defect: 1)EMI configuration *</FPCLINE>
+      <FPCLINE>*                                    for Portugal, Spain, Italy and    *</FPCLINE>
+      <FPCLINE>*                                    Greece(TBD).                      *</FPCLINE>
+      <FPCLINE>*                                    2)GLN suppression (Global Location*</FPCLINE>
+      <FPCLINE>*                                    Number partners)Subtotal field for*</FPCLINE>
+      <FPCLINE>*                                    the documentation charge (ZDOC).  *</FPCLINE>
+      <FPCLINE>*                                    3)Suppression of subtotal when    *</FPCLINE>
+      <FPCLINE>*                                    value is 0 (freight, dangerous    *</FPCLINE>
+      <FPCLINE>*                                    goods, handling, insurance and    *</FPCLINE>
+      <FPCLINE>*                                    documentation).                   *</FPCLINE>
+      <FPCLINE>*                                    4)Italy CUP/CIG Code.             *</FPCLINE>
+      <FPCLINE>*                                    5)Translation                     *</FPCLINE>
+      <FPCLINE>*----------------------------------------------------------------------*</FPCLINE>
+      <FPCLINE>*07-Feb-2019   U029267   E2DK922074  R6 Defect#8304:Include billing    *</FPCLINE>
+      <FPCLINE>*                                    plan details in order acknowldgemt*</FPCLINE>
+      <FPCLINE>*----------------------------------------------------------------------*</FPCLINE>
+      <FPCLINE>*&amp;      Form  f_get_send_country</FPCLINE>
+      <FPCLINE>*&amp;---------------------------------------------------------------------*</FPCLINE>
+      <FPCLINE>*       Fetch send country key</FPCLINE>
+      <FPCLINE>*----------------------------------------------------------------------*</FPCLINE>
+      <FPCLINE>*      --&gt;FP_VBELN          Sales Order Number</FPCLINE>
+      <FPCLINE>*----------------------------------------------------------------------*</FPCLINE>
+      <FPCLINE>FORM f_get_send_country USING fp_vbeln TYPE vbeln_va. &quot; Sales Document</FPCLINE>
+      <FPCLINE/>
+      <FPCLINE>  DATA: lv_werks TYPE werks_d. &quot;Plant</FPCLINE>
+      <FPCLINE/>
+      <FPCLINE>  CLEAR: gv_send_country.</FPCLINE>
+      <FPCLINE/>
+      <FPCLINE>*&amp;--Fetch plant value from order item table</FPCLINE>
+      <FPCLINE>  SELECT werks &quot; Plant (Own or External)</FPCLINE>
+      <FPCLINE>    UP TO 1 ROWS</FPCLINE>
+      <FPCLINE>    FROM vbap  &quot; Sales Document: Item Data</FPCLINE>
+      <FPCLINE>    INTO lv_werks</FPCLINE>
+      <FPCLINE>    WHERE vbeln EQ fp_vbeln.</FPCLINE>
+      <FPCLINE>  ENDSELECT.</FPCLINE>
+      <FPCLINE/>
+      <FPCLINE>  IF sy-subrc EQ 0.</FPCLINE>
+      <FPCLINE/>
+      <FPCLINE>*&amp;--Fetch country key value from plant table</FPCLINE>
+      <FPCLINE>    SELECT SINGLE land1 &quot; Country Key</FPCLINE>
+      <FPCLINE>      FROM t001w        &quot; Plants/Branches</FPCLINE>
+      <FPCLINE>      INTO gv_send_country</FPCLINE>
+      <FPCLINE>      WHERE werks EQ lv_werks.</FPCLINE>
+      <FPCLINE/>
+      <FPCLINE>  ENDIF. &quot; IF sy-subrc EQ 0</FPCLINE>
+      <FPCLINE/>
+      <FPCLINE>ENDFORM. &quot;f_get_send_country</FPCLINE>
+      <FPCLINE>*&amp;---------------------------------------------------------------------*</FPCLINE>
+      <FPCLINE>*&amp;      Form  f_fomat_display_table</FPCLINE>
+      <FPCLINE>*&amp;---------------------------------------------------------------------*</FPCLINE>
+      <FPCLINE>*       Format Display table</FPCLINE>
+      <FPCLINE>*----------------------------------------------------------------------*</FPCLINE>
+      <FPCLINE>*      --&gt;FP_HEADER               Header Data</FPCLINE>
+      <FPCLINE>*      --&gt;FP_I_ITEM               Order Acknowledgement Item data</FPCLINE>
+      <FPCLINE>*      --&gt;FP_TOTAL_PR             Total Price</FPCLINE>
+      <FPCLINE>*      --&gt;FP_HAZARDOUS            Hazardous material</FPCLINE>
+      <FPCLINE>*      --&gt;FP_FREIGHT              Freight material</FPCLINE>
+      <FPCLINE>*      --&gt;FP_HANDLING             Handling material</FPCLINE>
+      <FPCLINE>*      --&gt;FP_TAX                  Tax value</FPCLINE>
+      <FPCLINE>*      --&gt;FP_SUBTOTAL             Subtotal Values</FPCLINE>
+      <FPCLINE>*----------------------------------------------------------------------*</FPCLINE>
+      <FPCLINE>FORM f_fomat_display_table</FPCLINE>
+      <FPCLINE>                    USING fp_i_header  TYPE zotc_cust_order_ack_header &quot; Header data for Customer Order Acknowledgement form</FPCLINE>
+      <FPCLINE>                          fp_i_item     TYPE zotc_t_cust_order_ack_item</FPCLINE>
+      <FPCLINE>                          fp_total_price TYPE char15                   &quot; Total_price of type CHAR15</FPCLINE>
+      <FPCLINE>                          fp_hazardous TYPE char15                     &quot; Hazardous of type CHAR15</FPCLINE>
+      <FPCLINE>                          fp_freight TYPE char15                       &quot; Freight of type CHAR15</FPCLINE>
+      <FPCLINE>                          fp_handling TYPE char15                      &quot; Handling of type CHAR15</FPCLINE>
+      <FPCLINE>                          fp_tax  TYPE char15                          &quot; Tax of type CHAR15</FPCLINE>
+      <FPCLINE>                          fp_subtotal TYPE char15                      &quot; Subtotal of type CHAR15</FPCLINE>
+      <FPCLINE>*&amp;--&gt; Begin of insert D3_R2 for D3_OTC_FDD_0012 by AMOHAPA on 10-Oct-2017</FPCLINE>
+      <FPCLINE>                          fp_insurance TYPE char15    &quot;Insurance fee</FPCLINE>
+      <FPCLINE>                          fp_environment TYPE char15 &quot;Environment fee</FPCLINE>
+      <FPCLINE>*&amp;&lt;-- End of insert D3_R2 for D3_OTC_FDD_0012 by AMOHAPA on 10-Oct-2017</FPCLINE>
+      <FPCLINE>*&amp;--&gt; Begin of insert D3_R3 for D3_OTC_FDD_0012 by U029267 on 29-Jan-2018</FPCLINE>
+      <FPCLINE>                          fp_document TYPE char15. &quot;Documentation charge</FPCLINE>
+      <FPCLINE>*&amp;&lt;-- End of insert D3_R3 for D3_OTC_FDD_0012 by U029267 on 29-Jan-2018</FPCLINE>
+      <FPCLINE/>
+      <FPCLINE>  FIELD-SYMBOLS:</FPCLINE>
+      <FPCLINE>*&amp;--Item Data</FPCLINE>
+      <FPCLINE>      &lt;lfs_item&gt;     TYPE zotc_cust_order_ack_item. &quot; Cutomer Order Acknowledgement Item data</FPCLINE>
+      <FPCLINE/>
+      <FPCLINE>  DATA:</FPCLINE>
+      <FPCLINE>*&amp;--Display table work area</FPCLINE>
+      <FPCLINE>      lwa_display   TYPE ty_display,</FPCLINE>
+      <FPCLINE>      lv_index      TYPE i. &quot; Index of type Integers</FPCLINE>
+      <FPCLINE/>
+      <FPCLINE>*&amp; --&gt; Begin of Insert for Defect#1225 by SAGARWA1</FPCLINE>
+      <FPCLINE>  CONSTANTS: lc_st    TYPE tdid      VALUE &apos;ST&apos;,                   &quot; Text ID</FPCLINE>
+      <FPCLINE>             lc_text  TYPE tdobject  VALUE &apos;TEXT&apos;,                 &quot; Text Object</FPCLINE>
+      <FPCLINE>             lc_tbd   TYPE tdobname  VALUE &apos;ZOTC_BIORAD_DATE_TBD&apos;. &quot; Object Name</FPCLINE>
+      <FPCLINE/>
+      <FPCLINE>  DATA : lwa_lines TYPE tline,                                  &quot; Work area for standard text</FPCLINE>
+      <FPCLINE>         li_lines  TYPE STANDARD TABLE OF tline INITIAL SIZE 0, &quot; Internal table</FPCLINE>
+      <FPCLINE>         lv_tbd    TYPE tdline,                                 &quot; Standard text</FPCLINE>
+      <FPCLINE>*---&gt; Begin of change for D2_OTC_FDD_0012 Defect # 1697 / CR 1612 by PDEBARU</FPCLINE>
+      <FPCLINE>         lv_date TYPE char10, &quot; Date of type CHAR10</FPCLINE>
+      <FPCLINE>         lv_year  TYPE char2, &quot; Year of type CHAR2</FPCLINE>
+      <FPCLINE>         lv_day   TYPE char2, &quot; Day of type CHAR2</FPCLINE>
+      <FPCLINE>         lv_month TYPE char2. &quot; Month of type CHAR2</FPCLINE>
+      <FPCLINE>*&lt;--- End of change for D2_OTC_FDD_0012 Defect # 1697 / CR 1612 by PDEBARU</FPCLINE>
+      <FPCLINE>*&amp; --&gt; End of Insert for Defect#1225 by SAGARWA1</FPCLINE>
+      <FPCLINE/>
+      <FPCLINE>  LOOP AT fp_i_item ASSIGNING &lt;lfs_item&gt;.</FPCLINE>
+      <FPCLINE>*Line number</FPCLINE>
+      <FPCLINE>    CALL FUNCTION &apos;CONVERSION_EXIT_ALPHA_OUTPUT&apos;</FPCLINE>
+      <FPCLINE>      EXPORTING</FPCLINE>
+      <FPCLINE>        input  = &lt;lfs_item&gt;-posnr</FPCLINE>
+      <FPCLINE>      IMPORTING</FPCLINE>
+      <FPCLINE>        output = lwa_display-posn.</FPCLINE>
+      <FPCLINE/>
+      <FPCLINE/>
+      <FPCLINE>*&amp;--Item</FPCLINE>
+      <FPCLINE>    WRITE &lt;lfs_item&gt;-matnr TO lwa_display-matnr.</FPCLINE>
+      <FPCLINE>*&amp;--Description</FPCLINE>
+      <FPCLINE>    lwa_display-descr      = &lt;lfs_item&gt;-arktx.</FPCLINE>
+      <FPCLINE>*order qty</FPCLINE>
+      <FPCLINE>    lwa_display-qty        = &lt;lfs_item&gt;-quantity.</FPCLINE>
+      <FPCLINE>*back order qty</FPCLINE>
+      <FPCLINE>    lwa_display-bo_qty     = &lt;lfs_item&gt;-back_ord_qty.</FPCLINE>
+      <FPCLINE>*confirmed qty</FPCLINE>
+      <FPCLINE>    lwa_display-conf_qty   =  &lt;lfs_item&gt;-conf_qty.</FPCLINE>
+      <FPCLINE>*&amp;--Batch</FPCLINE>
+      <FPCLINE>    lwa_display-batch      = &lt;lfs_item&gt;-charg.</FPCLINE>
+      <FPCLINE>*&amp;--Expiration date</FPCLINE>
+      <FPCLINE>    lwa_display-exp_date   = &lt;lfs_item&gt;-edatu.</FPCLINE>
+      <FPCLINE>*Shipping date</FPCLINE>
+      <FPCLINE>    lwa_display-ship_date   = &lt;lfs_item&gt;-vfdat.</FPCLINE>
+      <FPCLINE>*&amp;--&gt; Begin of Insert for Defect#850 by SAGARWA1</FPCLINE>
+      <FPCLINE/>
+      <FPCLINE>    IF &lt;lfs_item&gt;-bmeng = 0.</FPCLINE>
+      <FPCLINE/>
+      <FPCLINE>*&amp;---&gt; Begin of delete D3_OTC_FDD_0012_Defect# 3909 by AMOHAPA on 01-NOV-2017</FPCLINE>
+      <FPCLINE>&quot;The below code is handled in the Driver program to populate TBD and 1st line</FPCLINE>
+      <FPCLINE>&quot;Delivery date</FPCLINE>
+      <FPCLINE/>
+      <FPCLINE>*&amp;--&gt; Begin of change D3_R2 for D3_OTC_FDD_0012 by AMOHAPA on 10-Oct-2017</FPCLINE>
+      <FPCLINE/>
+      <FPCLINE>*Below piece of code is uncomment for the R2 requirement of TBD should printed</FPCLINE>
+      <FPCLINE>*FM to read text lines for material description with text id 0001</FPCLINE>
+      <FPCLINE>*---&gt; Begin of change for D2_OTC_FDD_0012 Defect # 1697 / CR 1612 by PDEBARU</FPCLINE>
+      <FPCLINE>**** The below code is commented</FPCLINE>
+      <FPCLINE>*      CALL FUNCTION &apos;READ_TEXT&apos;</FPCLINE>
+      <FPCLINE>*        EXPORTING</FPCLINE>
+      <FPCLINE>*          id                      = lc_st    &quot;Id</FPCLINE>
+      <FPCLINE>*          language                = sy-langu &quot; Language</FPCLINE>
+      <FPCLINE>*          name                    = lc_tbd   &quot; TBD</FPCLINE>
+      <FPCLINE>*          object                  = lc_text  &quot;Object Id</FPCLINE>
+      <FPCLINE>*        TABLES</FPCLINE>
+      <FPCLINE>*          lines                   = li_lines &quot;Text lines</FPCLINE>
+      <FPCLINE>*        EXCEPTIONS</FPCLINE>
+      <FPCLINE>*          id                      = 1</FPCLINE>
+      <FPCLINE>*          language                = 2</FPCLINE>
+      <FPCLINE>*          name                    = 3</FPCLINE>
+      <FPCLINE>*          not_found               = 4</FPCLINE>
+      <FPCLINE>*          object                  = 5</FPCLINE>
+      <FPCLINE>*          reference_check         = 6</FPCLINE>
+      <FPCLINE>*          wrong_access_to_archive = 7</FPCLINE>
+      <FPCLINE>*          OTHERS                  = 8.</FPCLINE>
+      <FPCLINE>*      IF li_lines[] IS NOT INITIAL.</FPCLINE>
+      <FPCLINE>*        READ TABLE li_lines INTO lwa_lines INDEX 1.</FPCLINE>
+      <FPCLINE>*        IF sy-subrc = 0.</FPCLINE>
+      <FPCLINE>*          lv_tbd = lwa_lines-tdline.</FPCLINE>
+      <FPCLINE>*        ENDIF. &quot; IF sy-subrc = 0</FPCLINE>
+      <FPCLINE>*        lwa_display-ship_date = lv_tbd.</FPCLINE>
+      <FPCLINE>*        CLEAR : lv_tbd.</FPCLINE>
+      <FPCLINE>*        REFRESH : li_lines[].</FPCLINE>
+      <FPCLINE>*      ENDIF. &quot; IF li_lines[] IS NOT INITIAL</FPCLINE>
+      <FPCLINE>**</FPCLINE>
+      <FPCLINE>*      IF fp_i_header-audat IS NOT INITIAL.</FPCLINE>
+      <FPCLINE>*              lv_date = fp_i_header-audat.</FPCLINE>
+      <FPCLINE>*              CONDENSE lv_date.</FPCLINE>
+      <FPCLINE>*              lv_year = lv_date+2(2).</FPCLINE>
+      <FPCLINE>*              lv_month = lv_date+4(2).</FPCLINE>
+      <FPCLINE>*              lv_day = lv_date+6(2).</FPCLINE>
+      <FPCLINE>*              CONCATENATE lv_month lv_day lv_year INTO  lwa_display-ship_date</FPCLINE>
+      <FPCLINE>*               SEPARATED BY &apos;/&apos;.</FPCLINE>
+      <FPCLINE>*            ENDIF. &quot; IF lwa_item-vfdat IS NOT INITIAL</FPCLINE>
+      <FPCLINE/>
+      <FPCLINE/>
+      <FPCLINE>*&lt;--- End of change for D2_OTC_FDD_0012 Defect # 1697 / CR 1612 by PDEBARU</FPCLINE>
+      <FPCLINE>*&amp;&lt;-- End of change D3_R2 for D3_OTC_FDD_0012 by AMOHAPA on 10-Oct-2017</FPCLINE>
+      <FPCLINE/>
+      <FPCLINE>*&amp;&lt;--- End of delete D3_OTC_FDD_0012_Defect# 3909 by AMOHAPA on 01-NOV-2017</FPCLINE>
+      <FPCLINE/>
+      <FPCLINE>    ENDIF. &quot; IF &lt;lfs_item&gt;-bmeng = 0</FPCLINE>
+      <FPCLINE>*&amp;--&gt; End of Insert for Defect#850 by SAGARWA1</FPCLINE>
+      <FPCLINE>*Unit price</FPCLINE>
+      <FPCLINE>    WRITE &lt;lfs_item&gt;-unit_price TO lwa_display-unit_price RIGHT-JUSTIFIED.</FPCLINE>
+      <FPCLINE>*Begin of insert for D3_OTC_FDD_0012 by U034336</FPCLINE>
+      <FPCLINE>    IF fp_i_header-d3_format_flag IS NOT INITIAL.</FPCLINE>
+      <FPCLINE>      SET COUNTRY fp_i_header-country.</FPCLINE>
+      <FPCLINE>      WRITE lwa_display-unit_price TO lwa_display-unit_price CURRENCY &lt;lfs_item&gt;-waerk.</FPCLINE>
+      <FPCLINE>    ENDIF. &quot; IF fp_i_header-d3_format_flag IS NOT INITIAL</FPCLINE>
+      <FPCLINE>*End of insert for D3_OTC_FDD_0012 by U034336</FPCLINE>
+      <FPCLINE/>
+      <FPCLINE>*Amount</FPCLINE>
+      <FPCLINE/>
+      <FPCLINE>    WRITE &lt;lfs_item&gt;-ext_price TO  lwa_display-amount RIGHT-JUSTIFIED.</FPCLINE>
+      <FPCLINE/>
+      <FPCLINE>*Begin of insert for D3_OTC_FDD_0012 by U034336</FPCLINE>
+      <FPCLINE>    IF fp_i_header-d3_format_flag IS NOT INITIAL.</FPCLINE>
+      <FPCLINE/>
+      <FPCLINE>      WRITE lwa_display-amount TO lwa_display-amount CURRENCY &lt;lfs_item&gt;-waerk.</FPCLINE>
+      <FPCLINE>    ENDIF. &quot; IF fp_i_header-d3_format_flag IS NOT INITIAL</FPCLINE>
+      <FPCLINE>*End of insert for D3_OTC_FDD_0012 by U034336</FPCLINE>
+      <FPCLINE/>
+      <FPCLINE>    CONDENSE lwa_display-unit_price.</FPCLINE>
+      <FPCLINE>    CONDENSE lwa_display-amount.</FPCLINE>
+      <FPCLINE>*Sales_text</FPCLINE>
+      <FPCLINE>    lwa_display-sales_text = &lt;lfs_item&gt;-sales_text.</FPCLINE>
+      <FPCLINE>*Qoute text</FPCLINE>
+      <FPCLINE>    lwa_display-qoute_text = &lt;lfs_item&gt;-qoute_text.</FPCLINE>
+      <FPCLINE>*Promotion text</FPCLINE>
+      <FPCLINE>    lwa_display-promo_text = &lt;lfs_item&gt;-promo_text.</FPCLINE>
+      <FPCLINE>*Begin of insert for D3_OTC_FDD_0012 by U034336</FPCLINE>
+      <FPCLINE>    lwa_display-cust_mat  = &lt;lfs_item&gt;-cust_mat.</FPCLINE>
+      <FPCLINE>*End of insert for D3_OTC_FDD_0012 by U034336</FPCLINE>
+      <FPCLINE>* Begin of insert for D3_OTC_FDD_0012, Defect#5480 by U034336</FPCLINE>
+      <FPCLINE>    lwa_display-ext_line_text = &lt;lfs_item&gt;-ext_line_text.</FPCLINE>
+      <FPCLINE>    lwa_display-ext_prod_text = &lt;lfs_item&gt;-ext_prod_text.</FPCLINE>
+      <FPCLINE>* End of insert for D3_OTC_FDD_0012, Defect#5480 by U034336</FPCLINE>
+      <FPCLINE/>
+      <FPCLINE>*&amp;--&gt; Begin of insert for R6 Upgrade D3_OTC_FDD_0012_Defect#8304 SCTASK0793188 by U029267 on 07-Feb-2019</FPCLINE>
+      <FPCLINE>    lwa_display-fkdat         = &lt;lfs_item&gt;-fkdat.</FPCLINE>
+      <FPCLINE>    lwa_display-contract_info = &lt;lfs_item&gt;-contract_info.</FPCLINE>
+      <FPCLINE>*&amp;&lt;-- End of insert for R6 Upgrade D3_OTC_FDD_0012_Defect#8304 SCTASK0793188 by U029267 on 07-Feb-2019</FPCLINE>
+      <FPCLINE/>
+      <FPCLINE>    APPEND lwa_display TO i_display.</FPCLINE>
+      <FPCLINE>    CLEAR: lwa_display.</FPCLINE>
+      <FPCLINE>  ENDLOOP. &quot; LOOP AT fp_i_item ASSIGNING &lt;lfs_item&gt;</FPCLINE>
+      <FPCLINE/>
+      <FPCLINE/>
+      <FPCLINE>*Total price</FPCLINE>
+      <FPCLINE>  WRITE: fp_total_price TO gv_total_amount CURRENCY fp_i_header-waerk.</FPCLINE>
+      <FPCLINE>*Hazardous price</FPCLINE>
+      <FPCLINE>  WRITE: fp_hazardous TO gv_hazardous CURRENCY fp_i_header-waerk.</FPCLINE>
+      <FPCLINE>*Freight price</FPCLINE>
+      <FPCLINE>  WRITE: fp_freight TO gv_freight CURRENCY fp_i_header-waerk.</FPCLINE>
+      <FPCLINE>*Handling price</FPCLINE>
+      <FPCLINE>  WRITE: fp_handling TO gv_handling CURRENCY fp_i_header-waerk.</FPCLINE>
+      <FPCLINE>*Tax price</FPCLINE>
+      <FPCLINE>  WRITE: fp_tax TO gv_tax CURRENCY fp_i_header-waerk.</FPCLINE>
+      <FPCLINE>*Subtotal price</FPCLINE>
+      <FPCLINE>  WRITE: fp_subtotal TO gv_subtotal CURRENCY fp_i_header-waerk.</FPCLINE>
+      <FPCLINE/>
+      <FPCLINE>*&amp;--&gt; Begin of insert D3_R2 for D3_OTC_FDD_0012 by AMOHAPA on 10-Oct-2017</FPCLINE>
+      <FPCLINE> &quot;Populating insurance</FPCLINE>
+      <FPCLINE>  IF fp_insurance IS NOT INITIAL.</FPCLINE>
+      <FPCLINE>    WRITE: fp_insurance TO gv_insurance CURRENCY fp_i_header-waerk.</FPCLINE>
+      <FPCLINE>  ENDIF. &quot; IF fp_insurance IS NOT INITIAL</FPCLINE>
+      <FPCLINE> &quot;Populating environment</FPCLINE>
+      <FPCLINE>  IF fp_environment IS NOT INITIAL.</FPCLINE>
+      <FPCLINE>    WRITE: fp_environment TO gv_environment CURRENCY fp_i_header-waerk.</FPCLINE>
+      <FPCLINE>  ENDIF. &quot; IF fp_environment IS NOT INITIAL</FPCLINE>
+      <FPCLINE>*&amp;&lt;-- End of insert D3_R2 for D3_OTC_FDD_0012 by AMOHAPA on 10-Oct-2017</FPCLINE>
+      <FPCLINE/>
+      <FPCLINE>*&amp;--&gt; Begin of insert D3_R3 for D3_OTC_FDD_0012 by U029267 on 29-Jan-2018</FPCLINE>
+      <FPCLINE> &quot;Populating document</FPCLINE>
+      <FPCLINE>  IF fp_document IS NOT INITIAL.</FPCLINE>
+      <FPCLINE>    WRITE: fp_document TO gv_document CURRENCY fp_i_header-waerk.</FPCLINE>
+      <FPCLINE>  ENDIF. &quot; IF fp_environment IS NOT INITIAL</FPCLINE>
+      <FPCLINE>*&amp;&lt;-- End of insert D3_R3 for D3_OTC_FDD_0012 by U029267 on 29-Jan-2018</FPCLINE>
+      <FPCLINE/>
+      <FPCLINE>ENDFORM. &quot;f_fomat_display_table</FPCLINE>
+      <FPCLINE/>
+      <FPCLINE/>
+      <FPCLINE>*&amp;---------------------------------------------------------------------*</FPCLINE>
+      <FPCLINE>*&amp;      Form  f_logo_watermark_image</FPCLINE>
+      <FPCLINE>*&amp;---------------------------------------------------------------------*</FPCLINE>
+      <FPCLINE>*       To Display Watermark</FPCLINE>
+      <FPCLINE>*----------------------------------------------------------------------*</FPCLINE>
+      <FPCLINE>*  &lt;--  FP_PRODUCTION   Production Syatem Indicator</FPCLINE>
+      <FPCLINE>*  &lt;--  FP_IMAGE_BIN    Water-Mark Image</FPCLINE>
+      <FPCLINE>*  &lt;--  FP_LOGO_BIN     Logo Image</FPCLINE>
+      <FPCLINE>*----------------------------------------------------------------------*</FPCLINE>
+      <FPCLINE>FORM f_logo_watermark_image CHANGING fp_production TYPE boolean &quot; Boolean Variable (X=True, -=False, Space=Unknown)</FPCLINE>
+      <FPCLINE>                                     fp_image_bin  TYPE xstring</FPCLINE>
+      <FPCLINE>                                     fp_logo_bin   TYPE xstring.</FPCLINE>
+      <FPCLINE>  CONSTANTS:</FPCLINE>
+      <FPCLINE>*&amp;--Enhancement Name for object &apos;D2_OTC_FDD_0012&apos;</FPCLINE>
+      <FPCLINE>    lc_fdd_0012 TYPE z_enhancement VALUE &apos;D2_OTC_FDD_0012&apos;, &quot; Enhancement No.</FPCLINE>
+      <FPCLINE>*&amp;--Enhancement Criteria: Null</FPCLINE>
+      <FPCLINE>    lc_null   TYPE z_criteria    VALUE &apos;NULL&apos;, &quot; Enh. Criteria</FPCLINE>
+      <FPCLINE>*&amp;--SAPscript Graphics Management: Application object</FPCLINE>
+      <FPCLINE>    lc_system_id TYPE z_criteria    VALUE &apos;D2_OTC_FDD_0012_SYSTEM_ID&apos;, &quot; Enh. Criteria</FPCLINE>
+      <FPCLINE>*graphics</FPCLINE>
+      <FPCLINE>     lc_graphics    TYPE tdobjectgr VALUE &apos;GRAPHICS&apos;, &quot; SAPscript Graphics Management: Application object</FPCLINE>
+      <FPCLINE>*&amp;--Draft Name</FPCLINE>
+      <FPCLINE>     lc_draft_image TYPE tdobname   VALUE &apos;ZOTC_DRAFT&apos;, &quot; Name</FPCLINE>
+      <FPCLINE>*&amp;--Logo Name</FPCLINE>
+      <FPCLINE>     lc_logo_image  TYPE tdobname   VALUE &apos;ZBIORAD_LOGO&apos;, &quot; Name</FPCLINE>
+      <FPCLINE>*&amp;--SAPscript Graphics Management: ID</FPCLINE>
+      <FPCLINE>     lc_image_id    TYPE tdidgr     VALUE &apos;BMAP&apos;, &quot; SAPscript Graphics Management: ID</FPCLINE>
+      <FPCLINE>*&amp;--SAPscript: Type of graphic</FPCLINE>
+      <FPCLINE>     lc_image_type  TYPE tdbtype    VALUE &apos;BCOL&apos;.</FPCLINE>
+      <FPCLINE>*---------------------Local Variables Declaration--------------------*</FPCLINE>
+      <FPCLINE>  DATA:</FPCLINE>
+      <FPCLINE>    lv_system       TYPE sysysid, &quot; Name of the SAP System</FPCLINE>
+      <FPCLINE>*------------------------Local Internal Tables-----------------------*</FPCLINE>
+      <FPCLINE>    li_status       TYPE zdev_tt_enh_status. &quot; Enhancement Status</FPCLINE>
+      <FPCLINE/>
+      <FPCLINE>*-------------------------Local Field Symbols------------------------*</FPCLINE>
+      <FPCLINE>  FIELD-SYMBOLS:</FPCLINE>
+      <FPCLINE>    &lt;lfs_status&gt;    TYPE zdev_enh_status. &quot; Enhancement Status</FPCLINE>
+      <FPCLINE/>
+      <FPCLINE>  CALL FUNCTION &apos;ZDEV_ENHANCEMENT_STATUS_CHECK&apos;</FPCLINE>
+      <FPCLINE>    EXPORTING</FPCLINE>
+      <FPCLINE>      iv_enhancement_no = lc_fdd_0012</FPCLINE>
+      <FPCLINE>    TABLES</FPCLINE>
+      <FPCLINE>      tt_enh_status     = li_status.</FPCLINE>
+      <FPCLINE/>
+      <FPCLINE>  DELETE li_status WHERE active EQ abap_false.</FPCLINE>
+      <FPCLINE/>
+      <FPCLINE>  READ TABLE li_status WITH KEY criteria = lc_null &quot;NULL</FPCLINE>
+      <FPCLINE>                        TRANSPORTING NO FIELDS.</FPCLINE>
+      <FPCLINE>  IF sy-subrc EQ 0.</FPCLINE>
+      <FPCLINE>*To Read name</FPCLINE>
+      <FPCLINE>    READ TABLE li_status ASSIGNING &lt;lfs_status&gt; WITH KEY criteria = lc_system_id.</FPCLINE>
+      <FPCLINE>    IF sy-subrc EQ 0.</FPCLINE>
+      <FPCLINE>      lv_system = &lt;lfs_status&gt;-sel_low.</FPCLINE>
+      <FPCLINE>    ENDIF. &quot; IF sy-subrc EQ 0</FPCLINE>
+      <FPCLINE/>
+      <FPCLINE>    IF lv_system EQ sy-sysid. &quot; Production System</FPCLINE>
+      <FPCLINE>      fp_production = abap_true.</FPCLINE>
+      <FPCLINE>*&amp;--If not Production client then</FPCLINE>
+      <FPCLINE>*&amp;--convert watermark image to Binary format</FPCLINE>
+      <FPCLINE>    ELSE. &quot; ELSE -&gt; IF lv_system EQ sy-sysid</FPCLINE>
+      <FPCLINE>      CALL METHOD cl_ssf_xsf_utilities=&gt;get_bds_graphic_as_bmp</FPCLINE>
+      <FPCLINE>        EXPORTING</FPCLINE>
+      <FPCLINE>          p_object       = lc_graphics</FPCLINE>
+      <FPCLINE>          p_name         = lc_draft_image</FPCLINE>
+      <FPCLINE>          p_id           = lc_image_id</FPCLINE>
+      <FPCLINE>          p_btype        = lc_image_type</FPCLINE>
+      <FPCLINE>        RECEIVING</FPCLINE>
+      <FPCLINE>          p_bmp          = fp_image_bin</FPCLINE>
+      <FPCLINE>        EXCEPTIONS</FPCLINE>
+      <FPCLINE>          not_found      = 1</FPCLINE>
+      <FPCLINE>          internal_error = 2</FPCLINE>
+      <FPCLINE>          OTHERS         = 3.</FPCLINE>
+      <FPCLINE>      IF sy-subrc &lt;&gt; 0.</FPCLINE>
+      <FPCLINE>        MESSAGE ID sy-msgid TYPE sy-msgty NUMBER sy-msgno</FPCLINE>
+      <FPCLINE>                   WITH sy-msgv1 sy-msgv2 sy-msgv3 sy-msgv4.</FPCLINE>
+      <FPCLINE>      ENDIF. &quot; IF sy-subrc &lt;&gt; 0</FPCLINE>
+      <FPCLINE>    ENDIF. &quot; IF lv_system EQ sy-sysid</FPCLINE>
+      <FPCLINE/>
+      <FPCLINE>*&amp;--Convert Logo image to Binary format</FPCLINE>
+      <FPCLINE>    CALL METHOD cl_ssf_xsf_utilities=&gt;get_bds_graphic_as_bmp</FPCLINE>
+      <FPCLINE>      EXPORTING</FPCLINE>
+      <FPCLINE>        p_object       = lc_graphics</FPCLINE>
+      <FPCLINE>        p_name         = lc_logo_image</FPCLINE>
+      <FPCLINE>        p_id           = lc_image_id</FPCLINE>
+      <FPCLINE>        p_btype        = lc_image_type</FPCLINE>
+      <FPCLINE>      RECEIVING</FPCLINE>
+      <FPCLINE>        p_bmp          = fp_logo_bin</FPCLINE>
+      <FPCLINE>      EXCEPTIONS</FPCLINE>
+      <FPCLINE>        not_found      = 1</FPCLINE>
+      <FPCLINE>        internal_error = 2</FPCLINE>
+      <FPCLINE>        OTHERS         = 3.</FPCLINE>
+      <FPCLINE>    IF sy-subrc &lt;&gt; 0.</FPCLINE>
+      <FPCLINE>      MESSAGE ID sy-msgid TYPE sy-msgty NUMBER sy-msgno</FPCLINE>
+      <FPCLINE>                 WITH sy-msgv1 sy-msgv2 sy-msgv3 sy-msgv4.</FPCLINE>
+      <FPCLINE>    ENDIF. &quot; IF sy-subrc &lt;&gt; 0</FPCLINE>
+      <FPCLINE>  ENDIF. &quot; IF sy-subrc EQ 0</FPCLINE>
+      <FPCLINE>  FREE: li_status.</FPCLINE>
+      <FPCLINE>ENDFORM. &quot;f_logo_watermark_image</FPCLINE>
+      <FPCLINE>*&amp;---------------------------------------------------------------------*</FPCLINE>
+      <FPCLINE>*&amp;      Form  f_format_address</FPCLINE>
+      <FPCLINE>*&amp;---------------------------------------------------------------------*</FPCLINE>
+      <FPCLINE>*       To Display Address</FPCLINE>
+      <FPCLINE>*----------------------------------------------------------------------*</FPCLINE>
+      <FPCLINE>*  &lt;--  FP_SOLD_TO_ADDR Sold to Address</FPCLINE>
+      <FPCLINE>*  &lt;--  FP_SHIP_TO_ADDR Ship to Address</FPCLINE>
+      <FPCLINE>*----------------------------------------------------------------------*</FPCLINE>
+      <FPCLINE>*&amp;--Format Addresses in the document</FPCLINE>
+      <FPCLINE>FORM f_format_address USING    fp_sold_to_addr  TYPE zotc_cust_order_ack_add_info &quot; Customer Order Acknowledgement - General Address Information</FPCLINE>
+      <FPCLINE>                               fp_ship_to_addr TYPE zotc_cust_order_ack_add_info  &quot; Customer Order Acknowledgement - General Address Information</FPCLINE>
+      <FPCLINE>                               fp_country_key  TYPE char3                         &quot; Country_key of type CHAR3</FPCLINE>
+      <FPCLINE>*&amp;--&gt; Begin of insert D3_R2 for D3_OTC_FDD_0012 by AMOHAPA on 10-Oct-2017</FPCLINE>
+      <FPCLINE>                               fp_bill_to      TYPE zotc_cust_order_ack_add_info. &quot; Customer Order Acknowledgement - General Address Information</FPCLINE>
+      <FPCLINE>*&amp;&lt;-- End of insert D3_R2 for D3_OTC_FDD_0012 by AMOHAPA on 10-Oct-2017</FPCLINE>
+      <FPCLINE/>
+      <FPCLINE>  DATA: lv_country_ship_key TYPE char3,  &quot;SCUSTOM-COUNTRY,</FPCLINE>
+      <FPCLINE>        lv_country_sold_key TYPE char3,  &quot; Country_sold_key of type CHAR3</FPCLINE>
+      <FPCLINE>        lv_country_ship_name TYPE landx, &quot; Country Name</FPCLINE>
+      <FPCLINE>        lv_country_sold_name TYPE landx, &quot; Country Name</FPCLINE>
+      <FPCLINE>*&amp;--&gt; Begin of insert D3_R2 for D3_OTC_FDD_0012 by AMOHAPA on 10-Oct-2017</FPCLINE>
+      <FPCLINE>        lv_country_bill_key  TYPE char3, &quot;country key</FPCLINE>
+      <FPCLINE>        lv_country_bill_name TYPE landx. &quot;country name</FPCLINE>
+      <FPCLINE/>
+      <FPCLINE>  CONSTANTS: lc_comma TYPE char1 VALUE &apos;,&apos;, &quot; Comma of type CHAR1</FPCLINE>
+      <FPCLINE>             lc_slash TYPE char1 VALUE &apos;/&apos;. &quot; Slash of type CHAR1</FPCLINE>
+      <FPCLINE>*&amp;&lt;-- End of insert D3_R2 for D3_OTC_FDD_0012 by AMOHAPA on 10-Oct-2017</FPCLINE>
+      <FPCLINE/>
+      <FPCLINE>*&amp;--Name 1</FPCLINE>
+      <FPCLINE>*Sold to</FPCLINE>
+      <FPCLINE>  IF fp_sold_to_addr-name1 IS NOT INITIAL.</FPCLINE>
+      <FPCLINE>    gv_sold_name = fp_sold_to_addr-name1.</FPCLINE>
+      <FPCLINE>  ENDIF. &quot; IF fp_sold_to_addr-name1 IS NOT INITIAL</FPCLINE>
+      <FPCLINE>*Ship to</FPCLINE>
+      <FPCLINE>  IF fp_ship_to_addr-name1 IS NOT INITIAL.</FPCLINE>
+      <FPCLINE>    gv_ship_name = fp_ship_to_addr-name1.</FPCLINE>
+      <FPCLINE>  ENDIF. &quot; IF fp_ship_to_addr-name1 IS NOT INITIAL</FPCLINE>
+      <FPCLINE>*&amp;--Name 2</FPCLINE>
+      <FPCLINE>*Sold to</FPCLINE>
+      <FPCLINE>  IF fp_sold_to_addr-name2 IS NOT INITIAL.</FPCLINE>
+      <FPCLINE>    CONCATENATE gv_sold_name fp_sold_to_addr-name2 INTO</FPCLINE>
+      <FPCLINE>     gv_sold_name SEPARATED BY space.</FPCLINE>
+      <FPCLINE>  ENDIF. &quot; IF fp_sold_to_addr-name2 IS NOT INITIAL</FPCLINE>
+      <FPCLINE>*Ship to</FPCLINE>
+      <FPCLINE>  IF fp_ship_to_addr-name2 IS NOT INITIAL.</FPCLINE>
+      <FPCLINE>    CONCATENATE gv_ship_name fp_ship_to_addr-name2 INTO</FPCLINE>
+      <FPCLINE>    gv_ship_name SEPARATED BY space.</FPCLINE>
+      <FPCLINE>  ENDIF. &quot; IF fp_ship_to_addr-name2 IS NOT INITIAL</FPCLINE>
+      <FPCLINE>*&amp;--Name 3</FPCLINE>
+      <FPCLINE>*Sold to</FPCLINE>
+      <FPCLINE>  IF fp_sold_to_addr-name3 IS NOT INITIAL.</FPCLINE>
+      <FPCLINE>    CONCATENATE gv_sold_name fp_sold_to_addr-name3 INTO</FPCLINE>
+      <FPCLINE>      gv_sold_name SEPARATED BY space.</FPCLINE>
+      <FPCLINE>  ENDIF. &quot; IF fp_sold_to_addr-name3 IS NOT INITIAL</FPCLINE>
+      <FPCLINE>*Ship to</FPCLINE>
+      <FPCLINE>  IF fp_ship_to_addr-name3 IS NOT INITIAL.</FPCLINE>
+      <FPCLINE>    CONCATENATE gv_ship_name fp_ship_to_addr-name3 INTO</FPCLINE>
+      <FPCLINE>      gv_ship_name SEPARATED BY space.</FPCLINE>
+      <FPCLINE>  ENDIF. &quot; IF fp_ship_to_addr-name3 IS NOT INITIAL</FPCLINE>
+      <FPCLINE>*&amp;--Name 4</FPCLINE>
+      <FPCLINE>*Sold to</FPCLINE>
+      <FPCLINE>  IF fp_sold_to_addr-name4 IS NOT INITIAL.</FPCLINE>
+      <FPCLINE>    CONCATENATE gv_sold_name</FPCLINE>
+      <FPCLINE>         fp_sold_to_addr-name4 INTO</FPCLINE>
+      <FPCLINE>       gv_sold_name SEPARATED BY space.</FPCLINE>
+      <FPCLINE>  ENDIF. &quot; IF fp_sold_to_addr-name4 IS NOT INITIAL</FPCLINE>
+      <FPCLINE>  CONDENSE gv_sold_name.</FPCLINE>
+      <FPCLINE>*Ship to</FPCLINE>
+      <FPCLINE>  IF fp_ship_to_addr-name4 IS NOT INITIAL.</FPCLINE>
+      <FPCLINE>    CONCATENATE gv_ship_name</FPCLINE>
+      <FPCLINE>         fp_ship_to_addr-name4 INTO</FPCLINE>
+      <FPCLINE>       gv_ship_name SEPARATED BY space.</FPCLINE>
+      <FPCLINE>  ENDIF. &quot; IF fp_ship_to_addr-name4 IS NOT INITIAL</FPCLINE>
+      <FPCLINE>  CONDENSE gv_ship_name.</FPCLINE>
+      <FPCLINE/>
+      <FPCLINE>*House number</FPCLINE>
+      <FPCLINE>*Sold to</FPCLINE>
+      <FPCLINE>  IF fp_sold_to_addr-house_num1 IS NOT INITIAL.</FPCLINE>
+      <FPCLINE>    gv_sold_house = fp_sold_to_addr-house_num1.</FPCLINE>
+      <FPCLINE>  ENDIF. &quot; IF fp_sold_to_addr-house_num1 IS NOT INITIAL</FPCLINE>
+      <FPCLINE>*House2</FPCLINE>
+      <FPCLINE>  IF fp_sold_to_addr-house_num2 IS NOT INITIAL.</FPCLINE>
+      <FPCLINE>    CONCATENATE gv_sold_house fp_sold_to_addr-house_num2 INTO gv_sold_house SEPARATED BY &apos;,&apos;.</FPCLINE>
+      <FPCLINE>  ENDIF. &quot; IF fp_sold_to_addr-house_num2 IS NOT INITIAL</FPCLINE>
+      <FPCLINE>*Ship to</FPCLINE>
+      <FPCLINE>  IF fp_ship_to_addr-house_num1 IS NOT INITIAL.</FPCLINE>
+      <FPCLINE>    gv_ship_house = fp_ship_to_addr-house_num1.</FPCLINE>
+      <FPCLINE>  ENDIF. &quot; IF fp_ship_to_addr-house_num1 IS NOT INITIAL</FPCLINE>
+      <FPCLINE>*Additional house id</FPCLINE>
+      <FPCLINE>  IF fp_ship_to_addr-house_num2 IS NOT INITIAL.</FPCLINE>
+      <FPCLINE>    CONCATENATE gv_ship_house fp_ship_to_addr-house_num2 INTO gv_ship_house SEPARATED BY &apos;,&apos;.</FPCLINE>
+      <FPCLINE>  ENDIF. &quot; IF fp_ship_to_addr-house_num2 IS NOT INITIAL</FPCLINE>
+      <FPCLINE>*Street</FPCLINE>
+      <FPCLINE>*Sold to</FPCLINE>
+      <FPCLINE>  IF fp_sold_to_addr-street IS NOT INITIAL.</FPCLINE>
+      <FPCLINE>    CONCATENATE gv_sold_house fp_sold_to_addr-street INTO gv_sold_house SEPARATED BY space.</FPCLINE>
+      <FPCLINE>  ENDIF. &quot; IF fp_sold_to_addr-street IS NOT INITIAL</FPCLINE>
+      <FPCLINE>*Ship to</FPCLINE>
+      <FPCLINE>  IF fp_ship_to_addr-street IS NOT INITIAL.</FPCLINE>
+      <FPCLINE>    CONCATENATE gv_ship_house fp_ship_to_addr-street INTO gv_ship_house SEPARATED BY space.</FPCLINE>
+      <FPCLINE>  ENDIF. &quot; IF fp_ship_to_addr-street IS NOT INITIAL</FPCLINE>
+      <FPCLINE>*Srting supplier</FPCLINE>
+      <FPCLINE>*Sold to</FPCLINE>
+      <FPCLINE>  IF fp_sold_to_addr-str_suppl1 IS NOT INITIAL.</FPCLINE>
+      <FPCLINE>    CONCATENATE gv_sold_house fp_sold_to_addr-str_suppl1</FPCLINE>
+      <FPCLINE>    INTO gv_sold_house SEPARATED BY space.</FPCLINE>
+      <FPCLINE>  ENDIF. &quot; IF fp_sold_to_addr-str_suppl1 IS NOT INITIAL</FPCLINE>
+      <FPCLINE>*Ship to</FPCLINE>
+      <FPCLINE>  IF fp_ship_to_addr-str_suppl1 IS NOT INITIAL.</FPCLINE>
+      <FPCLINE>    CONCATENATE gv_ship_house fp_ship_to_addr-str_suppl1</FPCLINE>
+      <FPCLINE>    INTO gv_ship_house SEPARATED BY space.</FPCLINE>
+      <FPCLINE>  ENDIF. &quot; IF fp_ship_to_addr-str_suppl1 IS NOT INITIAL</FPCLINE>
+      <FPCLINE>  CONDENSE gv_ship_house.</FPCLINE>
+      <FPCLINE>  CONDENSE gv_sold_house.</FPCLINE>
+      <FPCLINE>*Building</FPCLINE>
+      <FPCLINE>*Sold to</FPCLINE>
+      <FPCLINE>  IF fp_sold_to_addr-building IS NOT INITIAL.</FPCLINE>
+      <FPCLINE>    gv_sold_floor = fp_sold_to_addr-building.</FPCLINE>
+      <FPCLINE>  ENDIF. &quot; IF fp_sold_to_addr-building IS NOT INITIAL</FPCLINE>
+      <FPCLINE>*Ship to</FPCLINE>
+      <FPCLINE>  IF fp_ship_to_addr-building IS NOT INITIAL.</FPCLINE>
+      <FPCLINE>    gv_ship_floor = fp_ship_to_addr-building.</FPCLINE>
+      <FPCLINE>  ENDIF. &quot; IF fp_ship_to_addr-building IS NOT INITIAL</FPCLINE>
+      <FPCLINE>*Room number</FPCLINE>
+      <FPCLINE>*Sold to</FPCLINE>
+      <FPCLINE>  IF fp_sold_to_addr-roomnumber IS NOT INITIAL.</FPCLINE>
+      <FPCLINE>    CONCATENATE gv_sold_floor fp_sold_to_addr-roomnumber INTO gv_sold_floor</FPCLINE>
+      <FPCLINE>    SEPARATED BY &apos;/&apos;.</FPCLINE>
+      <FPCLINE>  ENDIF. &quot; IF fp_sold_to_addr-roomnumber IS NOT INITIAL</FPCLINE>
+      <FPCLINE>*SHip to</FPCLINE>
+      <FPCLINE>  IF fp_ship_to_addr-roomnumber IS NOT INITIAL.</FPCLINE>
+      <FPCLINE>    CONCATENATE gv_ship_floor fp_ship_to_addr-roomnumber INTO gv_ship_floor</FPCLINE>
+      <FPCLINE>    SEPARATED BY &apos;/&apos;.</FPCLINE>
+      <FPCLINE>  ENDIF. &quot; IF fp_ship_to_addr-roomnumber IS NOT INITIAL</FPCLINE>
+      <FPCLINE>*Floor</FPCLINE>
+      <FPCLINE>*Sold to</FPCLINE>
+      <FPCLINE>  IF fp_sold_to_addr-floor IS NOT INITIAL.</FPCLINE>
+      <FPCLINE>    CONCATENATE gv_sold_floor fp_sold_to_addr-floor</FPCLINE>
+      <FPCLINE>     INTO gv_sold_floor</FPCLINE>
+      <FPCLINE>     SEPARATED BY &apos;/&apos;.</FPCLINE>
+      <FPCLINE>  ENDIF. &quot; IF fp_sold_to_addr-floor IS NOT INITIAL</FPCLINE>
+      <FPCLINE>*SHip to</FPCLINE>
+      <FPCLINE>  IF fp_ship_to_addr-floor IS NOT INITIAL.</FPCLINE>
+      <FPCLINE>    CONCATENATE gv_ship_floor fp_ship_to_addr-floor</FPCLINE>
+      <FPCLINE>     INTO gv_ship_floor</FPCLINE>
+      <FPCLINE>     SEPARATED BY &apos;/&apos;.</FPCLINE>
+      <FPCLINE>  ENDIF. &quot; IF fp_ship_to_addr-floor IS NOT INITIAL</FPCLINE>
+      <FPCLINE>  CONDENSE gv_sold_floor.</FPCLINE>
+      <FPCLINE>* ---&gt; Begin of Insert for D2_OTC_FDD_0012,Defect #4518 by NSAXENA</FPCLINE>
+      <FPCLINE>  IF gv_ship_floor IS INITIAL.</FPCLINE>
+      <FPCLINE>    IF fp_ship_to_addr-str_suppl2 IS NOT INITIAL.</FPCLINE>
+      <FPCLINE>      gv_ship_floor =  fp_ship_to_addr-str_suppl2.</FPCLINE>
+      <FPCLINE>    ENDIF. &quot; IF fp_ship_to_addr-str_suppl2 IS NOT INITIAL</FPCLINE>
+      <FPCLINE>  ENDIF. &quot; IF gv_ship_floor IS INITIAL</FPCLINE>
+      <FPCLINE>* &lt;--- End of Insert for D2_OTC_FDD_0012,Defect #4518 by NSAXENA</FPCLINE>
+      <FPCLINE>  CONDENSE gv_ship_floor.</FPCLINE>
+      <FPCLINE/>
+      <FPCLINE>*City</FPCLINE>
+      <FPCLINE>*Sold to</FPCLINE>
+      <FPCLINE>  IF fp_sold_to_addr-city1 IS NOT INITIAL.</FPCLINE>
+      <FPCLINE>    gv_sold_city = fp_sold_to_addr-city1.</FPCLINE>
+      <FPCLINE>  ENDIF. &quot; IF fp_sold_to_addr-city1 IS NOT INITIAL</FPCLINE>
+      <FPCLINE>*Ship to</FPCLINE>
+      <FPCLINE>  IF fp_ship_to_addr-city1 IS NOT INITIAL.</FPCLINE>
+      <FPCLINE>    gv_ship_city = fp_ship_to_addr-city1.</FPCLINE>
+      <FPCLINE>  ENDIF. &quot; IF fp_ship_to_addr-city1 IS NOT INITIAL</FPCLINE>
+      <FPCLINE>*state</FPCLINE>
+      <FPCLINE>*Sold to</FPCLINE>
+      <FPCLINE>  IF fp_sold_to_addr-region IS NOT INITIAL.</FPCLINE>
+      <FPCLINE>    IF gv_sold_city IS NOT INITIAL.</FPCLINE>
+      <FPCLINE>      CONCATENATE gv_sold_city fp_sold_to_addr-region INTO gv_sold_city</FPCLINE>
+      <FPCLINE>     SEPARATED BY &apos;,&apos;.</FPCLINE>
+      <FPCLINE>    ELSE. &quot; ELSE -&gt; IF gv_sold_city IS NOT INITIAL</FPCLINE>
+      <FPCLINE>      gv_sold_city = fp_sold_to_addr-region.</FPCLINE>
+      <FPCLINE>    ENDIF. &quot; IF gv_sold_city IS NOT INITIAL</FPCLINE>
+      <FPCLINE>  ENDIF. &quot; IF fp_sold_to_addr-region IS NOT INITIAL</FPCLINE>
+      <FPCLINE>*SHip to</FPCLINE>
+      <FPCLINE>  IF fp_ship_to_addr-region IS NOT INITIAL.</FPCLINE>
+      <FPCLINE>    IF gv_ship_city IS NOT INITIAL.</FPCLINE>
+      <FPCLINE>      CONCATENATE gv_ship_city fp_ship_to_addr-region INTO gv_ship_city</FPCLINE>
+      <FPCLINE>   SEPARATED BY &apos;,&apos;.</FPCLINE>
+      <FPCLINE>    ELSE. &quot; ELSE -&gt; IF gv_ship_city IS NOT INITIAL</FPCLINE>
+      <FPCLINE>      gv_ship_city = fp_ship_to_addr-region.</FPCLINE>
+      <FPCLINE>    ENDIF. &quot; IF gv_ship_city IS NOT INITIAL</FPCLINE>
+      <FPCLINE>  ENDIF. &quot; IF fp_ship_to_addr-region IS NOT INITIAL</FPCLINE>
+      <FPCLINE>*Post code</FPCLINE>
+      <FPCLINE>*Sold to</FPCLINE>
+      <FPCLINE>* ---&gt; Begin of Insert for D2_OTC_FDD_0012,Defect #4073 by NSAXENA</FPCLINE>
+      <FPCLINE>*Removed &apos;,&apos; with space as suggested by Functional.</FPCLINE>
+      <FPCLINE>*So now there is no comma between region and postal code in outut display</FPCLINE>
+      <FPCLINE>  IF fp_sold_to_addr-post_code1 IS NOT INITIAL.</FPCLINE>
+      <FPCLINE>    IF gv_sold_city IS NOT INITIAL.</FPCLINE>
+      <FPCLINE>      CONCATENATE gv_sold_city fp_sold_to_addr-post_code1 INTO gv_sold_city</FPCLINE>
+      <FPCLINE>     SEPARATED BY space.</FPCLINE>
+      <FPCLINE>    ELSE. &quot; ELSE -&gt; IF gv_sold_city IS NOT INITIAL</FPCLINE>
+      <FPCLINE>      gv_sold_city = fp_sold_to_addr-post_code1.</FPCLINE>
+      <FPCLINE>    ENDIF. &quot; IF gv_sold_city IS NOT INITIAL</FPCLINE>
+      <FPCLINE>  ENDIF. &quot; IF fp_sold_to_addr-post_code1 IS NOT INITIAL</FPCLINE>
+      <FPCLINE>*Ship to</FPCLINE>
+      <FPCLINE>  IF fp_ship_to_addr-post_code1 IS NOT INITIAL.</FPCLINE>
+      <FPCLINE>    IF gv_ship_city IS NOT INITIAL.</FPCLINE>
+      <FPCLINE>      CONCATENATE gv_ship_city fp_ship_to_addr-post_code1 INTO gv_ship_city</FPCLINE>
+      <FPCLINE>SEPARATED BY space.</FPCLINE>
+      <FPCLINE>    ELSE. &quot; ELSE -&gt; IF gv_ship_city IS NOT INITIAL</FPCLINE>
+      <FPCLINE>      gv_ship_city = fp_sold_to_addr-post_code1.</FPCLINE>
+      <FPCLINE>    ENDIF. &quot; IF gv_ship_city IS NOT INITIAL</FPCLINE>
+      <FPCLINE>  ENDIF. &quot; IF fp_ship_to_addr-post_code1 IS NOT INITIAL</FPCLINE>
+      <FPCLINE>* &lt;--- End of Insert for D2_OTC_FDD_0012,Defect #4073 by NSAXENA</FPCLINE>
+      <FPCLINE>*Country</FPCLINE>
+      <FPCLINE>*Sold to</FPCLINE>
+      <FPCLINE>  IF fp_sold_to_addr-country IS NOT INITIAL.</FPCLINE>
+      <FPCLINE>    IF fp_sold_to_addr-country EQ fp_country_key.</FPCLINE>
+      <FPCLINE>      CONCATENATE gv_sold_city fp_sold_to_addr-country INTO gv_sold_city</FPCLINE>
+      <FPCLINE> SEPARATED BY &apos;,&apos;.</FPCLINE>
+      <FPCLINE>      IF fp_ship_to_addr-country IS NOT INITIAL.</FPCLINE>
+      <FPCLINE>        CONCATENATE gv_ship_city fp_ship_to_addr-country INTO gv_ship_city</FPCLINE>
+      <FPCLINE>     SEPARATED BY &apos;,&apos;.</FPCLINE>
+      <FPCLINE>      ENDIF. &quot; IF fp_ship_to_addr-country IS NOT INITIAL</FPCLINE>
+      <FPCLINE>    ELSE. &quot; ELSE -&gt; IF fp_sold_to_addr-country EQ fp_country_key</FPCLINE>
+      <FPCLINE>*Sold to</FPCLINE>
+      <FPCLINE>      lv_country_sold_key = fp_sold_to_addr-country.</FPCLINE>
+      <FPCLINE>* Read Country name for sold to party</FPCLINE>
+      <FPCLINE>      SELECT SINGLE landx &quot; Country Name</FPCLINE>
+      <FPCLINE>        FROM t005t        &quot; Country Names</FPCLINE>
+      <FPCLINE>        INTO lv_country_sold_name</FPCLINE>
+      <FPCLINE>        WHERE spras = sy-langu</FPCLINE>
+      <FPCLINE>        AND land1 = lv_country_sold_key.</FPCLINE>
+      <FPCLINE>      IF sy-subrc EQ 0.</FPCLINE>
+      <FPCLINE>        CONCATENATE gv_sold_city lv_country_sold_name INTO gv_sold_city</FPCLINE>
+      <FPCLINE>   SEPARATED BY &apos;,&apos;.</FPCLINE>
+      <FPCLINE>      ENDIF. &quot; IF sy-subrc EQ 0</FPCLINE>
+      <FPCLINE>*Ship to</FPCLINE>
+      <FPCLINE>      lv_country_ship_key = fp_ship_to_addr-country.</FPCLINE>
+      <FPCLINE>* Read Country name for sold to party</FPCLINE>
+      <FPCLINE>      SELECT SINGLE landx &quot; Country Name</FPCLINE>
+      <FPCLINE>        FROM t005t        &quot; Country Names</FPCLINE>
+      <FPCLINE>        INTO lv_country_ship_name</FPCLINE>
+      <FPCLINE>        WHERE spras = sy-langu</FPCLINE>
+      <FPCLINE>        AND land1 = lv_country_ship_key.</FPCLINE>
+      <FPCLINE>      IF sy-subrc EQ 0.</FPCLINE>
+      <FPCLINE>        CONCATENATE gv_ship_city lv_country_ship_name INTO gv_ship_city</FPCLINE>
+      <FPCLINE>   SEPARATED BY &apos;,&apos;.</FPCLINE>
+      <FPCLINE>      ENDIF. &quot; IF sy-subrc EQ 0</FPCLINE>
+      <FPCLINE>    ENDIF. &quot; IF fp_sold_to_addr-country EQ fp_country_key</FPCLINE>
+      <FPCLINE>  ENDIF. &quot; IF fp_sold_to_addr-country IS NOT INITIAL</FPCLINE>
+      <FPCLINE/>
+      <FPCLINE>*&amp;--&gt; Begin of insert D3_R2 for D3_OTC_FDD_0012 by AMOHAPA on 10-Oct-2017</FPCLINE>
+      <FPCLINE/>
+      <FPCLINE> &quot;Formatting the Bill To address for populating the final address for Bill to</FPCLINE>
+      <FPCLINE/>
+      <FPCLINE> &quot;Bill To Name</FPCLINE>
+      <FPCLINE/>
+      <FPCLINE>  IF fp_bill_to-name1 IS NOT INITIAL.</FPCLINE>
+      <FPCLINE>    gv_bill_name = fp_bill_to-name1.</FPCLINE>
+      <FPCLINE>  ENDIF. &quot; IF fp_bill_to-name1 IS NOT INITIAL</FPCLINE>
+      <FPCLINE/>
+      <FPCLINE>  IF fp_bill_to-name2 IS NOT INITIAL.</FPCLINE>
+      <FPCLINE>    CONCATENATE gv_bill_name fp_bill_to-name2 INTO</FPCLINE>
+      <FPCLINE>     gv_bill_name SEPARATED BY space.</FPCLINE>
+      <FPCLINE>  ENDIF. &quot; IF fp_bill_to-name2 IS NOT INITIAL</FPCLINE>
+      <FPCLINE/>
+      <FPCLINE>  IF fp_bill_to-name3 IS NOT INITIAL.</FPCLINE>
+      <FPCLINE>    CONCATENATE gv_bill_name fp_bill_to-name3 INTO</FPCLINE>
+      <FPCLINE>      gv_bill_name SEPARATED BY space.</FPCLINE>
+      <FPCLINE>  ENDIF. &quot; IF fp_bill_to-name3 IS NOT INITIAL</FPCLINE>
+      <FPCLINE/>
+      <FPCLINE>  IF fp_bill_to-name4 IS NOT INITIAL.</FPCLINE>
+      <FPCLINE>    CONCATENATE gv_bill_name</FPCLINE>
+      <FPCLINE>         fp_bill_to-name4 INTO</FPCLINE>
+      <FPCLINE>       gv_bill_name SEPARATED BY space.</FPCLINE>
+      <FPCLINE>  ENDIF. &quot; IF fp_bill_to-name4 IS NOT INITIAL</FPCLINE>
+      <FPCLINE>  CONDENSE gv_bill_name.</FPCLINE>
+      <FPCLINE/>
+      <FPCLINE> &quot;Bill to house</FPCLINE>
+      <FPCLINE/>
+      <FPCLINE>  IF fp_bill_to-house_num1 IS NOT INITIAL.</FPCLINE>
+      <FPCLINE>    gv_bill_house = fp_bill_to-house_num1.</FPCLINE>
+      <FPCLINE>  ENDIF. &quot; IF fp_bill_to-house_num1 IS NOT INITIAL</FPCLINE>
+      <FPCLINE>*House2</FPCLINE>
+      <FPCLINE>  IF fp_bill_to-house_num2 IS NOT INITIAL.</FPCLINE>
+      <FPCLINE>    CONCATENATE gv_bill_house fp_bill_to-house_num2 INTO gv_bill_house SEPARATED BY lc_comma.</FPCLINE>
+      <FPCLINE>  ENDIF. &quot; IF fp_bill_to-house_num2 IS NOT INITIAL</FPCLINE>
+      <FPCLINE/>
+      <FPCLINE>  IF fp_bill_to-street IS NOT INITIAL.</FPCLINE>
+      <FPCLINE>    CONCATENATE gv_bill_house fp_bill_to-street INTO gv_bill_house SEPARATED BY space.</FPCLINE>
+      <FPCLINE>  ENDIF. &quot; IF fp_bill_to-street IS NOT INITIAL</FPCLINE>
+      <FPCLINE/>
+      <FPCLINE>  IF fp_bill_to-str_suppl1 IS NOT INITIAL.</FPCLINE>
+      <FPCLINE>    CONCATENATE gv_bill_house fp_bill_to-str_suppl1</FPCLINE>
+      <FPCLINE>    INTO gv_bill_house SEPARATED BY space.</FPCLINE>
+      <FPCLINE>  ENDIF. &quot; IF fp_bill_to-str_suppl1 IS NOT INITIAL</FPCLINE>
+      <FPCLINE/>
+      <FPCLINE>  CONDENSE gv_bill_house.</FPCLINE>
+      <FPCLINE/>
+      <FPCLINE> &quot;Bill to floor</FPCLINE>
+      <FPCLINE/>
+      <FPCLINE>  IF fp_bill_to-building IS NOT INITIAL.</FPCLINE>
+      <FPCLINE>    gv_bill_floor = fp_bill_to-building.</FPCLINE>
+      <FPCLINE>  ENDIF. &quot; IF fp_bill_to-building IS NOT INITIAL</FPCLINE>
+      <FPCLINE/>
+      <FPCLINE>  IF fp_bill_to-roomnumber IS NOT INITIAL.</FPCLINE>
+      <FPCLINE>    CONCATENATE gv_bill_floor fp_bill_to-roomnumber INTO gv_bill_floor</FPCLINE>
+      <FPCLINE>    SEPARATED BY lc_slash.</FPCLINE>
+      <FPCLINE>  ENDIF. &quot; IF fp_bill_to-roomnumber IS NOT INITIAL</FPCLINE>
+      <FPCLINE/>
+      <FPCLINE>  IF fp_bill_to-floor IS NOT INITIAL.</FPCLINE>
+      <FPCLINE>    CONCATENATE gv_bill_floor fp_bill_to-floor</FPCLINE>
+      <FPCLINE>     INTO gv_bill_floor</FPCLINE>
+      <FPCLINE>     SEPARATED BY lc_slash.</FPCLINE>
+      <FPCLINE>  ENDIF. &quot; IF fp_bill_to-floor IS NOT INITIAL</FPCLINE>
+      <FPCLINE/>
+      <FPCLINE>  CONDENSE gv_bill_floor.</FPCLINE>
+      <FPCLINE/>
+      <FPCLINE> &quot;Bill to city</FPCLINE>
+      <FPCLINE/>
+      <FPCLINE>  IF fp_bill_to-city1 IS NOT INITIAL.</FPCLINE>
+      <FPCLINE>    gv_bill_city = fp_bill_to-city1.</FPCLINE>
+      <FPCLINE>  ENDIF. &quot; IF fp_bill_to-city1 IS NOT INITIAL</FPCLINE>
+      <FPCLINE/>
+      <FPCLINE>  IF fp_bill_to-region IS NOT INITIAL.</FPCLINE>
+      <FPCLINE>    IF gv_bill_city IS NOT INITIAL.</FPCLINE>
+      <FPCLINE>      CONCATENATE gv_bill_city fp_bill_to-region INTO gv_bill_city</FPCLINE>
+      <FPCLINE>     SEPARATED BY lc_comma.</FPCLINE>
+      <FPCLINE>    ELSE. &quot; ELSE -&gt; IF gv_bill_city IS NOT INITIAL</FPCLINE>
+      <FPCLINE>      gv_bill_city = fp_bill_to-region.</FPCLINE>
+      <FPCLINE>    ENDIF. &quot; IF gv_bill_city IS NOT INITIAL</FPCLINE>
+      <FPCLINE>  ENDIF. &quot; IF fp_bill_to-region IS NOT INITIAL</FPCLINE>
+      <FPCLINE/>
+      <FPCLINE>  IF fp_bill_to-post_code1 IS NOT INITIAL.</FPCLINE>
+      <FPCLINE>    IF gv_bill_city IS NOT INITIAL.</FPCLINE>
+      <FPCLINE>      CONCATENATE gv_bill_city fp_bill_to-post_code1 INTO gv_bill_city</FPCLINE>
+      <FPCLINE>     SEPARATED BY space.</FPCLINE>
+      <FPCLINE>    ELSE. &quot; ELSE -&gt; IF gv_bill_city IS NOT INITIAL</FPCLINE>
+      <FPCLINE>      gv_bill_city = fp_bill_to-post_code1.</FPCLINE>
+      <FPCLINE>    ENDIF. &quot; IF gv_bill_city IS NOT INITIAL</FPCLINE>
+      <FPCLINE>  ENDIF. &quot; IF fp_bill_to-post_code1 IS NOT INITIAL</FPCLINE>
+      <FPCLINE/>
+      <FPCLINE/>
+      <FPCLINE>  IF fp_bill_to-country IS NOT INITIAL.</FPCLINE>
+      <FPCLINE>    IF fp_bill_to-country EQ fp_country_key.</FPCLINE>
+      <FPCLINE>      CONCATENATE gv_bill_city fp_bill_to-country INTO gv_bill_city</FPCLINE>
+      <FPCLINE> SEPARATED BY lc_comma.</FPCLINE>
+      <FPCLINE>    ELSE. &quot; ELSE -&gt; IF fp_bill_to-country EQ fp_country_key</FPCLINE>
+      <FPCLINE>*Bill to</FPCLINE>
+      <FPCLINE>      lv_country_bill_key = fp_bill_to-country.</FPCLINE>
+      <FPCLINE>* Read Country name for bill to party</FPCLINE>
+      <FPCLINE>      SELECT SINGLE landx &quot; Country Name</FPCLINE>
+      <FPCLINE>        FROM t005t        &quot; Country Names</FPCLINE>
+      <FPCLINE>        INTO lv_country_bill_name</FPCLINE>
+      <FPCLINE>        WHERE spras = sy-langu</FPCLINE>
+      <FPCLINE>        AND land1 = lv_country_bill_key.</FPCLINE>
+      <FPCLINE>      IF sy-subrc IS INITIAL.</FPCLINE>
+      <FPCLINE>        CONCATENATE gv_bill_city lv_country_bill_name INTO gv_bill_city</FPCLINE>
+      <FPCLINE>   SEPARATED BY lc_comma.</FPCLINE>
+      <FPCLINE>      ENDIF. &quot; IF sy-subrc is INITIAL</FPCLINE>
+      <FPCLINE>    ENDIF. &quot; IF fp_bill_to-country EQ fp_country_key</FPCLINE>
+      <FPCLINE>  ENDIF. &quot; IF fp_bill_to-country IS NOT INITIAL</FPCLINE>
+      <FPCLINE/>
+      <FPCLINE/>
+      <FPCLINE>*&amp;&lt;-- End of insert D3_R2 for D3_OTC_FDD_0012 by AMOHAPA on 10-Oct-2017</FPCLINE>
+      <FPCLINE/>
+      <FPCLINE>ENDFORM. &quot;f_format_address</FPCLINE>
+      <FPCLINE/>
+      <FPCLINE>*Begin of insert for D3_OTC_FDD_0012 CR#289 by U034336</FPCLINE>
+      <FPCLINE>*&amp;---------------------------------------------------------------------*</FPCLINE>
+      <FPCLINE>*&amp;      Form  f_get_address</FPCLINE>
+      <FPCLINE>*&amp;---------------------------------------------------------------------*</FPCLINE>
+      <FPCLINE>*       This subroutine will prepare customer address</FPCLINE>
+      <FPCLINE>*       in required format</FPCLINE>
+      <FPCLINE>*----------------------------------------------------------------------*</FPCLINE>
+      <FPCLINE>*      FP_ADDR</FPCLINE>
+      <FPCLINE>*      FP_COUNTRY_KEY</FPCLINE>
+      <FPCLINE>*      FP_I_HEADER</FPCLINE>
+      <FPCLINE>*      FP_ADDRESS</FPCLINE>
+      <FPCLINE>*----------------------------------------------------------------------*</FPCLINE>
+      <FPCLINE>FORM f_get_address USING fp_addr  TYPE zotc_cust_order_ack_add_info   &quot; Customer Order Acknowledgement - General Address Information</FPCLINE>
+      <FPCLINE>                         fp_country_key  TYPE char3                   &quot; Country_key of type CHAR3</FPCLINE>
+      <FPCLINE>                         fp_i_header  TYPE zotc_cust_order_ack_header &quot; Header data for Customer Order Acknowledgement form</FPCLINE>
+      <FPCLINE>                  CHANGING fp_address TYPE fsbp_address_printf_line_tty.</FPCLINE>
+      <FPCLINE/>
+      <FPCLINE>  DATA: lv_line       TYPE char80,                &quot; Line of type CHAR80</FPCLINE>
+      <FPCLINE>        lc_comma      TYPE char1 VALUE &apos;,&apos;,       &quot; Comma of type CHAR1</FPCLINE>
+      <FPCLINE>        lv_index      TYPE syindex,               &quot; Loop Index</FPCLINE>
+      <FPCLINE>        lv_country TYPE char80,                   &quot; Country of type CHAR80</FPCLINE>
+      <FPCLINE>        lw_add     TYPE fsbp_address_printf_line. &quot; Print Form Row</FPCLINE>
+      <FPCLINE/>
+      <FPCLINE>  FIELD-SYMBOLS : &lt;lw_add&gt; TYPE fsbp_address_printf_line. &quot; Print Form Row</FPCLINE>
+      <FPCLINE/>
+      <FPCLINE>  CONSTANTS : lc_type    TYPE ad_adrtype      VALUE &apos;1&apos;,</FPCLINE>
+      <FPCLINE>              lc_post_code TYPE ad_line_tp    VALUE &apos;O&apos;, &quot; Address line type in the formatted address</FPCLINE>
+      <FPCLINE>              lc_country_code TYPE ad_line_tp VALUE &apos;L&apos;. &quot; Address line type in the formatted address</FPCLINE>
+      <FPCLINE/>
+      <FPCLINE>  CALL FUNCTION &apos;ADDRESS_INTO_PRINTFORM&apos;</FPCLINE>
+      <FPCLINE>    EXPORTING</FPCLINE>
+      <FPCLINE>      address_type                   = lc_type</FPCLINE>
+      <FPCLINE>      address_number                 = fp_addr-adrnr</FPCLINE>
+      <FPCLINE>      receiver_language              = fp_i_header-sold_to_lang &quot;DMOIRAN</FPCLINE>
+      <FPCLINE>      number_of_lines                = 6</FPCLINE>
+      <FPCLINE>      country_name_in_receiver_langu = abap_true</FPCLINE>
+      <FPCLINE>*     language_for_country_name      = fp_i_header-sold_to_lang</FPCLINE>
+      <FPCLINE>      no_upper_case_for_city         = abap_true</FPCLINE>
+      <FPCLINE>      iv_country_name_separate_line  = abap_true</FPCLINE>
+      <FPCLINE>    IMPORTING</FPCLINE>
+      <FPCLINE>      address_printform_table        = fp_address.</FPCLINE>
+      <FPCLINE/>
+      <FPCLINE>* Binary search not required</FPCLINE>
+      <FPCLINE>  READ TABLE fp_address INTO lw_add</FPCLINE>
+      <FPCLINE>  WITH KEY    line_type = lc_country_code.</FPCLINE>
+      <FPCLINE>  IF sy-subrc EQ 0.</FPCLINE>
+      <FPCLINE>    lv_country = lw_add-address_line.</FPCLINE>
+      <FPCLINE>  ENDIF. &quot; IF sy-subrc EQ 0</FPCLINE>
+      <FPCLINE/>
+      <FPCLINE>  DELETE fp_address WHERE line_type = lc_country_code.</FPCLINE>
+      <FPCLINE/>
+      <FPCLINE>* Binary Search not required</FPCLINE>
+      <FPCLINE>*Begin of delete for D3_OTC_FDD_0012 CR#301_Part-2 by U034336</FPCLINE>
+      <FPCLINE>*  READ TABLE fp_address ASSIGNING &lt;lw_add&gt;</FPCLINE>
+      <FPCLINE>*  WITH KEY line_type = lc_post_code.</FPCLINE>
+      <FPCLINE>*  IF sy-subrc EQ 0.</FPCLINE>
+      <FPCLINE>*    CONCATENATE &lt;lw_add&gt;-address_line lv_country INTO lv_line SEPARATED BY space.</FPCLINE>
+      <FPCLINE>*    &lt;lw_add&gt;-address_line = lv_line.</FPCLINE>
+      <FPCLINE>* lv_index = sy-tabix.</FPCLINE>
+      <FPCLINE>*End of delete for D3_OTC_FDD_0012 CR#301_Part-2 by U034336</FPCLINE>
+      <FPCLINE/>
+      <FPCLINE>*Begin of insert for D3_OTC_FDD_0012 CR#301_Part-2 by U034336</FPCLINE>
+      <FPCLINE>  lv_index = lines( fp_address ).</FPCLINE>
+      <FPCLINE>  READ TABLE fp_address ASSIGNING &lt;lw_add&gt; INDEX lv_index.</FPCLINE>
+      <FPCLINE>  IF sy-subrc EQ 0.</FPCLINE>
+      <FPCLINE>    CONCATENATE &lt;lw_add&gt;-address_line lv_country INTO &lt;lw_add&gt;-address_line SEPARATED BY space.</FPCLINE>
+      <FPCLINE>  ENDIF. &quot; IF sy-subrc EQ 0</FPCLINE>
+      <FPCLINE>*End of insert for D3_OTC_FDD_0012 CR#301_Part-2 by U034336</FPCLINE>
+      <FPCLINE/>
+      <FPCLINE>  CLEAR: lw_add.</FPCLINE>
+      <FPCLINE>* ---&gt; Begin of Delete for D3 COE Defect 2605 by DMOIRAN</FPCLINE>
+      <FPCLINE>* Commented out to print even if any of the values is there.</FPCLINE>
+      <FPCLINE/>
+      <FPCLINE>*  IF      fp_addr-building IS NOT INITIAL AND</FPCLINE>
+      <FPCLINE>*          fp_addr-floor    IS NOT INITIAL</FPCLINE>
+      <FPCLINE>*    AND fp_addr-roomnumber IS NOT INITIAL.</FPCLINE>
+      <FPCLINE/>
+      <FPCLINE>**Begin of delete for D3_OTC_FDD_0012 CR#301_Part-2 by U034336</FPCLINE>
+      <FPCLINE>**      CONCATENATE fp_addr-building  fp_addr-floor fp_addr-roomnumber INTO lw_add-address_line</FPCLINE>
+      <FPCLINE>**      SEPARATED BY  lc_comma.</FPCLINE>
+      <FPCLINE>**End of delete for D3_OTC_FDD_0012 CR#301_Part-2 by U034336</FPCLINE>
+      <FPCLINE>**Begin of insert for D3_OTC_FDD_0012 CR#301_Part-2 by U034336</FPCLINE>
+      <FPCLINE>*    CONCATENATE fp_addr-building fp_addr-roomnumber fp_addr-floor INTO lw_add-address_line</FPCLINE>
+      <FPCLINE>*    SEPARATED BY  lc_comma.</FPCLINE>
+      <FPCLINE>**End of insert for D3_OTC_FDD_0012 CR#301_Part-2 by U034336</FPCLINE>
+      <FPCLINE>*    INSERT lw_add INTO fp_address INDEX  lv_index.</FPCLINE>
+      <FPCLINE>*</FPCLINE>
+      <FPCLINE>*  ENDIF. &quot; IF fp_addr-building IS NOT INITIAL</FPCLINE>
+      <FPCLINE>**Begin of delete for D3_OTC_FDD_0012 CR#301_Part-2 by U034336</FPCLINE>
+      <FPCLINE>**  ENDIF. &quot; IF sy-subrc EQ 0</FPCLINE>
+      <FPCLINE>**End of delete for D3_OTC_FDD_0012 CR#301_Part-2 by U034336</FPCLINE>
+      <FPCLINE/>
+      <FPCLINE>* &lt;--- End    of Delete for D3 COE Defect 2605 by DMOIRAN</FPCLINE>
+      <FPCLINE>* ---&gt; Begin of Insert for D3 COE Defect 2605 by DMOIRAN</FPCLINE>
+      <FPCLINE>* Print even if any of the values is there.</FPCLINE>
+      <FPCLINE/>
+      <FPCLINE>  IF fp_addr-building IS NOT INITIAL.</FPCLINE>
+      <FPCLINE>    lw_add-address_line = fp_addr-building.</FPCLINE>
+      <FPCLINE>  ENDIF. &quot; IF fp_addr-building IS NOT INITIAL</FPCLINE>
+      <FPCLINE/>
+      <FPCLINE>  IF fp_addr-roomnumber IS NOT INITIAL.</FPCLINE>
+      <FPCLINE>    IF lw_add-address_line IS NOT INITIAL.</FPCLINE>
+      <FPCLINE>      CONCATENATE lw_add-address_line fp_addr-roomnumber INTO lw_add-address_line</FPCLINE>
+      <FPCLINE>                  SEPARATED BY  lc_comma.</FPCLINE>
+      <FPCLINE>    ELSE. &quot; ELSE -&gt; IF lw_add-address_line IS NOT INITIAL</FPCLINE>
+      <FPCLINE>      lw_add-address_line = fp_addr-roomnumber.</FPCLINE>
+      <FPCLINE>    ENDIF. &quot; IF lw_add-address_line IS NOT INITIAL</FPCLINE>
+      <FPCLINE>  ENDIF. &quot; IF fp_addr-roomnumber IS NOT INITIAL</FPCLINE>
+      <FPCLINE/>
+      <FPCLINE>  IF fp_addr-floor    IS NOT INITIAL.</FPCLINE>
+      <FPCLINE>    IF lw_add-address_line IS NOT INITIAL.</FPCLINE>
+      <FPCLINE>      CONCATENATE lw_add-address_line fp_addr-floor INTO lw_add-address_line</FPCLINE>
+      <FPCLINE>                   SEPARATED BY  lc_comma.</FPCLINE>
+      <FPCLINE>    ELSE. &quot; ELSE -&gt; IF lw_add-address_line IS NOT INITIAL</FPCLINE>
+      <FPCLINE>      lw_add-address_line = fp_addr-floor.</FPCLINE>
+      <FPCLINE>    ENDIF. &quot; IF lw_add-address_line IS NOT INITIAL</FPCLINE>
+      <FPCLINE>  ENDIF. &quot; IF fp_addr-floor IS NOT INITIAL</FPCLINE>
+      <FPCLINE/>
+      <FPCLINE>  IF lw_add IS NOT INITIAL.</FPCLINE>
+      <FPCLINE>    INSERT lw_add INTO fp_address INDEX  lv_index.</FPCLINE>
+      <FPCLINE>  ENDIF. &quot; IF lw_add IS NOT INITIAL</FPCLINE>
+      <FPCLINE/>
+      <FPCLINE>* &lt;--- End    of Insert for D3 COE Defect 2605 by DMOIRAN</FPCLINE>
+      <FPCLINE/>
+      <FPCLINE>ENDFORM. &quot;f_get_address</FPCLINE>
+      <FPCLINE/>
+      <FPCLINE>*End of insert for D3_OTC_FDD_0012 CR#289 by U034336</FPCLINE>
+     </FORMS>
+    </CL_FP_CODING>
+   </cls:CL_FP_CODING>
+  </asx:heap>
+ </asx:abap>
+</abapGit>

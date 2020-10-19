@@ -1,0 +1,125 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<abapGit version="v1.0.0" serializer="LCL_OBJECT_ENHO" serializer_version="v1.0.0">
+ <asx:abap xmlns:asx="http://www.sap.com/abapxml" version="1.0">
+  <asx:values>
+   <TOOL>HOOK_IMPL</TOOL>
+   <SHORTTEXT>Populate field in VBKD structure</SHORTTEXT>
+   <ORIGINAL_OBJECT>
+    <PGMID>R3TR</PGMID>
+    <ORG_OBJ_TYPE>PROG</ORG_OBJ_TYPE>
+    <ORG_OBJ_NAME>SAPMV45A</ORG_OBJ_NAME>
+    <ORG_MAIN_TYPE>PROG</ORG_MAIN_TYPE>
+    <ORG_MAIN_NAME>SAPMV45A</ORG_MAIN_NAME>
+    <PROGRAMNAME>SAPMV45A</PROGRAMNAME>
+   </ORIGINAL_OBJECT>
+   <ENHANCEMENTS>
+    <ENH_HOOK_IMPL>
+     <PROGRAMNAME>SAPMV45A</PROGRAMNAME>
+     <ENHMODE>D</ENHMODE>
+     <FULL_NAME>\PR:SAPMV45A\FO:USEREXIT_MOVE_FIELD_TO_VBKD\SE:BEGIN\EI</FULL_NAME>
+     <SOURCE>
+      <item>************************************************************************</item>
+      <item>* PROGRAM    :  ZOTCN0074O_POPULATE_VBKD(Include)                      *</item>
+      <item>* TITLE      :  Sales Rep Cost Center Assignment                       *</item>
+      <item>* DEVELOPER  :  Suman K Pandit                                         *</item>
+      <item>* OBJECT TYPE:  ENHANCEMENT                                            *</item>
+      <item>* SAP RELEASE:  SAP ECC 6.0                                            *</item>
+      <item>*----------------------------------------------------------------------*</item>
+      <item>* WRICEF ID:   CR192(OTC_EDD_0074)                                     *</item>
+      <item>*----------------------------------------------------------------------*</item>
+      <item>* DESCRIPTION: Population of VBKD fields from Ship-To customer record.</item>
+      <item>*----------------------------------------------------------------------*</item>
+      <item>* MODIFICATION HISTORY:                                                *</item>
+      <item>*======================================================================*</item>
+      <item>* DATE        USER     TRANSPORT  DESCRIPTION                          *</item>
+      <item>* =========== ======== ========== =====================================*</item>
+      <item>* 01-NOV-2012  SPANDIT E1DK907442  INITIAL DEVELOPMENT                 *</item>
+      <item>*&amp;---------------------------------------------------------------------*</item>
+      <item/>
+      <item>INCLUDE ZOTCN0074O_POPULATE_VBKD.</item>
+      <item/>
+      <item/>
+      <item>************************************************************************</item>
+      <item>* PROGRAM    :  ZOTCN0021O_COPY_PO_TYPE(Include)                       *</item>
+      <item>* TITLE      :  Sales Doc to Delivery Doc Copy Control Routines        *</item>
+      <item>* DEVELOPER  :  Ramya Thumma                                           *</item>
+      <item>* OBJECT TYPE:  ENHANCEMENT                                            *</item>
+      <item>* SAP RELEASE:  SAP ECC 6.0                                            *</item>
+      <item>*----------------------------------------------------------------------*</item>
+      <item>* WRICEF ID:   D3_OTC_EDD_0021                                         *</item>
+      <item>*----------------------------------------------------------------------*</item>
+      <item>* DESCRIPTION: Copying the PO Type from Sales order Header When        *</item>
+      <item>*              referenced to a document instead of copied from the     *</item>
+      <item>*              Contract Header.</item>
+      <item>*----------------------------------------------------------------------*</item>
+      <item>* MODIFICATION HISTORY:                                                *</item>
+      <item>*======================================================================*</item>
+      <item>* DATE        USER     TRANSPORT  DESCRIPTION                          *</item>
+      <item>* =========== ======== ========== =====================================*</item>
+      <item>* 16-JUN-2017  U034229 E1DK928617  CR# 3029: PO Type at Line Level of  *</item>
+      <item>*                                  Order Created with Reference to a   *</item>
+      <item>*                                  Contract                            *</item>
+      <item>*&amp;---------------------------------------------------------------------*</item>
+      <item/>
+      <item>INCLUDE ZOTCN0021O_COPY_PO_TYPE.</item>
+      <item/>
+      <item/>
+     </SOURCE>
+    </ENH_HOOK_IMPL>
+   </ENHANCEMENTS>
+   <SPACES>
+    <item>
+     <FULL_NAME>\PR:SAPMV45A\FO:USEREXIT_MOVE_FIELD_TO_VBKD\SE:BEGIN\EI</FULL_NAME>
+     <SPACES>
+      <item>0</item>
+      <item>0</item>
+      <item>0</item>
+      <item>0</item>
+      <item>0</item>
+      <item>0</item>
+      <item>0</item>
+      <item>0</item>
+      <item>0</item>
+      <item>0</item>
+      <item>0</item>
+      <item>0</item>
+      <item>0</item>
+      <item>0</item>
+      <item>0</item>
+      <item>0</item>
+      <item>0</item>
+      <item>0</item>
+      <item>0</item>
+      <item>0</item>
+      <item>0</item>
+      <item>0</item>
+      <item>0</item>
+      <item>0</item>
+      <item>0</item>
+      <item>0</item>
+      <item>0</item>
+      <item>0</item>
+      <item>0</item>
+      <item>0</item>
+      <item>0</item>
+      <item>0</item>
+      <item>0</item>
+      <item>0</item>
+      <item>0</item>
+      <item>0</item>
+      <item>0</item>
+      <item>0</item>
+      <item>0</item>
+      <item>0</item>
+      <item>0</item>
+      <item>0</item>
+      <item>0</item>
+      <item>0</item>
+      <item>0</item>
+      <item>0</item>
+     </SPACES>
+    </item>
+   </SPACES>
+  </asx:values>
+ </asx:abap>
+</abapGit>

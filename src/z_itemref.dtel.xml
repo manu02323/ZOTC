@@ -1,0 +1,100 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<abapGit version="v1.0.0" serializer="LCL_OBJECT_DTEL" serializer_version="v1.0.0">
+ <asx:abap xmlns:asx="http://www.sap.com/abapxml" version="1.0">
+  <asx:values>
+   <DD04V>
+    <ROLLNAME>Z_ITEMREF</ROLLNAME>
+    <DDLANGUAGE>E</DDLANGUAGE>
+    <DOMNAME>Z_ITEMREF</DOMNAME>
+    <LOGFLAG>X</LOGFLAG>
+    <HEADLEN>14</HEADLEN>
+    <SCRLEN1>10</SCRLEN1>
+    <SCRLEN2>14</SCRLEN2>
+    <SCRLEN3>14</SCRLEN3>
+    <DDTEXT>ServMax Obj ID</DDTEXT>
+    <REPTEXT>ServMax Obj ID</REPTEXT>
+    <SCRTEXT_S>ServMx Obj</SCRTEXT_S>
+    <SCRTEXT_M>ServMax Obj ID</SCRTEXT_M>
+    <SCRTEXT_L>ServMax Obj ID</SCRTEXT_L>
+    <DTELMASTER>E</DTELMASTER>
+    <REFKIND>D</REFKIND>
+   </DD04V>
+   <I18N_LANGS>
+    <LANGU>1</LANGU>
+    <LANGU>D</LANGU>
+    <LANGU>F</LANGU>
+    <LANGU>J</LANGU>
+    <LANGU>N</LANGU>
+    <LANGU>P</LANGU>
+    <LANGU>R</LANGU>
+    <LANGU>S</LANGU>
+   </I18N_LANGS>
+   <DD04_TEXTS>
+    <item>
+     <DDLANGUAGE>1</DDLANGUAGE>
+     <DDTEXT>ServMax Obj ID</DDTEXT>
+     <REPTEXT>ServMax Obj ID</REPTEXT>
+     <SCRTEXT_S>ServMx Obj</SCRTEXT_S>
+     <SCRTEXT_M>ServMax Obj ID</SCRTEXT_M>
+     <SCRTEXT_L>ServMax Obj ID</SCRTEXT_L>
+    </item>
+    <item>
+     <DDLANGUAGE>D</DDLANGUAGE>
+     <DDTEXT>ServMax Obj ID</DDTEXT>
+     <REPTEXT>ServMax Obj ID</REPTEXT>
+     <SCRTEXT_S>ServMx Obj</SCRTEXT_S>
+     <SCRTEXT_M>ServMax Obj ID</SCRTEXT_M>
+     <SCRTEXT_L>ServMax Obj ID</SCRTEXT_L>
+    </item>
+    <item>
+     <DDLANGUAGE>F</DDLANGUAGE>
+     <DDTEXT>Référence object Service Max</DDTEXT>
+     <REPTEXT>SMAX Object</REPTEXT>
+     <SCRTEXT_S>SMAXObject</SCRTEXT_S>
+     <SCRTEXT_M>SMAX Object</SCRTEXT_M>
+     <SCRTEXT_L>SMAX Object</SCRTEXT_L>
+    </item>
+    <item>
+     <DDLANGUAGE>J</DDLANGUAGE>
+     <DDTEXT>ServMax Obj ID</DDTEXT>
+     <REPTEXT>ServMax Obj ID</REPTEXT>
+     <SCRTEXT_S>ServMx Obj</SCRTEXT_S>
+     <SCRTEXT_M>ServMax Obj ID</SCRTEXT_M>
+     <SCRTEXT_L>ServMax Obj ID</SCRTEXT_L>
+    </item>
+    <item>
+     <DDLANGUAGE>N</DDLANGUAGE>
+     <DDTEXT>ServMax Obj ID</DDTEXT>
+     <REPTEXT>ServMax Obj ID</REPTEXT>
+     <SCRTEXT_S>ServMx Obj</SCRTEXT_S>
+     <SCRTEXT_M>ServMax Obj ID</SCRTEXT_M>
+     <SCRTEXT_L>ServMax Obj ID</SCRTEXT_L>
+    </item>
+    <item>
+     <DDLANGUAGE>P</DDLANGUAGE>
+     <DDTEXT>ServMax Obj ID</DDTEXT>
+     <REPTEXT>ServMax Obj ID</REPTEXT>
+     <SCRTEXT_S>ServMx Obj</SCRTEXT_S>
+     <SCRTEXT_M>ServMax Obj ID</SCRTEXT_M>
+     <SCRTEXT_L>ServMax Obj ID</SCRTEXT_L>
+    </item>
+    <item>
+     <DDLANGUAGE>R</DDLANGUAGE>
+     <DDTEXT>ServMax Obj ID</DDTEXT>
+     <REPTEXT>ServMax Obj ID</REPTEXT>
+     <SCRTEXT_S>ServMx Obj</SCRTEXT_S>
+     <SCRTEXT_M>ServMax Obj ID</SCRTEXT_M>
+     <SCRTEXT_L>ServMax Obj ID</SCRTEXT_L>
+    </item>
+    <item>
+     <DDLANGUAGE>S</DDLANGUAGE>
+     <DDTEXT>ServMax Obj ID</DDTEXT>
+     <REPTEXT>ServMax Obj ID</REPTEXT>
+     <SCRTEXT_S>ServMx Obj</SCRTEXT_S>
+     <SCRTEXT_M>ServMax Obj ID</SCRTEXT_M>
+     <SCRTEXT_L>ServMax Obj ID</SCRTEXT_L>
+    </item>
+   </DD04_TEXTS>
+  </asx:values>
+ </asx:abap>
+</abapGit>

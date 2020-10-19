@@ -1,0 +1,135 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<abapGit version="v1.0.0" serializer="LCL_OBJECT_ENHO" serializer_version="v1.0.0">
+ <asx:abap xmlns:asx="http://www.sap.com/abapxml" version="1.0">
+  <asx:values>
+   <TOOL>HOOK_IMPL</TOOL>
+   <SHORTTEXT>Email Validation</SHORTTEXT>
+   <ORIGINAL_OBJECT>
+    <PGMID>R3TR</PGMID>
+    <ORG_OBJ_TYPE>PROG</ORG_OBJ_TYPE>
+    <ORG_OBJ_NAME>SD_INVOICE_PRINT01</ORG_OBJ_NAME>
+    <ORG_MAIN_TYPE>PROG</ORG_MAIN_TYPE>
+    <ORG_MAIN_NAME>SD_INVOICE_PRINT01</ORG_MAIN_NAME>
+    <PROGRAMNAME>SD_INVOICE_PRINT01</PROGRAMNAME>
+   </ORIGINAL_OBJECT>
+   <ENHANCEMENTS>
+    <ENH_HOOK_IMPL>
+     <PROGRAMNAME>SD_INVOICE_PRINT01</PROGRAMNAME>
+     <ENHMODE>D</ENHMODE>
+     <FULL_NAME>\PR:SD_INVOICE_PRINT01\FO:SEND_DATA\SE:BEGIN\EI</FULL_NAME>
+     <SOURCE>
+      <item>*----------------------------------------------------------------------*</item>
+      <item>* TITLE      :  Enhancement for Invoice Form - output ZRD1             *</item>
+      <item>* DEVELOPER  :  Niraj Sharma                                           *</item>
+      <item>* SAP RELEASE:  SAP ECC 6.0                                            *</item>
+      <item>*----------------------------------------------------------------------*</item>
+      <item>* WRICEF ID:  OTC_FDD_0014_US Invoice Form                             *</item>
+      <item>*----------------------------------------------------------------------*</item>
+      <item>* DESCRIPTION:                                                         *</item>
+      <item>* If no address number is maintained at the PO header, then check the  *</item>
+      <item>* vendor master. If the email is not maintained there, update the error*</item>
+      <item>* message.                                                             *</item>
+      <item>*----------------------------------------------------------------------*</item>
+      <item>* MODIFICATION HISTORY:                                                *</item>
+      <item>*======================================================================*</item>
+      <item>* DATE        USER     TRANSPORT  DESCRIPTION                          *</item>
+      <item>* =========== ======== ========== =====================================*</item>
+      <item>* 04-MAY-2012 NSHARMA1 E1DK900340 INITIAL DEVELOPMENT                  *</item>
+      <item>*&amp;---------------------------------------------------------------------*</item>
+      <item/>
+      <item>CONSTANTS: lc_msgid_me TYPE symsgid VALUE &apos;ZOTC_MSG&apos;,</item>
+      <item>lc_msg_no TYPE symsgno VALUE &apos;000&apos;,</item>
+      <item>lc_msgtype TYPE symsgty VALUE &apos;E&apos;,</item>
+      <item>lc_e       type char1   value &apos;E&apos;,</item>
+      <item>lc_f       type char1   value &apos;F&apos;,</item>
+      <item>lc_msgv1 TYPE symsgv VALUE &apos;Please maintain email address&apos;,</item>
+      <item>lc_msgv2 TYPE symsgv VALUE &apos;Please maintain fax number&apos;.</item>
+      <item/>
+      <item>IF gs_nast-email_addr IS INITIAL and uv_device = lc_E.</item>
+      <item>CALL FUNCTION &apos;NAST_PROTOCOL_UPDATE&apos;</item>
+      <item>EXPORTING</item>
+      <item>msg_arbgb = lc_msgid_me</item>
+      <item>msg_nr    = lc_msg_no</item>
+      <item>msg_ty    = lc_msgtype</item>
+      <item>msg_v1    = lc_msgv1</item>
+      <item>EXCEPTIONS</item>
+      <item>OTHERS    = 1.</item>
+      <item>EXIT.</item>
+      <item>ENDIF.</item>
+      <item/>
+      <item>IF gs_nast-TELFX IS INITIAL and uv_device = lc_F.</item>
+      <item>CALL FUNCTION &apos;NAST_PROTOCOL_UPDATE&apos;</item>
+      <item>EXPORTING</item>
+      <item>msg_arbgb = lc_msgid_me</item>
+      <item>msg_nr    = lc_msg_no</item>
+      <item>msg_ty    = lc_msgtype</item>
+      <item>msg_v1    = lc_msgv2</item>
+      <item>EXCEPTIONS</item>
+      <item>OTHERS    = 1.</item>
+      <item>EXIT.</item>
+      <item>ENDIF.</item>
+      <item/>
+     </SOURCE>
+    </ENH_HOOK_IMPL>
+   </ENHANCEMENTS>
+   <SPACES>
+    <item>
+     <FULL_NAME>\PR:SD_INVOICE_PRINT01\FO:SEND_DATA\SE:BEGIN\EI</FULL_NAME>
+     <SPACES>
+      <item>0</item>
+      <item>0</item>
+      <item>0</item>
+      <item>0</item>
+      <item>0</item>
+      <item>0</item>
+      <item>0</item>
+      <item>0</item>
+      <item>0</item>
+      <item>0</item>
+      <item>0</item>
+      <item>0</item>
+      <item>0</item>
+      <item>0</item>
+      <item>0</item>
+      <item>0</item>
+      <item>0</item>
+      <item>0</item>
+      <item>0</item>
+      <item>0</item>
+      <item>11</item>
+      <item>11</item>
+      <item>11</item>
+      <item>11</item>
+      <item>11</item>
+      <item>11</item>
+      <item>0</item>
+      <item>6</item>
+      <item>8</item>
+      <item>10</item>
+      <item>12</item>
+      <item>12</item>
+      <item>12</item>
+      <item>12</item>
+      <item>10</item>
+      <item>12</item>
+      <item>8</item>
+      <item>6</item>
+      <item>0</item>
+      <item>6</item>
+      <item>8</item>
+      <item>10</item>
+      <item>12</item>
+      <item>12</item>
+      <item>12</item>
+      <item>12</item>
+      <item>10</item>
+      <item>12</item>
+      <item>8</item>
+      <item>6</item>
+      <item>0</item>
+     </SPACES>
+    </item>
+   </SPACES>
+  </asx:values>
+ </asx:abap>
+</abapGit>

@@ -1,0 +1,3 @@
+FUNCTION-POOL ZOTC_GOS_ATTACH_DOC_ORD.     "MESSAGE-ID ..
+
+* INCLUDE LZTEST_GOS_ATTACH_DOC_ORDD...      " Local class definition

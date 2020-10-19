@@ -1,0 +1,40 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<abapGit version="v1.0.0" serializer="LCL_OBJECT_TRAN" serializer_version="v1.0.0">
+ <asx:abap xmlns:asx="http://www.sap.com/abapxml" version="1.0">
+  <asx:values>
+   <TSTC>
+    <TCODE>ZOTC_EBS_SEARCH</TCODE>
+    <CINFO>Ag==</CINFO>
+   </TSTC>
+   <TSTCC>
+    <TCODE>ZOTC_EBS_SEARCH</TCODE>
+    <S_WEBGUI>1</S_WEBGUI>
+    <S_WIN32>X</S_WIN32>
+    <S_PLATIN>X</S_PLATIN>
+   </TSTCC>
+   <TSTCT>
+    <SPRSL>E</SPRSL>
+    <TCODE>ZOTC_EBS_SEARCH</TCODE>
+    <TTEXT>EBS Search Table</TTEXT>
+   </TSTCT>
+   <TSTCP>
+    <TCODE>ZOTC_EBS_SEARCH</TCODE>
+    <PARAM>/*SM30 SHOW=X;VIEWNAME=ZOTC_EBS_SEARCH;</PARAM>
+   </TSTCP>
+   <I18N_TPOOL>
+    <TSTCT>
+     <SPRSL>B</SPRSL>
+     <TTEXT>EBS Search Table</TTEXT>
+    </TSTCT>
+    <TSTCT>
+     <SPRSL>C</SPRSL>
+     <TTEXT>EBS Search Table</TTEXT>
+    </TSTCT>
+    <TSTCT>
+     <SPRSL>L</SPRSL>
+     <TTEXT>EBS Search Table</TTEXT>
+    </TSTCT>
+   </I18N_TPOOL>
+  </asx:values>
+ </asx:abap>
+</abapGit>

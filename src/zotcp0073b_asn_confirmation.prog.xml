@@ -1,0 +1,285 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<abapGit version="v1.0.0" serializer="LCL_OBJECT_PROG" serializer_version="v1.0.0">
+ <asx:abap xmlns:asx="http://www.sap.com/abapxml" version="1.0">
+  <asx:values>
+   <PROGDIR>
+    <NAME>ZOTCP0073B_ASN_CONFIRMATION</NAME>
+    <SUBC>1</SUBC>
+    <RLOAD>E</RLOAD>
+    <FIXPT>X</FIXPT>
+    <UCCHECK>X</UCCHECK>
+   </PROGDIR>
+   <TPOOL>
+    <item>
+     <ID>I</ID>
+     <KEY>168</KEY>
+     <ENTRY>Email can not be sent to email ID.</ENTRY>
+     <LENGTH>34</LENGTH>
+    </item>
+    <item>
+     <ID>I</ID>
+     <KEY>170</KEY>
+     <ENTRY>Contact person is missing in Sales Order.</ENTRY>
+     <LENGTH>44</LENGTH>
+    </item>
+    <item>
+     <ID>I</ID>
+     <KEY>171</KEY>
+     <ENTRY>Contact person email id is missing.</ENTRY>
+     <LENGTH>35</LENGTH>
+    </item>
+    <item>
+     <ID>I</ID>
+     <KEY>172</KEY>
+     <ENTRY>Send mails only to Biorad ID in non production.</ENTRY>
+     <LENGTH>51</LENGTH>
+    </item>
+    <item>
+     <ID>R</ID>
+     <ENTRY>ASN_CONFIRMATION</ENTRY>
+     <LENGTH>16</LENGTH>
+    </item>
+   </TPOOL>
+   <I18N_TPOOL>
+    <item>
+     <LANGUAGE>1</LANGUAGE>
+     <TEXTPOOL>
+      <item>
+       <ID>I</ID>
+       <KEY>168</KEY>
+       <ENTRY>Email can not be sent to email ID.</ENTRY>
+       <LENGTH>34</LENGTH>
+      </item>
+      <item>
+       <ID>I</ID>
+       <KEY>170</KEY>
+       <ENTRY>Contact person is missing in Sales Order.</ENTRY>
+       <LENGTH>44</LENGTH>
+      </item>
+      <item>
+       <ID>I</ID>
+       <KEY>171</KEY>
+       <ENTRY>Contact person email id is missing.</ENTRY>
+       <LENGTH>35</LENGTH>
+      </item>
+      <item>
+       <ID>I</ID>
+       <KEY>172</KEY>
+       <ENTRY>Send mails only to Biorad ID in non production.</ENTRY>
+       <LENGTH>51</LENGTH>
+      </item>
+      <item>
+       <ID>R</ID>
+       <ENTRY>ASN_CONFIRMATION</ENTRY>
+       <LENGTH>16</LENGTH>
+      </item>
+     </TEXTPOOL>
+    </item>
+    <item>
+     <LANGUAGE>F</LANGUAGE>
+     <TEXTPOOL>
+      <item>
+       <ID>I</ID>
+       <KEY>168</KEY>
+       <ENTRY>Email can not be sent to email ID.</ENTRY>
+       <LENGTH>34</LENGTH>
+      </item>
+      <item>
+       <ID>I</ID>
+       <KEY>170</KEY>
+       <ENTRY>Contact person is missing in Sales Order.</ENTRY>
+       <LENGTH>44</LENGTH>
+      </item>
+      <item>
+       <ID>I</ID>
+       <KEY>171</KEY>
+       <ENTRY>Contact person email id is missing.</ENTRY>
+       <LENGTH>35</LENGTH>
+      </item>
+      <item>
+       <ID>I</ID>
+       <KEY>172</KEY>
+       <ENTRY>Send mails only to Biorad ID in non production.</ENTRY>
+       <LENGTH>51</LENGTH>
+      </item>
+      <item>
+       <ID>R</ID>
+       <ENTRY>ASN_CONFIRMATION</ENTRY>
+       <LENGTH>16</LENGTH>
+      </item>
+     </TEXTPOOL>
+    </item>
+    <item>
+     <LANGUAGE>J</LANGUAGE>
+     <TEXTPOOL>
+      <item>
+       <ID>I</ID>
+       <KEY>168</KEY>
+       <ENTRY>Email can not be sent to email ID.</ENTRY>
+       <LENGTH>34</LENGTH>
+      </item>
+      <item>
+       <ID>I</ID>
+       <KEY>170</KEY>
+       <ENTRY>Contact person is missing in Sales Order.</ENTRY>
+       <LENGTH>44</LENGTH>
+      </item>
+      <item>
+       <ID>I</ID>
+       <KEY>171</KEY>
+       <ENTRY>Contact person email id is missing.</ENTRY>
+       <LENGTH>35</LENGTH>
+      </item>
+      <item>
+       <ID>I</ID>
+       <KEY>172</KEY>
+       <ENTRY>Send mails only to Biorad ID in non production.</ENTRY>
+       <LENGTH>51</LENGTH>
+      </item>
+      <item>
+       <ID>R</ID>
+       <ENTRY>ASN_CONFIRMATION</ENTRY>
+       <LENGTH>16</LENGTH>
+      </item>
+     </TEXTPOOL>
+    </item>
+    <item>
+     <LANGUAGE>N</LANGUAGE>
+     <TEXTPOOL>
+      <item>
+       <ID>I</ID>
+       <KEY>168</KEY>
+       <ENTRY>Email can not be sent to email ID.</ENTRY>
+       <LENGTH>34</LENGTH>
+      </item>
+      <item>
+       <ID>I</ID>
+       <KEY>170</KEY>
+       <ENTRY>Contact person is missing in Sales Order.</ENTRY>
+       <LENGTH>44</LENGTH>
+      </item>
+      <item>
+       <ID>I</ID>
+       <KEY>171</KEY>
+       <ENTRY>Contact person email id is missing.</ENTRY>
+       <LENGTH>35</LENGTH>
+      </item>
+      <item>
+       <ID>I</ID>
+       <KEY>172</KEY>
+       <ENTRY>Send mails only to Biorad ID in non production.</ENTRY>
+       <LENGTH>51</LENGTH>
+      </item>
+      <item>
+       <ID>R</ID>
+       <ENTRY>ASN_CONFIRMATION</ENTRY>
+       <LENGTH>16</LENGTH>
+      </item>
+     </TEXTPOOL>
+    </item>
+    <item>
+     <LANGUAGE>P</LANGUAGE>
+     <TEXTPOOL>
+      <item>
+       <ID>I</ID>
+       <KEY>168</KEY>
+       <ENTRY>Email can not be sent to email ID.</ENTRY>
+       <LENGTH>34</LENGTH>
+      </item>
+      <item>
+       <ID>I</ID>
+       <KEY>170</KEY>
+       <ENTRY>Contact person is missing in Sales Order.</ENTRY>
+       <LENGTH>44</LENGTH>
+      </item>
+      <item>
+       <ID>I</ID>
+       <KEY>171</KEY>
+       <ENTRY>Contact person email id is missing.</ENTRY>
+       <LENGTH>35</LENGTH>
+      </item>
+      <item>
+       <ID>I</ID>
+       <KEY>172</KEY>
+       <ENTRY>Send mails only to Biorad ID in non production.</ENTRY>
+       <LENGTH>51</LENGTH>
+      </item>
+      <item>
+       <ID>R</ID>
+       <ENTRY>ASN_CONFIRMATION</ENTRY>
+       <LENGTH>16</LENGTH>
+      </item>
+     </TEXTPOOL>
+    </item>
+    <item>
+     <LANGUAGE>R</LANGUAGE>
+     <TEXTPOOL>
+      <item>
+       <ID>I</ID>
+       <KEY>168</KEY>
+       <ENTRY>Email can not be sent to email ID.</ENTRY>
+       <LENGTH>34</LENGTH>
+      </item>
+      <item>
+       <ID>I</ID>
+       <KEY>170</KEY>
+       <ENTRY>Contact person is missing in Sales Order.</ENTRY>
+       <LENGTH>44</LENGTH>
+      </item>
+      <item>
+       <ID>I</ID>
+       <KEY>171</KEY>
+       <ENTRY>Contact person email id is missing.</ENTRY>
+       <LENGTH>35</LENGTH>
+      </item>
+      <item>
+       <ID>I</ID>
+       <KEY>172</KEY>
+       <ENTRY>Send mails only to Biorad ID in non production.</ENTRY>
+       <LENGTH>51</LENGTH>
+      </item>
+      <item>
+       <ID>R</ID>
+       <ENTRY>ASN_CONFIRMATION</ENTRY>
+       <LENGTH>16</LENGTH>
+      </item>
+     </TEXTPOOL>
+    </item>
+    <item>
+     <LANGUAGE>S</LANGUAGE>
+     <TEXTPOOL>
+      <item>
+       <ID>I</ID>
+       <KEY>168</KEY>
+       <ENTRY>Email can not be sent to email ID.</ENTRY>
+       <LENGTH>34</LENGTH>
+      </item>
+      <item>
+       <ID>I</ID>
+       <KEY>170</KEY>
+       <ENTRY>Contact person is missing in Sales Order.</ENTRY>
+       <LENGTH>44</LENGTH>
+      </item>
+      <item>
+       <ID>I</ID>
+       <KEY>171</KEY>
+       <ENTRY>Contact person email id is missing.</ENTRY>
+       <LENGTH>35</LENGTH>
+      </item>
+      <item>
+       <ID>I</ID>
+       <KEY>172</KEY>
+       <ENTRY>Send mails only to Biorad ID in non production.</ENTRY>
+       <LENGTH>51</LENGTH>
+      </item>
+      <item>
+       <ID>R</ID>
+       <ENTRY>ASN_CONFIRMATION</ENTRY>
+       <LENGTH>16</LENGTH>
+      </item>
+     </TEXTPOOL>
+    </item>
+   </I18N_TPOOL>
+  </asx:values>
+ </asx:abap>
+</abapGit>

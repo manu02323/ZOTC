@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<abapGit version="v1.0.0" serializer="LCL_OBJECT_ENHO" serializer_version="v1.0.0">
+ <asx:abap xmlns:asx="http://www.sap.com/abapxml" version="1.0">
+  <asx:values>
+   <TOOL>BADI_IMPL</TOOL>
+   <SHORTTEXT>Changes Flag whether Batch Determination in ERP or EWM</SHORTTEXT>
+   <SPOT_NAME>/SPE/ES_BADI_BATCH_DETERM</SPOT_NAME>
+   <IMPL>
+    <ENH_BADI_IMPL_DATA>
+     <SPOT_NAME>/SPE/ES_BADI_BATCH_DETERM</SPOT_NAME>
+     <BADI_NAME>/SPE/BADI_BATCH_DETERM</BADI_NAME>
+     <IMPL_NAME>ZCL_IM_BADI_BATCH_DETEREM</IMPL_NAME>
+     <IMPL_CLASS>ZCL_IM_BADI_BATCH_DETEREM</IMPL_CLASS>
+     <ACTIVE>X</ACTIVE>
+     <IMPL_SHORTTEXT>Changes Flag whether Batch Determination in ERP or EWM</IMPL_SHORTTEXT>
+     <IMPL_SHORTTEXT_ID>005056B3602D1ED69EE3342776898067</IMPL_SHORTTEXT_ID>
+    </ENH_BADI_IMPL_DATA>
+   </IMPL>
+  </asx:values>
+ </asx:abap>
+</abapGit>

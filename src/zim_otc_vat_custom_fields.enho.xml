@@ -1,0 +1,125 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<abapGit version="v1.0.0" serializer="LCL_OBJECT_ENHO" serializer_version="v1.0.0">
+ <asx:abap xmlns:asx="http://www.sap.com/abapxml" version="1.0">
+  <asx:values>
+   <TOOL>HOOK_IMPL</TOOL>
+   <SHORTTEXT>To Populate Reporting and Destination Country for VAT Determination</SHORTTEXT>
+   <ORIGINAL_OBJECT>
+    <PGMID>R3TR</PGMID>
+    <ORG_OBJ_TYPE>PROG</ORG_OBJ_TYPE>
+    <ORG_OBJ_NAME>SAPMV45A</ORG_OBJ_NAME>
+    <ORG_MAIN_TYPE>PROG</ORG_MAIN_TYPE>
+    <ORG_MAIN_NAME>SAPMV45A</ORG_MAIN_NAME>
+    <PROGRAMNAME>SAPMV45A</PROGRAMNAME>
+   </ORIGINAL_OBJECT>
+   <ENHANCEMENTS>
+    <ENH_HOOK_IMPL>
+     <PROGRAMNAME>SAPMV45A</PROGRAMNAME>
+     <ENHMODE>D</ENHMODE>
+     <FULL_NAME>\PR:SAPMV45A\FO:USEREXIT_MOVE_FIELD_TO_VBAP\SE:BEGIN\EI</FULL_NAME>
+     <SOURCE>
+      <item>************************************************************************</item>
+      <item>* EHNO       :  ZIM_OTC_VAT_CUSTOM_FIELDS  (Enh. Implementation)       *</item>
+      <item>* TITLE      :  Populate Tax Reporting and Tax Destination Country in  *</item>
+      <item>*               VBAP Table                                             *</item>
+      <item>* DEVELOPER  :  Srinivasa Gurijala                                     *</item>
+      <item>* OBJECT TYPE:  ENHANCEMENT                                            *</item>
+      <item>* SAP RELEASE:  SAP ECC 6.0                                            *</item>
+      <item>*----------------------------------------------------------------------*</item>
+      <item>* WRICEF ID:  OTC_EDD_00335                                             *</item>
+      <item>*----------------------------------------------------------------------*</item>
+      <item>* DESCRIPTION: Population of VBAP ZZRLAND ZZDLAND ZZRLANDIC ZZDLANDIC  *</item>
+      <item>*              for Tax reporting and Tax Destination                   *</item>
+      <item>*----------------------------------------------------------------------*</item>
+      <item>* MODIFICATION HISTORY:                                                *</item>
+      <item>*======================================================================*</item>
+      <item>* DATE         USER    TRANSPORT    DESCRIPTION                        *</item>
+      <item>* =========== ======== ========== =====================================*</item>
+      <item>* 10/Jul/2016 U033814  E1DK919518  FB2_D3_OTC_EDD_0335_EHQ_EU_VAT_Ta   *</item>
+      <item>*======================================================================*</item>
+      <item>* 10/Feb/2019 U033814  E2DK922082 Date and Qty Fixed for Third Party PO*</item>
+      <item>*                                 OTC_EDD_0424  SCTASK0783635 Initial  *</item>
+      <item>*======================================================================*</item>
+      <item/>
+      <item>INCLUDE ZOTCNO0335B_CSTM_FLDS_SO_ITEM.</item>
+      <item/>
+      <item>*--Begin of Insert for D3_OTC_IDD_0222 by U029267- SCTASK0768763</item>
+      <item>* EHNO       :  ZIM_OTC_VAT_CUSTOM_FIELDS  (Enh. Implementation)       *</item>
+      <item>* TITLE      :  Populate Created by in BOM child item in VBAP Table    *</item>
+      <item>* DEVELOPER  :  Suparna Paul                                           *</item>
+      <item>* OBJECT TYPE:  ENHANCEMENT                                            *</item>
+      <item>* SAP RELEASE:  SAP ECC 6.0                                            *</item>
+      <item>*----------------------------------------------------------------------*</item>
+      <item>* WRICEF ID:  OTC_EDD_0222                                             *</item>
+      <item>*----------------------------------------------------------------------*</item>
+      <item>* DESCRIPTION: Population of VBAP-ERNAM with VBAK-ERNAM                *</item>
+      <item>*----------------------------------------------------------------------*</item>
+      <item>* MODIFICATION HISTORY:                                                *</item>
+      <item>*======================================================================*</item>
+      <item>* DATE         USER    TRANSPORT    DESCRIPTION                        *</item>
+      <item>* =========== ======== ========== =====================================*</item>
+      <item>* 21-Jan-2019 U029267  E1DK939532  SCTASK0768763 Add created by logic  *</item>
+      <item>*======================================================================*</item>
+      <item>INCLUDE ZOTCNO0222B_CSTM_FLDS_SO_ITEM.</item>
+      <item/>
+      <item>*--End of Insert for D3_OTC_IDD_0222 by U029267- SCTASK0768763</item>
+      <item/>
+     </SOURCE>
+    </ENH_HOOK_IMPL>
+   </ENHANCEMENTS>
+   <SPACES>
+    <item>
+     <FULL_NAME>\PR:SAPMV45A\FO:USEREXIT_MOVE_FIELD_TO_VBAP\SE:BEGIN\EI</FULL_NAME>
+     <SPACES>
+      <item>0</item>
+      <item>0</item>
+      <item>0</item>
+      <item>0</item>
+      <item>0</item>
+      <item>0</item>
+      <item>0</item>
+      <item>0</item>
+      <item>0</item>
+      <item>0</item>
+      <item>0</item>
+      <item>0</item>
+      <item>0</item>
+      <item>0</item>
+      <item>0</item>
+      <item>0</item>
+      <item>0</item>
+      <item>0</item>
+      <item>0</item>
+      <item>0</item>
+      <item>0</item>
+      <item>0</item>
+      <item>0</item>
+      <item>1</item>
+      <item>0</item>
+      <item>0</item>
+      <item>0</item>
+      <item>0</item>
+      <item>0</item>
+      <item>0</item>
+      <item>0</item>
+      <item>0</item>
+      <item>0</item>
+      <item>0</item>
+      <item>0</item>
+      <item>0</item>
+      <item>0</item>
+      <item>0</item>
+      <item>0</item>
+      <item>0</item>
+      <item>0</item>
+      <item>0</item>
+      <item>1</item>
+      <item>0</item>
+      <item>0</item>
+      <item>0</item>
+     </SPACES>
+    </item>
+   </SPACES>
+  </asx:values>
+ </asx:abap>
+</abapGit>

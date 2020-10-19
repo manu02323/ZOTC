@@ -1,0 +1,53 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<abapGit version="v1.0.0" serializer="LCL_OBJECT_FUGR" serializer_version="v1.0.0">
+ <asx:abap xmlns:asx="http://www.sap.com/abapxml" version="1.0">
+  <asx:values>
+   <AREAT>GET PDF DATA</AREAT>
+   <INCLUDES>
+    <SOBJ_NAME>LZOTC0197_PDF_DATATOP</SOBJ_NAME>
+    <SOBJ_NAME>SAPLZOTC0197_PDF_DATA</SOBJ_NAME>
+   </INCLUDES>
+   <FUNCTIONS>
+    <item>
+     <FUNCNAME>ZOTC0197_GET_INVOICE_PDF_DATA</FUNCNAME>
+     <SHORT_TEXT>Get PDF of invoice</SHORT_TEXT>
+     <IMPORT>
+      <RSIMP>
+       <PARAMETER>IM_DOC_NUMBER</PARAMETER>
+       <REFERENCE>X</REFERENCE>
+       <TYP>STRING</TYP>
+      </RSIMP>
+     </IMPORT>
+     <EXPORT>
+      <RSEXP>
+       <PARAMETER>EX_OUTPUT</PARAMETER>
+       <REFERENCE>X</REFERENCE>
+       <TYP>Z01CA_MT_DOCUMENT_RES</TYP>
+      </RSEXP>
+     </EXPORT>
+     <EXCEPTION>
+      <RSEXC>
+       <EXCEPTION>WRONG_DOC_NUMBER</EXCEPTION>
+      </RSEXC>
+     </EXCEPTION>
+     <DOCUMENTATION>
+      <RSFDO>
+       <PARAMETER>IM_DOC_NUMBER</PARAMETER>
+       <KIND>P</KIND>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>EX_OUTPUT</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Proxy Structure (generated)</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>WRONG_DOC_NUMBER</PARAMETER>
+       <KIND>X</KIND>
+       <STEXT>Document number is wrong</STEXT>
+      </RSFDO>
+     </DOCUMENTATION>
+    </item>
+   </FUNCTIONS>
+  </asx:values>
+ </asx:abap>
+</abapGit>

@@ -1,0 +1,167 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<abapGit version="v1.0.0" serializer="LCL_OBJECT_ENHO" serializer_version="v1.0.0">
+ <asx:abap xmlns:asx="http://www.sap.com/abapxml" version="1.0">
+  <asx:values>
+   <TOOL>HOOK_IMPL</TOOL>
+   <SHORTTEXT>Order Number Assignment</SHORTTEXT>
+   <ORIGINAL_OBJECT>
+    <PGMID>R3TR</PGMID>
+    <ORG_OBJ_TYPE>PROG</ORG_OBJ_TYPE>
+    <ORG_OBJ_NAME>SAPMV45A</ORG_OBJ_NAME>
+    <ORG_MAIN_TYPE>PROG</ORG_MAIN_TYPE>
+    <ORG_MAIN_NAME>SAPMV45A</ORG_MAIN_NAME>
+    <PROGRAMNAME>SAPMV45A</PROGRAMNAME>
+   </ORIGINAL_OBJECT>
+   <ENHANCEMENTS>
+    <ENH_HOOK_IMPL>
+     <PROGRAMNAME>SAPMV45A</PROGRAMNAME>
+     <ENHMODE>D</ENHMODE>
+     <FULL_NAME>\PR:SAPMV45A\FO:USEREXIT_MOVE_FIELD_TO_VBAP\SE:BEGIN\EI</FULL_NAME>
+     <SOURCE>
+      <item>*</item>
+      <item>************************************************************************</item>
+      <item>* PROGRAM    :  ZOTCI_IDD_0009_CLARIFY_SAVE(Enh. Implementation)       *</item>
+      <item>* TITLE      :  Order Assignment                                       *</item>
+      <item>* DEVELOPER  :  SHAMMI PURI                                            *</item>
+      <item>* OBJECT TYPE:  ENHANCEMENT                                            *</item>
+      <item>* SAP RELEASE:  SAP ECC 6.0                                            *</item>
+      <item>*----------------------------------------------------------------------*</item>
+      <item>* WRICEF ID:  OTC_IDD_0009                                             *</item>
+      <item>*----------------------------------------------------------------------*</item>
+      <item>* DESCRIPTION: Population of VBAP AUFNR with the Preceeding</item>
+      <item>* document number.</item>
+      <item>*----------------------------------------------------------------------*</item>
+      <item>* MODIFICATION HISTORY:                                                *</item>
+      <item>*======================================================================*</item>
+      <item>* DATE         USER    TRANSPORT    DESCRIPTION                        *</item>
+      <item>* =========== ======== ========== =====================================*</item>
+      <item>* 03-JUL-2012  SPURI   E1DK903577  INITIAL DEVELOPMENT                 *</item>
+      <item>*&amp;---------------------------------------------------------------------*</item>
+      <item>* 22-JUL-2014  KSRIVAS E2DK900492  DEVELOPMENT FOR CR41-               *</item>
+      <item>*                                  D2_OTC_EDD_0136</item>
+      <item>* Field on the item level to capture transportation group of material  *</item>
+      <item>*&amp;---------------------------------------------------------------------*</item>
+      <item>* 10-Oct-2014  RPANIGR E2DK900492  DEVELOPMENT FOR                     *</item>
+      <item>*                                  D2_OTC_EDD_0136/CR-134</item>
+      <item>* For Instrument Reference at SO item level                            *</item>
+      <item>* Linking an instrumnet with a service item in a sales order           *</item>
+      <item>*&amp;---------------------------------------------------------------------*</item>
+      <item/>
+      <item/>
+      <item>INCLUDE ZOTCN0009I_ORDER_ASSIGN.</item>
+      <item/>
+      <item>************************************************************************</item>
+      <item>* PROGRAM    :  ZOTCN0221I_PLANT_ITEM_CATEGORY(Include)                *</item>
+      <item>* TITLE      :  Sales Order Enhancement                                *</item>
+      <item>* DEVELOPER  :  Babli Samanta                                          *</item>
+      <item>* OBJECT TYPE:  ENHANCEMENT                                            *</item>
+      <item>* SAP RELEASE:  SAP ECC 6.0                                            *</item>
+      <item>*----------------------------------------------------------------------*</item>
+      <item>* WRICEF ID:  OTC_EDD_0221                                             *</item>
+      <item>*----------------------------------------------------------------------*</item>
+      <item>* DESCRIPTION: Check Item Category per Plant: If sales orders are not</item>
+      <item>*created using correct item category then the order gets stuck in the</item>
+      <item>*eWM queue. As a permanent fix business requirement is that the system</item>
+      <item>*should be able to check that right item category is specified for the</item>
+      <item>*line item in the sales order.</item>
+      <item>*----------------------------------------------------------------------*</item>
+      <item>* MODIFICATION HISTORY:                                                *</item>
+      <item>*======================================================================*</item>
+      <item>* DATE        USER     TRANSPORT   DESCRIPTION                         *</item>
+      <item>* =========== ======== ==========  ====================================*</item>
+      <item>* 12-SEP-2014 BMAJI    E1DK915056  CR#1593: INITIAL DEVELOPMENT        *</item>
+      <item>*&amp;---------------------------------------------------------------------*</item>
+      <item>include zotcn0221i_plant_item_category.</item>
+      <item/>
+      <item>*--&gt;&gt; Begin of change for D2_OTC_EDD_136-CR134/ 01-Oct-2014 by RPANIGR</item>
+      <item>* Include Program changed for Instrument Reference at SO Item</item>
+      <item/>
+      <item>*--&gt;&gt; Begin of change by KSRIVAS for D2_OTC_EDD_136-CR41</item>
+      <item>* Include for capturing transportation group of material on Sales doc. item</item>
+      <item>INCLUDE ZOTCN0136O_CSTM_FLDS_SO_ITEM.</item>
+      <item>*&lt;&lt;-- End of change by KSRIVAS for D2_OTC_EDD_136-CR41</item>
+      <item/>
+      <item>*--&lt;&lt; End of change for D2_OTC_EDD_136-CR134/ 01-Oct-2014 by RPANIGR</item>
+      <item/>
+      <item/>
+      <item/>
+     </SOURCE>
+    </ENH_HOOK_IMPL>
+   </ENHANCEMENTS>
+   <SPACES>
+    <item>
+     <FULL_NAME>\PR:SAPMV45A\FO:USEREXIT_MOVE_FIELD_TO_VBAP\SE:BEGIN\EI</FULL_NAME>
+     <SPACES>
+      <item>0</item>
+      <item>0</item>
+      <item>0</item>
+      <item>0</item>
+      <item>0</item>
+      <item>0</item>
+      <item>0</item>
+      <item>0</item>
+      <item>0</item>
+      <item>0</item>
+      <item>0</item>
+      <item>0</item>
+      <item>0</item>
+      <item>0</item>
+      <item>0</item>
+      <item>0</item>
+      <item>0</item>
+      <item>0</item>
+      <item>0</item>
+      <item>0</item>
+      <item>0</item>
+      <item>0</item>
+      <item>0</item>
+      <item>0</item>
+      <item>0</item>
+      <item>0</item>
+      <item>0</item>
+      <item>0</item>
+      <item>0</item>
+      <item>0</item>
+      <item>0</item>
+      <item>0</item>
+      <item>0</item>
+      <item>0</item>
+      <item>0</item>
+      <item>0</item>
+      <item>0</item>
+      <item>0</item>
+      <item>0</item>
+      <item>0</item>
+      <item>0</item>
+      <item>0</item>
+      <item>0</item>
+      <item>0</item>
+      <item>0</item>
+      <item>0</item>
+      <item>0</item>
+      <item>0</item>
+      <item>0</item>
+      <item>0</item>
+      <item>0</item>
+      <item>0</item>
+      <item>0</item>
+      <item>0</item>
+      <item>0</item>
+      <item>0</item>
+      <item>0</item>
+      <item>0</item>
+      <item>0</item>
+      <item>0</item>
+      <item>0</item>
+      <item>0</item>
+      <item>0</item>
+      <item>0</item>
+      <item>0</item>
+      <item>0</item>
+      <item>0</item>
+     </SPACES>
+    </item>
+   </SPACES>
+  </asx:values>
+ </asx:abap>
+</abapGit>

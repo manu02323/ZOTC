@@ -1,0 +1,161 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<abapGit version="v1.0.0" serializer="LCL_OBJECT_ENHO" serializer_version="v1.0.0">
+ <asx:abap xmlns:asx="http://www.sap.com/abapxml" version="1.0">
+  <asx:values>
+   <TOOL>HOOK_IMPL</TOOL>
+   <SHORTTEXT>New pricing should carry when Manual conditions added</SHORTTEXT>
+   <ORIGINAL_OBJECT>
+    <PGMID>R3TR</PGMID>
+    <ORG_OBJ_TYPE>PROG</ORG_OBJ_TYPE>
+    <ORG_OBJ_NAME>SAPMV45A</ORG_OBJ_NAME>
+    <ORG_MAIN_TYPE>PROG</ORG_MAIN_TYPE>
+    <ORG_MAIN_NAME>SAPMV45A</ORG_MAIN_NAME>
+    <PROGRAMNAME>SAPMV45A</PROGRAMNAME>
+   </ORIGINAL_OBJECT>
+   <ENHANCEMENTS>
+    <ENH_HOOK_IMPL>
+     <PROGRAMNAME>SAPMV45A</PROGRAMNAME>
+     <ENHMODE>D</ENHMODE>
+     <FULL_NAME>\PR:SAPMV45A\FO:USEREXIT_NEW_PRICING_VBKD\SE:END\EI</FULL_NAME>
+     <SOURCE>
+      <item>************************************************************************</item>
+      <item>* PROGRAM    :  ZIM_OTC_EDD_0011_CR233                                 *</item>
+      <item>* TITLE      :  OTC_EDD_0011_EHQ_Pricing Routine                       *</item>
+      <item>* DEVELOPER  :  Raghavendra Sureddi                                    *</item>
+      <item>* OBJECT TYPE:  Enhancement                                            *</item>
+      <item>* SAP RELEASE:  SAP ECC 6.0                                            *</item>
+      <item>*----------------------------------------------------------------------*</item>
+      <item>* WRICEF ID:  OTC_EDD_0011                                             *</item>
+      <item>*----------------------------------------------------------------------*</item>
+      <item>* DESCRIPTION: Change to pricing routine 929.Publish Tax Split base    *</item>
+      <item>*              check in EMI for ZTST and ZTNT and corresponding entry  *</item>
+      <item>*              for ZIT2 and ZIT3                                       *</item>
+      <item>*              once the routine is triggered we need to re-trigger the *</item>
+      <item>*              pricing based on manual cond entries                    *</item>
+      <item>*----------------------------------------------------------------------*</item>
+      <item>* MODIFICATION HISTORY:                                                *</item>
+      <item>*======================================================================*</item>
+      <item>* DATE        USER     TRANSPORT  DESCRIPTION                          *</item>
+      <item>* =========== ======== ========== =====================================*</item>
+      <item>* 04-Apr-2018 U033876  E1DK935664 INITIAL DEVELOPMENT - CR 233         *</item>
+      <item>*&amp;---------------------------------------------------------------------*</item>
+      <item>DATA:</item>
+      <item>lwa_status1      TYPE zdev_enh_status,</item>
+      <item>li_enh_status1   TYPE STANDARD TABLE OF zdev_enh_status ,</item>
+      <item>li_kschl         TYPE STANDARD TABLE OF RSIS_S_RANGE,</item>
+      <item>lwa_kschl        TYPE RSIS_S_RANGE,</item>
+      <item>lwa_KOMV             TYPE KOMV.</item>
+      <item>CONSTANTS:</item>
+      <item>lc_otc_0011  TYPE z_enhancement   VALUE &apos;OTC_EDD_0011_929&apos;,</item>
+      <item>lc_cri_null  TYPE z_criteria      VALUE &apos;NULL&apos;,            &quot; Enh. Criteria</item>
+      <item>lc_kschl     TYPE z_criteria      VALUE &apos;KSCHL&apos;,</item>
+      <item>lc_appl      TYPE kappl           VALUE &apos;V&apos;,</item>
+      <item>lc_g         TYPE knprs           VALUE &apos;G&apos;.</item>
+      <item/>
+      <item/>
+      <item>* Read EMI</item>
+      <item>CALL FUNCTION &apos;ZDEV_ENHANCEMENT_STATUS_CHECK&apos;</item>
+      <item>EXPORTING</item>
+      <item>iv_enhancement_no = lc_otc_0011</item>
+      <item>TABLES</item>
+      <item>tt_enh_status     = li_enh_status1.</item>
+      <item/>
+      <item>DELETE li_enh_status1 WHERE active NE abap_true.</item>
+      <item/>
+      <item>* check if enhancement is active in EMI.</item>
+      <item>* Binary search not used in read statements as table is small</item>
+      <item>READ TABLE li_enh_status1 WITH KEY criteria = lc_cri_null TRANSPORTING NO FIELDS.</item>
+      <item>IF sy-subrc = 0.</item>
+      <item>* Loop through all the manual conditions in EMI</item>
+      <item>LOOP AT li_enh_status1 INTO lwa_status1 WHERE criteria = lc_kschl.</item>
+      <item>lwa_kschl-sign   = lwa_status1-sel_sign.</item>
+      <item>lwa_kschl-option = lwa_status1-sel_option.</item>
+      <item>lwa_kschl-low    = lwa_status1-sel_high.</item>
+      <item>APPEND lwa_kschl TO li_kschl.</item>
+      <item>CLEAR: lwa_kschl.</item>
+      <item>ENDLOOP.</item>
+      <item>* Check in Condtion records if there are any manual condtions</item>
+      <item>* based on entries we trigger pricing</item>
+      <item>LOOP AT  XKOMV INTO lwa_komv  WHERE kposn = vbap-posnr</item>
+      <item>AND   KAPPL = lc_appl</item>
+      <item>AND   KSCHL IN li_kschl.</item>
+      <item>new_pricing = lc_g.</item>
+      <item>ENDLOOP.</item>
+      <item>ENDIF.</item>
+     </SOURCE>
+    </ENH_HOOK_IMPL>
+   </ENHANCEMENTS>
+   <SPACES>
+    <item>
+     <FULL_NAME>\PR:SAPMV45A\FO:USEREXIT_NEW_PRICING_VBKD\SE:END\EI</FULL_NAME>
+     <SPACES>
+      <item>0</item>
+      <item>0</item>
+      <item>0</item>
+      <item>0</item>
+      <item>0</item>
+      <item>0</item>
+      <item>0</item>
+      <item>0</item>
+      <item>0</item>
+      <item>0</item>
+      <item>0</item>
+      <item>0</item>
+      <item>0</item>
+      <item>0</item>
+      <item>0</item>
+      <item>0</item>
+      <item>0</item>
+      <item>0</item>
+      <item>0</item>
+      <item>0</item>
+      <item>0</item>
+      <item>0</item>
+      <item>6</item>
+      <item>6</item>
+      <item>6</item>
+      <item>6</item>
+      <item>6</item>
+      <item>0</item>
+      <item>7</item>
+      <item>7</item>
+      <item>7</item>
+      <item>7</item>
+      <item>7</item>
+      <item>0</item>
+      <item>0</item>
+      <item>0</item>
+      <item>2</item>
+      <item>4</item>
+      <item>6</item>
+      <item>4</item>
+      <item>6</item>
+      <item>0</item>
+      <item>2</item>
+      <item>0</item>
+      <item>0</item>
+      <item>0</item>
+      <item>2</item>
+      <item>2</item>
+      <item>0</item>
+      <item>4</item>
+      <item>6</item>
+      <item>6</item>
+      <item>6</item>
+      <item>6</item>
+      <item>6</item>
+      <item>4</item>
+      <item>0</item>
+      <item>0</item>
+      <item>4</item>
+      <item>34</item>
+      <item>34</item>
+      <item>6</item>
+      <item>4</item>
+      <item>2</item>
+     </SPACES>
+    </item>
+   </SPACES>
+  </asx:values>
+ </asx:abap>
+</abapGit>

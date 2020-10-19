@@ -1,0 +1,221 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<abapGit version="v1.0.0" serializer="LCL_OBJECT_ENHO" serializer_version="v1.0.0">
+ <asx:abap xmlns:asx="http://www.sap.com/abapxml" version="1.0">
+  <asx:values>
+   <TOOL>HOOK_IMPL</TOOL>
+   <SHORTTEXT>IC Cross Company Reference</SHORTTEXT>
+   <ORIGINAL_OBJECT>
+    <PGMID>R3TR</PGMID>
+    <ORG_OBJ_TYPE>FUGR</ORG_OBJ_TYPE>
+    <ORG_OBJ_NAME>F005</ORG_OBJ_NAME>
+    <ORG_MAIN_TYPE>FUGR</ORG_MAIN_TYPE>
+    <ORG_MAIN_NAME>F005</ORG_MAIN_NAME>
+    <PROGRAMNAME>SAPLF005</PROGRAMNAME>
+   </ORIGINAL_OBJECT>
+   <ENHANCEMENTS>
+    <ENH_HOOK_IMPL>
+     <PROGRAMNAME>SAPLF005</PROGRAMNAME>
+     <ENHMODE>D</ENHMODE>
+     <FULL_NAME>\FU:POST_DOCUMENT\SE:BEGIN\EI</FULL_NAME>
+     <SOURCE>
+      <item>***********************************************************************</item>
+      <item>*Program    :ZIM_FILL_XBLNR                                           *</item>
+      <item>*Title      :IC Cross Company Reference                               *</item>
+      <item>*Developer  :Sayantan Mukherjee                                       *</item>
+      <item>*Object type:Implicit Enhancement                                     *</item>
+      <item>*SAP Release:SAP ECC 6.0                                              *</item>
+      <item>*---------------------------------------------------------------------*</item>
+      <item>*WRICEF ID: D3_OTC_EDD_0416                                           *</item>
+      <item>*---------------------------------------------------------------------*</item>
+      <item>*Description:The development is for allow the transactions to settle  *</item>
+      <item>*            through In-House Cash without manual intervention        *</item>
+      <item>*---------------------------------------------------------------------*</item>
+      <item>*MODIFICATION HISTORY:</item>
+      <item>*=====================================================================*</item>
+      <item>*Date           User        Transport       Description</item>
+      <item>*=========== ============== ============== ===========================*</item>
+      <item>*11-JUN-2018  SMUKHER4      E1DK937139/     Defect# 4721:             *</item>
+      <item>*                           E1DK937141      INITIAL DEVELOPMENT       *</item>
+      <item>*---------------------------------------------------------------------*</item>
+      <item/>
+      <item>*&amp;--Data Declarations</item>
+      <item>DATA: li_zdev_emi TYPE STANDARD TABLE OF zdev_enh_status INITIAL SIZE 0, &quot; Local internal Table</item>
+      <item>li_tcode    TYPE STANDARD TABLE OF fkk_ranges,                     &quot; Structure: Select Options</item>
+      <item>lwa_tcode   TYPE fkk_ranges.                                       &quot; Structure: Select Options</item>
+      <item>&quot;Document type</item>
+      <item/>
+      <item>*&amp;--Field Symbols declaration</item>
+      <item>FIELD-SYMBOLS: &lt;lfs_bkpf&gt;     TYPE bkpf,            &quot; Accounting Document Header</item>
+      <item>&lt;lfs_zdev_emi&gt; TYPE zdev_enh_status. &quot; Field-symbol for ZDEV_ENH_STATUS</item>
+      <item>*&amp;--Local Constants</item>
+      <item>CONSTANTS: lc_enhancement TYPE z_enhancement VALUE &apos;OTC_EDD_0416&apos;, &quot; Default Status</item>
+      <item>lc_null        TYPE z_criteria    VALUE &apos;NULL&apos;,         &quot; Enh. Criteria</item>
+      <item>lc_blart       TYPE z_criteria    VALUE &apos;BLART&apos;,         &quot; Enh. Criteria</item>
+      <item>lc_tcode       TYPE z_criteria    VALUE &apos;TCODE&apos;.        &quot; Criteria = TCODE</item>
+      <item/>
+      <item>*&amp;--Fetching EMI entries.</item>
+      <item>CALL FUNCTION &apos;ZDEV_ENHANCEMENT_STATUS_CHECK&apos;</item>
+      <item>EXPORTING</item>
+      <item>iv_enhancement_no = lc_enhancement</item>
+      <item>TABLES</item>
+      <item>tt_enh_status     = li_zdev_emi.</item>
+      <item/>
+      <item>DELETE li_zdev_emi WHERE active &lt;&gt; abap_true.</item>
+      <item/>
+      <item/>
+      <item>*&amp;--Fetching the EMI entries</item>
+      <item>IF li_zdev_emi IS NOT INITIAL.</item>
+      <item/>
+      <item>*&amp;--Check the null criteria.</item>
+      <item>READ TABLE li_zdev_emi WITH KEY criteria = lc_null TRANSPORTING NO FIELDS.</item>
+      <item/>
+      <item>IF sy-subrc IS INITIAL.</item>
+      <item/>
+      <item>*&amp;--&gt; Fetching T-codes</item>
+      <item>LOOP AT li_zdev_emi ASSIGNING &lt;lfs_zdev_emi&gt;.</item>
+      <item>CASE &lt;lfs_zdev_emi&gt;-criteria.</item>
+      <item>WHEN lc_tcode.</item>
+      <item>lwa_tcode-sign = &lt;lfs_zdev_emi&gt;-sel_sign.</item>
+      <item>lwa_tcode-option = &lt;lfs_zdev_emi&gt;-sel_option.</item>
+      <item>lwa_tcode-low = &lt;lfs_zdev_emi&gt;-sel_low.</item>
+      <item>lwa_tcode-high = &lt;lfs_zdev_emi&gt;-sel_high.</item>
+      <item>APPEND lwa_tcode TO li_tcode.</item>
+      <item>CLEAR lwa_tcode.</item>
+      <item>ENDCASE.</item>
+      <item>ENDLOOP. &quot; LOOP AT li_zdev_emi ASSIGNING &lt;lfs_zdev_emi&gt;</item>
+      <item/>
+      <item/>
+      <item>*&amp;--&gt;Check if Transaction code is used F-32 /FB1D or not</item>
+      <item>*&amp;--Check document type is AB</item>
+      <item>IF sy-tcode IN li_tcode[] AND</item>
+      <item>li_tcode[] IS NOT INITIAL.</item>
+      <item>LOOP AT t_bkpf ASSIGNING &lt;lfs_bkpf&gt;.</item>
+      <item/>
+      <item>READ TABLE li_zdev_emi ASSIGNING &lt;lfs_zdev_emi&gt; WITH KEY criteria = lc_blart</item>
+      <item>sel_low = &lt;lfs_bkpf&gt;-blart.</item>
+      <item>IF sy-subrc = 0.</item>
+      <item>IF  &lt;lfs_bkpf&gt;-bvorg IS NOT INITIAL.</item>
+      <item>&lt;lfs_bkpf&gt;-xblnr = &lt;lfs_bkpf&gt;-bvorg.</item>
+      <item>ENDIF. &quot; IF &lt;lfs_bkpf&gt;-blart = lv_blart AND</item>
+      <item>ENDIF.</item>
+      <item>ENDLOOP. &quot; LOOP AT t_bkpf ASSIGNING &lt;lfs_bkpf&gt;</item>
+      <item/>
+      <item>*&amp;--Clear the memory</item>
+      <item>FREE: li_tcode[],</item>
+      <item>li_zdev_emi[].</item>
+      <item/>
+      <item>*&amp;--Unassigning the field symbol used.</item>
+      <item>IF &lt;lfs_bkpf&gt; IS ASSIGNED.</item>
+      <item>UNASSIGN &lt;lfs_bkpf&gt;.</item>
+      <item>ENDIF. &quot; IF &lt;lfs_bkpf&gt; IS ASSIGNED</item>
+      <item/>
+      <item>ENDIF. &quot; IF sy-tcode IN li_tcode[]</item>
+      <item>ENDIF. &quot; IF sy-subrc IS INITIAL</item>
+      <item>ENDIF. &quot; IF li_zdev_emi IS NOT INITIAL</item>
+     </SOURCE>
+    </ENH_HOOK_IMPL>
+   </ENHANCEMENTS>
+   <SPACES>
+    <item>
+     <FULL_NAME>\FU:POST_DOCUMENT\SE:BEGIN\EI</FULL_NAME>
+     <SPACES>
+      <item>0</item>
+      <item>0</item>
+      <item>0</item>
+      <item>0</item>
+      <item>0</item>
+      <item>0</item>
+      <item>0</item>
+      <item>0</item>
+      <item>0</item>
+      <item>0</item>
+      <item>0</item>
+      <item>0</item>
+      <item>0</item>
+      <item>0</item>
+      <item>0</item>
+      <item>0</item>
+      <item>0</item>
+      <item>0</item>
+      <item>0</item>
+      <item>0</item>
+      <item>0</item>
+      <item>0</item>
+      <item>6</item>
+      <item>6</item>
+      <item>47</item>
+      <item>0</item>
+      <item>0</item>
+      <item>0</item>
+      <item>15</item>
+      <item>0</item>
+      <item>0</item>
+      <item>11</item>
+      <item>11</item>
+      <item>11</item>
+      <item>0</item>
+      <item>0</item>
+      <item>0</item>
+      <item>2</item>
+      <item>4</item>
+      <item>2</item>
+      <item>4</item>
+      <item>0</item>
+      <item>0</item>
+      <item>0</item>
+      <item>0</item>
+      <item>0</item>
+      <item>0</item>
+      <item>0</item>
+      <item>0</item>
+      <item>0</item>
+      <item>0</item>
+      <item>0</item>
+      <item>0</item>
+      <item>0</item>
+      <item>2</item>
+      <item>4</item>
+      <item>10</item>
+      <item>11</item>
+      <item>8</item>
+      <item>8</item>
+      <item>8</item>
+      <item>8</item>
+      <item>8</item>
+      <item>4</item>
+      <item>2</item>
+      <item>0</item>
+      <item>0</item>
+      <item>0</item>
+      <item>0</item>
+      <item>2</item>
+      <item>5</item>
+      <item>4</item>
+      <item>0</item>
+      <item>7</item>
+      <item>64</item>
+      <item>6</item>
+      <item>8</item>
+      <item>10</item>
+      <item>8</item>
+      <item>6</item>
+      <item>4</item>
+      <item>0</item>
+      <item>0</item>
+      <item>4</item>
+      <item>10</item>
+      <item>0</item>
+      <item>0</item>
+      <item>4</item>
+      <item>6</item>
+      <item>4</item>
+      <item>0</item>
+      <item>2</item>
+      <item>2</item>
+      <item>0</item>
+     </SPACES>
+    </item>
+   </SPACES>
+  </asx:values>
+ </asx:abap>
+</abapGit>

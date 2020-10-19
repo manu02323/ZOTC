@@ -1,0 +1,71 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<abapGit version="v1.0.0" serializer="LCL_OBJECT_FUGR" serializer_version="v1.0.0">
+ <asx:abap xmlns:asx="http://www.sap.com/abapxml" version="1.0">
+  <asx:values>
+   <AREAT>RFC to create HU level CI</AREAT>
+   <INCLUDES>
+    <SOBJ_NAME>LZOTC_EDD_CONS_EXPOR_DECLF01</SOBJ_NAME>
+    <SOBJ_NAME>LZOTC_EDD_CONS_EXPOR_DECLTOP</SOBJ_NAME>
+    <SOBJ_NAME>SAPLZOTC_EDD_CONS_EXPOR_DECL</SOBJ_NAME>
+   </INCLUDES>
+   <FUNCTIONS>
+    <item>
+     <FUNCNAME>ZOTC_0415_HU_LVL_PROFORMA_INV</FUNCNAME>
+     <REMOTE_CALL>R</REMOTE_CALL>
+     <SHORT_TEXT>Create HU level Proforma invoice</SHORT_TEXT>
+     <IMPORT>
+      <RSIMP>
+       <PARAMETER>IM_HU_DET</PARAMETER>
+       <OPTIONAL>X</OPTIONAL>
+       <TYP>ZLEX_TT_HU_DETAILS_FROM_EWM</TYP>
+      </RSIMP>
+      <RSIMP>
+       <PARAMETER>IM_HU_SERIAL_NR</PARAMETER>
+       <OPTIONAL>X</OPTIONAL>
+       <TYP>HUITEM_SERNR</TYP>
+      </RSIMP>
+     </IMPORT>
+     <EXPORT>
+      <RSEXP>
+       <PARAMETER>EX_BAPIRET</PARAMETER>
+       <TYP>BAPIRET2_T</TYP>
+      </RSEXP>
+     </EXPORT>
+     <EXCEPTION>
+      <RSEXC>
+       <EXCEPTION>SYSTEM_FAILURE</EXCEPTION>
+      </RSEXC>
+      <RSEXC>
+       <EXCEPTION>COMMUNICATION_FAILURE</EXCEPTION>
+      </RSEXC>
+     </EXCEPTION>
+     <DOCUMENTATION>
+      <RSFDO>
+       <PARAMETER>IM_HU_DET</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>HU Details from ewm for Hu level CI</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>IM_HU_SERIAL_NR</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Table Type for Creating HU Items with Serial Numbers</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>EX_BAPIRET</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Return parameter table</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>SYSTEM_FAILURE</PARAMETER>
+       <KIND>X</KIND>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>COMMUNICATION_FAILURE</PARAMETER>
+       <KIND>X</KIND>
+      </RSFDO>
+     </DOCUMENTATION>
+    </item>
+   </FUNCTIONS>
+  </asx:values>
+ </asx:abap>
+</abapGit>
